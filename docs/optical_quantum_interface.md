@@ -126,3 +126,9 @@ unchanged. This module is not a robot controller.
 
 Sources motivate the distinction between timing, quantum experiments and integrity;
 they do not validate this proposed interface or claim compatibility with a device.
+
+## Compatible cold-atom extension
+
+The [500-atom BEC interface](bec500_interface.md) reuses these public clock types
+and optical records unchanged, with a tested classical record linker and optional
+CPU reference metadata. This does not imply physical atom–photon coupling.
