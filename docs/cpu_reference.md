@@ -153,3 +153,9 @@ implementation. G1 real-weight execution is **BLOCKED / unverified** in this rev
 no CPU inference performance, TPU execution or cross-backend numerical result is
 claimed. The six-combination OS/Python CI matrix is configured to run G0 tests without
 model weights; consult the PR checks for its actual result.
+
+## Independent experimental extension
+
+The [optical-clock / photonic experiment interface](optical_quantum_interface.md)
+can associate acquisition records with this reference's model hash. It supplies
+only offline mock adapters and does not change CPU execution or the TPU gates.
