@@ -1,0 +1,2255 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "seed_range": [
+    100,
+    119
+  ],
+  "total": 280,
+  "expected_outcome_matches": 280,
+  "false_acceptances": [],
+  "mismatches": [],
+  "calibration": "none; synthetic engineering checks only",
+  "rows": [
+    {
+      "seed": 100,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 100,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 100,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 100,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 100,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 100,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 100,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 100,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 100,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 100,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 100,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 100,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 100,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 100,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 101,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 101,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 101,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 101,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 101,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 101,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 101,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 101,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 101,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 101,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 101,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 101,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 101,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 101,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 102,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 102,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 102,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 102,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 102,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 102,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 102,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 102,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 102,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 102,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 102,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 102,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 102,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 102,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 103,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 103,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 103,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 103,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 103,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 103,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 103,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 103,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 103,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 103,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 103,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 103,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 103,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 103,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 104,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 104,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 104,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 104,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 104,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 104,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 104,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 104,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 104,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 104,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 104,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 104,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 104,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 104,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 105,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 105,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 105,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 105,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 105,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 105,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 105,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 105,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 105,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 105,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 105,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 105,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 105,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 105,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 106,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 106,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 106,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 106,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 106,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 106,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 106,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 106,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 106,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 106,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 106,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 106,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 106,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 106,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 107,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 107,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 107,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 107,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 107,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 107,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 107,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 107,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 107,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 107,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 107,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 107,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 107,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 107,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 108,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 108,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 108,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 108,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 108,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 108,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 108,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 108,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 108,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 108,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 108,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 108,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 108,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 108,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 109,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 109,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 109,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 109,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 109,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 109,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 109,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 109,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 109,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 109,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 109,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 109,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 109,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 109,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 110,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 110,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 110,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 110,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 110,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 110,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 110,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 110,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 110,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 110,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 110,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 110,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 110,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 110,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 111,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 111,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 111,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 111,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 111,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 111,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 111,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 111,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 111,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 111,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 111,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 111,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 111,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 111,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 112,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 112,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 112,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 112,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 112,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 112,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 112,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 112,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 112,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 112,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 112,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 112,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 112,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 112,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 113,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 113,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 113,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 113,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 113,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 113,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 113,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 113,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 113,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 113,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 113,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 113,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 113,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 113,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 114,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 114,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 114,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 114,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 114,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 114,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 114,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 114,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 114,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 114,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 114,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 114,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 114,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 114,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 115,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 115,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 115,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 115,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 115,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 115,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 115,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 115,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 115,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 115,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 115,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 115,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 115,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 115,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 116,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 116,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 116,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 116,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 116,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 116,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 116,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 116,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 116,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 116,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 116,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 116,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 116,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 116,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 117,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 117,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 117,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 117,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 117,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 117,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 117,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 117,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 117,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 117,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 117,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 117,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 117,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 117,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 118,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 118,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 118,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 118,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 118,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 118,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 118,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 118,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 118,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 118,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 118,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 118,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 118,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 118,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 119,
+      "case": "line",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 119,
+      "case": "vertical",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "line",
+      "model": "line"
+    },
+    {
+      "seed": 119,
+      "case": "circle",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 119,
+      "case": "quadratic",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "quadratic",
+      "model": "quadratic"
+    },
+    {
+      "seed": 119,
+      "case": "outliers",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 119,
+      "case": "duplicates",
+      "expected_status": "accepted",
+      "status": "accepted",
+      "expected_model": "circle",
+      "model": "circle"
+    },
+    {
+      "seed": 119,
+      "case": "few_unique",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 119,
+      "case": "short_arc",
+      "expected_status": "ambiguous",
+      "status": "ambiguous",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 119,
+      "case": "ellipse",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 119,
+      "case": "sine",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 119,
+      "case": "cloud",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 119,
+      "case": "two_strokes",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 119,
+      "case": "point",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    },
+    {
+      "seed": 119,
+      "case": "heavy_noise",
+      "expected_status": "rejected",
+      "status": "rejected",
+      "expected_model": null,
+      "model": null
+    }
+  ]
+}

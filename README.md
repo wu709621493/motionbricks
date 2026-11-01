@@ -277,3 +277,13 @@ This project builds upon excellent open source projects:
 This project is currently not accepting contributions.
 
 For questions or issues, please open an issue on this repository or reach out directly to the authors.
+
+
+## Experimental curve inference (fork extension)
+
+[Finger Tip Curve Prototype](tools/finger_tip_curve/README.md) fits synthetic 2-D
+lines, circles and quadratic graphs with explicit ambiguity/rejection handling.
+It includes a JSON API, reproducible fixtures, pytest checks and validation
+results. This CPU-only authoring research tool runs in its own environment and
+does not load MotionBricks models or control robots. Mapping confirmed curves
+to timed 3-D target poses remains future integration work.
