@@ -287,3 +287,11 @@ It includes a JSON API, reproducible fixtures, pytest checks and validation
 results. This CPU-only authoring research tool runs in its own environment and
 does not load MotionBricks models or control robots. Mapping confirmed curves
 to timed 3-D target poses remains future integration work.
+
+## Segmented motion and contact timing (research implication)
+
+The [Porsche chassis / fusion analogy note](docs/porsche_stress_fusion_motion_implications.md)
+translates a user-proposed front/rear convergence metaphor into a proposed
+segment-relative motion and contact-timing evaluation for MotionBricks.
+This is a research design note, not a chassis, collision, or fusion simulator.
+
