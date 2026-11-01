@@ -8,6 +8,7 @@ into .trt-cache, which takes several minutes. Set the MOTIONBRICKS_ENGINE_TESTS 
 variable to 1 to run them.
 """
 
+import importlib.util
 import os
 import re
 import subprocess
@@ -28,6 +29,22 @@ class ExampleSourceTests(unittest.TestCase):
 
 @unittest.skipUnless(os.environ.get("MOTIONBRICKS_ENGINE_TESTS") == "1", "set MOTIONBRICKS_ENGINE_TESTS=1 to run")
 class ExampleRunTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        # Load only the standard-library checker before importing any GPU runtime.
+        spec = importlib.util.spec_from_file_location("motionbricks_preflight", _REPO / "tools/preflight.py")
+        preflight = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(preflight)
+        blockers = []
+        for model in ("soma", "unitree_g1"):
+            report = preflight.inspect(_REPO, model, probe_gpu=True)
+            blockers.extend(
+                f"{model}: {check['name']}: {check['detail']}"
+                for check in report["checks"] if check["status"] != "PASS"
+            )
+        if blockers:
+            raise unittest.SkipTest("GPU example prerequisites unavailable: " + "; ".join(blockers))
+
     def run_example(self, name, model):
         result = subprocess.run(
             [sys.executable, "-u", str(_EXAMPLES / name), "--model", model],
