@@ -13,6 +13,9 @@ Each folder also holds a model manifest, [soma_n1.json](../motionbricks/assets/o
 
 The files use Git LFS. Run `git lfs pull` after cloning to download them. To recreate them from the checkpoints, use the [exporter](../tools/onnx/README.md). The models are licensed under the NVIDIA Open Model Agreement, as stated in [LICENSE.md](../motionbricks/assets/onnx/LICENSE.md).
 
+For the standalone, batch-one G1 FP32 validation CLI and CPU session API, see
+[CPU ONNX reference](cpu_reference.md). Its offline tests do not require weights.
+
 ## Tensors
 
 `N` is the number of requests in the batch. The model cards explain what each tensor holds and how to prepare it.

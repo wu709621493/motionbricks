@@ -24,6 +24,10 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Record actual OS and architecture
         run: python -c "import platform; print(platform.platform(), platform.machine())"
+      - name: Install CPU contract test dependency only
+        run: python -m pip install numpy==2.3.5
+      - run: python -m unittest discover -s tests/cpu_reference -v
+      - run: python -m motionbricks.cpu_reference --validate-only
       - run: python -m unittest discover -s tests/preflight -v
       - run: python -m unittest discover -s tests/examples -v
       - run: python tools/preflight.py --model soma --json
