@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "evidence": "CLASSICAL_SIMULATION",
+  "seed": 20261101,
+  "nodes": 500,
+  "stored_patterns": 20,
+  "initial_flips": 50,
+  "rows": [
+    {
+      "remaining_nodes": 500,
+      "stored_patterns": 20,
+      "nominal_load": 0.04,
+      "trials": 60,
+      "surviving_exact_recall_count": 60,
+      "surviving_mean_bit_accuracy": 1.0,
+      "converged_trials": 60,
+      "restored_exact_recall_count": 60,
+      "restored_mean_bit_accuracy": 1.0
+    },
+    {
+      "remaining_nodes": 450,
+      "stored_patterns": 20,
+      "nominal_load": 0.044444444444444446,
+      "trials": 60,
+      "surviving_exact_recall_count": 60,
+      "surviving_mean_bit_accuracy": 1.0,
+      "converged_trials": 60,
+      "restored_exact_recall_count": 60,
+      "restored_mean_bit_accuracy": 1.0
+    },
+    {
+      "remaining_nodes": 400,
+      "stored_patterns": 20,
+      "nominal_load": 0.05,
+      "trials": 60,
+      "surviving_exact_recall_count": 60,
+      "surviving_mean_bit_accuracy": 1.0,
+      "converged_trials": 60,
+      "restored_exact_recall_count": 60,
+      "restored_mean_bit_accuracy": 1.0
+    },
+    {
+      "remaining_nodes": 250,
+      "stored_patterns": 20,
+      "nominal_load": 0.08,
+      "trials": 60,
+      "surviving_exact_recall_count": 60,
+      "surviving_mean_bit_accuracy": 1.0,
+      "converged_trials": 60,
+      "restored_exact_recall_count": 60,
+      "restored_mean_bit_accuracy": 1.0
+    },
+    {
+      "remaining_nodes": 100,
+      "stored_patterns": 20,
+      "nominal_load": 0.2,
+      "trials": 60,
+      "surviving_exact_recall_count": 22,
+      "surviving_mean_bit_accuracy": 0.9443333333333332,
+      "converged_trials": 60,
+      "restored_exact_recall_count": 40,
+      "restored_mean_bit_accuracy": 0.8612333333333333
+    },
+    {
+      "remaining_nodes": 50,
+      "stored_patterns": 20,
+      "nominal_load": 0.4,
+      "trials": 60,
+      "surviving_exact_recall_count": 0,
+      "surviving_mean_bit_accuracy": 0.7210000000000002,
+      "converged_trials": 60,
+      "restored_exact_recall_count": 2,
+      "restored_mean_bit_accuracy": 0.5523000000000001
+    }
+  ],
+  "numpy": "2.3.5",
+  "source_sha256": "71ff11c7c48d8882ba14c9545e6a7c47857320917b79a66f951942181e6a2cd6",
+  "caveat": "60 fixed correlated cues; descriptive results, not independent confidence intervals",
+  "replacement_assumption": "original weights restored; missing spin values randomized",
+  "bec_equivalence": "NOT_ESTABLISHED",
+  "record_sha256": "1cf9bf0a76f3c6d07696cc77997d23cb709112d132c039d3ae152c888db2d395"
+}

@@ -180,3 +180,10 @@ Future work requires validated mode/trap parameters, loss/open-system modeling,
 additional initial states and observables, and a separately designed encoding and
 readout before attempting memory recovery. Hardware, entanglement and computational
 utility must retain separate evidence gates. Existing TPU G0–G5 are unchanged.
+
+## Accuracy and atom-loss investigation
+
+The [loss/replenishment study](bec500_loss_study.md) adds variable-number density
+matrices, an independent accuracy audit, calculated removal/replacement tables,
+and a separate classical Hopfield component-failure control. Existing fixed-N
+interfaces remain unchanged.
