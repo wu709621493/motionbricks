@@ -25,6 +25,8 @@ The demos show one way to drive the model. Your application decides where the ta
 
 ## Setup
 
+For dependency-free environment and pose-format checks before installing the runtime, see [CPU-safe preflight](docs/preflight.md).
+
 The runtime uses TensorRT, which requires an NVIDIA GPU. The demos were tested on Windows and Linux (x86-64) with an NVIDIA GeForce RTX 4090.
 
 Install [Git LFS](https://git-lfs.com/) and [uv](https://docs.astral.sh/uv/getting-started/installation/). Then clone this repository and run these commands from its root:

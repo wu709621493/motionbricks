@@ -1,0 +1,23 @@
+name: CPU preflight
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests/preflight -v
+      - run: python -m unittest discover -s tests/examples -v
+      - run: python tools/preflight.py --model soma --json
+      - run: python tools/preflight.py --model unitree_g1 --json
