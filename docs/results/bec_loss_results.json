@@ -1,0 +1,541 @@
+{
+  "schema_version": 1,
+  "evidence": "NUMERICAL_SIMULATION",
+  "parameters": {
+    "tunnelling": 1.0,
+    "interaction": 0.002,
+    "bias": 0.0,
+    "duration": 1.0,
+    "samples": 21,
+    "initial_state": "coherent",
+    "imbalance": 0.0,
+    "phase": 0.1,
+    "fock_n0": 250
+  },
+  "event_fraction": 0.5,
+  "event_time_seconds": 0.5,
+  "loss_model": "fixed-count mode-blind loss at one instant; no waiting-time dynamics",
+  "addition_model": "idealized isotropic CPTP injection; not inverse loss",
+  "accuracy": {
+    "atoms": 500,
+    "dimension": 501,
+    "max_state_l2_error_vs_spectral": 4.6442000885414765e-12,
+    "max_probability_abs_error_vs_spectral": 1.1065454108560857e-13,
+    "max_state_l2_error_vs_doubled_output_grid": 5.117455489400597e-12,
+    "max_norm_error": 1.2492229473082261e-12,
+    "max_energy_error_over_hbar": 6.225491233635694e-10,
+    "tolerance_state_l2": 1e-08,
+    "software": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3"
+    },
+    "physical_model_error": "UNQUANTIFIED_WITHOUT_TRAP_OR_EXPERIMENT_DATA",
+    "accuracy_meaning": "finite-model numerical consistency, not 500 qubits or hardware accuracy"
+  },
+  "original_quantum_trace_distance": 0.9966534594288136,
+  "provenance": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "architecture": "x86_64",
+    "source_sha256": "13151b74317b49abb6dc510104e7740d338cff9cda564823e63bdc6e941f56a1",
+    "dynamics_source_sha256": "50bb69fc3cfb76598c549ef6384a35ffdbac25226a2e518feb7829b0eb69da7f",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "event_study": [
+    {
+      "removed": 0,
+      "remaining": 500,
+      "loss": {
+        "number_readout_tv": 0.790206974938489,
+        "ideal_equal_prior_success": 0.8951034874692445,
+        "quantum_trace_distance": 0.9966534594288268,
+        "positive_phase": {
+          "trace_error": 3.345641099012674e-16,
+          "hermitian_error": 8.327124423340013e-17,
+          "minimum_eigenvalue": -8.028155552481517e-16,
+          "atoms": 500,
+          "imbalance": 0.05219525755390091,
+          "number_difference_variance": 431.9111220899339,
+          "first_order_coherence": 0.998569755896347,
+          "purity": 0.9999999999999991
+        },
+        "negative_phase_quality": {
+          "trace_error": 4.441068465945091e-15,
+          "hermitian_error": 1.1295700899707568e-16,
+          "minimum_eigenvalue": -6.9511446963039515e-16
+        }
+      },
+      "replace_isotropic": {
+        "number_readout_tv": 0.790206974938489,
+        "ideal_equal_prior_success": 0.8951034874692445,
+        "quantum_trace_distance": 0.9966534594288268,
+        "positive_phase": {
+          "trace_error": 3.345641099012674e-16,
+          "hermitian_error": 8.327124423340013e-17,
+          "minimum_eigenvalue": -8.028155552481517e-16,
+          "atoms": 500,
+          "imbalance": 0.05219525755390091,
+          "number_difference_variance": 431.9111220899339,
+          "first_order_coherence": 0.998569755896347,
+          "purity": 0.9999999999999991
+        },
+        "negative_phase_quality": {
+          "trace_error": 4.441068465945091e-15,
+          "hermitian_error": 1.1295700899707568e-16,
+          "minimum_eigenvalue": -6.9511446963039515e-16
+        },
+        "fidelity_to_no_loss_positive": 1.0
+      }
+    },
+    {
+      "removed": 1,
+      "remaining": 499,
+      "loss": {
+        "number_readout_tv": 0.7905522932088198,
+        "ideal_equal_prior_success": 0.8952761466044099,
+        "quantum_trace_distance": 0.9965981425473327,
+        "positive_phase": {
+          "trace_error": 6.675849635209695e-16,
+          "hermitian_error": 9.726157667922813e-17,
+          "minimum_eigenvalue": -6.649495472730271e-16,
+          "atoms": 499,
+          "imbalance": 0.05222949415728862,
+          "number_difference_variance": 431.0919013476988,
+          "first_order_coherence": 0.9985677176503094,
+          "purity": 0.9998530807228109
+        },
+        "negative_phase_quality": {
+          "trace_error": 1.5543203443526153e-15,
+          "hermitian_error": 1.1804089019408035e-16,
+          "minimum_eigenvalue": -6.043991590823299e-16
+        }
+      },
+      "replace_isotropic": {
+        "number_readout_tv": 0.7894658622959547,
+        "ideal_equal_prior_success": 0.8947329311479774,
+        "quantum_trace_distance": 0.9963639232854508,
+        "positive_phase": {
+          "trace_error": 2.373135721022131e-16,
+          "hermitian_error": 9.728381220604176e-17,
+          "minimum_eigenvalue": -7.132160117400673e-16,
+          "atoms": 500,
+          "imbalance": 0.05219511109102304,
+          "number_difference_variance": 433.31499568793856,
+          "first_order_coherence": 0.9985611853342755,
+          "purity": 0.995724517623904
+        },
+        "negative_phase_quality": {
+          "trace_error": 3.997549691402322e-15,
+          "hermitian_error": 7.650504213196888e-17,
+          "minimum_eigenvalue": -6.407629085143002e-16
+        },
+        "fidelity_to_no_loss_positive": 0.9978573659908279
+      }
+    },
+    {
+      "removed": 5,
+      "remaining": 495,
+      "loss": {
+        "number_readout_tv": 0.7898167943192609,
+        "ideal_equal_prior_success": 0.8949083971596304,
+        "quantum_trace_distance": 0.9963696860180565,
+        "positive_phase": {
+          "trace_error": 6.800934891200058e-16,
+          "hermitian_error": 1.1102230246251565e-16,
+          "minimum_eigenvalue": -7.4963732257423e-16,
+          "atoms": 495,
+          "imbalance": 0.052366500308967,
+          "number_difference_variance": 427.81597206931815,
+          "first_order_coherence": 0.9985595525602246,
+          "purity": 0.9992719279635802
+        },
+        "negative_phase_quality": {
+          "trace_error": 1.7772656013038737e-15,
+          "hermitian_error": 1.1807593843811162e-16,
+          "minimum_eigenvalue": -6.140246387128704e-16
+        }
+      },
+      "replace_isotropic": {
+        "number_readout_tv": 0.7864889849066632,
+        "ideal_equal_prior_success": 0.8932444924533316,
+        "quantum_trace_distance": 0.9951369402000387,
+        "positive_phase": {
+          "trace_error": 4.460980110429276e-16,
+          "hermitian_error": 8.582937747229195e-17,
+          "minimum_eigenvalue": -7.719112389088211e-16,
+          "atoms": 500,
+          "imbalance": 0.052194519283354196,
+          "number_difference_variance": 438.98689731635943,
+          "first_order_coherence": 0.9985265584320197,
+          "purity": 0.9788398232639985
+        },
+        "negative_phase_quality": {
+          "trace_error": 3.9970200179378786e-15,
+          "hermitian_error": 9.177756981012399e-17,
+          "minimum_eigenvalue": -6.443493216645733e-16
+        },
+        "fidelity_to_no_loss_positive": 0.9892991542314071
+      }
+    },
+    {
+      "removed": 10,
+      "remaining": 490,
+      "loss": {
+        "number_readout_tv": 0.7883315789110117,
+        "ideal_equal_prior_success": 0.8941657894555058,
+        "quantum_trace_distance": 0.9960674015150195,
+        "positive_phase": {
+          "trace_error": 2.220845853603512e-15,
+          "hermitian_error": 7.664258822861523e-17,
+          "minimum_eigenvalue": -6.125944817365638e-16,
+          "atoms": 490,
+          "imbalance": 0.05253789245136914,
+          "number_difference_variance": 423.72311150360406,
+          "first_order_coherence": 0.998549318940884,
+          "purity": 0.9985601059012155
+        },
+        "negative_phase_quality": {
+          "trace_error": 3.9978874269445094e-15,
+          "hermitian_error": 9.257639144254436e-17,
+          "minimum_eigenvalue": -6.619238068501138e-16
+        }
+      },
+      "replace_isotropic": {
+        "number_readout_tv": 0.7827398833267827,
+        "ideal_equal_prior_success": 0.8913699416633913,
+        "quantum_trace_distance": 0.9934483462535846,
+        "positive_phase": {
+          "trace_error": 5.579726923964868e-16,
+          "hermitian_error": 7.728772278401361e-17,
+          "minimum_eigenvalue": -7.675138452142426e-16,
+          "atoms": 500,
+          "imbalance": 0.052193765847157195,
+          "number_difference_variance": 446.2062662165273,
+          "first_order_coherence": 0.9984824835820997,
+          "purity": 0.9582084258367874
+        },
+        "negative_phase_quality": {
+          "trace_error": 4.663006249955398e-15,
+          "hermitian_error": 6.582812753581314e-17,
+          "minimum_eigenvalue": -5.276798430976858e-16
+        },
+        "fidelity_to_no_loss_positive": 0.9786287664620736
+      }
+    },
+    {
+      "removed": 25,
+      "remaining": 475,
+      "loss": {
+        "number_readout_tv": 0.7858311113065579,
+        "ideal_equal_prior_success": 0.892915555653279,
+        "quantum_trace_distance": 0.9950400905042842,
+        "positive_phase": {
+          "trace_error": 1.776409263596884e-15,
+          "hermitian_error": 6.2474133870925e-17,
+          "minimum_eigenvalue": -7.179623016246459e-16,
+          "atoms": 475,
+          "imbalance": 0.05305296590262105,
+          "number_difference_variance": 411.456664391126,
+          "first_order_coherence": 0.9985184360775639,
+          "purity": 0.9965211562013722
+        },
+        "negative_phase_quality": {
+          "trace_error": 2.6646587726231637e-15,
+          "hermitian_error": 1.0444418402013022e-16,
+          "minimum_eigenvalue": -9.982213486570523e-16
+        }
+      },
+      "replace_isotropic": {
+        "number_readout_tv": 0.7713050472356312,
+        "ideal_equal_prior_success": 0.8856525236178157,
+        "quantum_trace_distance": 0.98735648081801,
+        "positive_phase": {
+          "trace_error": 2.229051816306032e-16,
+          "hermitian_error": 5.557210413939996e-17,
+          "minimum_eigenvalue": -6.045839184012742e-16,
+          "atoms": 500,
+          "imbalance": 0.05219140972374365,
+          "number_difference_variance": 468.77101767142113,
+          "first_order_coherence": 0.9983447190089565,
+          "purity": 0.89926571659423
+        },
+        "negative_phase_quality": {
+          "trace_error": 4.885153416363933e-15,
+          "hermitian_error": 4.718958039861916e-17,
+          "minimum_eigenvalue": -6.019263068008893e-16
+        },
+        "fidelity_to_no_loss_positive": 0.9467945516005025
+      }
+    },
+    {
+      "removed": 50,
+      "remaining": 450,
+      "loss": {
+        "number_readout_tv": 0.779492583596276,
+        "ideal_equal_prior_success": 0.889746291798138,
+        "quantum_trace_distance": 0.9928645153981848,
+        "positive_phase": {
+          "trace_error": 3.9969636168336065e-15,
+          "hermitian_error": 5.553824967135427e-17,
+          "minimum_eigenvalue": -7.29570613943435e-16,
+          "atoms": 450,
+          "imbalance": 0.053914415931242236,
+          "number_difference_variance": 391.0431366629506,
+          "first_order_coherence": 0.9984663561232997,
+          "purity": 0.9934391123434522
+        },
+        "negative_phase_quality": {
+          "trace_error": 4.440955202265816e-15,
+          "hermitian_error": 6.947562107041945e-17,
+          "minimum_eigenvalue": -7.661145822774145e-16
+        }
+      },
+      "replace_isotropic": {
+        "number_readout_tv": 0.7516151210832591,
+        "ideal_equal_prior_success": 0.8758075605416296,
+        "quantum_trace_distance": 0.9738803492756685,
+        "positive_phase": {
+          "trace_error": 8.935668850782349e-16,
+          "hermitian_error": 4.177767360805209e-17,
+          "minimum_eigenvalue": -5.756282782035527e-16,
+          "atoms": 500,
+          "imbalance": 0.052187131307150324,
+          "number_difference_variance": 509.7014533929304,
+          "first_order_coherence": 0.9980948075280679,
+          "purity": 0.8097242205489321
+        },
+        "negative_phase_quality": {
+          "trace_error": 5.329072417548106e-15,
+          "hermitian_error": 4.1921487023403073e-17,
+          "minimum_eigenvalue": -6.137123164043227e-16
+        },
+        "fidelity_to_no_loss_positive": 0.8942934923491039
+      }
+    },
+    {
+      "removed": 100,
+      "remaining": 400,
+      "loss": {
+        "number_readout_tv": 0.7650055197496164,
+        "ideal_equal_prior_success": 0.8825027598748082,
+        "quantum_trace_distance": 0.986221746396296,
+        "positive_phase": {
+          "trace_error": 7.776478670107293e-16,
+          "hermitian_error": 5.2845041577819695e-17,
+          "minimum_eigenvalue": -6.339811190331622e-16,
+          "atoms": 400,
+          "imbalance": 0.055648575944501656,
+          "number_difference_variance": 350.25228888976557,
+          "first_order_coherence": 0.9983599006244107,
+          "purity": 0.9884246038427276
+        },
+        "negative_phase_quality": {
+          "trace_error": 8.91131101313432e-16,
+          "hermitian_error": 5.0284544030872676e-17,
+          "minimum_eigenvalue": -8.372418217265363e-16
+        }
+      },
+      "replace_isotropic": {
+        "number_readout_tv": 0.7097895647163496,
+        "ideal_equal_prior_success": 0.8548947823581747,
+        "quantum_trace_distance": 0.9356643559780652,
+        "positive_phase": {
+          "trace_error": 8.88196568281838e-16,
+          "hermitian_error": 3.2407308941019226e-17,
+          "minimum_eigenvalue": -3.894058674403424e-16,
+          "atoms": 500,
+          "imbalance": 0.05217695724434768,
+          "number_difference_variance": 606.8058650295638,
+          "first_order_coherence": 0.9975018134124736,
+          "purity": 0.6566611109977039
+        },
+        "negative_phase_quality": {
+          "trace_error": 3.996804477566878e-15,
+          "hermitian_error": 3.6758131435223557e-17,
+          "minimum_eigenvalue": -4.048044487136906e-16
+        },
+        "fidelity_to_no_loss_positive": 0.79113426375436
+      }
+    },
+    {
+      "removed": 250,
+      "remaining": 250,
+      "loss": {
+        "number_readout_tv": 0.6877515678906597,
+        "ideal_equal_prior_success": 0.8438757839453299,
+        "quantum_trace_distance": 0.9302056018072477,
+        "positive_phase": {
+          "trace_error": 1.5555245205643626e-15,
+          "hermitian_error": 5.1577036902917074e-17,
+          "minimum_eigenvalue": -6.316394345006657e-16,
+          "atoms": 250,
+          "imbalance": 0.060941761040544176,
+          "number_difference_variance": 226.38588361793492,
+          "first_order_coherence": 0.9980219002442646,
+          "purity": 0.9820876629094344
+        },
+        "negative_phase_quality": {
+          "trace_error": 2.220896357380553e-15,
+          "hermitian_error": 4.177767360805209e-17,
+          "minimum_eigenvalue": -6.050489176591821e-16
+        }
+      },
+      "replace_isotropic": {
+        "number_readout_tv": 0.5613585788091657,
+        "ideal_equal_prior_success": 0.7806792894045829,
+        "quantum_trace_distance": 0.7540920308730871,
+        "positive_phase": {
+          "trace_error": 1.99841567827841e-15,
+          "hermitian_error": 4.628819572127218e-17,
+          "minimum_eigenvalue": -2.0365251791187178e-16,
+          "atoms": 500,
+          "imbalance": 0.05212170934813731,
+          "number_difference_variance": 1128.6172626713956,
+          "first_order_coherence": 0.994312851440464,
+          "purity": 0.3291760548937575
+        },
+        "negative_phase_quality": {
+          "trace_error": 1.7765060706641468e-15,
+          "hermitian_error": 3.8321294114307615e-17,
+          "minimum_eigenvalue": -1.9844661403238942e-16
+        },
+        "fidelity_to_no_loss_positive": 0.49202395886281136
+      }
+    }
+  ],
+  "fresh_preparation_sweep": [
+    {
+      "atoms": 500,
+      "coupling_policy": "fixed_U",
+      "interaction": 0.002,
+      "number_readout_tv": 0.7902069749384885,
+      "ideal_equal_prior_success": 0.8951034874692443,
+      "quantum_trace_distance": 0.996653459428823
+    },
+    {
+      "atoms": 500,
+      "coupling_policy": "fixed_UN",
+      "interaction": 0.002,
+      "number_readout_tv": 0.7902069749384885,
+      "ideal_equal_prior_success": 0.8951034874692443,
+      "quantum_trace_distance": 0.996653459428823
+    },
+    {
+      "atoms": 499,
+      "coupling_policy": "fixed_U",
+      "interaction": 0.002,
+      "number_readout_tv": 0.7908979998333503,
+      "ideal_equal_prior_success": 0.8954489999166751,
+      "quantum_trace_distance": 0.996619712516807
+    },
+    {
+      "atoms": 499,
+      "coupling_policy": "fixed_UN",
+      "interaction": 0.002004008016032064,
+      "number_readout_tv": 0.7902784945236028,
+      "ideal_equal_prior_success": 0.8951392472618014,
+      "quantum_trace_distance": 0.9966197125168076
+    },
+    {
+      "atoms": 495,
+      "coupling_policy": "fixed_U",
+      "interaction": 0.002,
+      "number_readout_tv": 0.7915413909889618,
+      "ideal_equal_prior_success": 0.8957706954944809,
+      "quantum_trace_distance": 0.9964812812203542
+    },
+    {
+      "atoms": 495,
+      "coupling_policy": "fixed_UN",
+      "interaction": 0.00202020202020202,
+      "number_readout_tv": 0.788448521909548,
+      "ideal_equal_prior_success": 0.8942242609547739,
+      "quantum_trace_distance": 0.9964812812203532
+    },
+    {
+      "atoms": 490,
+      "coupling_policy": "fixed_U",
+      "interaction": 0.002,
+      "number_readout_tv": 0.7917723084593804,
+      "ideal_equal_prior_success": 0.8958861542296902,
+      "quantum_trace_distance": 0.9963002280345761
+    },
+    {
+      "atoms": 490,
+      "coupling_policy": "fixed_UN",
+      "interaction": 0.0020408163265306124,
+      "number_readout_tv": 0.7855944963398749,
+      "ideal_equal_prior_success": 0.8927972481699374,
+      "quantum_trace_distance": 0.9963002280345774
+    },
+    {
+      "atoms": 475,
+      "coupling_policy": "fixed_U",
+      "interaction": 0.002,
+      "number_readout_tv": 0.7943593009817144,
+      "ideal_equal_prior_success": 0.8971796504908571,
+      "quantum_trace_distance": 0.9956991055223863
+    },
+    {
+      "atoms": 475,
+      "coupling_policy": "fixed_UN",
+      "interaction": 0.002105263157894737,
+      "number_readout_tv": 0.7790088961146386,
+      "ideal_equal_prior_success": 0.8895044480573193,
+      "quantum_trace_distance": 0.9956991055223847
+    },
+    {
+      "atoms": 450,
+      "coupling_policy": "fixed_U",
+      "interaction": 0.002,
+      "number_readout_tv": 0.7963348994226007,
+      "ideal_equal_prior_success": 0.8981674497113004,
+      "quantum_trace_distance": 0.9944718349275283
+    },
+    {
+      "atoms": 450,
+      "coupling_policy": "fixed_UN",
+      "interaction": 0.0022222222222222222,
+      "number_readout_tv": 0.7658907856696612,
+      "ideal_equal_prior_success": 0.8829453928348305,
+      "quantum_trace_distance": 0.9944718349275271
+    },
+    {
+      "atoms": 400,
+      "coupling_policy": "fixed_U",
+      "interaction": 0.002,
+      "number_readout_tv": 0.7979100100277765,
+      "ideal_equal_prior_success": 0.8989550050138883,
+      "quantum_trace_distance": 0.9908614351610064
+    },
+    {
+      "atoms": 400,
+      "coupling_policy": "fixed_UN",
+      "interaction": 0.0025,
+      "number_readout_tv": 0.7380809709316487,
+      "ideal_equal_prior_success": 0.8690404854658244,
+      "quantum_trace_distance": 0.9908614351610079
+    },
+    {
+      "atoms": 250,
+      "coupling_policy": "fixed_U",
+      "interaction": 0.002,
+      "number_readout_tv": 0.7651074473072348,
+      "ideal_equal_prior_success": 0.8825537236536174,
+      "quantum_trace_distance": 0.9582573880087013
+    },
+    {
+      "atoms": 250,
+      "coupling_policy": "fixed_UN",
+      "interaction": 0.004,
+      "number_readout_tv": 0.6250469181841019,
+      "ideal_equal_prior_success": 0.8125234590920509,
+      "quantum_trace_distance": 0.958257388008703
+    }
+  ],
+  "hardware_validation": "NOT_PERFORMED",
+  "memory_retrieval": "NOT_IMPLEMENTED",
+  "quantum_advantage": "NOT_TESTED",
+  "record_sha256": "7704914da480eecb6d1219dc9467f90f1002172bee4c9e2c57af338c1a2b17fb"
+}
