@@ -2,14 +2,19 @@ name: CPU preflight
 on:
   push:
   pull_request:
+concurrency:
+  group: preflight-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
   offline:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
     strategy:
       matrix:
         python: ['3.12', '3.13']
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-14]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -17,7 +22,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
+      - name: Record actual OS and architecture
+        run: python -c "import platform; print(platform.platform(), platform.machine())"
       - run: python -m unittest discover -s tests/preflight -v
       - run: python -m unittest discover -s tests/examples -v
       - run: python tools/preflight.py --model soma --json
       - run: python tools/preflight.py --model unitree_g1 --json
+      - run: python docs/examples/generate_once.py --help
+      - run: python docs/examples/locomotion_loop.py --help

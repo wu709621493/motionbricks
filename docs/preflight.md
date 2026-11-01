@@ -1,5 +1,7 @@
 # CPU-safe preflight and reproducibility
 
+See [platform safety](platform_safety.md) for Ubuntu/macOS behavior, bounded subprocesses, input limits, and the opt-in example launcher.
+
 Run from the repository root with a system Python, without `uv run` or installing
 MotionBricks. The checker uses only the standard library (Python 3.11+ for the
 diagnostic tool; the **runtime still requires Python 3.12+**).
@@ -37,6 +39,8 @@ it does not certify every optional viewer/robot mesh asset in the repository.
   **every reported prerequisite is PASS** (including file integrity).
 - `runtime_prerequisites_verified` never means model inference succeeded. The
   checker always reports `inference: NOT_RUN` and `perception: NOT_TESTED`.
+
+Unsupported OS/architecture combinations skip native probes and fail strict runtime admission. The CUDA driver probe runs in a bounded subprocess.
 
 The driver probe requires CUDA driver API >=12000 and at least one visible device;
 this is a baseline check, not a guarantee of compatibility with every GPU or Warp
