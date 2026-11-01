@@ -295,3 +295,10 @@ translates a user-proposed front/rear convergence metaphor into a proposed
 segment-relative motion and contact-timing evaluation for MotionBricks.
 This is a research design note, not a chassis, collision, or fusion simulator.
 
+
+## Experimental balance-aware sleep
+
+The opt-in [sleep supervisor](docs/sleep_mode.md) pauses optional motion generation
+after stable dwell while retaining an independent balance callback on every tick.
+Includes disturbance recovery, latched telemetry/deadline faults, and CPU-only tests;
+physical balance and electrical savings require separate hardware validation.
