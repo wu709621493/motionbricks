@@ -109,3 +109,58 @@ records the runner's actual architecture. These are configured targets, not loca
 hardware results; inspect the PR checks for remote results.
 Runner labels follow [GitHub's official runner reference](https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job),
 consulted 2026-11-01. A macOS ARM64 CI run is not M6-specific certification.
+
+## Independent runtime-refusal regression — 2026-11-01
+
+The `runtime-refusal` CI job is separate from the existing offline job. It runs
+Python 3.12/3.13 on Ubuntu 24.04 x86-64/ARM64 and macOS 14 ARM64 without installing
+project dependencies or fetching LFS assets. It asserts the actual host identity,
+so a runner architecture change cannot silently stand in for Apple Silicon.
+
+`python -S -m unittest discover -s tests/runtime_refusal -v` tests both models and
+both example launchers in subprocesses. Expected outcomes:
+
+| Invocation | Exit | Required evidence |
+| --- | --- | --- |
+| Default JSON preflight | 0 | offline_ok=true, runtime_prerequisites_verified=false, inference=NOT_RUN |
+| Strict JSON preflight | 1 | offline checks still pass; runtime blockers explicitly reported |
+| Launcher with --execute | 2 | explicit Not launched reason; no example subprocess |
+
+On unsupported actual hosts (including Darwin/arm64 and Linux/aarch64), the real
+script entry points run through `runpy`, without mocking platform detection or
+preflight results. Strict preflight must report runtime_platform FAIL and native
+GPU probes SKIP. The launcher must report the actual unsupported host before
+probing. On supported x86-64 Linux, the harness calls the real preflight main
+function with its normal SystemExit mapping, replacing only the three native GPU
+probe commands with named CPU_TEST_FIXTURE failures. The launcher script and
+prerequisite aggregation remain real. This is a controlled missing-runtime test,
+not evidence of driver compatibility or actual GPU discovery.
+
+A test-only audit sentinel exits 97 if native runtime imports, ctypes loading or
+non-Git subprocess execution is attempted. This remains a test failure even if a
+diagnostic would normally catch an exception. Thus a broken refusal path cannot
+start inference. The harness uses Python -S and a 45-second parent deadline.
+Expected runtime FAIL records are assertions inside successful tests; a wrong
+exit, missing diagnostic, malformed JSON, timeout, signal or sentinel violation
+fails the job. No continue-on-error or unconditional shell success is used.
+
+### Verified baseline and local results
+
+Baseline [Actions run 41279484566](https://github.com/wu709621493/motionbricks/actions/runs/41279484566)
+completed successfully in all six original matrix jobs on 2026-11-01. Retrieved
+logs confirm macOS 14.8.9 ARM64 / Python 3.12.10 (job 124768284779) and Linux
+x86-64 (job 124768284765) each passed 31 preflight tests. Example source checks
+passed, two GPU example tests were skipped, and both default JSON preflights and
+example help commands succeeded. Baseline green checks did not include the new
+independent refusal job.
+
+Local validation against main `4c4c1fa4f5b61d9460385ab34b03707fbd8b05a8`:
+4 new tests passed (eight CLI subprocess cases plus runner-identity check),
+31 existing preflight tests passed, example compilation passed, and two real GPU
+tests skipped. Remote regression results are recorded in the associated PR after
+CI completes; configured matrix targets alone are not completed validation.
+
+Neither the baseline nor this regression establishes TensorRT inference on macOS,
+Apple GPU/Neural Engine support, specific Apple M6 silicon, temperature, power,
+long-term stability, or successful NVIDIA inference. Apple Silicon ARM64 describes
+an OS/architecture target, not an M6 hardware measurement.

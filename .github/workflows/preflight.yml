@@ -42,3 +42,32 @@ jobs:
       - run: python tools/preflight.py --model unitree_g1 --json
       - run: python docs/examples/generate_once.py --help
       - run: python docs/examples/locomotion_loop.py --help
+
+  runtime-refusal:
+    name: Runtime refusal (${{ matrix.os }}, Python ${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.12', '3.13']
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-14]
+        include:
+          - os: ubuntu-24.04
+            host: Linux/x86_64
+          - os: ubuntu-24.04-arm
+            host: Linux/aarch64
+          - os: macos-14
+            host: Darwin/arm64
+    env:
+      REFUSAL_EXPECT_HOST: ${{ matrix.host }}
+      MOTIONBRICKS_ENGINE_TESTS: '0'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Assert safe runtime refusal (expected CLI exits 1 and 2)
+        run: python -S -m unittest discover -s tests/runtime_refusal -v
