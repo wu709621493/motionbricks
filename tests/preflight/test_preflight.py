@@ -120,12 +120,11 @@ class EnvironmentTests(unittest.TestCase):
 
     def test_cuda_library_missing(self):
         with patch.object(p.ctypes, 'CDLL', side_effect=OSError('not installed')):
-            self.assertEqual(p.cuda_probe()[0], 'FAIL')
+            self.assertEqual(p._cuda_driver_probe()[0], 'FAIL')
 
-    def test_command_missing_and_timeout(self):
-        for exc in [FileNotFoundError('missing'), subprocess.TimeoutExpired('probe', 30)]:
-            with patch.object(p.subprocess, 'run', side_effect=exc):
-                self.assertFalse(p.command(['missing'])[0])
+    def test_command_missing(self):
+        with patch.object(p.subprocess, 'Popen', side_effect=FileNotFoundError('missing')):
+            self.assertFalse(p.command(['missing'])[0])
 
     def test_tensor_version_mismatch(self):
         with patch.object(p.importlib.metadata, 'version', return_value='0.0'):

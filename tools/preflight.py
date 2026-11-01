@@ -10,6 +10,10 @@ import importlib.metadata
 import json
 import math
 import os
+import platform
+import signal
+import threading
+import time
 from pathlib import Path
 import re
 import subprocess
@@ -24,19 +28,124 @@ TRT_VERSION = "10.8.0.43"
 RIGS = ("soma", "unitree_g1")
 
 
-def command(args, cwd=None):
+def command(args, cwd=None, *, timeout=30, max_output=65536, env=None):
+    """Bound output and wall time; kill the process group on POSIX on cancellation.
+
+    Readers retain at most max_output bytes. No shell, unbounded capture_output,
+    temporary log growth, or native driver calls in the parent process.
+    """
+    if timeout <= 0 or max_output <= 0:
+        raise ValueError("timeout and max_output must be positive")
     try:
-        result = subprocess.run(args, cwd=cwd, capture_output=True, text=True, timeout=30)
-        return result.returncode == 0, (result.stdout or result.stderr).strip()
-    except (OSError, subprocess.TimeoutExpired) as exc:
+        process = subprocess.Popen(
+            args, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+            env=env, start_new_session=os.name == "posix",
+        )
+    except OSError as exc:
         return False, str(exc)
+    chunks = bytearray()
+    overflow = threading.Event()
+
+    def stop():
+        try:
+            if os.name == "posix":
+                os.killpg(process.pid, signal.SIGKILL)
+            else:
+                process.kill()
+        except ProcessLookupError:
+            pass
+
+    def read():
+        while True:
+            data = process.stdout.read(8192)
+            if not data:
+                break
+            remaining = max_output - len(chunks)
+            chunks.extend(data[:remaining])
+            if len(data) > remaining:
+                overflow.set()
+                stop()
+                break
+
+    reader = threading.Thread(target=read, daemon=True)
+    reader.start()
+    reason = ""
+    deadline = time.monotonic() + timeout
+    try:
+        process.wait(timeout=timeout)
+        reader.join(timeout=max(0, deadline - time.monotonic()))
+        if reader.is_alive():
+            reason = "output pipe remained open after child exit"
+            stop()
+        if overflow.is_set():
+            reason = f"output exceeded {max_output} bytes"
+    except subprocess.TimeoutExpired:
+        reason = f"timed out after {timeout:g}s"
+        stop()
+    except KeyboardInterrupt:
+        stop()
+        raise
+    finally:
+        process.wait()
+        reader.join(timeout=1)
+        if not reader.is_alive():
+            process.stdout.close()
+    detail = bytes(chunks).decode("utf-8", errors="replace").strip()
+    if reason or process.returncode:
+        return False, f"{reason or f'process exited {process.returncode}'}: {detail}"
+    return True, detail
+
+
+def read_json(path, max_bytes=4 * 1024 * 1024):
+    """Limit JSON allocation before decoding; reject excessive nesting cleanly."""
+    with Path(path).open("rb") as stream:
+        raw = stream.read(max_bytes + 1)
+    if len(raw) > max_bytes:
+        raise ValueError(f"JSON exceeds {max_bytes} bytes")
+    # Count container nesting outside strings before constructing Python objects.
+    depth = 0
+    quoted = escaped = False
+    for byte in raw:
+        if quoted:
+            if escaped:
+                escaped = False
+            elif byte == 92:
+                escaped = True
+            elif byte == 34:
+                quoted = False
+        elif byte == 34:
+            quoted = True
+        elif byte in (91, 123):
+            depth += 1
+            if depth > 64:
+                raise ValueError("JSON nesting exceeds 64 levels")
+        elif byte in (93, 125):
+            depth -= 1
+    try:
+        return json.loads(raw.decode("utf-8"))
+    except (UnicodeError, RecursionError) as exc:
+        raise ValueError(f"invalid JSON: {exc}") from exc
+
+
+def runtime_platform():
+    system, machine = platform.system(), platform.machine().lower()
+    supported = system in ("Linux", "Windows") and machine in ("x86_64", "amd64")
+    return supported, f"{system}/{machine}"
+
+
+def probe_environment():
+    env = os.environ.copy()
+    for name in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS",
+                 "VECLIB_MAXIMUM_THREADS", "NUMEXPR_NUM_THREADS"):
+        env[name] = "1"
+    return env
 
 
 def manifest(root, model):
     if model not in RIGS:
         raise ValueError(f"unknown model: {model}")
     path = root / "motionbricks/assets/onnx" / model / f"{model}_n1.json"
-    data = json.loads(path.read_text(encoding="utf-8"))
+    data = read_json(path, max_bytes=262144)
     if not isinstance(data, dict):
         raise ValueError("manifest must be a JSON object")
     expected = dict(schema_version=1, batch_size=1, sample_rate=30, frames_per_token=4,
@@ -129,7 +238,13 @@ def asset_status(path, root):
         if path.stat().st_size != int(match[2]):
             return "FAIL", "size differs from committed LFS pointer"
         with path.open("rb") as stream:
-            digest = hashlib.file_digest(stream, "sha256").hexdigest()
+            hasher = hashlib.sha256()
+            deadline = time.monotonic() + 30
+            while block := stream.read(1024 * 1024):
+                hasher.update(block)
+                if time.monotonic() > deadline:
+                    return "WARN", "hash verification exceeded 30s; integrity unverified"
+            digest = hasher.hexdigest()
         if digest != match[1]:
             return "FAIL", "SHA-256 differs from committed LFS pointer"
         return "PASS", "size and SHA-256 match committed LFS pointer (not an ONNX load test)"
@@ -137,10 +252,17 @@ def asset_status(path, root):
         return "FAIL", str(exc)
 
 
-def cuda_probe():
+def _cuda_driver_probe():
     """Query the CUDA driver directly; nvidia-smi's advertised version is not a toolkit."""
     try:
-        driver = ctypes.CDLL("nvcuda.dll" if os.name == "nt" else (ctypes.util.find_library("cuda") or "libcuda.so.1"))
+        loader = ctypes.WinDLL if os.name == "nt" else ctypes.CDLL
+        driver = loader("nvcuda.dll" if os.name == "nt" else (ctypes.util.find_library("cuda") or "libcuda.so.1"))
+        driver.cuInit.argtypes = [ctypes.c_uint]
+        driver.cuInit.restype = ctypes.c_int
+        for name in ("cuDriverGetVersion", "cuDeviceGetCount"):
+            function = getattr(driver, name)
+            function.argtypes = [ctypes.POINTER(ctypes.c_int)]
+            function.restype = ctypes.c_int
         code = driver.cuInit(0)
         if code:
             return "FAIL", f"cuInit returned {code}"
@@ -155,11 +277,29 @@ def cuda_probe():
         return "FAIL", str(exc)
 
 
+def cuda_probe():
+    ok, detail = command([sys.executable, str(Path(__file__).resolve()), "--_cuda-driver"],
+                         env=probe_environment())
+    if not ok:
+        return "FAIL", detail
+    try:
+        result = json.loads(detail)
+        if isinstance(result, list) and len(result) == 2 and result[0] in ("PASS", "FAIL"):
+            return tuple(result)
+    except ValueError:
+        pass
+    return "FAIL", f"invalid CUDA probe response: {detail}"
+
+
 def inspect(root=ROOT, model="soma", precision="fp32", probe_gpu=False):
     root = Path(root).resolve()
     checks = []
     def add(name, status, detail, scope="runtime"):
         checks.append(dict(name=name, status=status, detail=detail, scope=scope))
+    supported, host = runtime_platform()
+    add("runtime_platform", "PASS" if supported else "FAIL",
+        host + ("; CUDA runtime candidate (device still unverified)" if supported else
+                "; bundled TensorRT demos unsupported; use CPU preflight only"))
     add("python", "PASS" if sys.version_info >= (3, 12) else "FAIL", sys.version.split()[0])
     try:
         project = tomllib.loads((root / "pyproject.toml").read_text())["project"]
@@ -207,11 +347,13 @@ def inspect(root=ROOT, model="soma", precision="fp32", probe_gpu=False):
         if model == "soma":
             asset = root / "motionbricks/assets/human/soma_base_skel_minimal_no_root.usd"
             add(str(asset.relative_to(root)), *asset_status(asset, root))
-    if probe_gpu:
+    if probe_gpu and not supported:
+        add("gpu_probes", "SKIP", "unsupported runtime platform; no native GPU imports attempted")
+    elif probe_gpu:
         add("cuda_driver", *cuda_probe())
-        ok, detail = command([sys.executable, "-c", "import tensorrt as trt; print(trt.__version__); assert trt.__version__ == '10.8.0.43'"])
+        ok, detail = command([sys.executable, "-c", "import tensorrt as trt; print(trt.__version__); assert trt.__version__ == '10.8.0.43'"], env=probe_environment())
         add("tensorrt_import", "PASS" if ok else "FAIL", detail)
-        ok, detail = command([sys.executable, "-c", "import warp as wp; wp.init(); assert wp.is_cuda_available(), 'No Warp CUDA device'; print(wp.get_cuda_device())"])
+        ok, detail = command([sys.executable, "-c", "import warp as wp; wp.init(); assert wp.is_cuda_available(), 'No Warp CUDA device'; print(wp.get_cuda_device())"], env=probe_environment())
         add("warp_cuda", "PASS" if ok else "FAIL", detail)
     else:
         add("gpu_probes", "SKIP", "use --probe-gpu to query CUDA and import TensorRT/Warp")
@@ -232,7 +374,7 @@ def main(argv=None):
     if args.poses:
         try:
             _, data = manifest(args.repo, args.model)
-            validate_poses(json.loads(args.poses.read_text()), args.model, data["joint_names"])
+            validate_poses(read_json(args.poses), args.model, data["joint_names"])
             status, detail = "PASS", "runtime pose layout and numeric values validated"
         except (OSError, ValueError, KeyError, TypeError) as exc:
             status, detail = "FAIL", str(exc)
@@ -249,4 +391,7 @@ def main(argv=None):
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    if sys.argv[1:] == ["--_cuda-driver"]:
+        print(json.dumps(_cuda_driver_probe()))
+    else:
+        raise SystemExit(main())

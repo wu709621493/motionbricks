@@ -11,14 +11,9 @@ of the first, which is the loop that makes continuous motion. Run it from the re
     uv run python docs/examples/generate_once.py --model unitree_g1
 """
 
+from __future__ import annotations
+
 import argparse
-
-import numpy as np
-import warp as wp
-
-from motionbricks.model.contract import MODEL_POSES_PER_TOKEN, MODEL_SAMPLE_RATE
-
-from _rig import load_rig, sample_window
 
 # The context ends at this clip time. Each generation targets the clip poses at the next time.
 CONTEXT_END = 1.0
@@ -27,6 +22,16 @@ TARGET_TIMES = (1.8, 3.4)
 
 def generate(model: str) -> list[np.ndarray]:
     """Run both generations for "soma" or "unitree_g1". Return the valid poses of each, as arrays."""
+    from _platform import require_cuda_platform
+
+    require_cuda_platform()
+    import numpy as np
+    import warp as wp
+
+    from motionbricks.model.contract import MODEL_POSES_PER_TOKEN, MODEL_SAMPLE_RATE
+
+    from _rig import load_rig, sample_window
+
     wp.init()
     wp.set_device("cuda:0")
     rig = load_rig(model)

@@ -27,6 +27,8 @@ The demos show one way to drive the model. Your application decides where the ta
 
 For dependency-free environment and pose-format checks before installing the runtime, see [CPU-safe preflight](docs/preflight.md).
 
+For Ubuntu/macOS CPU tooling, unsupported-platform handling and bounded GPU example execution, see [platform safety](docs/platform_safety.md).
+
 For a proposed TPU backend architecture and admission gates (not implemented support), see [TPU integration protocol](docs/tpu_integration_protocol.md).
 
 The runtime uses TensorRT, which requires an NVIDIA GPU. The demos were tested on Windows and Linux (x86-64) with an NVIDIA GeForce RTX 4090.

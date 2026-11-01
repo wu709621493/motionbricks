@@ -12,23 +12,10 @@ The steering turns from +X to +Y, so the path bends left. Run it from the reposi
     uv run python docs/examples/locomotion_loop.py --model unitree_g1
 """
 
+from __future__ import annotations
+
 import argparse
 import math
-
-import numpy as np
-import warp as wp
-
-from motionbricks.model.contract import MODEL_POSES_PER_TOKEN
-from motionbricks.runtime.motion_player import GeneratedDOFMotionPlayer, GeneratedMotionPlayer
-from motionbricks.runtime.target_pose import (
-    TargetPoseInferenceParams,
-    adjust_target_dof_speed,
-    adjust_target_pose_speed,
-    place_target_dof,
-    place_target_poses,
-)
-
-from _rig import JOG, load_rig, root_positions, sample_window
 
 UPDATE_RATE = 60.0
 DURATION = 9.0
@@ -49,6 +36,8 @@ TURN_START, TURN_END = 2.0, 4.0
 
 def steering(time: float) -> np.ndarray:
     """Return the desired ground direction at a time. An application reads its controls here."""
+    import numpy as np
+
     blend = min(max((time - TURN_START) / (TURN_END - TURN_START), 0.0), 1.0)
     angle = 0.5 * math.pi * blend
     return np.array([math.cos(angle), math.sin(angle), 0.0], dtype=np.float32)
@@ -60,6 +49,10 @@ def canonical_target(rig, model: str, poses: wp.array) -> None:
     The clip's own placement and heading are removed, so each generation can place the poses
     wherever the character is heading.
     """
+    import warp as wp
+    from _rig import root_positions, sample_window
+    from motionbricks.runtime.target_pose import adjust_target_dof_speed, adjust_target_pose_speed
+
     sample_window(rig, TARGET_TIME, poses)
     roots = root_positions(poses)
     offset = roots[-1, :2] - roots[0, :2]
@@ -72,6 +65,24 @@ def canonical_target(rig, model: str, poses: wp.array) -> None:
 
 def run(model: str) -> list[np.ndarray]:
     """Move "soma" or "unitree_g1" along the steered path. Return the pose shown at each update."""
+    from _platform import require_cuda_platform
+
+    require_cuda_platform()
+    import numpy as np
+    import warp as wp
+
+    from motionbricks.model.contract import MODEL_POSES_PER_TOKEN
+    from motionbricks.runtime.motion_player import GeneratedDOFMotionPlayer, GeneratedMotionPlayer
+    from motionbricks.runtime.target_pose import (
+        TargetPoseInferenceParams,
+        adjust_target_dof_speed,
+        adjust_target_pose_speed,
+        place_target_dof,
+        place_target_poses,
+    )
+
+    from _rig import JOG, load_rig, root_positions, sample_window
+
     wp.init()
     wp.set_device("cuda:0")
     rig = load_rig(model, JOG)
