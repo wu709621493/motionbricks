@@ -151,3 +151,10 @@ Primary research motivating the distinctions above (not validating this interfac
 - [Squeezing and entanglement in a Bose–Einstein condensate](https://arxiv.org/abs/0810.0600).
 - [Spatial entanglement patterns and EPR steering in a BEC](https://arxiv.org/abs/1708.02534).
 - [Remote entanglement between a single atom and a BEC](https://arxiv.org/abs/1102.4285).
+
+## Numerical dynamics extension
+
+The [501-dimensional CPU dynamics reference](bec500_dynamics.md) adds a fixed-N
+two-mode Hamiltonian, analytic checks and a controlled initial-state readout task.
+Its adapter preserves this interface and labels all sampled outputs `SIMULATED`.
+The original binomial fixture remains unchanged.
