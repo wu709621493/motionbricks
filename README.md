@@ -23,6 +23,10 @@ The demos show one way to drive the model. Your application decides where the ta
 
 - MotionBricks has its own repository and a pretrained model for SOMA humans. The first release was a Unitree G1 preview in [GR00T Whole-Body Control](https://github.com/NVlabs/GR00T-WholeBodyControl/tree/main/motionbricks).
 
+## Experimental research accounting
+
+For the independent CPU-only pigment and calcium reasoning model, including enamel genetics, dietary exposures and age-related epigenetic hypotheses, see [research accounting](docs/pigment_calcium_accounting.md). This is not a clinical predictor or a motion-control component.
+
 ## Setup
 
 For dependency-free environment and pose-format checks before installing the runtime, see [CPU-safe preflight](docs/preflight.md).

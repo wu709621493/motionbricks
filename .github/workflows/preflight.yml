@@ -34,6 +34,7 @@ jobs:
       - run: python -m unittest discover -s tests/bec_dynamics -v
       - run: python -m unittest discover -s tests/cold_atoms -v
       - run: python -m unittest discover -s tests/optical_quantum -v
+      - run: python -S -m unittest discover -s tests/pigment_calcium -v
       - run: python -m unittest discover -s tests/sleep_mode -v
       - run: python -m unittest discover -s tests/cpu_reference -v
       - run: python -m motionbricks.cpu_reference --validate-only
