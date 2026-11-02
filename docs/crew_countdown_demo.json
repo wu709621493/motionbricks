@@ -1,0 +1,376 @@
+{
+  "evidence": "CPU_SIMULATION_ONLY",
+  "launch_commands_sent": 0,
+  "trace": [
+    {
+      "time_s": 0,
+      "command": "resume",
+      "snapshot": {
+        "sequence": 0,
+        "timestamp_s": 0,
+        "ground_go": true,
+        "vehicle_go": true,
+        "votes": [
+          {
+            "crew_id": "commander",
+            "decision": "GO",
+            "epoch": 0,
+            "timestamp_s": 0
+          },
+          {
+            "crew_id": "pilot",
+            "decision": "GO",
+            "epoch": 0,
+            "timestamp_s": 0
+          }
+        ]
+      },
+      "decision": {
+        "phase": "COUNTING",
+        "remaining_s": 2.0,
+        "epoch": 0,
+        "reason": "resumed with current crew GO",
+        "request_review": false
+      },
+      "progress": {
+        "value": 0.0,
+        "status": "OK",
+        "operation": "divide",
+        "reason": null
+      }
+    },
+    {
+      "time_s": 1,
+      "command": "tick",
+      "snapshot": {
+        "sequence": 1,
+        "timestamp_s": 1,
+        "ground_go": true,
+        "vehicle_go": true,
+        "votes": [
+          {
+            "crew_id": "commander",
+            "decision": "GO",
+            "epoch": 0,
+            "timestamp_s": 1
+          },
+          {
+            "crew_id": "pilot",
+            "decision": "GO",
+            "epoch": 0,
+            "timestamp_s": 1
+          }
+        ]
+      },
+      "decision": {
+        "phase": "COUNTING",
+        "remaining_s": 1.0,
+        "epoch": 0,
+        "reason": "counting",
+        "request_review": false
+      },
+      "progress": {
+        "value": 0.5,
+        "status": "OK",
+        "operation": "divide",
+        "reason": null
+      }
+    },
+    {
+      "time_s": 2,
+      "command": "tick",
+      "snapshot": {
+        "sequence": 2,
+        "timestamp_s": 2,
+        "ground_go": true,
+        "vehicle_go": true,
+        "votes": [
+          {
+            "crew_id": "commander",
+            "decision": "GO",
+            "epoch": 0,
+            "timestamp_s": 2
+          },
+          {
+            "crew_id": "pilot",
+            "decision": "HOLD",
+            "epoch": 0,
+            "timestamp_s": 2
+          }
+        ]
+      },
+      "decision": {
+        "phase": "HOLD",
+        "remaining_s": 1.0,
+        "epoch": 1,
+        "reason": "crew has not supplied current explicit GO",
+        "request_review": false
+      },
+      "progress": {
+        "value": 0.5,
+        "status": "OK",
+        "operation": "divide",
+        "reason": null
+      }
+    },
+    {
+      "time_s": 3,
+      "command": "tick",
+      "snapshot": {
+        "sequence": 3,
+        "timestamp_s": 3,
+        "ground_go": true,
+        "vehicle_go": true,
+        "votes": [
+          {
+            "crew_id": "commander",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 3
+          },
+          {
+            "crew_id": "pilot",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 3
+          }
+        ]
+      },
+      "decision": {
+        "phase": "HOLD",
+        "remaining_s": 1.0,
+        "epoch": 1,
+        "reason": "explicit resume required",
+        "request_review": false
+      },
+      "progress": {
+        "value": 0.5,
+        "status": "OK",
+        "operation": "divide",
+        "reason": null
+      }
+    },
+    {
+      "time_s": 4,
+      "command": "resume",
+      "snapshot": {
+        "sequence": 4,
+        "timestamp_s": 4,
+        "ground_go": true,
+        "vehicle_go": true,
+        "votes": [
+          {
+            "crew_id": "commander",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 4
+          },
+          {
+            "crew_id": "pilot",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 4
+          }
+        ]
+      },
+      "decision": {
+        "phase": "COUNTING",
+        "remaining_s": 1.0,
+        "epoch": 1,
+        "reason": "resumed with current crew GO",
+        "request_review": false
+      },
+      "progress": {
+        "value": 0.5,
+        "status": "OK",
+        "operation": "divide",
+        "reason": null
+      }
+    },
+    {
+      "time_s": 5,
+      "command": "tick",
+      "snapshot": {
+        "sequence": 5,
+        "timestamp_s": 5,
+        "ground_go": true,
+        "vehicle_go": true,
+        "votes": [
+          {
+            "crew_id": "commander",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 5
+          },
+          {
+            "crew_id": "pilot",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 5
+          }
+        ]
+      },
+      "decision": {
+        "phase": "AWAITING_CONFIRMATION",
+        "remaining_s": 0.0,
+        "epoch": 1,
+        "reason": "time boundary reached; confirmation still required",
+        "request_review": false
+      },
+      "progress": {
+        "value": 1.0,
+        "status": "OK",
+        "operation": "divide",
+        "reason": null
+      }
+    },
+    {
+      "time_s": 6,
+      "command": "tick",
+      "snapshot": {
+        "sequence": 6,
+        "timestamp_s": 6,
+        "ground_go": true,
+        "vehicle_go": true,
+        "votes": [
+          {
+            "crew_id": "commander",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 6
+          },
+          {
+            "crew_id": "pilot",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 6
+          }
+        ]
+      },
+      "decision": {
+        "phase": "AWAITING_CONFIRMATION",
+        "remaining_s": 0.0,
+        "epoch": 1,
+        "reason": "awaiting explicit confirmation",
+        "request_review": false
+      },
+      "progress": {
+        "value": 1.0,
+        "status": "OK",
+        "operation": "divide",
+        "reason": null
+      }
+    },
+    {
+      "time_s": 7,
+      "command": "confirm",
+      "snapshot": {
+        "sequence": 7,
+        "timestamp_s": 7,
+        "ground_go": true,
+        "vehicle_go": true,
+        "votes": [
+          {
+            "crew_id": "commander",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 7
+          },
+          {
+            "crew_id": "pilot",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 7
+          }
+        ]
+      },
+      "decision": {
+        "phase": "REVIEW_REQUESTED",
+        "remaining_s": 0.0,
+        "epoch": 1,
+        "reason": "crew-confirmed simulation review request",
+        "request_review": true
+      },
+      "progress": {
+        "value": 1.0,
+        "status": "OK",
+        "operation": "divide",
+        "reason": null
+      }
+    },
+    {
+      "time_s": 8,
+      "command": "confirm",
+      "snapshot": {
+        "sequence": 8,
+        "timestamp_s": 8,
+        "ground_go": true,
+        "vehicle_go": true,
+        "votes": [
+          {
+            "crew_id": "commander",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 8
+          },
+          {
+            "crew_id": "pilot",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 8
+          }
+        ]
+      },
+      "decision": {
+        "phase": "REVIEW_REQUESTED",
+        "remaining_s": 0.0,
+        "epoch": 1,
+        "reason": "review already requested; no repeated event",
+        "request_review": false
+      },
+      "progress": {
+        "value": 1.0,
+        "status": "OK",
+        "operation": "divide",
+        "reason": null
+      }
+    },
+    {
+      "time_s": 9,
+      "command": "abort",
+      "snapshot": {
+        "sequence": 9,
+        "timestamp_s": 9,
+        "ground_go": true,
+        "vehicle_go": true,
+        "votes": [
+          {
+            "crew_id": "commander",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 9
+          },
+          {
+            "crew_id": "pilot",
+            "decision": "GO",
+            "epoch": 1,
+            "timestamp_s": 9
+          }
+        ]
+      },
+      "decision": {
+        "phase": "ABORTED",
+        "remaining_s": 0.0,
+        "epoch": 2,
+        "reason": "explicit abort",
+        "request_review": false
+      },
+      "progress": {
+        "value": 1.0,
+        "status": "OK",
+        "operation": "divide",
+        "reason": null
+      }
+    }
+  ]
+}
