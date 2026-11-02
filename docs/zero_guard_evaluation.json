@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "framework": "Perception Theory: task-specific evidence mapping, not a validated scale",
+  "base_commit": "7d78474b0cd0fc9b2c7373df0620f65dcb831a82",
+  "source_sha256": {
+    "motionbricks/zero_guard.py": "56d957c429699a71625372486d347b7027ce3e30f13d652b8e8a2cfeff3fd43c",
+    "motionbricks/optical_quantum.py": "5e68f753748b8bb0b06e2bbcb5bb6595ac9a708da9775c5d1e63be75488684f2",
+    "motionbricks/sleep_mode.py": "b2a787d4d1d91e6f6d71c6432e0d4f267bf62bd35afc13b26270f219aa0967ac",
+    "tests/zero_guard/test_zero_guard.py": "083ebbc9234760964f721c95fc55badbc498cdc7415786df41285d12f09e201e",
+    "tools/zero_guard/evaluate.py": "4d493f7600cdd333ab8e80d69bc77b47e44b6c5ff4dd67a56c9e6496c9b2364e"
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "cpu_checks_passed": true,
+  "layers": [
+    {
+      "layer": "L1",
+      "status": "SOFTWARE_EVIDENCE_ONLY",
+      "evidence": "Zero data distinguished from zero-denominator/domain errors."
+    },
+    {
+      "layer": "L2",
+      "status": "SOFTWARE_EVIDENCE_ONLY",
+      "evidence": "Structured operation/status/reason; prose paraphrase still needs review."
+    },
+    {
+      "layer": "L3",
+      "status": "SOFTWARE_EVIDENCE_ONLY",
+      "evidence": "Optical statistics and sleep supervisor transfer tests executed."
+    },
+    {
+      "layer": "L4",
+      "status": "NOT_TESTED",
+      "evidence": "No three-person comprehension study performed."
+    },
+    {
+      "layer": "L5",
+      "status": "NOT_TESTED",
+      "evidence": "Human/robot perception-gap measurement absent; translation variant documented."
+    },
+    {
+      "layer": "L6",
+      "status": "NOT_TESTED",
+      "evidence": "No physical force or temperature experiment performed."
+    },
+    {
+      "layer": "L7",
+      "status": "DEFINITION_REQUIRED",
+      "evidence": "Latest user-authorized definition not found; no definition invented."
+    }
+  ],
+  "all_layers_validated": false
+}
