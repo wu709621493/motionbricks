@@ -1,0 +1,3 @@
+-r requirements.txt
+# Portable validation baseline; exporter environment remains unchanged.
+torch==2.15.0

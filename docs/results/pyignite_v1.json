@@ -1,0 +1,201 @@
+{
+  "seed": 20261102,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "torch": "2.15.0+cpu",
+  "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "threads": 1,
+  "atol": 2e-05,
+  "rtol": 2e-05,
+  "source_sha": "f19dd01432b2eadf3800b3c71f99a092c741aa8a",
+  "memory_note": "Buffer accounting excludes allocator/NumPy overhead. RSS is entire validation process including both runtimes, not isolated kernel memory.",
+  "combined_process_peak_rss_bytes": 241737728,
+  "results": [
+    {
+      "name": "PE-1-2",
+      "shape": [
+        1,
+        1,
+        2
+      ],
+      "max_abs_error": 0.0,
+      "max_relative_error_floor_1e-6": 0.0,
+      "native": {
+        "median_us": 3.6185,
+        "min_us": 3.316,
+        "repeats": 30
+      },
+      "torch": {
+        "median_us": 19.704500000000003,
+        "min_us": 19.191,
+        "repeats": 30
+      },
+      "output_bytes": 8,
+      "native_extra_kernel_heap_bytes": 0
+    },
+    {
+      "name": "PE-17-32",
+      "shape": [
+        17,
+        1,
+        32
+      ],
+      "max_abs_error": 5.960464477539063e-08,
+      "max_relative_error_floor_1e-6": 1.1031720720075712e-07,
+      "native": {
+        "median_us": 4.9670000000000005,
+        "min_us": 4.532,
+        "repeats": 30
+      },
+      "torch": {
+        "median_us": 20.957,
+        "min_us": 20.497,
+        "repeats": 30
+      },
+      "output_bytes": 2176,
+      "native_extra_kernel_heap_bytes": 0
+    },
+    {
+      "name": "PE-256-512",
+      "shape": [
+        256,
+        1,
+        512
+      ],
+      "max_abs_error": 7.621943950653076e-06,
+      "max_relative_error_floor_1e-6": 0.010237159987881488,
+      "native": {
+        "median_us": 808.1845000000001,
+        "min_us": 414.925,
+        "repeats": 30
+      },
+      "torch": {
+        "median_us": 358.8315,
+        "min_us": 202.0,
+        "repeats": 30
+      },
+      "output_bytes": 524288,
+      "native_extra_kernel_heap_bytes": 0
+    },
+    {
+      "name": "PE-4096-64",
+      "shape": [
+        4096,
+        1,
+        64
+      ],
+      "max_abs_error": 1.52587890625e-05,
+      "max_relative_error_floor_1e-6": 0.010237163985664596,
+      "native": {
+        "median_us": 1072.8695,
+        "min_us": 817.631,
+        "repeats": 30
+      },
+      "torch": {
+        "median_us": 644.3715,
+        "min_us": 404.961,
+        "repeats": 30
+      },
+      "output_bytes": 1048576,
+      "native_extra_kernel_heap_bytes": 0
+    },
+    {
+      "name": "FC-1-8-(3,)",
+      "shape": [
+        2
+      ],
+      "max_abs_error": 1.4901161193847656e-08,
+      "max_relative_error_floor_1e-6": 8.957229765304457e-08,
+      "native": {
+        "median_us": 27.312,
+        "min_us": 21.94,
+        "repeats": 30
+      },
+      "torch": {
+        "median_us": 13.482,
+        "min_us": 12.925,
+        "repeats": 30
+      },
+      "output_bytes": 8,
+      "weights_bytes_per_implementation": 200,
+      "input_bytes": 12,
+      "native_max_two_layer_output_buffers_bytes": 64,
+      "eval_dropout": 0
+    },
+    {
+      "name": "FC-2-32-(4, 7)",
+      "shape": [
+        4,
+        5
+      ],
+      "max_abs_error": 2.9802322387695312e-08,
+      "max_relative_error_floor_1e-6": 1.2955510775995232e-05,
+      "native": {
+        "median_us": 61.635000000000005,
+        "min_us": 36.927,
+        "repeats": 30
+      },
+      "torch": {
+        "median_us": 23.856,
+        "min_us": 23.138,
+        "repeats": 30
+      },
+      "output_bytes": 80,
+      "weights_bytes_per_implementation": 5908,
+      "input_bytes": 112,
+      "native_max_two_layer_output_buffers_bytes": 1024,
+      "eval_dropout": 0.3
+    },
+    {
+      "name": "FC-3-64-(2, 11, 16)",
+      "shape": [
+        2,
+        11,
+        9
+      ],
+      "max_abs_error": 1.2479722499847412e-07,
+      "max_relative_error_floor_1e-6": 4.474635210691395e-05,
+      "native": {
+        "median_us": 233.9125,
+        "min_us": 183.832,
+        "repeats": 30
+      },
+      "torch": {
+        "median_us": 35.177,
+        "min_us": 34.182,
+        "repeats": 30
+      },
+      "output_bytes": 792,
+      "weights_bytes_per_implementation": 39972,
+      "input_bytes": 1408,
+      "native_max_two_layer_output_buffers_bytes": 11264,
+      "eval_dropout": 0
+    },
+    {
+      "name": "FC-2-256-(32, 128)",
+      "shape": [
+        32,
+        64
+      ],
+      "max_abs_error": 2.7418136596679688e-06,
+      "max_relative_error_floor_1e-6": 0.0008989303702165222,
+      "native": {
+        "median_us": 4350.496999999999,
+        "min_us": 2601.343,
+        "repeats": 30
+      },
+      "torch": {
+        "median_us": 84.1845,
+        "min_us": 83.313,
+        "repeats": 30
+      },
+      "output_bytes": 8192,
+      "weights_bytes_per_implementation": 461056,
+      "input_bytes": 16384,
+      "native_max_two_layer_output_buffers_bytes": 65536,
+      "eval_dropout": 0
+    }
+  ]
+}

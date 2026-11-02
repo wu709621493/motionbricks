@@ -1,0 +1,1747 @@
+{
+  "scope": "Static direct torch calls, including constructors and utilities; tensor methods, operators, alias flow and checkpoint-specific paths require manual audit.",
+  "files": {
+    "tools/onnx/export.py": [
+      {
+        "line": 48,
+        "call": "torch.eye"
+      },
+      {
+        "line": 49,
+        "call": "torch.ones"
+      },
+      {
+        "line": 53,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 60,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 63,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 65,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 67,
+        "call": "torch.tensor([1.0, 0.0, 0.0, 0.0, 1.0, 0.0]).repeat"
+      },
+      {
+        "line": 67,
+        "call": "torch.tensor"
+      },
+      {
+        "line": 93,
+        "call": "torch.backends.mha.set_fastpath_enabled"
+      },
+      {
+        "line": 94,
+        "call": "torch.inference_mode"
+      },
+      {
+        "line": 95,
+        "call": "torch.onnx.export"
+      },
+      {
+        "line": 97,
+        "call": "torch.onnx.export"
+      },
+      {
+        "line": 169,
+        "call": "torch.set_num_threads"
+      }
+    ],
+    "tools/onnx/models/features.py": [
+      {
+        "line": 28,
+        "call": "torch.nn.functional.one_hot"
+      },
+      {
+        "line": 35,
+        "call": "torch.zeros([batch_size, num_max_cond, feat_dim]).to"
+      },
+      {
+        "line": 35,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 67,
+        "call": "torch.zeros([x.shape[0], x.shape[1], 1]).to"
+      },
+      {
+        "line": 67,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 68,
+        "call": "torch.concat"
+      }
+    ],
+    "tools/onnx/models/g1/inference.py": [
+      {
+        "line": 76,
+        "call": "torch.all"
+      },
+      {
+        "line": 77,
+        "call": "torch.all"
+      },
+      {
+        "line": 78,
+        "call": "torch.all"
+      },
+      {
+        "line": 84,
+        "call": "torch.full([batch_size, 1], num_tokens, dtype=t.int).to"
+      },
+      {
+        "line": 84,
+        "call": "torch.full"
+      },
+      {
+        "line": 86,
+        "call": "torch.ones([batch_size, 1], dtype=t.int).to"
+      },
+      {
+        "line": 86,
+        "call": "torch.ones"
+      },
+      {
+        "line": 100,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 115,
+        "call": "torch.concat"
+      },
+      {
+        "line": 116,
+        "call": "torch.sqrt"
+      },
+      {
+        "line": 156,
+        "call": "torch.clip"
+      },
+      {
+        "line": 164,
+        "call": "torch.where"
+      },
+      {
+        "line": 165,
+        "call": "torch.arange(self._args['max_tokens']).to(device).view"
+      },
+      {
+        "line": 165,
+        "call": "torch.arange(self._args['max_tokens']).to"
+      },
+      {
+        "line": 165,
+        "call": "torch.arange"
+      },
+      {
+        "line": 168,
+        "call": "torch.full_like"
+      },
+      {
+        "line": 171,
+        "call": "torch.arange(num_tokens).to(device)[None, :].expand"
+      },
+      {
+        "line": 171,
+        "call": "torch.arange(num_tokens).to"
+      },
+      {
+        "line": 171,
+        "call": "torch.arange"
+      },
+      {
+        "line": 213,
+        "call": "torch.stack"
+      },
+      {
+        "line": 213,
+        "call": "torch.cos"
+      },
+      {
+        "line": 213,
+        "call": "torch.sin"
+      },
+      {
+        "line": 272,
+        "call": "torch.gather"
+      },
+      {
+        "line": 333,
+        "call": "torch.full([batch_size, self._args['max_tokens'], num_pose_heads], self._pose_model.backbone_net.POSE_MASK_ID).to"
+      },
+      {
+        "line": 333,
+        "call": "torch.full"
+      },
+      {
+        "line": 337,
+        "call": "torch.full([batch_size, self._args['max_tokens'], num_pose_heads], 1.0 / num_pose_heads).to"
+      },
+      {
+        "line": 337,
+        "call": "torch.full"
+      },
+      {
+        "line": 340,
+        "call": "torch.concat"
+      },
+      {
+        "line": 343,
+        "call": "torch.zeros([batch_size, (self._args['max_tokens'] - 1) * num_frames_per_token, batch['local_poses'].shape[-1]]).to"
+      },
+      {
+        "line": 343,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 353,
+        "call": "torch.concat"
+      },
+      {
+        "line": 356,
+        "call": "torch.zeros([batch_size, (self._args['max_tokens'] - 1) * num_frames_per_token], dtype=bool).to"
+      },
+      {
+        "line": 356,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 364,
+        "call": "torch.nn.functional.one_hot"
+      },
+      {
+        "line": 375,
+        "call": "torch.logical_or"
+      },
+      {
+        "line": 464,
+        "call": "torch.arange(self._args['max_tokens']).to(device)[None, :].repeat"
+      },
+      {
+        "line": 464,
+        "call": "torch.arange(self._args['max_tokens']).to"
+      },
+      {
+        "line": 464,
+        "call": "torch.arange"
+      },
+      {
+        "line": 473,
+        "call": "torch.logical_and"
+      },
+      {
+        "line": 481,
+        "call": "torch.zeros_like(batch['pred_has_pose_cond']).bool"
+      },
+      {
+        "line": 481,
+        "call": "torch.zeros_like"
+      },
+      {
+        "line": 484,
+        "call": "torch.zeros_like(has_target_cond).bool"
+      },
+      {
+        "line": 484,
+        "call": "torch.zeros_like"
+      }
+    ],
+    "tools/onnx/models/g1/model.py": [
+      {
+        "line": 127,
+        "call": "torch.from_numpy(mean).float"
+      },
+      {
+        "line": 127,
+        "call": "torch.from_numpy(std).float"
+      },
+      {
+        "line": 127,
+        "call": "torch.from_numpy"
+      },
+      {
+        "line": 127,
+        "call": "torch.from_numpy"
+      }
+    ],
+    "tools/onnx/models/g1/networks.py": [
+      {
+        "line": 36,
+        "call": "torch.nn.TransformerEncoderLayer"
+      },
+      {
+        "line": 39,
+        "call": "torch.nn.TransformerEncoder"
+      },
+      {
+        "line": 43,
+        "call": "torch.nn.TransformerEncoder"
+      },
+      {
+        "line": 49,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 54,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 59,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 78,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 81,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 84,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 87,
+        "call": "torch.nn.Parameter"
+      },
+      {
+        "line": 88,
+        "call": "torch.randn"
+      },
+      {
+        "line": 90,
+        "call": "torch.nn.Parameter"
+      },
+      {
+        "line": 91,
+        "call": "torch.randn"
+      },
+      {
+        "line": 93,
+        "call": "torch.nn.Parameter"
+      },
+      {
+        "line": 94,
+        "call": "torch.randn"
+      },
+      {
+        "line": 96,
+        "call": "torch.nn.Parameter"
+      },
+      {
+        "line": 96,
+        "call": "torch.randn"
+      },
+      {
+        "line": 114,
+        "call": "torch.nn.Embedding"
+      },
+      {
+        "line": 117,
+        "call": "torch.nn.Embedding"
+      },
+      {
+        "line": 124,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 139,
+        "call": "torch.nn.Embedding"
+      },
+      {
+        "line": 179,
+        "call": "torch.cat"
+      },
+      {
+        "line": 188,
+        "call": "torch.cat"
+      },
+      {
+        "line": 197,
+        "call": "torch.cat"
+      },
+      {
+        "line": 205,
+        "call": "torch.concat"
+      },
+      {
+        "line": 210,
+        "call": "torch.concat"
+      },
+      {
+        "line": 213,
+        "call": "torch.zeros([batch_size, 1 + 1 + num_frames_per_token * 2], device=device).bool"
+      },
+      {
+        "line": 213,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 243,
+        "call": "torch.where"
+      },
+      {
+        "line": 246,
+        "call": "torch.full([batch_size, num_time_tokens], -t.inf).to"
+      },
+      {
+        "line": 246,
+        "call": "torch.full"
+      },
+      {
+        "line": 248,
+        "call": "torch.cat"
+      },
+      {
+        "line": 252,
+        "call": "torch.argmax(num_token_logits, dim=-1).int"
+      },
+      {
+        "line": 252,
+        "call": "torch.argmax"
+      },
+      {
+        "line": 253,
+        "call": "torch.where"
+      },
+      {
+        "line": 258,
+        "call": "torch.arange(self._args['max_tokens']).to"
+      },
+      {
+        "line": 258,
+        "call": "torch.arange"
+      },
+      {
+        "line": 264,
+        "call": "torch.arange(self._args['max_tokens']).view([1, -1]).to"
+      },
+      {
+        "line": 264,
+        "call": "torch.arange(self._args['max_tokens']).view"
+      },
+      {
+        "line": 264,
+        "call": "torch.arange"
+      },
+      {
+        "line": 271,
+        "call": "torch.concat"
+      },
+      {
+        "line": 279,
+        "call": "torch.cat"
+      },
+      {
+        "line": 281,
+        "call": "torch.zeros([batch_size, 1 + num_frames_per_token * 2], device=device).bool"
+      },
+      {
+        "line": 281,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 298,
+        "call": "torch.logical_or"
+      },
+      {
+        "line": 299,
+        "call": "torch.logical_or"
+      },
+      {
+        "line": 301,
+        "call": "torch.where"
+      },
+      {
+        "line": 306,
+        "call": "torch.cat"
+      },
+      {
+        "line": 319,
+        "call": "torch.cat"
+      },
+      {
+        "line": 322,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 334,
+        "call": "torch.cat"
+      },
+      {
+        "line": 337,
+        "call": "torch.zeros([batch_size, num_total_frames - num_frames_per_token], device=device).bool"
+      },
+      {
+        "line": 337,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 419,
+        "call": "torch.Tensor([False]).to"
+      },
+      {
+        "line": 419,
+        "call": "torch.Tensor"
+      },
+      {
+        "line": 422,
+        "call": "torch.nn.TransformerEncoderLayer"
+      },
+      {
+        "line": 425,
+        "call": "torch.nn.TransformerEncoder"
+      },
+      {
+        "line": 436,
+        "call": "torch.nn.Embedding"
+      },
+      {
+        "line": 448,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 454,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 458,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 463,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 467,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 474,
+        "call": "torch.nn.Embedding"
+      },
+      {
+        "line": 478,
+        "call": "torch.nn.Sequential"
+      },
+      {
+        "line": 479,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 485,
+        "call": "torch.nn.ReLU"
+      },
+      {
+        "line": 490,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 536,
+        "call": "torch.arange(num_pose_heads).view([1, 1, num_pose_heads]).to"
+      },
+      {
+        "line": 536,
+        "call": "torch.arange(num_pose_heads).view"
+      },
+      {
+        "line": 536,
+        "call": "torch.arange"
+      },
+      {
+        "line": 562,
+        "call": "torch.arange(num_positions).to"
+      },
+      {
+        "line": 562,
+        "call": "torch.arange"
+      },
+      {
+        "line": 568,
+        "call": "torch.cat"
+      },
+      {
+        "line": 572,
+        "call": "torch.arange(num_positions).to"
+      },
+      {
+        "line": 572,
+        "call": "torch.arange"
+      },
+      {
+        "line": 577,
+        "call": "torch.concat"
+      },
+      {
+        "line": 578,
+        "call": "torch.zeros([batch_size, 1 + num_positions], device=device).bool"
+      },
+      {
+        "line": 578,
+        "call": "torch.zeros"
+      }
+    ],
+    "tools/onnx/models/g1/rig.py": [
+      {
+        "line": 21,
+        "call": "torch.stack((1 - s * (j * j + k * k), s * (i * j - k * r), s * (i * k + j * r), s * (i * j + k * r), 1 - s * (i * i + k * k), s * (j * k - i * r), s * (i * k - j * r), s * (j * k + i * r), 1 - s * (i * i + j * j)), -1).reshape"
+      },
+      {
+        "line": 21,
+        "call": "torch.stack"
+      },
+      {
+        "line": 43,
+        "call": "torch.stack((1 + m00 + m11 + m22, 1 + m00 - m11 - m22, 1 - m00 + m11 - m22, 1 - m00 - m11 + m22), -1).clamp_min(0).sqrt"
+      },
+      {
+        "line": 43,
+        "call": "torch.stack((1 + m00 + m11 + m22, 1 + m00 - m11 - m22, 1 - m00 + m11 - m22, 1 - m00 - m11 + m22), -1).clamp_min"
+      },
+      {
+        "line": 43,
+        "call": "torch.stack"
+      },
+      {
+        "line": 55,
+        "call": "torch.stack"
+      },
+      {
+        "line": 57,
+        "call": "torch.stack"
+      },
+      {
+        "line": 58,
+        "call": "torch.stack"
+      },
+      {
+        "line": 59,
+        "call": "torch.stack"
+      },
+      {
+        "line": 60,
+        "call": "torch.stack"
+      },
+      {
+        "line": 76,
+        "call": "torch.cross"
+      },
+      {
+        "line": 78,
+        "call": "torch.stack"
+      },
+      {
+        "line": 78,
+        "call": "torch.cross"
+      },
+      {
+        "line": 98,
+        "call": "torch.tensor"
+      },
+      {
+        "line": 104,
+        "call": "torch.tensor"
+      },
+      {
+        "line": 108,
+        "call": "torch.tensor"
+      },
+      {
+        "line": 111,
+        "call": "torch.tensor"
+      },
+      {
+        "line": 114,
+        "call": "torch.tensor"
+      },
+      {
+        "line": 117,
+        "call": "torch.tensor"
+      },
+      {
+        "line": 123,
+        "call": "torch.cat"
+      },
+      {
+        "line": 125,
+        "call": "torch.cos"
+      },
+      {
+        "line": 126,
+        "call": "torch.sin"
+      },
+      {
+        "line": 156,
+        "call": "torch.stack"
+      },
+      {
+        "line": 156,
+        "call": "torch.stack"
+      },
+      {
+        "line": 163,
+        "call": "torch.cat"
+      },
+      {
+        "line": 174,
+        "call": "torch.stack"
+      },
+      {
+        "line": 176,
+        "call": "torch.atan2"
+      },
+      {
+        "line": 177,
+        "call": "torch.atan2"
+      },
+      {
+        "line": 178,
+        "call": "torch.atan2"
+      },
+      {
+        "line": 197,
+        "call": "torch.cat"
+      },
+      {
+        "line": 198,
+        "call": "torch.cat"
+      },
+      {
+        "line": 203,
+        "call": "torch.atan2"
+      },
+      {
+        "line": 204,
+        "call": "torch.cat"
+      },
+      {
+        "line": 217,
+        "call": "torch.cat"
+      },
+      {
+        "line": 220,
+        "call": "torch.cat"
+      },
+      {
+        "line": 222,
+        "call": "torch.zeros_like"
+      },
+      {
+        "line": 227,
+        "call": "torch.cat"
+      },
+      {
+        "line": 229,
+        "call": "torch.cat"
+      },
+      {
+        "line": 230,
+        "call": "torch.cat"
+      },
+      {
+        "line": 240,
+        "call": "torch.cat"
+      },
+      {
+        "line": 255,
+        "call": "torch.cat"
+      }
+    ],
+    "tools/onnx/models/layers.py": [
+      {
+        "line": 36,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 37,
+        "call": "torch.nn.LeakyReLU"
+      },
+      {
+        "line": 39,
+        "call": "torch.nn.Dropout"
+      },
+      {
+        "line": 40,
+        "call": "torch.nn.Identity"
+      },
+      {
+        "line": 42,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 45,
+        "call": "torch.nn.LeakyReLU"
+      },
+      {
+        "line": 47,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 48,
+        "call": "torch.nn.ModuleList"
+      },
+      {
+        "line": 49,
+        "call": "torch.nn.ModuleList"
+      },
+      {
+        "line": 70,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 71,
+        "call": "torch.arange(0, seq_length).unsqueeze"
+      },
+      {
+        "line": 71,
+        "call": "torch.arange"
+      },
+      {
+        "line": 72,
+        "call": "torch.exp"
+      },
+      {
+        "line": 73,
+        "call": "torch.arange"
+      },
+      {
+        "line": 75,
+        "call": "torch.sin"
+      },
+      {
+        "line": 76,
+        "call": "torch.cos"
+      },
+      {
+        "line": 85,
+        "call": "torch.nn.Parameter"
+      },
+      {
+        "line": 86,
+        "call": "torch.nn.Dropout"
+      },
+      {
+        "line": 102,
+        "call": "torch.sigmoid"
+      },
+      {
+        "line": 115,
+        "call": "torch.nn.LayerNorm"
+      },
+      {
+        "line": 116,
+        "call": "torch.nn.LayerNorm"
+      },
+      {
+        "line": 118,
+        "call": "torch.nn.GroupNorm"
+      },
+      {
+        "line": 121,
+        "call": "torch.nn.GroupNorm"
+      },
+      {
+        "line": 125,
+        "call": "torch.nn.BatchNorm1d"
+      },
+      {
+        "line": 126,
+        "call": "torch.nn.BatchNorm1d"
+      },
+      {
+        "line": 128,
+        "call": "torch.nn.Identity"
+      },
+      {
+        "line": 129,
+        "call": "torch.nn.Identity"
+      },
+      {
+        "line": 131,
+        "call": "torch.nn.ReLU"
+      },
+      {
+        "line": 132,
+        "call": "torch.nn.ReLU"
+      },
+      {
+        "line": 137,
+        "call": "torch.nn.GELU"
+      },
+      {
+        "line": 138,
+        "call": "torch.nn.GELU"
+      },
+      {
+        "line": 139,
+        "call": "torch.nn.Conv1d"
+      },
+      {
+        "line": 140,
+        "call": "torch.nn.Conv1d"
+      },
+      {
+        "line": 191,
+        "call": "torch.nn.Sequential"
+      },
+      {
+        "line": 217,
+        "call": "torch.nn.Conv1d"
+      },
+      {
+        "line": 218,
+        "call": "torch.nn.ReLU"
+      },
+      {
+        "line": 222,
+        "call": "torch.nn.Sequential"
+      },
+      {
+        "line": 223,
+        "call": "torch.nn.Conv1d"
+      },
+      {
+        "line": 229,
+        "call": "torch.nn.Conv1d"
+      },
+      {
+        "line": 230,
+        "call": "torch.nn.Sequential"
+      },
+      {
+        "line": 273,
+        "call": "torch.nn.Conv1d"
+      },
+      {
+        "line": 274,
+        "call": "torch.nn.ReLU"
+      },
+      {
+        "line": 277,
+        "call": "torch.nn.Sequential"
+      },
+      {
+        "line": 286,
+        "call": "torch.nn.Upsample"
+      },
+      {
+        "line": 287,
+        "call": "torch.nn.Conv1d"
+      },
+      {
+        "line": 290,
+        "call": "torch.nn.Conv1d"
+      },
+      {
+        "line": 291,
+        "call": "torch.nn.ReLU"
+      },
+      {
+        "line": 292,
+        "call": "torch.nn.Conv1d"
+      },
+      {
+        "line": 293,
+        "call": "torch.nn.Sequential"
+      },
+      {
+        "line": 298,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 299,
+        "call": "torch.nn.ReLU"
+      },
+      {
+        "line": 300,
+        "call": "torch.nn.ModuleList"
+      },
+      {
+        "line": 308,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 310,
+        "call": "torch.nn.ReLU"
+      },
+      {
+        "line": 311,
+        "call": "torch.nn.ModuleList"
+      },
+      {
+        "line": 346,
+        "call": "torch.where"
+      },
+      {
+        "line": 351,
+        "call": "torch.cat"
+      }
+    ],
+    "tools/onnx/models/quantizer.py": [
+      {
+        "line": 25,
+        "call": "torch.nn.Module"
+      },
+      {
+        "line": 28,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 29,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 30,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 31,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 71,
+        "call": "torch.arange(0, self.num_heads)[None, None, :].to"
+      },
+      {
+        "line": 71,
+        "call": "torch.arange"
+      }
+    ],
+    "tools/onnx/models/representation.py": [
+      {
+        "line": 18,
+        "call": "torch.cat((a[:, 0:1], -a[:, 1:]), dim=-1).view"
+      },
+      {
+        "line": 18,
+        "call": "torch.cat"
+      },
+      {
+        "line": 33,
+        "call": "torch.cos"
+      },
+      {
+        "line": 34,
+        "call": "torch.sin"
+      },
+      {
+        "line": 37,
+        "call": "torch.arctan2"
+      },
+      {
+        "line": 62,
+        "call": "torch.clip"
+      },
+      {
+        "line": 63,
+        "call": "torch.sqrt"
+      },
+      {
+        "line": 73,
+        "call": "torch.clip"
+      },
+      {
+        "line": 74,
+        "call": "torch.sqrt"
+      },
+      {
+        "line": 213,
+        "call": "torch.cat"
+      },
+      {
+        "line": 251,
+        "call": "torch.atan2"
+      },
+      {
+        "line": 252,
+        "call": "torch.stack"
+      },
+      {
+        "line": 254,
+        "call": "torch.cos"
+      },
+      {
+        "line": 255,
+        "call": "torch.zeros_like"
+      },
+      {
+        "line": 256,
+        "call": "torch.sin"
+      },
+      {
+        "line": 257,
+        "call": "torch.zeros_like"
+      },
+      {
+        "line": 277,
+        "call": "torch.arctan2"
+      },
+      {
+        "line": 278,
+        "call": "torch.cat"
+      },
+      {
+        "line": 281,
+        "call": "torch.cos"
+      },
+      {
+        "line": 282,
+        "call": "torch.sin"
+      },
+      {
+        "line": 330,
+        "call": "torch.zeros_like"
+      },
+      {
+        "line": 332,
+        "call": "torch.cumsum"
+      },
+      {
+        "line": 333,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 334,
+        "call": "torch.cos"
+      },
+      {
+        "line": 335,
+        "call": "torch.sin"
+      },
+      {
+        "line": 336,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 341,
+        "call": "torch.cumsum"
+      },
+      {
+        "line": 563,
+        "call": "torch.atan2"
+      },
+      {
+        "line": 565,
+        "call": "torch.cat"
+      },
+      {
+        "line": 566,
+        "call": "torch.zeros_like"
+      },
+      {
+        "line": 571,
+        "call": "torch.cat"
+      },
+      {
+        "line": 572,
+        "call": "torch.zeros_like"
+      },
+      {
+        "line": 585,
+        "call": "torch.cat"
+      }
+    ],
+    "tools/onnx/models/soma/features.py": [
+      {
+        "line": 16,
+        "call": "torch.maximum"
+      }
+    ],
+    "tools/onnx/models/soma/inference.py": [
+      {
+        "line": 24,
+        "call": "torch.arange(num_frames_per_token, device=pred_num_tokens.device).reshape"
+      },
+      {
+        "line": 24,
+        "call": "torch.arange"
+      },
+      {
+        "line": 88,
+        "call": "torch.all"
+      },
+      {
+        "line": 89,
+        "call": "torch.all"
+      },
+      {
+        "line": 90,
+        "call": "torch.all"
+      },
+      {
+        "line": 96,
+        "call": "torch.full([batch_size, 1], num_tokens, dtype=t.int).to"
+      },
+      {
+        "line": 96,
+        "call": "torch.full"
+      },
+      {
+        "line": 98,
+        "call": "torch.ones([batch_size, 1], dtype=t.int).to"
+      },
+      {
+        "line": 98,
+        "call": "torch.ones"
+      },
+      {
+        "line": 112,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 127,
+        "call": "torch.concat"
+      },
+      {
+        "line": 128,
+        "call": "torch.sqrt"
+      },
+      {
+        "line": 168,
+        "call": "torch.clip"
+      },
+      {
+        "line": 176,
+        "call": "torch.where"
+      },
+      {
+        "line": 177,
+        "call": "torch.arange(self._args['max_tokens']).to(device).view([1, -1, 1]).expand"
+      },
+      {
+        "line": 177,
+        "call": "torch.arange(self._args['max_tokens']).to(device).view"
+      },
+      {
+        "line": 177,
+        "call": "torch.arange(self._args['max_tokens']).to"
+      },
+      {
+        "line": 177,
+        "call": "torch.arange"
+      },
+      {
+        "line": 183,
+        "call": "torch.full_like"
+      },
+      {
+        "line": 186,
+        "call": "torch.arange(num_tokens).to(device)[None, :].repeat"
+      },
+      {
+        "line": 186,
+        "call": "torch.arange(num_tokens).to"
+      },
+      {
+        "line": 186,
+        "call": "torch.arange"
+      },
+      {
+        "line": 228,
+        "call": "torch.stack"
+      },
+      {
+        "line": 228,
+        "call": "torch.cos"
+      },
+      {
+        "line": 228,
+        "call": "torch.sin"
+      },
+      {
+        "line": 302,
+        "call": "torch.gather"
+      },
+      {
+        "line": 354,
+        "call": "torch.full([batch_size, self._args['max_tokens'], num_pose_heads], self._mmm_pose_model.mmm_net.POSE_MASK_ID).to"
+      },
+      {
+        "line": 354,
+        "call": "torch.full"
+      },
+      {
+        "line": 358,
+        "call": "torch.full([batch_size, self._args['max_tokens'], num_pose_heads], 1.0 / num_pose_heads).to"
+      },
+      {
+        "line": 358,
+        "call": "torch.full"
+      },
+      {
+        "line": 361,
+        "call": "torch.concat"
+      },
+      {
+        "line": 364,
+        "call": "torch.zeros([batch_size, (self._args['max_tokens'] - 1) * num_frames_per_token, batch['local_poses'].shape[-1]]).to"
+      },
+      {
+        "line": 364,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 374,
+        "call": "torch.concat"
+      },
+      {
+        "line": 377,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 386,
+        "call": "torch.nn.functional.one_hot"
+      },
+      {
+        "line": 452,
+        "call": "torch.randint_like"
+      },
+      {
+        "line": 457,
+        "call": "torch.where"
+      },
+      {
+        "line": 458,
+        "call": "torch.rand_like"
+      },
+      {
+        "line": 496,
+        "call": "torch.arange(self._args['max_tokens']).to(device)[None, :].repeat"
+      },
+      {
+        "line": 496,
+        "call": "torch.arange(self._args['max_tokens']).to"
+      },
+      {
+        "line": 496,
+        "call": "torch.arange"
+      },
+      {
+        "line": 505,
+        "call": "torch.logical_and"
+      },
+      {
+        "line": 513,
+        "call": "torch.zeros_like(batch['pred_has_pose_cond']).bool"
+      },
+      {
+        "line": 513,
+        "call": "torch.zeros_like"
+      },
+      {
+        "line": 516,
+        "call": "torch.zeros_like(has_target_cond).bool"
+      },
+      {
+        "line": 516,
+        "call": "torch.zeros_like"
+      },
+      {
+        "line": 580,
+        "call": "torch.gather"
+      },
+      {
+        "line": 587,
+        "call": "torch.gather"
+      },
+      {
+        "line": 605,
+        "call": "torch.logical_and(avg_height_error_from_root < avg_height_error_from_pose, avg_height_error_from_pose > 0.05)[:, None, None].float"
+      },
+      {
+        "line": 605,
+        "call": "torch.logical_and"
+      }
+    ],
+    "tools/onnx/models/soma/model.py": [
+      {
+        "line": 52,
+        "call": "torch.cat"
+      },
+      {
+        "line": 95,
+        "call": "torch.from_numpy"
+      },
+      {
+        "line": 96,
+        "call": "torch.from_numpy"
+      },
+      {
+        "line": 121,
+        "call": "torch.cat"
+      },
+      {
+        "line": 184,
+        "call": "torch.from_numpy(mean).float"
+      },
+      {
+        "line": 184,
+        "call": "torch.from_numpy(std).float"
+      },
+      {
+        "line": 184,
+        "call": "torch.from_numpy"
+      },
+      {
+        "line": 184,
+        "call": "torch.from_numpy"
+      }
+    ],
+    "tools/onnx/models/soma/networks.py": [
+      {
+        "line": 35,
+        "call": "torch.Tensor([False]).to"
+      },
+      {
+        "line": 35,
+        "call": "torch.Tensor"
+      },
+      {
+        "line": 53,
+        "call": "torch.nn.TransformerEncoderLayer"
+      },
+      {
+        "line": 56,
+        "call": "torch.nn.TransformerEncoder"
+      },
+      {
+        "line": 72,
+        "call": "torch.nn.Embedding"
+      },
+      {
+        "line": 84,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 90,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 94,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 99,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 103,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 110,
+        "call": "torch.nn.Embedding"
+      },
+      {
+        "line": 114,
+        "call": "torch.nn.Sequential"
+      },
+      {
+        "line": 115,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 121,
+        "call": "torch.nn.ReLU"
+      },
+      {
+        "line": 126,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 172,
+        "call": "torch.arange(num_pose_heads).view([1, 1, num_pose_heads]).to"
+      },
+      {
+        "line": 172,
+        "call": "torch.arange(num_pose_heads).view"
+      },
+      {
+        "line": 172,
+        "call": "torch.arange"
+      },
+      {
+        "line": 198,
+        "call": "torch.arange(num_positions).to"
+      },
+      {
+        "line": 198,
+        "call": "torch.arange"
+      },
+      {
+        "line": 204,
+        "call": "torch.cat"
+      },
+      {
+        "line": 208,
+        "call": "torch.arange(num_positions).to"
+      },
+      {
+        "line": 208,
+        "call": "torch.arange"
+      },
+      {
+        "line": 213,
+        "call": "torch.concat"
+      },
+      {
+        "line": 214,
+        "call": "torch.zeros([batch_size, 1 + num_positions], device=device).bool"
+      },
+      {
+        "line": 214,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 310,
+        "call": "torch.nn.TransformerEncoderLayer"
+      },
+      {
+        "line": 313,
+        "call": "torch.nn.TransformerEncoder"
+      },
+      {
+        "line": 317,
+        "call": "torch.nn.TransformerEncoder"
+      },
+      {
+        "line": 323,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 328,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 333,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 352,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 355,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 358,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 361,
+        "call": "torch.nn.Parameter"
+      },
+      {
+        "line": 362,
+        "call": "torch.randn"
+      },
+      {
+        "line": 364,
+        "call": "torch.nn.Parameter"
+      },
+      {
+        "line": 365,
+        "call": "torch.randn"
+      },
+      {
+        "line": 367,
+        "call": "torch.nn.Parameter"
+      },
+      {
+        "line": 368,
+        "call": "torch.randn"
+      },
+      {
+        "line": 370,
+        "call": "torch.nn.Parameter"
+      },
+      {
+        "line": 370,
+        "call": "torch.randn"
+      },
+      {
+        "line": 388,
+        "call": "torch.nn.Embedding"
+      },
+      {
+        "line": 391,
+        "call": "torch.nn.Embedding"
+      },
+      {
+        "line": 398,
+        "call": "torch.nn.Linear"
+      },
+      {
+        "line": 413,
+        "call": "torch.nn.Embedding"
+      },
+      {
+        "line": 453,
+        "call": "torch.cat"
+      },
+      {
+        "line": 462,
+        "call": "torch.cat"
+      },
+      {
+        "line": 471,
+        "call": "torch.cat"
+      },
+      {
+        "line": 479,
+        "call": "torch.concat"
+      },
+      {
+        "line": 484,
+        "call": "torch.concat"
+      },
+      {
+        "line": 487,
+        "call": "torch.zeros([batch_size, 1 + 1 + num_frames_per_token * 2], device=device).bool"
+      },
+      {
+        "line": 487,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 517,
+        "call": "torch.where"
+      },
+      {
+        "line": 520,
+        "call": "torch.full([batch_size, num_time_tokens], -t.inf).to"
+      },
+      {
+        "line": 520,
+        "call": "torch.full"
+      },
+      {
+        "line": 522,
+        "call": "torch.cat"
+      },
+      {
+        "line": 526,
+        "call": "torch.argmax(num_token_logits, dim=-1).int"
+      },
+      {
+        "line": 526,
+        "call": "torch.argmax"
+      },
+      {
+        "line": 527,
+        "call": "torch.where"
+      },
+      {
+        "line": 532,
+        "call": "torch.arange(self._args['max_tokens']).to"
+      },
+      {
+        "line": 532,
+        "call": "torch.arange"
+      },
+      {
+        "line": 538,
+        "call": "torch.arange(self._args['max_tokens']).view([1, -1]).to"
+      },
+      {
+        "line": 538,
+        "call": "torch.arange(self._args['max_tokens']).view"
+      },
+      {
+        "line": 538,
+        "call": "torch.arange"
+      },
+      {
+        "line": 545,
+        "call": "torch.concat"
+      },
+      {
+        "line": 553,
+        "call": "torch.cat"
+      },
+      {
+        "line": 555,
+        "call": "torch.zeros([batch_size, 1 + num_frames_per_token * 2], device=device).bool"
+      },
+      {
+        "line": 555,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 575,
+        "call": "torch.where"
+      },
+      {
+        "line": 580,
+        "call": "torch.cat"
+      },
+      {
+        "line": 593,
+        "call": "torch.cat"
+      },
+      {
+        "line": 596,
+        "call": "torch.zeros"
+      },
+      {
+        "line": 608,
+        "call": "torch.cat"
+      },
+      {
+        "line": 611,
+        "call": "torch.zeros"
+      }
+    ],
+    "tools/onnx/models/soma/rotations.py": [
+      {
+        "line": 15,
+        "call": "torch.norm"
+      },
+      {
+        "line": 16,
+        "call": "torch.cross"
+      },
+      {
+        "line": 17,
+        "call": "torch.norm"
+      },
+      {
+        "line": 18,
+        "call": "torch.cross"
+      },
+      {
+        "line": 22,
+        "call": "torch.cat"
+      },
+      {
+        "line": 28,
+        "call": "torch.concat"
+      },
+      {
+        "line": 43,
+        "call": "torch.matmul"
+      },
+      {
+        "line": 44,
+        "call": "torch.matmul"
+      }
+    ],
+    "tools/onnx/models/vqvae.py": [
+      {
+        "line": 101,
+        "call": "torch.zeros"
+      }
+    ]
+  }
+}
