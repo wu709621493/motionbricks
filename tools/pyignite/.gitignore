@@ -1,0 +1,3 @@
+pyignite/*.so
+pyignite/*.dylib
+__pycache__/

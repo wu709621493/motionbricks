@@ -1,0 +1,9 @@
+{
+  "backend": "native",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "numpy_process_peak_bytes": 21102592,
+  "after_backend_import_peak_bytes": 21757952,
+  "after_100_calls_peak_bytes": 25964544,
+  "peak_growth_after_import_bytes": 4206592,
+  "note": "Fresh process; peak growth is not live allocation or per-call peak. Synthetic source arrays retained in both processes."
+}
