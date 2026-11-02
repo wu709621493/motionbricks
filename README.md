@@ -302,3 +302,8 @@ The opt-in [sleep supervisor](docs/sleep_mode.md) pauses optional motion generat
 after stable dwell while retaining an independent balance callback on every tick.
 Includes disturbance recovery, latched telemetry/deadline faults, and CPU-only tests;
 physical balance and electrical savings require separate hardware validation.
+
+### Zero-error handling (experimental CPU utility)
+
+See [zero-error guard and Perception Theory evidence protocol](docs/zero_guard.md)
+for explicit division/log/normalization policies and optical sampling integration.

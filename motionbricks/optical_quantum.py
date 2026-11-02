@@ -177,6 +177,22 @@ def open_hardware(*args, **kwargs):
     raise HardwareUnavailable('No optical-clock or photonic hardware adapter is installed; no fallback')
 
 
+def sampling_statistics(request: PairRequest, result: PairResult):
+    """Opt-in descriptive statistics; no accepted shots means no correlation.
+
+    Keeps report() schema/hash stable. ZZ correlation is not entanglement proof.
+    """
+    from .zero_guard import divide
+    result.validate(request)
+    a, b, c, d = result.counts
+    accepted = a + b + c + d
+    return {'accepted_shots': accepted,
+            'acceptance_fraction': asdict(divide(accepted, request.shots)),
+            'zz_correlation': asdict(divide(a + d - b - c, accepted,
+                                           policy='undefined')),
+            'entanglement_verification': 'NOT_PERFORMED'}
+
+
 def report(request: PairRequest, result: PairResult):
     """Bind a measurement record to an artifact; a hash does not authenticate it."""
     result.validate(request)
