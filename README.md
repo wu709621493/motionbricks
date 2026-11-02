@@ -307,3 +307,9 @@ physical balance and electrical savings require separate hardware validation.
 
 See [zero-error guard and Perception Theory evidence protocol](docs/zero_guard.md)
 for explicit division/log/normalization policies and optical sampling integration.
+
+### Crew-led countdown (CPU simulation)
+
+[Zero-boundary countdown](docs/crew_countdown.md) preserves crew HOLD/ABORT,
+requires renewed consent after a pause, and separates reaching zero from a
+crew-confirmed simulation review request. No launch command is implemented.
