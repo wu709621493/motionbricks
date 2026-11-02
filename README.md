@@ -302,3 +302,10 @@ The opt-in [sleep supervisor](docs/sleep_mode.md) pauses optional motion generat
 after stable dwell while retaining an independent balance callback on every tick.
 Includes disturbance recovery, latched telemetry/deadline faults, and CPU-only tests;
 physical balance and electrical savings require separate hardware validation.
+
+## Experimental Rust inference core
+
+An incremental [Rust CPU core](native/motionbricks-core/README.md) ports multi-head
+codebook lookup and supplies FP32 linear, ReLU and softmax primitives. It has no
+LibTorch dependency; PyTorch is used only by numerical parity tests. This is an
+explicitly experimental subset, not a full framework or model replacement.
