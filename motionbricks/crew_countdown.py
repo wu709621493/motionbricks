@@ -55,7 +55,8 @@ class CrewCountdown:
 
     HOLD freezes remaining time and changes the consent epoch. Resume is explicit.
     Crossing zero cannot confirm: a later confirmation with fresh evidence is
-    required. Caller must bind confirm to an authenticated crew command.
+    required. Caller must bind resume and confirm to distinct authenticated human
+    commands; telemetry and automated ticks cannot issue either command.
     """
     def __init__(self, crew_ids, *, duration_s=10.0, max_age_s=0.5,
                  max_gap_s=0.5, window_end_s=60.0):
@@ -71,7 +72,9 @@ class CrewCountdown:
         self.max_age_s, self.max_gap_s = max_age_s, max_gap_s
         self.window_end_s = window_end_s
         self.phase, self.epoch = Phase.HOLD, 0
+        # Clock high-water mark survives HOLD; active monitoring does not.
         self._last_time, self._sequence = None, -1
+        self._monitor_time = None
         self._gate_time = None
 
     def progress(self):
@@ -84,6 +87,8 @@ class CrewCountdown:
         if self.phase != Phase.HOLD:
             self.epoch += 1
         self.phase = Phase.HOLD
+        self._monitor_time = None
+        self._gate_time = None
         return self._decision(reason)
 
     def _abort(self, reason):
@@ -96,7 +101,13 @@ class CrewCountdown:
             return self._decision('abort latched; create a new session')
         if command == 'abort':
             return self._abort('explicit abort')
+        # A finite clock still enforces the absolute window, even for HOLD.
+        # A veto must remain usable when the clock itself is unavailable.
+        if _finite(now_s) and now_s >= self.window_end_s:
+            return self._abort('simulation window expired')
         if command == 'hold':
+            if _finite(now_s) and (self._last_time is None or now_s > self._last_time):
+                self._last_time = now_s
             return self._hold('explicit hold; review withdrawn locally')
         if command not in ('tick', 'resume', 'confirm'):
             return self._hold('unknown command')
@@ -104,12 +115,10 @@ class CrewCountdown:
             return self._hold('resume/confirm requires a configured crew actor')
         if not _finite(now_s):
             return self._hold('invalid clock')
-        if now_s >= self.window_end_s:
-            return self._abort('simulation window expired')
-        previous = self._last_time
-        if previous is not None and now_s <= previous:
+        if self._last_time is not None and now_s <= self._last_time:
             return self._hold('clock did not advance')
         self._last_time = now_s
+        previous = self._monitor_time
         if previous is not None and now_s - previous > self.max_gap_s:
             return self._hold('missed monitoring deadline')
         if not isinstance(snapshot, Snapshot):
@@ -136,15 +145,20 @@ class CrewCountdown:
                     or not 0 <= now_s - v.timestamp_s <= self.max_age_s
                     or v.timestamp_s > snapshot.timestamp_s):
                 return self._hold('crew has not supplied current explicit GO')
+        if command == 'resume' and self.phase != Phase.HOLD:
+            return self._hold('resume requires HOLD; new crew consent required')
         if self.phase == Phase.REVIEW_REQUESTED:
+            self._monitor_time = now_s
             return self._decision('review already requested; no repeated event')
         if self.phase == Phase.HOLD:
             if command != 'resume':
                 return self._decision('explicit resume required')
+            self._monitor_time = now_s
             self.phase = Phase.COUNTING if self.remaining_s > 0 else Phase.AWAITING_CONFIRMATION
             if self.phase == Phase.AWAITING_CONFIRMATION:
                 self._gate_time = now_s
             return self._decision('resumed with current crew GO')
+        self._monitor_time = now_s
         if self.phase == Phase.COUNTING:
             self.remaining_s = max(0.0, self.remaining_s - (now_s - previous))
             if self.remaining_s == 0:
