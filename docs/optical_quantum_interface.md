@@ -132,3 +132,11 @@ they do not validate this proposed interface or claim compatibility with a devic
 The [500-atom BEC interface](bec500_interface.md) reuses these public clock types
 and optical records unchanged, with a tested classical record linker and optional
 CPU reference metadata. This does not imply physical atom–photon coupling.
+
+## Multi-setting numerical validation
+
+The independent [Bell/CHSH prototype](bell_chsh_validation.md) adds explicit
+Alice/Bob settings, all-trial loss accounting, finite-sample uncertainty, classical
+and ideal Bell-probability simulations, and adversarial selection controls.
+The legacy ZZ request and report remain unchanged. No physical entanglement is
+verified by either interface.
