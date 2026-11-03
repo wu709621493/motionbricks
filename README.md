@@ -321,3 +321,7 @@ plaque-area imaging, local pH monitoring, cleaning with sample recovery, and
 independent acid-production assays. Includes an evidence map, validation gates,
 a data dictionary and blank CSV templates. This is an unvalidated study design,
 not a dental device, clinical protocol approval, or implemented robot capability.
+
+### Shallow root–soil seismic research
+
+An isolated, standard-library [root–soil screening prototype](docs/root_soil_seismic.md) compares candidate shallow slip planes and synthetic sliding displacement. Inputs are uncalibrated; redwood/banyan measurements and physical validation are pending. This does not model tectonic faults or certify slope safety.

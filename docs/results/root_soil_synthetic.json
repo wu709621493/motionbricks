@@ -1,0 +1,1067 @@
+{
+  "evidence": "SYNTHETIC_UNCALIBRATED",
+  "species": {
+    "redwood": "identity and measurements pending",
+    "small_leaf_banyan": "identity and measurements pending"
+  },
+  "source_sha256": {
+    "model.py": "457dc2abddd0cf4c49009d421b5f87e2d15d6629ba0f936ea556504480a768bf",
+    "run_study.py": "5e640042aad903b94f11fe1ab994c23e66cd6c9bd0be34deb35480cb5cb9ba16"
+  },
+  "input_record": {
+    "dt_s": 0.02,
+    "segments_accel_g_and_samples": [
+      [
+        0,
+        10
+      ],
+      [
+        0.45,
+        20
+      ],
+      [
+        -0.2,
+        20
+      ],
+      [
+        0,
+        10
+      ]
+    ],
+    "meaning": "signed adverse horizontal inertia; synthetic rectangular pulse"
+  },
+  "cases": [
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 0.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 0.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.26799500302453794,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 5536.688665958111,
+            "static_margin_n": 5536.688665958111
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.19538978196372125,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 8073.377331916223,
+            "static_margin_n": 8073.377331916223
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.26799500302453794,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 5536.688665958111,
+            "static_margin_n": 5536.688665958111
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.23211133066800033,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.23211133066800033
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.38433030685976777,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.38433030685976777
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.23211133066800033,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.23211133066800033
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 1000.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 250.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.31639848373174906,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 6536.688665958111,
+            "static_margin_n": 6536.688665958111
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.19538978196372125,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 8073.377331916223,
+            "static_margin_n": 8073.377331916223
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.2800958732013407,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 5786.688665958111,
+            "static_margin_n": 5786.688665958111
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.15441186703896778,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.15441186703896778
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.38433030685976777,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.38433030685976777
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.21121764700787451,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.21121764700787451
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 3000.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 750.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.41320544514617125,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 8536.68866595811,
+            "static_margin_n": 8536.68866595811
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.19538978196372125,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 8073.377331916223,
+            "static_margin_n": 8073.377331916223
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.3042976135549463,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 6286.688665958111,
+            "static_margin_n": 6286.688665958111
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.035812265538671076,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.035812265538671076
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.38433030685976777,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.38433030685976777
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.17243840520744166,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.17243840520744166
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 6000.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 0.0,
+          "root_cohesion_pa": 1500.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.5584158872678048,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 11536.688665958114,
+            "static_margin_n": 11536.688665958114
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.19538978196372125,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 8073.377331916223,
+            "static_margin_n": 8073.377331916223
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.3406002240853546,
+            "effective_contact_limit_kh": 2.1445069205095586,
+            "static_margin_pa": 7036.688665958111,
+            "static_margin_n": 7036.688665958111
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.0,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.0
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.38433030685976777,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.38433030685976777
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.12077984184179298,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.12077984184179298
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 0.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 0.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.2075032997851966,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 4286.949962139456,
+            "static_margin_n": 4286.949962139456
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.16514393034405062,
+            "effective_contact_limit_kh": 2.010459469536523,
+            "static_margin_pa": 6823.638628097569,
+            "static_margin_n": 6823.638628097569
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.2075032997851966,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 4286.949962139456,
+            "static_margin_n": 4286.949962139456
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.3551640085590766,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.3551640085590766
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.4656028578881847,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.4656028578881847
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.3551640085590766,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.3551640085590766
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 1000.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 250.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.2559067804924077,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 5286.949962139456,
+            "static_margin_n": 5286.949962139456
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.16514393034405062,
+            "effective_contact_limit_kh": 2.010459469536523,
+            "static_margin_pa": 6823.638628097569,
+            "static_margin_n": 6823.638628097569
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.21960416996199938,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 4536.949962139456,
+            "static_margin_n": 4536.949962139456
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.2540905762330544,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.2540905762330544
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.4656028578881847,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.4656028578881847
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.327709525010184,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.327709525010184
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 3000.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 750.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.35271374190682997,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 7286.949962139456,
+            "static_margin_n": 7286.949962139456
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.16514393034405062,
+            "effective_contact_limit_kh": 2.010459469536523,
+            "static_margin_pa": 6823.638628097569,
+            "static_margin_n": 6823.638628097569
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.24380591031560495,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 5036.949962139456,
+            "static_margin_n": 5036.949962139456
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.10505228002071731,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.10505228002071731
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.4656028578881847,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.4656028578881847
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.277292023214788,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.277292023214788
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 6000.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 2000.0,
+          "root_cohesion_pa": 1500.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.4979241840284634,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 10286.949962139457,
+            "static_margin_n": 10286.949962139457
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.16514393034405062,
+            "effective_contact_limit_kh": 2.010459469536523,
+            "static_margin_pa": 6823.638628097569,
+            "static_margin_n": 6823.638628097569
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.2801085208460133,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 5786.949962139456,
+            "static_margin_n": 5786.949962139456
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.0,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.0
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.4656028578881847,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.4656028578881847
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.21119636023279312,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.21119636023279312
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 0.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 0.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.14701159654585538,
+            "effective_contact_limit_kh": 1.6083171166174155,
+            "static_margin_pa": 3037.2112583208027,
+            "static_margin_n": 3037.2112583208027
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.13489807872437992,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 5573.899924278912,
+            "static_margin_n": 5573.899924278912
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.14701159654585538,
+            "effective_contact_limit_kh": 1.6083171166174155,
+            "static_margin_pa": 3037.2112583208027,
+            "static_margin_n": 3037.2112583208027
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.5211182271933857,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.5211182271933857
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.5615554424869387,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.5615554424869387
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.5211182271933857,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.5211182271933857
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 1000.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 250.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.1954150772530665,
+            "effective_contact_limit_kh": 1.6083171166174155,
+            "static_margin_pa": 4037.2112583208027,
+            "static_margin_n": 4037.2112583208027
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.13489807872437992,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 5573.899924278912,
+            "static_margin_n": 5573.899924278912
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.15911246672265816,
+            "effective_contact_limit_kh": 1.6083171166174155,
+            "static_margin_pa": 3287.2112583208027,
+            "static_margin_n": 3287.2112583208027
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.38426754026222515,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.38426754026222515
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.5615554424869387,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.5615554424869387
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.4834470030230959,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.4834470030230959
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 3000.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 750.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.29222203866748875,
+            "effective_contact_limit_kh": 1.6083171166174155,
+            "static_margin_pa": 6037.211258320803,
+            "static_margin_n": 6037.211258320803
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.13489807872437992,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 5573.899924278912,
+            "static_margin_n": 5573.899924278912
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.18331420707626372,
+            "effective_contact_limit_kh": 1.6083171166174155,
+            "static_margin_pa": 3787.2112583208027,
+            "static_margin_n": 3787.2112583208027
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.19131081898685337,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.19131081898685337
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.5615554424869387,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.5615554424869387
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.4152400260739312,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.4152400260739312
+        }
+      }
+    },
+    {
+      "inputs": [
+        {
+          "label": "patch_A_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 6000.0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_A_depth_2m_below_roots",
+          "slope_deg": 25,
+          "thickness_m": 2,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 0,
+          "area_m2": 1.0
+        },
+        {
+          "label": "patch_B_root_gap_depth_1m",
+          "slope_deg": 25,
+          "thickness_m": 1,
+          "density_kg_m3": 1800,
+          "cohesion_pa": 3000,
+          "friction_deg": 32,
+          "pore_pressure_pa": 4000.0,
+          "root_cohesion_pa": 1500.0,
+          "area_m2": 1.0
+        }
+      ],
+      "screen": {
+        "weakest_candidates": [
+          "patch_A_depth_2m_below_roots"
+        ],
+        "status": "screened_candidates_only",
+        "planes": [
+          {
+            "label": "patch_A_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.43743248078912217,
+            "effective_contact_limit_kh": 1.6083171166174155,
+            "static_margin_pa": 9037.211258320804,
+            "static_margin_n": 9037.211258320804
+          },
+          {
+            "label": "patch_A_depth_2m_below_roots",
+            "status": "yield",
+            "critical_kh": 0.13489807872437992,
+            "effective_contact_limit_kh": 1.876412018563487,
+            "static_margin_pa": 5573.899924278912,
+            "static_margin_n": 5573.899924278912
+          },
+          {
+            "label": "patch_B_root_gap_depth_1m",
+            "status": "yield",
+            "critical_kh": 0.21961681760667207,
+            "effective_contact_limit_kh": 1.6083171166174155,
+            "static_margin_pa": 4537.211258320803,
+            "static_margin_n": 4537.211258320803
+          }
+        ]
+      },
+      "displacements": {
+        "patch_A_depth_1m": {
+          "record_displacement_m": 0.01176710459577387,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.01176710459577387
+        },
+        "patch_A_depth_2m_below_roots": {
+          "record_displacement_m": 0.5615554424869387,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.5615554424869387
+        },
+        "patch_B_root_gap_depth_1m": {
+          "record_displacement_m": 0.32768165837212826,
+          "record_end_velocity_m_s": 0.0,
+          "residual_displacement_m": 0.32768165837212826
+        }
+      }
+    }
+  ]
+}
