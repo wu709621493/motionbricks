@@ -1,0 +1,41 @@
+{
+  "status": "illustrative_only_not_execution",
+  "protocol_version": "proposal-0.1",
+  "task_id": "offline-distance-001",
+  "message_id": "handoff-001",
+  "task_revision": 1,
+  "sender": "perception-adapter",
+  "recipient": "planning-adapter",
+  "allowed_operation": "offline_analysis",
+  "input": {
+    "artifact_ref": "fixture:distance-cm-v1",
+    "value": 120,
+    "unit": "cm",
+    "coordinate_frame": "fixture-world"
+  },
+  "output": {
+    "artifact_ref": "fixture:distance-m-v1",
+    "value": 1.2,
+    "unit": "m",
+    "coordinate_frame": "fixture-world"
+  },
+  "conversion": {
+    "converter_version": "illustration-1",
+    "rule": "metres = centimetres / 100",
+    "losses": [],
+    "source_kind": "synthetic_fixture"
+  },
+  "limits": {
+    "max_hops": 4,
+    "relative_ttl_seconds": 30
+  },
+  "receipt": {
+    "state": "NOT_RUN",
+    "semantic_check": "Receiver must independently verify units, frame and conversion",
+    "verification_result": null
+  },
+  "release": {
+    "state": "NOT_RELEASED",
+    "physical_execution": false
+  }
+}
