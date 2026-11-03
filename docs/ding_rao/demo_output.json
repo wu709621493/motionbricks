@@ -1,0 +1,661 @@
+{
+  "algorithm": "丁饶算法 / Ding Rao v0.1",
+  "catalog_status": "synthetic_metadata_no_motion_assets",
+  "couplet": {
+    "status": "ABSTAIN",
+    "rig": "soma",
+    "brief": {
+      "passage_id": "poem_couplet",
+      "focus_subject_id": "speaker",
+      "source": {
+        "id": "liuyong",
+        "kind": "lyric",
+        "work": "柳永《蝶恋花·伫倚危楼风细细》",
+        "locator": "全词（别名《凤栖梧》）",
+        "url": "https://www.guwendao.net/shiwenv_3264b4f8f750.aspx",
+        "accessed": "2026-11-03",
+        "edition_note": "古文岛所载公版词作正文；未复制现代赏析。简体正文，去掉网站括注。非校勘定本。"
+      },
+      "text": "衣带渐宽终不悔，为伊消得人憔悴。",
+      "time_label": "摘句，无具体动作时刻",
+      "events": [
+        {
+          "id": "poem_couplet_1",
+          "start": 0,
+          "end": 4,
+          "quote": "衣带渐宽",
+          "kind": "body_state",
+          "label": "gradual_thinning_image",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "衣带变宽是消瘦的文学表征；不是主动解腰带，也不是体重测量。",
+          "withheld_reasons": [
+            "not_an_action"
+          ]
+        },
+        {
+          "id": "poem_couplet_2",
+          "start": 4,
+          "end": 7,
+          "quote": "终不悔",
+          "kind": "stance",
+          "label": "persistence",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "叙述者表达不后悔；不是无限动作时长或继续操作的授权。",
+          "withheld_reasons": [
+            "not_an_action"
+          ]
+        },
+        {
+          "id": "poem_couplet_3",
+          "start": 8,
+          "end": 10,
+          "quote": "为伊",
+          "kind": "relation",
+          "label": "attachment_to_beloved",
+          "actor_id": "speaker",
+          "target_id": "beloved",
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "关系动机，指向未具名对象；不据此虚构一段已证实的恋爱史。",
+          "withheld_reasons": [
+            "not_an_action"
+          ]
+        },
+        {
+          "id": "poem_couplet_4",
+          "start": 12,
+          "end": 15,
+          "quote": "人憔悴",
+          "kind": "body_state",
+          "label": "worn_appearance",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "文学中的憔悴表征，不推断疾病、剩余寿命或肌肉力量。",
+          "withheld_reasons": [
+            "not_an_action"
+          ]
+        }
+      ],
+      "action_tags": [],
+      "context_event_ids": [
+        "poem_couplet_1",
+        "poem_couplet_2",
+        "poem_couplet_3",
+        "poem_couplet_4"
+      ],
+      "annotation_status": "curated_annotations_require_independent_review",
+      "pose_status": "not_generated",
+      "missing_motion_parameters": [
+        "duration_s",
+        "joint_poses",
+        "contact_geometry",
+        "force_limits"
+      ],
+      "may_execute": false
+    },
+    "candidates": [],
+    "rejected": [
+      {
+        "candidate_id": "demo_drink",
+        "reasons": [
+          "no_direct_action_evidence",
+          "unsupported_action_tags"
+        ]
+      },
+      {
+        "candidate_id": "demo_g1_lean",
+        "reasons": [
+          "no_direct_action_evidence",
+          "rig_mismatch",
+          "unsupported_action_tags"
+        ]
+      },
+      {
+        "candidate_id": "demo_lean_and_drink",
+        "reasons": [
+          "no_direct_action_evidence",
+          "unsupported_action_tags"
+        ]
+      },
+      {
+        "candidate_id": "demo_lean_and_look",
+        "reasons": [
+          "no_direct_action_evidence",
+          "unsupported_action_tags"
+        ]
+      },
+      {
+        "candidate_id": "demo_lean_only",
+        "reasons": [
+          "no_direct_action_evidence",
+          "unsupported_action_tags"
+        ]
+      },
+      {
+        "candidate_id": "demo_look_only",
+        "reasons": [
+          "no_direct_action_evidence",
+          "unsupported_action_tags"
+        ]
+      },
+      {
+        "candidate_id": "demo_loosen_belt",
+        "reasons": [
+          "no_direct_action_evidence",
+          "unsupported_action_tags"
+        ]
+      }
+    ],
+    "score_meaning": "symbolic_action_tag_jaccard_not_probability_or_quality",
+    "may_execute": false
+  },
+  "whole_poem": {
+    "status": "METADATA_MATCHES",
+    "rig": "soma",
+    "brief": {
+      "passage_id": "poem_full",
+      "focus_subject_id": "speaker",
+      "source": {
+        "id": "liuyong",
+        "kind": "lyric",
+        "work": "柳永《蝶恋花·伫倚危楼风细细》",
+        "locator": "全词（别名《凤栖梧》）",
+        "url": "https://www.guwendao.net/shiwenv_3264b4f8f750.aspx",
+        "accessed": "2026-11-03",
+        "edition_note": "古文岛所载公版词作正文；未复制现代赏析。简体正文，去掉网站括注。非校勘定本。"
+      },
+      "text": "伫倚危楼风细细，望极春愁，黯黯生天际。草色烟光残照里，无言谁会凭阑意。拟把疏狂图一醉，对酒当歌，强乐还无味。衣带渐宽终不悔，为伊消得人憔悴。",
+      "time_label": "词内叙事顺序；无可核算持续时间",
+      "events": [
+        {
+          "id": "poem_full_1",
+          "start": 0,
+          "end": 2,
+          "quote": "伫倚",
+          "kind": "action",
+          "label": "stand_lean",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "久立倚靠的姿态意象；栏杆几何、角度与时长未知。",
+          "withheld_reasons": []
+        },
+        {
+          "id": "poem_full_2",
+          "start": 8,
+          "end": 10,
+          "quote": "望极",
+          "kind": "action",
+          "label": "look_far",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "远望；没有视线坐标、头部角度或移动距离。",
+          "withheld_reasons": []
+        },
+        {
+          "id": "poem_full_3",
+          "start": 27,
+          "end": 29,
+          "quote": "无言",
+          "kind": "stance",
+          "label": "silence",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "叙事中的沉默，不反向推断失语或不能表达。",
+          "withheld_reasons": [
+            "not_an_action"
+          ]
+        },
+        {
+          "id": "poem_full_4",
+          "start": 35,
+          "end": 42,
+          "quote": "拟把疏狂图一醉",
+          "kind": "action",
+          "label": "drink",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "intended",
+          "agency": "direct",
+          "interpretation": "拟明确标志意图；不能当作已经饮酒。",
+          "withheld_reasons": [
+            "intended"
+          ]
+        },
+        {
+          "id": "poem_full_5",
+          "start": 43,
+          "end": 47,
+          "quote": "对酒当歌",
+          "kind": "action",
+          "label": "sing",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "uncertain",
+          "agency": "direct",
+          "interpretation": "与拟一醉同属设想还是实际尝试存在解释空间；本版保守保留不确定。",
+          "withheld_reasons": [
+            "uncertain"
+          ]
+        },
+        {
+          "id": "poem_full_6",
+          "start": 48,
+          "end": 53,
+          "quote": "强乐还无味",
+          "kind": "affect",
+          "label": "failed_relief",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "试图排遣却未能获得乐趣的叙事转折。",
+          "withheld_reasons": [
+            "not_an_action"
+          ]
+        },
+        {
+          "id": "poem_full_7",
+          "start": 54,
+          "end": 58,
+          "quote": "衣带渐宽",
+          "kind": "body_state",
+          "label": "gradual_thinning_image",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "衣带变宽是消瘦的文学表征；不是主动解腰带，也不是体重测量。",
+          "withheld_reasons": [
+            "not_an_action"
+          ]
+        },
+        {
+          "id": "poem_full_8",
+          "start": 58,
+          "end": 61,
+          "quote": "终不悔",
+          "kind": "stance",
+          "label": "persistence",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "叙述者表达不后悔；不是无限动作时长或继续操作的授权。",
+          "withheld_reasons": [
+            "not_an_action"
+          ]
+        },
+        {
+          "id": "poem_full_9",
+          "start": 62,
+          "end": 64,
+          "quote": "为伊",
+          "kind": "relation",
+          "label": "attachment_to_beloved",
+          "actor_id": "speaker",
+          "target_id": "beloved",
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "关系动机，指向未具名对象；不据此虚构一段已证实的恋爱史。",
+          "withheld_reasons": [
+            "not_an_action"
+          ]
+        },
+        {
+          "id": "poem_full_10",
+          "start": 66,
+          "end": 69,
+          "quote": "人憔悴",
+          "kind": "body_state",
+          "label": "worn_appearance",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "文学中的憔悴表征，不推断疾病、剩余寿命或肌肉力量。",
+          "withheld_reasons": [
+            "not_an_action"
+          ]
+        }
+      ],
+      "action_tags": [
+        "look_far",
+        "stand_lean"
+      ],
+      "context_event_ids": [
+        "poem_full_3",
+        "poem_full_6",
+        "poem_full_7",
+        "poem_full_8",
+        "poem_full_9",
+        "poem_full_10"
+      ],
+      "annotation_status": "curated_annotations_require_independent_review",
+      "pose_status": "not_generated",
+      "missing_motion_parameters": [
+        "duration_s",
+        "joint_poses",
+        "contact_geometry",
+        "force_limits"
+      ],
+      "may_execute": false
+    },
+    "candidates": [
+      {
+        "candidate_id": "demo_lean_and_look",
+        "score": 1.0,
+        "score_status": "OK",
+        "matched_tags": [
+          "look_far",
+          "stand_lean"
+        ],
+        "uncovered_tags": [],
+        "evidence_ids": [
+          "poem_full_1",
+          "poem_full_2"
+        ]
+      },
+      {
+        "candidate_id": "demo_lean_only",
+        "score": 0.5,
+        "score_status": "OK",
+        "matched_tags": [
+          "stand_lean"
+        ],
+        "uncovered_tags": [
+          "look_far"
+        ],
+        "evidence_ids": [
+          "poem_full_1"
+        ]
+      },
+      {
+        "candidate_id": "demo_look_only",
+        "score": 0.5,
+        "score_status": "OK",
+        "matched_tags": [
+          "look_far"
+        ],
+        "uncovered_tags": [
+          "stand_lean"
+        ],
+        "evidence_ids": [
+          "poem_full_2"
+        ]
+      }
+    ],
+    "rejected": [
+      {
+        "candidate_id": "demo_drink",
+        "reasons": [
+          "unsupported_action_tags"
+        ]
+      },
+      {
+        "candidate_id": "demo_g1_lean",
+        "reasons": [
+          "rig_mismatch"
+        ]
+      },
+      {
+        "candidate_id": "demo_lean_and_drink",
+        "reasons": [
+          "unsupported_action_tags"
+        ]
+      },
+      {
+        "candidate_id": "demo_loosen_belt",
+        "reasons": [
+          "unsupported_action_tags"
+        ]
+      }
+    ],
+    "score_meaning": "symbolic_action_tag_jaccard_not_probability_or_quality",
+    "may_execute": false
+  },
+  "history": {
+    "scope": "目的性选样：一首词（含重复摘句演示）及汉、唐、宋、明四位帝王的本纪片段；不是历代帝王总体或完整正史语料。",
+    "n_emperors": 4,
+    "n_with_age_claim": 3,
+    "rows": [
+      {
+        "subject_id": "han_wudi",
+        "label": "汉武帝刘彻",
+        "dynasty": "西汉",
+        "age_claims": [],
+        "age_ranges_by_basis": [],
+        "age_note": "此选定死亡条文未直接给出终年；本版不从在位年数推寿命，不据常见二手年龄补填。可另增有出处的年龄证据。",
+        "age_status": "MISSING_IN_SELECTED_EVIDENCE",
+        "direct_action_tags": [
+          "plough"
+        ],
+        "events": [
+          {
+            "event_id": "han_plough_1",
+            "label": "plough",
+            "passage_id": "han_plough",
+            "time_label": "征和四年三月"
+          }
+        ],
+        "death_cause": "not_coded"
+      },
+      {
+        "subject_id": "ming_xuanzong",
+        "label": "明宣宗朱瞻基",
+        "dynasty": "明",
+        "age_claims": [
+          {
+            "years": 38,
+            "basis": "source_reported_unspecified",
+            "passage_id": "ming_death",
+            "quote": "年三十有八",
+            "source_id": "mingshi9",
+            "url": "https://zh.wikisource.org/w/index.php?title=明史/卷9&oldid=2594622"
+          }
+        ],
+        "age_ranges_by_basis": [
+          {
+            "basis": "source_reported_unspecified",
+            "minimum_claim": 38,
+            "maximum_claim": 38,
+            "conflict": false
+          }
+        ],
+        "age_note": "仅保留原文记载年龄；计龄口径未独立校定，不能当现代周岁。死因未编码。",
+        "age_status": "RECORDED",
+        "direct_action_tags": [
+          "ask",
+          "dismount",
+          "hunt",
+          "plough"
+        ],
+        "events": [
+          {
+            "event_id": "ming_plough_1",
+            "label": "dismount",
+            "passage_id": "ming_plough",
+            "time_label": "宣德五年三月戊申"
+          },
+          {
+            "event_id": "ming_plough_2",
+            "label": "ask",
+            "passage_id": "ming_plough",
+            "time_label": "宣德五年三月戊申"
+          },
+          {
+            "event_id": "ming_plough_3",
+            "label": "plough",
+            "passage_id": "ming_plough",
+            "time_label": "宣德五年三月戊申"
+          },
+          {
+            "event_id": "ming_hunt_1",
+            "label": "hunt",
+            "passage_id": "ming_hunt",
+            "time_label": "宣德九年九月"
+          }
+        ],
+        "death_cause": "not_coded"
+      },
+      {
+        "subject_id": "song_taizu",
+        "label": "宋太祖赵匡胤",
+        "dynasty": "宋",
+        "age_claims": [
+          {
+            "years": 50,
+            "basis": "source_reported_unspecified",
+            "passage_id": "song_death",
+            "quote": "年五十",
+            "source_id": "songshi3",
+            "url": "https://zh.wikisource.org/w/index.php?title=宋史/卷003&oldid=2285055"
+          }
+        ],
+        "age_ranges_by_basis": [
+          {
+            "basis": "source_reported_unspecified",
+            "minimum_claim": 50,
+            "maximum_claim": 50,
+            "conflict": false
+          }
+        ],
+        "age_note": "仅保留原文记载年龄；计龄口径未独立校定，不能当现代周岁。死因未编码。",
+        "age_status": "RECORDED",
+        "direct_action_tags": [
+          "hunt",
+          "walk"
+        ],
+        "events": [
+          {
+            "event_id": "song_walk_order_1",
+            "label": "walk",
+            "passage_id": "song_walk_order",
+            "time_label": "开宝九年六月庚子"
+          },
+          {
+            "event_id": "song_hunt_1",
+            "label": "hunt",
+            "passage_id": "song_hunt",
+            "time_label": "开宝五年十二月己亥"
+          }
+        ],
+        "death_cause": "not_coded"
+      },
+      {
+        "subject_id": "tang_taizong",
+        "label": "唐太宗李世民",
+        "dynasty": "唐",
+        "age_claims": [
+          {
+            "years": 52,
+            "basis": "source_reported_unspecified",
+            "passage_id": "tang_death",
+            "quote": "年五十二",
+            "source_id": "jiutangshu3",
+            "url": "https://zh.wikisource.org/w/index.php?title=舊唐書/卷3&oldid=2488779"
+          }
+        ],
+        "age_ranges_by_basis": [
+          {
+            "basis": "source_reported_unspecified",
+            "minimum_claim": 52,
+            "maximum_claim": 52,
+            "conflict": false
+          }
+        ],
+        "age_note": "仅保留原文记载年龄；计龄口径未独立校定，不能当现代周岁。死因未编码。",
+        "age_status": "RECORDED",
+        "direct_action_tags": [
+          "archery",
+          "hunt"
+        ],
+        "events": [
+          {
+            "event_id": "tang_hunt_1",
+            "label": "hunt",
+            "passage_id": "tang_hunt",
+            "time_label": "贞观四年冬十月"
+          },
+          {
+            "event_id": "tang_hunt_2",
+            "label": "archery",
+            "passage_id": "tang_hunt",
+            "time_label": "贞观四年冬十月"
+          }
+        ],
+        "death_cause": "not_coded"
+      }
+    ],
+    "action_groups": [
+      {
+        "action_tag": "archery",
+        "subjects": [
+          "tang_taizong"
+        ],
+        "n_subjects": 1,
+        "n_with_age_claim": 1
+      },
+      {
+        "action_tag": "ask",
+        "subjects": [
+          "ming_xuanzong"
+        ],
+        "n_subjects": 1,
+        "n_with_age_claim": 1
+      },
+      {
+        "action_tag": "dismount",
+        "subjects": [
+          "ming_xuanzong"
+        ],
+        "n_subjects": 1,
+        "n_with_age_claim": 1
+      },
+      {
+        "action_tag": "hunt",
+        "subjects": [
+          "ming_xuanzong",
+          "song_taizu",
+          "tang_taizong"
+        ],
+        "n_subjects": 3,
+        "n_with_age_claim": 3
+      },
+      {
+        "action_tag": "plough",
+        "subjects": [
+          "han_wudi",
+          "ming_xuanzong"
+        ],
+        "n_subjects": 2,
+        "n_with_age_claim": 1
+      },
+      {
+        "action_tag": "walk",
+        "subjects": [
+          "song_taizu"
+        ],
+        "n_subjects": 1,
+        "n_with_age_claim": 1
+      }
+    ],
+    "absence_means": "not_annotated_in_selected_evidence_not_behavior_absent",
+    "association_status": "NOT_ESTIMATED_selected_nonrepresentative_examples",
+    "causal_effect": null,
+    "longevity_reward": null
+  }
+}
