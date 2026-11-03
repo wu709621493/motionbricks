@@ -313,3 +313,11 @@ for explicit division/log/normalization policies and optical sampling integratio
 [Zero-boundary countdown](docs/crew_countdown.md) preserves crew HOLD/ABORT,
 requires renewed consent after a pause, and separates reaching zero from a
 crew-confirmed simulation review request. No launch command is implemented.
+
+## Oral plaque measurement workflow (fork research extension)
+
+The [Chinese research workflow](docs/oral_plaque/workflow.md) specifies paired
+plaque-area imaging, local pH monitoring, cleaning with sample recovery, and
+independent acid-production assays. Includes an evidence map, validation gates,
+a data dictionary and blank CSV templates. This is an unvalidated study design,
+not a dental device, clinical protocol approval, or implemented robot capability.

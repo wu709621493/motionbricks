@@ -1,0 +1,1 @@
+schema_version,calibration_id,sensor_id,phase,point_index,recorded_at,buffer_lot,temperature_c,reference_ph,measured_ph,residual_ph,acceptance_protocol_ref,qc_status,qc_reason
