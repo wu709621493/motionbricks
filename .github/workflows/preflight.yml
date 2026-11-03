@@ -35,6 +35,7 @@ jobs:
       - run: python -m unittest discover -s tests/cold_atoms -v
       - run: python -m unittest discover -s tests/optical_quantum -v
       - run: python -m unittest discover -s tests/zero_guard -v
+      - run: python -S -m unittest discover -s tests/ding_rao -v
       - run: python -m unittest discover -s tests/crew_countdown -v
       - run: python -m unittest discover -s tests/bell_chsh -v
       - run: python -m unittest discover -s tests/root_soil -v

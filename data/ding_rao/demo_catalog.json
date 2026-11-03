@@ -1,0 +1,60 @@
+[
+  {
+    "id": "demo_lean_and_look",
+    "rig": "soma",
+    "action_tags": [
+      "stand_lean",
+      "look_far"
+    ],
+    "annotation_note": "Synthetic metadata only; no motion file, authored pose or measured clip is supplied."
+  },
+  {
+    "id": "demo_lean_only",
+    "rig": "soma",
+    "action_tags": [
+      "stand_lean"
+    ],
+    "annotation_note": "Synthetic metadata only; no motion file, authored pose or measured clip is supplied."
+  },
+  {
+    "id": "demo_look_only",
+    "rig": "soma",
+    "action_tags": [
+      "look_far"
+    ],
+    "annotation_note": "Synthetic metadata only; no motion file, authored pose or measured clip is supplied."
+  },
+  {
+    "id": "demo_loosen_belt",
+    "rig": "soma",
+    "action_tags": [
+      "loosen_belt"
+    ],
+    "annotation_note": "Synthetic metadata only; no motion file, authored pose or measured clip is supplied."
+  },
+  {
+    "id": "demo_drink",
+    "rig": "soma",
+    "action_tags": [
+      "drink"
+    ],
+    "annotation_note": "Synthetic metadata only; no motion file, authored pose or measured clip is supplied."
+  },
+  {
+    "id": "demo_g1_lean",
+    "rig": "unitree_g1",
+    "action_tags": [
+      "stand_lean"
+    ],
+    "annotation_note": "Synthetic metadata only; no motion file, authored pose or measured clip is supplied."
+  },
+  {
+    "id": "demo_lean_and_drink",
+    "rig": "soma",
+    "action_tags": [
+      "stand_lean",
+      "drink"
+    ],
+    "annotation_note": "Synthetic metadata only; no motion file, authored pose or measured clip is supplied."
+  }
+]

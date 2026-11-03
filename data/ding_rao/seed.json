@@ -1,0 +1,582 @@
+{
+  "schema_version": 1,
+  "scope": "目的性选样：一首词（含重复摘句演示）及汉、唐、宋、明四位帝王的本纪片段；不是历代帝王总体或完整正史语料。",
+  "sources": [
+    {
+      "id": "liuyong",
+      "kind": "lyric",
+      "work": "柳永《蝶恋花·伫倚危楼风细细》",
+      "locator": "全词（别名《凤栖梧》）",
+      "url": "https://www.guwendao.net/shiwenv_3264b4f8f750.aspx",
+      "accessed": "2026-11-03",
+      "edition_note": "古文岛所载公版词作正文；未复制现代赏析。简体正文，去掉网站括注。非校勘定本。"
+    },
+    {
+      "id": "hanshu6",
+      "kind": "official_history",
+      "work": "班固等《汉书》",
+      "locator": "卷六·武帝纪；征和四年、后元二年",
+      "url": "https://zh.wikisource.org/w/index.php?title=漢書/卷006&oldid=2631854",
+      "accessed": "2026-11-03",
+      "edition_note": "维基文库公版原文转录；已对网页核引文，未对影印本独立校勘。"
+    },
+    {
+      "id": "jiutangshu3",
+      "kind": "official_history",
+      "work": "刘昫等《旧唐书》",
+      "locator": "卷三·太宗下；贞观四年、二十三年",
+      "url": "https://zh.wikisource.org/w/index.php?title=舊唐書/卷3&oldid=2488779",
+      "accessed": "2026-11-03",
+      "edition_note": "维基文库公版原文转录；已对网页核引文，未对影印本独立校勘。"
+    },
+    {
+      "id": "songshi3",
+      "kind": "official_history",
+      "work": "脱脱等《宋史》",
+      "locator": "卷三·太祖三；开宝五年、九年",
+      "url": "https://zh.wikisource.org/w/index.php?title=宋史/卷003&oldid=2285055",
+      "accessed": "2026-11-03",
+      "edition_note": "维基文库公版原文转录；已对网页核引文，未对影印本独立校勘。"
+    },
+    {
+      "id": "mingshi9",
+      "kind": "official_history",
+      "work": "张廷玉等《明史》",
+      "locator": "卷九·宣宗；宣德五年、九年、十年",
+      "url": "https://zh.wikisource.org/w/index.php?title=明史/卷9&oldid=2594622",
+      "accessed": "2026-11-03",
+      "edition_note": "维基文库公版原文转录；已对网页核引文，未对影印本独立校勘。"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "speaker",
+      "label": "词中抒情主体（不等同于柳永本人）",
+      "role": "lyric_speaker",
+      "age_claims": [],
+      "age_note": "不适用：未将词中人物认定为作者传记中的具体人物。"
+    },
+    {
+      "id": "beloved",
+      "label": "伊（身份与性别未指定）",
+      "role": "other",
+      "age_claims": [],
+      "age_note": "不适用：未将词中人物认定为作者传记中的具体人物。"
+    },
+    {
+      "id": "artisans",
+      "label": "奉命工匠（具体身份未载）",
+      "role": "other",
+      "age_claims": [],
+      "age_note": "不适用：未将词中人物认定为作者传记中的具体人物。"
+    },
+    {
+      "id": "han_wudi",
+      "label": "汉武帝刘彻",
+      "role": "emperor",
+      "age_claims": [],
+      "age_note": "此选定死亡条文未直接给出终年；本版不从在位年数推寿命，不据常见二手年龄补填。可另增有出处的年龄证据。",
+      "dynasty": "西汉"
+    },
+    {
+      "id": "tang_taizong",
+      "label": "唐太宗李世民",
+      "role": "emperor",
+      "age_claims": [
+        {
+          "years": 52,
+          "basis": "source_reported_unspecified",
+          "passage_id": "tang_death",
+          "quote": "年五十二"
+        }
+      ],
+      "age_note": "仅保留原文记载年龄；计龄口径未独立校定，不能当现代周岁。死因未编码。",
+      "dynasty": "唐"
+    },
+    {
+      "id": "song_taizu",
+      "label": "宋太祖赵匡胤",
+      "role": "emperor",
+      "age_claims": [
+        {
+          "years": 50,
+          "basis": "source_reported_unspecified",
+          "passage_id": "song_death",
+          "quote": "年五十"
+        }
+      ],
+      "age_note": "仅保留原文记载年龄；计龄口径未独立校定，不能当现代周岁。死因未编码。",
+      "dynasty": "宋"
+    },
+    {
+      "id": "ming_xuanzong",
+      "label": "明宣宗朱瞻基",
+      "role": "emperor",
+      "age_claims": [
+        {
+          "years": 38,
+          "basis": "source_reported_unspecified",
+          "passage_id": "ming_death",
+          "quote": "年三十有八"
+        }
+      ],
+      "age_note": "仅保留原文记载年龄；计龄口径未独立校定，不能当现代周岁。死因未编码。",
+      "dynasty": "明"
+    }
+  ],
+  "passages": [
+    {
+      "id": "poem_full",
+      "source_id": "liuyong",
+      "focus_subject_id": "speaker",
+      "text": "伫倚危楼风细细，望极春愁，黯黯生天际。草色烟光残照里，无言谁会凭阑意。拟把疏狂图一醉，对酒当歌，强乐还无味。衣带渐宽终不悔，为伊消得人憔悴。",
+      "time_label": "词内叙事顺序；无可核算持续时间",
+      "coverage": "selected_excerpt",
+      "annotation_note": "AI 辅助研究标注。原文可核；解释、语义标签与动作映射尚未独立人工复核。",
+      "annotations": [
+        {
+          "id": "poem_full_1",
+          "start": 0,
+          "end": 2,
+          "quote": "伫倚",
+          "kind": "action",
+          "label": "stand_lean",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "久立倚靠的姿态意象；栏杆几何、角度与时长未知。"
+        },
+        {
+          "id": "poem_full_2",
+          "start": 8,
+          "end": 10,
+          "quote": "望极",
+          "kind": "action",
+          "label": "look_far",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "远望；没有视线坐标、头部角度或移动距离。"
+        },
+        {
+          "id": "poem_full_3",
+          "start": 27,
+          "end": 29,
+          "quote": "无言",
+          "kind": "stance",
+          "label": "silence",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "叙事中的沉默，不反向推断失语或不能表达。"
+        },
+        {
+          "id": "poem_full_4",
+          "start": 35,
+          "end": 42,
+          "quote": "拟把疏狂图一醉",
+          "kind": "action",
+          "label": "drink",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "intended",
+          "agency": "direct",
+          "interpretation": "拟明确标志意图；不能当作已经饮酒。"
+        },
+        {
+          "id": "poem_full_5",
+          "start": 43,
+          "end": 47,
+          "quote": "对酒当歌",
+          "kind": "action",
+          "label": "sing",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "uncertain",
+          "agency": "direct",
+          "interpretation": "与拟一醉同属设想还是实际尝试存在解释空间；本版保守保留不确定。"
+        },
+        {
+          "id": "poem_full_6",
+          "start": 48,
+          "end": 53,
+          "quote": "强乐还无味",
+          "kind": "affect",
+          "label": "failed_relief",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "试图排遣却未能获得乐趣的叙事转折。"
+        },
+        {
+          "id": "poem_full_7",
+          "start": 54,
+          "end": 58,
+          "quote": "衣带渐宽",
+          "kind": "body_state",
+          "label": "gradual_thinning_image",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "衣带变宽是消瘦的文学表征；不是主动解腰带，也不是体重测量。"
+        },
+        {
+          "id": "poem_full_8",
+          "start": 58,
+          "end": 61,
+          "quote": "终不悔",
+          "kind": "stance",
+          "label": "persistence",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "叙述者表达不后悔；不是无限动作时长或继续操作的授权。"
+        },
+        {
+          "id": "poem_full_9",
+          "start": 62,
+          "end": 64,
+          "quote": "为伊",
+          "kind": "relation",
+          "label": "attachment_to_beloved",
+          "actor_id": "speaker",
+          "target_id": "beloved",
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "关系动机，指向未具名对象；不据此虚构一段已证实的恋爱史。"
+        },
+        {
+          "id": "poem_full_10",
+          "start": 66,
+          "end": 69,
+          "quote": "人憔悴",
+          "kind": "body_state",
+          "label": "worn_appearance",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "文学中的憔悴表征，不推断疾病、剩余寿命或肌肉力量。"
+        }
+      ]
+    },
+    {
+      "id": "poem_couplet",
+      "source_id": "liuyong",
+      "focus_subject_id": "speaker",
+      "text": "衣带渐宽终不悔，为伊消得人憔悴。",
+      "time_label": "摘句，无具体动作时刻",
+      "coverage": "selected_excerpt",
+      "annotation_note": "只给这两句时，不从全词借入倚靠与远望动作。与全词重复的文学演示，非独立史料。",
+      "annotations": [
+        {
+          "id": "poem_couplet_1",
+          "start": 0,
+          "end": 4,
+          "quote": "衣带渐宽",
+          "kind": "body_state",
+          "label": "gradual_thinning_image",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "衣带变宽是消瘦的文学表征；不是主动解腰带，也不是体重测量。"
+        },
+        {
+          "id": "poem_couplet_2",
+          "start": 4,
+          "end": 7,
+          "quote": "终不悔",
+          "kind": "stance",
+          "label": "persistence",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "叙述者表达不后悔；不是无限动作时长或继续操作的授权。"
+        },
+        {
+          "id": "poem_couplet_3",
+          "start": 8,
+          "end": 10,
+          "quote": "为伊",
+          "kind": "relation",
+          "label": "attachment_to_beloved",
+          "actor_id": "speaker",
+          "target_id": "beloved",
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "关系动机，指向未具名对象；不据此虚构一段已证实的恋爱史。"
+        },
+        {
+          "id": "poem_couplet_4",
+          "start": 12,
+          "end": 15,
+          "quote": "人憔悴",
+          "kind": "body_state",
+          "label": "worn_appearance",
+          "actor_id": "speaker",
+          "target_id": null,
+          "modality": "depicted",
+          "agency": "direct",
+          "interpretation": "文学中的憔悴表征，不推断疾病、剩余寿命或肌肉力量。"
+        }
+      ]
+    },
+    {
+      "id": "han_plough",
+      "source_id": "hanshu6",
+      "focus_subject_id": "han_wudi",
+      "text": "三月，上耕于鉅定。還幸泰山，修封。",
+      "time_label": "征和四年三月",
+      "coverage": "selected_excerpt",
+      "annotation_note": "选取片段，非该人物或本纪全部行为。隐含主语按本纪上下文标注，待独立审阅。",
+      "annotations": [
+        {
+          "id": "han_plough_1",
+          "start": 3,
+          "end": 8,
+          "quote": "上耕于鉅定",
+          "kind": "action",
+          "label": "plough",
+          "actor_id": "han_wudi",
+          "target_id": null,
+          "modality": "reported",
+          "agency": "direct",
+          "interpretation": "记载天子耕作，不等同日常劳动剂量；器具、用力与时长未知。"
+        }
+      ]
+    },
+    {
+      "id": "han_death",
+      "source_id": "hanshu6",
+      "focus_subject_id": "han_wudi",
+      "text": "二年春正月，朝諸侯王于甘泉宮，賜宗室。二月，行幸盩厔五柞宮。乙丑，立皇子弗陵為皇太子。丁卯，帝崩于五柞宮，入殯于未央宮前殿。三月甲申，葬茂陵。",
+      "time_label": "后元二年二月丁卯",
+      "coverage": "selected_excerpt",
+      "annotation_note": "选取片段，非该人物或本纪全部行为。隐含主语按本纪上下文标注，待独立审阅。",
+      "annotations": []
+    },
+    {
+      "id": "tang_hunt",
+      "source_id": "jiutangshu3",
+      "focus_subject_id": "tang_taizong",
+      "text": "冬十月壬辰，幸隴州，曲赦隴、岐二州，給復一年。辛丑，校獵於貴泉穀。甲辰，校獵於魚龍川，自射鹿，獻於大安宮。",
+      "time_label": "贞观四年冬十月",
+      "coverage": "selected_excerpt",
+      "annotation_note": "选取片段，非该人物或本纪全部行为。隐含主语按本纪上下文标注，待独立审阅。",
+      "annotations": [
+        {
+          "id": "tang_hunt_1",
+          "start": 36,
+          "end": 42,
+          "quote": "校獵於魚龍川",
+          "kind": "action",
+          "label": "hunt",
+          "actor_id": "tang_taizong",
+          "target_id": null,
+          "modality": "reported",
+          "agency": "direct",
+          "interpretation": "本纪记猎事；不能把出现次数当每日运动量。"
+        },
+        {
+          "id": "tang_hunt_2",
+          "start": 43,
+          "end": 46,
+          "quote": "自射鹿",
+          "kind": "action",
+          "label": "archery",
+          "actor_id": "tang_taizong",
+          "target_id": null,
+          "modality": "reported",
+          "agency": "direct",
+          "interpretation": "自明确为帝王本人；箭数、拉力与命中率未知。"
+        }
+      ]
+    },
+    {
+      "id": "tang_death",
+      "source_id": "jiutangshu3",
+      "focus_subject_id": "tang_taizong",
+      "text": "己巳，上崩於含風殿，年五十二。",
+      "time_label": "贞观二十三年五月己巳",
+      "coverage": "selected_excerpt",
+      "annotation_note": "选取片段，非该人物或本纪全部行为。隐含主语按本纪上下文标注，待独立审阅。",
+      "annotations": []
+    },
+    {
+      "id": "song_walk_order",
+      "source_id": "songshi3",
+      "focus_subject_id": "song_taizu",
+      "text": "六月庚子，步至晉王邸，命作機輪，輓金水河注邸中為池。",
+      "time_label": "开宝九年六月庚子",
+      "coverage": "selected_excerpt",
+      "annotation_note": "选取片段，非该人物或本纪全部行为。隐含主语按本纪上下文标注，待独立审阅。",
+      "annotations": [
+        {
+          "id": "song_walk_order_1",
+          "start": 5,
+          "end": 10,
+          "quote": "步至晉王邸",
+          "kind": "action",
+          "label": "walk",
+          "actor_id": "song_taizu",
+          "target_id": null,
+          "modality": "reported",
+          "agency": "direct",
+          "interpretation": "步至支持步行标签；距离与速度不详。"
+        },
+        {
+          "id": "song_walk_order_2",
+          "start": 11,
+          "end": 15,
+          "quote": "命作機輪",
+          "kind": "action",
+          "label": "construct_wheel",
+          "actor_id": "artisans",
+          "target_id": null,
+          "modality": "intended",
+          "agency": "delegated",
+          "interpretation": "帝王下令；不能把造轮工作记为帝王亲手做，执行者具体身份未载。"
+        }
+      ]
+    },
+    {
+      "id": "song_hunt",
+      "source_id": "songshi3",
+      "focus_subject_id": "song_taizu",
+      "text": "十二月乙酉朔，祈雪。己亥，畋近郊。",
+      "time_label": "开宝五年十二月己亥",
+      "coverage": "selected_excerpt",
+      "annotation_note": "选取片段，非该人物或本纪全部行为。隐含主语按本纪上下文标注，待独立审阅。",
+      "annotations": [
+        {
+          "id": "song_hunt_1",
+          "start": 13,
+          "end": 16,
+          "quote": "畋近郊",
+          "kind": "action",
+          "label": "hunt",
+          "actor_id": "song_taizu",
+          "target_id": null,
+          "modality": "reported",
+          "agency": "direct",
+          "interpretation": "畋为狩猎；主语由本纪语境提供，不推演骑行姿态。"
+        }
+      ]
+    },
+    {
+      "id": "song_death",
+      "source_id": "songshi3",
+      "focus_subject_id": "song_taizu",
+      "text": "癸丑夕，帝崩於萬歲殿，年五十",
+      "time_label": "开宝九年冬十月癸丑",
+      "coverage": "selected_excerpt",
+      "annotation_note": "选取片段，非该人物或本纪全部行为。隐含主语按本纪上下文标注，待独立审阅。",
+      "annotations": []
+    },
+    {
+      "id": "ming_plough",
+      "source_id": "mingshi9",
+      "focus_subject_id": "ming_xuanzong",
+      "text": "三月戊申，道見耕者，下馬問農事，取耒三推，顧侍臣曰：「朕三推已不勝勞，況吾民終歲勤動乎。」",
+      "time_label": "宣德五年三月戊申",
+      "coverage": "selected_excerpt",
+      "annotation_note": "选取片段，非该人物或本纪全部行为。隐含主语按本纪上下文标注，待独立审阅。",
+      "annotations": [
+        {
+          "id": "ming_plough_1",
+          "start": 10,
+          "end": 12,
+          "quote": "下馬",
+          "kind": "action",
+          "label": "dismount",
+          "actor_id": "ming_xuanzong",
+          "target_id": null,
+          "modality": "reported",
+          "agency": "direct",
+          "interpretation": "下马是身体动作；马具、接触与高度未知。"
+        },
+        {
+          "id": "ming_plough_2",
+          "start": 12,
+          "end": 15,
+          "quote": "問農事",
+          "kind": "action",
+          "label": "ask",
+          "actor_id": "ming_xuanzong",
+          "target_id": null,
+          "modality": "reported",
+          "agency": "direct",
+          "interpretation": "询问是交互行为；本标签不提供手势或语音。"
+        },
+        {
+          "id": "ming_plough_3",
+          "start": 16,
+          "end": 20,
+          "quote": "取耒三推",
+          "kind": "action",
+          "label": "plough",
+          "actor_id": "ming_xuanzong",
+          "target_id": null,
+          "modality": "reported",
+          "agency": "direct",
+          "interpretation": "可记录原文三推，但不可换算力、功、热量或习惯性运动量。"
+        },
+        {
+          "id": "ming_plough_4",
+          "start": 27,
+          "end": 34,
+          "quote": "朕三推已不勝勞",
+          "kind": "body_state",
+          "label": "reported_exertion",
+          "actor_id": "ming_xuanzong",
+          "target_id": null,
+          "modality": "reported",
+          "agency": "direct",
+          "interpretation": "记载讲话中的劳累自述；含政治修辞可能，不作为生理测量或终年原因。"
+        }
+      ]
+    },
+    {
+      "id": "ming_hunt",
+      "source_id": "mingshi9",
+      "focus_subject_id": "ming_xuanzong",
+      "text": "九月癸未，自將巡邊。乙酉，度居庸關。丙戌，獵於坌道。",
+      "time_label": "宣德九年九月",
+      "coverage": "selected_excerpt",
+      "annotation_note": "选取片段，非该人物或本纪全部行为。隐含主语按本纪上下文标注，待独立审阅。",
+      "annotations": [
+        {
+          "id": "ming_hunt_1",
+          "start": 21,
+          "end": 25,
+          "quote": "獵於坌道",
+          "kind": "action",
+          "label": "hunt",
+          "actor_id": "ming_xuanzong",
+          "target_id": null,
+          "modality": "reported",
+          "agency": "direct",
+          "interpretation": "记载狩猎；不自动推断强度、体能或死亡关联。"
+        }
+      ]
+    },
+    {
+      "id": "ming_death",
+      "source_id": "mingshi9",
+      "focus_subject_id": "ming_xuanzong",
+      "text": "乙亥，崩於乾清宮，年三十有八。",
+      "time_label": "宣德十年正月乙亥",
+      "coverage": "selected_excerpt",
+      "annotation_note": "选取片段，非该人物或本纪全部行为。隐含主语按本纪上下文标注，待独立审阅。",
+      "annotations": []
+    }
+  ]
+}

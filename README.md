@@ -308,6 +308,14 @@ physical balance and electrical savings require separate hardware validation.
 See [zero-error guard and Perception Theory evidence protocol](docs/zero_guard.md)
 for explicit division/log/normalization policies and optical sampling integration.
 
+### Ding Rao narrative compensation (experimental CPU authoring tool)
+
+[丁饶算法 / Ding Rao](docs/ding_rao.md) preserves actions, body states, intention,
+relationships and source evidence from an annotated Liu Yong lyric and selected
+imperial histories. It filters symbolic motion candidates and keeps documented
+ages separate from motion scores. Includes a runnable JSON CLI and counterexample
+tests; it does not parse arbitrary classical Chinese, generate poses, or predict lifespan.
+
 ### Crew-led countdown (CPU simulation)
 
 [Zero-boundary countdown](docs/crew_countdown.md) preserves crew HOLD/ABORT,
