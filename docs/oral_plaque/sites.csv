@@ -1,0 +1,1 @@
+schema_version,participant_id,visit_id,site_id,tooth_system,tooth_id,surface,roi_id,group_code,pre_image_ref,post_image_ref,mask_ref,area_basis,evaluable_area_pre,plaque_area_pre,evaluable_area_post,plaque_area_post,coverage_pre_pct,coverage_post_pct,saliva_flow_ml_min,buffer_method,buffer_result,disclosing_agent,last_hygiene_at,last_food_at,protocol_version,qc_status,qc_reason

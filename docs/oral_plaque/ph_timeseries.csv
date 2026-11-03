@@ -1,0 +1,1 @@
+schema_version,visit_id,site_id,sensor_id,calibration_id,time_s,recorded_at,measurement_target,ph,temperature_c,event,qc_status,qc_reason
