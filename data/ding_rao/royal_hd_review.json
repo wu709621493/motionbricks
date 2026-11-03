@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-11-03",
+  "language": "zh-CN",
+  "scope": "Bounded public-source historical review; not exhaustive and not a patient cohort.",
+  "confirmed_hd_patient_ids": [],
+  "null_semantics": "Not provided or not established in reviewed sources; never a negative test.",
+  "interpretation_rules": [
+    "Other-disease evidence does not rule out coexisting HD.",
+    "These subjects are neither confirmed HD cases nor healthy controls.",
+    "No inference of genotype, onset age or motion from personality, portraits, ancestry or political conduct.",
+    "Keep this evidence registry separate from the Ding Rao lyric/official_history/synthetic input schema."
+  ],
+  "clinical_reference_source_ids": [
+    "S1",
+    "S2"
+  ],
+  "subjects": [
+    {
+      "id": "henry_viii",
+      "name_zh": "亨利八世",
+      "royal_role_zh": "英格兰国王",
+      "life_years": "1491–1547",
+      "identity_source_ids": [
+        "S3"
+      ],
+      "selection_reason": "historical_differential_evidence_example",
+      "hd_evidence_status": "not_established_in_reviewed_sources",
+      "hd_case_admission": "NOT_ADMITTED",
+      "clinical_hd_diagnosis": null,
+      "htt_cag_repeats": null,
+      "uhdrs_score": null,
+      "motion_data": null,
+      "observations": [
+        {
+          "description_zh": "青年参与狩猎与比武；后来腿部溃疡、疼痛、增重和活动受限。",
+          "source_ids": [
+            "S3"
+          ],
+          "evidence_kind": "institutional_historical_summary"
+        }
+      ],
+      "other_disease_claims": [
+        {
+          "description_zh": "Kell 血型与 McLeod 综合征被提出作为部分生育史和中年变化的解释；存在批评性讨论，并非分子确诊。",
+          "source_ids": [
+            "S4",
+            "S5"
+          ],
+          "evidence_kind": "retrospective_hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "george_iii",
+      "name_zh": "乔治三世",
+      "royal_role_zh": "英国国王",
+      "life_years": "1738–1820",
+      "identity_source_ids": [
+        "S6",
+        "S7"
+      ],
+      "selection_reason": "historical_differential_evidence_example",
+      "hd_evidence_status": "not_established_in_reviewed_sources",
+      "hd_case_admission": "NOT_ADMITTED",
+      "clinical_hd_diagnosis": null,
+      "htt_cag_repeats": null,
+      "uhdrs_score": null,
+      "motion_data": null,
+      "observations": [
+        {
+          "description_zh": "疾病反复发作；记录包括长时间说话、身心痛苦及约束治疗。",
+          "source_ids": [
+            "S6"
+          ],
+          "evidence_kind": "institutional_historical_summary"
+        },
+        {
+          "description_zh": "医师和家属来信记录睡眠、饮食、行为及照护处境；档案有缺失与治疗混杂。",
+          "source_ids": [
+            "S7"
+          ],
+          "evidence_kind": "archive_description"
+        }
+      ],
+      "other_disease_claims": [
+        {
+          "description_zh": "卟啉病及躁狂/双相障碍等回顾性解释存在争议；书信语言分析不是基因诊断。",
+          "source_ids": [
+            "S7",
+            "S8"
+          ],
+          "evidence_kind": "retrospective_hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "christian_vii",
+      "name_zh": "克里斯蒂安七世",
+      "royal_role_zh": "丹麦及挪威国王",
+      "life_years": "1749–1808",
+      "identity_source_ids": [
+        "S9"
+      ],
+      "selection_reason": "historical_differential_evidence_example",
+      "hd_evidence_status": "not_established_in_reviewed_sources",
+      "hd_case_admission": "NOT_ADMITTED",
+      "clinical_hd_diagnosis": null,
+      "htt_cag_repeats": null,
+      "uhdrs_score": null,
+      "motion_data": null,
+      "observations": [
+        {
+          "description_zh": "早年紧张、注意困难、急躁和行为问题；签署文件与他人代行权力须区分。",
+          "source_ids": [
+            "S9"
+          ],
+          "evidence_kind": "institutional_historical_summary"
+        }
+      ],
+      "other_disease_claims": [
+        {
+          "description_zh": "对 1772 年回忆文字的现代研究摘要讨论精神分裂症及卟啉病等解释；本记录不采纳为确诊。",
+          "source_ids": [
+            "S10"
+          ],
+          "evidence_kind": "retrospective_hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "alexei",
+      "name_zh": "阿列克谢",
+      "royal_role_zh": "俄国皇储",
+      "life_years": "1904–1918",
+      "identity_source_ids": [
+        "S12"
+      ],
+      "selection_reason": "historical_differential_evidence_example",
+      "hd_evidence_status": "not_established_in_reviewed_sources",
+      "hd_case_admission": "NOT_ADMITTED",
+      "clinical_hd_diagnosis": null,
+      "htt_cag_repeats": null,
+      "uhdrs_score": null,
+      "motion_data": null,
+      "observations": [
+        {
+          "description_zh": "自婴儿期起严重出血；1918 年遇害，死亡不是自然病程终点。",
+          "source_ids": [
+            "S11"
+          ],
+          "evidence_kind": "primary_research_history"
+        }
+      ],
+      "other_disease_claims": [
+        {
+          "description_zh": "遗骸检出 F9 剪接相关变异，阿列克谢为半合子；功能实验支持血友病 B。这不是 HTT 检测。",
+          "source_ids": [
+            "S11"
+          ],
+          "evidence_kind": "molecular_and_functional_evidence"
+        }
+      ]
+    }
+  ],
+  "related_people": [
+    {
+      "id": "alexandra",
+      "name_zh": "亚历山德拉皇后",
+      "relation_to_subject": "alexei: mother",
+      "claim": {
+        "description_zh": "研究报告其为 F9 变异杂合携带者；并非 HD 个案证据。",
+        "source_ids": [
+          "S11"
+        ],
+        "evidence_kind": "molecular_evidence"
+      },
+      "hd_evidence_status": "not_established_in_reviewed_sources",
+      "htt_cag_repeats": null
+    },
+    {
+      "id": "victoria",
+      "name_zh": "维多利亚女王",
+      "relation_to_subject": "alexei: maternal great-grandmother",
+      "claim": {
+        "description_zh": "处于文献讨论的血友病家系链上；该实验没有直接检测她本人。",
+        "source_ids": [
+          "S11"
+        ],
+        "evidence_kind": "pedigree_inference_not_personal_genotype"
+      },
+      "hd_evidence_status": "not_established_in_reviewed_sources",
+      "htt_cag_repeats": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "bibliography": "[NLM：Huntington's disease](https://medlineplus.gov/genetics/condition/huntingtons-disease/)",
+      "urls": [
+        "https://medlineplus.gov/genetics/condition/huntingtons-disease/"
+      ],
+      "read_scope": "官方医学说明；HD 的一般表现与遗传基础，不证明任何王室病例",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S2",
+      "bibliography": "[NLM：McLeod neuroacanthocytosis syndrome](https://medlineplus.gov/genetics/condition/mcleod-neuroacanthocytosis-syndrome/)",
+      "urls": [
+        "https://medlineplus.gov/genetics/condition/mcleod-neuroacanthocytosis-syndrome/"
+      ],
+      "read_scope": "官方医学说明；XK 与 HTT 区别",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S3",
+      "bibliography": "[Historic Royal Palaces：Henry VIII](https://www.hrp.org.uk/hampton-court-palace/history-and-stories/henry-viii/)",
+      "urls": [
+        "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/henry-viii/"
+      ],
+      "read_scope": "生平、青年活动、晚年疼痛与功能变化",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S4",
+      "bibliography": "[Whitley & Kramer, 2010](https://doi.org/10.1017/S0018246X10000452)",
+      "urls": [
+        "https://doi.org/10.1017/S0018246X10000452"
+      ],
+      "read_scope": "原始历史假说论文摘要；未读付费正文",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S5",
+      "bibliography": "[Stride & Lopes Floro, 2013，PMID 24350322](https://pubmed.ncbi.nlm.nih.gov/24350322/)",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/24350322/"
+      ],
+      "read_scope": "批评性研究摘要；不据摘要宣称已彻底证伪",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S6",
+      "bibliography": "[Historic Royal Palaces：George III's mental illness](https://www.hrp.org.uk/blog/the-kings-malady-george-iiis-mental-illness-explored/)",
+      "urls": [
+        "https://www.hrp.org.uk/blog/the-kings-malady-george-iiis-mental-illness-explored/"
+      ],
+      "read_scope": "2024-03-22 策展文章；表现、约束治疗与诊断局限",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S7",
+      "bibliography": "[Royal Archives：Medical papers relating to George III](https://www.rct.uk/collection/royal-archives/georgian-papers-in-the-royal-archives/george-iii-and-family/medical-papers-relating-to-the-health-of-george-iii)",
+      "urls": [
+        "https://www.rct.uk/collection/royal-archives/georgian-papers-in-the-royal-archives/george-iii-and-family/medical-papers-relating-to-the-health-of-george-iii"
+      ],
+      "read_scope": "档案机构介绍；病历/家属视角与争议",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S8",
+      "bibliography": "[Rentoumi et al., 2017](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0171626)",
+      "urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0171626"
+      ],
+      "read_scope": "原始书信语言研究；DOI 10.1371/journal.pone.0171626",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S9",
+      "bibliography": "[The Royal Danish Collection：Christian VII](https://denkongeligesamling.dk/en/the-collection/persons/christian-vii-1749-1808/)",
+      "urls": [
+        "https://denkongeligesamling.dk/en/the-collection/persons/christian-vii-1749-1808/"
+      ],
+      "read_scope": "官方收藏机构人物说明；行为与代行权力",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S10",
+      "bibliography": "[Struensee's memoir…，PMID 24573261](https://pubmed.ncbi.nlm.nih.gov/24573261/)",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/24573261/"
+      ],
+      "read_scope": "搜索可读的论文摘要；后续打开页面未稳定返回正文，不宣称已读 1772 手稿",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S11",
+      "bibliography": "[Rogaev et al., Science, 2009](https://pubmed.ncbi.nlm.nih.gov/19815722/)；[已读论文 PDF](https://www.mun.ca/biology/scarr/Rogaev_et_al_2009_Science%20326,817.pdf)",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/19815722/",
+        "https://www.mun.ca/biology/scarr/Rogaev_et_al_2009_Science%20326,817.pdf"
+      ],
+      "read_scope": "原始遗骸基因/剪接研究正文；DOI 10.1126/science.1180660",
+      "accessed_on": "2026-11-03"
+    },
+    {
+      "id": "S12",
+      "bibliography": "[National Portrait Gallery：Alexei](https://www.npg.org.uk/collections/search/person/mp89332/alexei-tsarevich-and-grand-duke-of-russia)",
+      "urls": [
+        "https://www.npg.org.uk/collections/search/person/mp89332/alexei-tsarevich-and-grand-duke-of-russia"
+      ],
+      "read_scope": "藏品人物目录；身份与生卒年，不作为医学证据",
+      "accessed_on": "2026-11-03"
+    }
+  ]
+}

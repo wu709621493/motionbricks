@@ -165,6 +165,12 @@ python -S tools/ding_rao/demo.py > /tmp/ding_rao_demo.json
 新增测试接入现有 Ubuntu x86-64/ARM64、macOS ARM64 × Python 3.12/3.13 CPU CI。
 本地结果与远端 CI 状态应分别报告。
 
+### 王室疾病史证据补充
+
+[王室人物与亨廷顿病核查](royal_huntington_review.md) 提供四个人物描写及独立的
+结构化 sidecar。当前未核实到可纳入的王室 HD 个案；精神行为记载、其他疾病诊断和
+家系线索均不升级为 HD 标签。本补充不生成诊断、病理动作或模型训练标签。
+
 ### 后续实测
 
 先冻结一份未参与规则设计的古文片段集，分动作/状态/意愿/关系评估主语、模态、
