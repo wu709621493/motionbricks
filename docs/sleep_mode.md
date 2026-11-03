@@ -19,7 +19,7 @@ static margin is only one admission signal, not a dynamic stability proof.
 | --- | --- | --- | --- |
 | ACTIVE | Allowed | Every tick | Sleep request plus strict entry conditions |
 | SETTLING | Allowed | Every tick | Continuous stable dwell, otherwise restart |
-| SLEEP | Paused | Every tick; hold posture | Wake/request cleared, disturbance or fault |
+| SLEEP | Paused | Every tick; hold posture | Wake, no remaining sleep request, disturbance or fault |
 | RECOVERY | Paused | Independent recovery | Healthy sample plus explicit controller acknowledgement |
 | FAULT | Paused | Fault handling | Healthy sample plus explicit reset, then RECOVERY |
 
@@ -64,6 +64,52 @@ deadlines only when called again. Callback failures latch FAULT, invoke on_fault
 and propagate the error. on_fault itself must be fail-safe. Normal telemetry
 faults are delivered to balance_step via Decision and remain latched.
 
+## Oyasumi patch: one-shot goodnight request
+
+`oyasumi` (おやすみ, "goodnight") adds a one-shot command to `SleepSupervisor.tick`
+and `SleepRuntime.step`. Send `oyasumi=True` on one healthy tick; the supervisor
+retains that request while waiting for strict entry conditions and continuous
+stable dwell, then keeps sleeping without a repeated command. Continue supplying
+fresh telemetry and running the balance tick at its normal rate throughout.
+The request never forces immediate sleep or changes thresholds.
+
+```python
+# Inside the existing balance loop; consume each UI event only once:
+decision = runtime.step(
+    sample, now_s,
+    oyasumi=goodnight_event,  # bool; True only on the command tick
+    wake=wake_event,
+    recovery_complete=controller.recovered,
+)
+# Subsequent ticks use oyasumi=False. To cancel pending/sleeping goodnight,
+# send wake=True on a tick with fresh telemetry.
+```
+
+| Input or event | Oyasumi request | Result |
+| --- | --- | --- |
+| Healthy `oyasumi=True` | Retained per supervisor instance | Wait for entry conditions and full stable dwell |
+| Later `oyasumi=False` or omitted | Retained | Continue waiting or sleeping |
+| Entry threshold crossed, still inside exit envelope | Retained | Restart dwell; generation remains allowed |
+| `wake=True`, including simultaneous `oyasumi=True` | Cleared | ACTIVE if healthy; safety gates still take priority |
+| Support loss or exit threshold reached | Cleared | RECOVERY, generation paused |
+| Invalid/stale telemetry, missed deadline, or callback failure | Cleared | Latched FAULT, generation paused |
+| Request during FAULT/RECOVERY or on reset/recovery-acknowledgement tick | Discarded | Existing reset/recovery gates apply |
+
+After recovery acknowledgement, send a **new** goodnight event on a later healthy
+tick to sleep again. The caller must consume a refused event, not hold or replay
+it on every tick. Repeated valid commands do not restart an uninterrupted dwell.
+`oyasumi` requires a bool; invalid command types enter FAULT and clear the request.
+Callback faults clear it through the same state transition path as telemetry faults.
+
+The existing `sleep_requested` API remains a caller-maintained level. With no
+oyasumi request, clearing that level still wakes the supervisor as before.
+`sleep_requested=False` does **not** cancel a retained oyasumi request; use `wake`.
+If both APIs are used, either can request sleep. A caller still holding
+`sleep_requested=True` can start a new dwell on the tick after wake/recovery,
+so clear that level too when staying awake is intended. This preserves the old
+level-triggered contract. Requests are in-memory and belong to a single supervisor;
+they are not saved across process restarts or synchronized between threads.
+
 ## Energy and physical validation
 
 A supported seated/docked rest posture may reduce actuator demand, but selecting
@@ -73,11 +119,14 @@ optional generation calls; it does not claim electrical savings or reduced heat.
 Keep sensing, balance, thermal/battery limits and emergency recovery independent
 of the optional generator and any remote/experimental compute backend.
 
-Run `python -m unittest discover -s tests/sleep_mode -v`. Nine offline tests cover
+Run `python -S -m unittest discover -s tests/sleep_mode -v`. The 22 offline tests cover
 dwell reset, hysteresis, wake, support/margin/speed disturbances, invalid and stale
-samples, deadline/backward clock faults, recovery gates and callback failures.
+samples, deadline/backward clock faults, recovery gates and callback failures,
+plus one-shot requests, cancellation, command precedence, instance isolation,
+legacy level compatibility and valid zero tilt/speed readings.
 A deterministic 100-tick trace with 0.1 s dwell at 100 Hz runs balance 100 times
-and generation 10 times (versus 100 without sleep). This is a callback-count
+and generation 10 times (versus 100 without sleep), using either the maintained
+level or a single oyasumi event. This is a callback-count
 comparison, not a physics simulation or measured 90% energy reduction.
 The existing Ubuntu x86/ARM and macOS ARM Python 3.12/3.13 matrix runs this suite.
 

@@ -61,7 +61,8 @@ class SleepSupervisor:
 
     A fault latches until reset_fault=True with healthy telemetry. Recovery
     requires recovery_complete=True from the independent controller. Neither
-    flag bypasses telemetry checks. Sleep requests must be maintained by caller.
+    flag bypasses telemetry checks. sleep_requested is a maintained level;
+    oyasumi is a one-shot request, cleared by wake, recovery or fault.
     """
 
     def __init__(self, config: SleepConfig = SleepConfig()):
@@ -69,20 +70,31 @@ class SleepSupervisor:
         self.mode = Mode.ACTIVE
         self._last_tick = None
         self._stable_since = None
+        self._oyasumi_requested = False
 
     def _decision(self, mode, reason):
         self.mode = mode
+        if mode in (Mode.RECOVERY, Mode.FAULT):
+            self._oyasumi_requested = False
         if mode != Mode.SETTLING:
             self._stable_since = None
         return Decision(mode, reason, mode in (Mode.ACTIVE, Mode.SETTLING))
 
     def tick(self, sample: BalanceSample, now_s: float, *,
              sleep_requested: bool = False, wake: bool = False,
-             recovery_complete: bool = False, reset_fault: bool = False) -> Decision:
+             recovery_complete: bool = False, reset_fault: bool = False,
+             oyasumi: bool = False) -> Decision:
+        """Request sleep once with oyasumi=True; continue ticking with fresh data.
+
+        A request received during wake, recovery or fault is discarded. Repeat
+        it only after recovery is acknowledged. False is not cancellation; use
+        wake=True to cancel. All existing dwell and safety checks still apply.
+        """
         c = self.config
         numeric = (now_s, sample.timestamp_s, sample.tilt_rad,
                    sample.speed_m_s, sample.support_margin_m)
         valid = (all(math.isfinite(v) for v in numeric)
+                 and type(oyasumi) is bool
                  and sample.tilt_rad >= 0 and sample.speed_m_s >= 0
                  and type(sample.support_confirmed) is bool
                  and sample.controller_ready is True
@@ -107,7 +119,12 @@ class SleepSupervisor:
             if not recovery_complete:
                 return self._decision(Mode.RECOVERY, "awaiting balance recovery")
             return self._decision(Mode.ACTIVE, "recovery acknowledged")
-        if wake or not sleep_requested:
+        if wake:
+            self._oyasumi_requested = False
+            return self._decision(Mode.ACTIVE, "wake or sleep request cleared")
+        if oyasumi is True:
+            self._oyasumi_requested = True
+        if not (sleep_requested or self._oyasumi_requested):
             return self._decision(Mode.ACTIVE, "wake or sleep request cleared")
         if self.mode == Mode.SLEEP:
             return self._decision(Mode.SLEEP, "stable hold")

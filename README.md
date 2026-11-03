@@ -302,6 +302,8 @@ The opt-in [sleep supervisor](docs/sleep_mode.md) pauses optional motion generat
 after stable dwell while retaining an independent balance callback on every tick.
 Includes disturbance recovery, latched telemetry/deadline faults, and CPU-only tests;
 physical balance and electrical savings require separate hardware validation.
+The [oyasumi patch](docs/sleep_mode.md#oyasumi-patch-one-shot-goodnight-request)
+adds a one-shot goodnight request, cleared on wake, recovery, or fault.
 
 ### Zero-error handling (experimental CPU utility)
 
