@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 """Exact integer dot-product portability lab; all execution is on a binary CPU.
 
-The ternary adapter performs digit convolution and balanced carry propagation.
+The ternary and septenary adapters use digit convolution and balanced carries.
 It is a software simulation, not a MotionBricks inference or hardware backend.
 """
 from __future__ import annotations
@@ -22,6 +22,7 @@ MAX_ITEMS = 1024
 MAX_INPUT_BYTES = 65536
 BINARY = 'binary_twos_complement'
 TERNARY = 'balanced_ternary'
+SEPTENARY = 'balanced_septenary'
 
 
 class ContractError(ValueError):
@@ -53,7 +54,7 @@ class WordFormat:
     width: int
 
     def __post_init__(self):
-        if self.encoding not in (BINARY, TERNARY):
+        if self.encoding not in (BINARY, TERNARY, SEPTENARY):
             raise ContractError('unsupported encoding')
         _integer(self.width, 'width')
         if not 1 <= self.width <= 128:
@@ -61,20 +62,21 @@ class WordFormat:
 
     @property
     def radix(self):
-        return 2 if self.encoding == BINARY else 3
+        return {BINARY: 2, TERNARY: 3, SEPTENARY: 7}[self.encoding]
 
     @property
     def bounds(self):
         if self.encoding == BINARY:
             half = 2 ** (self.width - 1)
             return -half, half - 1
-        half = (3 ** self.width - 1) // 2
+        half = (self.radix ** self.width - 1) // 2
         return -half, half
 
     def validate_digits(self, digits):
         if type(digits) is not tuple or len(digits) != self.width:
             raise ContractError('digits must be an immutable tuple of declared width')
-        allowed = (0, 1) if self.encoding == BINARY else (-1, 0, 1)
+        half = self.radix // 2
+        allowed = (0, 1) if self.encoding == BINARY else range(-half, half + 1)
         if any(type(d) is not int or d not in allowed for d in digits):
             raise ContractError('digit outside declared alphabet')
 
@@ -90,9 +92,10 @@ class WordFormat:
                 value, digit = divmod(value, 2)
                 digits.append(digit)
         else:
+            half = self.radix // 2
             for _ in range(self.width):
-                value, remainder = divmod(value + 1, 3)
-                digits.append(remainder - 1)
+                value, remainder = divmod(value + half, self.radix)
+                digits.append(remainder - half)
         return tuple(digits)
 
     def decode(self, digits):
@@ -119,7 +122,8 @@ class Capabilities:
             raise ContractError('backend identity required')
         if not isinstance(self.input_format, WordFormat) or self.input_format.width > 32:
             raise ContractError('input width must be at most 32 digits')
-        if self.execution not in ('HOST_INTEGER_REFERENCE', 'HOST_TRIT_SIMULATION'):
+        if self.execution not in ('HOST_INTEGER_REFERENCE', 'HOST_TRIT_SIMULATION',
+                                  'HOST_SEPTENARY_SIMULATION'):
             raise ContractError('unsupported execution class')
         _integer(self.max_items, 'max_items')
         _integer(self.schema_version, 'schema_version')
@@ -200,21 +204,39 @@ class BalancedTernaryBackend:
                                          'HOST_TRIT_SIMULATION')
 
     def execute(self, request):
-        _admit(request, self.capabilities)
-        output = _output_format(request)
-        coefficients = [0] * output.width
-        for lhs, rhs in zip(request.lhs, request.rhs):
-            for i, a in enumerate(lhs):
-                for j, b in enumerate(rhs):
-                    coefficients[i + j] += a * b
-        # Normalize each column into {-1,0,1}, carrying signed values upward.
-        digits, carry = [], 0
-        for coefficient in coefficients:
-            carry, remainder = divmod(coefficient + carry + 1, 3)
-            digits.append(remainder - 1)
-        if carry:
-            raise BackendFailure('accumulator overflow')
-        return EncodedResult(SCHEMA_VERSION, request.sha256, output, tuple(digits))
+        return _balanced_dot(request, self.capabilities)
+
+
+class BalancedSeptenaryBackend:
+    """Exact base-7 digit arithmetic with alphabet {-3,-2,-1,0,1,2,3}."""
+
+    def __init__(self, width=12):
+        self.capabilities = Capabilities(
+            'python-septenary-convolution-v1', WordFormat(SEPTENARY, width),
+            'HOST_SEPTENARY_SIMULATION')
+
+    def execute(self, request):
+        return _balanced_dot(request, self.capabilities)
+
+
+def _balanced_dot(request, capabilities):
+    """Convolve signed digits, then normalize; never decode whole operands."""
+    _admit(request, capabilities)
+    output = _output_format(request)
+    coefficients = [0] * output.width
+    for lhs, rhs in zip(request.lhs, request.rhs):
+        for i, a in enumerate(lhs):
+            for j, b in enumerate(rhs):
+                coefficients[i + j] += a * b
+    # For odd radix r, x = r*carry + digit with digit in [-(r//2), r//2].
+    radix, half = output.radix, output.radix // 2
+    digits, carry = [], 0
+    for coefficient in coefficients:
+        carry, remainder = divmod(coefficient + carry + half, radix)
+        digits.append(remainder - half)
+    if carry:
+        raise BackendFailure('accumulator overflow')
+    return EncodedResult(SCHEMA_VERSION, request.sha256, output, tuple(digits))
 
 
 def run_dot(lhs, rhs, backend: DotBackend):
@@ -307,13 +329,20 @@ def _read_input(path):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--backend', choices=('binary', 'ternary', 'both'), default='both')
+    parser.add_argument('--backend', choices=('binary', 'ternary', 'septenary', 'both', 'all'),
+                        default='both', help='both keeps the binary/ternary pair; all adds base 7')
     parser.add_argument('--input', help='JSON integer vectors; otherwise use a fixed fixture')
     args = parser.parse_args(argv)
     try:
         lhs, rhs = _read_input(args.input) if args.input else ([13, -7, 0, 42], [3, 11, -9, -2])
-        backends = {'binary': BinaryIntegerBackend(), 'ternary': BalancedTernaryBackend()}
-        selected = backends.values() if args.backend == 'both' else [backends[args.backend]]
+        backends = {'binary': BinaryIntegerBackend(), 'ternary': BalancedTernaryBackend(),
+                    'septenary': BalancedSeptenaryBackend()}
+        if args.backend == 'all':
+            selected = backends.values()
+        elif args.backend == 'both':
+            selected = [backends['binary'], backends['ternary']]
+        else:
+            selected = [backends[args.backend]]
         runs = [run_dot(lhs, rhs, backend) for backend in selected]
         print(json.dumps({'schema_version': SCHEMA_VERSION, 'status': 'VERIFIED', 'runs': runs},
                          indent=2, allow_nan=False))
