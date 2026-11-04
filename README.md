@@ -341,7 +341,10 @@ An isolated, standard-library [root–soil screening prototype](docs/root_soil_s
 
 ### Integer representation portability lab
 
-The [binary / balanced-ternary lab](docs/radix_portability_zh.md) runs exact integer
+The [integer portability lab](docs/radix_portability_zh.md) runs exact integer
 dot products through versioned, checked adapters, with independent result verification
-and conversion timing. It runs with Python's standard library only. The trit adapter
-is a CPU software simulation; native ternary hardware and motion inference are not implemented.
+and conversion timing. The [balanced base-7 extension](docs/septenary_zh.md) adds
+signed digit convolution and carry propagation alongside binary and balanced ternary.
+Run `python -S -m motionbricks.radix_portability --backend all` to compare all three.
+These are standard-library CPU experiments; native nonbinary hardware and motion
+inference are not implemented.
