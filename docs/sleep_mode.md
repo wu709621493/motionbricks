@@ -66,6 +66,12 @@ faults are delivered to balance_step via Decision and remain latched.
 
 ## Oyasumi patch: one-shot goodnight request
 
+The [nonprofit research edition statement](oyasumi_nonprofit_zh.md) sets out
+the proposed public-benefit purpose and maintenance policy for this patch.
+It uses the same implementation and tests, without payment gates or separate
+runtime behavior. It adds no noncommercial license restriction and does not
+claim registered nonprofit or tax-exempt status.
+
 `oyasumi` (おやすみ, "goodnight") adds a one-shot command to `SleepSupervisor.tick`
 and `SleepRuntime.step`. Send `oyasumi=True` on one healthy tick; the supervisor
 retains that request while waiting for strict entry conditions and continuous

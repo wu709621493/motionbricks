@@ -304,6 +304,9 @@ Includes disturbance recovery, latched telemetry/deadline faults, and CPU-only t
 physical balance and electrical savings require separate hardware validation.
 The [oyasumi patch](docs/sleep_mode.md#oyasumi-patch-one-shot-goodnight-request)
 adds a one-shot goodnight request, cleared on wake, recovery, or fault.
+The [Oyasumi nonprofit research edition](docs/oyasumi_nonprofit_zh.md) describes
+its public-benefit purpose, free reproducibility, and proposed stewardship;
+the existing Apache-2.0/CC-BY-4.0 licensing remains applicable.
 
 ### Zero-error handling (experimental CPU utility)
 
