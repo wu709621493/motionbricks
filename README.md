@@ -333,3 +333,10 @@ not a dental device, clinical protocol approval, or implemented robot capability
 ### Shallow root–soil seismic research
 
 An isolated, standard-library [root–soil screening prototype](docs/root_soil_seismic.md) compares candidate shallow slip planes and synthetic sliding displacement. Inputs are uncalibrated; redwood/banyan measurements and physical validation are pending. This does not model tectonic faults or certify slope safety.
+
+### Integer representation portability lab
+
+The [binary / balanced-ternary lab](docs/radix_portability_zh.md) runs exact integer
+dot products through versioned, checked adapters, with independent result verification
+and conversion timing. It runs with Python's standard library only. The trit adapter
+is a CPU software simulation; native ternary hardware and motion inference are not implemented.
