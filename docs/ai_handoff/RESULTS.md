@@ -66,7 +66,12 @@ real-model latency, energy or cost estimate. Cross-host timing is not a CI gate.
 | Python 3.13.17, `-S`, handoff unittest suite | 26 tests passed |
 | Deterministic result comparison, both interpreters | Exact JSON equality after parsing |
 | Existing CPU preflight suite, Python 3.12.14 with `-S` | 31 tests passed |
-| New Linux/macOS workflow | Six OS/Python combinations configured; see live PR checks for actual execution |
+| New Linux/macOS workflow | All six OS/Python jobs passed in [run 41781106625](https://github.com/wu709621493/motionbricks/actions/runs/41781106625) |
+| Existing CPU workflow | All twelve jobs passed in [run 41781106747](https://github.com/wu709621493/motionbricks/actions/runs/41781106747) |
+
+Those remote runs tested implementation commit
+`cf9de42650578bd261784cb2845ce3d0b0c30387` on PR #30. Subsequent documentation-only
+updates do not change the implementation; the PR checks show the current head.
 
 The suite additionally tests hostile JSON, boolean revision coercion, unsupported
 versions, exact expiry boundaries, clock rollback, denied out-of-order transitions,
@@ -76,7 +81,7 @@ imports. The adapter fault control demonstrates that receiver acceptance alone
 cannot release a wrong conversion. A second host-fault test changes an artifact
 after verification and confirms the release gate rechecks it.
 
-No GPU inference or physical execution was tested. No model weights or serving
-APIs were accessed. The broader perception-theory claims, real shared-chat
+No GPU inference or physical execution was tested. No model weights were loaded
+for inference or evaluation, and no model-serving APIs were called. The broader perception-theory claims, real shared-chat
 behavior, prompt injection resistance, real evidence correctness, process security
 and human comprehension remain unmeasured.
