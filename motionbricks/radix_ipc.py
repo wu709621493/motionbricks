@@ -2,6 +2,7 @@
 """Bounded POSIX subprocess experiment, not a security or hardware sandbox."""
 from __future__ import annotations
 
+from contextlib import closing
 from dataclasses import asdict
 import errno
 import hashlib
@@ -186,7 +187,7 @@ def _wait_for_exit(pid, deadline_ns):
 
     # macOS Python 3.12 has kqueue but no os.waitid. Already-exited children
     # can disappear from the filter's process lookup before registration.
-    with select.kqueue() as queue:
+    with closing(select.kqueue()) as queue:
         event = select.kevent(pid, filter=select.KQ_FILTER_PROC,
                               flags=select.KQ_EV_ADD | select.KQ_EV_ONESHOT,
                               fflags=select.KQ_NOTE_EXIT)
@@ -204,6 +205,7 @@ def _wait_for_exit(pid, deadline_ns):
 
 def _cleanup(process, failed):
     events, errors = [], []
+    darwin_exited_group_errors = []
 
     def signal_group(sig):
         try:
@@ -211,7 +213,17 @@ def _cleanup(process, failed):
         except ProcessLookupError:
             pass
         except OSError as exc:
-            errors.append(f'{sig.name}: {exc}')
+            problem = f'{sig.name}: {exc}'
+            # Darwin can report EPERM for a group consisting solely of the
+            # unreaped zombie. Defer only if the leader has actually exited.
+            if sys.platform == 'darwin' and exc.errno == errno.EPERM:
+                try:
+                    if _wait_for_exit(process.pid, time.monotonic_ns()):
+                        darwin_exited_group_errors.append(problem)
+                        return True
+                except OSError as observation_error:
+                    errors.append(f'observe group leader: {observation_error}')
+            errors.append(problem)
             return False
         else:
             events.append(sig.name)
@@ -243,6 +255,18 @@ def _cleanup(process, failed):
                     stream.close()
                 except OSError as exc:
                     errors.append(f'close pipe: {exc}')
+    if darwin_exited_group_errors:
+        # A signal-zero existence probe cannot terminate a recycled group.
+        # Accept EPERM only when the group demonstrably vanished after reap.
+        try:
+            os.killpg(process.pid, 0)
+        except ProcessLookupError:
+            if not reaped:
+                errors.extend(darwin_exited_group_errors)
+        except OSError as exc:
+            errors.extend([*darwin_exited_group_errors, f'probe group: {exc}'])
+        else:
+            errors.extend(darwin_exited_group_errors)
     return {'signals': events, 'reaped': reaped, 'returncode': process.returncode,
             'cleanup_errors': errors}
 
@@ -331,7 +355,7 @@ def exchange(command, raw, deadline_ns):
     if cleanup['cleanup_errors']:
         if isinstance(failure, IPCFailure):
             details['attempt_error'] = failure.code
-        raise IPCFailure('CLEANUP_FAILED', 'worker cleanup incomplete', details) from failure
+        raise IPCFailure('CLEANUP_FAILED', ', '.join(cleanup['cleanup_errors']), details) from failure
     if failure is not None:
         if isinstance(failure, IPCFailure):
             failure.details.update(details)

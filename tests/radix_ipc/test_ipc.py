@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0
 from dataclasses import asdict
+import errno
 import json
 import os
 from pathlib import Path
@@ -275,7 +276,8 @@ class ProcessTests(unittest.TestCase):
 
         def check_order(pid, sig):
             self.assertEqual(pid, created[-1].pid)
-            self.assertIsNone(created[-1].returncode, 'group leader already reaped')
+            if sig:
+                self.assertIsNone(created[-1].returncode, 'group leader already reaped')
             return killpg(pid, sig)
 
         with patch('subprocess.Popen', side_effect=capture), patch('os.killpg', side_effect=check_order):
@@ -291,7 +293,7 @@ class ProcessTests(unittest.TestCase):
             return created[-1]
 
         try:
-            with patch('subprocess.Popen', side_effect=capture), patch('os.killpg', side_effect=PermissionError('EPERM')):
+            with patch('subprocess.Popen', side_effect=capture), patch('os.killpg', side_effect=PermissionError(errno.EPERM, 'injected refusal')):
                 with self.assertRaises(IPCFailure) as caught:
                     SubprocessDotClient(_command=command('no_read')).run([1], [1], timeout_s=0.2)
             self.assertEqual(caught.exception.code, 'CLEANUP_FAILED')
@@ -303,6 +305,33 @@ class ProcessTests(unittest.TestCase):
         finally:
             # Also safe when running this regression against an unfixed checkout.
             for child in created:
+                child.kill()
+                child.wait(timeout=2)
+                for stream in (child.stdin, child.stdout, child.stderr):
+                    stream.close()
+
+    def test_darwin_zombie_group_eperm_needs_confirmed_disappearance(self):
+        from motionbricks.radix_ipc import _cleanup
+        for disappears in (True, False):
+            child = subprocess.Popen([sys.executable, '-c', 'pass'], stdin=subprocess.PIPE,
+                                     stdout=subprocess.PIPE, stderr=subprocess.PIPE, start_new_session=True)
+            signals = []
+
+            def simulate_darwin(pid, sig):
+                signals.append(sig)
+                if sig == 0 and disappears:
+                    raise ProcessLookupError(errno.ESRCH, 'gone after reap')
+                raise PermissionError(errno.EPERM, 'group signal denied')
+
+            try:
+                with patch('sys.platform', 'darwin'), patch('os.killpg', side_effect=simulate_darwin):
+                    from motionbricks.radix_ipc import _wait_for_exit
+                    self.assertTrue(_wait_for_exit(child.pid, time.monotonic_ns() + 2_000_000_000))
+                    details = _cleanup(child, False)
+                self.assertEqual(signals, [signal.SIGKILL, 0])
+                self.assertTrue(details['reaped'])
+                self.assertEqual(bool(details['cleanup_errors']), not disappears)
+            finally:
                 child.kill()
                 child.wait(timeout=2)
                 for stream in (child.stdin, child.stdout, child.stderr):
