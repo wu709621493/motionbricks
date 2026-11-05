@@ -14,6 +14,8 @@ from motionbricks.radix_ipc import ContractError, IPCFailure, ROOT, SubprocessDo
 
 
 def measure(seed=20261104, repeats=7, sizes=(1, 16, 128, 1024)):
+    if len(set(sizes)) != len(sizes):
+        raise ContractError('each benchmark size must be unique')
     rng = random.Random(seed)
     runs, workloads = [], []
     for bits, trits in ((16, 11), (32, 21)):
