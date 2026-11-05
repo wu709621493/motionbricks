@@ -1,13 +1,16 @@
 # SPDX-License-Identifier: Apache-2.0
 from dataclasses import asdict
+import errno
 import json
 import os
 from pathlib import Path
 import random
+import signal
 import struct
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import unittest
 from unittest.mock import patch
@@ -53,7 +56,7 @@ class WireTests(unittest.TestCase):
 
     def test_malformed_frames(self):
         invalid_json = [b'{', b'\xff', b'{"x":1,"x":2}', b'{"x":NaN}',
-                        b'{"x":Infinity}', b'{ "x":1}', b'[' * 2000 + b']' * 2000]
+                        b'{"x":Infinity}', b'{"x":1e999}', b'{ "x":1}', b'[' * 2000 + b']' * 2000]
         frames = [b'', b'\0', b'\0' * 4, struct.pack('!I', MAX_FRAME + 1),
                   pack({'x': 1})[:-1], pack({'x': 1}) + b'x', pack({'x': 1}) * 2]
         frames += [struct.pack('!I', len(raw)) + raw for raw in invalid_json]
@@ -235,7 +238,148 @@ class ProcessTests(unittest.TestCase):
                 client.run([2], [3])
         self.assertEqual(caught.exception.code, 'EXPIRED_RESPONSE')
 
+    def test_wall_clock_rollback_at_parent_and_worker(self):
+        now = time.time_ns()
+        with patch('time.time_ns', side_effect=[now, now - 1]), self.assertRaises(IPCFailure) as caught:
+            SubprocessDotClient().run([2], [3])
+        self.assertEqual(caught.exception.code, 'EXPIRED_RESPONSE')
+
+        from motionbricks.radix_worker import respond
+        obj = envelope()
+        issued = obj['issued_unix_ns']
+        with patch('time.time_ns', side_effect=[issued, issued - 1]), self.assertRaises(ValueError):
+            respond(pack(obj))
+
+    def test_waiting_for_another_call_spends_budget_without_admitting_id(self):
+        client = SubprocessDotClient()
+        rid = 'a' * 32
+        client._lock.acquire()
+        release = threading.Timer(1.0, client._lock.release)
+        release.start()  # Bound the test even if admission waits indefinitely.
+        try:
+            with patch('motionbricks.radix_ipc.exchange') as spawn, self.assertRaises(IPCFailure) as caught:
+                client.run([2], [3], timeout_s=0.03, request_id=rid)
+            self.assertEqual(caught.exception.code, 'TIMEOUT')
+            spawn.assert_not_called()
+        finally:
+            release.join()
+        self.assertEqual(client.run([2], [3], request_id=rid)['value'], 6)
+
+    def test_group_signals_precede_reap_even_on_success(self):
+        created = []
+        popen = subprocess.Popen
+        killpg = os.killpg
+
+        def capture(*args, **kwargs):
+            created.append(popen(*args, **kwargs))
+            return created[-1]
+
+        def check_order(pid, sig):
+            self.assertEqual(pid, created[-1].pid)
+            if sig:
+                self.assertIsNone(created[-1].returncode, 'group leader already reaped')
+            return killpg(pid, sig)
+
+        with patch('subprocess.Popen', side_effect=capture), patch('os.killpg', side_effect=check_order):
+            result = SubprocessDotClient().run([2], [3])
+        self.assert_reaped(result['process'])
+
+    def test_denied_group_signals_still_reap_and_close(self):
+        created = []
+        popen = subprocess.Popen
+
+        def capture(*args, **kwargs):
+            created.append(popen(*args, **kwargs))
+            return created[-1]
+
+        try:
+            with patch('subprocess.Popen', side_effect=capture), patch('os.killpg', side_effect=PermissionError(errno.EPERM, 'injected refusal')):
+                with self.assertRaises(IPCFailure) as caught:
+                    SubprocessDotClient(_command=command('no_read')).run([1], [1], timeout_s=0.2)
+            self.assertEqual(caught.exception.code, 'CLEANUP_FAILED')
+            details = caught.exception.details
+            self.assertEqual(details['attempt_error'], 'TIMEOUT')
+            self.assertEqual(len(details['cleanup_errors']), 2)
+            self.assert_reaped(details)
+            self.assertTrue(all(s.closed for s in (created[0].stdin, created[0].stdout, created[0].stderr)))
+        finally:
+            # Also safe when running this regression against an unfixed checkout.
+            for child in created:
+                child.kill()
+                child.wait(timeout=2)
+                for stream in (child.stdin, child.stdout, child.stderr):
+                    stream.close()
+
+    def test_darwin_zombie_group_eperm_needs_confirmed_disappearance(self):
+        from motionbricks.radix_ipc import _cleanup
+        for disappears in (True, False):
+            child = subprocess.Popen([sys.executable, '-c', 'pass'], stdin=subprocess.PIPE,
+                                     stdout=subprocess.PIPE, stderr=subprocess.PIPE, start_new_session=True)
+            signals = []
+
+            def simulate_darwin(pid, sig):
+                signals.append(sig)
+                if sig == 0 and disappears:
+                    raise ProcessLookupError(errno.ESRCH, 'gone after reap')
+                raise PermissionError(errno.EPERM, 'group signal denied')
+
+            try:
+                with patch('sys.platform', 'darwin'), patch('os.killpg', side_effect=simulate_darwin):
+                    from motionbricks.radix_ipc import _wait_for_exit
+                    self.assertTrue(_wait_for_exit(child.pid, time.monotonic_ns() + 2_000_000_000))
+                    details = _cleanup(child, False)
+                self.assertEqual(signals, [signal.SIGKILL, 0])
+                self.assertTrue(details['reaped'])
+                self.assertEqual(bool(details['cleanup_errors']), not disappears)
+            finally:
+                child.kill()
+                child.wait(timeout=2)
+                for stream in (child.stdin, child.stdout, child.stderr):
+                    stream.close()
+
+    def test_reap_timeout_fails_closed(self):
+        from motionbricks.radix_ipc import _cleanup
+        child = subprocess.Popen(command('no_read'), stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                 stderr=subprocess.PIPE, start_new_session=True)
+        try:
+            with patch.object(child, 'wait', side_effect=subprocess.TimeoutExpired('worker', 0.5)):
+                details = _cleanup(child, False)
+            self.assertFalse(details['reaped'])
+            self.assertTrue(details['cleanup_errors'])
+            self.assertTrue(all(s.closed for s in (child.stdin, child.stdout, child.stderr)))
+        finally:
+            child.kill()
+            child.wait(timeout=2)
+
+    def test_cpu_spin_is_killed_and_session_recovers(self):
+        client = SubprocessDotClient(_command=command('cpu_spin'))
+        with self.assertRaises(IPCFailure) as caught:
+            client.run([1], [1], timeout_s=1.0)
+        self.assertEqual(caught.exception.code, 'TIMEOUT')
+        details = caught.exception.details
+        self.assertIn('ready', details['stderr'])
+        self.assertEqual(details['signals'], ['SIGTERM', 'SIGKILL'])
+        self.assertEqual(details['returncode'], -signal.SIGKILL)
+        self.assert_reaped(details)
+        client._command = SubprocessDotClient()._command
+        self.assertEqual(client.run([2], [3])['value'], 6)
+
+    def test_quiet_descendant_after_success(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            marker = Path(tmp) / 'survived'
+            result = SubprocessDotClient(_command=command('quiet_descendant', marker)).run([2], [3])
+            self.assertEqual(result['value'], 6)
+            self.assertIn('descendant=', result['process']['stderr'])
+            self.assert_reaped(result['process'])
+            time.sleep(1.1)
+            self.assertFalse(marker.exists())
+
     def test_spawn_failure_and_expired_before_spawn(self):
+        with patch('signal.getsignal', return_value=signal.SIG_IGN), patch('subprocess.Popen') as spawn:
+            with self.assertRaises(IPCFailure) as caught:
+                SubprocessDotClient().run([1], [1])
+            self.assertEqual(caught.exception.code, 'SPAWN_FAILED')
+            spawn.assert_not_called()
         with self.assertRaises(IPCFailure) as caught:
             SubprocessDotClient(_command=['/nonexistent/radix-worker']).run([2], [3])
         self.assertEqual(caught.exception.code, 'SPAWN_FAILED')
@@ -263,7 +407,8 @@ class ProcessTests(unittest.TestCase):
     def test_benchmark_cli_success_and_failure(self):
         script = ROOT / 'tools/radix_ipc_benchmark.py'
         for extra, status, code in [(['--repeats', '1', '--sizes', '1'], 'VERIFIED', 0),
-                                    (['--repeats', '0'], 'FAILED', 1)]:
+                                    (['--repeats', '0'], 'FAILED', 1),
+                                    (['--sizes', '1', '1'], 'FAILED', 1)]:
             process = subprocess.run([sys.executable, '-S', str(script), *extra],
                                      capture_output=True, text=True, timeout=10)
             self.assertEqual(process.returncode, code, process.stderr)
@@ -271,6 +416,37 @@ class ProcessTests(unittest.TestCase):
             self.assertEqual(data['status'], status)
             if code:
                 self.assertNotIn('runs', data)
+
+    def test_mixed_absolute_deadline_across_both_partitions(self):
+        now = 10_000_000_000
+        deadlines = []
+
+        def advance(client, lhs, rhs, backend, width, rid, start, deadline):
+            nonlocal now
+            deadlines.append(deadline)
+            now += 550_000_000
+            return {'value': sum(a * b for a, b in zip(lhs, rhs))}
+
+        with patch('time.monotonic_ns', side_effect=lambda: now), patch.object(SubprocessDotClient, '_run', advance):
+            with self.assertRaises(IPCFailure) as caught:
+                run_mixed_dot([1, 2], [3, 4], total_timeout_s=1.0)
+        self.assertEqual(caught.exception.code, 'TIMEOUT')
+        self.assertEqual(deadlines, [11_000_000_000] * 2)
+        self.assertNotIn('value', caught.exception.details)
+
+    def test_mixed_expired_budget_skips_second_partition(self):
+        now = 1_000_000_000
+        def slow_first(*args):
+            nonlocal now
+            now += 1_000_000_000
+            return {'value': 3}
+
+        with patch('time.monotonic_ns', side_effect=lambda: now):
+            with patch.object(SubprocessDotClient, '_run', side_effect=slow_first) as run:
+                with self.assertRaises(IPCFailure) as caught:
+                    run_mixed_dot([1, 2], [3, 4], total_timeout_s=0.5)
+        self.assertEqual(caught.exception.code, 'TIMEOUT')
+        self.assertEqual(run.call_count, 1)
 
     def test_mixed_failure_never_returns_partial_sum(self):
         original = SubprocessDotClient.run

@@ -22,22 +22,29 @@ if mode == 'kill':
     os.kill(os.getpid(), signal.SIGKILL)
 if mode == 'hang':
     time.sleep(30)
-if mode == 'ignore_term':
+if mode in ('ignore_term', 'cpu_spin'):
     signal.signal(signal.SIGTERM, signal.SIG_IGN)
     sys.stderr.write('ready\n')
     sys.stderr.flush()
+    if mode == 'cpu_spin':
+        while True:
+            pass
     time.sleep(30)
-if mode == 'descendant':
+if mode in ('descendant', 'quiet_descendant'):
     pid = os.fork()
     if pid == 0:
         # Report parent timeout cleanup by trying to create a late marker.
         signal.signal(signal.SIGTERM, signal.SIG_IGN)
+        if mode == 'quiet_descendant':
+            for fd in (0, 1, 2):
+                os.close(fd)
         time.sleep(1.0)
         Path(sys.argv[2]).write_text('escaped')
         os._exit(0)
     sys.stderr.write('descendant=' + str(pid) + '\n')
     sys.stderr.flush()
-    sys.exit(0)  # child keeps inherited output pipes open
+    if mode == 'descendant':
+        sys.exit(0)  # child keeps inherited output pipes open
 if mode == 'closed_pipes':
     os.close(1)
     os.close(2)

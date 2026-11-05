@@ -24,7 +24,7 @@ def respond(raw, received_ns=None):
     data = asdict(result)
     result_hash = digest(data)
     ready = time.monotonic_ns()
-    if time.time_ns() >= envelope['expires_unix_ns']:
+    if not envelope['issued_unix_ns'] <= time.time_ns() < envelope['expires_unix_ns']:
         raise ValueError('request expired during execution')
     response = {'wire_version': WIRE_VERSION, 'request_id': envelope['request_id'],
                 'request_sha256': digest(envelope), 'status': 'OK', 'result': data,

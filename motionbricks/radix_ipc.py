@@ -2,13 +2,15 @@
 """Bounded POSIX subprocess experiment, not a security or hardware sandbox."""
 from __future__ import annotations
 
+from contextlib import closing
 from dataclasses import asdict
+import errno
 import hashlib
 import json
-import math
 import os
 from pathlib import Path
 import re
+import select
 import selectors
 import signal
 import struct
@@ -108,9 +110,10 @@ def unpack(raw, limit=MAX_FRAME):
     try:
         data = json.loads(raw[4:].decode('utf-8'), object_pairs_hook=_pairs,
                           parse_constant=_constant)
+        normalized = canonical(data)
     except (ValueError, UnicodeError, RecursionError) as exc:
         raise ContractError('malformed JSON frame') from exc
-    if canonical(data) != raw[4:]:
+    if normalized != raw[4:]:
         raise ContractError('wire JSON is not canonical')
     return data
 
@@ -170,38 +173,110 @@ def parse_result(data, request):
     return result
 
 
-def _signal_group(process, sig, events):
-    try:
-        os.killpg(process.pid, sig)
-        events.append(signal.Signals(sig).name)
-    except ProcessLookupError:
-        pass
+def _wait_for_exit(pid, deadline_ns):
+    """Observe exit without reaping. Keep the group leader's PID reserved."""
+    if hasattr(os, 'waitid'):
+        delay = 0.0005
+        while os.waitid(os.P_PID, pid, os.WEXITED | os.WNOHANG | os.WNOWAIT) is None:
+            remaining = (deadline_ns - time.monotonic_ns()) / 1e9
+            if remaining <= 0:
+                return False
+            time.sleep(min(delay, remaining))
+            delay = min(delay * 2, 0.01)
+        return True
+
+    # macOS Python 3.12 has kqueue but no os.waitid. Already-exited children
+    # can disappear from the filter's process lookup before registration.
+    with closing(select.kqueue()) as queue:
+        event = select.kevent(pid, filter=select.KQ_FILTER_PROC,
+                              flags=select.KQ_EV_ADD | select.KQ_EV_ONESHOT,
+                              fflags=select.KQ_NOTE_EXIT)
+        remaining = max(0, deadline_ns - time.monotonic_ns()) / 1e9
+        try:
+            events = queue.control([event], 1, remaining)
+        except ProcessLookupError:
+            return True
+        if events and events[0].flags & select.KQ_EV_ERROR:
+            error = events[0].data
+            if error != errno.ESRCH:
+                raise OSError(error, os.strerror(error))
+        return bool(events)
 
 
 def _cleanup(process, failed):
-    events = []
-    if failed:
-        _signal_group(process, signal.SIGTERM, events)
+    events, errors = [], []
+    darwin_exited_group_errors = []
+
+    def signal_group(sig):
         try:
-            process.wait(timeout=0.15)
-        except subprocess.TimeoutExpired:
+            os.killpg(process.pid, sig)
+        except ProcessLookupError:
             pass
-    # Also remove any descendants still in our group after the leader exits.
-    _signal_group(process, signal.SIGKILL, events)
+        except OSError as exc:
+            problem = f'{sig.name}: {exc}'
+            # Darwin can report EPERM for a group consisting solely of the
+            # unreaped zombie. Defer only if the leader has actually exited.
+            if sys.platform == 'darwin' and exc.errno == errno.EPERM:
+                try:
+                    if _wait_for_exit(process.pid, time.monotonic_ns()):
+                        darwin_exited_group_errors.append(problem)
+                        return True
+                except OSError as observation_error:
+                    errors.append(f'observe group leader: {observation_error}')
+            errors.append(problem)
+            return False
+        else:
+            events.append(sig.name)
+        return True
+
+    reaped = False
     try:
-        process.wait(timeout=0.5)
-        reaped = True
-    except subprocess.TimeoutExpired:
-        reaped = False
-    for stream in (process.stdin, process.stdout, process.stderr):
-        stream.close()
-    return {'signals': events, 'reaped': reaped, 'returncode': process.returncode}
+        if failed and signal_group(signal.SIGTERM):
+            try:
+                _wait_for_exit(process.pid, time.monotonic_ns() + 150_000_000)
+            except OSError as exc:
+                errors.append(f'observe exit: {exc}')
+    finally:
+        # Group signals must precede every reaping poll/wait. Once reaped,
+        # a numeric PGID could refer to an unrelated, newly created group.
+        if not signal_group(signal.SIGKILL):
+            try:
+                process.kill()  # Best effort for our direct child.
+            except OSError as exc:
+                errors.append(f'kill child: {exc}')
+        try:
+            process.wait(timeout=0.5)
+            reaped = True
+        except (subprocess.TimeoutExpired, OSError) as exc:
+            errors.append(f'reap: {exc}')
+        finally:
+            for stream in (process.stdin, process.stdout, process.stderr):
+                try:
+                    stream.close()
+                except OSError as exc:
+                    errors.append(f'close pipe: {exc}')
+    if darwin_exited_group_errors:
+        # A signal-zero existence probe cannot terminate a recycled group.
+        # Accept EPERM only when the group demonstrably vanished after reap.
+        try:
+            os.killpg(process.pid, 0)
+        except ProcessLookupError:
+            if not reaped:
+                errors.extend(darwin_exited_group_errors)
+        except OSError as exc:
+            errors.extend([*darwin_exited_group_errors, f'probe group: {exc}'])
+        else:
+            errors.extend(darwin_exited_group_errors)
+    return {'signals': events, 'reaped': reaped, 'returncode': process.returncode,
+            'cleanup_errors': errors}
 
 
 def exchange(command, raw, deadline_ns):
     """Multiplex all three pipes; cap stored bytes while reading, not afterwards."""
     if sys.platform not in ('linux', 'darwin'):
         raise IPCFailure('UNSUPPORTED_OS', 'Linux and macOS only')
+    if signal.getsignal(signal.SIGCHLD) != signal.SIG_DFL:
+        raise IPCFailure('SPAWN_FAILED', 'supervisor must own child reaping')
     started = time.monotonic_ns()
     if started >= deadline_ns:
         raise IPCFailure('TIMEOUT', 'deadline elapsed before spawn')
@@ -225,16 +300,10 @@ def exchange(command, raw, deadline_ns):
                                   (process.stderr, selectors.EVENT_READ)):
                 os.set_blocking(stream.fileno(), False)
                 selector.register(stream, event)
-            while selector.get_map() or process.poll() is None:
+            while selector.get_map():
                 remaining = (deadline_ns - time.monotonic_ns()) / 1e9
                 if remaining <= 0:
                     raise IPCFailure('TIMEOUT', 'worker exceeded deadline')
-                if not selector.get_map():
-                    try:
-                        process.wait(timeout=remaining)
-                    except subprocess.TimeoutExpired as exc:
-                        raise IPCFailure('TIMEOUT', 'worker closed pipes but did not exit') from exc
-                    break
                 for key, _ in selector.select(min(remaining, 0.05)):
                     stream = key.fileobj
                     begin = time.monotonic_ns()
@@ -272,12 +341,8 @@ def exchange(command, raw, deadline_ns):
                                 length = struct.unpack('!I', out[:4])[0]
                                 if not 0 < length <= MAX_RESPONSE or len(out) > length + 4:
                                     raise IPCFailure('BAD_FRAME', 'oversized or repeated response frame')
-            if time.monotonic_ns() >= deadline_ns:
-                raise IPCFailure('TIMEOUT', 'worker completed after deadline')
-            if process.returncode != 0:
-                raise IPCFailure('EXIT', f'worker exit status {process.returncode}')
-            if sent != len(raw):
-                raise IPCFailure('INCOMPLETE_SEND', 'worker did not receive full request')
+            if not _wait_for_exit(process.pid, deadline_ns) or time.monotonic_ns() >= deadline_ns:
+                raise IPCFailure('TIMEOUT', 'worker exceeded deadline')
     except BaseException as exc:
         failure = exc
     finally:
@@ -287,13 +352,25 @@ def exchange(command, raw, deadline_ns):
         marks['exchange_wall_ns'] = cleanup_start - spawned
     details = {'pid': process.pid, **cleanup, 'stderr': bytes(err).decode('utf-8', errors='replace'),
                'timing_ns': marks}
-    if not cleanup['reaped']:
-        raise IPCFailure('CLEANUP_FAILED', 'worker could not be reaped within cleanup budget', details)
+    if cleanup['cleanup_errors']:
+        if isinstance(failure, IPCFailure):
+            details['attempt_error'] = failure.code
+        raise IPCFailure('CLEANUP_FAILED', ', '.join(cleanup['cleanup_errors']), details) from failure
     if failure is not None:
         if isinstance(failure, IPCFailure):
             failure.details.update(details)
         raise failure
+    if process.returncode != 0:
+        raise IPCFailure('EXIT', f'worker exit status {process.returncode}', details)
+    if sent != len(raw):
+        raise IPCFailure('INCOMPLETE_SEND', 'worker did not receive full request', details)
     return bytes(out), details
+
+
+def _timeout_ns(seconds):
+    if type(seconds) not in (int, float) or not 0.01 <= seconds <= 60:
+        raise ContractError('timeout must be finite, in [0.01,60] seconds')
+    return int(seconds * 1e9)
 
 
 class SubprocessDotClient:
@@ -302,20 +379,28 @@ class SubprocessDotClient:
     The ledger is bounded and never evicts. A new client starts a new ledger; this
     is not durable/global exactly-once execution. Custom commands are trusted code.
     """
-    def __init__(self, *, _command=None):
+    def __init__(self, *, _command=None, _deadline_ns=None):
+        self._deadline_ns = _deadline_ns
         self._seen = set()
         self._lock = threading.Lock()
         self._command = _command or [sys.executable, '-I', '-S', str(ROOT / 'motionbricks/radix_worker.py')]
 
     def run(self, lhs, rhs, backend='binary', *, width=None, timeout_s=5.0, request_id=None):
-        with self._lock:
-            return self._run(lhs, rhs, backend, width, timeout_s, request_id)
-
-    def _run(self, lhs, rhs, name, width, timeout_s, request_id):
         start = time.monotonic_ns()
-        if type(timeout_s) not in (int, float) or not math.isfinite(timeout_s) or not 0.01 <= timeout_s <= 60:
-            raise ContractError('timeout must be finite, in [0.01,60] seconds')
-        deadline = start + int(timeout_s * 1e9)
+        deadline = start + _timeout_ns(timeout_s)
+        if self._deadline_ns is not None:
+            deadline = min(deadline, self._deadline_ns)
+        remaining = deadline - time.monotonic_ns()
+        if remaining <= 0 or not self._lock.acquire(timeout=remaining / 1e9):
+            raise IPCFailure('TIMEOUT', 'deadline elapsed waiting for the client')
+        try:
+            if time.monotonic_ns() >= deadline:
+                raise IPCFailure('TIMEOUT', 'deadline elapsed before admission')
+            return self._run(lhs, rhs, backend, width, request_id, start, deadline)
+        finally:
+            self._lock.release()
+
+    def _run(self, lhs, rhs, name, width, request_id, start, deadline):
         backend = backend_for(name, width)
         fmt = backend.capabilities.input_format
         if type(lhs) not in (tuple, list) or type(rhs) not in (tuple, list):
@@ -379,7 +464,7 @@ class SubprocessDotClient:
         if value != expected:
             raise IPCFailure('RESULT_MISMATCH', 'worker result differs from integer oracle', process)
         verified = time.monotonic_ns()
-        if verified >= deadline or time.time_ns() >= envelope['expires_unix_ns']:
+        if verified >= deadline or not issued <= time.time_ns() < envelope['expires_unix_ns']:
             raise IPCFailure('EXPIRED_RESPONSE', 'response verification exceeded request lifetime', process)
         host_stages = {'validate_ns': validated - start, 'encode_digits_ns': encoded - validated,
                        'serialize_request_ns': serialized - encoded,
@@ -400,23 +485,26 @@ class SubprocessDotClient:
                 'motion_inference': 'NOT_PERFORMED', 'energy': 'NOT_MEASURED'}
 
 
-def run_mixed_dot(lhs, rhs, *, timeout_s=5.0):
+def run_mixed_dot(lhs, rhs, *, timeout_s=5.0, total_timeout_s=None):
     """Two serial partitions, binary then ternary; never return a partial sum.
 
-    Each partition has its own timeout. This is explicit software composition,
-    not concurrent execution, fault tolerance, or an inference backend.
+    timeout_s caps each partition. Optional total_timeout_s caps the entire call,
+    including admission, both partitions and the full integer check.
     """
+    deadline = None if total_timeout_s is None else time.monotonic_ns() + _timeout_ns(total_timeout_s)
     if type(lhs) not in (list, tuple) or type(rhs) not in (list, tuple) or not 2 <= len(lhs) == len(rhs) <= MAX_ITEMS:
         raise ContractError('mixed dot requires 2..1024 operand pairs')
     lhs, rhs = tuple(lhs), tuple(rhs)
     if any(type(v) is not int or not -(2**31) <= v < 2**31 for v in lhs + rhs):
         raise ContractError('mixed operands must be signed 32-bit integers')
     split = len(lhs) // 2
-    client = SubprocessDotClient()
+    client = SubprocessDotClient(_deadline_ns=deadline)
     runs = [client.run(lhs[:split], rhs[:split], 'binary', timeout_s=timeout_s),
             client.run(lhs[split:], rhs[split:], 'ternary', timeout_s=timeout_s)]
     value = sum(run['value'] for run in runs)
     if value != sum(a * b for a, b in zip(lhs, rhs)):
         raise IPCFailure('RESULT_MISMATCH', 'combined result differs from full oracle')
+    if deadline is not None and time.monotonic_ns() >= deadline:
+        raise IPCFailure('TIMEOUT', 'mixed dot exceeded the task deadline')
     return {'status': 'VERIFIED', 'composition': 'SERIAL_BINARY_TERNARY_PARTITIONS',
             'value': value, 'runs': runs}

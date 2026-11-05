@@ -6,6 +6,7 @@ on:
       - 'tests/radix_ipc/**'
       - 'tests/radix_portability/**'
       - 'tools/radix_ipc_benchmark.py'
+      - 'tools/radix_ipc_sandboxes.sh'
       - '.github/workflows/radix-ipc.yml'
   pull_request:
     paths:
@@ -13,6 +14,7 @@ on:
       - 'tests/radix_ipc/**'
       - 'tests/radix_portability/**'
       - 'tools/radix_ipc_benchmark.py'
+      - 'tools/radix_ipc_sandboxes.sh'
       - '.github/workflows/radix-ipc.yml'
   workflow_dispatch:
 permissions:
@@ -44,6 +46,9 @@ jobs:
         run: python -S -W error::ResourceWarning -m unittest discover -s tests/radix_ipc -v
       - name: Synthetic benchmark smoke test (no performance threshold)
         run: python -S tools/radix_ipc_benchmark.py --repeats 2 --sizes 1 128 > radix-ipc-smoke.json
+      - name: Exercise two isolated Linux containers
+        if: matrix.os == 'ubuntu-24.04' && matrix.python == '3.13'
+        run: bash tools/radix_ipc_sandboxes.sh
       - uses: actions/upload-artifact@v4
         with:
           name: radix-ipc-${{ matrix.os }}-py${{ matrix.python }}

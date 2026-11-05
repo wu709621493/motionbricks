@@ -60,7 +60,10 @@ assert run_mixed_dot(a, b)['value'] == -122
 For mixed execution, the first `floor(n/2)` pairs go to binary and the remainder
 to ternary. Each partition must pass independently, then their sum is verified
 against the full oracle. A failure returns no partial sum. This mode is serial;
-its two request timeouts are separate, not one overall transaction deadline.
+by default `timeout_s` applies to each partition. Pass `total_timeout_s=5.0`
+to share one absolute monotonic deadline across both partitions and the full
+oracle. The earlier of the partition and task deadlines governs each worker.
+A deadline bounds acceptance. Termination and reaping can take additional time.
 
 ## Wire contract, version 1
 
@@ -115,17 +118,23 @@ The client serializes its own calls with a lock. Each attempt launches a fresh
 worker in a new POSIX session/process group. Nonblocking stdin/stdout/stderr are
 multiplexed with `selectors`, so a worker that never reads input or fills stderr
 cannot indefinitely block the supervisor. The caller's monotonic deadline
-starts before validation/encoding and is checked during I/O, after process exit,
+starts before waiting for the client lock and is checked during I/O, after process exit,
 and after verification. Accepted timeouts range from 0.01 to 60 seconds.
 Same-host wall-clock expiration additionally rejects stale envelopes; clock
 jumps may conservatively reject work, while the parent monotonic deadline remains
-the execution limit. There is no network clock-synchronization claim.
+the execution limit. Both endpoints check the lower and upper wall-clock bounds
+at completion. A call that times out in the queue has not spent its ID. There is no network clock-synchronization claim.
 
 On failure or caller interruption, the supervisor sends SIGTERM to its process
 group, allows up to 150 ms for the leader, then sends SIGKILL to the group and
 waits up to 500 ms to reap the direct child. Cleanup also targets any group
 members remaining after an otherwise successful leader exit. Inability to reap
-within that budget reports `CLEANUP_FAILED`, never success. Grandchildren are
+within that budget, group-signal errors and pipe-close errors report
+`CLEANUP_FAILED`. Details include `cleanup_errors`, direct-child reap status and
+the initial IPC error when available. A failed group kill triggers a direct-child
+kill attempt. Group signals precede the final reap to keep the PGID reserved.
+The caller must leave SIGCHLD at its default disposition and give the supervisor
+exclusive ownership of its worker's wait status. Grandchildren are
 not waitable by this parent; they are killed if they remain in the group, and
 reaping is the OS/reparenting supervisor's responsibility. Fault tests cover a
 child retaining inherited pipes after its parent exits.
@@ -162,7 +171,7 @@ components sum to that object's `total_ns`.
 
 | Measurement | Included work and limitations |
 | --- | --- |
-| Parent `validate_ns` | Input validation, ID admission and ledger handling |
+| Parent `validate_ns` | Client queue wait, input validation, ID admission and ledger handling |
 | Parent `encode_digits_ns` | Original integers to binary/trit tuples |
 | Parent `serialize_request_ns` | Dataclass conversion, envelope construction, hashes and frame serialization |
 | Parent `process_roundtrip_ns` | Process launch, worker startup, exchange, worker work, exit and cleanup |
@@ -236,8 +245,8 @@ on this host is not mislabeled as platter computation.
 The dedicated workflow adds six proposed CPU-only jobs: Ubuntu x86-64/ARM64 and
 macOS ARM64, each with Python 3.12/3.13. It installs no dependencies, runs old radix
 tests, IPC/fault tests and a small benchmark, and uploads benchmark JSON.
-Configuration is not execution evidence. Until an approved PR runs remotely,
-macOS/ARM64 and Python 3.13 results remain **not run**.
+The [pre-merge review](radix_ipc/review_29.md) separates the original CI run,
+review reruns, and the two-container experiment.
 
 Tests include signed/extreme arithmetic, 1024-element payloads larger than typical
 pipe buffers, malformed/oversized/deep/duplicate/truncated frames, unsupported
