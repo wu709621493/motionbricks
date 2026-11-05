@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "reviewed_on": "2026-11-03",
+  "reviewed_on": "2026-11-05",
   "language": "zh-CN",
   "scope": "Bounded public-source historical review; not exhaustive and not a patient cohort.",
   "confirmed_hd_patient_ids": [],
@@ -42,7 +42,7 @@
       ],
       "other_disease_claims": [
         {
-          "description_zh": "Kell 血型与 McLeod 综合征被提出作为部分生育史和中年变化的解释；存在批评性讨论，并非分子确诊。",
+          "description_zh": "S4 提出 Kell 血型不合与部分妊娠结局有关，并另以 McLeod 综合征解释中年后的变化。S5 认为部分生育史与前者相容，史料不足以支持后者。两者均无本人分子检测支持。",
           "source_ids": [
             "S4",
             "S5"
@@ -111,7 +111,7 @@
       "motion_data": null,
       "observations": [
         {
-          "description_zh": "早年紧张、注意困难、急躁和行为问题；签署文件与他人代行权力须区分。",
+          "description_zh": "馆方记载其早年容易紧张、难以集中注意力；政务文件由国王签署，实权在不同时期由他人行使。",
           "source_ids": [
             "S9"
           ],
@@ -232,12 +232,13 @@
     },
     {
       "id": "S5",
-      "bibliography": "[Stride & Lopes Floro, 2013，PMID 24350322](https://pubmed.ncbi.nlm.nih.gov/24350322/)",
+      "bibliography": "[Stride & Lopes Floro, 2013，PMID 24350322](https://pubmed.ncbi.nlm.nih.gov/24350322/)；[期刊全文（PDF）](https://www.rcpe.ac.uk/sites/default/files/stride_5.pdf)",
       "urls": [
-        "https://pubmed.ncbi.nlm.nih.gov/24350322/"
+        "https://pubmed.ncbi.nlm.nih.gov/24350322/",
+        "https://www.rcpe.ac.uk/sites/default/files/stride_5.pdf"
       ],
-      "read_scope": "批评性研究摘要；不据摘要宣称已彻底证伪",
-      "accessed_on": "2026-11-03"
+      "read_scope": "2026-11-03 初读摘要；2026-11-05 核对全文结论，分别评估 Kell 生育史假说与 McLeod 诊断的史料支持",
+      "accessed_on": "2026-11-05"
     },
     {
       "id": "S6",
