@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         python: ['3.12', '3.13']
-        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-14]
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-15]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -59,13 +59,13 @@ jobs:
       fail-fast: false
       matrix:
         python: ['3.12', '3.13']
-        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-14]
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-15]
         include:
           - os: ubuntu-24.04
             host: Linux/x86_64
           - os: ubuntu-24.04-arm
             host: Linux/aarch64
-          - os: macos-14
+          - os: macos-15
             host: Darwin/arm64
     env:
       REFUSAL_EXPECT_HOST: ${{ matrix.host }}
