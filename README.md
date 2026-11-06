@@ -321,6 +321,11 @@ imperial histories. It filters symbolic motion candidates and keeps documented
 ages separate from motion scores. Includes a runnable JSON CLI and counterexample
 tests; it does not parse arbitrary classical Chinese, generate poses, or predict lifespan.
 
+The [royal-history HD evidence review](docs/royal_huntington_review.md) adds four
+sourced historical profiles and a separate evidence registry. No confirmed royal
+Huntington's disease case was established in this bounded review; retrospective
+hypotheses, other-disease findings and missing evidence remain explicitly distinct.
+
 ### Crew-led countdown (CPU simulation)
 
 [Zero-boundary countdown](docs/crew_countdown.md) preserves crew HOLD/ABORT,
