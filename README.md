@@ -303,7 +303,8 @@ after stable dwell while retaining an independent balance callback on every tick
 Includes disturbance recovery, latched telemetry/deadline faults, and CPU-only tests;
 physical balance and electrical savings require separate hardware validation.
 The [oyasumi patch](docs/sleep_mode.md#oyasumi-patch-one-shot-goodnight-request)
-adds a one-shot goodnight request, cleared on wake, recovery, or fault.
+accepts the Cantonese `sleep_command="训觉"` as the same one-shot request as
+`oyasumi=True`. Wake, recovery, or fault clears the request.
 The [Oyasumi nonprofit research edition](docs/oyasumi_nonprofit_zh.md) describes
 its public-benefit purpose, free reproducibility, and proposed stewardship;
 the existing Apache-2.0/CC-BY-4.0 licensing remains applicable.

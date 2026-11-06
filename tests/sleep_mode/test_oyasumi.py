@@ -31,6 +31,14 @@ class OyasumiTests(unittest.TestCase):
             self.assertEqual(self.tick().mode, Mode.ACTIVE)
 
     def test_one_shot_runtime_retains_balance_and_valid_zeros(self):
+        self.check_one_shot_runtime({"oyasumi": True})
+
+    def test_text_commands_follow_the_same_runtime_trace(self):
+        for command in ("训觉", "訓覺", "瞓觉", "瞓覺", "oyasumi", "おやすみ"):
+            with self.subTest(command=command):
+                self.check_one_shot_runtime({"sleep_command": command})
+
+    def check_one_shot_runtime(self, first_request):
         calls = {"balance": 0, "generation": 0}
 
         def balance(sample, decision):
@@ -41,15 +49,45 @@ class OyasumiTests(unittest.TestCase):
         def generate():
             calls["generation"] += 1
 
-        runtime = SleepRuntime(self.supervisor, balance_step=balance,
+        runtime = SleepRuntime(SleepSupervisor(SleepConfig(settle_s=0.1)),
+                               balance_step=balance,
                                generate_step=generate,
                                on_fault=lambda: self.fail("Unexpected fault"))
         for i in range(100):
             now = i / 100
-            decision = runtime.step(
-                BalanceSample(now, 0, 0, 0.1, True, True), now, oyasumi=(i == 0))
+            request = first_request if i == 0 else {}
+            decision = runtime.step(BalanceSample(now, 0, 0, 0.1, True, True),
+                                    now, **request)
             self.assertEqual(decision.mode, Mode.SETTLING if i < 10 else Mode.SLEEP)
         self.assertEqual(calls, {"balance": 100, "generation": 10})
+
+    def test_text_and_boolean_requests_share_dwell_and_wake(self):
+        self.assertEqual(self.tick(sleep_command="训觉",
+            sample_changes={"speed_m_s": 0.02}).mode, Mode.ACTIVE)
+        for _ in range(10):
+            self.assertEqual(self.tick(sleep_command=None).mode, Mode.SETTLING)
+        self.assertEqual(self.tick(oyasumi=True, sleep_command="训觉").mode, Mode.SLEEP)
+        self.assertEqual(self.tick(wake=True, sleep_command="训觉").mode, Mode.ACTIVE)
+        self.assert_stays_awake()
+
+    def test_text_request_is_discarded_during_fault_and_recovery(self):
+        self.tick(sleep_command="训觉")
+        self.assertEqual(self.tick(sleep_command="训觉",
+            sample_changes={"controller_ready": False}).mode, Mode.FAULT)
+        self.assertEqual(self.tick(sleep_command="训觉", reset_fault=True).mode, Mode.RECOVERY)
+        self.assertEqual(self.tick(sleep_command="训觉", recovery_complete=True).mode, Mode.ACTIVE)
+        self.assert_stays_awake()
+
+    def test_invalid_text_faults_even_with_valid_boolean_request(self):
+        for invalid in ("", "唔好训觉", "训觉！", " 训觉", True, ["训觉"]):
+            with self.subTest(invalid=invalid):
+                self.tick(sleep_command="训觉")
+                decision = self.tick(oyasumi=True, sleep_command=invalid)
+                self.assertEqual((decision.mode, decision.reason),
+                                 (Mode.FAULT, "invalid sleep command"))
+                self.tick(reset_fault=True)
+                self.tick(recovery_complete=True)
+                self.assert_stays_awake()
 
     def test_request_waits_for_entry_and_restarts_interrupted_dwell(self):
         self.assertEqual(self.tick(oyasumi=True,
@@ -180,7 +218,7 @@ class OyasumiTests(unittest.TestCase):
                 BalanceSample(now, 0, 0, 0.1, True, True), now).mode, Mode.ACTIVE)
 
     def test_invalid_command_faults_and_clears_pending_request(self):
-        for invalid in ("yes", 1, None):
+        for invalid in ("yes", "训觉", 1, None):
             with self.subTest(invalid=invalid):
                 self.setUp()
                 self.tick(oyasumi=True)

@@ -9,6 +9,9 @@ import math
 from typing import Callable
 
 
+_OYASUMI_COMMANDS = frozenset({"训觉", "訓覺", "瞓觉", "瞓覺", "oyasumi", "おやすみ"})
+
+
 class Mode(str, Enum):
     ACTIVE = "active"
     SETTLING = "settling"
@@ -83,9 +86,10 @@ class SleepSupervisor:
     def tick(self, sample: BalanceSample, now_s: float, *,
              sleep_requested: bool = False, wake: bool = False,
              recovery_complete: bool = False, reset_fault: bool = False,
-             oyasumi: bool = False) -> Decision:
-        """Request sleep once with oyasumi=True; continue ticking with fresh data.
+             oyasumi: bool = False, sleep_command: str | None = None) -> Decision:
+        """Request sleep once with oyasumi=True or sleep_command="训觉".
 
+        Continue ticking with fresh data. None means no new text command.
         A request received during wake, recovery or fault is discarded. Repeat
         it only after recovery is acknowledged. False is not cancellation; use
         wake=True to cancel. All existing dwell and safety checks still apply.
@@ -106,6 +110,10 @@ class SleepSupervisor:
             self._last_tick = now_s
         if not valid or not timing_ok:
             return self._decision(Mode.FAULT, "invalid telemetry or missed deadline")
+        if sleep_command is not None and (
+            type(sleep_command) is not str or sleep_command not in _OYASUMI_COMMANDS
+        ):
+            return self._decision(Mode.FAULT, "invalid sleep command")
         if self.mode == Mode.FAULT:
             if not reset_fault:
                 return self._decision(Mode.FAULT, "fault latched")
@@ -122,7 +130,7 @@ class SleepSupervisor:
         if wake:
             self._oyasumi_requested = False
             return self._decision(Mode.ACTIVE, "wake or sleep request cleared")
-        if oyasumi is True:
+        if oyasumi or sleep_command is not None:
             self._oyasumi_requested = True
         if not (sleep_requested or self._oyasumi_requested):
             return self._decision(Mode.ACTIVE, "wake or sleep request cleared")
