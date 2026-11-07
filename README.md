@@ -361,3 +361,10 @@ inference are not implemented.
 retells the duct tape / WD-40 meme and records the 2018 laundry-pod challenge,
 with a fictional workshop sketch and primary-source safety notes.
 The repair joke does not apply to human bodies; laundry pods are not food.
+
+## Fan fiction (fork creative writing)
+
+[阿汉：佣金之外](docs/fiction/zaisheng_yongshi_ahan_zh.md) is an unofficial,
+first-person fan story based on Shi Ou's *再生勇士*. A rainy escort job follows
+the mercenary Ahan through a rescue, a lost axe, and the cost of getting home.
+The story distinguishes borrowed character background from its invented events.
