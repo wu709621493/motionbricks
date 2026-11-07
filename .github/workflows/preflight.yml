@@ -42,6 +42,8 @@ jobs:
       - run: python -S -m unittest discover -s tests/radix_portability -v
       - run: python -S -m motionbricks.radix_portability --backend all
       - run: python -m unittest discover -s tests/sleep_mode -v
+      - run: python -S -m unittest discover -s tests/prebios_power -v
+      - run: python -S -m motionbricks.prebios_power --demo
       - run: python -m unittest discover -s tests/cpu_reference -v
       - run: python -m motionbricks.cpu_reference --validate-only
       - run: python -m unittest discover -s tests/preflight -v
