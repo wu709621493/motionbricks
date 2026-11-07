@@ -354,3 +354,10 @@ signed digit convolution and carry propagation alongside binary and balanced ter
 Run `python -S -m motionbricks.radix_portability --backend all` to compare all three.
 These are standard-library CPU experiments; native nonbinary hardware and motion
 inference are not implemented.
+
+## Engineering humor (fork cultural note)
+
+[工程师两件套：修得了门轴，修不了常识](docs/fiction/duct_tape_wd40_tide_pods_zh.md)
+retells the duct tape / WD-40 meme and records the 2018 laundry-pod challenge,
+with a fictional workshop sketch and primary-source safety notes.
+The repair joke does not apply to human bodies; laundry pods are not food.
