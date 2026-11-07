@@ -1,0 +1,2426 @@
+{
+  "format": "motionbricks.scene",
+  "schema_version": 1,
+  "name": "beijing_siheyuan_c1900_hypothetical_exterior_envelopes",
+  "rig": "unitree_g1",
+  "editor": {
+    "selected_item_id": 1,
+    "camera": {
+      "pos": [
+        45,
+        -28,
+        38
+      ],
+      "pivot": [
+        12,
+        16,
+        0
+      ],
+      "pitch": -34.6,
+      "yaw": 126.87,
+      "fov": 45,
+      "near": 0.01,
+      "far": 1000
+    }
+  },
+  "character_start": {
+    "id": 1,
+    "transform": {
+      "translation": [
+        20.5,
+        -2,
+        0
+      ],
+      "rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "euler_degrees": [
+      0,
+      0,
+      0
+    ]
+  },
+  "smart_primitives": [],
+  "solid_cubes": [
+    {
+      "id": 2,
+      "name": "main_hall_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          12.0,
+          28.0,
+          1.75
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 11.4,
+        "depth": 6,
+        "height": 3.5
+      },
+      "color": [
+        0.7215686274509804,
+        0.6666666666666666,
+        0.5686274509803921
+      ]
+    },
+    {
+      "id": 3,
+      "name": "main_hall_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          12.0,
+          28.0,
+          4.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 11.4,
+        "depth": 6,
+        "height": 1.5
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 4,
+      "name": "west_wing_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          3.6,
+          18.0,
+          1.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.4,
+        "depth": 10,
+        "height": 3.1
+      },
+      "color": [
+        0.7215686274509804,
+        0.6666666666666666,
+        0.5686274509803921
+      ]
+    },
+    {
+      "id": 5,
+      "name": "west_wing_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          3.6,
+          18.0,
+          3.7
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.4,
+        "depth": 10,
+        "height": 1.2
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 6,
+      "name": "east_wing_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          20.4,
+          18.0,
+          1.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.4,
+        "depth": 10,
+        "height": 3.1
+      },
+      "color": [
+        0.7215686274509804,
+        0.6666666666666666,
+        0.5686274509803921
+      ]
+    },
+    {
+      "id": 7,
+      "name": "east_wing_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          20.4,
+          18.0,
+          3.7
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.4,
+        "depth": 10,
+        "height": 1.2
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 8,
+      "name": "south_rooms_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          9.4,
+          2.95,
+          1.45
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 16,
+        "depth": 4.3,
+        "height": 2.9
+      },
+      "color": [
+        0.7215686274509804,
+        0.6666666666666666,
+        0.5686274509803921
+      ]
+    },
+    {
+      "id": 9,
+      "name": "south_rooms_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          9.4,
+          2.95,
+          3.45
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 16,
+        "depth": 4.3,
+        "height": 1.1
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 10,
+      "name": "west_ear_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          3.6,
+          28.35,
+          1.3
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.4,
+        "depth": 4.7,
+        "height": 2.6
+      },
+      "color": [
+        0.7215686274509804,
+        0.6666666666666666,
+        0.5686274509803921
+      ]
+    },
+    {
+      "id": 11,
+      "name": "west_ear_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          3.6,
+          28.35,
+          3.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.4,
+        "depth": 4.7,
+        "height": 0.8
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 12,
+      "name": "east_ear_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          20.4,
+          28.35,
+          1.3
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.4,
+        "depth": 4.7,
+        "height": 2.6
+      },
+      "color": [
+        0.7215686274509804,
+        0.6666666666666666,
+        0.5686274509803921
+      ]
+    },
+    {
+      "id": 13,
+      "name": "east_ear_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          20.4,
+          28.35,
+          3.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.4,
+        "depth": 4.7,
+        "height": 0.8
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 14,
+      "name": "street_gate_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.75,
+          2.65,
+          1.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.3,
+        "depth": 4.6,
+        "height": 3
+      },
+      "color": [
+        0.5647058823529412,
+        0.4196078431372549,
+        0.3176470588235294
+      ]
+    },
+    {
+      "id": 15,
+      "name": "street_gate_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          22.25,
+          2.65,
+          1.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.3,
+        "depth": 4.6,
+        "height": 3
+      },
+      "color": [
+        0.5647058823529412,
+        0.4196078431372549,
+        0.3176470588235294
+      ]
+    },
+    {
+      "id": 16,
+      "name": "street_gate_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          20.500000000000004,
+          2.65,
+          2.875
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 3.1999999999999997,
+        "depth": 4.6,
+        "height": 0.25
+      },
+      "color": [
+        0.5647058823529412,
+        0.4196078431372549,
+        0.3176470588235294
+      ]
+    },
+    {
+      "id": 17,
+      "name": "street_gate_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          20.5,
+          2.65,
+          3.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 3.8,
+        "depth": 4.6,
+        "height": 1
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 18,
+      "name": "screen_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          20.5,
+          6.975,
+          1.2
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 3,
+        "depth": 0.35,
+        "height": 2.4
+      },
+      "color": [
+        0.615686274509804,
+        0.611764705882353,
+        0.5568627450980392
+      ]
+    },
+    {
+      "id": 19,
+      "name": "inner_gate_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          10.450000000000001,
+          10.7,
+          1.4
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.3,
+        "depth": 2.2,
+        "height": 2.8
+      },
+      "color": [
+        0.5647058823529412,
+        0.4196078431372549,
+        0.3176470588235294
+      ]
+    },
+    {
+      "id": 20,
+      "name": "inner_gate_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          13.55,
+          10.7,
+          1.4
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.3,
+        "depth": 2.2,
+        "height": 2.8
+      },
+      "color": [
+        0.5647058823529412,
+        0.4196078431372549,
+        0.3176470588235294
+      ]
+    },
+    {
+      "id": 21,
+      "name": "inner_gate_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          12.000000000000002,
+          10.7,
+          2.675
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 2.8,
+        "depth": 2.2,
+        "height": 0.25
+      },
+      "color": [
+        0.5647058823529412,
+        0.4196078431372549,
+        0.3176470588235294
+      ]
+    },
+    {
+      "id": 22,
+      "name": "inner_gate_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          12.0,
+          10.7,
+          3.3
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 3.4,
+        "depth": 2.2,
+        "height": 1
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 23,
+      "name": "partition_w_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          5.324999999999999,
+          10.55,
+          1.1
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 9.95,
+        "depth": 0.3,
+        "height": 2.2
+      },
+      "color": [
+        0.615686274509804,
+        0.611764705882353,
+        0.5568627450980392
+      ]
+    },
+    {
+      "id": 24,
+      "name": "partition_e_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.674999999999997,
+          10.55,
+          1.1
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 9.95,
+        "depth": 0.3,
+        "height": 2.2
+      },
+      "color": [
+        0.615686274509804,
+        0.611764705882353,
+        0.5568627450980392
+      ]
+    },
+    {
+      "id": 25,
+      "name": "gallery_w_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          5.875,
+          12.274999999999999,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 26,
+      "name": "gallery_w_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          6.725,
+          12.274999999999999,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 27,
+      "name": "gallery_w_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          5.875,
+          14.805,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 28,
+      "name": "gallery_w_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          6.725,
+          14.805,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 29,
+      "name": "gallery_w_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          5.875,
+          17.334999999999997,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 30,
+      "name": "gallery_w_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          6.725,
+          17.334999999999997,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 31,
+      "name": "gallery_w_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          5.875,
+          19.865,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 32,
+      "name": "gallery_w_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          6.725,
+          19.865,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 33,
+      "name": "gallery_w_8",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          5.875,
+          22.395,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 34,
+      "name": "gallery_w_9",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          6.725,
+          22.395,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 35,
+      "name": "gallery_w_10",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          5.875,
+          24.925,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 36,
+      "name": "gallery_w_11",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          6.725,
+          24.925,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 37,
+      "name": "gallery_w_12",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          6.3,
+          18.6,
+          2.4250000000000003
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 12.8,
+        "height": 0.15
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 38,
+      "name": "gallery_w_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          6.3,
+          18.6,
+          2.7
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 12.8,
+        "height": 0.4
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 39,
+      "name": "gallery_e_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          17.275,
+          12.274999999999999,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 40,
+      "name": "gallery_e_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.125,
+          12.274999999999999,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 41,
+      "name": "gallery_e_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          17.275,
+          14.805,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 42,
+      "name": "gallery_e_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.125,
+          14.805,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 43,
+      "name": "gallery_e_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          17.275,
+          17.334999999999997,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 44,
+      "name": "gallery_e_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.125,
+          17.334999999999997,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 45,
+      "name": "gallery_e_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          17.275,
+          19.865,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 46,
+      "name": "gallery_e_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.125,
+          19.865,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 47,
+      "name": "gallery_e_8",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          17.275,
+          22.395,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 48,
+      "name": "gallery_e_9",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.125,
+          22.395,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 49,
+      "name": "gallery_e_10",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          17.275,
+          24.925,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 50,
+      "name": "gallery_e_11",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.125,
+          24.925,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 51,
+      "name": "gallery_e_12",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          17.7,
+          18.6,
+          2.4250000000000003
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 12.8,
+        "height": 0.15
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 52,
+      "name": "gallery_e_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          17.7,
+          18.6,
+          2.7
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 12.8,
+        "height": 0.4
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 53,
+      "name": "gallery_sw_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          5.875,
+          11.274999999999999,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 54,
+      "name": "gallery_sw_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          5.875,
+          12.124999999999998,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 55,
+      "name": "gallery_sw_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          8.049999999999999,
+          11.274999999999999,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 56,
+      "name": "gallery_sw_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          8.049999999999999,
+          12.124999999999998,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 57,
+      "name": "gallery_sw_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          10.224999999999998,
+          11.274999999999999,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 58,
+      "name": "gallery_sw_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          10.224999999999998,
+          12.124999999999998,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 59,
+      "name": "gallery_sw_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          8.05,
+          11.7,
+          2.4250000000000003
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.5,
+        "depth": 1,
+        "height": 0.15
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 60,
+      "name": "gallery_sw_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          8.05,
+          11.7,
+          2.7
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.5,
+        "depth": 1,
+        "height": 0.4
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 61,
+      "name": "gallery_se_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          13.774999999999999,
+          11.274999999999999,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 62,
+      "name": "gallery_se_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          13.774999999999999,
+          12.124999999999998,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 63,
+      "name": "gallery_se_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          15.95,
+          11.274999999999999,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 64,
+      "name": "gallery_se_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          15.95,
+          12.124999999999998,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 65,
+      "name": "gallery_se_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.124999999999996,
+          11.274999999999999,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 66,
+      "name": "gallery_se_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.124999999999996,
+          12.124999999999998,
+          1.25
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 2.5
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 67,
+      "name": "gallery_se_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          15.95,
+          11.7,
+          2.4250000000000003
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.5,
+        "depth": 1,
+        "height": 0.15
+      },
+      "color": [
+        0.6352941176470588,
+        0.5058823529411764,
+        0.3764705882352941
+      ]
+    },
+    {
+      "id": 68,
+      "name": "gallery_se_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          15.95,
+          11.7,
+          2.7
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.5,
+        "depth": 1,
+        "height": 0.4
+      },
+      "color": [
+        0.3254901960784314,
+        0.36470588235294116,
+        0.3568627450980392
+      ]
+    },
+    {
+      "id": 69,
+      "name": "boundary_w_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          0.175,
+          16.0,
+          1.2
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.35,
+        "depth": 32,
+        "height": 2.4
+      },
+      "color": [
+        0.615686274509804,
+        0.611764705882353,
+        0.5568627450980392
+      ]
+    },
+    {
+      "id": 70,
+      "name": "boundary_e_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          23.825,
+          16.0,
+          1.2
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.35,
+        "depth": 32,
+        "height": 2.4
+      },
+      "color": [
+        0.615686274509804,
+        0.611764705882353,
+        0.5568627450980392
+      ]
+    },
+    {
+      "id": 71,
+      "name": "boundary_n_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          12.0,
+          31.825,
+          1.2
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 23.3,
+        "depth": 0.35,
+        "height": 2.4
+      },
+      "color": [
+        0.615686274509804,
+        0.611764705882353,
+        0.5568627450980392
+      ]
+    },
+    {
+      "id": 72,
+      "name": "boundary_sw_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          9.475,
+          0.175,
+          1.2
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 18.25,
+        "depth": 0.35,
+        "height": 2.4
+      },
+      "color": [
+        0.615686274509804,
+        0.611764705882353,
+        0.5568627450980392
+      ]
+    },
+    {
+      "id": 73,
+      "name": "boundary_se_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          23.025,
+          0.175,
+          1.2
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.25,
+        "depth": 0.35,
+        "height": 2.4
+      },
+      "color": [
+        0.615686274509804,
+        0.611764705882353,
+        0.5568627450980392
+      ]
+    }
+  ]
+}

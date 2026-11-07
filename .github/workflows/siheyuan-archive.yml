@@ -1,0 +1,36 @@
+name: Siheyuan archive
+on:
+  push:
+    paths:
+      - 'data/heritage/**'
+      - 'tools/siheyuan/**'
+      - 'docs/heritage/**'
+      - 'tests/siheyuan/**'
+      - 'app/runtime/common/io/**'
+      - '.github/workflows/siheyuan-archive.yml'
+  pull_request:
+    paths:
+      - 'data/heritage/**'
+      - 'tools/siheyuan/**'
+      - 'docs/heritage/**'
+      - 'tests/siheyuan/**'
+      - 'app/runtime/common/io/**'
+      - '.github/workflows/siheyuan-archive.yml'
+permissions:
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -S -m unittest discover -s tests/siheyuan -v
+      - run: python -S tools/siheyuan/build.py --check

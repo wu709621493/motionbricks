@@ -354,3 +354,11 @@ signed digit convolution and carry propagation alongside binary and balanced ter
 Run `python -S -m motionbricks.radix_portability --backend all` to compare all three.
 These are standard-library CPU experiments; native nonbinary hardware and motion
 inference are not implemented.
+
+### Beijing courtyard heritage archive (c. 1900)
+
+The [北京四合院数字档案](docs/heritage/beijing_siheyuan_1900/README.md) adds an
+offline, selectable plan and rotating massing viewer, source catalogue, SVG/OBJ
+exports and a MotionBricks exterior scene. It is a two-courtyard typological
+reconstruction with explicitly hypothetical dimensions, not a surveyed historic
+address. Rebuild and verify with `python -S tools/siheyuan/build.py --check`.
