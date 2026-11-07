@@ -296,6 +296,14 @@ segment-relative motion and contact-timing evaluation for MotionBricks.
 This is a research design note, not a chassis, collision, or fusion simulator.
 
 
+## Experimental voltage/current pre-BIOS
+
+The [voltage/current pre-BIOS prototype](docs/prebios_voltage_current_zh.md)
+checks declared per-rail electrical envelopes, measurement uncertainty and
+sample continuity, and compares modeled DC supply losses. It runs offline with
+the standard library; it does not write firmware or certify memory stability.
+Run `python -S -m motionbricks.prebios_power --demo` for a synthetic example.
+
 ## Experimental balance-aware sleep
 
 The opt-in [sleep supervisor](docs/sleep_mode.md) pauses optional motion generation
