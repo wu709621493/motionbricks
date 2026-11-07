@@ -1,0 +1,81 @@
+name: Zhuyin Bridge
+on:
+  push:
+    paths: ['experiments/zhuyin_bridge/**', '.github/workflows/zhuyin-bridge.yml']
+  pull_request:
+    paths: ['experiments/zhuyin_bridge/**', '.github/workflows/zhuyin-bridge.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: zhuyin-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+defaults:
+  run:
+    working-directory: experiments/zhuyin_bridge
+jobs:
+  model-and-resources:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Regenerate bundled resources
+        run: |
+          python Tools/build_data.py
+          python Tools/make_project.py
+          python Tools/build_preview.py
+          git diff --exit-code -- .
+      - name: Validate packaging and reference engine
+        run: |
+          python Tools/check_package.py
+          node --test Tools/test_engine.cjs
+  apple-build:
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - name: Record Apple toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+      - name: Test Swift engine
+        run: swift test
+      - name: Build containing app and keyboard extension
+        run: >-
+          xcodebuild -project ZhuyinBridge.xcodeproj -scheme ZhuyinBridge
+          -sdk iphonesimulator -destination 'generic/platform=iOS Simulator'
+          -derivedDataPath .derivedData CODE_SIGNING_ALLOWED=NO build
+  browser-preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned UI test tooling
+        run: |
+          npm install --no-save --ignore-scripts --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps chromium
+      - name: Exercise preview interaction and four widths
+        env:
+          SCREENSHOT_DIR: screenshots
+        run: node Tools/test_ui.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: zhuyin-browser-screenshots
+          path: experiments/zhuyin_bridge/screenshots/*.png
+          if-no-files-found: ignore

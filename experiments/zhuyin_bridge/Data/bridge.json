@@ -1,0 +1,3274 @@
+{
+  "version": 1,
+  "syllables": [
+    {
+      "pinyin": "a",
+      "zhuyin": "ㄚ"
+    },
+    {
+      "pinyin": "ai",
+      "zhuyin": "ㄞ"
+    },
+    {
+      "pinyin": "an",
+      "zhuyin": "ㄢ"
+    },
+    {
+      "pinyin": "ang",
+      "zhuyin": "ㄤ"
+    },
+    {
+      "pinyin": "ao",
+      "zhuyin": "ㄠ"
+    },
+    {
+      "pinyin": "ba",
+      "zhuyin": "ㄅㄚ"
+    },
+    {
+      "pinyin": "bai",
+      "zhuyin": "ㄅㄞ"
+    },
+    {
+      "pinyin": "ban",
+      "zhuyin": "ㄅㄢ"
+    },
+    {
+      "pinyin": "bang",
+      "zhuyin": "ㄅㄤ"
+    },
+    {
+      "pinyin": "bao",
+      "zhuyin": "ㄅㄠ"
+    },
+    {
+      "pinyin": "bei",
+      "zhuyin": "ㄅㄟ"
+    },
+    {
+      "pinyin": "ben",
+      "zhuyin": "ㄅㄣ"
+    },
+    {
+      "pinyin": "beng",
+      "zhuyin": "ㄅㄥ"
+    },
+    {
+      "pinyin": "bi",
+      "zhuyin": "ㄅㄧ"
+    },
+    {
+      "pinyin": "bian",
+      "zhuyin": "ㄅㄧㄢ"
+    },
+    {
+      "pinyin": "biao",
+      "zhuyin": "ㄅㄧㄠ"
+    },
+    {
+      "pinyin": "bie",
+      "zhuyin": "ㄅㄧㄝ"
+    },
+    {
+      "pinyin": "bin",
+      "zhuyin": "ㄅㄧㄣ"
+    },
+    {
+      "pinyin": "bing",
+      "zhuyin": "ㄅㄧㄥ"
+    },
+    {
+      "pinyin": "bo",
+      "zhuyin": "ㄅㄛ"
+    },
+    {
+      "pinyin": "bu",
+      "zhuyin": "ㄅㄨ"
+    },
+    {
+      "pinyin": "ca",
+      "zhuyin": "ㄘㄚ"
+    },
+    {
+      "pinyin": "cai",
+      "zhuyin": "ㄘㄞ"
+    },
+    {
+      "pinyin": "can",
+      "zhuyin": "ㄘㄢ"
+    },
+    {
+      "pinyin": "cang",
+      "zhuyin": "ㄘㄤ"
+    },
+    {
+      "pinyin": "cao",
+      "zhuyin": "ㄘㄠ"
+    },
+    {
+      "pinyin": "ce",
+      "zhuyin": "ㄘㄜ"
+    },
+    {
+      "pinyin": "cen",
+      "zhuyin": "ㄘㄣ"
+    },
+    {
+      "pinyin": "ceng",
+      "zhuyin": "ㄘㄥ"
+    },
+    {
+      "pinyin": "cha",
+      "zhuyin": "ㄔㄚ"
+    },
+    {
+      "pinyin": "chai",
+      "zhuyin": "ㄔㄞ"
+    },
+    {
+      "pinyin": "chan",
+      "zhuyin": "ㄔㄢ"
+    },
+    {
+      "pinyin": "chang",
+      "zhuyin": "ㄔㄤ"
+    },
+    {
+      "pinyin": "chao",
+      "zhuyin": "ㄔㄠ"
+    },
+    {
+      "pinyin": "che",
+      "zhuyin": "ㄔㄜ"
+    },
+    {
+      "pinyin": "chen",
+      "zhuyin": "ㄔㄣ"
+    },
+    {
+      "pinyin": "cheng",
+      "zhuyin": "ㄔㄥ"
+    },
+    {
+      "pinyin": "chi",
+      "zhuyin": "ㄔ"
+    },
+    {
+      "pinyin": "chong",
+      "zhuyin": "ㄔㄨㄥ"
+    },
+    {
+      "pinyin": "chou",
+      "zhuyin": "ㄔㄡ"
+    },
+    {
+      "pinyin": "chu",
+      "zhuyin": "ㄔㄨ"
+    },
+    {
+      "pinyin": "chua",
+      "zhuyin": "ㄔㄨㄚ"
+    },
+    {
+      "pinyin": "chuai",
+      "zhuyin": "ㄔㄨㄞ"
+    },
+    {
+      "pinyin": "chuan",
+      "zhuyin": "ㄔㄨㄢ"
+    },
+    {
+      "pinyin": "chuang",
+      "zhuyin": "ㄔㄨㄤ"
+    },
+    {
+      "pinyin": "chui",
+      "zhuyin": "ㄔㄨㄟ"
+    },
+    {
+      "pinyin": "chun",
+      "zhuyin": "ㄔㄨㄣ"
+    },
+    {
+      "pinyin": "chuo",
+      "zhuyin": "ㄔㄨㄛ"
+    },
+    {
+      "pinyin": "ci",
+      "zhuyin": "ㄘ"
+    },
+    {
+      "pinyin": "cong",
+      "zhuyin": "ㄘㄨㄥ"
+    },
+    {
+      "pinyin": "cou",
+      "zhuyin": "ㄘㄡ"
+    },
+    {
+      "pinyin": "cu",
+      "zhuyin": "ㄘㄨ"
+    },
+    {
+      "pinyin": "cuan",
+      "zhuyin": "ㄘㄨㄢ"
+    },
+    {
+      "pinyin": "cui",
+      "zhuyin": "ㄘㄨㄟ"
+    },
+    {
+      "pinyin": "cun",
+      "zhuyin": "ㄘㄨㄣ"
+    },
+    {
+      "pinyin": "cuo",
+      "zhuyin": "ㄘㄨㄛ"
+    },
+    {
+      "pinyin": "da",
+      "zhuyin": "ㄉㄚ"
+    },
+    {
+      "pinyin": "dai",
+      "zhuyin": "ㄉㄞ"
+    },
+    {
+      "pinyin": "dan",
+      "zhuyin": "ㄉㄢ"
+    },
+    {
+      "pinyin": "dang",
+      "zhuyin": "ㄉㄤ"
+    },
+    {
+      "pinyin": "dao",
+      "zhuyin": "ㄉㄠ"
+    },
+    {
+      "pinyin": "de",
+      "zhuyin": "ㄉㄜ"
+    },
+    {
+      "pinyin": "dei",
+      "zhuyin": "ㄉㄟ"
+    },
+    {
+      "pinyin": "den",
+      "zhuyin": "ㄉㄣ"
+    },
+    {
+      "pinyin": "deng",
+      "zhuyin": "ㄉㄥ"
+    },
+    {
+      "pinyin": "di",
+      "zhuyin": "ㄉㄧ"
+    },
+    {
+      "pinyin": "dian",
+      "zhuyin": "ㄉㄧㄢ"
+    },
+    {
+      "pinyin": "diao",
+      "zhuyin": "ㄉㄧㄠ"
+    },
+    {
+      "pinyin": "die",
+      "zhuyin": "ㄉㄧㄝ"
+    },
+    {
+      "pinyin": "ding",
+      "zhuyin": "ㄉㄧㄥ"
+    },
+    {
+      "pinyin": "diu",
+      "zhuyin": "ㄉㄧㄡ"
+    },
+    {
+      "pinyin": "dong",
+      "zhuyin": "ㄉㄨㄥ"
+    },
+    {
+      "pinyin": "dou",
+      "zhuyin": "ㄉㄡ"
+    },
+    {
+      "pinyin": "du",
+      "zhuyin": "ㄉㄨ"
+    },
+    {
+      "pinyin": "duan",
+      "zhuyin": "ㄉㄨㄢ"
+    },
+    {
+      "pinyin": "dui",
+      "zhuyin": "ㄉㄨㄟ"
+    },
+    {
+      "pinyin": "dun",
+      "zhuyin": "ㄉㄨㄣ"
+    },
+    {
+      "pinyin": "duo",
+      "zhuyin": "ㄉㄨㄛ"
+    },
+    {
+      "pinyin": "e",
+      "zhuyin": "ㄜ"
+    },
+    {
+      "pinyin": "ei",
+      "zhuyin": "ㄟ"
+    },
+    {
+      "pinyin": "en",
+      "zhuyin": "ㄣ"
+    },
+    {
+      "pinyin": "eng",
+      "zhuyin": "ㄥ"
+    },
+    {
+      "pinyin": "er",
+      "zhuyin": "ㄦ"
+    },
+    {
+      "pinyin": "fa",
+      "zhuyin": "ㄈㄚ"
+    },
+    {
+      "pinyin": "fan",
+      "zhuyin": "ㄈㄢ"
+    },
+    {
+      "pinyin": "fang",
+      "zhuyin": "ㄈㄤ"
+    },
+    {
+      "pinyin": "fei",
+      "zhuyin": "ㄈㄟ"
+    },
+    {
+      "pinyin": "fen",
+      "zhuyin": "ㄈㄣ"
+    },
+    {
+      "pinyin": "feng",
+      "zhuyin": "ㄈㄥ"
+    },
+    {
+      "pinyin": "fo",
+      "zhuyin": "ㄈㄛ"
+    },
+    {
+      "pinyin": "fou",
+      "zhuyin": "ㄈㄡ"
+    },
+    {
+      "pinyin": "fu",
+      "zhuyin": "ㄈㄨ"
+    },
+    {
+      "pinyin": "ga",
+      "zhuyin": "ㄍㄚ"
+    },
+    {
+      "pinyin": "gai",
+      "zhuyin": "ㄍㄞ"
+    },
+    {
+      "pinyin": "gan",
+      "zhuyin": "ㄍㄢ"
+    },
+    {
+      "pinyin": "gang",
+      "zhuyin": "ㄍㄤ"
+    },
+    {
+      "pinyin": "gao",
+      "zhuyin": "ㄍㄠ"
+    },
+    {
+      "pinyin": "ge",
+      "zhuyin": "ㄍㄜ"
+    },
+    {
+      "pinyin": "gei",
+      "zhuyin": "ㄍㄟ"
+    },
+    {
+      "pinyin": "gen",
+      "zhuyin": "ㄍㄣ"
+    },
+    {
+      "pinyin": "geng",
+      "zhuyin": "ㄍㄥ"
+    },
+    {
+      "pinyin": "gong",
+      "zhuyin": "ㄍㄨㄥ"
+    },
+    {
+      "pinyin": "gou",
+      "zhuyin": "ㄍㄡ"
+    },
+    {
+      "pinyin": "gu",
+      "zhuyin": "ㄍㄨ"
+    },
+    {
+      "pinyin": "gua",
+      "zhuyin": "ㄍㄨㄚ"
+    },
+    {
+      "pinyin": "guai",
+      "zhuyin": "ㄍㄨㄞ"
+    },
+    {
+      "pinyin": "guan",
+      "zhuyin": "ㄍㄨㄢ"
+    },
+    {
+      "pinyin": "guang",
+      "zhuyin": "ㄍㄨㄤ"
+    },
+    {
+      "pinyin": "gui",
+      "zhuyin": "ㄍㄨㄟ"
+    },
+    {
+      "pinyin": "gun",
+      "zhuyin": "ㄍㄨㄣ"
+    },
+    {
+      "pinyin": "guo",
+      "zhuyin": "ㄍㄨㄛ"
+    },
+    {
+      "pinyin": "ha",
+      "zhuyin": "ㄏㄚ"
+    },
+    {
+      "pinyin": "hai",
+      "zhuyin": "ㄏㄞ"
+    },
+    {
+      "pinyin": "han",
+      "zhuyin": "ㄏㄢ"
+    },
+    {
+      "pinyin": "hang",
+      "zhuyin": "ㄏㄤ"
+    },
+    {
+      "pinyin": "hao",
+      "zhuyin": "ㄏㄠ"
+    },
+    {
+      "pinyin": "he",
+      "zhuyin": "ㄏㄜ"
+    },
+    {
+      "pinyin": "hei",
+      "zhuyin": "ㄏㄟ"
+    },
+    {
+      "pinyin": "hen",
+      "zhuyin": "ㄏㄣ"
+    },
+    {
+      "pinyin": "heng",
+      "zhuyin": "ㄏㄥ"
+    },
+    {
+      "pinyin": "hong",
+      "zhuyin": "ㄏㄨㄥ"
+    },
+    {
+      "pinyin": "hou",
+      "zhuyin": "ㄏㄡ"
+    },
+    {
+      "pinyin": "hu",
+      "zhuyin": "ㄏㄨ"
+    },
+    {
+      "pinyin": "hua",
+      "zhuyin": "ㄏㄨㄚ"
+    },
+    {
+      "pinyin": "huai",
+      "zhuyin": "ㄏㄨㄞ"
+    },
+    {
+      "pinyin": "huan",
+      "zhuyin": "ㄏㄨㄢ"
+    },
+    {
+      "pinyin": "huang",
+      "zhuyin": "ㄏㄨㄤ"
+    },
+    {
+      "pinyin": "hui",
+      "zhuyin": "ㄏㄨㄟ"
+    },
+    {
+      "pinyin": "hun",
+      "zhuyin": "ㄏㄨㄣ"
+    },
+    {
+      "pinyin": "huo",
+      "zhuyin": "ㄏㄨㄛ"
+    },
+    {
+      "pinyin": "ji",
+      "zhuyin": "ㄐㄧ"
+    },
+    {
+      "pinyin": "jia",
+      "zhuyin": "ㄐㄧㄚ"
+    },
+    {
+      "pinyin": "jian",
+      "zhuyin": "ㄐㄧㄢ"
+    },
+    {
+      "pinyin": "jiang",
+      "zhuyin": "ㄐㄧㄤ"
+    },
+    {
+      "pinyin": "jiao",
+      "zhuyin": "ㄐㄧㄠ"
+    },
+    {
+      "pinyin": "jie",
+      "zhuyin": "ㄐㄧㄝ"
+    },
+    {
+      "pinyin": "jin",
+      "zhuyin": "ㄐㄧㄣ"
+    },
+    {
+      "pinyin": "jing",
+      "zhuyin": "ㄐㄧㄥ"
+    },
+    {
+      "pinyin": "jiong",
+      "zhuyin": "ㄐㄩㄥ"
+    },
+    {
+      "pinyin": "jiu",
+      "zhuyin": "ㄐㄧㄡ"
+    },
+    {
+      "pinyin": "ju",
+      "zhuyin": "ㄐㄩ"
+    },
+    {
+      "pinyin": "juan",
+      "zhuyin": "ㄐㄩㄢ"
+    },
+    {
+      "pinyin": "jue",
+      "zhuyin": "ㄐㄩㄝ"
+    },
+    {
+      "pinyin": "jun",
+      "zhuyin": "ㄐㄩㄣ"
+    },
+    {
+      "pinyin": "ka",
+      "zhuyin": "ㄎㄚ"
+    },
+    {
+      "pinyin": "kai",
+      "zhuyin": "ㄎㄞ"
+    },
+    {
+      "pinyin": "kan",
+      "zhuyin": "ㄎㄢ"
+    },
+    {
+      "pinyin": "kang",
+      "zhuyin": "ㄎㄤ"
+    },
+    {
+      "pinyin": "kao",
+      "zhuyin": "ㄎㄠ"
+    },
+    {
+      "pinyin": "ke",
+      "zhuyin": "ㄎㄜ"
+    },
+    {
+      "pinyin": "kei",
+      "zhuyin": "ㄎㄟ"
+    },
+    {
+      "pinyin": "ken",
+      "zhuyin": "ㄎㄣ"
+    },
+    {
+      "pinyin": "keng",
+      "zhuyin": "ㄎㄥ"
+    },
+    {
+      "pinyin": "kong",
+      "zhuyin": "ㄎㄨㄥ"
+    },
+    {
+      "pinyin": "kou",
+      "zhuyin": "ㄎㄡ"
+    },
+    {
+      "pinyin": "ku",
+      "zhuyin": "ㄎㄨ"
+    },
+    {
+      "pinyin": "kua",
+      "zhuyin": "ㄎㄨㄚ"
+    },
+    {
+      "pinyin": "kuai",
+      "zhuyin": "ㄎㄨㄞ"
+    },
+    {
+      "pinyin": "kuan",
+      "zhuyin": "ㄎㄨㄢ"
+    },
+    {
+      "pinyin": "kuang",
+      "zhuyin": "ㄎㄨㄤ"
+    },
+    {
+      "pinyin": "kui",
+      "zhuyin": "ㄎㄨㄟ"
+    },
+    {
+      "pinyin": "kun",
+      "zhuyin": "ㄎㄨㄣ"
+    },
+    {
+      "pinyin": "kuo",
+      "zhuyin": "ㄎㄨㄛ"
+    },
+    {
+      "pinyin": "la",
+      "zhuyin": "ㄌㄚ"
+    },
+    {
+      "pinyin": "lai",
+      "zhuyin": "ㄌㄞ"
+    },
+    {
+      "pinyin": "lan",
+      "zhuyin": "ㄌㄢ"
+    },
+    {
+      "pinyin": "lang",
+      "zhuyin": "ㄌㄤ"
+    },
+    {
+      "pinyin": "lao",
+      "zhuyin": "ㄌㄠ"
+    },
+    {
+      "pinyin": "le",
+      "zhuyin": "ㄌㄜ"
+    },
+    {
+      "pinyin": "lei",
+      "zhuyin": "ㄌㄟ"
+    },
+    {
+      "pinyin": "leng",
+      "zhuyin": "ㄌㄥ"
+    },
+    {
+      "pinyin": "li",
+      "zhuyin": "ㄌㄧ"
+    },
+    {
+      "pinyin": "lia",
+      "zhuyin": "ㄌㄧㄚ"
+    },
+    {
+      "pinyin": "lian",
+      "zhuyin": "ㄌㄧㄢ"
+    },
+    {
+      "pinyin": "liang",
+      "zhuyin": "ㄌㄧㄤ"
+    },
+    {
+      "pinyin": "liao",
+      "zhuyin": "ㄌㄧㄠ"
+    },
+    {
+      "pinyin": "lie",
+      "zhuyin": "ㄌㄧㄝ"
+    },
+    {
+      "pinyin": "lin",
+      "zhuyin": "ㄌㄧㄣ"
+    },
+    {
+      "pinyin": "ling",
+      "zhuyin": "ㄌㄧㄥ"
+    },
+    {
+      "pinyin": "liu",
+      "zhuyin": "ㄌㄧㄡ"
+    },
+    {
+      "pinyin": "lo",
+      "zhuyin": "ㄌㄛ"
+    },
+    {
+      "pinyin": "long",
+      "zhuyin": "ㄌㄨㄥ"
+    },
+    {
+      "pinyin": "lou",
+      "zhuyin": "ㄌㄡ"
+    },
+    {
+      "pinyin": "lu",
+      "zhuyin": "ㄌㄨ"
+    },
+    {
+      "pinyin": "luan",
+      "zhuyin": "ㄌㄨㄢ"
+    },
+    {
+      "pinyin": "lun",
+      "zhuyin": "ㄌㄨㄣ"
+    },
+    {
+      "pinyin": "luo",
+      "zhuyin": "ㄌㄨㄛ"
+    },
+    {
+      "pinyin": "lü",
+      "zhuyin": "ㄌㄩ"
+    },
+    {
+      "pinyin": "lüe",
+      "zhuyin": "ㄌㄩㄝ"
+    },
+    {
+      "pinyin": "ma",
+      "zhuyin": "ㄇㄚ"
+    },
+    {
+      "pinyin": "mai",
+      "zhuyin": "ㄇㄞ"
+    },
+    {
+      "pinyin": "man",
+      "zhuyin": "ㄇㄢ"
+    },
+    {
+      "pinyin": "mang",
+      "zhuyin": "ㄇㄤ"
+    },
+    {
+      "pinyin": "mao",
+      "zhuyin": "ㄇㄠ"
+    },
+    {
+      "pinyin": "me",
+      "zhuyin": "ㄇㄜ"
+    },
+    {
+      "pinyin": "mei",
+      "zhuyin": "ㄇㄟ"
+    },
+    {
+      "pinyin": "men",
+      "zhuyin": "ㄇㄣ"
+    },
+    {
+      "pinyin": "meng",
+      "zhuyin": "ㄇㄥ"
+    },
+    {
+      "pinyin": "mi",
+      "zhuyin": "ㄇㄧ"
+    },
+    {
+      "pinyin": "mian",
+      "zhuyin": "ㄇㄧㄢ"
+    },
+    {
+      "pinyin": "miao",
+      "zhuyin": "ㄇㄧㄠ"
+    },
+    {
+      "pinyin": "mie",
+      "zhuyin": "ㄇㄧㄝ"
+    },
+    {
+      "pinyin": "min",
+      "zhuyin": "ㄇㄧㄣ"
+    },
+    {
+      "pinyin": "ming",
+      "zhuyin": "ㄇㄧㄥ"
+    },
+    {
+      "pinyin": "miu",
+      "zhuyin": "ㄇㄧㄡ"
+    },
+    {
+      "pinyin": "mo",
+      "zhuyin": "ㄇㄛ"
+    },
+    {
+      "pinyin": "mou",
+      "zhuyin": "ㄇㄡ"
+    },
+    {
+      "pinyin": "mu",
+      "zhuyin": "ㄇㄨ"
+    },
+    {
+      "pinyin": "na",
+      "zhuyin": "ㄋㄚ"
+    },
+    {
+      "pinyin": "nai",
+      "zhuyin": "ㄋㄞ"
+    },
+    {
+      "pinyin": "nan",
+      "zhuyin": "ㄋㄢ"
+    },
+    {
+      "pinyin": "nang",
+      "zhuyin": "ㄋㄤ"
+    },
+    {
+      "pinyin": "nao",
+      "zhuyin": "ㄋㄠ"
+    },
+    {
+      "pinyin": "ne",
+      "zhuyin": "ㄋㄜ"
+    },
+    {
+      "pinyin": "nei",
+      "zhuyin": "ㄋㄟ"
+    },
+    {
+      "pinyin": "nen",
+      "zhuyin": "ㄋㄣ"
+    },
+    {
+      "pinyin": "neng",
+      "zhuyin": "ㄋㄥ"
+    },
+    {
+      "pinyin": "ni",
+      "zhuyin": "ㄋㄧ"
+    },
+    {
+      "pinyin": "nian",
+      "zhuyin": "ㄋㄧㄢ"
+    },
+    {
+      "pinyin": "niang",
+      "zhuyin": "ㄋㄧㄤ"
+    },
+    {
+      "pinyin": "niao",
+      "zhuyin": "ㄋㄧㄠ"
+    },
+    {
+      "pinyin": "nie",
+      "zhuyin": "ㄋㄧㄝ"
+    },
+    {
+      "pinyin": "nin",
+      "zhuyin": "ㄋㄧㄣ"
+    },
+    {
+      "pinyin": "ning",
+      "zhuyin": "ㄋㄧㄥ"
+    },
+    {
+      "pinyin": "niu",
+      "zhuyin": "ㄋㄧㄡ"
+    },
+    {
+      "pinyin": "nong",
+      "zhuyin": "ㄋㄨㄥ"
+    },
+    {
+      "pinyin": "nou",
+      "zhuyin": "ㄋㄡ"
+    },
+    {
+      "pinyin": "nu",
+      "zhuyin": "ㄋㄨ"
+    },
+    {
+      "pinyin": "nuan",
+      "zhuyin": "ㄋㄨㄢ"
+    },
+    {
+      "pinyin": "nuo",
+      "zhuyin": "ㄋㄨㄛ"
+    },
+    {
+      "pinyin": "nü",
+      "zhuyin": "ㄋㄩ"
+    },
+    {
+      "pinyin": "nüe",
+      "zhuyin": "ㄋㄩㄝ"
+    },
+    {
+      "pinyin": "o",
+      "zhuyin": "ㄛ"
+    },
+    {
+      "pinyin": "ou",
+      "zhuyin": "ㄡ"
+    },
+    {
+      "pinyin": "pa",
+      "zhuyin": "ㄆㄚ"
+    },
+    {
+      "pinyin": "pai",
+      "zhuyin": "ㄆㄞ"
+    },
+    {
+      "pinyin": "pan",
+      "zhuyin": "ㄆㄢ"
+    },
+    {
+      "pinyin": "pang",
+      "zhuyin": "ㄆㄤ"
+    },
+    {
+      "pinyin": "pao",
+      "zhuyin": "ㄆㄠ"
+    },
+    {
+      "pinyin": "pei",
+      "zhuyin": "ㄆㄟ"
+    },
+    {
+      "pinyin": "pen",
+      "zhuyin": "ㄆㄣ"
+    },
+    {
+      "pinyin": "peng",
+      "zhuyin": "ㄆㄥ"
+    },
+    {
+      "pinyin": "pi",
+      "zhuyin": "ㄆㄧ"
+    },
+    {
+      "pinyin": "pian",
+      "zhuyin": "ㄆㄧㄢ"
+    },
+    {
+      "pinyin": "piao",
+      "zhuyin": "ㄆㄧㄠ"
+    },
+    {
+      "pinyin": "pie",
+      "zhuyin": "ㄆㄧㄝ"
+    },
+    {
+      "pinyin": "pin",
+      "zhuyin": "ㄆㄧㄣ"
+    },
+    {
+      "pinyin": "ping",
+      "zhuyin": "ㄆㄧㄥ"
+    },
+    {
+      "pinyin": "po",
+      "zhuyin": "ㄆㄛ"
+    },
+    {
+      "pinyin": "pou",
+      "zhuyin": "ㄆㄡ"
+    },
+    {
+      "pinyin": "pu",
+      "zhuyin": "ㄆㄨ"
+    },
+    {
+      "pinyin": "qi",
+      "zhuyin": "ㄑㄧ"
+    },
+    {
+      "pinyin": "qia",
+      "zhuyin": "ㄑㄧㄚ"
+    },
+    {
+      "pinyin": "qian",
+      "zhuyin": "ㄑㄧㄢ"
+    },
+    {
+      "pinyin": "qiang",
+      "zhuyin": "ㄑㄧㄤ"
+    },
+    {
+      "pinyin": "qiao",
+      "zhuyin": "ㄑㄧㄠ"
+    },
+    {
+      "pinyin": "qie",
+      "zhuyin": "ㄑㄧㄝ"
+    },
+    {
+      "pinyin": "qin",
+      "zhuyin": "ㄑㄧㄣ"
+    },
+    {
+      "pinyin": "qing",
+      "zhuyin": "ㄑㄧㄥ"
+    },
+    {
+      "pinyin": "qiong",
+      "zhuyin": "ㄑㄩㄥ"
+    },
+    {
+      "pinyin": "qiu",
+      "zhuyin": "ㄑㄧㄡ"
+    },
+    {
+      "pinyin": "qu",
+      "zhuyin": "ㄑㄩ"
+    },
+    {
+      "pinyin": "quan",
+      "zhuyin": "ㄑㄩㄢ"
+    },
+    {
+      "pinyin": "que",
+      "zhuyin": "ㄑㄩㄝ"
+    },
+    {
+      "pinyin": "qun",
+      "zhuyin": "ㄑㄩㄣ"
+    },
+    {
+      "pinyin": "ran",
+      "zhuyin": "ㄖㄢ"
+    },
+    {
+      "pinyin": "rang",
+      "zhuyin": "ㄖㄤ"
+    },
+    {
+      "pinyin": "rao",
+      "zhuyin": "ㄖㄠ"
+    },
+    {
+      "pinyin": "re",
+      "zhuyin": "ㄖㄜ"
+    },
+    {
+      "pinyin": "ren",
+      "zhuyin": "ㄖㄣ"
+    },
+    {
+      "pinyin": "reng",
+      "zhuyin": "ㄖㄥ"
+    },
+    {
+      "pinyin": "ri",
+      "zhuyin": "ㄖ"
+    },
+    {
+      "pinyin": "rong",
+      "zhuyin": "ㄖㄨㄥ"
+    },
+    {
+      "pinyin": "rou",
+      "zhuyin": "ㄖㄡ"
+    },
+    {
+      "pinyin": "ru",
+      "zhuyin": "ㄖㄨ"
+    },
+    {
+      "pinyin": "ruan",
+      "zhuyin": "ㄖㄨㄢ"
+    },
+    {
+      "pinyin": "rui",
+      "zhuyin": "ㄖㄨㄟ"
+    },
+    {
+      "pinyin": "run",
+      "zhuyin": "ㄖㄨㄣ"
+    },
+    {
+      "pinyin": "ruo",
+      "zhuyin": "ㄖㄨㄛ"
+    },
+    {
+      "pinyin": "sa",
+      "zhuyin": "ㄙㄚ"
+    },
+    {
+      "pinyin": "sai",
+      "zhuyin": "ㄙㄞ"
+    },
+    {
+      "pinyin": "san",
+      "zhuyin": "ㄙㄢ"
+    },
+    {
+      "pinyin": "sang",
+      "zhuyin": "ㄙㄤ"
+    },
+    {
+      "pinyin": "sao",
+      "zhuyin": "ㄙㄠ"
+    },
+    {
+      "pinyin": "se",
+      "zhuyin": "ㄙㄜ"
+    },
+    {
+      "pinyin": "sen",
+      "zhuyin": "ㄙㄣ"
+    },
+    {
+      "pinyin": "seng",
+      "zhuyin": "ㄙㄥ"
+    },
+    {
+      "pinyin": "sha",
+      "zhuyin": "ㄕㄚ"
+    },
+    {
+      "pinyin": "shai",
+      "zhuyin": "ㄕㄞ"
+    },
+    {
+      "pinyin": "shan",
+      "zhuyin": "ㄕㄢ"
+    },
+    {
+      "pinyin": "shang",
+      "zhuyin": "ㄕㄤ"
+    },
+    {
+      "pinyin": "shao",
+      "zhuyin": "ㄕㄠ"
+    },
+    {
+      "pinyin": "she",
+      "zhuyin": "ㄕㄜ"
+    },
+    {
+      "pinyin": "shei",
+      "zhuyin": "ㄕㄟ"
+    },
+    {
+      "pinyin": "shen",
+      "zhuyin": "ㄕㄣ"
+    },
+    {
+      "pinyin": "sheng",
+      "zhuyin": "ㄕㄥ"
+    },
+    {
+      "pinyin": "shi",
+      "zhuyin": "ㄕ"
+    },
+    {
+      "pinyin": "shou",
+      "zhuyin": "ㄕㄡ"
+    },
+    {
+      "pinyin": "shu",
+      "zhuyin": "ㄕㄨ"
+    },
+    {
+      "pinyin": "shua",
+      "zhuyin": "ㄕㄨㄚ"
+    },
+    {
+      "pinyin": "shuai",
+      "zhuyin": "ㄕㄨㄞ"
+    },
+    {
+      "pinyin": "shuan",
+      "zhuyin": "ㄕㄨㄢ"
+    },
+    {
+      "pinyin": "shuang",
+      "zhuyin": "ㄕㄨㄤ"
+    },
+    {
+      "pinyin": "shui",
+      "zhuyin": "ㄕㄨㄟ"
+    },
+    {
+      "pinyin": "shun",
+      "zhuyin": "ㄕㄨㄣ"
+    },
+    {
+      "pinyin": "shuo",
+      "zhuyin": "ㄕㄨㄛ"
+    },
+    {
+      "pinyin": "si",
+      "zhuyin": "ㄙ"
+    },
+    {
+      "pinyin": "song",
+      "zhuyin": "ㄙㄨㄥ"
+    },
+    {
+      "pinyin": "sou",
+      "zhuyin": "ㄙㄡ"
+    },
+    {
+      "pinyin": "su",
+      "zhuyin": "ㄙㄨ"
+    },
+    {
+      "pinyin": "suan",
+      "zhuyin": "ㄙㄨㄢ"
+    },
+    {
+      "pinyin": "sui",
+      "zhuyin": "ㄙㄨㄟ"
+    },
+    {
+      "pinyin": "sun",
+      "zhuyin": "ㄙㄨㄣ"
+    },
+    {
+      "pinyin": "suo",
+      "zhuyin": "ㄙㄨㄛ"
+    },
+    {
+      "pinyin": "ta",
+      "zhuyin": "ㄊㄚ"
+    },
+    {
+      "pinyin": "tai",
+      "zhuyin": "ㄊㄞ"
+    },
+    {
+      "pinyin": "tan",
+      "zhuyin": "ㄊㄢ"
+    },
+    {
+      "pinyin": "tang",
+      "zhuyin": "ㄊㄤ"
+    },
+    {
+      "pinyin": "tao",
+      "zhuyin": "ㄊㄠ"
+    },
+    {
+      "pinyin": "te",
+      "zhuyin": "ㄊㄜ"
+    },
+    {
+      "pinyin": "teng",
+      "zhuyin": "ㄊㄥ"
+    },
+    {
+      "pinyin": "ti",
+      "zhuyin": "ㄊㄧ"
+    },
+    {
+      "pinyin": "tian",
+      "zhuyin": "ㄊㄧㄢ"
+    },
+    {
+      "pinyin": "tiao",
+      "zhuyin": "ㄊㄧㄠ"
+    },
+    {
+      "pinyin": "tie",
+      "zhuyin": "ㄊㄧㄝ"
+    },
+    {
+      "pinyin": "ting",
+      "zhuyin": "ㄊㄧㄥ"
+    },
+    {
+      "pinyin": "tong",
+      "zhuyin": "ㄊㄨㄥ"
+    },
+    {
+      "pinyin": "tou",
+      "zhuyin": "ㄊㄡ"
+    },
+    {
+      "pinyin": "tu",
+      "zhuyin": "ㄊㄨ"
+    },
+    {
+      "pinyin": "tuan",
+      "zhuyin": "ㄊㄨㄢ"
+    },
+    {
+      "pinyin": "tui",
+      "zhuyin": "ㄊㄨㄟ"
+    },
+    {
+      "pinyin": "tun",
+      "zhuyin": "ㄊㄨㄣ"
+    },
+    {
+      "pinyin": "tuo",
+      "zhuyin": "ㄊㄨㄛ"
+    },
+    {
+      "pinyin": "wa",
+      "zhuyin": "ㄨㄚ"
+    },
+    {
+      "pinyin": "wai",
+      "zhuyin": "ㄨㄞ"
+    },
+    {
+      "pinyin": "wan",
+      "zhuyin": "ㄨㄢ"
+    },
+    {
+      "pinyin": "wang",
+      "zhuyin": "ㄨㄤ"
+    },
+    {
+      "pinyin": "wei",
+      "zhuyin": "ㄨㄟ"
+    },
+    {
+      "pinyin": "wen",
+      "zhuyin": "ㄨㄣ"
+    },
+    {
+      "pinyin": "weng",
+      "zhuyin": "ㄨㄥ"
+    },
+    {
+      "pinyin": "wo",
+      "zhuyin": "ㄨㄛ"
+    },
+    {
+      "pinyin": "wu",
+      "zhuyin": "ㄨ"
+    },
+    {
+      "pinyin": "xi",
+      "zhuyin": "ㄒㄧ"
+    },
+    {
+      "pinyin": "xia",
+      "zhuyin": "ㄒㄧㄚ"
+    },
+    {
+      "pinyin": "xian",
+      "zhuyin": "ㄒㄧㄢ"
+    },
+    {
+      "pinyin": "xiang",
+      "zhuyin": "ㄒㄧㄤ"
+    },
+    {
+      "pinyin": "xiao",
+      "zhuyin": "ㄒㄧㄠ"
+    },
+    {
+      "pinyin": "xie",
+      "zhuyin": "ㄒㄧㄝ"
+    },
+    {
+      "pinyin": "xin",
+      "zhuyin": "ㄒㄧㄣ"
+    },
+    {
+      "pinyin": "xing",
+      "zhuyin": "ㄒㄧㄥ"
+    },
+    {
+      "pinyin": "xiong",
+      "zhuyin": "ㄒㄩㄥ"
+    },
+    {
+      "pinyin": "xiu",
+      "zhuyin": "ㄒㄧㄡ"
+    },
+    {
+      "pinyin": "xu",
+      "zhuyin": "ㄒㄩ"
+    },
+    {
+      "pinyin": "xuan",
+      "zhuyin": "ㄒㄩㄢ"
+    },
+    {
+      "pinyin": "xue",
+      "zhuyin": "ㄒㄩㄝ"
+    },
+    {
+      "pinyin": "xun",
+      "zhuyin": "ㄒㄩㄣ"
+    },
+    {
+      "pinyin": "ya",
+      "zhuyin": "ㄧㄚ"
+    },
+    {
+      "pinyin": "yan",
+      "zhuyin": "ㄧㄢ"
+    },
+    {
+      "pinyin": "yang",
+      "zhuyin": "ㄧㄤ"
+    },
+    {
+      "pinyin": "yao",
+      "zhuyin": "ㄧㄠ"
+    },
+    {
+      "pinyin": "ye",
+      "zhuyin": "ㄧㄝ"
+    },
+    {
+      "pinyin": "yi",
+      "zhuyin": "ㄧ"
+    },
+    {
+      "pinyin": "yin",
+      "zhuyin": "ㄧㄣ"
+    },
+    {
+      "pinyin": "ying",
+      "zhuyin": "ㄧㄥ"
+    },
+    {
+      "pinyin": "yo",
+      "zhuyin": "ㄧㄛ"
+    },
+    {
+      "pinyin": "yong",
+      "zhuyin": "ㄩㄥ"
+    },
+    {
+      "pinyin": "you",
+      "zhuyin": "ㄧㄡ"
+    },
+    {
+      "pinyin": "yu",
+      "zhuyin": "ㄩ"
+    },
+    {
+      "pinyin": "yuan",
+      "zhuyin": "ㄩㄢ"
+    },
+    {
+      "pinyin": "yue",
+      "zhuyin": "ㄩㄝ"
+    },
+    {
+      "pinyin": "yun",
+      "zhuyin": "ㄩㄣ"
+    },
+    {
+      "pinyin": "za",
+      "zhuyin": "ㄗㄚ"
+    },
+    {
+      "pinyin": "zai",
+      "zhuyin": "ㄗㄞ"
+    },
+    {
+      "pinyin": "zan",
+      "zhuyin": "ㄗㄢ"
+    },
+    {
+      "pinyin": "zang",
+      "zhuyin": "ㄗㄤ"
+    },
+    {
+      "pinyin": "zao",
+      "zhuyin": "ㄗㄠ"
+    },
+    {
+      "pinyin": "ze",
+      "zhuyin": "ㄗㄜ"
+    },
+    {
+      "pinyin": "zei",
+      "zhuyin": "ㄗㄟ"
+    },
+    {
+      "pinyin": "zen",
+      "zhuyin": "ㄗㄣ"
+    },
+    {
+      "pinyin": "zeng",
+      "zhuyin": "ㄗㄥ"
+    },
+    {
+      "pinyin": "zha",
+      "zhuyin": "ㄓㄚ"
+    },
+    {
+      "pinyin": "zhai",
+      "zhuyin": "ㄓㄞ"
+    },
+    {
+      "pinyin": "zhan",
+      "zhuyin": "ㄓㄢ"
+    },
+    {
+      "pinyin": "zhang",
+      "zhuyin": "ㄓㄤ"
+    },
+    {
+      "pinyin": "zhao",
+      "zhuyin": "ㄓㄠ"
+    },
+    {
+      "pinyin": "zhe",
+      "zhuyin": "ㄓㄜ"
+    },
+    {
+      "pinyin": "zhei",
+      "zhuyin": "ㄓㄟ"
+    },
+    {
+      "pinyin": "zhen",
+      "zhuyin": "ㄓㄣ"
+    },
+    {
+      "pinyin": "zheng",
+      "zhuyin": "ㄓㄥ"
+    },
+    {
+      "pinyin": "zhi",
+      "zhuyin": "ㄓ"
+    },
+    {
+      "pinyin": "zhong",
+      "zhuyin": "ㄓㄨㄥ"
+    },
+    {
+      "pinyin": "zhou",
+      "zhuyin": "ㄓㄡ"
+    },
+    {
+      "pinyin": "zhu",
+      "zhuyin": "ㄓㄨ"
+    },
+    {
+      "pinyin": "zhua",
+      "zhuyin": "ㄓㄨㄚ"
+    },
+    {
+      "pinyin": "zhuai",
+      "zhuyin": "ㄓㄨㄞ"
+    },
+    {
+      "pinyin": "zhuan",
+      "zhuyin": "ㄓㄨㄢ"
+    },
+    {
+      "pinyin": "zhuang",
+      "zhuyin": "ㄓㄨㄤ"
+    },
+    {
+      "pinyin": "zhui",
+      "zhuyin": "ㄓㄨㄟ"
+    },
+    {
+      "pinyin": "zhun",
+      "zhuyin": "ㄓㄨㄣ"
+    },
+    {
+      "pinyin": "zhuo",
+      "zhuyin": "ㄓㄨㄛ"
+    },
+    {
+      "pinyin": "zi",
+      "zhuyin": "ㄗ"
+    },
+    {
+      "pinyin": "zong",
+      "zhuyin": "ㄗㄨㄥ"
+    },
+    {
+      "pinyin": "zou",
+      "zhuyin": "ㄗㄡ"
+    },
+    {
+      "pinyin": "zu",
+      "zhuyin": "ㄗㄨ"
+    },
+    {
+      "pinyin": "zuan",
+      "zhuyin": "ㄗㄨㄢ"
+    },
+    {
+      "pinyin": "zui",
+      "zhuyin": "ㄗㄨㄟ"
+    },
+    {
+      "pinyin": "zun",
+      "zhuyin": "ㄗㄨㄣ"
+    },
+    {
+      "pinyin": "zuo",
+      "zhuyin": "ㄗㄨㄛ"
+    },
+    {
+      "pinyin": "ê",
+      "zhuyin": "ㄝ"
+    }
+  ],
+  "rows": [
+    [
+      {
+        "symbol": "ㄅ",
+        "hint": "b"
+      },
+      {
+        "symbol": "ㄆ",
+        "hint": "p"
+      },
+      {
+        "symbol": "ㄇ",
+        "hint": "m"
+      },
+      {
+        "symbol": "ㄈ",
+        "hint": "f"
+      },
+      {
+        "symbol": "ㄉ",
+        "hint": "d"
+      },
+      {
+        "symbol": "ㄊ",
+        "hint": "t"
+      },
+      {
+        "symbol": "ㄋ",
+        "hint": "n"
+      },
+      {
+        "symbol": "ㄌ",
+        "hint": "l"
+      },
+      {
+        "symbol": "ㄍ",
+        "hint": "g"
+      },
+      {
+        "symbol": "ㄎ",
+        "hint": "k"
+      }
+    ],
+    [
+      {
+        "symbol": "ㄏ",
+        "hint": "h"
+      },
+      {
+        "symbol": "ㄐ",
+        "hint": "j"
+      },
+      {
+        "symbol": "ㄑ",
+        "hint": "q"
+      },
+      {
+        "symbol": "ㄒ",
+        "hint": "x"
+      },
+      {
+        "symbol": "ㄓ",
+        "hint": "zh"
+      },
+      {
+        "symbol": "ㄔ",
+        "hint": "ch"
+      },
+      {
+        "symbol": "ㄕ",
+        "hint": "sh"
+      },
+      {
+        "symbol": "ㄖ",
+        "hint": "r"
+      },
+      {
+        "symbol": "ㄗ",
+        "hint": "z"
+      },
+      {
+        "symbol": "ㄘ",
+        "hint": "c"
+      }
+    ],
+    [
+      {
+        "symbol": "ㄙ",
+        "hint": "s"
+      },
+      {
+        "symbol": "ㄧ",
+        "hint": "i"
+      },
+      {
+        "symbol": "ㄨ",
+        "hint": "u"
+      },
+      {
+        "symbol": "ㄩ",
+        "hint": "ü"
+      },
+      {
+        "symbol": "ㄚ",
+        "hint": "a"
+      },
+      {
+        "symbol": "ㄛ",
+        "hint": "o"
+      },
+      {
+        "symbol": "ㄜ",
+        "hint": "e"
+      },
+      {
+        "symbol": "ㄝ",
+        "hint": "ê"
+      },
+      {
+        "symbol": "ㄞ",
+        "hint": "ai"
+      },
+      {
+        "symbol": "ㄟ",
+        "hint": "ei"
+      }
+    ],
+    [
+      {
+        "symbol": "ㄠ",
+        "hint": "ao"
+      },
+      {
+        "symbol": "ㄡ",
+        "hint": "ou"
+      },
+      {
+        "symbol": "ㄢ",
+        "hint": "an"
+      },
+      {
+        "symbol": "ㄣ",
+        "hint": "en"
+      },
+      {
+        "symbol": "ㄤ",
+        "hint": "ang"
+      },
+      {
+        "symbol": "ㄥ",
+        "hint": "eng"
+      },
+      {
+        "symbol": "ㄦ",
+        "hint": "er"
+      }
+    ]
+  ],
+  "lexicon": [
+    {
+      "readings": [
+        "ni3"
+      ],
+      "traditional": "你",
+      "simplified": "你"
+    },
+    {
+      "readings": [
+        "ni3"
+      ],
+      "traditional": "妳",
+      "simplified": "你"
+    },
+    {
+      "readings": [
+        "hao3"
+      ],
+      "traditional": "好",
+      "simplified": "好"
+    },
+    {
+      "readings": [
+        "hao4"
+      ],
+      "traditional": "號",
+      "simplified": "号"
+    },
+    {
+      "readings": [
+        "wo3"
+      ],
+      "traditional": "我",
+      "simplified": "我"
+    },
+    {
+      "readings": [
+        "men5"
+      ],
+      "traditional": "們",
+      "simplified": "们"
+    },
+    {
+      "readings": [
+        "shi4"
+      ],
+      "traditional": "是",
+      "simplified": "是"
+    },
+    {
+      "readings": [
+        "shi4"
+      ],
+      "traditional": "事",
+      "simplified": "事"
+    },
+    {
+      "readings": [
+        "shi2"
+      ],
+      "traditional": "時",
+      "simplified": "时"
+    },
+    {
+      "readings": [
+        "shi1"
+      ],
+      "traditional": "師",
+      "simplified": "师"
+    },
+    {
+      "readings": [
+        "shi3"
+      ],
+      "traditional": "使",
+      "simplified": "使"
+    },
+    {
+      "readings": [
+        "zhi1"
+      ],
+      "traditional": "知",
+      "simplified": "知"
+    },
+    {
+      "readings": [
+        "zhi3"
+      ],
+      "traditional": "只",
+      "simplified": "只"
+    },
+    {
+      "readings": [
+        "zhi4"
+      ],
+      "traditional": "志",
+      "simplified": "志"
+    },
+    {
+      "readings": [
+        "zi4"
+      ],
+      "traditional": "字",
+      "simplified": "字"
+    },
+    {
+      "readings": [
+        "zi3"
+      ],
+      "traditional": "子",
+      "simplified": "子"
+    },
+    {
+      "readings": [
+        "chi1"
+      ],
+      "traditional": "吃",
+      "simplified": "吃"
+    },
+    {
+      "readings": [
+        "ri4"
+      ],
+      "traditional": "日",
+      "simplified": "日"
+    },
+    {
+      "readings": [
+        "ci2"
+      ],
+      "traditional": "詞",
+      "simplified": "词"
+    },
+    {
+      "readings": [
+        "si1"
+      ],
+      "traditional": "思",
+      "simplified": "思"
+    },
+    {
+      "readings": [
+        "de5"
+      ],
+      "traditional": "的",
+      "simplified": "的"
+    },
+    {
+      "readings": [
+        "de2"
+      ],
+      "traditional": "得",
+      "simplified": "得"
+    },
+    {
+      "readings": [
+        "le5"
+      ],
+      "traditional": "了",
+      "simplified": "了"
+    },
+    {
+      "readings": [
+        "ma5"
+      ],
+      "traditional": "嗎",
+      "simplified": "吗"
+    },
+    {
+      "readings": [
+        "ma1"
+      ],
+      "traditional": "媽",
+      "simplified": "妈"
+    },
+    {
+      "readings": [
+        "ma3"
+      ],
+      "traditional": "馬",
+      "simplified": "马"
+    },
+    {
+      "readings": [
+        "ma4"
+      ],
+      "traditional": "罵",
+      "simplified": "骂"
+    },
+    {
+      "readings": [
+        "bu4"
+      ],
+      "traditional": "不",
+      "simplified": "不"
+    },
+    {
+      "readings": [
+        "yi1"
+      ],
+      "traditional": "一",
+      "simplified": "一"
+    },
+    {
+      "readings": [
+        "yi4"
+      ],
+      "traditional": "意",
+      "simplified": "意"
+    },
+    {
+      "readings": [
+        "er4"
+      ],
+      "traditional": "二",
+      "simplified": "二"
+    },
+    {
+      "readings": [
+        "er2"
+      ],
+      "traditional": "兒",
+      "simplified": "儿"
+    },
+    {
+      "readings": [
+        "san1"
+      ],
+      "traditional": "三",
+      "simplified": "三"
+    },
+    {
+      "readings": [
+        "si4"
+      ],
+      "traditional": "四",
+      "simplified": "四"
+    },
+    {
+      "readings": [
+        "wu3"
+      ],
+      "traditional": "五",
+      "simplified": "五"
+    },
+    {
+      "readings": [
+        "wu2"
+      ],
+      "traditional": "無",
+      "simplified": "无"
+    },
+    {
+      "readings": [
+        "liu4"
+      ],
+      "traditional": "六",
+      "simplified": "六"
+    },
+    {
+      "readings": [
+        "qi1"
+      ],
+      "traditional": "七",
+      "simplified": "七"
+    },
+    {
+      "readings": [
+        "ba1"
+      ],
+      "traditional": "八",
+      "simplified": "八"
+    },
+    {
+      "readings": [
+        "jiu3"
+      ],
+      "traditional": "九",
+      "simplified": "九"
+    },
+    {
+      "readings": [
+        "shi2"
+      ],
+      "traditional": "十",
+      "simplified": "十"
+    },
+    {
+      "readings": [
+        "bei3"
+      ],
+      "traditional": "北",
+      "simplified": "北"
+    },
+    {
+      "readings": [
+        "jing1"
+      ],
+      "traditional": "京",
+      "simplified": "京"
+    },
+    {
+      "readings": [
+        "hua2"
+      ],
+      "traditional": "華",
+      "simplified": "华"
+    },
+    {
+      "readings": [
+        "sheng4"
+      ],
+      "traditional": "盛",
+      "simplified": "盛"
+    },
+    {
+      "readings": [
+        "dun4"
+      ],
+      "traditional": "頓",
+      "simplified": "顿"
+    },
+    {
+      "readings": [
+        "tai2"
+      ],
+      "traditional": "台",
+      "simplified": "台"
+    },
+    {
+      "readings": [
+        "tai2"
+      ],
+      "traditional": "臺",
+      "simplified": "台"
+    },
+    {
+      "readings": [
+        "wan1"
+      ],
+      "traditional": "灣",
+      "simplified": "湾"
+    },
+    {
+      "readings": [
+        "guang3"
+      ],
+      "traditional": "廣",
+      "simplified": "广"
+    },
+    {
+      "readings": [
+        "zhou1"
+      ],
+      "traditional": "州",
+      "simplified": "州"
+    },
+    {
+      "readings": [
+        "shang4"
+      ],
+      "traditional": "上",
+      "simplified": "上"
+    },
+    {
+      "readings": [
+        "hai3"
+      ],
+      "traditional": "海",
+      "simplified": "海"
+    },
+    {
+      "readings": [
+        "xiang1"
+      ],
+      "traditional": "香",
+      "simplified": "香"
+    },
+    {
+      "readings": [
+        "gang3"
+      ],
+      "traditional": "港",
+      "simplified": "港"
+    },
+    {
+      "readings": [
+        "zhong1"
+      ],
+      "traditional": "中",
+      "simplified": "中"
+    },
+    {
+      "readings": [
+        "guo2"
+      ],
+      "traditional": "國",
+      "simplified": "国"
+    },
+    {
+      "readings": [
+        "mei3"
+      ],
+      "traditional": "美",
+      "simplified": "美"
+    },
+    {
+      "readings": [
+        "ren2"
+      ],
+      "traditional": "人",
+      "simplified": "人"
+    },
+    {
+      "readings": [
+        "min2"
+      ],
+      "traditional": "民",
+      "simplified": "民"
+    },
+    {
+      "readings": [
+        "quan2"
+      ],
+      "traditional": "全",
+      "simplified": "全"
+    },
+    {
+      "readings": [
+        "qiu2"
+      ],
+      "traditional": "球",
+      "simplified": "球"
+    },
+    {
+      "readings": [
+        "wen2"
+      ],
+      "traditional": "文",
+      "simplified": "文"
+    },
+    {
+      "readings": [
+        "yu3"
+      ],
+      "traditional": "語",
+      "simplified": "语"
+    },
+    {
+      "readings": [
+        "yu3"
+      ],
+      "traditional": "雨",
+      "simplified": "雨"
+    },
+    {
+      "readings": [
+        "yu2"
+      ],
+      "traditional": "魚",
+      "simplified": "鱼"
+    },
+    {
+      "readings": [
+        "yu4"
+      ],
+      "traditional": "玉",
+      "simplified": "玉"
+    },
+    {
+      "readings": [
+        "pin1"
+      ],
+      "traditional": "拼",
+      "simplified": "拼"
+    },
+    {
+      "readings": [
+        "yin1"
+      ],
+      "traditional": "音",
+      "simplified": "音"
+    },
+    {
+      "readings": [
+        "zhu4"
+      ],
+      "traditional": "注",
+      "simplified": "注"
+    },
+    {
+      "readings": [
+        "shu1"
+      ],
+      "traditional": "輸",
+      "simplified": "输"
+    },
+    {
+      "readings": [
+        "ru4"
+      ],
+      "traditional": "入",
+      "simplified": "入"
+    },
+    {
+      "readings": [
+        "fa3"
+      ],
+      "traditional": "法",
+      "simplified": "法"
+    },
+    {
+      "readings": [
+        "ping2"
+      ],
+      "traditional": "蘋",
+      "simplified": "苹"
+    },
+    {
+      "readings": [
+        "guo3"
+      ],
+      "traditional": "果",
+      "simplified": "果"
+    },
+    {
+      "readings": [
+        "xie4"
+      ],
+      "traditional": "謝",
+      "simplified": "谢"
+    },
+    {
+      "readings": [
+        "xue2"
+      ],
+      "traditional": "學",
+      "simplified": "学"
+    },
+    {
+      "readings": [
+        "xi2"
+      ],
+      "traditional": "習",
+      "simplified": "习"
+    },
+    {
+      "readings": [
+        "huan1"
+      ],
+      "traditional": "歡",
+      "simplified": "欢"
+    },
+    {
+      "readings": [
+        "ying2"
+      ],
+      "traditional": "迎",
+      "simplified": "迎"
+    },
+    {
+      "readings": [
+        "ying1"
+      ],
+      "traditional": "英",
+      "simplified": "英"
+    },
+    {
+      "readings": [
+        "ying4"
+      ],
+      "traditional": "應",
+      "simplified": "应"
+    },
+    {
+      "readings": [
+        "yong3"
+      ],
+      "traditional": "永",
+      "simplified": "永"
+    },
+    {
+      "readings": [
+        "yong4"
+      ],
+      "traditional": "用",
+      "simplified": "用"
+    },
+    {
+      "readings": [
+        "you3"
+      ],
+      "traditional": "有",
+      "simplified": "有"
+    },
+    {
+      "readings": [
+        "you2"
+      ],
+      "traditional": "游",
+      "simplified": "游"
+    },
+    {
+      "readings": [
+        "you4"
+      ],
+      "traditional": "又",
+      "simplified": "又"
+    },
+    {
+      "readings": [
+        "wei4"
+      ],
+      "traditional": "為",
+      "simplified": "为"
+    },
+    {
+      "readings": [
+        "wei2"
+      ],
+      "traditional": "為",
+      "simplified": "为"
+    },
+    {
+      "readings": [
+        "wen4"
+      ],
+      "traditional": "問",
+      "simplified": "问"
+    },
+    {
+      "readings": [
+        "wang3"
+      ],
+      "traditional": "網",
+      "simplified": "网"
+    },
+    {
+      "readings": [
+        "wang2"
+      ],
+      "traditional": "王",
+      "simplified": "王"
+    },
+    {
+      "readings": [
+        "weng1"
+      ],
+      "traditional": "翁",
+      "simplified": "翁"
+    },
+    {
+      "readings": [
+        "ju1"
+      ],
+      "traditional": "居",
+      "simplified": "居"
+    },
+    {
+      "readings": [
+        "ju4"
+      ],
+      "traditional": "句",
+      "simplified": "句"
+    },
+    {
+      "readings": [
+        "jue2"
+      ],
+      "traditional": "覺",
+      "simplified": "觉"
+    },
+    {
+      "readings": [
+        "juan4"
+      ],
+      "traditional": "卷",
+      "simplified": "卷"
+    },
+    {
+      "readings": [
+        "jun1"
+      ],
+      "traditional": "軍",
+      "simplified": "军"
+    },
+    {
+      "readings": [
+        "qiong2"
+      ],
+      "traditional": "窮",
+      "simplified": "穷"
+    },
+    {
+      "readings": [
+        "jiong3"
+      ],
+      "traditional": "窘",
+      "simplified": "窘"
+    },
+    {
+      "readings": [
+        "xiong2"
+      ],
+      "traditional": "雄",
+      "simplified": "雄"
+    },
+    {
+      "readings": [
+        "qu4"
+      ],
+      "traditional": "去",
+      "simplified": "去"
+    },
+    {
+      "readings": [
+        "xu1"
+      ],
+      "traditional": "需",
+      "simplified": "需"
+    },
+    {
+      "readings": [
+        "nü3"
+      ],
+      "traditional": "女",
+      "simplified": "女"
+    },
+    {
+      "readings": [
+        "lü4"
+      ],
+      "traditional": "綠",
+      "simplified": "绿"
+    },
+    {
+      "readings": [
+        "lü3"
+      ],
+      "traditional": "旅",
+      "simplified": "旅"
+    },
+    {
+      "readings": [
+        "lüe4"
+      ],
+      "traditional": "略",
+      "simplified": "略"
+    },
+    {
+      "readings": [
+        "nüe4"
+      ],
+      "traditional": "虐",
+      "simplified": "虐"
+    },
+    {
+      "readings": [
+        "liu2"
+      ],
+      "traditional": "流",
+      "simplified": "流"
+    },
+    {
+      "readings": [
+        "gui1"
+      ],
+      "traditional": "歸",
+      "simplified": "归"
+    },
+    {
+      "readings": [
+        "lun4"
+      ],
+      "traditional": "論",
+      "simplified": "论"
+    },
+    {
+      "readings": [
+        "lun2"
+      ],
+      "traditional": "輪",
+      "simplified": "轮"
+    },
+    {
+      "readings": [
+        "en1"
+      ],
+      "traditional": "恩",
+      "simplified": "恩"
+    },
+    {
+      "readings": [
+        "e2"
+      ],
+      "traditional": "鵝",
+      "simplified": "鹅"
+    },
+    {
+      "readings": [
+        "ai4"
+      ],
+      "traditional": "愛",
+      "simplified": "爱"
+    },
+    {
+      "readings": [
+        "o1"
+      ],
+      "traditional": "喔",
+      "simplified": "喔"
+    },
+    {
+      "readings": [
+        "ou1"
+      ],
+      "traditional": "歐",
+      "simplified": "欧"
+    },
+    {
+      "readings": [
+        "a1"
+      ],
+      "traditional": "啊",
+      "simplified": "啊"
+    },
+    {
+      "readings": [
+        "e4"
+      ],
+      "traditional": "餓",
+      "simplified": "饿"
+    },
+    {
+      "readings": [
+        "ben3"
+      ],
+      "traditional": "本",
+      "simplified": "本"
+    },
+    {
+      "readings": [
+        "di4"
+      ],
+      "traditional": "地",
+      "simplified": "地"
+    },
+    {
+      "readings": [
+        "duan1"
+      ],
+      "traditional": "端",
+      "simplified": "端"
+    },
+    {
+      "readings": [
+        "an1"
+      ],
+      "traditional": "安",
+      "simplified": "安"
+    },
+    {
+      "readings": [
+        "quan2"
+      ],
+      "traditional": "權",
+      "simplified": "权"
+    },
+    {
+      "readings": [
+        "yin3"
+      ],
+      "traditional": "隱",
+      "simplified": "隐"
+    },
+    {
+      "readings": [
+        "si1"
+      ],
+      "traditional": "私",
+      "simplified": "私"
+    },
+    {
+      "readings": [
+        "jian3"
+      ],
+      "traditional": "簡",
+      "simplified": "简"
+    },
+    {
+      "readings": [
+        "fan2"
+      ],
+      "traditional": "繁",
+      "simplified": "繁"
+    },
+    {
+      "readings": [
+        "ti3"
+      ],
+      "traditional": "體",
+      "simplified": "体"
+    },
+    {
+      "readings": [
+        "qie1"
+      ],
+      "traditional": "切",
+      "simplified": "切"
+    },
+    {
+      "readings": [
+        "huan4"
+      ],
+      "traditional": "換",
+      "simplified": "换"
+    },
+    {
+      "readings": [
+        "dian4"
+      ],
+      "traditional": "電",
+      "simplified": "电"
+    },
+    {
+      "readings": [
+        "nao3"
+      ],
+      "traditional": "腦",
+      "simplified": "脑"
+    },
+    {
+      "readings": [
+        "shou3"
+      ],
+      "traditional": "手",
+      "simplified": "手"
+    },
+    {
+      "readings": [
+        "ji1"
+      ],
+      "traditional": "機",
+      "simplified": "机"
+    },
+    {
+      "readings": [
+        "ke3"
+      ],
+      "traditional": "可",
+      "simplified": "可"
+    },
+    {
+      "readings": [
+        "yi3"
+      ],
+      "traditional": "以",
+      "simplified": "以"
+    },
+    {
+      "readings": [
+        "qing3"
+      ],
+      "traditional": "請",
+      "simplified": "请"
+    },
+    {
+      "readings": [
+        "zai4"
+      ],
+      "traditional": "在",
+      "simplified": "在"
+    },
+    {
+      "readings": [
+        "zai4"
+      ],
+      "traditional": "再",
+      "simplified": "再"
+    },
+    {
+      "readings": [
+        "jian4"
+      ],
+      "traditional": "見",
+      "simplified": "见"
+    },
+    {
+      "readings": [
+        "tian1"
+      ],
+      "traditional": "天",
+      "simplified": "天"
+    },
+    {
+      "readings": [
+        "jin1"
+      ],
+      "traditional": "今",
+      "simplified": "今"
+    },
+    {
+      "readings": [
+        "ming2"
+      ],
+      "traditional": "明",
+      "simplified": "明"
+    },
+    {
+      "readings": [
+        "wan3"
+      ],
+      "traditional": "晚",
+      "simplified": "晚"
+    },
+    {
+      "readings": [
+        "zao3"
+      ],
+      "traditional": "早",
+      "simplified": "早"
+    },
+    {
+      "readings": [
+        "shan1"
+      ],
+      "traditional": "山",
+      "simplified": "山"
+    },
+    {
+      "readings": [
+        "shui3"
+      ],
+      "traditional": "水",
+      "simplified": "水"
+    },
+    {
+      "readings": [
+        "huo3"
+      ],
+      "traditional": "火",
+      "simplified": "火"
+    },
+    {
+      "readings": [
+        "tu3"
+      ],
+      "traditional": "土",
+      "simplified": "土"
+    },
+    {
+      "readings": [
+        "mu4"
+      ],
+      "traditional": "木",
+      "simplified": "木"
+    },
+    {
+      "readings": [
+        "jin1"
+      ],
+      "traditional": "金",
+      "simplified": "金"
+    },
+    {
+      "readings": [
+        "xin1"
+      ],
+      "traditional": "新",
+      "simplified": "新"
+    },
+    {
+      "readings": [
+        "peng2"
+      ],
+      "traditional": "朋",
+      "simplified": "朋"
+    },
+    {
+      "readings": [
+        "you5"
+      ],
+      "traditional": "友",
+      "simplified": "友"
+    },
+    {
+      "readings": [
+        "gong1"
+      ],
+      "traditional": "工",
+      "simplified": "工"
+    },
+    {
+      "readings": [
+        "zuo4"
+      ],
+      "traditional": "作",
+      "simplified": "作"
+    },
+    {
+      "readings": [
+        "sheng1"
+      ],
+      "traditional": "生",
+      "simplified": "生"
+    },
+    {
+      "readings": [
+        "huo2"
+      ],
+      "traditional": "活",
+      "simplified": "活"
+    },
+    {
+      "readings": [
+        "yi1"
+      ],
+      "traditional": "衣",
+      "simplified": "衣"
+    },
+    {
+      "readings": [
+        "fu5"
+      ],
+      "traditional": "服",
+      "simplified": "服"
+    },
+    {
+      "readings": [
+        "ni3",
+        "hao3"
+      ],
+      "traditional": "你好",
+      "simplified": "你好"
+    },
+    {
+      "readings": [
+        "xie4",
+        "xie5"
+      ],
+      "traditional": "謝謝",
+      "simplified": "谢谢"
+    },
+    {
+      "readings": [
+        "wo3",
+        "men5"
+      ],
+      "traditional": "我們",
+      "simplified": "我们"
+    },
+    {
+      "readings": [
+        "ni3",
+        "men5"
+      ],
+      "traditional": "你們",
+      "simplified": "你们"
+    },
+    {
+      "readings": [
+        "bei3",
+        "jing1"
+      ],
+      "traditional": "北京",
+      "simplified": "北京"
+    },
+    {
+      "readings": [
+        "hua2",
+        "sheng4",
+        "dun4"
+      ],
+      "traditional": "華盛頓",
+      "simplified": "华盛顿"
+    },
+    {
+      "readings": [
+        "tai2",
+        "bei3"
+      ],
+      "traditional": "台北",
+      "simplified": "台北"
+    },
+    {
+      "readings": [
+        "tai2",
+        "bei3"
+      ],
+      "traditional": "臺北",
+      "simplified": "台北"
+    },
+    {
+      "readings": [
+        "tai2",
+        "wan1"
+      ],
+      "traditional": "台灣",
+      "simplified": "台湾"
+    },
+    {
+      "readings": [
+        "guang3",
+        "zhou1"
+      ],
+      "traditional": "廣州",
+      "simplified": "广州"
+    },
+    {
+      "readings": [
+        "shang4",
+        "hai3"
+      ],
+      "traditional": "上海",
+      "simplified": "上海"
+    },
+    {
+      "readings": [
+        "xiang1",
+        "gang3"
+      ],
+      "traditional": "香港",
+      "simplified": "香港"
+    },
+    {
+      "readings": [
+        "zhong1",
+        "guo2"
+      ],
+      "traditional": "中國",
+      "simplified": "中国"
+    },
+    {
+      "readings": [
+        "mei3",
+        "guo2"
+      ],
+      "traditional": "美國",
+      "simplified": "美国"
+    },
+    {
+      "readings": [
+        "quan2",
+        "qiu2"
+      ],
+      "traditional": "全球",
+      "simplified": "全球"
+    },
+    {
+      "readings": [
+        "hua2",
+        "ren2"
+      ],
+      "traditional": "華人",
+      "simplified": "华人"
+    },
+    {
+      "readings": [
+        "zhong1",
+        "wen2"
+      ],
+      "traditional": "中文",
+      "simplified": "中文"
+    },
+    {
+      "readings": [
+        "hua2",
+        "yu3"
+      ],
+      "traditional": "華語",
+      "simplified": "华语"
+    },
+    {
+      "readings": [
+        "pin1",
+        "yin1"
+      ],
+      "traditional": "拼音",
+      "simplified": "拼音"
+    },
+    {
+      "readings": [
+        "zhu4",
+        "yin1"
+      ],
+      "traditional": "注音",
+      "simplified": "注音"
+    },
+    {
+      "readings": [
+        "shu1",
+        "ru4",
+        "fa3"
+      ],
+      "traditional": "輸入法",
+      "simplified": "输入法"
+    },
+    {
+      "readings": [
+        "ping2",
+        "guo3"
+      ],
+      "traditional": "蘋果",
+      "simplified": "苹果"
+    },
+    {
+      "readings": [
+        "xue2",
+        "xi2"
+      ],
+      "traditional": "學習",
+      "simplified": "学习"
+    },
+    {
+      "readings": [
+        "huan1",
+        "ying2"
+      ],
+      "traditional": "歡迎",
+      "simplified": "欢迎"
+    },
+    {
+      "readings": [
+        "you3",
+        "yong4"
+      ],
+      "traditional": "有用",
+      "simplified": "有用"
+    },
+    {
+      "readings": [
+        "peng2",
+        "you5"
+      ],
+      "traditional": "朋友",
+      "simplified": "朋友"
+    },
+    {
+      "readings": [
+        "gong1",
+        "zuo4"
+      ],
+      "traditional": "工作",
+      "simplified": "工作"
+    },
+    {
+      "readings": [
+        "sheng1",
+        "huo2"
+      ],
+      "traditional": "生活",
+      "simplified": "生活"
+    },
+    {
+      "readings": [
+        "yin3",
+        "si1"
+      ],
+      "traditional": "隱私",
+      "simplified": "隐私"
+    },
+    {
+      "readings": [
+        "ben3",
+        "di4"
+      ],
+      "traditional": "本地",
+      "simplified": "本地"
+    },
+    {
+      "readings": [
+        "jian3",
+        "ti3"
+      ],
+      "traditional": "簡體",
+      "simplified": "简体"
+    },
+    {
+      "readings": [
+        "fan2",
+        "ti3"
+      ],
+      "traditional": "繁體",
+      "simplified": "繁体"
+    },
+    {
+      "readings": [
+        "qie1",
+        "huan4"
+      ],
+      "traditional": "切換",
+      "simplified": "切换"
+    },
+    {
+      "readings": [
+        "dian4",
+        "nao3"
+      ],
+      "traditional": "電腦",
+      "simplified": "电脑"
+    },
+    {
+      "readings": [
+        "shou3",
+        "ji1"
+      ],
+      "traditional": "手機",
+      "simplified": "手机"
+    },
+    {
+      "readings": [
+        "ke3",
+        "yi3"
+      ],
+      "traditional": "可以",
+      "simplified": "可以"
+    },
+    {
+      "readings": [
+        "qing3",
+        "wen4"
+      ],
+      "traditional": "請問",
+      "simplified": "请问"
+    },
+    {
+      "readings": [
+        "zai4",
+        "jian4"
+      ],
+      "traditional": "再見",
+      "simplified": "再见"
+    },
+    {
+      "readings": [
+        "jin1",
+        "tian1"
+      ],
+      "traditional": "今天",
+      "simplified": "今天"
+    },
+    {
+      "readings": [
+        "ming2",
+        "tian1"
+      ],
+      "traditional": "明天",
+      "simplified": "明天"
+    },
+    {
+      "readings": [
+        "wan3",
+        "an1"
+      ],
+      "traditional": "晚安",
+      "simplified": "晚安"
+    },
+    {
+      "readings": [
+        "zao3",
+        "an1"
+      ],
+      "traditional": "早安",
+      "simplified": "早安"
+    },
+    {
+      "readings": [
+        "yi1",
+        "fu5"
+      ],
+      "traditional": "衣服",
+      "simplified": "衣服"
+    }
+  ]
+}
