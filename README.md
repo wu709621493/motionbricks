@@ -368,3 +368,9 @@ The repair joke does not apply to human bodies; laundry pods are not food.
 first-person fan story based on Shi Ou's *再生勇士*. A rainy escort job follows
 the mercenary Ahan through a rescue, a lost axe, and the cost of getting home.
 The story distinguishes borrowed character background from its invented events.
+
+[幽城有喜，明日照常喝茶](docs/fiction/zaisheng_yongshi_youcheng_wedding_tea_zh.md)
+is a companion fan story in an alternate future: Hailan and Liang Bo marry privately
+in Youcheng, while the Lord of Light City, the Holy Demon King, and Hailina enjoy
+immortality over daily tea. Its marriage, immortality, and domestic scenes are
+explicitly fictional additions.
