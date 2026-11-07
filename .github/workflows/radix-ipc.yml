@@ -1,0 +1,55 @@
+name: Radix IPC prototype
+on:
+  push:
+    paths:
+      - 'motionbricks/radix_*.py'
+      - 'tests/radix_ipc/**'
+      - 'tests/radix_portability/**'
+      - 'tools/radix_ipc_benchmark.py'
+      - 'tools/radix_ipc_sandboxes.sh'
+      - '.github/workflows/radix-ipc.yml'
+  pull_request:
+    paths:
+      - 'motionbricks/radix_*.py'
+      - 'tests/radix_ipc/**'
+      - 'tests/radix_portability/**'
+      - 'tools/radix_ipc_benchmark.py'
+      - 'tools/radix_ipc_sandboxes.sh'
+      - '.github/workflows/radix-ipc.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: radix-ipc-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  stdlib:
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-14]
+        python: ['3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Record environment
+        run: python -S -c "import platform; print(platform.platform(), platform.machine(), platform.python_version())"
+      - name: Existing integer and trit reference tests
+        run: python -S -m unittest discover -s tests/radix_portability -v
+      - name: IPC protocol and fault injection tests
+        run: python -S -W error::ResourceWarning -m unittest discover -s tests/radix_ipc -v
+      - name: Synthetic benchmark smoke test (no performance threshold)
+        run: python -S tools/radix_ipc_benchmark.py --repeats 2 --sizes 1 128 > radix-ipc-smoke.json
+      - name: Exercise two isolated Linux containers
+        if: matrix.os == 'ubuntu-24.04' && matrix.python == '3.13'
+        run: bash tools/radix_ipc_sandboxes.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: radix-ipc-${{ matrix.os }}-py${{ matrix.python }}
+          path: radix-ipc-smoke.json
