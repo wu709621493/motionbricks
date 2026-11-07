@@ -1,0 +1,10 @@
+.DS_Store
+.build/
+DerivedData/
+.derivedData/
+screenshots/
+*.xcuserstate
+xcuserdata/
+node_modules/
+package-lock.json
+__pycache__/

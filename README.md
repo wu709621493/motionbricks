@@ -374,3 +374,12 @@ is a companion fan story in an alternate future: Hailan and Liang Bo marry priva
 in Youcheng, while the Lord of Light City, the Holy Demon King, and Hailina enjoy
 immortality over daily tea. Its marriage, immortality, and domestic scenes are
 explicitly fictional additions.
+
+## Zhuyin Bridge (fork input-method experiment)
+
+[注音桥 / Zhuyin Bridge](experiments/zhuyin_bridge/README.md) adds Pinyin hints
+above 37 Zhuyin keys, whole-syllable spelling and an offline teaching lexicon
+with traditional/simplified candidates. It includes an independent iOS keyboard
+extension, a containing guide app, a browser preview and draft product/privacy
+terms. Its dedicated CI checks the model, generated resources, Apple build and
+browser interaction; device signing and on-device acceptance remain separate.

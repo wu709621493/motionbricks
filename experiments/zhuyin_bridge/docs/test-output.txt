@@ -1,0 +1,19 @@
+✔ 37 distinct keys and 409 bidirectional spellings (71.394381ms)
+✔ independent spelling fixtures including ü, apical vowels, contractions and zero initials (4.733219ms)
+✔ every teaching entry reaches candidates in both scripts (31.641577ms)
+✔ tones filter homophones; omitted tone differs from neutral (1.530144ms)
+✔ phrase segmentation, explicit boundary deletion, commit reset (0.372013ms)
+✔ invalid input rejects atomically and never becomes guessed characters (0.257599ms)
+✔ max length survives adversarial extra keys and separators (0.387496ms)
+✔ tone accents and simplified duplicate removal (0.269448ms)
+✔ backspace removes tone, symbol, then restores previous segment (0.50969ms)
+✔ all tones and clear state on every finite syllable (248.462796ms)
+✔ malformed tone values do not alter current composition (0.38332ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 531.966817
