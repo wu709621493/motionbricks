@@ -1,0 +1,2 @@
+# Isolated CPU memory / software rendering experiment. No CUDA or root install.
+numpy==2.3.5

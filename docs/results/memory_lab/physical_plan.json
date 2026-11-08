@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "PLAN_ONLY",
+  "board": "ASUS ROG Rampage VI Extreme Encore",
+  "cpu": "Intel Core i9-7980XE",
+  "socket": "LGA2066",
+  "slots_per_board": 8,
+  "channels_per_cpu": 4,
+  "cpu_published_max_gib": 128,
+  "module_kind": "non-ECC unbuffered DDR4",
+  "requested_physical_dimms": 1000,
+  "dimm_capacity_gib": 16,
+  "populated_dimms_per_full_node": 8,
+  "minimum_nodes_by_slots_and_capacity": 125,
+  "single_board_can_fit": false,
+  "raw_capacity_tib": 15.625,
+  "balanced_channels_and_qvl_verified": false,
+  "purchase_completed": false,
+  "assembly_completed": false,
+  "physical_inventory_verified": false,
+  "distributed_backend_implemented": false
+}

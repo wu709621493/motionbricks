@@ -12,3 +12,6 @@
 *.[gG][iI][fF] filter=lfs diff=lfs merge=lfs -text
 *.[jJ][pP][gG] filter=lfs diff=lfs merge=lfs -text
 *.[sS][vV][gG] filter=lfs diff=lfs merge=lfs -text
+
+# Small reproducible CPU-render evidence stays in ordinary Git.
+docs/results/memory_lab/*.png -filter -diff -merge -text
