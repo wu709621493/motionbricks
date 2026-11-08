@@ -393,6 +393,12 @@ in Youcheng, while the Lord of Light City, the Holy Demon King, and Hailina enjo
 immortality over daily tea. Its marriage, immortality, and domestic scenes are
 explicitly fictional additions.
 
+[RAM Sport：纽伯格林百鬼夜行团本](docs/fiction/ram_sport_nurburgring_raid_zh.md) is an unofficial
+crossover raid design combining CF-inspired elimination rounds, a DNF-inspired
+Nicholas summon role, and an original ghost procession on a fictional Nordschleife.
+It includes eight-player roles, four encounters, dialogue, and completion rules;
+this is a creative design document, not a playable game or runtime integration.
+
 ## Zhuyin Bridge (fork input-method experiment)
 
 [注音桥 / Zhuyin Bridge](experiments/zhuyin_bridge/README.md) adds Pinyin hints
