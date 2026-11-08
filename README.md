@@ -416,3 +416,11 @@ working-set sweeps, and a CPU triangle rasterizer. The checked-in image was
 actually rendered on a CPU. Logical shards do not add physical DIMM slots;
 Skylake-X hardware purchase, assembly, and validation remain separate.
 See the guide for isolated installation and reproducible commands.
+
+## Residential private server planning (fork engineering note)
+
+[住宅私人服务器建设指南：私人服务器，它真香](docs/residential_private_server_zh.md)
+covers a small always-on storage node and an on-demand compute node, residential
+power and cooling, worked electricity/TCO examples, controlled remote access,
+backup restoration and UPS shutdown acceptance. Configuration ranges are planning
+examples; no purchase, deployment or physical acceptance test is claimed.
