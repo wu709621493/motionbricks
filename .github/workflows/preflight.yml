@@ -60,6 +60,21 @@ jobs:
           path: /tmp/memory-lab.*
           if-no-files-found: error
       - run: python -m unittest discover -s tests/cpu_reference -v
+      - name: Biophysics and civil weather concept checks
+        env:
+          OPENBLAS_NUM_THREADS: "1"
+          OMP_NUM_THREADS: "1"
+        run: |
+          python -m unittest discover -s tests/weather_concepts -v
+          python -m motionbricks.wheal_typhoon --cells 32 --out-dir /tmp/wheal-typhoon
+          python -m motionbricks.rs72 --out-dir /tmp/rs72
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weather-concepts-${{ matrix.os }}-py${{ matrix.python }}
+          path: |
+            /tmp/wheal-typhoon/
+            /tmp/rs72/
+          if-no-files-found: error
       - run: python -m motionbricks.cpu_reference --validate-only
       - run: python -m unittest discover -s tests/preflight -v
       - run: python -m unittest discover -s tests/examples -v
