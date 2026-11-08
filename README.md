@@ -451,3 +451,8 @@ through pregnancy, campus gossip, an individually approved flexible study plan,
 graduation and independent paths into doctoral research. The story centers on
 agency, shared care and sustained scholarship; its educational arrangements are
 fictional, with sourced notes distinguishing them from current policy.
+
+[族譜登記處奇妙夜](docs/fiction/genealogy_register_wonder_night_zh.md) is an original
+comedy following a late-night discussion from Tang marriage rules to the 1950
+Marriage Law, an imaginary reincarnation office, and a family genealogy desk.
+Sourced notes distinguish customary practice, civil marriage, and family records.
