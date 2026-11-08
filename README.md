@@ -443,3 +443,11 @@ connects Shen, Camille, Jax and mythic-era item choices with fog of war,
 historical misjudgment and crisis communication. It closes with a reader-supplied
 literary motif about reliable basic actions; the original novel passage remains
 unverified. Game analogy, sourced history and original interpretation are distinguished.
+
+## Original fiction (fork creative writing)
+
+[梅江有信，山海同程](docs/fiction/meixian_letters_shared_future_zh.md) follows a young couple from Meixian
+through pregnancy, campus gossip, an individually approved flexible study plan,
+graduation and independent paths into doctoral research. The story centers on
+agency, shared care and sustained scholarship; its educational arrangements are
+fictional, with sourced notes distinguishing them from current policy.
