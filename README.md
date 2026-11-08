@@ -353,6 +353,16 @@ not a dental device, clinical protocol approval, or implemented robot capability
 
 An isolated, standard-library [root–soil screening prototype](docs/root_soil_seismic.md) compares candidate shallow slip planes and synthetic sliding displacement. Inputs are uncalibrated; redwood/banyan measurements and physical validation are pending. This does not model tectonic faults or certify slope safety.
 
+### Rally surfaces and runoff research
+
+The [rally surface study](docs/rally_surface_bayinbuluke_pikes_peak_zh.md) compares
+loose fabric, anchored mats, gravel, buried geotextile and asphalt on explicitly
+synthetic Bayinbuluke- and Pikes Peak-scale routes. A standard-library CPU model
+screens traction, support, rainfall runoff and separate erosion proxies across
+216 cases. Pikes Peak's asphalt paving and drainage history supplies context,
+not calibration. No surveyed route, race lap time or material performance claim
+is implied.
+
 ### Integer representation portability lab
 
 The [integer portability lab](docs/radix_portability_zh.md) runs exact integer
