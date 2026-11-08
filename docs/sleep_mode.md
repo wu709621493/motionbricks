@@ -116,6 +116,21 @@ so clear that level too when staying awake is intended. This preserves the old
 level-triggered contract. Requests are in-memory and belong to a single supervisor;
 they are not saved across process restarts or synchronized between threads.
 
+### Cantonese sleep command
+
+On the tick when the operator selects **训觉**, pass the text directly:
+
+```python
+decision = runtime.step(sample, now_s, sleep_command="训觉")
+```
+
+`SleepRuntime.step` and `SleepSupervisor.tick` accept the exact tokens `训觉`,
+`訓覺`, `瞓觉`, `瞓覺`, `oyasumi` and `おやすみ`. Each sets the same one-shot
+request as `oyasumi=True`. Omit `sleep_command` on subsequent ticks or pass
+`None`. Use `wake=True` to cancel. Treat this field as a command input:
+an unknown value, including a sentence containing a token, latches FAULT and
+clears the pending request. The existing `oyasumi` argument takes a bool.
+
 ## Energy and physical validation
 
 A supported seated/docked rest posture may reduce actuator demand, but selecting
@@ -125,14 +140,14 @@ optional generation calls; it does not claim electrical savings or reduced heat.
 Keep sensing, balance, thermal/battery limits and emergency recovery independent
 of the optional generator and any remote/experimental compute backend.
 
-Run `python -S -m unittest discover -s tests/sleep_mode -v`. The 22 offline tests cover
+Run `python -S -m unittest discover -s tests/sleep_mode -v`. The offline tests cover
 dwell reset, hysteresis, wake, support/margin/speed disturbances, invalid and stale
 samples, deadline/backward clock faults, recovery gates and callback failures,
 plus one-shot requests, cancellation, command precedence, instance isolation,
 legacy level compatibility and valid zero tilt/speed readings.
 A deterministic 100-tick trace with 0.1 s dwell at 100 Hz runs balance 100 times
-and generation 10 times (versus 100 without sleep), using either the maintained
-level or a single oyasumi event. This is a callback-count
+and generation 10 times (versus 100 without sleep), using the maintained
+level, a single `oyasumi=True` event, or any one of the text commands. This is a callback-count
 comparison, not a physics simulation or measured 90% energy reduction.
 The existing Ubuntu x86/ARM and macOS ARM Python 3.12/3.13 matrix runs this suite.
 

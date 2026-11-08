@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         python: ['3.12', '3.13']
-        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-14]
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-15]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -39,10 +39,42 @@ jobs:
       - run: python -m unittest discover -s tests/crew_countdown -v
       - run: python -m unittest discover -s tests/bell_chsh -v
       - run: python -m unittest discover -s tests/root_soil -v
+      - run: python -S -m unittest discover -s tests/rally_surface -v
       - run: python -S -m unittest discover -s tests/radix_portability -v
-      - run: python -S -m motionbricks.radix_portability
+      - run: python -S -m motionbricks.radix_portability --backend all
       - run: python -m unittest discover -s tests/sleep_mode -v
+      - run: python -S -m unittest discover -s tests/prebios_power -v
+      - run: python -S -m motionbricks.prebios_power --demo
+      - name: CPU logical memory and rasterizer checks
+        env:
+          OPENBLAS_NUM_THREADS: "1"
+          OMP_NUM_THREADS: "1"
+        run: python -m unittest discover -s tests/memory_lab -v
+      - name: Render 1000 logical shards on the actual runner CPU
+        run: |
+          python -S -m motionbricks.memory_lab plan --dimms 1000 --dimm-gib 16
+          python -m motionbricks.memory_lab run --memory-mib 16 --matrix-size 8 --cache-sizes 16 64 256 --cache-repeats 1 --render /tmp/memory-lab.png --render-width 960 --render-height 640 > /tmp/memory-lab.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: memory-lab-${{ matrix.os }}-py${{ matrix.python }}
+          path: /tmp/memory-lab.*
+          if-no-files-found: error
       - run: python -m unittest discover -s tests/cpu_reference -v
+      - name: Biophysics and civil weather concept checks
+        env:
+          OPENBLAS_NUM_THREADS: "1"
+          OMP_NUM_THREADS: "1"
+        run: |
+          python -m unittest discover -s tests/weather_concepts -v
+          python -m motionbricks.wheal_typhoon --cells 32 --out-dir /tmp/wheal-typhoon
+          python -m motionbricks.rs72 --out-dir /tmp/rs72
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weather-concepts-${{ matrix.os }}-py${{ matrix.python }}
+          path: |
+            /tmp/wheal-typhoon/
+            /tmp/rs72/
+          if-no-files-found: error
       - run: python -m motionbricks.cpu_reference --validate-only
       - run: python -m unittest discover -s tests/preflight -v
       - run: python -m unittest discover -s tests/examples -v
@@ -59,13 +91,13 @@ jobs:
       fail-fast: false
       matrix:
         python: ['3.12', '3.13']
-        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-14]
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-15]
         include:
           - os: ubuntu-24.04
             host: Linux/x86_64
           - os: ubuntu-24.04-arm
             host: Linux/aarch64
-          - os: macos-14
+          - os: macos-15
             host: Darwin/arm64
     env:
       REFUSAL_EXPECT_HOST: ${{ matrix.host }}

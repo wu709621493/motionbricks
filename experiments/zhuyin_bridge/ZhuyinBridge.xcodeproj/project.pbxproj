@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = "1";
+	"classes" = {
+	};
+	"objectVersion" = "56";
+	"objects" = {
+		"63CEB35604AE9E2164A63E59" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/ZhuyinBridgeApp.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"28058BF75DA060B0E9799B68" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "KeyboardExtension/KeyboardViewController.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"FC1764E7438CD7ADBC853DFE" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/BridgeEngine.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"033309ED5A594366737CE626" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/BridgeData.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"51D2361F4FAEA3BC8F9FACDB" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text";
+			"path" = "App/TERMS_DRAFT.txt";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"A4CC6BC01A927E2A78FD3BEC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xml";
+			"path" = "PrivacyInfo.xcprivacy";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"F76FA9A83577B45DB876F024" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "App/Info.plist";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"F40448E8235F1B7F0559ED6B" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "KeyboardExtension/Info.plist";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"763D774377779C412BB71F6F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "wrapper.application";
+			"path" = "ZhuyinBridge.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"9C8AD26791242716F89881DA" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "wrapper.app-extension";
+			"path" = "ZhuyinBridgeKeyboard.appex";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"0A3E27B8CA818264D75C8D81" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				"763D774377779C412BB71F6F",
+				"9C8AD26791242716F89881DA",
+			);
+			"name" = "Products";
+			"sourceTree" = "<group>";
+		};
+		"E991C021ABBD2DA6DF032C23" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				"63CEB35604AE9E2164A63E59",
+				"28058BF75DA060B0E9799B68",
+				"FC1764E7438CD7ADBC853DFE",
+				"033309ED5A594366737CE626",
+				"F76FA9A83577B45DB876F024",
+				"F40448E8235F1B7F0559ED6B",
+				"51D2361F4FAEA3BC8F9FACDB",
+				"A4CC6BC01A927E2A78FD3BEC",
+				"0A3E27B8CA818264D75C8D81",
+			);
+			"sourceTree" = "<group>";
+		};
+		"73EBF6644258C120893E685D" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "16.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"MARKETING_VERSION" = "0.1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+			};
+		};
+		"0B0C687DF8B6B8DC790B519C" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "16.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"MARKETING_VERSION" = "0.1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"76F8DEC3DFE0BDB465198890" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"73EBF6644258C120893E685D",
+				"0B0C687DF8B6B8DC790B519C",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"E86F2AF7E837C7CFEB7216E6" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "16.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"MARKETING_VERSION" = "0.1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "org.example.ZhuyinBridge.Keyboard";
+				"PRODUCT_NAME" = "ZhuyinBridgeKeyboard";
+				"INFOPLIST_FILE" = "KeyboardExtension/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+			};
+		};
+		"13729D2EB40827337DD26FD4" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "16.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"MARKETING_VERSION" = "0.1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "org.example.ZhuyinBridge.Keyboard";
+				"PRODUCT_NAME" = "ZhuyinBridgeKeyboard";
+				"INFOPLIST_FILE" = "KeyboardExtension/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"E882A69ECB800DAC3FF83EB0" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"E86F2AF7E837C7CFEB7216E6",
+				"13729D2EB40827337DD26FD4",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"7049C7435DE107B8C066688E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "28058BF75DA060B0E9799B68";
+		};
+		"C82ACF37D740194FC1DE1D8B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "FC1764E7438CD7ADBC853DFE";
+		};
+		"899A7816B8FF739BE7FB5C55" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "033309ED5A594366737CE626";
+		};
+		"48C89D6362DA77294B0602B7" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"7049C7435DE107B8C066688E",
+				"C82ACF37D740194FC1DE1D8B",
+				"899A7816B8FF739BE7FB5C55",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"33959CB728BF62C06DE65E38" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"D3DB7A79D17850463CA0B3B5" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A4CC6BC01A927E2A78FD3BEC";
+		};
+		"F9EAC74ACB7764DC1700A299" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"D3DB7A79D17850463CA0B3B5",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"5BE7FFB3313325BF8C581EAD" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "E882A69ECB800DAC3FF83EB0";
+			"buildPhases" = (
+				"48C89D6362DA77294B0602B7",
+				"33959CB728BF62C06DE65E38",
+				"F9EAC74ACB7764DC1700A299",
+			);
+			"buildRules" = ();
+			"dependencies" = ();
+			"name" = "ZhuyinBridgeKeyboard";
+			"productName" = "ZhuyinBridgeKeyboard";
+			"productReference" = "9C8AD26791242716F89881DA";
+			"productType" = "com.apple.product-type.app-extension";
+		};
+		"1241936D4DD3AAD68FE7BFBD" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"proxyType" = "1";
+			"remoteGlobalIDString" = "5BE7FFB3313325BF8C581EAD";
+			"remoteInfo" = "ZhuyinBridgeKeyboard";
+		};
+		"F26350DAFE3F19AABFD69AC4" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "5BE7FFB3313325BF8C581EAD";
+			"targetProxy" = "1241936D4DD3AAD68FE7BFBD";
+		};
+		"CEA56A774BFCB4D29A93AB0C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9C8AD26791242716F89881DA";
+			"settings" = {
+				"ATTRIBUTES" = (
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		"8A1EED22144C3F04485A69EE" = {
+			"isa" = "PBXCopyFilesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"dstPath" = "";
+			"dstSubfolderSpec" = "13";
+			"files" = (
+				"CEA56A774BFCB4D29A93AB0C",
+			);
+			"name" = "Embed App Extensions";
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"834208523878C3528B39DFB0" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "16.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"MARKETING_VERSION" = "0.1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "org.example.ZhuyinBridge";
+				"PRODUCT_NAME" = "ZhuyinBridge";
+				"INFOPLIST_FILE" = "App/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+			};
+		};
+		"5D95C8EA06937794DEE76139" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "16.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"DEVELOPMENT_TEAM" = "";
+				"MARKETING_VERSION" = "0.1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "org.example.ZhuyinBridge";
+				"PRODUCT_NAME" = "ZhuyinBridge";
+				"INFOPLIST_FILE" = "App/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"F4A8043BAFE3E67B605A2664" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"834208523878C3528B39DFB0",
+				"5D95C8EA06937794DEE76139",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"D644ED5DB7EB078CF71CFA68" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "63CEB35604AE9E2164A63E59";
+		};
+		"D8AFF257B45D0C513672EC45" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"D644ED5DB7EB078CF71CFA68",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"91024282FFD499F5807DB5BC" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"9FBC1F5A5303C8DC8C9A5A78" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "51D2361F4FAEA3BC8F9FACDB";
+		};
+		"ED0F7741D1D2E44CA914FB12" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A4CC6BC01A927E2A78FD3BEC";
+		};
+		"DC549ACCB7C726C62ECFD4E2" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"9FBC1F5A5303C8DC8C9A5A78",
+				"ED0F7741D1D2E44CA914FB12",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"AC44A5EE06496B21A17CA082" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "F4A8043BAFE3E67B605A2664";
+			"buildPhases" = (
+				"D8AFF257B45D0C513672EC45",
+				"91024282FFD499F5807DB5BC",
+				"DC549ACCB7C726C62ECFD4E2",
+				"8A1EED22144C3F04485A69EE",
+			);
+			"buildRules" = ();
+			"dependencies" = (
+				"F26350DAFE3F19AABFD69AC4",
+			);
+			"name" = "ZhuyinBridge";
+			"productName" = "ZhuyinBridge";
+			"productReference" = "763D774377779C412BB71F6F";
+			"productType" = "com.apple.product-type.application";
+		};
+		"244210E48437B6556980A702" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"LastUpgradeCheck" = "1600";
+				"TargetAttributes" = {
+					"AC44A5EE06496B21A17CA082" = {
+						"CreatedOnToolsVersion" = "16.0";
+					};
+					"5BE7FFB3313325BF8C581EAD" = {
+						"CreatedOnToolsVersion" = "16.0";
+					};
+				};
+			};
+			"buildConfigurationList" = "76F8DEC3DFE0BDB465198890";
+			"compatibilityVersion" = "Xcode 14.0";
+			"developmentRegion" = "en";
+			"hasScannedForEncodings" = "0";
+			"knownRegions" = (
+				"en",
+				"Base",
+				"zh-Hans",
+				"zh-Hant",
+			);
+			"mainGroup" = "E991C021ABBD2DA6DF032C23";
+			"productRefGroup" = "0A3E27B8CA818264D75C8D81";
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = (
+				"AC44A5EE06496B21A17CA082",
+				"5BE7FFB3313325BF8C581EAD",
+			);
+		};
+	};
+	"rootObject" = "244210E48437B6556980A702";
+}

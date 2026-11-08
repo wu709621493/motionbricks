@@ -1,0 +1,177 @@
+{
+  "status": "PASSED",
+  "evidence_kind": "cpu_host_execution_logical_shards",
+  "host": {
+    "system": "Linux",
+    "architecture": "x86_64",
+    "cpu_reported_by_os": "AMD EPYC 9V74 80-Core Processor",
+    "python": "3.12.14",
+    "cpu0_cache_descriptions": [],
+    "target_board_identity_verified": false
+  },
+  "numpy_version": "2.3.5",
+  "child_admission": {
+    "available_bytes": 8557768704,
+    "sources": [
+      "/proc/meminfo:MemAvailable"
+    ],
+    "estimated_worker_bytes": 583122944,
+    "admission_limit_bytes": 4278884352,
+    "hard_rss_limit_enforced": false
+  },
+  "allocated_payload_bytes": 268435456,
+  "logical_shards_verified": 1000,
+  "all_shards_verified": true,
+  "address_pattern_passes": 2,
+  "pattern_write_and_check_s": 0.20830612200370524,
+  "initial_words_checked": 67108864,
+  "final_words_checked": 33554432,
+  "final_mismatched_words": 0,
+  "matrix_kernel_total_s": 0.06249684810609324,
+  "matrix_reference": "independent scalar Python integer dot products; exact equality",
+  "payload_sha256": "d78f70fc975efef1ae31262c95e345f0d1b0525b5e21ae9fa2dee31c135a5a8b",
+  "pseudo_gpu": {
+    "backend": "CPU_NUMPY_TILED",
+    "stream_count": 1,
+    "block_scheduling": "serial_FIFO",
+    "tile": 16,
+    "launches": 4000,
+    "blocks": 10000,
+    "shared_load_phases": 18000,
+    "modeled_barrier_events": 36000,
+    "active_output_lanes": 2080000,
+    "masked_edge_lanes": 480000,
+    "cuda_compatible": false,
+    "cycle_accurate": false,
+    "gpu_used": false
+  },
+  "matrix_runtime": {
+    "backend": "CPU_NUMPY_TILED",
+    "stream_count": 1,
+    "block_scheduling": "serial_FIFO",
+    "tile": 16,
+    "launches": 2000,
+    "blocks": 8000,
+    "shared_load_phases": 16000,
+    "modeled_barrier_events": 32000,
+    "active_output_lanes": 2048000,
+    "masked_edge_lanes": 0,
+    "cuda_compatible": false,
+    "cycle_accurate": false,
+    "gpu_used": false
+  },
+  "rendering": {
+    "status": "RENDERED",
+    "path": "/workspace/scratch/aa9798759d43/motionbricks/docs/results/memory_lab/1000_shards.png",
+    "width": 1440,
+    "height": 1000,
+    "scene_objects": 1000,
+    "visible_objects": 1000,
+    "vertices_transformed_and_checked": 8000,
+    "vertex_kernel_launches": 2000,
+    "triangles_submitted": 12000,
+    "raster_tiles_visited": 24000,
+    "depth_test_passes": 882014,
+    "covered_pixels": 357495,
+    "projection": "orthographic",
+    "rasterizer": "CPU barycentric Z-buffer",
+    "height_and_color": "verified matrix C mean absolute value; not temperature",
+    "image_sha256": "a3e3df52b925e04cf154c19db31ef40f79960df474398d57c2df07be5aaaa5a9",
+    "scene_rgb_sha256_before_labels": "ccf01e7262d3fd0bb27ba44289bbd52cb9854ba3e938ea76190c7e9c919075a7",
+    "render_s": 1.5906415009958437,
+    "gpu_used": false
+  },
+  "working_set_sweep": [
+    {
+      "matrix_size": 16,
+      "matrix_working_set_bytes": 6144,
+      "median_matmul_s": 1.9029976101592183e-06,
+      "repeats": 3,
+      "nominal_gflops_per_s": 4.304787329351716,
+      "mismatched_elements": 0,
+      "cache_hits_measured": null
+    },
+    {
+      "matrix_size": 64,
+      "matrix_working_set_bytes": 98304,
+      "median_matmul_s": 1.0276002285536379e-05,
+      "repeats": 3,
+      "nominal_gflops_per_s": 51.02061924781225,
+      "mismatched_elements": 0,
+      "cache_hits_measured": null
+    },
+    {
+      "matrix_size": 256,
+      "matrix_working_set_bytes": 1572864,
+      "median_matmul_s": 0.0006821970018791035,
+      "repeats": 3,
+      "nominal_gflops_per_s": 49.18583914554699,
+      "mismatched_elements": 0,
+      "cache_hits_measured": null
+    },
+    {
+      "matrix_size": 1024,
+      "matrix_working_set_bytes": 25165824,
+      "median_matmul_s": 0.023255378000612836,
+      "repeats": 3,
+      "nominal_gflops_per_s": 92.3435279333412,
+      "mismatched_elements": 0,
+      "cache_hits_measured": null
+    },
+    {
+      "matrix_size": 2048,
+      "matrix_working_set_bytes": 100663296,
+      "median_matmul_s": 0.18327802200656151,
+      "repeats": 3,
+      "nominal_gflops_per_s": 93.73665754306835,
+      "mismatched_elements": 0,
+      "cache_hits_measured": null
+    }
+  ],
+  "worker_peak_rss_bytes": 401293312,
+  "elapsed_s": 3.0083949089967064,
+  "cache_hardware_counters_collected": false,
+  "note": "OS-managed CPU RAM only; no physical DIMM routing, RDMA, CUDA or full-RAM certification",
+  "worker_reaped": true,
+  "schema_version": 1,
+  "admission": {
+    "available_bytes": 8573526016,
+    "sources": [
+      "/proc/meminfo:MemAvailable"
+    ],
+    "estimated_worker_bytes": 583122944,
+    "admission_limit_bytes": 4286763008,
+    "hard_rss_limit_enforced": false
+  },
+  "power_trace": {
+    "status": "NOT_PROVIDED",
+    "live_monitoring": false
+  },
+  "config": {
+    "logical_shards": 1000,
+    "memory_mib": 256,
+    "matrix_size": 32,
+    "tile": 16,
+    "rounds": 2,
+    "threads": 2,
+    "timeout_s": 90.0,
+    "cache_sizes": [
+      16,
+      64,
+      256,
+      1024,
+      2048
+    ],
+    "cache_repeats": 3,
+    "render_path": "/workspace/scratch/aa9798759d43/motionbricks/docs/results/memory_lab/1000_shards.png",
+    "render_width": 1440,
+    "render_height": 1000
+  },
+  "target_board_tested": false,
+  "physical_dimm_count_verified": null,
+  "gpu_used": false,
+  "all_ram_tested": false,
+  "all_cache_used_proven": false,
+  "hardware_electrical_validated": false,
+  "lifetime_proven": false
+}

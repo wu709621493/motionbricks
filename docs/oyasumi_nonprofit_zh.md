@@ -62,7 +62,10 @@ Apache-2.0 和 CC-BY-4.0 允许符合其条款的商业使用。
 
 ## 晚安请求的技术约定
 
-在正常控制周期传入一次 `oyasumi=True`，随后继续提供新鲜传感器数据。
+要用粤语叫 MotionBricks「训觉」，在正常控制周期调用一次
+`runtime.step(sample, now_s, sleep_command="训觉")`。这和传入 `oyasumi=True`
+发出同一个晚安请求。「瞓覺」也可以直接传入，全部可用写法见[技术文档](sleep_mode.md#cantonese-sleep-command)。
+在后续周期省略这个参数，继续提供新鲜传感器数据。
 系统先满足严格进入条件并持续稳定达到等待时间，再暂停可选动作生成。
 每个周期仍须执行独立平衡回调；`oyasumi=False` 表示本周期没有新请求，不表示取消。
 
@@ -82,7 +85,7 @@ Apache-2.0 和 CC-BY-4.0 允许符合其条款的商业使用。
 python3 -S -m unittest discover -s tests/sleep_mode -v
 ```
 
-套件包含 22 项测试，其中 13 项覆盖 Oyasumi。
+套件覆盖原有的睡眠监督逻辑，并逐个验证文本指令与布尔指令的行为一致。
 `test_one_shot_runtime_retains_balance_and_valid_zeros` 使用 0.1 秒稳定等待时间、
 100 Hz 合成输入和一次晚安事件，在 100 个周期中执行 100 次平衡回调、10 次动作生成。
 这里比较的是函数调用次数；不能据此声称耗电减少 90%。零倾角与零速度仍作为有效数据处理。

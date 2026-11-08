@@ -296,6 +296,14 @@ segment-relative motion and contact-timing evaluation for MotionBricks.
 This is a research design note, not a chassis, collision, or fusion simulator.
 
 
+## Experimental voltage/current pre-BIOS
+
+The [voltage/current pre-BIOS prototype](docs/prebios_voltage_current_zh.md)
+checks declared per-rail electrical envelopes, measurement uncertainty and
+sample continuity, and compares modeled DC supply losses. It runs offline with
+the standard library; it does not write firmware or certify memory stability.
+Run `python -S -m motionbricks.prebios_power --demo` for a synthetic example.
+
 ## Experimental balance-aware sleep
 
 The opt-in [sleep supervisor](docs/sleep_mode.md) pauses optional motion generation
@@ -303,7 +311,8 @@ after stable dwell while retaining an independent balance callback on every tick
 Includes disturbance recovery, latched telemetry/deadline faults, and CPU-only tests;
 physical balance and electrical savings require separate hardware validation.
 The [oyasumi patch](docs/sleep_mode.md#oyasumi-patch-one-shot-goodnight-request)
-adds a one-shot goodnight request, cleared on wake, recovery, or fault.
+accepts the Cantonese `sleep_command="训觉"` as the same one-shot request as
+`oyasumi=True`. Wake, recovery, or fault clears the request.
 The [Oyasumi nonprofit research edition](docs/oyasumi_nonprofit_zh.md) describes
 its public-benefit purpose, free reproducibility, and proposed stewardship;
 the existing Apache-2.0/CC-BY-4.0 licensing remains applicable.
@@ -320,6 +329,11 @@ relationships and source evidence from an annotated Liu Yong lyric and selected
 imperial histories. It filters symbolic motion candidates and keeps documented
 ages separate from motion scores. Includes a runnable JSON CLI and counterexample
 tests; it does not parse arbitrary classical Chinese, generate poses, or predict lifespan.
+
+The [royal-history HD evidence review](docs/royal_huntington_review.md) adds four
+sourced historical profiles and a separate evidence registry. No confirmed royal
+Huntington's disease case was established in this bounded review; retrospective
+hypotheses, other-disease findings and missing evidence remain explicitly distinct.
 
 ### Crew-led countdown (CPU simulation)
 
@@ -339,9 +353,93 @@ not a dental device, clinical protocol approval, or implemented robot capability
 
 An isolated, standard-library [root–soil screening prototype](docs/root_soil_seismic.md) compares candidate shallow slip planes and synthetic sliding displacement. Inputs are uncalibrated; redwood/banyan measurements and physical validation are pending. This does not model tectonic faults or certify slope safety.
 
+### Rally surfaces and runoff research
+
+The [rally surface study](docs/rally_surface_bayinbuluke_pikes_peak_zh.md) compares
+loose fabric, anchored mats, gravel, buried geotextile and asphalt on explicitly
+synthetic Bayinbuluke- and Pikes Peak-scale routes. A standard-library CPU model
+screens traction, support, rainfall runoff and separate erosion proxies across
+216 cases. Pikes Peak's asphalt paving and drainage history supplies context,
+not calibration. No surveyed route, race lap time or material performance claim
+is implied.
+
 ### Integer representation portability lab
 
-The [binary / balanced-ternary lab](docs/radix_portability_zh.md) runs exact integer
+The [integer portability lab](docs/radix_portability_zh.md) runs exact integer
 dot products through versioned, checked adapters, with independent result verification
-and conversion timing. It runs with Python's standard library only. The trit adapter
-is a CPU software simulation; native ternary hardware and motion inference are not implemented.
+and conversion timing. The [balanced base-7 extension](docs/septenary_zh.md) adds
+signed digit convolution and carry propagation alongside binary and balanced ternary.
+Run `python -S -m motionbricks.radix_portability --backend all` to compare all three.
+These are standard-library CPU experiments; native nonbinary hardware and motion
+inference are not implemented.
+
+## Engineering humor (fork cultural note)
+
+[工程师两件套：修得了门轴，修不了常识](docs/fiction/duct_tape_wd40_tide_pods_zh.md)
+retells the duct tape / WD-40 meme and records the 2018 laundry-pod challenge,
+with a fictional workshop sketch and primary-source safety notes.
+The repair joke does not apply to human bodies; laundry pods are not food.
+
+## Fan fiction (fork creative writing)
+
+[阿汉：佣金之外](docs/fiction/zaisheng_yongshi_ahan_zh.md) is an unofficial,
+first-person fan story based on Shi Ou's *再生勇士*. A rainy escort job follows
+the mercenary Ahan through a rescue, a lost axe, and the cost of getting home.
+The story distinguishes borrowed character background from its invented events.
+
+[幽城有喜，明日照常喝茶](docs/fiction/zaisheng_yongshi_youcheng_wedding_tea_zh.md)
+is a companion fan story in an alternate future: Hailan and Liang Bo marry privately
+in Youcheng, while the Lord of Light City, the Holy Demon King, and Hailina enjoy
+immortality over daily tea. Its marriage, immortality, and domestic scenes are
+explicitly fictional additions.
+
+[RAM Sport：纽伯格林百鬼夜行团本](docs/fiction/ram_sport_nurburgring_raid_zh.md) is an unofficial
+crossover raid design combining CF-inspired elimination rounds, a DNF-inspired
+Nicholas summon role, and an original ghost procession on a fictional Nordschleife.
+It includes eight-player roles, four encounters, dialogue, and completion rules;
+this is a creative design document, not a playable game or runtime integration.
+
+## Zhuyin Bridge (fork input-method experiment)
+
+[注音桥 / Zhuyin Bridge](experiments/zhuyin_bridge/README.md) adds Pinyin hints
+above 37 Zhuyin keys, whole-syllable spelling and an offline teaching lexicon
+with traditional/simplified candidates. It includes an independent iOS keyboard
+extension, a containing guide app, a browser preview and draft product/privacy
+terms. Its dedicated CI checks the model, generated resources, Apple build and
+browser interaction; device signing and on-device acceptance remain separate.
+
+## CPU memory and rendering lab (fork experiment)
+
+[1000 logical DDR4 shards and CPU pseudo-GPU rendering](docs/ddr4_1000_cpu_render_zh.md)
+extends PR #48 with a bounded, supervised NumPy worker, independent matrix checks,
+working-set sweeps, and a CPU triangle rasterizer. The checked-in image was
+actually rendered on a CPU. Logical shards do not add physical DIMM slots;
+Skylake-X hardware purchase, assembly, and validation remain separate.
+See the guide for isolated installation and reproducible commands.
+
+## Biophysics and civil weather concepts (fork experiment)
+
+[Wheal versus typhoon fields](docs/wheal_typhoon_biophysics_zh.md) reuses the
+PR #50 CPU transforms and rasterizer for an uncalibrated dermal fluid proxy and
+an idealized vortex, with explicit units, conservation checks and rendered evidence.
+[Taiqiang RS-72](docs/rs72_civil_weather_aircraft_zh.md) continues with an
+SR-71-inspired subsonic civil weather-aircraft concept: wing stiffness, gust and
+crack sensitivity, plus the role of human intuition and physical experiments.
+These are numerical teaching/research prototypes, not clinical predictions,
+weather forecasts, certified airframes or an approved storm-flight envelope.
+
+## Residential private server planning (fork engineering note)
+
+[住宅私人服务器建设指南：私人服务器，它真香](docs/residential_private_server_zh.md)
+covers a small always-on storage node and an on-demand compute node, residential
+power and cooling, worked electricity/TCO examples, controlled remote access,
+backup restoration and UPS shutdown acceptance. Configuration ranges are planning
+examples; no purchase, deployment or physical acceptance test is claimed.
+
+## Strategy and perception (fork cultural essay)
+
+[定其阴，守其阳：从原皮慎到胖迪克的八连击](docs/fog_of_war_eight_hit_essay_zh.md)
+connects Shen, Camille, Jax and mythic-era item choices with fog of war,
+historical misjudgment and crisis communication. It closes with a reader-supplied
+literary motif about reliable basic actions; the original novel passage remains
+unverified. Game analogy, sourced history and original interpretation are distinguished.

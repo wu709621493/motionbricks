@@ -1,0 +1,89 @@
+{
+  "status": "PASSED",
+  "meaning": "numerical/render checks only; uncalibrated models",
+  "pr50": "https://github.com/wu709621493/motionbricks/pull/50",
+  "host": {
+    "system": "Linux",
+    "architecture": "x86_64",
+    "cpu_reported_by_os": "AMD EPYC 9V74 80-Core Processor",
+    "python": "3.12.14",
+    "cpu0_cache_descriptions": [],
+    "target_board_identity_verified": false
+  },
+  "numpy_version": "2.3.5",
+  "skin_config": {
+    "cells": 64,
+    "width_mm": 40.0,
+    "diffusivity_mm2_s": 0.002,
+    "source_mm_s": 0.0015,
+    "source_decay_s": 600.0,
+    "drainage_s": 1800.0,
+    "duration_s": 1800.0,
+    "dt_s": 5.0
+  },
+  "vortex_config": {
+    "vmax_m_s": 45.0,
+    "radius_max_m": 40000.0,
+    "outer_radius_m": 300000.0,
+    "outer_pressure_pa": 101000.0,
+    "density_kg_m3": 1.2,
+    "coriolis_s_inv": 5e-05,
+    "half_width_m": 150000.0
+  },
+  "skin": {
+    "peak_equivalent_thickness_mm": 0.28013630425448405,
+    "equivalent_volume_mm3": 61.56937778520819,
+    "source_volume_mm3": 122.55560268472303,
+    "drained_volume_mm3": 60.98622489951492,
+    "balance_residual_mm3": 8.526512829121202e-14,
+    "dx_mm": 0.625,
+    "steps": 360
+  },
+  "vortex": {
+    "analytic_vmax_m_s": 45.0,
+    "grid_max_speed_m_s": 44.90170233203251,
+    "analytic_max_dynamic_pressure_pa": 1215.0,
+    "analytic_central_pressure_pa": 98319.99047378144,
+    "gradient_balance_max_error_m_s2": 1.3669100573654447e-11,
+    "official_intensity_classification": null,
+    "wind_observation_height_m": null,
+    "wind_observation_average_minutes": null
+  },
+  "field_hashes": {
+    "skin_height_f64_le": "07b3697fecd050514eb22a43fbf0af67f6608e8618c1444a88b30ea0a786779b",
+    "vortex_speed_f64_le": "85dd28b1b9fd57fc9f495f96920410b8b42a5951c16bff513b520d109bd8d3c8"
+  },
+  "rendering": {
+    "path": "comparison.png",
+    "width": 1600,
+    "height": 1200,
+    "triangles": 15876,
+    "vertices_transformed_and_checked": 8192,
+    "visible_field_meshes": 2,
+    "image_sha256": "e903f5be0235911b3bda565173949c5e662ae3089c4c52d3b414e832b73e3534",
+    "skin_vertical_exaggeration": 20,
+    "skin_color_max_mm": 0.6,
+    "wind_color_max_m_s": 45,
+    "gpu_used": false
+  },
+  "pseudo_gpu": {
+    "backend": "CPU_NUMPY_TILED",
+    "stream_count": 1,
+    "block_scheduling": "serial_FIFO",
+    "tile": 4,
+    "launches": 2048,
+    "blocks": 2048,
+    "shared_load_phases": 2048,
+    "modeled_barrier_events": 4096,
+    "active_output_lanes": 32768,
+    "masked_edge_lanes": 0,
+    "cuda_compatible": false,
+    "cycle_accurate": false,
+    "gpu_used": false
+  },
+  "clinical_validation": false,
+  "weather_forecast_validation": false,
+  "physical_dimms_tested": 0,
+  "supervised_memory_worker_used": false,
+  "python": "3.12.14"
+}
