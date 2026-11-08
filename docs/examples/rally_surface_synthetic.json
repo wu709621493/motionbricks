@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "parameter_evidence": "SYNTHETIC_UNCALIBRATED",
+  "notes": [
+    "All material, soil, vehicle, weather, wear and drainage values are illustrative assumptions, not measurements or design values.",
+    "Bayinbuluke is a fictional film course; only the reported fictional scale (109 km, 1462 bends) is borrowed.",
+    "Pikes Peak borrows only published race scale (12.42 miles, 156 bends); its generated radii, grades and width are not surveyed geometry.",
+    "Rainfall and saturation are independent imposed inputs; this is not an infiltration or rainfall-runoff time-series solver.",
+    "Each segment is tested independently at fixed speed; infeasible demand is flagged, not integrated into a trajectory or lap time.",
+    "The protected routing fraction assumes a functioning protected outlet; it does not make water disappear or certify downstream safety.",
+    "Wear is a pass-count sensitivity assumption. The model does not simulate mat tearing, displaced fragments, ruts or vehicle rollover."
+  ],
+  "sources": {
+    "bayinbuluke_fiction": "https://www.atr123.com/index.php?a=show&c=index&catid=229&id=620&m=content",
+    "pikes_peak_race_history": "https://ppihc.org/paving-pikes-peak-competitors/",
+    "pikes_peak_monitoring_2013": "https://data.fs.usda.gov/emc/rig/pikespeak/PPH_Report_2013.pdf",
+    "pikes_peak_restoration": "https://www.rmfi.org/projects/pikes-peak-watershed-erosion-control-and-restoration-project",
+    "geotextile_mechanisms": "https://www.fhwa.dot.gov/engineering/geotech/pubs/05037/07d.cfm",
+    "buried_geotextile_installation": "https://highways.dot.gov/sites/fhwa.dot.gov/files/fp-24_0.pdf"
+  },
+  "soil": {
+    "cohesion_dry_pa": 18000,
+    "cohesion_wet_pa": 8000,
+    "phi_dry_deg": 32,
+    "phi_wet_deg": 12,
+    "bearing_dry_pa": 250000,
+    "bearing_wet_pa": 80000
+  },
+  "vehicle": {
+    "mass_kg": 1400,
+    "speed_m_s": 8,
+    "acceleration_m_s2": 0
+  },
+  "routes": [
+    {
+      "id": "bayinbuluke_fictional_surrogate",
+      "geometry_evidence": "SYNTHETIC_NOT_A_SURVEY",
+      "scale_source_url": "https://www.atr123.com/index.php?a=show&c=index&catid=229&id=620&m=content",
+      "length_m": 109000,
+      "corners": 1462,
+      "width_m": 6,
+      "grade_mean": 0,
+      "grade_amplitude": 0.08,
+      "radius_min_m": 20,
+      "radius_max_m": 160
+    },
+    {
+      "id": "pikes_peak_scale_surrogate",
+      "geometry_evidence": "SYNTHETIC_NOT_A_SURVEY",
+      "scale_source_url": "https://ppihc.org/paving-pikes-peak-competitors/",
+      "length_m": 19988.052480000002,
+      "corners": 156,
+      "width_m": 6,
+      "grade_mean": 0.07,
+      "grade_amplitude": 0.03,
+      "radius_min_m": 25,
+      "radius_max_m": 180
+    }
+  ],
+  "surfaces": [
+    {
+      "name": "bare_mud",
+      "tire_mu_dry": 0.55,
+      "tire_mu_wet": 0.22,
+      "support_area_m2": 0.12,
+      "support_floor_m2": 0.12,
+      "retention_loss_per_pass": 0,
+      "runoff_coefficient": 0.45,
+      "erodibility": 1,
+      "cover_fraction": 0,
+      "rolling_coefficient": 0.04
+    },
+    {
+      "name": "loose_sack",
+      "tire_mu_dry": 0.75,
+      "tire_mu_wet": 0.42,
+      "support_area_m2": 0.18,
+      "support_floor_m2": 0.12,
+      "retention_loss_per_pass": 0.02,
+      "runoff_coefficient": 0.45,
+      "erodibility": 1,
+      "cover_fraction": 0.7,
+      "rolling_coefficient": 0.04,
+      "interface_mu_dry": 0.35,
+      "interface_mu_wet": 0.12,
+      "anchor_capacity_n": 0,
+      "sheet_capacity_n": 7000
+    },
+    {
+      "name": "anchored_mat",
+      "tire_mu_dry": 0.75,
+      "tire_mu_wet": 0.42,
+      "support_area_m2": 0.6,
+      "support_floor_m2": 0.12,
+      "retention_loss_per_pass": 0.01,
+      "runoff_coefficient": 0.45,
+      "erodibility": 1,
+      "cover_fraction": 0.85,
+      "rolling_coefficient": 0.04,
+      "interface_mu_dry": 0.35,
+      "interface_mu_wet": 0.12,
+      "anchor_capacity_n": 6000,
+      "sheet_capacity_n": 14000
+    },
+    {
+      "name": "gravel_control",
+      "tire_mu_dry": 0.7,
+      "tire_mu_wet": 0.55,
+      "support_area_m2": 0.6,
+      "support_floor_m2": 0.12,
+      "retention_loss_per_pass": 0.006,
+      "runoff_coefficient": 0.4,
+      "erodibility": 0.65,
+      "cover_fraction": 0.2,
+      "rolling_coefficient": 0.035
+    },
+    {
+      "name": "buried_geotextile_gravel",
+      "tire_mu_dry": 0.7,
+      "tire_mu_wet": 0.55,
+      "support_area_m2": 0.6,
+      "support_floor_m2": 0.12,
+      "retention_loss_per_pass": 0.002,
+      "runoff_coefficient": 0.4,
+      "erodibility": 0.65,
+      "cover_fraction": 0.2,
+      "rolling_coefficient": 0.035
+    },
+    {
+      "name": "asphalt",
+      "tire_mu_dry": 0.95,
+      "tire_mu_wet": 0.7,
+      "support_area_m2": 1.2,
+      "support_floor_m2": 0.12,
+      "retention_loss_per_pass": 0.0002,
+      "runoff_coefficient": 0.95,
+      "erodibility": 0.03,
+      "cover_fraction": 0.95,
+      "rolling_coefficient": 0.015
+    }
+  ],
+  "weather": [
+    {
+      "id": "dry",
+      "saturation": 0.05,
+      "rain_mm": 0
+    },
+    {
+      "id": "wet",
+      "saturation": 0.8,
+      "rain_mm": 30
+    },
+    {
+      "id": "saturated",
+      "saturation": 1,
+      "rain_mm": 60
+    }
+  ],
+  "passes": [
+    0,
+    20,
+    100
+  ],
+  "protected_routing_fractions": [
+    0,
+    0.9
+  ]
+}
