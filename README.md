@@ -435,3 +435,11 @@ covers a small always-on storage node and an on-demand compute node, residential
 power and cooling, worked electricity/TCO examples, controlled remote access,
 backup restoration and UPS shutdown acceptance. Configuration ranges are planning
 examples; no purchase, deployment or physical acceptance test is claimed.
+
+## Strategy and perception (fork cultural essay)
+
+[定其阴，守其阳：从原皮慎到胖迪克的八连击](docs/fog_of_war_eight_hit_essay_zh.md)
+connects Shen, Camille, Jax and mythic-era item choices with fog of war,
+historical misjudgment and crisis communication. It closes with a reader-supplied
+literary motif about reliable basic actions; the original novel passage remains
+unverified. Game analogy, sourced history and original interpretation are distinguished.
