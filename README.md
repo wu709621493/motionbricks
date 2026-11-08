@@ -391,3 +391,12 @@ with traditional/simplified candidates. It includes an independent iOS keyboard
 extension, a containing guide app, a browser preview and draft product/privacy
 terms. Its dedicated CI checks the model, generated resources, Apple build and
 browser interaction; device signing and on-device acceptance remain separate.
+
+## CPU memory and rendering lab (fork experiment)
+
+[1000 logical DDR4 shards and CPU pseudo-GPU rendering](docs/ddr4_1000_cpu_render_zh.md)
+extends PR #48 with a bounded, supervised NumPy worker, independent matrix checks,
+working-set sweeps, and a CPU triangle rasterizer. The checked-in image was
+actually rendered on a CPU. Logical shards do not add physical DIMM slots;
+Skylake-X hardware purchase, assembly, and validation remain separate.
+See the guide for isolated installation and reproducible commands.
