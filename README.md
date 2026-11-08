@@ -417,6 +417,17 @@ actually rendered on a CPU. Logical shards do not add physical DIMM slots;
 Skylake-X hardware purchase, assembly, and validation remain separate.
 See the guide for isolated installation and reproducible commands.
 
+## Biophysics and civil weather concepts (fork experiment)
+
+[Wheal versus typhoon fields](docs/wheal_typhoon_biophysics_zh.md) reuses the
+PR #50 CPU transforms and rasterizer for an uncalibrated dermal fluid proxy and
+an idealized vortex, with explicit units, conservation checks and rendered evidence.
+[Taiqiang RS-72](docs/rs72_civil_weather_aircraft_zh.md) continues with an
+SR-71-inspired subsonic civil weather-aircraft concept: wing stiffness, gust and
+crack sensitivity, plus the role of human intuition and physical experiments.
+These are numerical teaching/research prototypes, not clinical predictions,
+weather forecasts, certified airframes or an approved storm-flight envelope.
+
 ## Residential private server planning (fork engineering note)
 
 [住宅私人服务器建设指南：私人服务器，它真香](docs/residential_private_server_zh.md)

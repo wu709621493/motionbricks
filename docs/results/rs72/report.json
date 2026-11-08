@@ -1,0 +1,636 @@
+{
+  "name": "台强 RS-72 / Taiqiang RS-72",
+  "status": "CONCEPT_SCREENING_ONLY",
+  "assumptions": {
+    "mass_kg": 12000.0,
+    "span_m": 24.0,
+    "wing_area_m2": 70.0,
+    "elastic_modulus_pa": 70000000000.0,
+    "second_moment_m4": 0.0013,
+    "outer_fiber_m": 0.3,
+    "yield_screen_pa": 250000000.0,
+    "ultimate_screen_pa": 400000000.0,
+    "fracture_screen_mpa_sqrt_m": 30.0,
+    "crack_m": 0.002,
+    "crack_geometry_factor": 1.12,
+    "lift_slope_per_rad": 4.8,
+    "cl_max_screen": 1.8,
+    "density_kg_m3": 1.2,
+    "deflection_fraction_screen": 0.05
+  },
+  "host": {
+    "system": "Linux",
+    "architecture": "x86_64",
+    "cpu_reported_by_os": "AMD EPYC 9V74 80-Core Processor",
+    "python": "3.12.14",
+    "cpu0_cache_descriptions": [],
+    "target_board_identity_verified": false
+  },
+  "numpy_version": "2.3.5",
+  "environment_scope": {
+    "beaufort_max_inclusive": 12,
+    "reference_10m_max_m_s": 36.9,
+    "converted_to_flight_altitude": false,
+    "ambient_wind_is_not_vertical_gust": true
+  },
+  "baseline_1g": {
+    "n": 1.0,
+    "root_shear_n": 58839.899999999994,
+    "root_moment_nm": 353039.39999999997,
+    "tip_deflection_m": 0.13966393846153846,
+    "elastic_trial_stress_mpa": 81.47063076923077,
+    "stress_intensity_mpa_sqrt_m": 7.2328429573315445,
+    "critical_crack_m": 0.03440760420970288,
+    "utilization": {
+      "elastic_deflection": 0.23277323076923073,
+      "yield": 0.32588252307692306,
+      "ultimate_1_5x_load": 0.30551486538461536,
+      "fracture": 0.2410947652443848
+    },
+    "exceeded_screens": [],
+    "linear_elastic_applicable": true,
+    "status": "WITHIN_ASSUMED_SCREENS"
+  },
+  "illustrative_2_5g": {
+    "n": 2.5,
+    "root_shear_n": 147099.75,
+    "root_moment_nm": 882598.5,
+    "tip_deflection_m": 0.34915984615384615,
+    "elastic_trial_stress_mpa": 203.67657692307694,
+    "stress_intensity_mpa_sqrt_m": 18.08210739332886,
+    "critical_crack_m": 0.005505216673552461,
+    "utilization": {
+      "elastic_deflection": 0.5819330769230768,
+      "yield": 0.8147063076923077,
+      "ultimate_1_5x_load": 0.7637871634615385,
+      "fracture": 0.602736913110962
+    },
+    "exceeded_screens": [],
+    "linear_elastic_applicable": true,
+    "status": "WITHIN_ASSUMED_SCREENS"
+  },
+  "gust_cases": [
+    {
+      "n": -0.7987793996930654,
+      "root_shear_n": -47000.1,
+      "root_moment_nm": -282000.6,
+      "tip_deflection_m": -0.11156067692307692,
+      "elastic_trial_stress_mpa": 65.07706153846154,
+      "stress_intensity_mpa_sqrt_m": 5.777445955531507,
+      "critical_crack_m": 0.05392631222496507,
+      "utilization": {
+        "elastic_deflection": 0.1859344615384615,
+        "yield": 0.2603082461538461,
+        "ultimate_1_5x_load": 0.24403898076923075,
+        "fracture": 0.19258153185105026
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "MODEL_OUTSIDE_ASSUMPTIONS",
+      "tas_m_s": 70.0,
+      "vertical_gust_m_s": -15.0,
+      "dynamic_pressure_pa": 2940.0,
+      "delta_n": -1.7987793996930654,
+      "cl_linear_trial": -0.45675510204081626,
+      "model_flags": [
+        "small_angle_screen_exceeded"
+      ]
+    },
+    {
+      "n": 0.10061030015346728,
+      "root_shear_n": 5919.899999999999,
+      "root_moment_nm": 35519.399999999994,
+      "tip_deflection_m": 0.014051630769230765,
+      "elastic_trial_stress_mpa": 8.196784615384614,
+      "stress_intensity_mpa_sqrt_m": 0.7276985009000186,
+      "critical_crack_m": 3.3991438540093637,
+      "utilization": {
+        "elastic_deflection": 0.023419384615384606,
+        "yield": 0.032787138461538454,
+        "ultimate_1_5x_load": 0.0307379423076923,
+        "fracture": 0.024256616696667288
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "MODEL_OUTSIDE_ASSUMPTIONS",
+      "tas_m_s": 70.0,
+      "vertical_gust_m_s": -7.5,
+      "dynamic_pressure_pa": 2940.0,
+      "delta_n": -0.8993896998465327,
+      "cl_linear_trial": 0.05753061224489797,
+      "model_flags": [
+        "small_angle_screen_exceeded"
+      ]
+    },
+    {
+      "n": 0.6402441200613869,
+      "root_shear_n": 37671.899999999994,
+      "root_moment_nm": 226031.39999999997,
+      "tip_deflection_m": 0.08941901538461537,
+      "elastic_trial_stress_mpa": 52.1610923076923,
+      "stress_intensity_mpa_sqrt_m": 4.630785174758934,
+      "critical_crack_m": 0.08393889285344806,
+      "utilization": {
+        "elastic_deflection": 0.14903169230769225,
+        "yield": 0.20864436923076918,
+        "ultimate_1_5x_load": 0.19560409615384614,
+        "fracture": 0.1543595058252978
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 70.0,
+      "vertical_gust_m_s": -3.0,
+      "dynamic_pressure_pa": 2940.0,
+      "delta_n": -0.3597558799386131,
+      "cl_linear_trial": 0.3661020408163265,
+      "model_flags": []
+    },
+    {
+      "n": 1.0,
+      "root_shear_n": 58839.899999999994,
+      "root_moment_nm": 353039.39999999997,
+      "tip_deflection_m": 0.13966393846153846,
+      "elastic_trial_stress_mpa": 81.47063076923077,
+      "stress_intensity_mpa_sqrt_m": 7.2328429573315445,
+      "critical_crack_m": 0.03440760420970288,
+      "utilization": {
+        "elastic_deflection": 0.23277323076923073,
+        "yield": 0.32588252307692306,
+        "ultimate_1_5x_load": 0.30551486538461536,
+        "fracture": 0.2410947652443848
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 70.0,
+      "vertical_gust_m_s": 0.0,
+      "dynamic_pressure_pa": 2940.0,
+      "delta_n": 0.0,
+      "cl_linear_trial": 0.5718163265306122,
+      "model_flags": []
+    },
+    {
+      "n": 1.3597558799386131,
+      "root_shear_n": 80007.9,
+      "root_moment_nm": 480047.39999999997,
+      "tip_deflection_m": 0.1899088615384615,
+      "elastic_trial_stress_mpa": 110.78016923076922,
+      "stress_intensity_mpa_sqrt_m": 9.834900739904155,
+      "critical_crack_m": 0.018609407368827297,
+      "utilization": {
+        "elastic_deflection": 0.31651476923076916,
+        "yield": 0.4431206769230769,
+        "ultimate_1_5x_load": 0.41542563461538456,
+        "fracture": 0.32783002466347183
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 70.0,
+      "vertical_gust_m_s": 3.0,
+      "dynamic_pressure_pa": 2940.0,
+      "delta_n": 0.3597558799386131,
+      "cl_linear_trial": 0.777530612244898,
+      "model_flags": []
+    },
+    {
+      "n": 1.8993896998465327,
+      "root_shear_n": 111759.9,
+      "root_moment_nm": 670559.3999999999,
+      "tip_deflection_m": 0.26527624615384615,
+      "elastic_trial_stress_mpa": 154.74447692307692,
+      "stress_intensity_mpa_sqrt_m": 13.737987413763072,
+      "critical_crack_m": 0.009537318293430023,
+      "utilization": {
+        "elastic_deflection": 0.44212707692307684,
+        "yield": 0.6189779076923078,
+        "ultimate_1_5x_load": 0.5802917884615385,
+        "fracture": 0.4579329137921024
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "MODEL_OUTSIDE_ASSUMPTIONS",
+      "tas_m_s": 70.0,
+      "vertical_gust_m_s": 7.5,
+      "dynamic_pressure_pa": 2940.0,
+      "delta_n": 0.8993896998465327,
+      "cl_linear_trial": 1.0861020408163264,
+      "model_flags": [
+        "small_angle_screen_exceeded"
+      ]
+    },
+    {
+      "n": 2.7987793996930654,
+      "root_shear_n": 164679.9,
+      "root_moment_nm": 988079.3999999999,
+      "tip_deflection_m": 0.39088855384615384,
+      "elastic_trial_stress_mpa": 228.01832307692305,
+      "stress_intensity_mpa_sqrt_m": 20.243131870194595,
+      "critical_crack_m": 0.0043925538724461435,
+      "utilization": {
+        "elastic_deflection": 0.651480923076923,
+        "yield": 0.9120732923076922,
+        "ultimate_1_5x_load": 0.8550687115384614,
+        "fracture": 0.6747710623398199
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "MODEL_OUTSIDE_ASSUMPTIONS",
+      "tas_m_s": 70.0,
+      "vertical_gust_m_s": 15.0,
+      "dynamic_pressure_pa": 2940.0,
+      "delta_n": 1.7987793996930654,
+      "cl_linear_trial": 1.6003877551020407,
+      "model_flags": [
+        "small_angle_screen_exceeded"
+      ]
+    },
+    {
+      "n": -1.5696848567043795,
+      "root_shear_n": -92360.10000000002,
+      "root_moment_nm": -554160.6000000001,
+      "tip_deflection_m": -0.2192283692307693,
+      "elastic_trial_stress_mpa": 127.88321538461541,
+      "stress_intensity_mpa_sqrt_m": 11.353284061044246,
+      "critical_crack_m": 0.013964632043375851,
+      "utilization": {
+        "elastic_deflection": 0.36538061538461547,
+        "yield": 0.5115328615384617,
+        "ultimate_1_5x_load": 0.47956205769230775,
+        "fracture": 0.3784428020348082
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "MODEL_OUTSIDE_ASSUMPTIONS",
+      "tas_m_s": 100.0,
+      "vertical_gust_m_s": -15.0,
+      "dynamic_pressure_pa": 6000.0,
+      "delta_n": -2.5696848567043795,
+      "cl_linear_trial": -0.43981,
+      "model_flags": [
+        "small_angle_screen_exceeded"
+      ]
+    },
+    {
+      "n": -0.28484242835218976,
+      "root_shear_n": -16760.10000000001,
+      "root_moment_nm": -100560.60000000006,
+      "tip_deflection_m": -0.03978221538461541,
+      "elastic_trial_stress_mpa": 23.206292307692323,
+      "stress_intensity_mpa_sqrt_m": 2.060220551856351,
+      "critical_crack_m": 0.4240773474081394,
+      "utilization": {
+        "elastic_deflection": 0.06630369230769234,
+        "yield": 0.09282516923076929,
+        "ultimate_1_5x_load": 0.08702359615384622,
+        "fracture": 0.0686740183952117
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 100.0,
+      "vertical_gust_m_s": -7.5,
+      "dynamic_pressure_pa": 6000.0,
+      "delta_n": -1.2848424283521898,
+      "cl_linear_trial": -0.07980999999999999,
+      "model_flags": []
+    },
+    {
+      "n": 0.4860630286591242,
+      "root_shear_n": 28599.899999999998,
+      "root_moment_nm": 171599.4,
+      "tip_deflection_m": 0.06788547692307692,
+      "elastic_trial_stress_mpa": 39.599861538461546,
+      "stress_intensity_mpa_sqrt_m": 3.5156175536563876,
+      "critical_crack_m": 0.14563617249043018,
+      "utilization": {
+        "elastic_deflection": 0.11314246153846151,
+        "yield": 0.15839944615384619,
+        "ultimate_1_5x_load": 0.1484994807692308,
+        "fracture": 0.11718725178854625
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 100.0,
+      "vertical_gust_m_s": -3.0,
+      "dynamic_pressure_pa": 6000.0,
+      "delta_n": -0.5139369713408758,
+      "cl_linear_trial": 0.13619,
+      "model_flags": []
+    },
+    {
+      "n": 1.0,
+      "root_shear_n": 58839.899999999994,
+      "root_moment_nm": 353039.39999999997,
+      "tip_deflection_m": 0.13966393846153846,
+      "elastic_trial_stress_mpa": 81.47063076923077,
+      "stress_intensity_mpa_sqrt_m": 7.2328429573315445,
+      "critical_crack_m": 0.03440760420970288,
+      "utilization": {
+        "elastic_deflection": 0.23277323076923073,
+        "yield": 0.32588252307692306,
+        "ultimate_1_5x_load": 0.30551486538461536,
+        "fracture": 0.2410947652443848
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 100.0,
+      "vertical_gust_m_s": 0.0,
+      "dynamic_pressure_pa": 6000.0,
+      "delta_n": 0.0,
+      "cl_linear_trial": 0.28019,
+      "model_flags": []
+    },
+    {
+      "n": 1.513936971340876,
+      "root_shear_n": 89079.90000000001,
+      "root_moment_nm": 534479.4,
+      "tip_deflection_m": 0.21144240000000003,
+      "elastic_trial_stress_mpa": 123.34140000000002,
+      "stress_intensity_mpa_sqrt_m": 10.950068361006705,
+      "critical_crack_m": 0.015012009969424702,
+      "utilization": {
+        "elastic_deflection": 0.352404,
+        "yield": 0.49336560000000007,
+        "ultimate_1_5x_load": 0.4625302500000001,
+        "fracture": 0.3650022787002235
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 100.0,
+      "vertical_gust_m_s": 3.0,
+      "dynamic_pressure_pa": 6000.0,
+      "delta_n": 0.5139369713408758,
+      "cl_linear_trial": 0.42418999999999996,
+      "model_flags": []
+    },
+    {
+      "n": 2.2848424283521895,
+      "root_shear_n": 134439.9,
+      "root_moment_nm": 806639.3999999999,
+      "tip_deflection_m": 0.3191100923076923,
+      "elastic_trial_stress_mpa": 186.1475538461538,
+      "stress_intensity_mpa_sqrt_m": 16.52590646651944,
+      "critical_crack_m": 0.006590857536036155,
+      "utilization": {
+        "elastic_deflection": 0.5318501538461538,
+        "yield": 0.7445902153846153,
+        "ultimate_1_5x_load": 0.6980533269230768,
+        "fracture": 0.5508635488839814
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 100.0,
+      "vertical_gust_m_s": 7.5,
+      "dynamic_pressure_pa": 6000.0,
+      "delta_n": 1.2848424283521898,
+      "cl_linear_trial": 0.64019,
+      "model_flags": []
+    },
+    {
+      "n": 3.5696848567043795,
+      "root_shear_n": 210039.9,
+      "root_moment_nm": 1260239.4000000001,
+      "tip_deflection_m": 0.49855624615384614,
+      "elastic_trial_stress_mpa": 290.82447692307693,
+      "stress_intensity_mpa_sqrt_m": 25.818969975707336,
+      "critical_crack_m": 0.0027001922107261146,
+      "utilization": {
+        "elastic_deflection": 0.8309270769230768,
+        "yield": 1.1632979076923078,
+        "ultimate_1_5x_load": 1.0905917884615386,
+        "fracture": 0.8606323325235778
+      },
+      "exceeded_screens": [
+        "yield",
+        "ultimate_1_5x_load"
+      ],
+      "linear_elastic_applicable": false,
+      "status": "MODEL_OUTSIDE_ASSUMPTIONS",
+      "tas_m_s": 100.0,
+      "vertical_gust_m_s": 15.0,
+      "dynamic_pressure_pa": 6000.0,
+      "delta_n": 2.5696848567043795,
+      "cl_linear_trial": 1.00019,
+      "model_flags": [
+        "small_angle_screen_exceeded"
+      ]
+    },
+    {
+      "n": -2.340590313715693,
+      "root_shear_n": -137720.1,
+      "root_moment_nm": -826320.6000000001,
+      "tip_deflection_m": -0.32689606153846157,
+      "elastic_trial_stress_mpa": 190.68936923076924,
+      "stress_intensity_mpa_sqrt_m": 16.929122166556983,
+      "critical_crack_m": 0.0062806360412899255,
+      "utilization": {
+        "elastic_deflection": 0.5448267692307692,
+        "yield": 0.7627574769230769,
+        "ultimate_1_5x_load": 0.7150851346153846,
+        "fracture": 0.564304072218566
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "MODEL_OUTSIDE_ASSUMPTIONS",
+      "tas_m_s": 130.0,
+      "vertical_gust_m_s": -15.0,
+      "dynamic_pressure_pa": 10140.0,
+      "delta_n": -3.340590313715693,
+      "cl_linear_trial": -0.38805325443786987,
+      "model_flags": [
+        "small_angle_screen_exceeded"
+      ]
+    },
+    {
+      "n": -0.6702951568578466,
+      "root_shear_n": -39440.100000000006,
+      "root_moment_nm": -236640.60000000003,
+      "tip_deflection_m": -0.09361606153846155,
+      "elastic_trial_stress_mpa": 54.60936923076924,
+      "stress_intensity_mpa_sqrt_m": 4.848139604612719,
+      "critical_crack_m": 0.07658121828019143,
+      "utilization": {
+        "elastic_deflection": 0.15602676923076925,
+        "yield": 0.21843747692307697,
+        "ultimate_1_5x_load": 0.20478513461538464,
+        "fracture": 0.16160465348709063
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 130.0,
+      "vertical_gust_m_s": -7.5,
+      "dynamic_pressure_pa": 10140.0,
+      "delta_n": -1.6702951568578466,
+      "cl_linear_trial": -0.11113017751479293,
+      "model_flags": []
+    },
+    {
+      "n": 0.33188193725686144,
+      "root_shear_n": 19527.899999999998,
+      "root_moment_nm": 117167.4,
+      "tip_deflection_m": 0.046351938461538456,
+      "elastic_trial_stress_mpa": 27.038630769230764,
+      "stress_intensity_mpa_sqrt_m": 2.4004499325538395,
+      "critical_crack_m": 0.31238286300497553,
+      "utilization": {
+        "elastic_deflection": 0.07725323076923075,
+        "yield": 0.10815452307692305,
+        "ultimate_1_5x_load": 0.10139486538461537,
+        "fracture": 0.08001499775179464
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 130.0,
+      "vertical_gust_m_s": -3.0,
+      "dynamic_pressure_pa": 10140.0,
+      "delta_n": -0.6681180627431386,
+      "cl_linear_trial": 0.05502366863905325,
+      "model_flags": []
+    },
+    {
+      "n": 1.0,
+      "root_shear_n": 58839.899999999994,
+      "root_moment_nm": 353039.39999999997,
+      "tip_deflection_m": 0.13966393846153846,
+      "elastic_trial_stress_mpa": 81.47063076923077,
+      "stress_intensity_mpa_sqrt_m": 7.2328429573315445,
+      "critical_crack_m": 0.03440760420970288,
+      "utilization": {
+        "elastic_deflection": 0.23277323076923073,
+        "yield": 0.32588252307692306,
+        "ultimate_1_5x_load": 0.30551486538461536,
+        "fracture": 0.2410947652443848
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 130.0,
+      "vertical_gust_m_s": 0.0,
+      "dynamic_pressure_pa": 10140.0,
+      "delta_n": 0.0,
+      "cl_linear_trial": 0.165792899408284,
+      "model_flags": []
+    },
+    {
+      "n": 1.6681180627431385,
+      "root_shear_n": 98151.9,
+      "root_moment_nm": 588911.4,
+      "tip_deflection_m": 0.23297593846153844,
+      "elastic_trial_stress_mpa": 135.9026307692308,
+      "stress_intensity_mpa_sqrt_m": 12.065235982109252,
+      "critical_crack_m": 0.012365191988883237,
+      "utilization": {
+        "elastic_deflection": 0.38829323076923067,
+        "yield": 0.5436105230769231,
+        "ultimate_1_5x_load": 0.5096348653846154,
+        "fracture": 0.40217453273697507
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 130.0,
+      "vertical_gust_m_s": 3.0,
+      "dynamic_pressure_pa": 10140.0,
+      "delta_n": 0.6681180627431386,
+      "cl_linear_trial": 0.27656213017751474,
+      "model_flags": []
+    },
+    {
+      "n": 2.6702951568578466,
+      "root_shear_n": 157119.9,
+      "root_moment_nm": 942719.3999999999,
+      "tip_deflection_m": 0.37294393846153845,
+      "elastic_trial_stress_mpa": 217.55063076923076,
+      "stress_intensity_mpa_sqrt_m": 19.31382551927581,
+      "critical_crack_m": 0.004825428642525887,
+      "utilization": {
+        "elastic_deflection": 0.6215732307692307,
+        "yield": 0.870202523076923,
+        "ultimate_1_5x_load": 0.8158148653846153,
+        "fracture": 0.6437941839758603
+      },
+      "exceeded_screens": [],
+      "linear_elastic_applicable": true,
+      "status": "WITHIN_ASSUMED_SCREENS",
+      "tas_m_s": 130.0,
+      "vertical_gust_m_s": 7.5,
+      "dynamic_pressure_pa": 10140.0,
+      "delta_n": 1.6702951568578466,
+      "cl_linear_trial": 0.44271597633136095,
+      "model_flags": []
+    },
+    {
+      "n": 4.340590313715693,
+      "root_shear_n": 255399.9,
+      "root_moment_nm": 1532399.4000000001,
+      "tip_deflection_m": 0.6062239384615384,
+      "elastic_trial_stress_mpa": 353.6306307692308,
+      "stress_intensity_mpa_sqrt_m": 31.39480808122007,
+      "critical_crack_m": 0.0018262357494244264,
+      "utilization": {
+        "elastic_deflection": 1.0103732307692306,
+        "yield": 1.4145225230769232,
+        "ultimate_1_5x_load": 1.3261148653846153,
+        "fracture": 1.0464936027073357
+      },
+      "exceeded_screens": [
+        "elastic_deflection",
+        "yield",
+        "ultimate_1_5x_load",
+        "fracture"
+      ],
+      "linear_elastic_applicable": false,
+      "status": "MODEL_OUTSIDE_ASSUMPTIONS",
+      "tas_m_s": 130.0,
+      "vertical_gust_m_s": 15.0,
+      "dynamic_pressure_pa": 10140.0,
+      "delta_n": 3.340590313715693,
+      "cl_linear_trial": 0.7196390532544379,
+      "model_flags": [
+        "small_angle_screen_exceeded"
+      ]
+    }
+  ],
+  "case_counts": {
+    "WITHIN_ASSUMED_SCREENS": 13,
+    "SCREEN_EXCEEDED": 0,
+    "MODEL_OUTSIDE_ASSUMPTIONS": 8
+  },
+  "airworthiness_demonstrated": false,
+  "flight_release": false,
+  "full_airframe_fem": false,
+  "dynamic_gust_analysis": false,
+  "material_selection_validated": false,
+  "fatigue_life_cycles": null,
+  "rendering": {
+    "path": "rs72_concept.png",
+    "image_sha256": "4f9fb0ac71ce0f8559121676d64fbc551559398e753e367b8a3504f6a890d4b6",
+    "triangles": 24,
+    "vertices_transformed_and_checked": 42,
+    "gpu_used": false,
+    "geometry_is_concept_only": true
+  },
+  "pseudo_gpu": {
+    "backend": "CPU_NUMPY_TILED",
+    "stream_count": 1,
+    "block_scheduling": "serial_FIFO",
+    "tile": 4,
+    "launches": 12,
+    "blocks": 12,
+    "shared_load_phases": 12,
+    "modeled_barrier_events": 24,
+    "active_output_lanes": 192,
+    "masked_edge_lanes": 0,
+    "cuda_compatible": false,
+    "cycle_accurate": false,
+    "gpu_used": false
+  }
+}
