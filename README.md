@@ -456,3 +456,10 @@ fictional, with sourced notes distinguishing them from current policy.
 comedy following a late-night discussion from Tang marriage rules to the 1950
 Marriage Law, an imaginary reincarnation office, and a family genealogy desk.
 Sourced notes distinguish customary practice, civil marriage, and family records.
+
+[七弓同心：龙潭、上海滩与长寿村](docs/fiction/seven_bows_jinlan_future_zh.md) brings
+Mao Zedong, Zhou Enlai, Chen Yun, Qian Zhuangfei, Li Kenong, Hu Di and Du Yuesheng
+together at a fictional future archery range. Compound-bow scores determine
+sworn-brother ranks before a seven-person adaptation of the classic *Fantasy
+Westward Journey* ceremony. Historical notes distinguish the imagined reunion,
+Shanghai background and invented game rules from documented sources.
