@@ -1,0 +1,2 @@
+# Isolated CPU experiment; do not install the full GPU inference project.
+numpy==2.3.5

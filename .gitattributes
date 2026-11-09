@@ -18,3 +18,5 @@ docs/results/memory_lab/*.png -filter -diff -merge -text
 # Small reproducible biophysics / civil-weather concept figures.
 docs/results/wheal_typhoon/*.png -filter -diff -merge -text
 docs/results/rs72/*.png -filter -diff -merge -text
+# Reproducible RS-72 dynamic-response plot, separate from LFS assets.
+docs/results/rs72_dynamic/*.png -filter -diff -merge -text

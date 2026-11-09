@@ -1,0 +1,47 @@
+test_beam_boundaries_and_stiffness_scaling (test_physics.AircraftTests.test_beam_boundaries_and_stiffness_scaling) ... ok
+test_gust_symmetry_and_zero (test_physics.AircraftTests.test_gust_symmetry_and_zero) ... ok
+test_invalid_inputs_rejected (test_physics.AircraftTests.test_invalid_inputs_rejected) ... ok
+test_large_gust_is_not_reported_as_pass (test_physics.AircraftTests.test_large_gust_is_not_reported_as_pass) ... ok
+test_relative_velocity_is_galilean_invariant (test_physics.AircraftTests.test_relative_velocity_is_galilean_invariant) ... ok
+test_root_loads_independently_integrated (test_physics.AircraftTests.test_root_loads_independently_integrated) ... ok
+test_signed_load_and_zero_load (test_physics.AircraftTests.test_signed_load_and_zero_load) ... ok
+test_steady_headwind_does_not_change_fixed_tas_load (test_physics.AircraftTests.test_steady_headwind_does_not_change_fixed_tas_load) ... ok
+test_toughness_and_crack_size_are_separate (test_physics.AircraftTests.test_toughness_and_crack_size_are_separate) ... ok
+test_rendered_evidence_and_exclusive_directories (test_physics.IntegrationTests.test_rendered_evidence_and_exclusive_directories) ... ok
+test_default_balance_positive_and_peak_decays (test_physics.SkinTests.test_default_balance_positive_and_peak_decays) ... ok
+test_diffusion_converges_to_continuum_cosine (test_physics.SkinTests.test_diffusion_converges_to_continuum_cosine) ... ok
+test_global_volume_converges_to_analytic_ode (test_physics.SkinTests.test_global_volume_converges_to_analytic_ode) ... ok
+test_invalid_or_unbounded_config_refused (test_physics.SkinTests.test_invalid_or_unbounded_config_refused) ... ok
+test_no_flux_conserves_integral (test_physics.SkinTests.test_no_flux_conserves_integral) ... ok
+test_zero_source_stays_zero (test_physics.SkinTests.test_zero_source_stays_zero) ... ok
+test_invalid_profiles_refused (test_physics.VortexTests.test_invalid_profiles_refused) ... ok
+test_origin_peak_and_inverse_radius (test_physics.VortexTests.test_origin_peak_and_inverse_radius) ... ok
+test_pressure_satisfies_radial_force_balance (test_physics.VortexTests.test_pressure_satisfies_radial_force_balance) ... ok
+test_symmetry_direction_and_dynamic_pressure (test_physics.VortexTests.test_symmetry_direction_and_dynamic_pressure) ... ok
+test_zero_wind_gives_uniform_pressure (test_physics.VortexTests.test_zero_wind_gives_uniform_pressure) ... ok
+test_independent_algebra_matches_archive_and_original_code (test_rs72_gust.BaselineAudit.test_independent_algebra_matches_archive_and_original_code) ... ok
+test_strict_ratio_boundary_and_separate_lift_screen (test_rs72_gust.BaselineAudit.test_strict_ratio_boundary_and_separate_lift_screen) ... ok
+test_cli_refuses_invalid_case_before_creating_output (test_rs72_gust.DynamicDesign.test_cli_refuses_invalid_case_before_creating_output) ... ok
+test_constant_force_equilibrium (test_rs72_gust.DynamicDesign.test_constant_force_equilibrium) ... ok
+test_eight_old_out_of_model_cases_rejected (test_rs72_gust.DynamicDesign.test_eight_old_out_of_model_cases_rejected) ... ok
+test_existing_output_is_refused (test_rs72_gust.DynamicDesign.test_existing_output_is_refused) ... ok
+test_failed_history_write_does_not_publish_success_report (test_rs72_gust.DynamicDesign.test_failed_history_write_does_not_publish_success_report) ... ok
+test_forced_response_against_independent_duhamel_integral (test_rs72_gust.DynamicDesign.test_forced_response_against_independent_duhamel_integral) ... ok
+test_free_damped_motion_matches_analytic_solution_and_loses_energy (test_rs72_gust.DynamicDesign.test_free_damped_motion_matches_analytic_solution_and_loses_energy) ... ok
+test_invalid_grids_and_force_rejected (test_rs72_gust.DynamicDesign.test_invalid_grids_and_force_rejected) ... ok
+test_invalid_scalars_limits_and_step_budget_rejected (test_rs72_gust.DynamicDesign.test_invalid_scalars_limits_and_step_budget_rejected) ... ok
+test_nonrepresentable_derived_parameters_rejected (test_rs72_gust.DynamicDesign.test_nonrepresentable_derived_parameters_rejected) ... ok
+test_profile_endpoints_signed_peak_and_support (test_rs72_gust.DynamicDesign.test_profile_endpoints_signed_peak_and_support) ... ok
+test_ritz_integrals_independently_integrated (test_rs72_gust.DynamicDesign.test_ritz_integrals_independently_integrated) ... ok
+test_slow_gust_tracks_static_response (test_rs72_gust.DynamicDesign.test_slow_gust_tracks_static_response) ... ok
+test_static_limit_matches_original_tip_and_root_moment (test_rs72_gust.DynamicDesign.test_static_limit_matches_original_tip_and_root_moment) ... ok
+test_strength_and_model_flags_preserved (test_rs72_gust.DynamicDesign.test_strength_and_model_flags_preserved) ... ok
+test_timestep_convergence_and_tail (test_rs72_gust.DynamicDesign.test_timestep_convergence_and_tail) ... ok
+test_undamped_free_energy_is_conserved (test_rs72_gust.DynamicDesign.test_undamped_free_energy_is_conserved) ... ok
+test_written_history_has_matching_hash_and_explicit_scope (test_rs72_gust.DynamicDesign.test_written_history_has_matching_hash_and_explicit_scope) ... ok
+test_zero_gust_and_signed_increment_symmetry (test_rs72_gust.DynamicDesign.test_zero_gust_and_signed_increment_symmetry) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 3.533s
+
+OK

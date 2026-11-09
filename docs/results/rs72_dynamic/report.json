@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "status": "ILLUSTRATIVE_CPU_EXPERIMENT",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "aircraft_assumptions": {
+    "mass_kg": 12000.0,
+    "span_m": 24.0,
+    "wing_area_m2": 70.0,
+    "elastic_modulus_pa": 70000000000.0,
+    "second_moment_m4": 0.0013,
+    "outer_fiber_m": 0.3,
+    "yield_screen_pa": 250000000.0,
+    "ultimate_screen_pa": 400000000.0,
+    "fracture_screen_mpa_sqrt_m": 30.0,
+    "crack_m": 0.002,
+    "crack_geometry_factor": 1.12,
+    "lift_slope_per_rad": 4.8,
+    "cl_max_screen": 1.8,
+    "density_kg_m3": 1.2,
+    "deflection_fraction_screen": 0.05
+  },
+  "source_sha256": {
+    "rs72_gust.py": "9dac9c9b5cfe6dd0b43996dfe0f6aed35b760178edf3b12350dfa97b12e583a4",
+    "rs72.py": "dc7076f86139f007494d1ad8644c18a7b97e3c6f30054d8e7109fed6d86a8465"
+  },
+  "solver": {
+    "name": "RK4",
+    "peak_and_waveform_relative_tolerance": 0.005,
+    "tail_envelope_tolerance": 0.01,
+    "max_steps_per_run": 200000
+  },
+  "model": {
+    "fixed_root": true,
+    "elastic_coordinates": 1,
+    "rigid_body_motion": false,
+    "aerodynamic_feedback": false,
+    "unsteady_aerodynamics": false,
+    "parameters_calibrated": false
+  },
+  "results": [
+    {
+      "case": {
+        "tas_m_s": 100.0,
+        "gust_peak_m_s": 3.0,
+        "gradient_m": 30.0,
+        "wing_half_mass_kg": 1200.0,
+        "damping_ratio": 0.02
+      },
+      "modal_mass_kg": 308.14814814814815,
+      "modal_stiffness_n_m": 168518.5185185185,
+      "frequency_hz": 3.721895427883603,
+      "steps": 4203,
+      "dt_max_s": 0.002686717686982476,
+      "gust_duration_s": 0.6,
+      "tail_s": 10.690449676496975,
+      "peak_increment_m": 0.0875772515114377,
+      "peak_time_s": 0.28660714285714284,
+      "static_peak_increment_m": 0.07177846153846154,
+      "increment_amplification": 1.2201048843114393,
+      "peak_total_abs_tip_m": 0.22724118997297615,
+      "peak_total_abs_stress_mpa": 132.55736081756942,
+      "tail_envelope_fraction": 0.000821329062959097,
+      "aerodynamic_flags": [],
+      "strength_flags": [],
+      "model_flags": [],
+      "physical_validation": "UNVALIDATED_ASSUMED_PARAMETERS",
+      "airworthiness_demonstrated": false,
+      "flight_release": false,
+      "dynamic_fracture_assessed": false
+    },
+    {
+      "case": {
+        "tas_m_s": 100.0,
+        "gust_peak_m_s": 3.0,
+        "gradient_m": 30.0,
+        "wing_half_mass_kg": 1200.0,
+        "damping_ratio": 0.02
+      },
+      "modal_mass_kg": 308.14814814814815,
+      "modal_stiffness_n_m": 168518.5185185185,
+      "frequency_hz": 3.721895427883603,
+      "steps": 8406,
+      "dt_max_s": 0.0013433588434921262,
+      "gust_duration_s": 0.6,
+      "tail_s": 10.690449676496975,
+      "peak_increment_m": 0.08758259322837933,
+      "peak_time_s": 0.28794642857142855,
+      "static_peak_increment_m": 0.07177846153846154,
+      "increment_amplification": 1.2201793038075823,
+      "peak_total_abs_tip_m": 0.2272465316899178,
+      "peak_total_abs_stress_mpa": 132.56047681911872,
+      "tail_envelope_fraction": 0.0008212783682369468,
+      "aerodynamic_flags": [],
+      "strength_flags": [],
+      "model_flags": [],
+      "physical_validation": "UNVALIDATED_ASSUMED_PARAMETERS",
+      "airworthiness_demonstrated": false,
+      "flight_release": false,
+      "dynamic_fracture_assessed": false
+    },
+    {
+      "case": {
+        "tas_m_s": 100.0,
+        "gust_peak_m_s": 3.0,
+        "gradient_m": 30.0,
+        "wing_half_mass_kg": 1200.0,
+        "damping_ratio": 0.02
+      },
+      "modal_mass_kg": 308.14814814814815,
+      "modal_stiffness_n_m": 168518.5185185185,
+      "frequency_hz": 3.721895427883603,
+      "steps": 16812,
+      "dt_max_s": 0.0006716794217460631,
+      "gust_duration_s": 0.6,
+      "tail_s": 10.690449676496975,
+      "peak_increment_m": 0.08758259284584956,
+      "peak_time_s": 0.28794642857142855,
+      "static_peak_increment_m": 0.07177846153846154,
+      "increment_amplification": 1.220179298478271,
+      "peak_total_abs_tip_m": 0.22724653130738803,
+      "peak_total_abs_stress_mpa": 132.56047659597633,
+      "tail_envelope_fraction": 0.0008212782911785883,
+      "aerodynamic_flags": [],
+      "strength_flags": [],
+      "model_flags": [],
+      "physical_validation": "UNVALIDATED_ASSUMED_PARAMETERS",
+      "airworthiness_demonstrated": false,
+      "flight_release": false,
+      "dynamic_fracture_assessed": false
+    }
+  ],
+  "convergence": {
+    "comparisons": [
+      {
+        "peak_relative_error": 6.099062319031947e-05,
+        "waveform_relative_error": 3.028764058013036e-07,
+        "peak_time_error_s": 0.0013392857142857095,
+        "passed": true
+      },
+      {
+        "peak_relative_error": 4.367646119140805e-09,
+        "waveform_relative_error": 1.8928252069785278e-08,
+        "peak_time_error_s": 0.0,
+        "passed": true
+      }
+    ],
+    "tail_passed": true,
+    "numerics_status": "CONVERGED"
+  },
+  "unallocated_unknown_slots": [
+    {
+      "id": "U01",
+      "status": "UNSPECIFIED",
+      "value": null
+    },
+    {
+      "id": "U02",
+      "status": "UNSPECIFIED",
+      "value": null
+    }
+  ],
+  "airworthiness_demonstrated": false,
+  "flight_release": false,
+  "history_sha256": "952dfc01337e7c56549d24308781cdd8d3ddf97eed48cb835e45b70fcb63b928"
+}

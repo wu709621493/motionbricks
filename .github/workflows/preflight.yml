@@ -68,12 +68,16 @@ jobs:
           python -m unittest discover -s tests/weather_concepts -v
           python -m motionbricks.wheal_typhoon --cells 32 --out-dir /tmp/wheal-typhoon
           python -m motionbricks.rs72 --out-dir /tmp/rs72
+          python -m tools.rs72_gust.audit_baseline > /tmp/rs72-static-audit.json
+          python -m motionbricks.rs72_gust --out-dir /tmp/rs72-dynamic
       - uses: actions/upload-artifact@v4
         with:
           name: weather-concepts-${{ matrix.os }}-py${{ matrix.python }}
           path: |
             /tmp/wheal-typhoon/
             /tmp/rs72/
+            /tmp/rs72-static-audit.json
+            /tmp/rs72-dynamic/
           if-no-files-found: error
       - run: python -m motionbricks.cpu_reference --validate-only
       - run: python -m unittest discover -s tests/preflight -v
