@@ -1,0 +1,30 @@
+test_address_patterns_detect_bit_flip_and_swapped_shards (test_lab.NumericalTests.test_address_patterns_detect_bit_flip_and_swapped_shards) ... ok
+test_cache_sweep_analytic_result_and_no_cache_claim (test_lab.NumericalTests.test_cache_sweep_analytic_result_and_no_cache_claim) ... ok
+test_invalid_tile_refused (test_lab.NumericalTests.test_invalid_tile_refused) ... ok
+test_kernel_fault_stays_faulted (test_lab.NumericalTests.test_kernel_fault_stays_faulted) ... ok
+test_output_alias_is_refused (test_lab.NumericalTests.test_output_alias_is_refused) ... ok
+test_tiled_outputs_match_independent_oracle_with_edge_lanes (test_lab.NumericalTests.test_tiled_outputs_match_independent_oracle_with_edge_lanes) ... ok
+test_available_memory_refusal (test_lab.PlanningTests.test_available_memory_refusal) ... ok
+test_cpu_capacity_limit_overrides_slot_count (test_lab.PlanningTests.test_cpu_capacity_limit_overrides_slot_count) ... ok
+test_finite_parent_cgroup_limit_and_high (test_lab.PlanningTests.test_finite_parent_cgroup_limit_and_high) ... ok
+test_physical_1000_requires_125_boards (test_lab.PlanningTests.test_physical_1000_requires_125_boards) ... ok
+test_ranges_and_nonfinite_values (test_lab.PlanningTests.test_ranges_and_nonfinite_values) ... ok
+test_shard_partition_has_no_gaps_or_overlap (test_lab.PlanningTests.test_shard_partition_has_no_gaps_or_overlap) ... ok
+test_cli_invalid_budget_has_nonzero_exit (test_lab.ProcessTests.test_cli_invalid_budget_has_nonzero_exit) ... ok
+test_full_1000_shard_cpu_run (test_lab.ProcessTests.test_full_1000_shard_cpu_run) ... ok
+test_power_fault_prevents_worker_start (test_lab.ProcessTests.test_power_fault_prevents_worker_start) ... ok
+test_worker_nonzero_exit_and_invalid_protocol (test_lab.ProcessTests.test_worker_nonzero_exit_and_invalid_protocol) ... ok
+test_worker_timeout_is_bounded_and_reaped (test_lab.ProcessTests.test_worker_timeout_is_bounded_and_reaped) ... ok
+test_coplanar_tie_uses_stable_id (test_render.RenderTests.test_coplanar_tie_uses_stable_id) ... ok
+test_degenerate_nonfinite_and_offscreen (test_render.RenderTests.test_degenerate_nonfinite_and_offscreen) ... ok
+test_depth_and_color_are_draw_order_independent (test_render.RenderTests.test_depth_and_color_are_draw_order_independent) ... ok
+test_full_worker_scene_and_exclusive_output (test_render.RenderTests.test_full_worker_scene_and_exclusive_output) ... ok
+test_png_roundtrip_without_external_codec (test_render.RenderTests.test_png_roundtrip_without_external_codec) ... ok
+test_render_bounds_affect_budget (test_render.RenderTests.test_render_bounds_affect_budget) ... ok
+test_scalar_barycentric_oracle_and_clipping (test_render.RenderTests.test_scalar_barycentric_oracle_and_clipping) ... ok
+test_vertex_transform_known_translation (test_render.RenderTests.test_vertex_transform_known_translation) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.841s
+
+OK

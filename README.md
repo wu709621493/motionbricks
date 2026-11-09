@@ -428,6 +428,13 @@ crack sensitivity, plus the role of human intuition and physical experiments.
 These are numerical teaching/research prototypes, not clinical predictions,
 weather forecasts, certified airframes or an approved storm-flight envelope.
 
+[RS-72 dynamic gust experiment](docs/rs72_dynamic_gust_validation_zh.md) adds
+a CPU 1-cos gust response about the static 1g state, one assumed wing-bending
+coordinate, independent response checks, timestep convergence and input refusal.
+The 21-case static audit separates eight small-angle exceedances, zero lift
+coefficient exceedances and two overlapping strength alarms. Wing mass and
+damping remain hypothetical; continuous turbulence is a documented next step.
+
 ## Residential private server planning (fork engineering note)
 
 [住宅私人服务器建设指南：私人服务器，它真香](docs/residential_private_server_zh.md)

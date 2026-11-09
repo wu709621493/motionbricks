@@ -1,0 +1,75 @@
+{
+  "base_commit": "c4754016b9e615805b425594a7ec30aba768f6e0",
+  "date": "2026-11-09",
+  "date_timezone": "Asia/Shanghai",
+  "system": "Linux",
+  "architecture": "x86_64",
+  "checks": [
+    {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "suite": "weather_concepts",
+      "tests": 42,
+      "result": "PASSED",
+      "command": "python -m unittest discover -s tests/weather_concepts -v",
+      "log": "weather_py312.txt"
+    },
+    {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "suite": "memory_lab",
+      "tests": 25,
+      "result": "PASSED",
+      "command": "python -m unittest discover -s tests/memory_lab -v",
+      "log": "memory_py312.txt"
+    },
+    {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "suite": "preflight",
+      "tests": 31,
+      "result": "PASSED",
+      "command": "python -m unittest discover -s tests/preflight -v",
+      "log": "preflight_py312.txt"
+    },
+    {
+      "python": "3.13.5",
+      "numpy": "2.2.4",
+      "suite": "weather_concepts",
+      "tests": 42,
+      "result": "PASSED",
+      "command": "/usr/bin/python3.13 -m unittest discover -s tests/weather_concepts -v",
+      "log": "weather_py313.txt"
+    },
+    {
+      "python": "3.13.5",
+      "numpy": "2.2.4",
+      "suite": "memory_lab",
+      "tests": 25,
+      "result": "PASSED",
+      "command": "/usr/bin/python3.13 -m unittest discover -s tests/memory_lab -v",
+      "log": "memory_py313.txt"
+    },
+    {
+      "python": "3.13.5",
+      "numpy": "2.2.4",
+      "suite": "preflight",
+      "tests": 31,
+      "result": "PASSED",
+      "command": "/usr/bin/python3.13 -m unittest discover -s tests/preflight -v",
+      "log": "preflight_py313.txt"
+    }
+  ],
+  "tests_per_python": 98,
+  "tests_total_executions": 196,
+  "full_repository_tests_run_locally": false,
+  "cross_platform_ci_status": "SEE_PR_CHECKS_FOR_ACTUAL_HEAD",
+  "dynamic_example": "report.json",
+  "sensitivity": "sensitivity.json",
+  "plot": "dynamic_comparison.png",
+  "plot_sha256": "eb7891123206025da777765eb51e9f626a877c0446b4623768cc48bdcb2f55d5",
+  "plot_library": "Matplotlib 3.10.8",
+  "physical_validation": false,
+  "airworthiness_demonstrated": false,
+  "flight_release": false
+}
