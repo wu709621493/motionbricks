@@ -446,6 +446,11 @@ unverified. Game analogy, sourced history and original interpretation are distin
 
 ## Original fiction (fork creative writing)
 
+[案结情未了：圣瑞吉合规之晨](docs/fiction/case_closed_love_continues_zh.md) follows two adult
+customs colleagues from a completed case to a hotel checkout mishap, marriage,
+and family life with their child Wu Nianshi, nicknamed Jiazhong. The legal-reading
+marathon and CNPU-assisted case are explicitly fictional; the romance is non-graphic.
+
 [梅江有信，山海同程](docs/fiction/meixian_letters_shared_future_zh.md) follows a young couple from Meixian
 through pregnancy, campus gossip, an individually approved flexible study plan,
 graduation and independent paths into doctoral research. The story centers on
