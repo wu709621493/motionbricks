@@ -495,3 +495,14 @@ examines Shunliu's growth as a sniper, his sister's suffering, and the final
 shots at flags and Ishihara's urn. It pairs Northwest revolutionary war
 literature with Baiyangdian's attention to everyday lives, distinguishing
 verified episode summaries from original interpretation and literary imagery.
+
+## Experimental Rust inference core
+
+An incremental [Rust CPU core](native/motionbricks-core/README.md) ports multi-head
+codebook lookup and supplies FP32 linear, ReLU and softmax primitives. It has no
+LibTorch dependency; PyTorch is used only by numerical parity tests. This is an
+explicitly experimental subset, not a full framework or model replacement.
+
+The [integration review](docs/rust_integration_review_zh.md) bounds this to a codebook
+experiment alongside PyIgnite, with a [benchmark report](docs/rust_benchmark_20261110_zh.md)
+and separate [retro-compatibility audit](docs/rust_retro_review_zh.md).

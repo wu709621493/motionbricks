@@ -1,0 +1,76 @@
+{
+  "status": "FAIL",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "torch": "2.15.0+cpu",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "atol": 2e-05,
+  "rtol": 2e-05,
+  "cases": [
+    {
+      "name": "PE-1-2",
+      "status": "PASS",
+      "max_abs_error": 0.0,
+      "violations": 0,
+      "elements": 2,
+      "repeat_identical": true
+    },
+    {
+      "name": "PE-17-32",
+      "status": "PASS",
+      "max_abs_error": 5.960464477539063e-08,
+      "violations": 0,
+      "elements": 544,
+      "repeat_identical": true
+    },
+    {
+      "name": "PE-256-512",
+      "status": "PASS",
+      "max_abs_error": 7.6284632086753845e-06,
+      "violations": 0,
+      "elements": 131072,
+      "repeat_identical": true
+    },
+    {
+      "name": "PE-4096-64",
+      "status": "FAIL",
+      "max_abs_error": 0.0001220703125,
+      "violations": 3652,
+      "elements": 262144,
+      "repeat_identical": true
+    },
+    {
+      "name": "FC-1-8-(3,)",
+      "status": "PASS",
+      "max_abs_error": 1.4901161193847656e-08,
+      "violations": 0,
+      "elements": 2,
+      "repeat_identical": true
+    },
+    {
+      "name": "FC-2-32-(4, 7)",
+      "status": "PASS",
+      "max_abs_error": 2.9802322387695312e-08,
+      "violations": 0,
+      "elements": 20,
+      "repeat_identical": true
+    },
+    {
+      "name": "FC-3-64-(2, 11, 16)",
+      "status": "PASS",
+      "max_abs_error": 1.8067657947540283e-07,
+      "violations": 0,
+      "elements": 198,
+      "repeat_identical": true
+    },
+    {
+      "name": "FC-2-256-(32, 128)",
+      "status": "PASS",
+      "max_abs_error": 2.6226043701171875e-06,
+      "violations": 0,
+      "elements": 2048,
+      "repeat_identical": true
+    }
+  ],
+  "note": "Existing fixtures/tolerances unchanged; every case evaluated."
+}

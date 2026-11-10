@@ -1,0 +1,43 @@
+{
+  "status": "PASS_WITH_UNVERIFIED_LEGACY_HARDWARE",
+  "rustc": "rustc 1.85.0 (4d91de4e4 2025-02-17)\nbinary: rustc\ncommit-hash: 4d91de4e48198da2e33413efdcd9cd2cc0c46688\ncommit-date: 2025-02-17\nhost: x86_64-unknown-linux-gnu\nrelease: 1.85.0\nLLVM version: 19.1.7",
+  "third_party_crates": 0,
+  "offline_clean_build": true,
+  "clean_build_seconds": 0.9438657589998911,
+  "flags": "-C target-cpu=x86-64",
+  "stripped_probe_bytes": 428512,
+  "unstripped_probe_bytes": 510280,
+  "needed_libraries": [
+    "libgcc_s.so.1",
+    "libm.so.6",
+    "libc.so.6",
+    "ld-linux-x86-64.so.2"
+  ],
+  "required_glibc_symbol_versions": [
+    "2.2.5",
+    "2.3",
+    "2.3.4",
+    "2.14",
+    "2.16",
+    "2.18",
+    "2.27",
+    "2.28",
+    "2.32",
+    "2.33",
+    "2.34"
+  ],
+  "max_required_glibc_symbol_version": "2.34",
+  "stripped_binary_smoke": "PASS",
+  "build_log": "   Compiling motionbricks-core v0.1.0 (/workspace/scratch/579e04567622/motionbricks/native/motionbricks-core)\n    Finished `release` profile [optimized] target(s) in 0.93s\n",
+  "test_log": "   Compiling motionbricks-core v0.1.0 (/workspace/scratch/579e04567622/motionbricks/native/motionbricks-core)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.87s\n     Running unittests src/lib.rs (/tmp/tmp5rtp1z00/target/debug/deps/motionbricks_core-1e482ef0c2c75e42)\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n     Running unittests src/bin/benchmark_probe.rs (/tmp/tmp5rtp1z00/target/debug/deps/benchmark_probe-3858d9607c1b60b4)\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n     Running unittests src/bin/parity_probe.rs (/tmp/tmp5rtp1z00/target/debug/deps/parity_probe-a4414c74386d7ed9)\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n     Running tests/codebook_review.rs (/tmp/tmp5rtp1z00/target/debug/deps/codebook_review-a414cfb386ad9940)\n\nrunning 3 tests\ntest copying_preserves_fp32_bits_and_batch_order ... ok\ntest exhaustive_small_spaces_against_independent_coordinates ... ok\ntest output_limit_and_invalid_shape_do_not_allocate_large_output ... ok\n\ntest result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n     Running tests/core.rs (/tmp/tmp5rtp1z00/target/debug/deps/core-8c7659c120ae54c7)\n\nrunning 6 tests\ntest codebook_layout_and_both_index_modes ... ok\ntest linear_layout_and_bias ... ok\ntest overflow_is_error ... ok\ntest relu_and_input_validation ... ok\ntest stable_softmax ... ok\ntest g1_dimensions_and_boundaries ... ok\n\ntest result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n   Doc-tests motionbricks_core\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n",
+  "not_tested": [
+    "physical legacy CPU",
+    "older Linux/glibc",
+    "32-bit",
+    "Windows",
+    "bare metal/no_std",
+    "power consumption",
+    "hard real-time",
+    "old compiler/MSRV below 1.85"
+  ]
+}
