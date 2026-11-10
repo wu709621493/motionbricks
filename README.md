@@ -520,3 +520,12 @@ explicitly experimental subset, not a full framework or model replacement.
 The [integration review](docs/rust_integration_review_zh.md) bounds this to a codebook
 experiment alongside PyIgnite, with a [benchmark report](docs/rust_benchmark_20261110_zh.md)
 and separate [retro-compatibility audit](docs/rust_retro_review_zh.md).
+
+
+## Sports and public accountability (fork editorial)
+
+[把运动员还给运动：反对把体育经营成国家间的政治战场](docs/sports_political_operations_zh.md)
+examines Sun Yang's sample-collection case and its procedural review alongside
+Mbappé's October 2026 interview controversy. The Chinese editorial distinguishes
+individual responsibility, institutional decisions, access to original statements,
+sourced facts and policy judgments.
