@@ -1,7 +1,8 @@
 # PR #15 独立整合可行性审查
 
-审查日期：2026-11-10。结论：**保留独立 Rust 码本实验；冻结重复的通用算子扩张；新 PR 先保持 Draft。**
-Rust 核心本次复验通过，但 PyIgnite 大尺寸位置编码在本机复验失败，不能给出“全部数值门槛通过”的合并建议。
+审查日期：2026-11-10。结论：**保留独立 Rust 码本实验；冻结重复的通用算子扩张。**
+PR #66 的后续[合并就绪整理](rust_pr66_readiness_zh.md)已将 main 原有的 PE 偏差与本次整合分开：
+固定 main 和当前分支分别构建、执行严格审计，以无新增回归作为合并门槛；不能称为全部数值 parity 通过。
 本审查未修改、关闭或合并原 PR #15。
 
 ## 1. 固定输入与实际冲突
@@ -76,8 +77,9 @@ git -C /tmp/mb-pr15-conflict merge --abort
 新增测试补充 head 模式，但尚未穷举全部合法尺寸或构造所有分配失败。
 
 历史 CI 的 Rust run `41429165014` 和 CPU preflight run `41429164880` 曾成功，
-只证明历史 head 的相应执行。新的 CI 上传自己的结果，单独设置 PyIgnite 现有数值门槛，
-失败必须返回非零，不使用 continue-on-error、不放宽容差、不把异常变成通过。
+只证明历史 head 的相应执行。新的 CI 上传自己的结果，单独设置 PyIgnite 相对固定 main 的回归门槛。
+严格审计仍对 PE 失败返回 1；回归脚本仅接受与现跑基线完全相同的那一个已知失败。
+任何新增失败、改变的输出/参考值/超差掩码/统计量均返回非零，不使用 continue-on-error、不放宽容差。
 
 ## 4. 推荐整合方式与最小差异
 
@@ -91,7 +93,7 @@ Rust 的后续工作仅围绕码本契约、真实权重夹具、边界和成本
 | 根 README | 保留双方并追加审查入口 |
 | 原 PR 11 个新文件 | 原样引入，以下 README/workflow 例外；核心 `src/lib.rs`、原测试、NOTICE、历史结果不改 |
 | `native/motionbricks-core/README.md`、`docs/pyignite.md` | 标明新整合边界与历史/当前证据 |
-| `.github/workflows/rust-core.yml` | 路径筛选、离线 Cargo、固定 Rust 1.85.0；Linux 基准/复古审计；独立 PyIgnite 门槛及失败报告上传 |
+| `.github/workflows/rust-core.yml` | 路径筛选、离线 Cargo、固定 Rust 1.85.0；macOS 与仓库现有 CI 对齐到 macos-15；Linux 基准/复古审计；独立 PyIgnite 基线回归与严格失败报告上传 |
 | `native/motionbricks-core/tests/codebook_review.rs` | 3 项有独立预期值的边界/码本测试 |
 | `native/motionbricks-core/src/bin/benchmark_probe.rs` | 测试用原生计时，不进入运行时 |
 | `tools/rust_review/{benchmark.py,pyignite_bench.cpp}` | 同夹具、分边界测评；复用未修改的 C++ kernel |
@@ -124,6 +126,9 @@ python tools/rust_review/retro_audit.py --output /tmp/mb-rust-review/retro.json
 python -m unittest discover -s tests/cpu_reference -v
 python -S -m unittest discover -s tests/preflight -v
 python -S -m unittest discover -s tests/runtime_refusal -v
+python -m unittest discover -s tests/rust_review -v
+python tools/rust_review/baseline_regression.py --output-dir /tmp/mb-rust-review/regression
+# 上一条是合并门槛；报告明确保留 strict_current_parity=FAIL。
 python tools/rust_review/audit_pyignite.py --output /tmp/mb-rust-review/pyignite-audit.json
 # 最后一条在本次主机返回 1，JSON 仍完整记录 8 组结果；必须人工读取失败原因。
 # 原始入口同样可复现该失败：
@@ -133,8 +138,8 @@ python tools/pyignite/validate.py --output /tmp/mb-rust-review/pyignite-original
 `retro_audit.py` 是 Linux x86_64 专项，其他平台主动拒绝，避免把跳过写成通过。
 本次 Python 3.12.14 / NumPy 2.3.5 / Torch 2.15.0+cpu，不是导出器固定的 Torch 2.14.0 环境。
 
-**转 Ready 的条件：** 精确新 head 的原生 CI 完成；核对 PyIgnite 大 PE 失败的根因及接受方案，
-或明确拆分该已存在问题的跟踪边界；README 内容与来源不丢失。性能数据不设置跨机器固定阈值。
+**转 Ready 的条件：** 精确新 head 的原生 CI 与基线回归门槛通过；按[就绪报告](rust_pr66_readiness_zh.md)
+跟踪已存在的 PE 数值差异；README 内容与来源不丢失。性能数据不设置跨机器固定阈值。
 **生产接入仍需：** 真实 G1 权重与中间输出、完整模型质量门槛、三平台数值对照、应用边界开销和资源预算。
 当前没有真实 G1 推理、ONNX 导出器替代、瓦特/能效测量或硬实时证据。
 

@@ -1,9 +1,9 @@
 name: Rust CPU core
 on:
   push:
-    paths: ['native/motionbricks-core/**', 'tools/rust_review/**', 'tools/pyignite/**', 'tools/onnx/models/quantizer.py', 'tools/onnx/models/layers.py', '.github/workflows/rust-core.yml']
+    paths: ['native/motionbricks-core/**', 'tools/rust_review/**', 'tests/rust_review/**', 'tools/pyignite/**', 'tools/onnx/models/quantizer.py', 'tools/onnx/models/layers.py', '.github/workflows/rust-core.yml']
   pull_request:
-    paths: ['native/motionbricks-core/**', 'tools/rust_review/**', 'tools/pyignite/**', 'tools/onnx/models/quantizer.py', 'tools/onnx/models/layers.py', '.github/workflows/rust-core.yml']
+    paths: ['native/motionbricks-core/**', 'tools/rust_review/**', 'tests/rust_review/**', 'tools/pyignite/**', 'tools/onnx/models/quantizer.py', 'tools/onnx/models/layers.py', '.github/workflows/rust-core.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-14]
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-15]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 15
     steps:
@@ -26,6 +26,7 @@ jobs:
       - name: Format, test and build without runtime dependencies
         working-directory: native/motionbricks-core
         run: |
+          rustc -vV
           cargo +1.85.0 fmt --check
           cargo +1.85.0 test --locked --offline
           cargo +1.85.0 build --release --locked --offline
@@ -56,8 +57,8 @@ jobs:
           name: rust-review-linux-x86_64
           path: review-results/
           if-no-files-found: error
-  pyignite-existing-parity:
-    name: Existing PyIgnite parity (independent gate)
+  pyignite-baseline-regression:
+    name: PyIgnite no-new-regression (known PE parity gap)
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
@@ -67,14 +68,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           lfs: false
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: python -m pip install numpy==2.3.5 torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
       - run: python tools/pyignite/build.py
       - run: python -m unittest discover -s tests/pyignite -v
-      - name: Audit all existing cases without changing tolerance
-        run: python tools/rust_review/audit_pyignite.py --output review-results/pyignite-audit.json
+      - name: Test regression gate refusal paths
+        run: python -m unittest discover -s tests/rust_review -v
+      - name: Compare current strict audit with freshly built pinned main
+        run: python tools/rust_review/baseline_regression.py --output-dir review-results
       - uses: actions/upload-artifact@v4
         if: always()
         with:

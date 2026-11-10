@@ -1,0 +1,17 @@
+{
+  "scope": "Linux x86_64 local diagnosis; unchanged production code",
+  "method": "Replace ONLY Torch exp frequencies with libm expf; retain Torch FP32 phase and sin/cos; compare native PE",
+  "torch_cpu_capability": "AVX2",
+  "frequency_differences": [
+    {
+      "channel_even": 6,
+      "argument": -0.8634694218635559,
+      "torch_frequency": 0.4216965138912201,
+      "libm_frequency": 0.4216964840888977,
+      "ulp_difference": 1
+    }
+  ],
+  "native_vs_original_max_abs": 0.0001220703125,
+  "native_vs_controlled_max_abs": 5.960464477539063e-08,
+  "controlled_comparison_violations": 0
+}

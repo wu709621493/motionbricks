@@ -58,9 +58,10 @@ Rust parity probe 510,280 B，C++ benchmark 18,392 B。
 4 组 FC 均通过；其最大误差为 **2.6226043701171875e-6**。10 次重复输出一致并不意味着相对 oracle 正确。
 
 首次用 NumPy 2.5.4 发现该问题；换回 PyIgnite 固定的 2.3.5 后相同失败仍在，
-因此不能将失败归因于 NumPy 升级。主机、libm、Torch 构建/CPU 路径等根因尚未隔离；
-本 PR 不修改 C++ kernel，不放宽容差。原 `validate.py` 会在失败处退出；新增审计脚本逐项记录后同样返回 1。
-新的审计 CI 是独立、会失败的门槛，不用绿色 Rust 测试掩盖它。
+因此不能将失败归因于 NumPy 升级。后续[就绪诊断](rust_pr66_readiness_zh.md)将本机偏差隔离至
+Torch 与 libm 的一个 exp 频率相差 1 ULP，被较长序列放大。本 PR 不修改 C++ kernel，不放宽容差。
+原 `validate.py` 会在失败处退出；严格审计逐项记录后同样返回 1。
+CI 的合并门槛改为与固定 main 实际构建结果比较、禁止新增回归；其通过不代表严格 parity 全通过。
 
 ## 证据与复现
 
