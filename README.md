@@ -453,6 +453,11 @@ unverified. Game analogy, sourced history and original interpretation are distin
 
 ## Original fiction (fork creative writing)
 
+[扩编之前](docs/fiction/before_the_squad_zh.md) is a Chinese screenplay following a football
+coach and analyst through an open relationship, a move, concealed reunions and separation,
+with an alternate-universe Maverick cameo. The [development notes](docs/fiction/before_the_squad_development_zh.md)
+record the first-film ending and reserve their first child's later story for a sequel.
+
 [案结情未了：圣瑞吉合规之晨](docs/fiction/case_closed_love_continues_zh.md) follows two adult
 customs colleagues from a completed case to a hotel checkout mishap, marriage,
 and family life with their child Wu Nianshi, nicknamed Jiazhong. The legal-reading
