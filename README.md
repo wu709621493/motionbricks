@@ -456,7 +456,9 @@ unverified. Game analogy, sourced history and original interpretation are distin
 [扩编之前](docs/fiction/before_the_squad_zh.md) is a Chinese screenplay following a football
 coach and analyst through an open relationship, a move, concealed reunions and separation,
 with an alternate-universe Maverick cameo. The [development notes](docs/fiction/before_the_squad_development_zh.md)
-record the first-film ending and reserve their first child's later story for a sequel.
+record the first-film ending. [扩编之后：两部曲收束与制片开发案例](docs/fiction/after_the_squad_zh.md)
+develops the second film through adult children winning a fictional Asian club title,
+a second divorce, and an old-video post-credits scene; the story closes in two films.
 
 [案结情未了：圣瑞吉合规之晨](docs/fiction/case_closed_love_continues_zh.md) follows two adult
 customs colleagues from a completed case to a hotel checkout mishap, marriage,
