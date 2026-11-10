@@ -487,3 +487,11 @@ Shanghai background and invented game rules from documented sources.
 multilingual comedy sketch: a simple self-introduction becomes a subtitle crisis
 and a fictional in-house heritage hearing. It preserves Windy's mixed-language
 line and ends with the learner mastering the Cantonese punchline.
+
+## War literature and television (fork cultural essay)
+
+[枪声落下，水还记得：重读《我的兄弟叫顺溜》](docs/shunliu_war_literature_zh.md)
+examines Shunliu's growth as a sniper, his sister's suffering, and the final
+shots at flags and Ishihara's urn. It pairs Northwest revolutionary war
+literature with Baiyangdian's attention to everyday lives, distinguishing
+verified episode summaries from original interpretation and literary imagery.
