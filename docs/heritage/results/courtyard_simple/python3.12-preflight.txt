@@ -1,0 +1,36 @@
+test_explicit_execution_uses_limits (test_portability.LauncherTests.test_explicit_execution_uses_limits) ... ok
+test_invalid_timeout (test_portability.LauncherTests.test_invalid_timeout) ... ok
+test_low_disk_and_failed_preflight (test_portability.LauncherTests.test_low_disk_and_failed_preflight) ... ok
+test_mac_refused_even_with_execute (test_portability.LauncherTests.test_mac_refused_even_with_execute) ... ok
+test_no_execute_does_not_probe (test_portability.LauncherTests.test_no_execute_does_not_probe) ... ok
+test_example_help_without_site_packages (test_portability.PortabilityTests.test_example_help_without_site_packages) ... ok
+test_example_rejects_mac_before_imports (test_portability.PortabilityTests.test_example_rejects_mac_before_imports) ... ok
+test_host_matrix (test_portability.PortabilityTests.test_host_matrix) ... ok
+test_json_limits_and_nesting (test_portability.PortabilityTests.test_json_limits_and_nesting) ... ok
+test_mac_never_probes_native_gpu (test_portability.PortabilityTests.test_mac_never_probes_native_gpu) ... ok
+test_binary_output_is_diagnostic (test_portability.ProcessTests.test_binary_output_is_diagnostic) ... ok
+test_bounded_output (test_portability.ProcessTests.test_bounded_output) ... ok
+test_child_failure_and_cuda_probe_failure (test_portability.ProcessTests.test_child_failure_and_cuda_probe_failure) ... ok
+test_timeout (test_portability.ProcessTests.test_timeout) ... ok
+test_timeout_kills_descendant (test_portability.ProcessTests.test_timeout_kills_descendant) ... ok
+test_hash_and_size (test_preflight.AssetTests.test_hash_and_size) ... ok
+test_missing_empty_pointer (test_preflight.AssetTests.test_missing_empty_pointer) ... ok
+test_bad_config (test_preflight.EnvironmentTests.test_bad_config) ... ok
+test_cli_valid_and_invalid_pose (test_preflight.EnvironmentTests.test_cli_valid_and_invalid_pose) ... ok
+test_command_missing (test_preflight.EnvironmentTests.test_command_missing) ... ok
+test_cuda_library_missing (test_preflight.EnvironmentTests.test_cuda_library_missing) ... ok
+test_default_does_not_probe_gpu (test_preflight.EnvironmentTests.test_default_does_not_probe_gpu) ... ok
+test_strict_exit_and_implicit_probe (test_preflight.EnvironmentTests.test_strict_exit_and_implicit_probe) ... ok
+test_tensor_version_mismatch (test_preflight.EnvironmentTests.test_tensor_version_mismatch) ... ok
+test_bad_frame_counts (test_preflight.PoseTests.test_bad_frame_counts) ... ok
+test_bad_quaternion_and_ragged_shape (test_preflight.PoseTests.test_bad_quaternion_and_ragged_shape) ... ok
+test_bad_values (test_preflight.PoseTests.test_bad_values) ... ok
+test_both_rigs_and_target_counts (test_preflight.PoseTests.test_both_rigs_and_target_counts) ... ok
+test_joint_order_and_missing_joints (test_preflight.PoseTests.test_joint_order_and_missing_joints) ... ok
+test_model_mismatch (test_preflight.PoseTests.test_model_mismatch) ... ok
+test_soma_extra_joints (test_preflight.PoseTests.test_soma_extra_joints) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 2.996s
+
+OK

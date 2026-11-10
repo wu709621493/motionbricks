@@ -1,0 +1,19 @@
+Built 9 archive files in /tmp/tmp1znxqazy
+Archive verified: 20 elements, 4 sources, 9 files
+test_catalog_and_exterior_route (test_archive.ArchiveTests.test_catalog_and_exterior_route) ... ok
+test_export_fields_match_upstream_scene_contract (test_archive.ArchiveTests.test_export_fields_match_upstream_scene_contract) ... ok
+test_html_escapes_embedded_json (test_archive.ArchiveTests.test_html_escapes_embedded_json) ... ok
+test_mesh_is_closed_outward_and_scene_matches_bounds (test_archive.ArchiveTests.test_mesh_is_closed_outward_and_scene_matches_bounds) ... ok
+test_photograph_capture_and_publication_remain_distinct (test_archive.ArchiveTests.test_photograph_capture_and_publication_remain_distinct) ... ok
+test_plan_escapes_component_names_as_text (test_archive.ArchiveTests.test_plan_escapes_component_names_as_text) ... ok
+test_rebuild_and_tamper_detection (test_archive.ArchiveTests.test_rebuild_and_tamper_detection) ... Stale or missing exports: plan.svg
+ok
+test_reject_bad_source_and_unfounded_geometry (test_archive.ArchiveTests.test_reject_bad_source_and_unfounded_geometry) ... ok
+test_reject_invalid_coordinates_and_ids (test_archive.ArchiveTests.test_reject_invalid_coordinates_and_ids) ... ok
+test_route_detects_blocked_gate (test_archive.ArchiveTests.test_route_detects_blocked_gate) ... ok
+test_static_entry_has_no_script_and_resolves_local_assets (test_archive.ArchiveTests.test_static_entry_has_no_script_and_resolves_local_assets) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.210s
+
+OK

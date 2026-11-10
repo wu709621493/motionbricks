@@ -495,3 +495,17 @@ examines Shunliu's growth as a sniper, his sister's suffering, and the final
 shots at flags and Ishihara's urn. It pairs Northwest revolutionary war
 literature with Baiyangdian's attention to everyday lives, distinguishing
 verified episode summaries from original interpretation and literary imagery.
+
+### Beijing courtyard heritage archive (c. 1900)
+
+The [北京四合院数字档案](docs/heritage/beijing_siheyuan_1900/README.md) provides a
+simple offline picture guide, source catalogue, SVG/OBJ exports and a MotionBricks
+exterior scene, with an optional interactive viewer. It is a two-courtyard typological
+reconstruction with explicitly hypothetical dimensions, not a surveyed historic
+address. Rebuild and verify with `python -S tools/siheyuan/build.py --check`.
+
+The [八合院二三层概念](experiments/bahayuan/README.md) develops four two-courtyard
+modules into eight open courtyards and 116 component/space records, with second
+storeys and recessed third-storey halls. Static floor and massing illustrations
+are the default; geometry is hypothetical, with structural and circulation
+validation pending. See the [picture-guide review](docs/heritage/courtyard_simple_20261110.md).

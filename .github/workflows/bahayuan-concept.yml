@@ -1,0 +1,34 @@
+name: Bahayuan concept
+on:
+  push:
+    paths:
+      - 'experiments/bahayuan/**'
+      - 'tests/bahayuan/**'
+      - 'tools/siheyuan/**'
+      - 'data/heritage/beijing_siheyuan_1900.json'
+      - '.github/workflows/bahayuan-concept.yml'
+  pull_request:
+    paths:
+      - 'experiments/bahayuan/**'
+      - 'tests/bahayuan/**'
+      - 'tools/siheyuan/**'
+      - 'data/heritage/beijing_siheyuan_1900.json'
+      - '.github/workflows/bahayuan-concept.yml'
+permissions:
+  contents: read
+jobs:
+  concept:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -S -m unittest discover -s tests/bahayuan -v
+      - run: python -S experiments/bahayuan/build.py --check

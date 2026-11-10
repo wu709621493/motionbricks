@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 880" role="img" aria-label="八合院一层体量投影">
+<rect width="700" height="880" fill="#f6f2e8"/>
+<text x="30" y="30" font-size="20">八合院概念 / 一层体量投影 / 非施工图</text>
+<text x="30" y="55" font-size="14">绿色为露天院落的地面范围，不表示楼上的悬空庭院</text>
+<g data-level="1" data-element="m1_main_hall_l1"><rect x="113.0" y="490" width="114.0" height="60" fill="#b8aa91" stroke="#46594c" /><title>1号模块·正房·一层</title></g>
+<g data-level="1" data-element="m1_west_wing_l1"><rect x="64.0" y="570" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>1号模块·西厢房·一层</title></g>
+<g data-level="1" data-element="m1_east_wing_l1"><rect x="232.0" y="570" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>1号模块·东厢房·一层</title></g>
+<g data-level="1" data-element="m1_south_rooms_l1"><rect x="64.0" y="749.0" width="160" height="43.0" fill="#b8aa91" stroke="#46594c" /><title>1号模块·倒座房·一层</title></g>
+<g data-level="1" data-element="m1_west_ear_l1"><rect x="64.0" y="493.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>1号模块·西耳房·一层</title></g>
+<g data-level="1" data-element="m1_east_ear_l1"><rect x="232.0" y="493.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>1号模块·东耳房·一层</title></g>
+<g data-level="1" data-element="m1_street_gate_l1"><rect x="236.0" y="750.5" width="38.0" height="46.0" fill="#906b51" stroke="#46594c" /><title>1号模块·街门·一层</title></g>
+<g data-level="1" data-element="m1_screen_l1"><rect x="240" y="728.5" width="30" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>1号模块·影壁·一层</title></g>
+<g data-level="1" data-element="m1_inner_gate_l1"><rect x="153.0" y="682.0" width="34.0" height="22.0" fill="#906b51" stroke="#46594c" /><title>1号模块·垂花门（简化）·一层</title></g>
+<g data-level="1" data-element="m1_partition_w_l1"><rect x="53.5" y="693.0" width="99.5" height="3.0" fill="#9d9c8e" stroke="#46594c" /><title>1号模块·西卡子墙·一层</title></g>
+<g data-level="1" data-element="m1_partition_e_l1"><rect x="187.0" y="693.0" width="99.5" height="3.0" fill="#9d9c8e" stroke="#46594c" /><title>1号模块·东卡子墙·一层</title></g>
+<g data-level="1" data-element="m1_gallery_w_l1"><rect x="108.0" y="550.0" width="10" height="128.0" fill="#a28160" stroke="#46594c" /><title>1号模块·西侧游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m1_gallery_e_l1"><rect x="222.0" y="550.0" width="10" height="128.0" fill="#a28160" stroke="#46594c" /><title>1号模块·东侧游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m1_gallery_sw_l1"><rect x="108.0" y="678.0" width="45.0" height="10" fill="#a28160" stroke="#46594c" /><title>1号模块·西南游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m1_gallery_se_l1"><rect x="187.0" y="678.0" width="45.0" height="10" fill="#a28160" stroke="#46594c" /><title>1号模块·东南游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m1_boundary_w_l1"><rect x="50" y="480" width="3.5" height="320" fill="#9d9c8e" stroke="#46594c" /><title>1号模块·西院墙·一层</title></g>
+<g data-level="1" data-element="m1_boundary_e_l1"><rect x="286.5" y="480" width="3.5" height="320" fill="#9d9c8e" stroke="#46594c" /><title>1号模块·东院墙·一层</title></g>
+<g data-level="1" data-element="m1_boundary_n_l1"><rect x="53.5" y="480.0" width="233.0" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>1号模块·北院墙·一层</title></g>
+<g data-level="1" data-element="m1_boundary_sw_l1"><rect x="53.5" y="796.5" width="182.5" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>1号模块·南院墙西段·一层</title></g>
+<g data-level="1" data-element="m1_boundary_se_l1"><rect x="274.0" y="796.5" width="12.5" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>1号模块·南院墙东段·一层</title></g>
+<g data-level="1" data-element="m2_main_hall_l1"><rect x="413.0" y="490" width="114.0" height="60" fill="#b8aa91" stroke="#46594c" /><title>2号模块·正房·一层</title></g>
+<g data-level="1" data-element="m2_west_wing_l1"><rect x="364.0" y="570" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>2号模块·西厢房·一层</title></g>
+<g data-level="1" data-element="m2_east_wing_l1"><rect x="532.0" y="570" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>2号模块·东厢房·一层</title></g>
+<g data-level="1" data-element="m2_south_rooms_l1"><rect x="364.0" y="749.0" width="160" height="43.0" fill="#b8aa91" stroke="#46594c" /><title>2号模块·倒座房·一层</title></g>
+<g data-level="1" data-element="m2_west_ear_l1"><rect x="364.0" y="493.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>2号模块·西耳房·一层</title></g>
+<g data-level="1" data-element="m2_east_ear_l1"><rect x="532.0" y="493.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>2号模块·东耳房·一层</title></g>
+<g data-level="1" data-element="m2_street_gate_l1"><rect x="536.0" y="750.5" width="38.0" height="46.0" fill="#906b51" stroke="#46594c" /><title>2号模块·街门·一层</title></g>
+<g data-level="1" data-element="m2_screen_l1"><rect x="540" y="728.5" width="30" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>2号模块·影壁·一层</title></g>
+<g data-level="1" data-element="m2_inner_gate_l1"><rect x="453.0" y="682.0" width="34.0" height="22.0" fill="#906b51" stroke="#46594c" /><title>2号模块·垂花门（简化）·一层</title></g>
+<g data-level="1" data-element="m2_partition_w_l1"><rect x="353.5" y="693.0" width="99.5" height="3.0" fill="#9d9c8e" stroke="#46594c" /><title>2号模块·西卡子墙·一层</title></g>
+<g data-level="1" data-element="m2_partition_e_l1"><rect x="487.0" y="693.0" width="99.5" height="3.0" fill="#9d9c8e" stroke="#46594c" /><title>2号模块·东卡子墙·一层</title></g>
+<g data-level="1" data-element="m2_gallery_w_l1"><rect x="408.0" y="550.0" width="10" height="128.0" fill="#a28160" stroke="#46594c" /><title>2号模块·西侧游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m2_gallery_e_l1"><rect x="522.0" y="550.0" width="10" height="128.0" fill="#a28160" stroke="#46594c" /><title>2号模块·东侧游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m2_gallery_sw_l1"><rect x="408.0" y="678.0" width="45.0" height="10" fill="#a28160" stroke="#46594c" /><title>2号模块·西南游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m2_gallery_se_l1"><rect x="487.0" y="678.0" width="45.0" height="10" fill="#a28160" stroke="#46594c" /><title>2号模块·东南游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m2_boundary_w_l1"><rect x="350" y="480" width="3.5" height="320" fill="#9d9c8e" stroke="#46594c" /><title>2号模块·西院墙·一层</title></g>
+<g data-level="1" data-element="m2_boundary_e_l1"><rect x="586.5" y="480" width="3.5" height="320" fill="#9d9c8e" stroke="#46594c" /><title>2号模块·东院墙·一层</title></g>
+<g data-level="1" data-element="m2_boundary_n_l1"><rect x="353.5" y="480.0" width="233.0" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>2号模块·北院墙·一层</title></g>
+<g data-level="1" data-element="m2_boundary_sw_l1"><rect x="353.5" y="796.5" width="182.5" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>2号模块·南院墙西段·一层</title></g>
+<g data-level="1" data-element="m2_boundary_se_l1"><rect x="574.0" y="796.5" width="12.5" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>2号模块·南院墙东段·一层</title></g>
+<g data-level="1" data-element="m3_main_hall_l1"><rect x="113.0" y="110" width="114.0" height="60" fill="#b8aa91" stroke="#46594c" /><title>3号模块·正房·一层</title></g>
+<g data-level="1" data-element="m3_west_wing_l1"><rect x="64.0" y="190" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>3号模块·西厢房·一层</title></g>
+<g data-level="1" data-element="m3_east_wing_l1"><rect x="232.0" y="190" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>3号模块·东厢房·一层</title></g>
+<g data-level="1" data-element="m3_south_rooms_l1"><rect x="64.0" y="369.00000000000006" width="160" height="43.0" fill="#b8aa91" stroke="#46594c" /><title>3号模块·倒座房·一层</title></g>
+<g data-level="1" data-element="m3_west_ear_l1"><rect x="64.0" y="113.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>3号模块·西耳房·一层</title></g>
+<g data-level="1" data-element="m3_east_ear_l1"><rect x="232.0" y="113.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>3号模块·东耳房·一层</title></g>
+<g data-level="1" data-element="m3_street_gate_l1"><rect x="236.0" y="370.5" width="38.0" height="46.0" fill="#906b51" stroke="#46594c" /><title>3号模块·街门·一层</title></g>
+<g data-level="1" data-element="m3_screen_l1"><rect x="240" y="348.5" width="30" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>3号模块·影壁·一层</title></g>
+<g data-level="1" data-element="m3_inner_gate_l1"><rect x="153.0" y="301.99999999999994" width="34.0" height="22.0" fill="#906b51" stroke="#46594c" /><title>3号模块·垂花门（简化）·一层</title></g>
+<g data-level="1" data-element="m3_partition_w_l1"><rect x="53.5" y="313.00000000000006" width="99.5" height="3.0" fill="#9d9c8e" stroke="#46594c" /><title>3号模块·西卡子墙·一层</title></g>
+<g data-level="1" data-element="m3_partition_e_l1"><rect x="187.0" y="313.00000000000006" width="99.5" height="3.0" fill="#9d9c8e" stroke="#46594c" /><title>3号模块·东卡子墙·一层</title></g>
+<g data-level="1" data-element="m3_gallery_w_l1"><rect x="108.0" y="170.0" width="10" height="128.0" fill="#a28160" stroke="#46594c" /><title>3号模块·西侧游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m3_gallery_e_l1"><rect x="222.0" y="170.0" width="10" height="128.0" fill="#a28160" stroke="#46594c" /><title>3号模块·东侧游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m3_gallery_sw_l1"><rect x="108.0" y="298.0" width="45.0" height="10" fill="#a28160" stroke="#46594c" /><title>3号模块·西南游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m3_gallery_se_l1"><rect x="187.0" y="298.0" width="45.0" height="10" fill="#a28160" stroke="#46594c" /><title>3号模块·东南游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m3_boundary_w_l1"><rect x="50" y="100" width="3.5" height="320" fill="#9d9c8e" stroke="#46594c" /><title>3号模块·西院墙·一层</title></g>
+<g data-level="1" data-element="m3_boundary_e_l1"><rect x="286.5" y="100" width="3.5" height="320" fill="#9d9c8e" stroke="#46594c" /><title>3号模块·东院墙·一层</title></g>
+<g data-level="1" data-element="m3_boundary_n_l1"><rect x="53.5" y="100.0" width="233.0" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>3号模块·北院墙·一层</title></g>
+<g data-level="1" data-element="m3_boundary_sw_l1"><rect x="53.5" y="416.5" width="182.5" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>3号模块·南院墙西段·一层</title></g>
+<g data-level="1" data-element="m3_boundary_se_l1"><rect x="274.0" y="416.5" width="12.5" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>3号模块·南院墙东段·一层</title></g>
+<g data-level="1" data-element="m4_main_hall_l1"><rect x="413.0" y="110" width="114.0" height="60" fill="#b8aa91" stroke="#46594c" /><title>4号模块·正房·一层</title></g>
+<g data-level="1" data-element="m4_west_wing_l1"><rect x="364.0" y="190" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>4号模块·西厢房·一层</title></g>
+<g data-level="1" data-element="m4_east_wing_l1"><rect x="532.0" y="190" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>4号模块·东厢房·一层</title></g>
+<g data-level="1" data-element="m4_south_rooms_l1"><rect x="364.0" y="369.00000000000006" width="160" height="43.0" fill="#b8aa91" stroke="#46594c" /><title>4号模块·倒座房·一层</title></g>
+<g data-level="1" data-element="m4_west_ear_l1"><rect x="364.0" y="113.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>4号模块·西耳房·一层</title></g>
+<g data-level="1" data-element="m4_east_ear_l1"><rect x="532.0" y="113.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>4号模块·东耳房·一层</title></g>
+<g data-level="1" data-element="m4_street_gate_l1"><rect x="536.0" y="370.5" width="38.0" height="46.0" fill="#906b51" stroke="#46594c" /><title>4号模块·街门·一层</title></g>
+<g data-level="1" data-element="m4_screen_l1"><rect x="540" y="348.5" width="30" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>4号模块·影壁·一层</title></g>
+<g data-level="1" data-element="m4_inner_gate_l1"><rect x="453.0" y="301.99999999999994" width="34.0" height="22.0" fill="#906b51" stroke="#46594c" /><title>4号模块·垂花门（简化）·一层</title></g>
+<g data-level="1" data-element="m4_partition_w_l1"><rect x="353.5" y="313.00000000000006" width="99.5" height="3.0" fill="#9d9c8e" stroke="#46594c" /><title>4号模块·西卡子墙·一层</title></g>
+<g data-level="1" data-element="m4_partition_e_l1"><rect x="487.0" y="313.00000000000006" width="99.5" height="3.0" fill="#9d9c8e" stroke="#46594c" /><title>4号模块·东卡子墙·一层</title></g>
+<g data-level="1" data-element="m4_gallery_w_l1"><rect x="408.0" y="170.0" width="10" height="128.0" fill="#a28160" stroke="#46594c" /><title>4号模块·西侧游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m4_gallery_e_l1"><rect x="522.0" y="170.0" width="10" height="128.0" fill="#a28160" stroke="#46594c" /><title>4号模块·东侧游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m4_gallery_sw_l1"><rect x="408.0" y="298.0" width="45.0" height="10" fill="#a28160" stroke="#46594c" /><title>4号模块·西南游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m4_gallery_se_l1"><rect x="487.0" y="298.0" width="45.0" height="10" fill="#a28160" stroke="#46594c" /><title>4号模块·东南游廊（示意）·一层</title></g>
+<g data-level="1" data-element="m4_boundary_w_l1"><rect x="350" y="100" width="3.5" height="320" fill="#9d9c8e" stroke="#46594c" /><title>4号模块·西院墙·一层</title></g>
+<g data-level="1" data-element="m4_boundary_e_l1"><rect x="586.5" y="100" width="3.5" height="320" fill="#9d9c8e" stroke="#46594c" /><title>4号模块·东院墙·一层</title></g>
+<g data-level="1" data-element="m4_boundary_n_l1"><rect x="353.5" y="100.0" width="233.0" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>4号模块·北院墙·一层</title></g>
+<g data-level="1" data-element="m4_boundary_sw_l1"><rect x="353.5" y="416.5" width="182.5" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>4号模块·南院墙西段·一层</title></g>
+<g data-level="1" data-element="m4_boundary_se_l1"><rect x="574.0" y="416.5" width="12.5" height="3.5" fill="#9d9c8e" stroke="#46594c" /><title>4号模块·南院墙东段·一层</title></g>
+<rect x="60" y="709.0" width="168.0" height="37.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="144.0" y="727.5" text-anchor="middle" font-size="13">院 1</text>
+<rect x="121.0" y="564.0" width="98.0" height="104.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="170.0" y="616.0" text-anchor="middle" font-size="13">院 2</text>
+<rect x="360" y="709.0" width="168.0" height="37.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="444.0" y="727.5" text-anchor="middle" font-size="13">院 3</text>
+<rect x="421.0" y="564.0" width="98.0" height="104.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="470.0" y="616.0" text-anchor="middle" font-size="13">院 4</text>
+<rect x="60" y="329.0" width="168.0" height="37.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="144.0" y="347.5" text-anchor="middle" font-size="13">院 5</text>
+<rect x="121.0" y="184.0" width="98.0" height="104.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="170.0" y="236.0" text-anchor="middle" font-size="13">院 6</text>
+<rect x="360" y="329.0" width="168.0" height="37.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="444.0" y="347.5" text-anchor="middle" font-size="13">院 7</text>
+<rect x="421.0" y="184.0" width="98.0" height="104.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="470.0" y="236.0" text-anchor="middle" font-size="13">院 8</text>
+<rect x="120" y="504.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="202.0" y="504.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="420" y="504.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="502.0" y="504.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="120" y="124.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="202.0" y="124.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="420" y="124.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="502.0" y="124.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<text x="620" y="95">北 N ↑</text><text x="30" y="845" font-size="13">54 × 70 m 假设地块 · 虚线为竖向交通预留，未建实际楼梯</text></svg>

@@ -1,0 +1,16 @@
+{
+  "archive_id": "MB-BJ-SHY-C1900-001",
+  "revision": "1.0.0",
+  "algorithm": "sha256",
+  "files": {
+    "interactive.html": "fe44815804968f739f78846878e7faecb61513dd274279a5c83b5eacc6a2d6ee",
+    "plan.svg": "49d553ed8cbf689cf7a935be1ab4aacc98f60c321aecc4f0ae540e5c2dd40418",
+    "axonometric.svg": "62fa28d0e3cadf9721b27bed4bfb2230cbf400cecc719f656d468524d5a24a1e",
+    "courtyard.obj": "3ff27770b05919e6839aaeed0d5b6da41f6a2f0de4444f06d8544df3560b3d77",
+    "courtyard.scene.json": "af9bdc26c30c1ceaa337e15f8dc251da80cfd19ba63d9b109d92f5284cb7132c",
+    "catalog.json": "7426372f4ef779cd248452708c9cce8593d851859b095d13c0919311afa7a260",
+    "index.html": "cfa3a4af5db190de62a4a6f007fbee3921754810be971257dba7b3c1caf0d856",
+    "inventory.html": "63809a3d8fd83a209e358081bb6c25e1e28da5a1a40fa0cd9aac4e66a7f1b1ae"
+  },
+  "note": "Generated files only; manifest excludes itself."
+}

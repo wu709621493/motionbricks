@@ -1,0 +1,13 @@
+test_counts_and_source_identity (test_concept.ConceptTests.test_counts_and_source_identity) ... ok
+test_courtyard_obstruction_rejected (test_concept.ConceptTests.test_courtyard_obstruction_rejected) ... ok
+test_deterministic_exports_and_hashes (test_concept.ConceptTests.test_deterministic_exports_and_hashes) ... ok
+test_overlapping_module_and_invalid_origin_rejected (test_concept.ConceptTests.test_overlapping_module_and_invalid_origin_rejected) ... ok
+test_reservations_excluded_from_solids (test_concept.ConceptTests.test_reservations_excluded_from_solids) ... ok
+test_static_pages_and_floor_projections (test_concept.ConceptTests.test_static_pages_and_floor_projections) ... ok
+test_unfounded_claim_and_impossible_setback_rejected (test_concept.ConceptTests.test_unfounded_claim_and_impossible_setback_rejected) ... ok
+test_upper_storeys_supported_with_setback (test_concept.ConceptTests.test_upper_storeys_supported_with_setback) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.464s
+
+OK
