@@ -1,0 +1,18 @@
+{
+  "concept_id": "MB-BJ-BHY-C2026-001",
+  "algorithm": "sha256",
+  "files": {
+    "model.json": "541bce1674c978fc807b0dc21da8f4a15a90a652923a4af803434729b8c758c9",
+    "plan.svg": "5462ee5da3040a239cc679804c183274bd997528b37349cc05cc16cd2a88a60f",
+    "interactive.html": "0b465f1788e4bfb41bdf7615dc623ee81824fb15193cd2217040defcbb65e737",
+    "floor2.svg": "c9fd386cd1b2cf58b53514fcd7b7580ad0e183236964ee80e10b768efdb3f276",
+    "floor3.svg": "4a13cd138fa5d297b0b94b8735c90ff1d87b7d2bcfd054879927e3bf694b885a",
+    "massing.svg": "21ef6f06cee6a664dbc38604dc375e99923919354247aecbf1195ded479eed0f",
+    "massing-no-roofs.svg": "a2b049e6ad86632734628878e283b42a52ace69e760ffe8f4ca5ca46bf7ece3c",
+    "concept.obj": "36fdf2d57ccbf5be98e6dc55e05a001e4d12b75729e0dba16974cbfb4a7f1a59",
+    "concept.scene.json": "da0d09f697ace34e7da7885666a5db8d533be213ed36e6008f634b5df1435931",
+    "index.html": "012cd031e9a79ae8d05a2bb63d00b5c518de16d68ee6bfad11e3abc219826e98",
+    "inventory.html": "aecf1115949d06c18a64f0526dee0170ee25424da45179f268d6a762719979f5"
+  },
+  "note": "Generated files only; geometry is hypothetical; reservations excluded from meshes."
+}

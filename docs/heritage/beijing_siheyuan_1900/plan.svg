@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" role="img" aria-labelledby="plan-title">
+<title id="plan-title">北京四合院约1900年：假设尺度、北向朝上的类型平面图</title>
+<style>text{font-family:Arial,"Noto Sans CJK SC",sans-serif;fill:#263d37}.label{font-size:12px}.room{stroke:#40564b;stroke-width:1.2}.room:focus{stroke:#a54d35;stroke-width:4;outline:none}</style>
+<rect width="600" height="760" fill="#f6f2e8"/>
+<text x="40" y="30" font-size="16">类型复原 · 所有尺寸为假设</text>
+<rect x="80" y="70" width="432" height="576" fill="#e9e1cf"/>
+<g class="room" tabindex="0" role="button" aria-label="正房" data-element="main_hall"><title>正房：形制参考，尺寸假设</title><rect x="193.40" y="88.00" width="205.20" height="108.00" fill="#b8aa91"/></g>
+<text class="label" text-anchor="middle" x="296.00" y="142.00" pointer-events="none">正房</text>
+<g class="room" tabindex="0" role="button" aria-label="西厢房" data-element="west_wing"><title>西厢房：形制参考，尺寸假设</title><rect x="105.20" y="232.00" width="79.20" height="180.00" fill="#b8aa91"/></g>
+<text class="label" text-anchor="middle" x="144.80" y="322.00" pointer-events="none">西厢房</text>
+<g class="room" tabindex="0" role="button" aria-label="东厢房" data-element="east_wing"><title>东厢房：形制参考，尺寸假设</title><rect x="407.60" y="232.00" width="79.20" height="180.00" fill="#b8aa91"/></g>
+<text class="label" text-anchor="middle" x="447.20" y="322.00" pointer-events="none">东厢房</text>
+<g class="room" tabindex="0" role="button" aria-label="倒座房" data-element="south_rooms"><title>倒座房：形制参考，尺寸假设</title><rect x="105.20" y="554.20" width="288.00" height="77.40" fill="#b8aa91"/></g>
+<text class="label" text-anchor="middle" x="249.20" y="592.90" pointer-events="none">倒座房</text>
+<g class="room" tabindex="0" role="button" aria-label="西耳房" data-element="west_ear"><title>西耳房：形制参考，尺寸假设</title><rect x="105.20" y="93.40" width="79.20" height="84.60" fill="#b8aa91"/></g>
+<text class="label" text-anchor="middle" x="144.80" y="135.70" pointer-events="none">西耳房</text>
+<g class="room" tabindex="0" role="button" aria-label="东耳房" data-element="east_ear"><title>东耳房：形制参考，尺寸假设</title><rect x="407.60" y="93.40" width="79.20" height="84.60" fill="#b8aa91"/></g>
+<text class="label" text-anchor="middle" x="447.20" y="135.70" pointer-events="none">东耳房</text>
+<g class="room" tabindex="0" role="button" aria-label="街门" data-element="street_gate"><title>街门：形制参考，尺寸假设</title><rect x="414.80" y="556.90" width="68.40" height="82.80" fill="#d9c8a8"/></g>
+<g class="room" tabindex="0" role="button" aria-label="影壁" data-element="screen"><title>影壁：形制参考，尺寸假设</title><rect x="422.00" y="517.30" width="54.00" height="6.30" fill="#9d9c8e"/></g>
+<g class="room" tabindex="0" role="button" aria-label="垂花门（简化）" data-element="inner_gate"><title>垂花门（简化）：形制参考，尺寸假设</title><rect x="265.40" y="433.60" width="61.20" height="39.60" fill="#d9c8a8"/></g>
+<g class="room" tabindex="0" role="button" aria-label="西卡子墙" data-element="partition_w"><title>西卡子墙：形制参考，尺寸假设</title><rect x="86.30" y="453.40" width="179.10" height="5.40" fill="#9d9c8e"/></g>
+<g class="room" tabindex="0" role="button" aria-label="东卡子墙" data-element="partition_e"><title>东卡子墙：形制参考，尺寸假设</title><rect x="326.60" y="453.40" width="179.10" height="5.40" fill="#9d9c8e"/></g>
+<g class="room" tabindex="0" role="button" aria-label="西侧游廊（示意）" data-element="gallery_w"><title>西侧游廊（示意）：形制参考，尺寸假设</title><rect x="184.40" y="196.00" width="18.00" height="230.40" fill="#d9c8a8"/></g>
+<g class="room" tabindex="0" role="button" aria-label="东侧游廊（示意）" data-element="gallery_e"><title>东侧游廊（示意）：形制参考，尺寸假设</title><rect x="389.60" y="196.00" width="18.00" height="230.40" fill="#d9c8a8"/></g>
+<g class="room" tabindex="0" role="button" aria-label="西南游廊（示意）" data-element="gallery_sw"><title>西南游廊（示意）：形制参考，尺寸假设</title><rect x="184.40" y="426.40" width="81.00" height="18.00" fill="#d9c8a8"/></g>
+<g class="room" tabindex="0" role="button" aria-label="东南游廊（示意）" data-element="gallery_se"><title>东南游廊（示意）：形制参考，尺寸假设</title><rect x="326.60" y="426.40" width="81.00" height="18.00" fill="#d9c8a8"/></g>
+<g class="room" tabindex="0" role="button" aria-label="西院墙" data-element="boundary_w"><title>西院墙：形制参考，尺寸假设</title><rect x="80.00" y="70.00" width="6.30" height="576.00" fill="#9d9c8e"/></g>
+<g class="room" tabindex="0" role="button" aria-label="东院墙" data-element="boundary_e"><title>东院墙：形制参考，尺寸假设</title><rect x="505.70" y="70.00" width="6.30" height="576.00" fill="#9d9c8e"/></g>
+<g class="room" tabindex="0" role="button" aria-label="北院墙" data-element="boundary_n"><title>北院墙：形制参考，尺寸假设</title><rect x="86.30" y="70.00" width="419.40" height="6.30" fill="#9d9c8e"/></g>
+<g class="room" tabindex="0" role="button" aria-label="南院墙西段" data-element="boundary_sw"><title>南院墙西段：形制参考，尺寸假设</title><rect x="86.30" y="639.70" width="328.50" height="6.30" fill="#9d9c8e"/></g>
+<g class="room" tabindex="0" role="button" aria-label="南院墙东段" data-element="boundary_se"><title>南院墙东段：形制参考，尺寸假设</title><rect x="483.20" y="639.70" width="22.50" height="6.30" fill="#9d9c8e"/></g>
+<polyline data-route="true" points="449.00,682.00 449.00,541.60 400.40,541.60 296.00,541.60 296.00,453.40 296.00,322.00 296.00,208.60" fill="none" stroke="#a34a36" stroke-width="2.5" stroke-dasharray="6 5" pointer-events="none"/>
+<text class="label" text-anchor="middle" x="296" y="304" pointer-events="none">内院</text>
+<text class="label" text-anchor="middle" x="198.8" y="514.5999999999999" pointer-events="none">前院</text>
+<text class="label" text-anchor="middle" x="449.0" y="599.1999999999999" pointer-events="none">街门</text>
+<text class="label" text-anchor="middle" x="296" y="453.40000000000003" pointer-events="none">垂花门</text>
+<text class="label" text-anchor="middle" x="449.0" y="503.8" pointer-events="none">影壁</text>
+<text class="label" text-anchor="middle" x="296" y="692.8000000000001" pointer-events="none">胡同（示意）</text>
+<path d="M550 110 V65 M544 76 L550 65 L556 76" stroke="#263d37" fill="none" stroke-width="2"/><text x="544" y="55">N</text>
+<path d="M80 717 h90" stroke="#263d37" stroke-width="3"/><text x="80" y="738" font-size="12">0</text><text x="156" y="738" font-size="12">5 m（模型尺度）</text>
+</svg>

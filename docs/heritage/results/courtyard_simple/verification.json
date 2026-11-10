@@ -1,0 +1,182 @@
+{
+  "main": "3577bda46d023df84c4518c75cb85ccf702b11b8",
+  "original_pr42_head": "fb11f6b099d35cc16b22a81cfa03115558ea30d4",
+  "platform": "Linux x86_64",
+  "local_tests": [
+    {
+      "python": "python3.12",
+      "check": "archive",
+      "returncode": 0,
+      "command": [
+        "python3.12",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/siheyuan",
+        "-v"
+      ]
+    },
+    {
+      "python": "python3.12",
+      "check": "concept",
+      "returncode": 0,
+      "command": [
+        "python3.12",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/bahayuan",
+        "-v"
+      ]
+    },
+    {
+      "python": "python3.12",
+      "check": "preflight",
+      "returncode": 0,
+      "command": [
+        "python3.12",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/preflight",
+        "-v"
+      ]
+    },
+    {
+      "python": "python3.12",
+      "check": "archive-build",
+      "returncode": 0,
+      "command": [
+        "python3.12",
+        "-S",
+        "tools/siheyuan/build.py",
+        "--check"
+      ]
+    },
+    {
+      "python": "python3.12",
+      "check": "concept-build",
+      "returncode": 0,
+      "command": [
+        "python3.12",
+        "-S",
+        "experiments/bahayuan/build.py",
+        "--check"
+      ]
+    },
+    {
+      "python": "python3.13",
+      "check": "archive",
+      "returncode": 0,
+      "command": [
+        "python3.13",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/siheyuan",
+        "-v"
+      ]
+    },
+    {
+      "python": "python3.13",
+      "check": "concept",
+      "returncode": 0,
+      "command": [
+        "python3.13",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/bahayuan",
+        "-v"
+      ]
+    },
+    {
+      "python": "python3.13",
+      "check": "preflight",
+      "returncode": 0,
+      "command": [
+        "python3.13",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/preflight",
+        "-v"
+      ]
+    },
+    {
+      "python": "python3.13",
+      "check": "archive-build",
+      "returncode": 0,
+      "command": [
+        "python3.13",
+        "-S",
+        "tools/siheyuan/build.py",
+        "--check"
+      ]
+    },
+    {
+      "python": "python3.13",
+      "check": "concept-build",
+      "returncode": 0,
+      "command": [
+        "python3.13",
+        "-S",
+        "experiments/bahayuan/build.py",
+        "--check"
+      ]
+    }
+  ],
+  "cross_python": [
+    {
+      "set": "archive",
+      "files": 9,
+      "byte_identical": true
+    },
+    {
+      "set": "concept",
+      "files": 12,
+      "byte_identical": true
+    }
+  ],
+  "preserved_original_files": [
+    "data/heritage/beijing_siheyuan_1900.json",
+    "docs/heritage/beijing_siheyuan_1900/catalog.json",
+    "docs/heritage/beijing_siheyuan_1900/plan.svg",
+    "docs/heritage/beijing_siheyuan_1900/axonometric.svg",
+    "docs/heritage/beijing_siheyuan_1900/courtyard.obj",
+    "docs/heritage/beijing_siheyuan_1900/courtyard.scene.json"
+  ],
+  "original_interactive_html_byte_identical": true,
+  "all_original_main_readme_bytes_retained": true,
+  "static": [
+    {
+      "folder": "docs/heritage/beijing_siheyuan_1900",
+      "entry_bytes": 2877,
+      "overview_bytes": 63524,
+      "manifest_hashes_verified": 8
+    },
+    {
+      "folder": "experiments/bahayuan/output",
+      "entry_bytes": 2991,
+      "overview_bytes": 291937,
+      "manifest_hashes_verified": 11
+    }
+  ],
+  "svg_render": "librsvg/Cairo CPU render, visual inspection; not browser acceptance",
+  "browser": "NOT_RUN: socket permission / file URL policy restrictions; no cache exhaustion measured",
+  "github_ci": "not run when this local evidence was recorded; inspect PR checks for live results",
+  "runtime": "GPU inference / scene load / movement NOT_RUN",
+  "initial_main": "bc86b71864f76da521fe9ee1457d409c70862d4c"
+}
