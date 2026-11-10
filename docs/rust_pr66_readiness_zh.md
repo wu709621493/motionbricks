@@ -4,10 +4,14 @@
 **采用“固定 main 上无新增回归”的合并标准；保留已有的 PyIgnite PE 严格 parity 失败。**
 没有将该失败修复成通过，也没有取消严格审计、放宽容差或修改生产算子。
 
+就绪过程中 main 合入 PR #67，推进至 `65fa0a160946ddbb3d196f552a0a13fe63432fcf`。
+本 PR 已再次保留双方 README 入口并合入该 main；固定回归基线也同步至此提交。
+新 main 的 PyIgnite 相关源文件与初审 main 完全相同，原始测评证据仍按其记录的提交解释。
+
 ## 阻塞项与处置
 
 1. 初版 PR 的 Rust Linux x86_64 / ARM64 CI 已通过；失败项是 PyIgnite `PE-4096-64`。
-2. 从固定 main `3577bda46d023df84c4518c75cb85ccf702b11b8` 提取源文件，单独构建共享库，
+2. 从固定 main `65fa0a160946ddbb3d196f552a0a13fe63432fcf` 提取源文件，单独构建共享库，
    用相同 Python/NumPy/Torch 环境运行全部 8 组原夹具，再独立构建并测试当前分支。
    两边均为 7/8 严格通过；PE 失败的逐元素输出、参考值、超差掩码及全部统计量完全相同。
 3. Rust 工作流中的 macos-14 初版任务未分配 runner 即被取消。改用仓库 CPU preflight

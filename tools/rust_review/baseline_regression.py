@@ -14,7 +14,7 @@ import tarfile
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[2]
-BASELINE = '3577bda46d023df84c4518c75cb85ccf702b11b8'
+BASELINE = '65fa0a160946ddbb3d196f552a0a13fe63432fcf'
 KNOWN = 'PE-4096-64'
 EXPECTED = {'PE-1-2', 'PE-17-32', 'PE-256-512', KNOWN,
             'FC-1-8-(3,)', 'FC-2-32-(4, 7)', 'FC-3-64-(2, 11, 16)', 'FC-2-256-(32, 128)'}

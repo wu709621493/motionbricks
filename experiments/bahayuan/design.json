@@ -1,0 +1,22 @@
+{
+  "concept_id": "MB-BJ-BHY-C2026-001",
+  "revision": "0.1.0",
+  "title_zh": "八合院 · 四个两进模块与二三层退台",
+  "status": "contemporary_design_hypothesis",
+  "source_archive": "MB-BJ-SHY-C1900-001",
+  "source_file": "data/heritage/beijing_siheyuan_1900.json",
+  "source_head": "fb11f6b099d35cc16b22a81cfa03115558ea30d4",
+  "site_m": [54, 70],
+  "module_origins_m": [[0, 0], [30, 0], [0, 38], [30, 38]],
+  "storey_height_m": 3.6,
+  "third_storey_height_m": 3.2,
+  "third_storey_setback_m": 0.6,
+  "second_storey_ids": ["main_hall", "west_wing", "east_wing", "south_rooms", "west_ear", "east_ear"],
+  "third_storey_ids": ["main_hall"],
+  "courtyard_voids_local_m": [[1, 5.4, 16.8, 3.7], [7.1, 13.2, 9.8, 10.4]],
+  "vertical_reserves_local_m": [[7, 26, 1.8, 3.6], [15.2, 26, 1.8, 3.6]],
+  "historical_claim": false,
+  "structurally_verified": false,
+  "occupancy_approved": false,
+  "note_zh": "所有尺寸仅供设计讨论；四个现代新建假想模块共八个院落。竖向交通只是预留空间，未建楼梯、平台、门洞或无障碍设施。不能把此模型当作给现存古建直接加层的施工方案。"
+}

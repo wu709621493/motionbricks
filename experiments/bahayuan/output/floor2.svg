@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 880" role="img" aria-label="八合院二层体量投影">
+<rect width="700" height="880" fill="#f6f2e8"/>
+<text x="30" y="30" font-size="20">八合院概念 / 二层体量投影 / 非施工图</text>
+<text x="30" y="55" font-size="14">绿色为露天院落的地面范围，不表示楼上的悬空庭院</text>
+<g data-level="2" data-element="m1_main_hall_l2"><rect x="113.0" y="490" width="114.0" height="60" fill="#b8aa91" stroke="#46594c" /><title>1号模块·正房·二层</title></g>
+<g data-level="2" data-element="m1_west_wing_l2"><rect x="64.0" y="570" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>1号模块·西厢房·二层</title></g>
+<g data-level="2" data-element="m1_east_wing_l2"><rect x="232.0" y="570" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>1号模块·东厢房·二层</title></g>
+<g data-level="2" data-element="m1_south_rooms_l2"><rect x="64.0" y="749.0" width="160" height="43.0" fill="#b8aa91" stroke="#46594c" /><title>1号模块·倒座房·二层</title></g>
+<g data-level="2" data-element="m1_west_ear_l2"><rect x="64.0" y="493.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>1号模块·西耳房·二层</title></g>
+<g data-level="2" data-element="m1_east_ear_l2"><rect x="232.0" y="493.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>1号模块·东耳房·二层</title></g>
+<g data-level="2" data-element="m2_main_hall_l2"><rect x="413.0" y="490" width="114.0" height="60" fill="#b8aa91" stroke="#46594c" /><title>2号模块·正房·二层</title></g>
+<g data-level="2" data-element="m2_west_wing_l2"><rect x="364.0" y="570" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>2号模块·西厢房·二层</title></g>
+<g data-level="2" data-element="m2_east_wing_l2"><rect x="532.0" y="570" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>2号模块·东厢房·二层</title></g>
+<g data-level="2" data-element="m2_south_rooms_l2"><rect x="364.0" y="749.0" width="160" height="43.0" fill="#b8aa91" stroke="#46594c" /><title>2号模块·倒座房·二层</title></g>
+<g data-level="2" data-element="m2_west_ear_l2"><rect x="364.0" y="493.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>2号模块·西耳房·二层</title></g>
+<g data-level="2" data-element="m2_east_ear_l2"><rect x="532.0" y="493.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>2号模块·东耳房·二层</title></g>
+<g data-level="2" data-element="m3_main_hall_l2"><rect x="113.0" y="110" width="114.0" height="60" fill="#b8aa91" stroke="#46594c" /><title>3号模块·正房·二层</title></g>
+<g data-level="2" data-element="m3_west_wing_l2"><rect x="64.0" y="190" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>3号模块·西厢房·二层</title></g>
+<g data-level="2" data-element="m3_east_wing_l2"><rect x="232.0" y="190" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>3号模块·东厢房·二层</title></g>
+<g data-level="2" data-element="m3_south_rooms_l2"><rect x="64.0" y="369.00000000000006" width="160" height="43.0" fill="#b8aa91" stroke="#46594c" /><title>3号模块·倒座房·二层</title></g>
+<g data-level="2" data-element="m3_west_ear_l2"><rect x="64.0" y="113.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>3号模块·西耳房·二层</title></g>
+<g data-level="2" data-element="m3_east_ear_l2"><rect x="232.0" y="113.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>3号模块·东耳房·二层</title></g>
+<g data-level="2" data-element="m4_main_hall_l2"><rect x="413.0" y="110" width="114.0" height="60" fill="#b8aa91" stroke="#46594c" /><title>4号模块·正房·二层</title></g>
+<g data-level="2" data-element="m4_west_wing_l2"><rect x="364.0" y="190" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>4号模块·西厢房·二层</title></g>
+<g data-level="2" data-element="m4_east_wing_l2"><rect x="532.0" y="190" width="44.0" height="100" fill="#b8aa91" stroke="#46594c" /><title>4号模块·东厢房·二层</title></g>
+<g data-level="2" data-element="m4_south_rooms_l2"><rect x="364.0" y="369.00000000000006" width="160" height="43.0" fill="#b8aa91" stroke="#46594c" /><title>4号模块·倒座房·二层</title></g>
+<g data-level="2" data-element="m4_west_ear_l2"><rect x="364.0" y="113.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>4号模块·西耳房·二层</title></g>
+<g data-level="2" data-element="m4_east_ear_l2"><rect x="532.0" y="113.0" width="44.0" height="47.0" fill="#b8aa91" stroke="#46594c" /><title>4号模块·东耳房·二层</title></g>
+<rect x="60" y="709.0" width="168.0" height="37.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="144.0" y="727.5" text-anchor="middle" font-size="13">院 1</text>
+<rect x="121.0" y="564.0" width="98.0" height="104.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="170.0" y="616.0" text-anchor="middle" font-size="13">院 2</text>
+<rect x="360" y="709.0" width="168.0" height="37.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="444.0" y="727.5" text-anchor="middle" font-size="13">院 3</text>
+<rect x="421.0" y="564.0" width="98.0" height="104.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="470.0" y="616.0" text-anchor="middle" font-size="13">院 4</text>
+<rect x="60" y="329.0" width="168.0" height="37.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="144.0" y="347.5" text-anchor="middle" font-size="13">院 5</text>
+<rect x="121.0" y="184.0" width="98.0" height="104.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="170.0" y="236.0" text-anchor="middle" font-size="13">院 6</text>
+<rect x="360" y="329.0" width="168.0" height="37.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="444.0" y="347.5" text-anchor="middle" font-size="13">院 7</text>
+<rect x="421.0" y="184.0" width="98.0" height="104.0" fill="#c7d9b8" stroke="#46594c" />
+<text x="470.0" y="236.0" text-anchor="middle" font-size="13">院 8</text>
+<rect x="120" y="504.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="202.0" y="504.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="420" y="504.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="502.0" y="504.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="120" y="124.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="202.0" y="124.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="420" y="124.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<rect x="502.0" y="124.0" width="18.0" height="36.0" fill="none" stroke="#46594c" stroke-dasharray="3 3"/>
+<text x="620" y="95">北 N ↑</text><text x="30" y="845" font-size="13">54 × 70 m 假设地块 · 虚线为竖向交通预留，未建实际楼梯</text></svg>

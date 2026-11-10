@@ -1,6 +1,6 @@
 {
   "status": "PASS_NO_NEW_REGRESSION",
-  "baseline_commit": "3577bda46d023df84c4518c75cb85ccf702b11b8",
+  "baseline_commit": "65fa0a160946ddbb3d196f552a0a13fe63432fcf",
   "strict_current_parity": "FAIL",
   "known_parity_failures": [
     "PE-4096-64"
