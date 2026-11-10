@@ -482,3 +482,8 @@ together at a fictional future archery range. Compound-bow scores determine
 sworn-brother ranks before a seven-person adaptation of the classic *Fantasy
 Westward Journey* ceremony. Historical notes distinguish the imagined reunion,
 Shanghai background and invented game rules from documented sources.
+
+[识得唔识得：一句话的非遗申报](docs/fiction/shikdak_multilingual_heritage_zh.md) is an original
+multilingual comedy sketch: a simple self-introduction becomes a subtitle crisis
+and a fictional in-house heritage hearing. It preserves Windy's mixed-language
+line and ends with the learner mastering the Cantonese punchline.
