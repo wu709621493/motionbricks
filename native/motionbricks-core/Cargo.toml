@@ -1,0 +1,9 @@
+[package]
+name = "motionbricks-core"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+license = "Apache-2.0"
+description = "Experimental CPU inference primitives for MotionBricks; no LibTorch"
+
+[dependencies]

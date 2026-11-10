@@ -1,0 +1,47 @@
+   Compiling motionbricks-core v0.1.0 (/workspace/scratch/579e04567622/motionbricks/native/motionbricks-core)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.87s
+     Running unittests src/lib.rs (/tmp/tmp5rtp1z00/target/debug/deps/motionbricks_core-1e482ef0c2c75e42)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/benchmark_probe.rs (/tmp/tmp5rtp1z00/target/debug/deps/benchmark_probe-3858d9607c1b60b4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/parity_probe.rs (/tmp/tmp5rtp1z00/target/debug/deps/parity_probe-a4414c74386d7ed9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/codebook_review.rs (/tmp/tmp5rtp1z00/target/debug/deps/codebook_review-a414cfb386ad9940)
+
+running 3 tests
+test copying_preserves_fp32_bits_and_batch_order ... ok
+test exhaustive_small_spaces_against_independent_coordinates ... ok
+test output_limit_and_invalid_shape_do_not_allocate_large_output ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/core.rs (/tmp/tmp5rtp1z00/target/debug/deps/core-8c7659c120ae54c7)
+
+running 6 tests
+test codebook_layout_and_both_index_modes ... ok
+test linear_layout_and_bias ... ok
+test overflow_is_error ... ok
+test relu_and_input_validation ... ok
+test stable_softmax ... ok
+test g1_dimensions_and_boundaries ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests motionbricks_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

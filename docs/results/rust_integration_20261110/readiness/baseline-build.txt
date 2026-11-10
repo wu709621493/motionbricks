@@ -1,0 +1,1 @@
+c++ -std=c++17 -O2 -fPIC -ffp-contract=off -Wall -Wextra -shared /tmp/tmpl01wlekr/tools/pyignite/kernels.cpp -o /tmp/tmpl01wlekr/tools/pyignite/pyignite/libpyignite.so

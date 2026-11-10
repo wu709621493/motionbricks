@@ -5,6 +5,15 @@ base `f19dd01432b2eadf3800b3c71f99a092c741aa8a`. PyIgnite is a local project nam
 not PyTorch-Ignite and not a published package. No production imports, exporter
 changes, checkpoint conversions or robot execution are introduced.
 
+2026-11-10: the [independent Rust integration review](rust_integration_review_zh.md)
+adds a shared Linear microbenchmark and preserves Rust's distinct codebook experiment.
+The [current benchmark report](rust_benchmark_20261110_zh.md) also records a failed
+large-PE parity case on the review host; historical passing numbers below have not
+been replaced or generalized to the new environment. Kernels and tolerances are unchanged.
+The [PR #66 readiness review](rust_pr66_readiness_zh.md) retains that strict failure
+and gates the unrelated Rust integration on a freshly built, pinned-main regression
+comparison. A passing regression check is not a claim that all PE parity cases pass.
+
 ## Decision: C++17 kernels with a Python/NumPy boundary
 
 | Consideration | C++17 route (selected) | Rust route |

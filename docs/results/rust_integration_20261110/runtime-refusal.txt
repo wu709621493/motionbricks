@@ -1,0 +1,17 @@
+test_default_success_is_not_runtime_success (test_cli.RuntimeRefusalTests.test_default_success_is_not_runtime_success) ... Linux/x86_64: preflight.py --model soma --json -> 0
+Linux/x86_64: preflight.py --model unitree_g1 --json -> 0
+ok
+test_execute_refuses_before_example_launch (test_cli.RuntimeRefusalTests.test_execute_refuses_before_example_launch) ... Linux/x86_64: run_example.py generate_once --model soma --execute -> 2
+Linux/x86_64: run_example.py locomotion_loop --model soma --execute -> 2
+Linux/x86_64: run_example.py generate_once --model unitree_g1 --execute -> 2
+Linux/x86_64: run_example.py locomotion_loop --model unitree_g1 --execute -> 2
+ok
+test_require_runtime_refuses (test_cli.RuntimeRefusalTests.test_require_runtime_refuses) ... Linux/x86_64: preflight.py --model soma --require-runtime --json -> 1
+Linux/x86_64: preflight.py --model unitree_g1 --require-runtime --json -> 1
+ok
+test_runner_identity (test_cli.RuntimeRefusalTests.test_runner_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.130s
+
+OK

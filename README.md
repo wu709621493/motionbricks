@@ -509,3 +509,14 @@ modules into eight open courtyards and 116 component/space records, with second
 storeys and recessed third-storey halls. Static floor and massing illustrations
 are the default; geometry is hypothetical, with structural and circulation
 validation pending. See the [picture-guide review](docs/heritage/courtyard_simple_20261110.md).
+
+## Experimental Rust inference core
+
+An incremental [Rust CPU core](native/motionbricks-core/README.md) ports multi-head
+codebook lookup and supplies FP32 linear, ReLU and softmax primitives. It has no
+LibTorch dependency; PyTorch is used only by numerical parity tests. This is an
+explicitly experimental subset, not a full framework or model replacement.
+
+The [integration review](docs/rust_integration_review_zh.md) bounds this to a codebook
+experiment alongside PyIgnite, with a [benchmark report](docs/rust_benchmark_20261110_zh.md)
+and separate [retro-compatibility audit](docs/rust_retro_review_zh.md).

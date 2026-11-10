@@ -1,0 +1,60 @@
+{
+  "review_date": "2026-11-10",
+  "main_sha": "3577bda46d023df84c4518c75cb85ccf702b11b8",
+  "user_supplied_older_main": "bc86b71864f76da521fe9ee1457d409c70862d4c",
+  "pr15_head": "39b5553b64fc16c75a2eb58ec9e51e18f275857e",
+  "merge_base": "7d78474b0cd0fc9b2c7373df0620f65dcb831a82",
+  "latest_pr15_api": {
+    "head": "39b5553b64fc16c75a2eb58ec9e51e18f275857e",
+    "base": "d26328c5e4e43ba732aa0d3c93e3a78640c954ad",
+    "mergeable": false,
+    "mergeable_state": "dirty",
+    "state": "open"
+  },
+  "historical_rust_ci": [
+    {
+      "name": "native (ubuntu-24.04)",
+      "conclusion": "success",
+      "runner_name": "GitHub Actions 1000000380",
+      "html_url": "https://github.com/wu709621493/motionbricks/actions/runs/41429165014/job/125223113068",
+      "started_at": "2026-11-02T10:29:08Z",
+      "completed_at": "2026-11-02T10:29:45Z"
+    },
+    {
+      "name": "native (ubuntu-24.04-arm)",
+      "conclusion": "success",
+      "runner_name": "GitHub Actions 1000000379",
+      "html_url": "https://github.com/wu709621493/motionbricks/actions/runs/41429165014/job/125223113348",
+      "started_at": "2026-11-02T10:29:11Z",
+      "completed_at": "2026-11-02T10:29:23Z"
+    },
+    {
+      "name": "native (macos-14)",
+      "conclusion": "success",
+      "runner_name": "GitHub Actions 1000000387",
+      "html_url": "https://github.com/wu709621493/motionbricks/actions/runs/41429165014/job/125223113797",
+      "started_at": "2026-11-02T10:29:11Z",
+      "completed_at": "2026-11-02T10:29:26Z"
+    }
+  ],
+  "historical_preflight": {
+    "run_id": 41429164880,
+    "conclusion": "success"
+  },
+  "actual_conflicts": [
+    "README.md"
+  ],
+  "minimal_resolution": "Preserve the entire current main README byte-for-byte as prefix and append the 7-line PR15 section.",
+  "conflict_verification": "Local git merge --no-commit --no-ff of exact main and PR15 head; git diff --name-only --diff-filter=U returned only README.md.",
+  "pyignite_merged_pr": 17,
+  "pyignite_merge_sha": "21ed1553920f9eeb74f7b16ada775c17404749f5",
+  "existing_pr_state_changed": false,
+  "conflict_index_stages": [
+    "100644 a0fc6635f1c96c42e909c211754e89142c728ba6 1\tREADME.md",
+    "100644 33db96223fc99b7833a1a398cd8b5af7ce7fb570 2\tREADME.md",
+    "100644 03a13d2211c32aeee8ffbf437eeedc4eeca6a274 3\tREADME.md"
+  ],
+  "local_integration_merge_sha": "ab2a616",
+  "local_benchmark_source_commit": "f8d522f",
+  "publication_note": "Local git commits identify workspace snapshots; publication via GitHub Git Data API creates a remote commit with the same final tree and both main and PR15 as parents. Local commit IDs are not promised as remote objects."
+}

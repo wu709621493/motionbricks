@@ -1,0 +1,12 @@
+test_dimensions (test_pyignite.Contracts.test_dimensions) ... ok
+test_dtype_and_training (test_pyignite.Contracts.test_dtype_and_training) ... ok
+test_nonfinite (test_pyignite.Contracts.test_nonfinite) ... ok
+test_overflow (test_pyignite.Contracts.test_overflow) ... ok
+test_repeat_and_noncontiguous (test_pyignite.Contracts.test_repeat_and_noncontiguous) ... ok
+test_torch_independent_import (test_pyignite.Contracts.test_torch_independent_import) ... ok
+test_values_and_shape (test_pyignite.Contracts.test_values_and_shape) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.167s
+
+OK
