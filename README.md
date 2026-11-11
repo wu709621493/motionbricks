@@ -536,3 +536,12 @@ sourced facts and policy judgments.
 reflects on quality time, welcome physical touch, independent living, and the missed
 reunion in Liu Cixin's *Death's End*. It distinguishes established clock physics,
 fictional cosmology, and original literary interpretation, with source notes.
+
+## Academic exchange and public language (fork editorial)
+
+[让“学术间谍”退出公共标签：从 F-117 的苏联理论来源谈起](docs/academic_spies_open_science_f117_zh.md)
+argues for replacing broad identity labels with descriptions of conduct and evidence.
+It traces Ufimtsev's published research through translation and engineering to the
+F-117, and presents intelligence-sector talent diversion as an opportunity-cost
+hypothesis requiring data.
+
