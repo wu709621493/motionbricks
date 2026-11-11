@@ -1,0 +1,103 @@
+<div id="yifei-double">
+  <style>
+    #yifei-double {color:var(--foreground)}
+    #yifei-double .stage {display:block;width:100%;height:360px}
+    #yifei-double .names {display:grid;grid-template-columns:1fr 1fr;text-align:center;margin:12px 0}
+    #yifei-double .label-a::before,#yifei-double .label-b::before {content:'● ';color:var(--viz-series-1)}
+    #yifei-double .label-b::before {color:var(--viz-series-2)}
+    #yifei-double .cue {min-height:3em;text-align:center;margin:12px 0}
+    #yifei-double .readout {display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:12px 0}
+    #yifei-double .timeline {width:100%}
+    @media(max-width:480px){#yifei-double .stage{height:290px}}
+  </style>
+  <h3>真假刘亦菲 · 同招不同步</h3>
+  <div class="text-small text-muted">虚构试镜 · 原创程序动作 · MotionBricks 神经推理未运行</div>
+  <div class="names"><span class="label-a">刘亦菲 · 戏仿角色 A</span><span class="label-b">刘亦飞 · 虚构角色 B</span></div>
+  <canvas class="stage" role="img" aria-label="两个抽象人偶同台走位、转身、亮相；可调整右侧人偶的延迟和镜像">双人骨架动作预演</canvas>
+  <div class="cue" aria-live="polite">导演：两位，先走一遍。</div>
+  <div class="viz-controls">
+    <button type="button" class="btn btn-primary" data-play>开始试镜</button>
+    <label class="form-check"><input class="form-check-input" type="checkbox" data-mirror><span class="form-check-label">亦飞左右反着来</span></label>
+  </div>
+  <div class="viz-controls">
+    <label class="form-label">亦飞慢半拍：<output data-delay-label>0.30 秒</output><input class="form-range" data-delay type="range" min="0" max="1" step="0.05" value="0.3"></label>
+    <label class="form-label">观看角度：<output data-angle-label>15°</output><input class="form-range" data-angle type="range" min="-80" max="80" step="5" value="15"></label>
+  </div>
+  <div class="readout text-small"><span data-phase>第一幕 · 入场</span><span data-time>0.00 / 12.00 秒</span><span data-rms>姿态差：0.0 cm</span></div>
+  <label class="form-label">试镜进度<input class="form-range timeline" data-time-slider type="range" min="0" max="12" step="0.0333333333" value="0"></label>
+  <div class="text-small text-muted">姿态差＝去除根位置后的同名关节 RMS；仅比较动画，不鉴定真人。</div>
+</div>
+<script>
+(() => {
+  const root=document.getElementById('yifei-double');
+  const data=/*__MOTION_DATA__*/null;
+  if (!data) return;
+  const $=s=>root.querySelector(s), canvas=$('canvas'), ctx=canvas.getContext('2d');
+  const names=Object.fromEntries(data.names.map((n,i)=>[n,i]));
+  let time=0,playing=false,last=null, raf=null;
+  const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
+  const finite=(v,fallback)=>Number.isFinite(Number(v))?Number(v):fallback;
+  function sample(t){
+    const frame=clamp(t,0,data.duration)*data.fps, i=Math.min(Math.floor(frame),data.frames.length-1), j=Math.min(i+1,data.frames.length-1), u=frame-i;
+    return data.frames[i].map((p,k)=>p.map((v,a)=>v*(1-u)+data.frames[j][k][a]*u));
+  }
+  function current(){
+    const a=sample(time), delay=clamp(finite($('[data-delay]').value,.3),0,1);
+    let b=sample(time-delay);
+    if($('[data-mirror]').checked){
+      b=data.names.map((n,i)=>{const partner=n.startsWith('Left')?n.replace('Left','Right'):n.startsWith('Right')?n.replace('Right','Left'):n;const p=b[names[partner]??i];return [-p[0],p[1],p[2]];});
+    }
+    const rms=Math.sqrt(a.reduce((sum,p,i)=>sum+p.reduce((s,v,k)=>s+((v-a[0][k])-(b[i][k]-b[0][k]))**2,0),0)/a.length)*100;
+    return {a,b,rms,delay};
+  }
+  function draw(){
+    const width=canvas.clientWidth,height=canvas.clientHeight,dpr=window.devicePixelRatio||1;
+    if(canvas.width!==Math.round(width*dpr)||canvas.height!==Math.round(height*dpr)){canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);}
+    ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);
+    const css=getComputedStyle(root), fg=css.getPropertyValue('--foreground').trim(), grid=css.getPropertyValue('--border').trim();
+    const colors=[css.getPropertyValue('--viz-series-1').trim(),css.getPropertyValue('--viz-series-2').trim()];
+    const angle=finite($('[data-angle]').value,15)*Math.PI/180, scale=Math.min(height/2.25,width/4.6);
+    const state=current();
+    ctx.strokeStyle=grid;ctx.lineWidth=1;
+    ctx.beginPath();ctx.moveTo(0,height*.88);ctx.lineTo(width,height*.88);ctx.stroke();
+    for(let side=0;side<2;side++){
+      const positions=side?state.b:state.a, cx=width*(side?.73:.27), cy=height*.88;
+      const project=p=>[cx+(p[0]*Math.cos(angle)+p[2]*Math.sin(angle))*scale,cy-p[1]*scale+(p[2]*Math.cos(angle)-p[0]*Math.sin(angle))*scale*.13];
+      const pts=positions.map(project);
+      function path(indices,close=false,fill=false){ctx.beginPath();indices.forEach((i,k)=>{const p=pts[i];k?ctx.lineTo(...p):ctx.moveTo(...p);});if(close)ctx.closePath();fill?ctx.fill():ctx.stroke();}
+      // Abstract costume polygons, not a portrait, cloth solver or collision mesh.
+      ctx.fillStyle=colors[side];ctx.globalAlpha=.15;path([10,16,26,22],true,true);ctx.globalAlpha=1;
+      ctx.strokeStyle=colors[side];ctx.lineCap='round';ctx.lineJoin='round';ctx.lineWidth=Math.max(3,scale*.035);
+      const limbs=[[0,1,2,3,4,5,6],[3,10,11,12,13],[3,16,17,18,19],[0,22,23,24,25],[0,26,27,28,29]];
+      limbs.forEach(ids=>path(ids));
+      ctx.lineWidth=Math.max(7,scale*.065);path([11,12]);path([17,18]);
+      ctx.beginPath();ctx.arc(pts[6][0],pts[6][1]-scale*.02,scale*.085,0,Math.PI*2);ctx.fillStyle=colors[side];ctx.fill();
+      ctx.strokeStyle=fg;ctx.lineWidth=1.2;
+      const q=positions[19],e=positions[18],v=q.map((x,i)=>x-e[i]),len=Math.hypot(...v);
+      const tip=project(q.map((x,i)=>x+v[i]/len*.48));
+      ctx.beginPath();ctx.moveTo(...pts[19]);ctx.lineTo(...tip);ctx.stroke();
+    }
+    $('[data-rms]').textContent=`姿态差：${state.rms.toFixed(1)} cm`;
+    $('[data-time]').textContent=`${time.toFixed(2)} / 12.00 秒`;
+    $('[data-delay-label]').textContent=`${state.delay.toFixed(2)} 秒`;
+    $('[data-angle-label]').textContent=`${$('[data-angle]').value}°`;
+    $('[data-time-slider]').value=time;
+    const phase=time<4?0:time<8?1:2;
+    $('[data-phase]').textContent=['第一幕 · 入场','第二幕 · 回眸','第三幕 · 亮相'][phase];
+    const cue=['导演：两位，先走一遍。','导演：我说回眸，没说回炉。','刘亦飞：她负责仙，我负责飞。'][phase];
+    if($('.cue').textContent!==cue) $('.cue').textContent=cue;
+    root.dataset.rms=state.rms.toFixed(6);root.dataset.time=time.toFixed(6);
+  }
+  function stop(){playing=false;last=null;if(raf!==null)cancelAnimationFrame(raf);raf=null;$('[data-play]').textContent=time>=12?'再来一条':'继续试镜';}
+  function tick(stamp){
+    if(!playing||!root.isConnected){stop();return;}
+    if(last!==null)time=Math.min(12,time+Math.min((stamp-last)/1000,.1));last=stamp;draw();
+    if(time>=12)stop();else raf=requestAnimationFrame(tick);
+  }
+  $('[data-play]').addEventListener('click',()=>{if(playing){stop();return;}if(time>=12)time=0;playing=true;last=null;$('[data-play]').textContent='暂停';raf=requestAnimationFrame(tick);});
+  $('[data-time-slider]').addEventListener('input',e=>{stop();time=clamp(finite(e.target.value,0),0,12);draw();});
+  for(const key of ['delay','angle','mirror'])$(`[data-${key}]`).addEventListener('input',draw);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
+  new ResizeObserver(draw).observe(canvas);draw();
+})();
+</script>

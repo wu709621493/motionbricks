@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-11-11",
+  "base_commit": "329c4888bb0a7c344ad1f71cf554a7dd2daf61a2",
+  "source": "ORIGINAL_PROCEDURAL",
+  "fps": 30,
+  "duration_seconds": 12,
+  "sampled_frames": 361,
+  "joints": 30,
+  "cpu_unit_tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "pose_contract": "PASS",
+  "javascript": {
+    "syntax": "PASS",
+    "interaction_logic": "PASS_WITH_MOCKED_DOM",
+    "checks": [
+      "zero delay",
+      "delay difference",
+      "left-right mirror",
+      "play pause restart",
+      "finite canvas coordinates"
+    ]
+  },
+  "browser_visual_review": "NOT_RUN",
+  "browser_blocker": "Local browser process could not start; cloud browser policy disallows file URLs. No visual or mobile browser acceptance claimed.",
+  "inference": "NOT_RUN",
+  "runtime_prerequisites_verified": false,
+  "runtime_blockers": [
+    {
+      "name": "cuda_driver",
+      "status": "FAIL",
+      "detail": "libcuda.so.1: cannot open shared object file: No such file or directory"
+    },
+    {
+      "name": "tensorrt_import",
+      "status": "FAIL",
+      "detail": "process exited 1: Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'tensorrt'"
+    },
+    {
+      "name": "warp_cuda",
+      "status": "FAIL",
+      "detail": "process exited 1: Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'warp'"
+    }
+  ],
+  "physics": "NOT_SIMULATED",
+  "soma_proportions": "NOT_VALIDATED",
+  "render_data_sha256": "f094dba0216553ad5862a3c01c2142924eaabfa35cc07c16f661a7220d273e2f"
+}
