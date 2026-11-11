@@ -529,3 +529,10 @@ examines Sun Yang's sample-collection case and its procedural review alongside
 Mbappé's October 2026 interview controversy. The Chinese editorial distinguishes
 individual responsibility, institutional decisions, access to original statements,
 sourced facts and policy judgments.
+
+## Time and intimacy (fork literary essay)
+
+[错位永恒：陪伴、拥抱与有限的生命时间](docs/misaligned_eternity_time_intimacy_zh.md)
+reflects on quality time, welcome physical touch, independent living, and the missed
+reunion in Liu Cixin's *Death's End*. It distinguishes established clock physics,
+fictional cosmology, and original literary interpretation, with source notes.
