@@ -2,6 +2,8 @@
 
 核查日期：2026-11-11（Asia/Shanghai）。[中文正文](../../han_river_hormones_pde5_ecology_zh.md) · [浓度表](concentrations.csv)
 
+后续增补：[可复现 CSV 校验与测试证据](VALIDATION.md) · [两栖动物与 Xenopus 推论](../../han_river_amphibians_xenopus_zh.md)。[讨论摘要与技能](../../han_river_xenopus_session_summary_zh.md)。以下原始检索与人工复核记录保留；新增自动检查的运行结果单独记录。
+
 ## 范围与方法
 
 本次为有针对性的公开资料检索与原始文献核查，不是穷尽数据库的系统综述，未做现场采样、实验或作者访谈。研究区域限定韩国汉江及相关首尔支流；排除中国 Hanjiang、武汉汉江、日本河流及无法定位的“韩国水体”浓度。检索覆盖英文和韩文关键词，使用两个搜索引擎交叉查找，并回到期刊、PubMed、作者机构或官方页面。

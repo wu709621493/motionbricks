@@ -1,0 +1,42 @@
+name: Han River CSV validation
+on:
+  pull_request:
+    paths:
+      - 'docs/data/han_river_pharmaceuticals/**'
+      - 'docs/han_river_amphibians_xenopus_zh.md'
+      - 'docs/han_river_hormones_pde5_ecology_zh.md'
+      - 'docs/han_river_xenopus_session_summary_zh.md'
+      - '.agents/skills/lay-eggs-xenopus/**'
+      - 'tools/validate_han_river_csv.py'
+      - 'tests/han_river/**'
+      - '.github/workflows/han-river-csv.yml'
+  push:
+    paths:
+      - 'docs/data/han_river_pharmaceuticals/**'
+      - 'docs/han_river_amphibians_xenopus_zh.md'
+      - 'docs/han_river_hormones_pde5_ecology_zh.md'
+      - 'docs/han_river_xenopus_session_summary_zh.md'
+      - '.agents/skills/lay-eggs-xenopus/**'
+      - 'tools/validate_han_river_csv.py'
+      - 'tests/han_river/**'
+      - '.github/workflows/han-river-csv.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Validate evidence table (standard library only)
+        run: python -S tools/validate_han_river_csv.py
+      - name: CPU unit and decline tests
+        run: python -S -m unittest discover -s tests/han_river -v
