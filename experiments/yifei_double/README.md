@@ -51,7 +51,7 @@ python experiments/yifei_double/build.py
 当前只导出参考角色 A 的单个格式样本；B 的显示延迟和镜像没有作为模型输入导出。
 
 ```sh
-python -m unittest discover -s experiments/yifei_double -v
+python -X warn_default_encoding -W error::EncodingWarning -m unittest discover -s experiments/yifei_double -v
 node experiments/yifei_double/test_preview.cjs
 python tools/preflight.py --model soma --poses experiments/yifei_double/output/soma_pose_window.json --json
 python tools/preflight.py --model soma --require-runtime --json
@@ -62,6 +62,11 @@ python tools/preflight.py --model soma --require-runtime --json
 
 Node 脚本使用模拟 DOM/Canvas 检查交互逻辑，不是浏览器测试。本次本地 Chromium
 无法启动，云浏览器策略也不允许本地文件 URL，因此尚未完成画面和手机布局的目视验收。
+
+专用工作流 `Yifei double CPU preview` 在 Ubuntu、Windows、macOS 上使用
+Python 3.12 / Node 22 执行构建、6 项 Python 测试、交互逻辑和姿态校验。
+覆盖中文 UTF-8 文件读写、镜像时道具随持有手反射，以及拖动进度后的播放按钮文案。
+工作流存在不代表某次运行成功，具体结果以对应提交的 Actions 记录为准。
 
 `build.py` 仅使用 Python 标准库；会核对当前 SOMA manifest 关节顺序，并调用
 现有 `tools/preflight.py::validate_poses`。渲染数据由这些姿态计算，非另一套手工动画。

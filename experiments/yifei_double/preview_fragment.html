@@ -73,9 +73,11 @@
       ctx.lineWidth=Math.max(7,scale*.065);path([11,12]);path([17,18]);
       ctx.beginPath();ctx.arc(pts[6][0],pts[6][1]-scale*.02,scale*.085,0,Math.PI*2);ctx.fillStyle=colors[side];ctx.fill();
       ctx.strokeStyle=fg;ctx.lineWidth=1.2;
-      const q=positions[19],e=positions[18],v=q.map((x,i)=>x-e[i]),len=Math.hypot(...v);
+      const mirrored=side===1 && $('[data-mirror]').checked;
+      const hand=names[mirrored?'LeftHand':'RightHand'],forearm=names[mirrored?'LeftForeArm':'RightForeArm'];
+      const q=positions[hand],e=positions[forearm],v=q.map((x,i)=>x-e[i]),len=Math.hypot(...v);
       const tip=project(q.map((x,i)=>x+v[i]/len*.48));
-      ctx.beginPath();ctx.moveTo(...pts[19]);ctx.lineTo(...tip);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(...pts[hand]);ctx.lineTo(...tip);ctx.stroke();
     }
     $('[data-rms]').textContent=`姿态差：${state.rms.toFixed(1)} cm`;
     $('[data-time]').textContent=`${time.toFixed(2)} / 12.00 秒`;
@@ -95,7 +97,7 @@
     if(time>=12)stop();else raf=requestAnimationFrame(tick);
   }
   $('[data-play]').addEventListener('click',()=>{if(playing){stop();return;}if(time>=12)time=0;playing=true;last=null;$('[data-play]').textContent='暂停';raf=requestAnimationFrame(tick);});
-  $('[data-time-slider]').addEventListener('input',e=>{stop();time=clamp(finite(e.target.value,0),0,12);draw();});
+  $('[data-time-slider]').addEventListener('input',e=>{time=clamp(finite(e.target.value,0),0,12);stop();draw();});
   for(const key of ['delay','angle','mirror'])$(`[data-${key}]`).addEventListener('input',draw);
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
   new ResizeObserver(draw).observe(canvas);draw();

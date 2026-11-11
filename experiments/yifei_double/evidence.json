@@ -7,7 +7,7 @@
   "sampled_frames": 361,
   "joints": 30,
   "cpu_unit_tests": {
-    "passed": 5,
+    "passed": 6,
     "failed": 0
   },
   "pose_contract": "PASS",
@@ -19,7 +19,9 @@
       "delay difference",
       "left-right mirror",
       "play pause restart",
-      "finite canvas coordinates"
+      "finite canvas coordinates",
+      "mirrored prop endpoints",
+      "scrub button label"
     ]
   },
   "browser_visual_review": "NOT_RUN",
@@ -45,5 +47,19 @@
   ],
   "physics": "NOT_SIMULATED",
   "soma_proportions": "NOT_VALIDATED",
-  "render_data_sha256": "f094dba0216553ad5862a3c01c2142924eaabfa35cc07c16f661a7220d273e2f"
+  "render_data_sha256": "b890e97ffa35ebef3df1410051893e34a3a77dee4da94432d50eeb63b1b0f1c2",
+  "reviewed_from_commit": "a76a507336beed90857b29bcec3829afd403db2b",
+  "regressions_fixed": [
+    "explicit UTF-8 text I/O",
+    "reflect prop with holding hand",
+    "update play label after scrubbing"
+  ],
+  "source_files_sha256": {
+    "experiments/yifei_double/build.py": "b19660d68958a8a775594f333d549a70550ccb91ff60c05dff8f8129214eb819",
+    "experiments/yifei_double/test_build.py": "9a975ae9b18464c9def057a3c359c1eb68f2c5471b540656a14d8fab26b73faa",
+    "experiments/yifei_double/test_preview.cjs": "3b5db069bea20ae798013dbea8d779874caf5c9df2a513961ba9248667e644d5",
+    "experiments/yifei_double/preview_fragment.html": "b514e296b9aa61e3ad4b4760a2b91a4c9f21e1af8d1e991b52251810a855b86c",
+    ".github/workflows/yifei-double.yml": "fd01044538ec66306c9198f22e341dcf58f70cacfac05f62abe7d903550696f3"
+  },
+  "ci_at_recording": "NOT_RUN_FOR_REVISED_SOURCE; see commit-specific Actions results"
 }

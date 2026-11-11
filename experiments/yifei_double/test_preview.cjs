@@ -14,7 +14,14 @@ for(const key of ['play','mirror','delay','angle','time-slider','phase','time','
 element('[data-delay]').value='.3';element('[data-angle]').value='15';
 element('.cue');
 let draws=0;
-const context=new Proxy({}, {get:(t,k)=>t[k]??((...args)=>{assert(args.every(x=>typeof x!=='number'||Number.isFinite(x)));if(k==='stroke')draws++;}),set:(t,k,v)=>(t[k]=v,true)});
+let vertices=[];
+const propSegments=[];
+const context=new Proxy({}, {get:(t,k)=>t[k]??((...args)=>{
+  assert(args.every(x=>typeof x!=='number'||Number.isFinite(x)));
+  if(k==='beginPath')vertices=[];
+  if(k==='moveTo'||k==='lineTo')vertices.push(args);
+  if(k==='stroke'){draws++;if(t.lineWidth===1.2)propSegments.push(vertices);}
+}),set:(t,k,v)=>(t[k]=v,true)});
 elements.canvas={clientWidth:327,clientHeight:290,width:0,height:0,getContext:()=>context};
 const root={querySelector:element,dataset:{},isConnected:true};
 let callbacks=new Map(),id=0;
@@ -26,8 +33,19 @@ function tick(t){const pending=[...callbacks.values()];callbacks.clear();pending
 input('time-slider',2.2);input('delay',0);assert(+root.dataset.rms<1e-5);
 input('delay',.3);assert(+root.dataset.rms>1);
 input('time-slider',9.5);input('delay',0);assert(+root.dataset.rms<1e-5);
+input('angle',0);
 element('[data-mirror]').checked=true;element('[data-mirror]').listeners.input();assert(+root.dataset.rms>1);
+// Both endpoints of the prop must reflect with the original holding hand.
+const [leftProp,rightProp]=propSegments.slice(-2);
+for(let i=0;i<2;i++){
+  assert(Math.abs(leftProp[i][0]+rightProp[i][0]-elements.canvas.clientWidth)<1e-6,'mirrored prop X');
+  assert(Math.abs(leftProp[i][1]-rightProp[i][1])<1e-6,'mirrored prop Y');
+}
+element('[data-mirror]').checked=false;element('[data-mirror]').listeners.input();assert(+root.dataset.rms<1e-5);
 click();tick(0);tick(100);assert(+root.dataset.time>9.5);click();assert.equal(callbacks.size,0);
+input('time-slider',12);assert.equal(element('[data-play]').textContent,'再来一条');
+input('time-slider',2);assert.equal(element('[data-play]').textContent,'继续试镜');
+assert.equal(callbacks.size,0);
 input('time-slider',12);click();tick(200);tick(300);assert(+root.dataset.time<1);click();
 assert(draws>0);
-console.log(JSON.stringify({javascript_syntax:'PASS',mocked_dom_logic:'PASS',zero_delay:'PASS',delay_effect:'PASS',mirror:'PASS',play_pause_restart:'PASS',canvas_coordinates_finite:'PASS',browser_render:'NOT_RUN'}));
+console.log(JSON.stringify({javascript_syntax:'PASS',mocked_dom_logic:'PASS',zero_delay:'PASS',delay_effect:'PASS',mirror:'PASS',mirrored_prop:'PASS',scrub_button_label:'PASS',play_pause_restart:'PASS',canvas_coordinates_finite:'PASS',browser_render:'NOT_RUN'}));

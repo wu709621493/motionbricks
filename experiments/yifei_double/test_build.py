@@ -1,11 +1,25 @@
 # SPDX-License-Identifier: Apache-2.0
 """Geometry and contract tests; no GPU inference implied."""
 import math
+import json
+from pathlib import Path
+import tempfile
 import unittest
 import build
 
 
 class ChoreographyTests(unittest.TestCase):
+    def test_build_utf8_and_pose_export(self):
+        with tempfile.TemporaryDirectory() as directory:
+            result=build.build(directory)
+            output=Path(directory)
+            html=(output/'Yifei_Double_Audition.html').read_text(encoding='utf-8')
+            self.assertIn('真假刘亦菲',html)
+            self.assertNotIn('/*__MOTION_DATA__*/null',html)
+            self.assertEqual(json.loads((output/'soma_pose_window.json').read_text(encoding='utf-8')),build.pose_window())
+            self.assertEqual(result['frames'],361)
+            self.assertEqual(result['model_inference'],'NOT_RUN')
+
     def test_quaternion_axis_and_composition(self):
         for a,b in zip(build.rotate(build.quaternion(z=90),[1,0,0]),[0,1,0]):
             self.assertAlmostEqual(a,b)

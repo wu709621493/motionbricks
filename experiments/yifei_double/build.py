@@ -113,7 +113,7 @@ def pose_window(context_end=4., target_start=5.):
 def build(output):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
-    manifest = json.loads((ROOT / "motionbricks/assets/onnx/soma/soma_n1.json").read_text())
+    manifest = json.loads((ROOT / "motionbricks/assets/onnx/soma/soma_n1.json").read_text(encoding="utf-8"))
     if manifest["joint_names"] != [r[0] for r in RIG]:
         raise ValueError("SOMA joint contract changed; review rig before export")
     spec = importlib.util.spec_from_file_location("preflight", ROOT/"tools/preflight.py")
@@ -125,12 +125,12 @@ def build(output):
     data = {"fps":FPS, "duration":DURATION,
             "names":[r[0] for r in RIG], "parents":[r[1] for r in RIG],
             "frames":[[[round(v,5) for v in xyz] for xyz in f] for f in frames]}
-    fragment = (HERE/"preview_fragment.html").read_text().replace(
+    fragment = (HERE/"preview_fragment.html").read_text(encoding="utf-8").replace(
         "/*__MOTION_DATA__*/null", json.dumps(data,separators=(",",":")))
-    (output/"yifei-double.fragment.html").write_text(fragment)
+    (output/"yifei-double.fragment.html").write_text(fragment, encoding="utf-8")
     wrapper = '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>真假刘亦菲 · 双人试镜</title><style>body{margin:0;padding:24px;max-width:900px;margin:auto;font:16px/1.6 system-ui;color:#e9eef4;background:#101b25;--foreground:#e9eef4;--muted-foreground:#acbbc6;--border:#42515b;--viz-series-1:#6cdbbf;--viz-series-2:#c0a6fa}button,select,input{font:inherit}button,select{padding:8px 14px;color:inherit;background:#283844;border:1px solid #526674;border-radius:7px}input[type=range]{width:100%}.viz-controls,.viz-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.form-label{flex:1;min-width:180px}.text-small{font-size:13px}.text-muted{color:var(--muted-foreground)}button{cursor:pointer}</style><body>'
-    (output/"Yifei_Double_Audition.html").write_text(wrapper+fragment+'</body></html>')
-    (output/"soma_pose_window.json").write_text(json.dumps(envelope,indent=2))
+    (output/"Yifei_Double_Audition.html").write_text(wrapper+fragment+'</body></html>', encoding="utf-8")
+    (output/"soma_pose_window.json").write_text(json.dumps(envelope,indent=2), encoding="utf-8")
     return {"frames":len(frames), "fps":FPS, "joints":len(RIG),
             "pose_format":"PASS", "motion_source":"ORIGINAL_PROCEDURAL",
             "model_inference":"NOT_RUN", "identity_recognition":"NOT_IMPLEMENTED",

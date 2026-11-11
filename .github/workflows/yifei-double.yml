@@ -1,0 +1,42 @@
+name: Yifei double CPU preview
+on:
+  push:
+    paths:
+      - 'experiments/yifei_double/**'
+      - 'tools/preflight.py'
+      - 'motionbricks/assets/onnx/soma/soma_n1.json'
+      - '.github/workflows/yifei-double.yml'
+  pull_request:
+    paths:
+      - 'experiments/yifei_double/**'
+      - 'tools/preflight.py'
+      - 'motionbricks/assets/onnx/soma/soma_n1.json'
+      - '.github/workflows/yifei-double.yml'
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Geometry and UTF-8 build regression tests
+        run: python -X warn_default_encoding -W error::EncodingWarning -m unittest discover -s experiments/yifei_double -v
+      - name: Build offline preview and SOMA pose window
+        run: python -X warn_default_encoding -W error::EncodingWarning experiments/yifei_double/build.py
+      - name: Preview interaction logic (mocked DOM, not browser rendering)
+        run: node experiments/yifei_double/test_preview.cjs
+      - name: Validate SOMA pose format (not GPU inference)
+        run: python tools/preflight.py --model soma --poses experiments/yifei_double/output/soma_pose_window.json --json
