@@ -1,0 +1,4 @@
+interface:
+  display_name: "lay eggs! Xenopus!"
+  short_description: "Audit Han River evidence and Xenopus ecological inferences"
+  default_prompt: "Use $lay-eggs-xenopus to validate the Han River evidence table and review Xenopus ecological inferences."
