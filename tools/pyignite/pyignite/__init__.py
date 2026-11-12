@@ -3,9 +3,14 @@ import ctypes as C
 from pathlib import Path
 import platform
 import numpy as np
+from .position import PositionEmbedding
 
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 _lib = None
+
+class _Layer(C.Structure):
+    _fields_ = [('size_in', C.c_size_t), ('size_out', C.c_size_t),
+                ('weight', C.POINTER(C.c_float)), ('bias', C.POINTER(C.c_float))]
 
 def _native():
     global _lib
@@ -15,7 +20,9 @@ def _native():
         ptr = np.ctypeslib.ndpointer(dtype=np.float32, flags='C_CONTIGUOUS')
         lib.ignite_pe.argtypes = [C.c_size_t, C.c_size_t, ptr]
         lib.ignite_linear.argtypes = [C.c_size_t]*3 + [ptr]*4 + [C.c_int]
-        lib.ignite_pe.restype = lib.ignite_linear.restype = C.c_int
+        lib.ignite_fc.argtypes = [C.POINTER(_Layer), C.c_size_t, C.c_size_t,
+                                 ptr, ptr, ptr, C.c_size_t]
+        lib.ignite_pe.restype = lib.ignite_linear.restype = lib.ignite_fc.restype = C.c_int
         _lib = lib
     return _lib
 
@@ -47,10 +54,16 @@ class FCBlock:
     Include all hidden layers followed by the unactivated output projection.
     Eval dropout is identity. Training-mode dropout is deliberately unsupported.
     Weights are copied at construction; arbitrary positive leading dimensions work.
+    backend='scalar' retains the original implementation. 'fused' performs one
+    native call for the block; 'numpy' uses NumPy's matrix backend. Selection is
+    explicit because the fastest choice depends on shape, BLAS and hardware.
     """
-    def __init__(self, layers, *, training=False):
+    def __init__(self, layers, *, training=False, backend='scalar'):
         if training:
             raise ValueError('training is unsupported')
+        if backend not in ('scalar', 'fused', 'numpy'):
+            raise ValueError('backend must be scalar, fused or numpy')
+        self.backend = backend
         self._layers = []
         previous = None
         for weight, bias in layers:
@@ -60,10 +73,17 @@ class FCBlock:
             if previous is not None and w.shape[1] != previous:
                 raise ValueError('disconnected layer dimensions')
             previous = w.shape[0]
-            w.flags.writeable = b.flags.writeable = False
+            # Bytes-backed arrays cannot have writes re-enabled. This is the
+            # ownership contract permitting fused calls to skip weight rescans.
+            w = np.frombuffer(w.tobytes(), np.float32).reshape(w.shape)
+            b = np.frombuffer(b.tobytes(), np.float32).reshape(b.shape)
             self._layers.append((w, b))
         if len(self._layers) < 2:
             raise ValueError('at least one hidden layer and one projection required')
+        self._descriptors = (_Layer * len(self._layers))(*[
+            _Layer(w.shape[1], w.shape[0], w.ctypes.data_as(C.POINTER(C.c_float)),
+                   b.ctypes.data_as(C.POINTER(C.c_float))) for w, b in self._layers])
+        self._width = max(w.shape[0] for w, _ in self._layers[:-1])
 
     @property
     def weight_bytes(self):
@@ -74,8 +94,29 @@ class FCBlock:
         if h.ndim < 1 or 0 in h.shape or h.shape[-1] != self._layers[0][0].shape[1]:
             raise ValueError('invalid input dimensions')
         leading = h.shape[:-1]
+        if self.backend == 'fused':
+            rows = h.size // h.shape[-1]
+            y = np.empty((*leading, self._layers[-1][0].shape[0]), np.float32)
+            # Per-call scratch keeps simultaneous calls independent. The two
+            # buffers are reused between hidden layers, never across callers.
+            workspace = np.empty((2, rows, self._width), np.float32)
+            status = _native().ignite_fc(self._descriptors, len(self._layers), rows,
+                                        h, y, workspace, self._width)
+            if status:
+                raise ValueError('invalid dimensions or non-finite native result')
+            return y
         for i, (w, b) in enumerate(self._layers):
             y = np.empty((*leading, w.shape[0]), dtype=np.float32)
+            if self.backend == 'numpy':
+                with np.errstate(over='ignore', invalid='ignore'):
+                    np.matmul(h, w.T, out=y)
+                    np.add(y, b, out=y)
+                if not np.isfinite(y).all():
+                    raise ValueError('non-finite matrix result')
+                if i < len(self._layers)-1:
+                    np.multiply(y, np.float32(.01), out=y, where=y < 0)
+                h = y
+                continue
             status = _native().ignite_linear(h.size // h.shape[-1], h.shape[-1],
                 w.shape[0], h, w, b, y, int(i < len(self._layers)-1))
             if status:

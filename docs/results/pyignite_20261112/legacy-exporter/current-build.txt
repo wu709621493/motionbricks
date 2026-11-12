@@ -1,0 +1,1 @@
+c++ -std=c++17 -O2 -fPIC -ffp-contract=off -Wall -Wextra -shared /workspace/scratch/cdd831bb063e/motionbricks/tools/pyignite/kernels.cpp -o /workspace/scratch/cdd831bb063e/motionbricks/tools/pyignite/pyignite/libpyignite.so

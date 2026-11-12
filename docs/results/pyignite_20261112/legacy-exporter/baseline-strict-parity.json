@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "python": "3.12.14",
+  "numpy": "1.26.4",
+  "torch": "2.14.0+cpu",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "atol": 2e-05,
+  "rtol": 2e-05,
+  "source_sha256": {
+    "tools/pyignite/kernels.cpp": "ef261fdfbdaf0600ad3665b9ccb3b9c3c52c07197aa81cf6a6a89f45d5239ac8",
+    "tools/pyignite/pyignite/__init__.py": "10bdeb88c5778e335e73cf89b5eecf4f6b74a095dfca4b18f3136a71c2242fbe",
+    "tools/pyignite/validate.py": "56299473579373301a04f7a56f3c50e5fe453368271fade44dbafde7428cb405",
+    "tools/onnx/models/layers.py": "426925febc7fb57b769108b410f4b0732f8e27498ab687dbc477a6df189f9d26"
+  },
+  "cases": [
+    {
+      "name": "PE-1-2",
+      "status": "PASS",
+      "max_abs_error": 0.0,
+      "violations": 0,
+      "elements": 2,
+      "repeat_identical": true,
+      "actual_sha256": "22b6f43bd8d27738d3213f29e96b62d01d9d6c0ab4f9732aaae803186f51eab7",
+      "reference_sha256": "22b6f43bd8d27738d3213f29e96b62d01d9d6c0ab4f9732aaae803186f51eab7",
+      "violations_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+    },
+    {
+      "name": "PE-17-32",
+      "status": "PASS",
+      "max_abs_error": 5.960464477539063e-08,
+      "violations": 0,
+      "elements": 544,
+      "repeat_identical": true,
+      "actual_sha256": "3788f6bcb93e313da651fb3f2844ad01815f25e2278a285f46288638a358b6e9",
+      "reference_sha256": "4bba14230fac637fe6dd6cbe089c8e20cc275874bd21b9fb951a099347f3d7ed",
+      "violations_sha256": "44ddd2f478477ebd1c1cd5b99400af48cd46033c59173195f48870e608cec810"
+    },
+    {
+      "name": "PE-256-512",
+      "status": "PASS",
+      "max_abs_error": 7.621943950653076e-06,
+      "violations": 0,
+      "elements": 131072,
+      "repeat_identical": true,
+      "actual_sha256": "77f30e99bebf8834709c6cd8a8a72ac16a6dc144f95c5a2a1442a08f99ffa40e",
+      "reference_sha256": "73794c3a0561aac08a3ec64042214704e65a1c90db05a74638745b77d6a6823b",
+      "violations_sha256": "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471"
+    },
+    {
+      "name": "PE-4096-64",
+      "status": "PASS",
+      "max_abs_error": 1.52587890625e-05,
+      "violations": 0,
+      "elements": 262144,
+      "repeat_identical": true,
+      "actual_sha256": "cbb937bcea25113876ce55b67252fa1e8198630c6cc9e5753093581aad2d7b31",
+      "reference_sha256": "c2f1230e9202a065c1b7b15b6d2049752c78b6ee8442b5a4c173fe6dc81a2832",
+      "violations_sha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90"
+    },
+    {
+      "name": "FC-1-8-(3,)",
+      "status": "PASS",
+      "max_abs_error": 1.4901161193847656e-08,
+      "violations": 0,
+      "elements": 2,
+      "repeat_identical": true,
+      "actual_sha256": "46ad774de1a9733caa61df51fdb2f518791a837c3d479d43be618225a9eae83d",
+      "reference_sha256": "1265d8765da9ba6208ea1d51aada2622b517a6c8c1f92d1fdf1377b2b8f86fde",
+      "violations_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+    },
+    {
+      "name": "FC-2-32-(4, 7)",
+      "status": "PASS",
+      "max_abs_error": 2.9802322387695312e-08,
+      "violations": 0,
+      "elements": 20,
+      "repeat_identical": true,
+      "actual_sha256": "31f5727b8e3c45cf0d6ec8fb4c2b5856972a58b13f00d08ca4cd3ab00cc00f2d",
+      "reference_sha256": "360050402d0752b83f3ebea9ff1fb8726e42fc7da4820a7da45712cccf89de10",
+      "violations_sha256": "de47c9b27eb8d300dbb5f2c353e632c393262cf06340c4fa7f1b40c4cbd36f90"
+    },
+    {
+      "name": "FC-3-64-(2, 11, 16)",
+      "status": "PASS",
+      "max_abs_error": 1.2479722499847412e-07,
+      "violations": 0,
+      "elements": 198,
+      "repeat_identical": true,
+      "actual_sha256": "7b5a68bf3e81ae62c1d9403b84fc94a9cb91a7029644800a79785229b907a507",
+      "reference_sha256": "9aa0cc164bd0cc14129b5d89db915e41f1411d7a3945bbda6e650d11e6a73f21",
+      "violations_sha256": "a6eab4025a7c9c0877549f6e5d790f66af88ee7f2320e814954e638d8051f812"
+    },
+    {
+      "name": "FC-2-256-(32, 128)",
+      "status": "PASS",
+      "max_abs_error": 2.7418136596679688e-06,
+      "violations": 0,
+      "elements": 2048,
+      "repeat_identical": true,
+      "actual_sha256": "122a913d6cde4bd8ebe79672549805770b44c81363dc1d090699e547dc769c3f",
+      "reference_sha256": "44893f67de83ad54d09ac3d63937b494a40c87401797d042641aeca0bdba7972",
+      "violations_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    }
+  ],
+  "note": "Existing fixtures/tolerances unchanged; every case evaluated."
+}

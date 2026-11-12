@@ -1,0 +1,5 @@
+# Torch/NumPy are selected separately for the two oracle environments.
+onnx==1.23.2
+onnxruntime==1.31.1
+safetensors==0.8.0
+pyyaml

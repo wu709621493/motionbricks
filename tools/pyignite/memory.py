@@ -7,12 +7,12 @@ import sys
 import numpy as np
 
 parser = argparse.ArgumentParser()
-parser.add_argument('backend', choices=['native','torch'])
+parser.add_argument('backend', choices=['native','fused','numpy','torch'])
 args = parser.parse_args()
 def rss():
     return resource.getrusage(resource.RUSAGE_SELF).ru_maxrss * (1 if sys.platform == 'darwin' else 1024)
 before = rss()
-if args.backend == 'native':
+if args.backend != 'torch':
     from pyignite import FCBlock
 else:
     import torch
@@ -22,8 +22,8 @@ rng = np.random.default_rng(20261102)
 layers = [(rng.normal(0,.1,(o,i)).astype(np.float32),np.zeros(o,np.float32))
           for i,o in [(128,256),(256,256),(256,64)]]
 x = rng.normal(size=(32,128)).astype(np.float32)
-if args.backend == 'native':
-    model = FCBlock(layers)
+if args.backend != 'torch':
+    model = FCBlock(layers, backend='scalar' if args.backend == 'native' else args.backend)
     for _ in range(100): y = model(x)
 else:
     modules = []

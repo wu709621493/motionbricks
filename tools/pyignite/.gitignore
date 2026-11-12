@@ -1,3 +1,6 @@
 pyignite/*.so
 pyignite/*.dylib
 __pycache__/
+build/
+dist/
+*.egg-info/

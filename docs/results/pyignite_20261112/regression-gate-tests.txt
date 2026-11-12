@@ -1,0 +1,10 @@
+test_changed_known_failure_rejected (test_baseline_regression.RegressionGate.test_changed_known_failure_rejected) ... ok
+test_fixed_current_case_is_accepted (test_baseline_regression.RegressionGate.test_fixed_current_case_is_accepted) ... ok
+test_identical_known_failure_is_not_claimed_as_parity_pass (test_baseline_regression.RegressionGate.test_identical_known_failure_is_not_claimed_as_parity_pass) ... ok
+test_missing_case_tolerance_or_unexpected_baseline_fail_rejected (test_baseline_regression.RegressionGate.test_missing_case_tolerance_or_unexpected_baseline_fail_rejected) ... ok
+test_new_failure_rejected (test_baseline_regression.RegressionGate.test_new_failure_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK
