@@ -89,6 +89,13 @@ GitHub 的创始人文章强调促进协作，官方文档将其描述为支持�
 >
 > **人还是人，经历还是经历。至于意识如何成为体验——尚未说清的，就继续研究。**
 
+## 后续讨论：器官移植与麻醉
+
+[意识组件假说：从器官移植、他心问题到麻醉与系统状态](consciousness_components_transplant_anesthesia_zh.md)
+将本稿的部件—整体边界延伸到人心与猪心移植、肝肾对照及麻醉研究，
+分别讨论体验调节、供者特有信息与主体延续，并提出前瞻测量与盲法检验建议。
+这是一份文献评议与研究假说，不构成供者记忆或意识转移的证明。
+
 ## English abstract
 
 An original tool-oriented design does not, by itself, establish that every later implementation or larger system containing the tool could never be conscious. The user's spine–person analogy illustrates a part–whole distinction: a non-conscious component does not establish a non-conscious whole, and a conscious whole does not establish that each component is independently conscious. These are limits on inference, not evidence that GitHub is conscious. Claims about a particular system require a specified system boundary, explicit assumptions, and evidence. The problem of other minds further distinguishes third-person observation from first-person experience; this gap calls for calibrated inference rather than blanket denial or certainty. Waking, dreaming, and nested dream narratives further separate identity, experience, and its remembered content. Neural correlates can be studied without claiming that a single location or a count of dream layers exhausts the explanation of consciousness.
