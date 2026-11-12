@@ -583,3 +583,11 @@ hypothesis requiring data.
 附47项来源登记、115个集合项目索引、40条证据编码与8道未执行的核验任务。
 本研究未测量财富的因果效应或“了解一个人”的总百分比。
 
+## Policy accountability and document archiving (fork editorial and skill)
+
+[计划生育与疫情政策批评及个人责任追查 v0.3](docs/policy_accountability/policy_accountability_v0.3.md)
+保留已确认的作者原话、保尔·柯察金引文、事实与评价范围及八项参考资料；
+同目录保存 [Word 原件](docs/policy_accountability/policy_accountability_v0.3.docx)与 SHA-256 校验清单。
+[Py仓文档入仓技能](.agents/skills/py-repo-docs/SKILL.md)提供仅依赖 Python 标准库的简单 DOCX 归档工具，
+生成 Markdown、保留原件并验证散列与正文一致性；提交与 PR 回读由协作工具完成，默认不自动合并。
+

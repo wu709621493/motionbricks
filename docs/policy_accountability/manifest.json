@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "document_version": "0.3",
+  "conversion": "paragraph-docx-to-markdown-v1",
+  "files": [
+    {
+      "path": "policy_accountability_v0.3.docx",
+      "size_bytes": 41676,
+      "sha256": "7d177fb9ff4bfbcb23f4726a6178d1ab6624fadbca644fa8eb18d34a3270a374"
+    },
+    {
+      "path": "policy_accountability_v0.3.md",
+      "size_bytes": 8120,
+      "sha256": "2d8ded1d6b54aa22423d2a525acfad61429a74fdcd221449c8c8e2443741b532"
+    }
+  ]
+}
