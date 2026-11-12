@@ -561,6 +561,7 @@ hypothesis requiring data.
 
 ## GitHub 与“结合”的技能定位（fork extension）
 
-本仓库将 GitHub 与“结合”定义为技能，并明确两者不具有自主意识。
-详见 [技能定义及原文依据](docs/github_jiehe_skill_definition_zh.md)；
+本仓库将 GitHub 与“结合”定义为技能，按协作工具与当前实现描述其能力，不将其预设为具有主观体验的主体。
+原始定位不构成对未来意识可能性的永久否定；部件与整体也须分别判断。
+详见 [技能定义及原文依据](docs/github_jiehe_skill_definition_zh.md)与 [代码仓 87：原义、部件与整体的意识边界](docs/github_consciousness_possibility_zh.md)；
 “结合”的当前实现与使用范围见 [Git Gap](examples/git_gap/README.md)。
