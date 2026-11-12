@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "version": "0.2.0",
+  "numpy": "1.26.4",
+  "torch_imported": false,
+  "module": "/workspace/scratch/cdd831bb063e/wheel-venv/lib/python3.12/site-packages/pyignite/__init__.py",
+  "import_us": 111950.409,
+  "peak_rss_bytes": 36352000,
+  "note": "isolated process after wheel install; tiny smoke workload; import timer excludes interpreter startup"
+}

@@ -1,0 +1,19 @@
+test_all_lengths (test_reference.ContractTests.test_all_lengths) ... ok
+test_frame_slices_and_ownership (test_reference.ContractTests.test_frame_slices_and_ownership) ... ok
+test_hash_stable_and_content_sensitive (test_reference.ContractTests.test_hash_stable_and_content_sensitive) ... ok
+test_input_names_shape_dtype_and_batch (test_reference.ContractTests.test_input_names_shape_dtype_and_batch) ... ok
+test_invalid_outputs (test_reference.ContractTests.test_invalid_outputs) ... ok
+test_masks (test_reference.ContractTests.test_masks) ... ok
+test_nonfinite_and_masked_quaternion (test_reference.ContractTests.test_nonfinite_and_masked_quaternion) ... ok
+test_bad_graph_metadata_and_providers (test_reference.LifecycleTests.test_bad_graph_metadata_and_providers) ... ok
+test_cli_and_no_cuda_imports (test_reference.LifecycleTests.test_cli_and_no_cuda_imports) ... ok
+test_concurrent_requests_are_serialized (test_reference.LifecycleTests.test_concurrent_requests_are_serialized) ... ok
+test_exception_recovery_and_context_cleanup (test_reference.LifecycleTests.test_exception_recovery_and_context_cleanup) ... ok
+test_missing_lfs_wrong_hash_missing_dependency (test_reference.LifecycleTests.test_missing_lfs_wrong_hash_missing_dependency) ... ok
+test_repeat_isolation_alternation_close_and_release (test_reference.LifecycleTests.test_repeat_isolation_alternation_close_and_release) ... ok
+test_real_lengths_repeat_and_independence (test_reference.RealInferenceTests.test_real_lengths_repeat_and_independence) ... skipped 'G1 BLOCKED: set MOTIONBRICKS_CPU_ONNX_MODEL to hydrated G1 FP32 ONNX to opt in'
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.216s
+
+OK (skipped=1)

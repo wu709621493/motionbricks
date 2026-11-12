@@ -39,3 +39,38 @@ extern "C" int ignite_linear(size_t rows, size_t in, size_t out,
     }
     return 0;
 }
+
+// Private fused ABI. Python owns immutable, already-validated weights and all
+// disjoint buffers for the duration of this call. Keep ignite_linear unchanged
+// as the independently checked scalar reference / legacy ABI.
+struct IgniteLayer {
+    size_t in, out;
+    const float *weight, *bias;
+};
+extern "C" int ignite_fc(const IgniteLayer* layers, size_t count, size_t rows,
+                         const float* x, float* y, float* workspace, size_t width) {
+    if (!layers || count < 2 || !x || !y || !workspace ||
+        !product(rows, width) || rows * width > std::numeric_limits<size_t>::max() / sizeof(float) / 2)
+        return 1;
+    for (size_t l = 0; l < count; ++l) {
+        const auto& layer = layers[l];
+        if (!layer.weight || !layer.bias || !product(rows, layer.in) ||
+            !product(rows, layer.out) || !product(layer.in, layer.out) ||
+            (l && layers[l-1].out != layer.in) ||
+            (l+1 < count && layer.out > width)) return 1;
+    }
+    const float* h = x;
+    for (size_t l = 0; l < count; ++l) {
+        const auto& layer = layers[l];
+        float* out = l+1 == count ? y : workspace + (l % 2) * rows * width;
+        for (size_t r = 0; r < rows; ++r) for (size_t o = 0; o < layer.out; ++o) {
+            float sum = layer.bias[o];
+            for (size_t k = 0; k < layer.in; ++k)
+                sum += h[r*layer.in+k] * layer.weight[o*layer.in+k];
+            if (!std::isfinite(sum)) return 2;
+            out[r*layer.out+o] = l+1 < count && sum < 0 ? sum * 0.01f : sum;
+        }
+        h = out;
+    }
+    return 0;
+}

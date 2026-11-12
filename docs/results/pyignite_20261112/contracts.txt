@@ -1,0 +1,19 @@
+test_concurrent_calls_use_separate_scratch (test_backends.BackendContracts.test_concurrent_calls_use_separate_scratch) ... ok
+test_failures_remain_failures (test_backends.BackendContracts.test_failures_remain_failures) ... ok
+test_nonuniform_widths_ranks_and_owned_outputs (test_backends.BackendContracts.test_nonuniform_widths_ranks_and_owned_outputs) ... ok
+test_wrong_checkpoint_cannot_be_used_as_real_weights (test_g1_adapter.AdapterRefusal.test_wrong_checkpoint_cannot_be_used_as_real_weights) ... ok
+test_file_hash_and_pickle_refusal (test_position.FrozenPositionContracts.test_file_hash_and_pickle_refusal) ... ok
+test_refuses_invalid_inputs (test_position.FrozenPositionContracts.test_refuses_invalid_inputs) ... ok
+test_saved_buffer_is_authoritative_and_immutable (test_position.FrozenPositionContracts.test_saved_buffer_is_authoritative_and_immutable) ... ok
+test_dimensions (test_pyignite.Contracts.test_dimensions) ... ok
+test_dtype_and_training (test_pyignite.Contracts.test_dtype_and_training) ... ok
+test_nonfinite (test_pyignite.Contracts.test_nonfinite) ... ok
+test_overflow (test_pyignite.Contracts.test_overflow) ... ok
+test_repeat_and_noncontiguous (test_pyignite.Contracts.test_repeat_and_noncontiguous) ... ok
+test_torch_independent_import (test_pyignite.Contracts.test_torch_independent_import) ... ok
+test_values_and_shape (test_pyignite.Contracts.test_values_and_shape) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.701s
+
+OK

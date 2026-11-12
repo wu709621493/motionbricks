@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "motionbricks-pyignite"
+version = "0.2.0"
+description = "Experimental MotionBricks CPU FP32 inference primitives"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.26.4"]
+
+[tool.setuptools]
+packages = ["pyignite"]

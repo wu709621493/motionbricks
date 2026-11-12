@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-14]
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-15]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 15
     env:
@@ -38,3 +38,78 @@ jobs:
         with:
           name: pyignite-${{ matrix.os }}
           path: pyignite-*.json
+  verified-subsets-and-wheel:
+    name: PyIgnite subsets / ${{ matrix.os }} / Torch ${{ matrix.torch }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            torch: '2.14.0'
+            numpy: '1.26.4'
+          - os: ubuntu-24.04-arm
+            torch: '2.14.0'
+            numpy: '1.26.4'
+          - os: macos-15
+            torch: '2.14.0'
+            numpy: '1.26.4'
+          - os: ubuntu-24.04
+            torch: '2.15.0'
+            numpy: '2.3.5'
+          - os: ubuntu-24.04-arm
+            torch: '2.15.0'
+            numpy: '2.3.5'
+          - os: macos-15
+            torch: '2.15.0'
+            numpy: '2.3.5'
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    env:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy==${{ matrix.numpy }} build -r tools/pyignite/requirements-review.txt
+      - if: runner.os == 'Linux'
+        run: python -m pip install torch==${{ matrix.torch }} --index-url https://download.pytorch.org/whl/cpu
+      - if: runner.os == 'macOS'
+        run: python -m pip install torch==${{ matrix.torch }}
+      - run: python tools/pyignite/build.py
+      - run: python -m unittest discover -s tests/pyignite -v
+      - name: New subset parity and single-request timings
+        run: python tools/pyignite/review.py --output review-results/subsets.json
+      - name: Preserve the existing dynamic PE audit and baseline regression
+        run: python tools/rust_review/baseline_regression.py --output-dir review-results/legacy
+      - name: Download the released G1 root checkpoint for the explicit subset test
+        if: matrix.os == 'ubuntu-24.04' && matrix.torch == '2.14.0'
+        run: curl --fail --location --max-time 180 'https://huggingface.co/nvidia/MotionBricks/resolve/main/g1/out/motionbricks_root/version_1/checkpoints/model-step%3D2000000.safetensors' --output "$RUNNER_TEMP/g1-root.safetensors"
+      - name: Hash-verified real G1 weights with synthetic inputs
+        if: matrix.os == 'ubuntu-24.04' && matrix.torch == '2.14.0'
+        run: python tools/pyignite/review.py --g1-root "$RUNNER_TEMP/g1-root.safetensors" --output review-results/g1-subset.json
+      - run: python -m build tools/pyignite --outdir wheelhouse
+      - name: Verify native macOS wheel tag
+        if: runner.os == 'macOS'
+        run: |
+          python -c "import pathlib,platform; p=next(pathlib.Path('wheelhouse').glob('*.whl')); assert p.name.endswith('_'+platform.machine()+'.whl'), p"
+      - name: Install wheel in a clean venv and run outside the checkout
+        shell: bash
+        run: |
+          python -m venv "$RUNNER_TEMP/pyignite-wheel"
+          "$RUNNER_TEMP/pyignite-wheel/bin/python" -m pip install numpy==${{ matrix.numpy }} wheelhouse/*.whl
+          cp tools/pyignite/wheel_smoke.py "$RUNNER_TEMP/wheel_smoke.py"
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/pyignite-wheel/bin/python" -I wheel_smoke.py > "$GITHUB_WORKSPACE/review-results/wheel-smoke.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pyignite-v02-${{ matrix.os }}-${{ matrix.torch }}
+          path: |
+            review-results/
+            wheelhouse/
+          if-no-files-found: error

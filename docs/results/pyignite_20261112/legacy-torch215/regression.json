@@ -1,0 +1,19 @@
+{
+  "status": "PASS_NO_NEW_REGRESSION",
+  "baseline_commit": "65fa0a160946ddbb3d196f552a0a13fe63432fcf",
+  "strict_current_parity": "PASS",
+  "known_parity_failures": [],
+  "note": "No-new-regression gate; a retained FAIL is not a numerical parity pass.",
+  "baseline_source_sha256": {
+    "tools/pyignite/kernels.cpp": "ef261fdfbdaf0600ad3665b9ccb3b9c3c52c07197aa81cf6a6a89f45d5239ac8",
+    "tools/pyignite/pyignite/__init__.py": "10bdeb88c5778e335e73cf89b5eecf4f6b74a095dfca4b18f3136a71c2242fbe",
+    "tools/pyignite/validate.py": "56299473579373301a04f7a56f3c50e5fe453368271fade44dbafde7428cb405",
+    "tools/onnx/models/layers.py": "426925febc7fb57b769108b410f4b0732f8e27498ab687dbc477a6df189f9d26"
+  },
+  "current_source_sha256": {
+    "tools/pyignite/kernels.cpp": "ae9a61ad3ff479b10cbaa6e8c0655ed1afde000fd618f6dcfea4e1149b1e721b",
+    "tools/pyignite/pyignite/__init__.py": "57120488422faee278035f532133f98946f0cf4c8b6778c285e6d1070ffab4d5",
+    "tools/pyignite/validate.py": "56299473579373301a04f7a56f3c50e5fe453368271fade44dbafde7428cb405",
+    "tools/onnx/models/layers.py": "426925febc7fb57b769108b410f4b0732f8e27498ab687dbc477a6df189f9d26"
+  }
+}

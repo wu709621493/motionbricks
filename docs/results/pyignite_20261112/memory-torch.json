@@ -1,0 +1,9 @@
+{
+  "backend": "torch",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "numpy_process_peak_bytes": 30212096,
+  "after_backend_import_peak_bytes": 245850112,
+  "after_100_calls_peak_bytes": 256221184,
+  "peak_growth_after_import_bytes": 10371072,
+  "note": "Fresh process; peak growth is not live allocation or per-call peak. Synthetic source arrays retained in both processes."
+}

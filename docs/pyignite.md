@@ -1,5 +1,10 @@
 # PyIgnite: independent PyTorch dependency migration prototype
 
+2026-11-12: [v0.2 implementation and evidence](pyignite_v02_zh.md) adds a frozen
+position-buffer path, explicit fused/NumPy FC backends, checksum-verified real G1
+subgraph validation, and platform wheel builds. The historical dynamic-PE gap
+remains open. Measurements below describe v0.1 and are retained unchanged.
+
 Status: experimental CPU FP32 inference library, 2026-11-02. Audited MotionBricks
 base `f19dd01432b2eadf3800b3c71f99a092c741aa8a`. PyIgnite is a local project name,
 not PyTorch-Ignite and not a published package. No production imports, exporter

@@ -1,0 +1,15 @@
+{
+  "artifacts": [
+    {
+      "name": "motionbricks_pyignite-0.2.0.tar.gz",
+      "bytes": 17950,
+      "sha256": "2f63229b0538ab34061e05ceca9975459532d8196250dd9e15852f6459b8a2e8"
+    },
+    {
+      "name": "motionbricks_pyignite-0.2.0-py3-none-linux_x86_64.whl",
+      "bytes": 20429,
+      "sha256": "1f3f4ced4acc7383915a9d9988da66278225da565ce6c043ae536d691fd2fbc7"
+    }
+  ],
+  "note": "Local platform build; binaries are not committed. CI builds its own platform artifacts."
+}
