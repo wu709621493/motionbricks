@@ -527,6 +527,15 @@ bounded subprocess checks, and optional small-batch inference. Legacy hardware
 and full Python/NumPy support remain separately unverified.
 
 
+## Rb-14 unique-chip fingerprint (fork research concept)
+
+[Rb-14 孤品指纹芯片](docs/rb14_unique_chip_concept_zh.md) specifies a proposed
+14-rubidium-atom, multimode resonator fingerprint and a separate random-sampling
+mode. It defines a candidate 300 × 300 nm receiving area, entropy limits,
+registration and readout requirements, and the boundary with PR #83's PyIgnite
+CPU temperature guard and checkpoints. This is a design document: hardware,
+instrument drivers, PUF authentication and quantum randomness remain unverified.
+
 ## Sports and public accountability (fork editorial)
 
 [把运动员还给运动：反对把体育经营成国家间的政治战场](docs/sports_political_operations_zh.md)
