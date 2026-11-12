@@ -591,3 +591,10 @@ hypothesis requiring data.
 [Py仓文档入仓技能](.agents/skills/py-repo-docs/SKILL.md)提供仅依赖 Python 标准库的简单 DOCX 归档工具，
 生成 Markdown、保留原件并验证散列与正文一致性；提交与 PR 回读由协作工具完成，默认不自动合并。
 
+## Anime romance and gossip (fork cultural essay)
+
+[茜老师，你也有今天：情场老手怎么栽在了纯情男人手里](docs/kuzu_no_honkai_akane_pure_love_gossip_zh.md)
+is a Chinese narrative gossip essay on Akane and Narumi in *Scum's Wish*,
+family-absence tropes, NTR and pure-love endings. It preserves Windy's observations
+on broken commitments, rapid self-reconstruction and bodily desire in adult
+relationships. Source notes distinguish verified summaries from interpretation.
