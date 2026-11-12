@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "concept_status": "CONCEPT_ONLY",
+  "evidence_origin": "SIMULATED",
+  "calculation_status": "CPU_MODEL_RUN",
+  "hardware_status": {
+    "fabrication": "NOT_RUN",
+    "capture": "NOT_RUN",
+    "frequency_measurement": "NOT_RUN",
+    "surface_characterization": "NOT_RUN",
+    "entropy_evaluation": "NOT_RUN",
+    "quantum_randomness": "NOT_RUN",
+    "puf_security": "NOT_RUN"
+  },
+  "mass_model": "FROZEN_MODE_MASS_ONLY",
+  "entropy_bits": null,
+  "source_base_commit": "1a4db64271e06548bbc28b71ec2a230b210dd0bd",
+  "constants": {
+    "rb87_mass_u": 86.909180531,
+    "atomic_mass_kg": 1.66053906892e-27,
+    "rb87_mass_kg": 1.4431608971954693e-25
+  },
+  "config": {
+    "schema_version": 1,
+    "device": {
+      "lx_m": 3e-07,
+      "ly_m": 3e-07,
+      "f11_hz": 100000000.0,
+      "effective_mass_kg": 1e-17,
+      "tension_ratio_y": 1.3,
+      "quality_factor": 10000,
+      "max_mass_ratio": 0.001
+    },
+    "scan": {
+      "frequencies_hz": [
+        10000000.0,
+        100000000.0,
+        1000000000.0
+      ],
+      "effective_masses_kg": [
+        1e-18,
+        1e-17,
+        1e-16,
+        1e-15
+      ],
+      "captured_counts": [
+        0,
+        1,
+        7,
+        14
+      ],
+      "families": [
+        "flat",
+        "string",
+        "membrane"
+      ]
+    },
+    "geometry": {
+      "density_kg_m3": 2330.0,
+      "young_modulus_pa": 160000000000.0,
+      "poisson_ratio": 0.22,
+      "lengths_m": [
+        3e-07,
+        1e-06,
+        3e-06
+      ],
+      "thicknesses_m": [
+        5e-09,
+        2e-08,
+        1e-07
+      ]
+    },
+    "noise_profiles": [
+      {
+        "name": "quiet_assumption",
+        "white_hz_sqrt_s": 0.05,
+        "floor_hz": 0.01,
+        "drift_hz_per_s": 0.001,
+        "common_fractional_sigma": 1e-10
+      },
+      {
+        "name": "reference_assumption",
+        "white_hz_sqrt_s": 1.0,
+        "floor_hz": 0.05,
+        "drift_hz_per_s": 0.01,
+        "common_fractional_sigma": 5e-10
+      },
+      {
+        "name": "poor_assumption",
+        "white_hz_sqrt_s": 10.0,
+        "floor_hz": 1.0,
+        "drift_hz_per_s": 0.1,
+        "common_fractional_sigma": 1e-08
+      }
+    ],
+    "readout": {
+      "z_margin": 5.0,
+      "dead_time_s": 0.0,
+      "tau_min_s": 0.01,
+      "tau_max_s": 1000.0,
+      "tau_points": 61,
+      "comparison_tau_s": 10.0,
+      "comparison_profile": "quiet_assumption",
+      "grid_side": 9
+    },
+    "input_sha256": "8480717e471e5034db6d3bfd76aa5d0ca4f34297614cf3e9bd71ad2d8fc10c63"
+  },
+  "reference_weight_0_5": {
+    "1": {
+      "mass_ratio": 7.215804485977346e-09,
+      "linear_shift_hz": -0.3607902242988673,
+      "frozen_mode_shift_hz": -0.3607902223463235,
+      "linearization_error_hz": -1.952543793315442e-09
+    },
+    "14": {
+      "mass_ratio": 1.0102126280368285e-07,
+      "linear_shift_hz": -5.051063140184143,
+      "frozen_mode_shift_hz": -5.0510627574855915,
+      "linearization_error_hz": -3.8269855107131434e-07
+    }
+  },
+  "scan_rows": 144,
+  "noise_scan_rows": 366,
+  "noise_grid_optima": [
+    {
+      "profile": "quiet_assumption",
+      "count": 1,
+      "grid_best_tau_s": 21.54434690031883,
+      "grid_best_required_signal_hz": 0.1472502976028054,
+      "any_grid_time_passes": true,
+      "first_passing_tau_s": 1.2115276586285888,
+      "last_passing_tau_s": 215.44346900318845
+    },
+    {
+      "profile": "quiet_assumption",
+      "count": 14,
+      "grid_best_tau_s": 21.54434690031883,
+      "grid_best_required_signal_hz": 0.1472502976028054,
+      "any_grid_time_passes": true,
+      "first_passing_tau_s": 0.01,
+      "last_passing_tau_s": 1000.0
+    },
+    {
+      "profile": "reference_assumption",
+      "count": 1,
+      "grid_best_tau_s": 46.415888336127765,
+      "grid_best_required_signal_hz": 1.6162080771963074,
+      "any_grid_time_passes": false,
+      "first_passing_tau_s": null,
+      "last_passing_tau_s": null
+    },
+    {
+      "profile": "reference_assumption",
+      "count": 14,
+      "grid_best_tau_s": 46.415888336127765,
+      "grid_best_required_signal_hz": 1.6162080771963074,
+      "any_grid_time_passes": true,
+      "first_passing_tau_s": 2.154434690031884,
+      "last_passing_tau_s": 383.1186849557286
+    },
+    {
+      "profile": "poor_assumption",
+      "count": 1,
+      "grid_best_tau_s": 38.31186849557288,
+      "grid_best_required_signal_hz": 19.013672179177295,
+      "any_grid_time_passes": false,
+      "first_passing_tau_s": null,
+      "last_passing_tau_s": null
+    },
+    {
+      "profile": "poor_assumption",
+      "count": 14,
+      "grid_best_tau_s": 38.31186849557288,
+      "grid_best_required_signal_hz": 19.013672179177295,
+      "any_grid_time_passes": false,
+      "first_passing_tau_s": null,
+      "last_passing_tau_s": null
+    }
+  ],
+  "modes": [
+    {
+      "p": 1,
+      "q": 1,
+      "f_hz": 100000000.0,
+      "linewidth_hz": 10000.0,
+      "amplitude_ringdown_s": 3.1830988618379074e-05
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "f_hz": 151800784.7834443,
+      "linewidth_hz": 15180.078478344429,
+      "amplitude_ringdown_s": 2.0968922304182066e-05
+    },
+    {
+      "p": 1,
+      "q": 2,
+      "f_hz": 164184413.81303656,
+      "linewidth_hz": 16418.441381303655,
+      "amplitude_ringdown_s": 1.938733883389583e-05
+    }
+  ],
+  "grid_pair_comparison": [
+    {
+      "modes": 1,
+      "sites": 81,
+      "pairs": 3240,
+      "exact_collisions_at_1e-10_hz": 216,
+      "pairs_passing_margin": 1832,
+      "profile": "quiet_assumption",
+      "tau_s": 10.0
+    },
+    {
+      "modes": 3,
+      "sites": 81,
+      "pairs": 3240,
+      "exact_collisions_at_1e-10_hz": 104,
+      "pairs_passing_margin": 2992,
+      "profile": "quiet_assumption",
+      "tau_s": 10.0
+    }
+  ],
+  "pair_examples": [
+    {
+      "name": "swapped_xy_one_atom",
+      "modes": 1,
+      "count": 1,
+      "response_a_hz": [
+        -0.16316891179025003
+      ],
+      "response_b_hz": [
+        -0.16316891179025003
+      ],
+      "mahalanobis_distance": 0.0,
+      "drift_robust_lower_bound": 0.0,
+      "passes_margin": false
+    },
+    {
+      "name": "swapped_xy_one_atom",
+      "modes": 3,
+      "count": 1,
+      "response_a_hz": [
+        -0.16316891179025003,
+        -0.6484652595385533,
+        -0.3702258217873969
+      ],
+      "response_b_hz": [
+        -0.16316891179025003,
+        -0.34230149494226836,
+        -0.7013658636043336
+      ],
+      "mahalanobis_distance": 17.018239722646694,
+      "drift_robust_lower_bound": 16.456288235697677,
+      "passes_margin": true
+    },
+    {
+      "name": "mirror_x_one_atom",
+      "modes": 1,
+      "count": 1,
+      "response_a_hz": [
+        -0.16316891179025003
+      ],
+      "response_b_hz": [
+        -0.1631689117902501
+      ],
+      "mahalanobis_distance": 1.850371707708594e-15,
+      "drift_robust_lower_bound": 0.0,
+      "passes_margin": false
+    },
+    {
+      "name": "mirror_x_one_atom",
+      "modes": 3,
+      "count": 1,
+      "response_a_hz": [
+        -0.16316891179025003,
+        -0.6484652595385533,
+        -0.3702258217873969
+      ],
+      "response_b_hz": [
+        -0.1631689117902501,
+        -0.6484652595385537,
+        -0.3702258217873971
+      ],
+      "mahalanobis_distance": 1.3286439715482861e-14,
+      "drift_robust_lower_bound": 0.0,
+      "passes_margin": false
+    },
+    {
+      "name": "nearby_1nm_one_atom",
+      "modes": 1,
+      "count": 1,
+      "response_a_hz": [
+        -0.16316891179025003
+      ],
+      "response_b_hz": [
+        -0.1678882216576386
+      ],
+      "mahalanobis_distance": 0.15731032891295182,
+      "drift_robust_lower_bound": 0.0,
+      "passes_margin": false
+    },
+    {
+      "name": "nearby_1nm_one_atom",
+      "modes": 3,
+      "count": 1,
+      "response_a_hz": [
+        -0.16316891179025003,
+        -0.6484652595385533,
+        -0.3702258217873969
+      ],
+      "response_b_hz": [
+        -0.1678882216576386,
+        -0.6570340421160517,
+        -0.38093380748610217
+      ],
+      "mahalanobis_distance": 0.33622437503893937,
+      "drift_robust_lower_bound": 0.0,
+      "passes_margin": false
+    },
+    {
+      "name": "mirror_x_14_atoms",
+      "modes": 1,
+      "count": 14,
+      "response_a_hz": [
+        -2.8702952338294545
+      ],
+      "response_b_hz": [
+        -2.8702952338294545
+      ],
+      "mahalanobis_distance": 0.0,
+      "drift_robust_lower_bound": 0.0,
+      "passes_margin": false
+    },
+    {
+      "name": "mirror_x_14_atoms",
+      "modes": 3,
+      "count": 14,
+      "response_a_hz": [
+        -2.8702952338294545,
+        -4.418965476701238,
+        -4.687728913325364
+      ],
+      "response_b_hz": [
+        -2.8702952338294545,
+        -4.418965476701238,
+        -4.687728913325364
+      ],
+      "mahalanobis_distance": 0.0,
+      "drift_robust_lower_bound": 0.0,
+      "passes_margin": false
+    }
+  ],
+  "geometry_scan_rows": 9,
+  "baseline_implied_sine_plate_thickness_m": 1.907486886027659e-07,
+  "baseline_implied_h_over_min_L": 0.6358289620092197,
+  "local_resolution_rows": 162,
+  "omitted_physics": [
+    "surface_forces",
+    "adsorption_stiffness",
+    "stress_change",
+    "diffusion",
+    "desorption",
+    "readout_backaction",
+    "mode_mixing"
+  ],
+  "notes": [
+    "No independent 49-bit entropy or PUF security claim.",
+    "Grid comparison is finite pairwise screening, not global reconstruction.",
+    "Local Fisher bounds omit drift, calibration uncertainty and mirror ambiguity.",
+    "Quality factor does not determine frequency measurement uncertainty."
+  ],
+  "source_sha256": "a156a15f9a7ef27d534197ca9255a9a8fa7f9a88d9acb487da9e3ad376fdeea7",
+  "output_sha256": {
+    "frequency_scan.csv": "c56564c6642e6a04c0bc476c624ec0fa66a7975c4cb915404fa1d5542e4cd82c",
+    "geometry_scan.csv": "48056750088a561c37f528f38dd1efe99357e1e182e197f5e126431e2a0837c9",
+    "local_resolution.csv": "0b5b1a26e1dcd5702b884638965e681c7f3bb9adc950bf7e0aedbf476e4a4783",
+    "noise_scan.csv": "8913bb1296b5877656f68a0a0a721a179bee210e8282af5ce9ffde08b45fee0b"
+  }
+}

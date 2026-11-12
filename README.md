@@ -536,6 +536,12 @@ registration and readout requirements, and the boundary with PR #83's PyIgnite
 CPU temperature guard and checkpoints. This is a design document: hardware,
 instrument drivers, PUF authentication and quantum randomness remain unverified.
 
+[Rb-14 第一阶段物理预算](docs/rb14_phase1_physics_zh.md) adds a standard-library
+CPU model, reproducible frequency/noise/geometry scans, and single versus multimode
+position screening. It separates mass-only shifts from omitted surface and diffusion
+physics; synthetic results retain `CONCEPT_ONLY` and hardware `NOT_RUN` status.
+Run `python -S -m motionbricks.rb14_feasibility --out-dir /tmp/rb14-phase1`.
+
 ## Sports and public accountability (fork editorial)
 
 [把运动员还给运动：反对把体育经营成国家间的政治战场](docs/sports_political_operations_zh.md)
@@ -576,3 +582,4 @@ hypothesis requiring data.
 研究凯瑟、海明威、F. Scott Fitzgerald与福克纳的采访、书信、自述及编辑史，
 附47项来源登记、115个集合项目索引、40条证据编码与8道未执行的核验任务。
 本研究未测量财富的因果效应或“了解一个人”的总百分比。
+

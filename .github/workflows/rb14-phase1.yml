@@ -1,0 +1,30 @@
+name: Rb-14 CPU physical budget
+on:
+  push:
+    paths: ['motionbricks/rb14_feasibility.py', 'configs/rb14_phase1.json', 'tests/rb14/**', '.github/workflows/rb14-phase1.yml']
+  pull_request:
+    paths: ['motionbricks/rb14_feasibility.py', 'configs/rb14_phase1.json', 'tests/rb14/**', '.github/workflows/rb14-phase1.yml']
+permissions:
+  contents: read
+jobs:
+  budget:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-15]
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -S -m unittest discover -s tests/rb14 -v
+      - run: python -S -m motionbricks.rb14_feasibility --config configs/rb14_phase1.json --out-dir /tmp/rb14
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rb14-${{ matrix.os }}-py${{ matrix.python }}
+          path: /tmp/rb14/
+          if-no-files-found: error
