@@ -569,3 +569,10 @@ hypothesis requiring data.
 [意识组件假说：器官移植与麻醉](docs/consciousness_components_transplant_anesthesia_zh.md)
 延伸代码仓 87，结合换心病例、猪心移植、肝肾对照与麻醉研究，
 区分体验调节、供者信息和主体延续；附来源、证据局限与待验证研究设计。
+
+## Putin Hypothesis
+
+[Putin Hypothesis：信息积累与人际理解](docs/research/putin_hypothesis/README_zh.md)
+研究凯瑟、海明威、F. Scott Fitzgerald与福克纳的采访、书信、自述及编辑史，
+附47项来源登记、115个集合项目索引、40条证据编码与8道未执行的核验任务。
+本研究未测量财富的因果效应或“了解一个人”的总百分比。

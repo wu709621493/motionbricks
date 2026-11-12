@@ -1,0 +1,108 @@
+{
+  "as_of": "2026-11-12",
+  "scope": "Selected exact query batches; complete included-source URLs and reading boundaries are in sources.json. Not a registered systematic review.",
+  "batches": [
+    {
+      "batch": "cather-primary",
+      "queries": [
+        "site.cather.unl.edu \"interviews\" \"1921\"",
+        "site.cather.unl.edu \"Jewett\" \"1908\" \"letters\"",
+        "site.cather.unl.edu \"Louise Pound\" \"1893\"",
+        "site.cather.unl.edu \"Not Under Forty\" \"autobiography\""
+      ]
+    },
+    {
+      "batch": "cather-access",
+      "open": [
+        {
+          "ref_id": "https://www.catherletters.org/"
+        },
+        {
+          "ref_id": "https://www.catherletters.org/story-behind-letters/1912-letter-to-annie-adams-fields/"
+        },
+        {
+          "ref_id": "https://www.nebraskapress.unl.edu/nebraska/9781496247438/cather-studies-volume-15/"
+        },
+        {
+          "ref_id": "https://willa-cather-archive.github.io/datebook/about/"
+        },
+        {
+          "ref_id": "https://www.willacather.org/about/bibliography"
+        }
+      ],
+      "response_length": "long"
+    },
+    {
+      "batch": "fitzgerald-archives",
+      "system2_search_query": [
+        {
+          "q": "site.digital.tcl.sc.edu Fitzgerald ledger collection"
+        },
+        {
+          "q": "site.princeton.edu Fitzgerald papers digitized 2015 manuscripts letters"
+        },
+        {
+          "q": "site.classic.esquire.com \"Pasting It Together\" \"1936\""
+        },
+        {
+          "q": "site.classic.esquire.com \"Handle with Care\" \"1936\""
+        }
+      ],
+      "response_length": "long"
+    },
+    {
+      "batch": "hemingway-archives",
+      "system2_search_query": [
+        {
+          "q": "site.jfklibrary.org Hemingway 39 endings farewell arms manuscripts"
+        },
+        {
+          "q": "site.cambridge.org Hemingway letters project 6000 17 volumes"
+        },
+        {
+          "q": "site.simonandschuster.com A Moveable Feast Restored Edition 2009 fiction"
+        },
+        {
+          "q": "site.theparisreview.org Hemingway interview thirty-nine times true sentence"
+        }
+      ],
+      "response_length": "long"
+    },
+    {
+      "batch": "records-and-validation",
+      "queries": [
+        "site.digital.tcl.sc.edu \"fitzgerald\" \"ledger\"",
+        "site.dpul.princeton.edu/gatsby100 \"Perkins\" \"letter\"",
+        "site.cather.unl.edu/writings/bohlke \"Carroll\"",
+        "site.pubmed.ncbi.nlm.nih.gov personality judgment accuracy acquaintanceship information quantity quality"
+      ]
+    },
+    {
+      "batch": "faulkner-speech-cather-interview",
+      "queries": [
+        "site.faulkner.lib.virginia.edu \"wfaudio\" \"I don’t know\" \"symbol\"",
+        "site.faulkner.lib.virginia.edu \"wfaudio\" \"The Sound and the Fury\" \"failure\"",
+        "site.nobelprize.org Faulkner banquet speech 1950 Hemingway 1954",
+        "site.cather.unl.edu \"Willa Sibert Cather\" \"Carroll\" \"bohlke\""
+      ]
+    },
+    {
+      "batch": "faulkner-ledger-primary",
+      "open": [
+        {
+          "ref_id": "https://faulkner.lib.virginia.edu/display/wfaudio01_2.html"
+        },
+        {
+          "ref_id": "https://faulkner.lib.virginia.edu/display/wfaudio08_2.html"
+        },
+        {
+          "ref_id": "https://faulkner.lib.virginia.edu/display/wfaudio10.html"
+        },
+        {
+          "ref_id": "https://digital.tcl.sc.edu/digital/collection/fitz/id/67/"
+        }
+      ],
+      "response_length": "long"
+    }
+  ]
+}

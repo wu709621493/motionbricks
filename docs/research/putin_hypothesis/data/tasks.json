@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "status": "NOT_RUN",
+  "tasks": [
+    {
+      "id": "T01",
+      "subject": "cather",
+      "prompt": "只给1919报道：能否确认首部小说使Jewett开始指导凯瑟？",
+      "scoring_criterion": "加入1908信和1912书目，识别时间线冲突；归因错误环节须保留未知。",
+      "answer_key_source_ids": [
+        "C15",
+        "C03",
+        "C09"
+      ],
+      "status": "NOT_RUN",
+      "prediction": null,
+      "confidence": null,
+      "outcome": null,
+      "score": null,
+      "blinding_note": "Prepared after source review; use new material and independent assessors before any blinded experiment."
+    },
+    {
+      "id": "T02",
+      "subject": "cather",
+      "prompt": "1908年的工作耗竭是否证明她终身厌恶工作？",
+      "scoring_criterion": "说明时间、工作类型和收信对象；1938信限制跨情境概括。",
+      "answer_key_source_ids": [
+        "C03",
+        "C04"
+      ],
+      "status": "NOT_RUN",
+      "prediction": null,
+      "confidence": null,
+      "outcome": null,
+      "score": null,
+      "blinding_note": "Prepared after source review; use new material and independent assessors before any blinded experiment."
+    },
+    {
+      "id": "T03",
+      "subject": "hemingway",
+      "prompt": "著名简洁回答是否可当作未经编辑的日常说话样本？",
+      "scoring_criterion": "识别访谈生产与修订，区分成稿、现场和日常行为。",
+      "answer_key_source_ids": [
+        "H01",
+        "H02"
+      ],
+      "status": "NOT_RUN",
+      "prediction": null,
+      "confidence": null,
+      "outcome": null,
+      "score": null,
+      "blinding_note": "Prepared after source review; use new material and independent assessors before any blinded experiment."
+    },
+    {
+      "id": "T04",
+      "subject": "hemingway",
+      "prompt": "作者本人声音能否证明1954年宴会现场情绪？",
+      "scoring_criterion": "核对代读和后录时间，不从声线唯一推断情绪。",
+      "answer_key_source_ids": [
+        "H07"
+      ],
+      "status": "NOT_RUN",
+      "prediction": null,
+      "confidence": null,
+      "outcome": null,
+      "score": null,
+      "blinding_note": "Prepared after source review; use new material and independent assessors before any blinded experiment."
+    },
+    {
+      "id": "T05",
+      "subject": "fitzgerald",
+      "prompt": "年度账簿的末尾合计可否直接预测快乐程度？",
+      "scoring_criterion": "区分财务口径、主观评价和心理测量，无真值不算分。",
+      "answer_key_source_ids": [
+        "F11",
+        "F02"
+      ],
+      "status": "NOT_RUN",
+      "prediction": null,
+      "confidence": null,
+      "outcome": null,
+      "score": null,
+      "blinding_note": "Prepared after source review; use new material and independent assessors before any blinded experiment."
+    },
+    {
+      "id": "T06",
+      "subject": "fitzgerald",
+      "prompt": "逐月时间线是否意味着每条事件均同期记录且时间准确？",
+      "scoring_criterion": "识别回顾、简写及作者自己保留的时间不确定性。",
+      "answer_key_source_ids": [
+        "F12"
+      ],
+      "status": "NOT_RUN",
+      "prediction": null,
+      "confidence": null,
+      "outcome": null,
+      "score": null,
+      "blinding_note": "Prepared after source review; use new material and independent assessors before any blinded experiment."
+    },
+    {
+      "id": "T07",
+      "subject": "faulkner",
+      "prompt": "整理后的流畅回答能否证明现场没有长停顿？",
+      "scoring_criterion": "核对转录政策；复述准确性与心理归因分别评价。",
+      "answer_key_source_ids": [
+        "W02"
+      ],
+      "status": "NOT_RUN",
+      "prediction": null,
+      "confidence": null,
+      "outcome": null,
+      "score": null,
+      "blinding_note": "Prepared after source review; use new material and independent assessors before any blinded experiment."
+    },
+    {
+      "id": "T08",
+      "subject": "faulkner",
+      "prompt": "官方演说文本是否必定是当日逐字稿？",
+      "scoring_criterion": "注意版本修订说明与奖项/演说年份之别。",
+      "answer_key_source_ids": [
+        "W06"
+      ],
+      "status": "NOT_RUN",
+      "prediction": null,
+      "confidence": null,
+      "outcome": null,
+      "score": null,
+      "blinding_note": "Prepared after source review; use new material and independent assessors before any blinded experiment."
+    }
+  ]
+}
