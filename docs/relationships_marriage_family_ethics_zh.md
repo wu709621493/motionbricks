@@ -130,3 +130,8 @@ Zhang、Wang与Pan的研究使用四轮人口调查；PubMed摘要报告20—59�
 [4] Weixiang Luo、Jia Yu，*Sexual infidelity among the married in China*，*Chinese Journal of Sociology*，2022-06-28在线发表。[开放正文](https://journals.sagepub.com/doi/full/10.1177/2057150X221108574)；[DOI](https://doi.org/10.1177/2057150X221108574)。核对位置：Methods—Data and sample、Measures—Dependent variable、结果Figures 2–3；没有重新分析个体数据或审计完整批准文件。
 
 资料检索及文稿日期：2026-11-12。文学与日常伦理讨论不作为医学诊断、国家人群的统一性格描述或个体命运预测。文中的教育批评及婚姻多重意义为作者讨论和本文分析，尚未进行全国量化验证。
+
+## 续篇入口（2026-11-12）
+
+[婚外恋、婚外情、婚外性与婚外金钱交易：关系伦理及中法美法律比较](extramarital_love_affairs_sex_money_ethics_zh.md)
+继续拆分情感、行为、承诺与经济往来，并按同一核查方法比较法国及美国州法。原文六段作者引文、历史调查及其限制均保留。
