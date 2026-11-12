@@ -136,3 +136,8 @@ python -S tools/pyignite/doctor.py \
 5. GCC 14.1, [Optimize Options](https://gcc.gnu.org/onlinedocs/gcc-14.1.0/gcc/Optimize-Options.html)，浮点收缩、fast-math、excess precision。
 6. Cleve Moler / MathWorks, [Pentium Division Bug Revisited](https://blogs.mathworks.com/cleve/2013/04/29/pentium-division-bug/)，2013-04-29，重刊其 1995 年分析。
 7. NumPy, [CPU Build Options](https://numpy.org/doc/stable/reference/simd/build-options.html)，构建基线与分派。链接随稳定版变化；部署必须固定实际版本。
+
+## 补充：风冷温度安全阀
+
+按用户后续要求增加 [温度保护与最后数据检查点](pyignite_thermal_checkpoint_zh.md)。
+显式启用 `TemperatureGuard` 后，默认连续 10 秒、至少 3 次读数严格高于 100°C 即锁定；运行期间持续将温度及最后完整 FC 结果由 RAM 写入校验过的原子检查点。传感器失联与写盘失败均阻止受保护计算成功。自动采温目前限部分 Linux CPU 驱动；旧奔腾无传感器时不虚构温度。该机制不承诺 CPU 已失效后还能补写磁盘。

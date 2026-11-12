@@ -1,0 +1,117 @@
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=77
+  - wheel
+* Getting build dependencies for sdist...
+running egg_info
+writing motionbricks_pyignite.egg-info/PKG-INFO
+writing dependency_links to motionbricks_pyignite.egg-info/dependency_links.txt
+writing requirements to motionbricks_pyignite.egg-info/requires.txt
+writing top-level names to motionbricks_pyignite.egg-info/top_level.txt
+reading manifest file 'motionbricks_pyignite.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'motionbricks_pyignite.egg-info/SOURCES.txt'
+* Installed build dependency versions:
+  - setuptools==84.2.1
+  - wheel==0.48.0
+* Building sdist...
+running sdist
+running egg_info
+writing motionbricks_pyignite.egg-info/PKG-INFO
+writing dependency_links to motionbricks_pyignite.egg-info/dependency_links.txt
+writing requirements to motionbricks_pyignite.egg-info/requires.txt
+writing top-level names to motionbricks_pyignite.egg-info/top_level.txt
+reading manifest file 'motionbricks_pyignite.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'motionbricks_pyignite.egg-info/SOURCES.txt'
+running check
+creating motionbricks_pyignite-0.2.0
+creating motionbricks_pyignite-0.2.0/motionbricks_pyignite.egg-info
+creating motionbricks_pyignite-0.2.0/pyignite
+copying files to motionbricks_pyignite-0.2.0...
+copying LICENSE -> motionbricks_pyignite-0.2.0
+copying MANIFEST.in -> motionbricks_pyignite-0.2.0
+copying README.md -> motionbricks_pyignite-0.2.0
+copying build.py -> motionbricks_pyignite-0.2.0
+copying doctor.py -> motionbricks_pyignite-0.2.0
+copying kernels.cpp -> motionbricks_pyignite-0.2.0
+copying kernels.h -> motionbricks_pyignite-0.2.0
+copying pyproject.toml -> motionbricks_pyignite-0.2.0
+copying setup.py -> motionbricks_pyignite-0.2.0
+copying smoke.cpp -> motionbricks_pyignite-0.2.0
+copying motionbricks_pyignite.egg-info/PKG-INFO -> motionbricks_pyignite-0.2.0/motionbricks_pyignite.egg-info
+copying motionbricks_pyignite.egg-info/SOURCES.txt -> motionbricks_pyignite-0.2.0/motionbricks_pyignite.egg-info
+copying motionbricks_pyignite.egg-info/dependency_links.txt -> motionbricks_pyignite-0.2.0/motionbricks_pyignite.egg-info
+copying motionbricks_pyignite.egg-info/requires.txt -> motionbricks_pyignite-0.2.0/motionbricks_pyignite.egg-info
+copying motionbricks_pyignite.egg-info/top_level.txt -> motionbricks_pyignite-0.2.0/motionbricks_pyignite.egg-info
+copying pyignite/__init__.py -> motionbricks_pyignite-0.2.0/pyignite
+copying pyignite/position.py -> motionbricks_pyignite-0.2.0/pyignite
+copying pyignite/thermal.py -> motionbricks_pyignite-0.2.0/pyignite
+Writing motionbricks_pyignite-0.2.0/setup.cfg
+Creating tar archive
+removing 'motionbricks_pyignite-0.2.0' (and everything under it)
+* Building wheel from sdist
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=77
+  - wheel
+* Getting build dependencies for wheel...
+running egg_info
+writing motionbricks_pyignite.egg-info/PKG-INFO
+writing dependency_links to motionbricks_pyignite.egg-info/dependency_links.txt
+writing requirements to motionbricks_pyignite.egg-info/requires.txt
+writing top-level names to motionbricks_pyignite.egg-info/top_level.txt
+reading manifest file 'motionbricks_pyignite.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'motionbricks_pyignite.egg-info/SOURCES.txt'
+* Installed build dependency versions:
+  - setuptools==84.2.1
+  - wheel==0.48.0
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib/pyignite
+copying pyignite/thermal.py -> build/lib/pyignite
+copying pyignite/position.py -> build/lib/pyignite
+copying pyignite/__init__.py -> build/lib/pyignite
+running egg_info
+writing motionbricks_pyignite.egg-info/PKG-INFO
+writing dependency_links to motionbricks_pyignite.egg-info/dependency_links.txt
+writing requirements to motionbricks_pyignite.egg-info/requires.txt
+writing top-level names to motionbricks_pyignite.egg-info/top_level.txt
+reading manifest file 'motionbricks_pyignite.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'motionbricks_pyignite.egg-info/SOURCES.txt'
+c++ -std=c++17 -O2 -fPIC -fno-fast-math -ffp-contract=off -Wall -Wextra -shared /tmp/build-via-sdist-s0nsmi38/motionbricks_pyignite-0.2.0/kernels.cpp -o /tmp/build-via-sdist-s0nsmi38/motionbricks_pyignite-0.2.0/build/lib/pyignite/libpyignite.so
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel/motionbricks_pyignite-0.2.0.data/purelib
+creating build/bdist.linux-x86_64/wheel/motionbricks_pyignite-0.2.0.data/purelib/pyignite
+copying build/lib/pyignite/libpyignite.so.build.json -> build/bdist.linux-x86_64/wheel/motionbricks_pyignite-0.2.0.data/purelib/pyignite
+copying build/lib/pyignite/libpyignite.so -> build/bdist.linux-x86_64/wheel/motionbricks_pyignite-0.2.0.data/purelib/pyignite
+copying build/lib/pyignite/__init__.py -> build/bdist.linux-x86_64/wheel/motionbricks_pyignite-0.2.0.data/purelib/pyignite
+copying build/lib/pyignite/position.py -> build/bdist.linux-x86_64/wheel/motionbricks_pyignite-0.2.0.data/purelib/pyignite
+copying build/lib/pyignite/thermal.py -> build/bdist.linux-x86_64/wheel/motionbricks_pyignite-0.2.0.data/purelib/pyignite
+running install_egg_info
+Copying motionbricks_pyignite.egg-info to build/bdist.linux-x86_64/wheel/motionbricks_pyignite-0.2.0.data/purelib/motionbricks_pyignite-0.2.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/motionbricks_pyignite-0.2.0.dist-info/WHEEL
+creating '/tmp/pyignite-thermal-wheelhouse/.tmp-ruvlu7e1/motionbricks_pyignite-0.2.0-py3-none-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'motionbricks_pyignite-0.2.0.data/purelib/pyignite/__init__.py'
+adding 'motionbricks_pyignite-0.2.0.data/purelib/pyignite/libpyignite.so'
+adding 'motionbricks_pyignite-0.2.0.data/purelib/pyignite/libpyignite.so.build.json'
+adding 'motionbricks_pyignite-0.2.0.data/purelib/pyignite/position.py'
+adding 'motionbricks_pyignite-0.2.0.data/purelib/pyignite/thermal.py'
+adding 'motionbricks_pyignite-0.2.0.dist-info/licenses/LICENSE'
+adding 'motionbricks_pyignite-0.2.0.dist-info/METADATA'
+adding 'motionbricks_pyignite-0.2.0.dist-info/WHEEL'
+adding 'motionbricks_pyignite-0.2.0.dist-info/top_level.txt'
+adding 'motionbricks_pyignite-0.2.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built motionbricks_pyignite-0.2.0.tar.gz and motionbricks_pyignite-0.2.0-py3-none-linux_x86_64.whl

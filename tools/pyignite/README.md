@@ -88,3 +88,29 @@ and the full output still consume memory. It neither bypasses cache nor repairs
 hardware. Choose the chunk size from measurements; NumPy/BLAS chunking can change
 rounding. A late chunk failure raises without returning a partial output.
 
+
+## Optional temperature valve and durable last result
+
+[风冷温度保护与检查点](../../docs/pyignite_thermal_checkpoint_zh.md) explains the
+opt-in `TemperatureGuard` integration. Defaults: sample every second; latch after
+one CPU sensor stays strictly above 100 C for at least 10 seconds and 3 samples;
+stop immediately for a hardware critical alarm. Missing/stale sensors also block
+protected inference. Linux coretemp and AMD Tdie/Tccd are supported automatically;
+Tctl-only, GPU and SSD readings are excluded. Other platforms need a verified reader.
+
+```python
+from pyignite import FCBlock, TemperatureGuard
+with TemperatureGuard("checkpoints/last_complete.json") as guard:
+    model = FCBlock(layers, max_batch_rows=8, temperature_guard=guard)
+    y = model(x)
+```
+
+The guard stages owned bytes in RAM and checkpoints temperatures and the last
+completed FC result through file fsync, atomic replacement and POSIX directory
+fsync. Write failures block success. Default raw-result limit: 1 MiB, checked
+before computation. This adds synchronous disk latency. Inspect/recover existing
+files before explicitly opting into `resume_after_inspection=True`; no automatic
+restart or silent checkpoint erasure occurs. A thermal trip rejects partial or
+post-trip output at the next chunk/call boundary; it cannot interrupt an active
+C/NumPy call, repair a CPU, guarantee RAM correctness, or write after sudden
+hardware failure. Readings and checksums do not certify physical durability.

@@ -1,0 +1,42 @@
+test_concurrent_calls_use_separate_scratch (test_backends.BackendContracts.test_concurrent_calls_use_separate_scratch) ... ok
+test_failures_remain_failures (test_backends.BackendContracts.test_failures_remain_failures) ... ok
+test_nonuniform_widths_ranks_and_owned_outputs (test_backends.BackendContracts.test_nonuniform_widths_ranks_and_owned_outputs) ... ok
+test_wrong_checkpoint_cannot_be_used_as_real_weights (test_g1_adapter.AdapterRefusal.test_wrong_checkpoint_cannot_be_used_as_real_weights) ... ok
+test_cli_blocks_on_supplied_fault_without_loading_binary (test_legacy.IsolatedProbe.test_cli_blocks_on_supplied_fault_without_loading_binary) ... ok
+test_legacy_build_cannot_overwrite_host_default (test_legacy.IsolatedProbe.test_legacy_build_cannot_overwrite_host_default) ... ok
+test_malformed_truncated_and_false_success (test_legacy.IsolatedProbe.test_malformed_truncated_and_false_success) ... ok
+test_missing_executable_and_event_priority (test_legacy.IsolatedProbe.test_missing_executable_and_event_priority) ... ok
+test_sigill_is_contained (test_legacy.IsolatedProbe.test_sigill_is_contained) ... ok
+test_timeout_is_finite (test_legacy.IsolatedProbe.test_timeout_is_finite) ... ok
+test_valid_report_and_no_health_inference (test_legacy.IsolatedProbe.test_valid_report_and_no_health_inference) ... ok
+test_chunks_preserve_leading_shape_and_bound_hidden_rows (test_legacy.SmallWorkingSet.test_chunks_preserve_leading_shape_and_bound_hidden_rows) ... ok
+test_invalid_limit_and_late_overflow_fail (test_legacy.SmallWorkingSet.test_invalid_limit_and_late_overflow_fail) ... ok
+test_single_vector_and_one_row (test_legacy.SmallWorkingSet.test_single_vector_and_one_row) ... ok
+test_file_hash_and_pickle_refusal (test_position.FrozenPositionContracts.test_file_hash_and_pickle_refusal) ... ok
+test_refuses_invalid_inputs (test_position.FrozenPositionContracts.test_refuses_invalid_inputs) ... ok
+test_saved_buffer_is_authoritative_and_immutable (test_position.FrozenPositionContracts.test_saved_buffer_is_authoritative_and_immutable) ... ok
+test_dimensions (test_pyignite.Contracts.test_dimensions) ... ok
+test_dtype_and_training (test_pyignite.Contracts.test_dtype_and_training) ... ok
+test_nonfinite (test_pyignite.Contracts.test_nonfinite) ... ok
+test_overflow (test_pyignite.Contracts.test_overflow) ... ok
+test_repeat_and_noncontiguous (test_pyignite.Contracts.test_repeat_and_noncontiguous) ... ok
+test_torch_independent_import (test_pyignite.Contracts.test_torch_independent_import) ... ok
+test_values_and_shape (test_pyignite.Contracts.test_values_and_shape) ... ok
+test_cpu_selection_units_and_tctl_exclusion (test_thermal.LinuxSensorSelection.test_cpu_selection_units_and_tctl_exclusion) ... ok
+test_context_manager_stops_monitor_on_exit (test_thermal.ThermalValve.test_context_manager_stops_monitor_on_exit) ... ok
+test_critical_alarm_stops_without_waiting (test_thermal.ThermalValve.test_critical_alarm_stops_without_waiting) ... ok
+test_exact_100_and_transient_spike_do_not_trip (test_thermal.ThermalValve.test_exact_100_and_transient_spike_do_not_trip) ... ok
+test_failures_to_write_are_latched_and_do_not_claim_durability (test_thermal.ThermalValve.test_failures_to_write_are_latched_and_do_not_claim_durability) ... ok
+test_fc_saves_completed_result_and_rejects_post_trip_result (test_thermal.ThermalValve.test_fc_saves_completed_result_and_rejects_post_trip_result) ... ok
+test_gap_is_not_evidence_of_sustained_heat (test_thermal.ThermalValve.test_gap_is_not_evidence_of_sustained_heat) ... ok
+test_missing_invalid_and_stale_data_are_not_success (test_thermal.ThermalValve.test_missing_invalid_and_stale_data_are_not_success) ... ok
+test_repeated_timestamps_do_not_count_as_new_samples (test_thermal.ThermalValve.test_repeated_timestamps_do_not_count_as_new_samples) ... ok
+test_restart_cannot_silently_erase_last_result (test_thermal.ThermalValve.test_restart_cannot_silently_erase_last_result) ... ok
+test_result_owned_in_ram_and_restored_from_disk (test_thermal.ThermalValve.test_result_owned_in_ram_and_restored_from_disk) ... ok
+test_stale_guard_and_result_limit_block_before_compute (test_thermal.ThermalValve.test_stale_guard_and_result_limit_block_before_compute) ... ok
+test_sustained_over_100_latches_and_saves_last_sample (test_thermal.ThermalValve.test_sustained_over_100_latches_and_saves_last_sample) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 1.118s
+
+OK
