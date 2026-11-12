@@ -598,3 +598,12 @@ is a Chinese narrative gossip essay on Akane and Narumi in *Scum's Wish*,
 family-absence tropes, NTR and pure-love endings. It preserves Windy's observations
 on broken commitments, rapid self-reconstruction and bodily desire in adult
 relationships. Source notes distinguish verified summaries from interpretation.
+
+## Relationship ethics and OpenIRB (fork research discussion)
+
+[从“刹车”到关系伦理](docs/relationships_marriage_family_ethics_zh.md)延伸 PR #93，
+保留吴孟城关于关系教育、家庭回应及婚姻多重意义的原话，核对中国婚外性调查的抽样与编码限制，
+分开经验事实、机制假设和规范主张。
+[OpenIRB 亲密关系与家庭研究扩展](.agents/skills/openirb/SKILL.md)用于审阅敏感调查的统计口径、
+同意与隐私保护；不为私人关系签发伦理许可。
+
