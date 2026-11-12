@@ -1,0 +1,21 @@
+c++ -std=c++17 -O2 -fPIC -fno-fast-math -ffp-contract=off -Wall -Wextra -m32 -march=pentium4 -mtune=generic -mfpmath=sse -fno-tree-vectorize /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/kernels.cpp /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/smoke.cpp -o /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/build/ia32-sse2/pyignite-smoke
+In file included from /usr/include/c++/14/cmath:41,
+                 from /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/kernels.cpp:4:
+/usr/include/c++/14/bits/requires_hosted.h:31:10: fatal error: bits/c++config.h: No such file or directory
+   31 | #include <bits/c++config.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/kernels.h:3,
+                 from /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/smoke.cpp:3:
+/usr/include/c++/14/cstddef:49:10: fatal error: bits/c++config.h: No such file or directory
+   49 | #include <bits/c++config.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+Traceback (most recent call last):
+  File "/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/build.py", line 68, in <module>
+    main()
+  File "/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/build.py", line 52, in main
+    subprocess.run(command, check=True)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['c++', '-std=c++17', '-O2', '-fPIC', '-fno-fast-math', '-ffp-contract=off', '-Wall', '-Wextra', '-m32', '-march=pentium4', '-mtune=generic', '-mfpmath=sse', '-fno-tree-vectorize', '/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/kernels.cpp', '/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/smoke.cpp', '-o', '/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/build/ia32-sse2/pyignite-smoke']' returned non-zero exit status 1.

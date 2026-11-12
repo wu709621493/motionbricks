@@ -1,0 +1,10 @@
+{
+  "parent_remote_commit": "f45438a24c4208967829cca522f898b7d706fdd3",
+  "sensor_validation": "SIMULATED_ONLY",
+  "sha256": {
+    "tools/pyignite/pyignite/thermal.py": "02ca14384bd83c759d387f546ffbb9ad916443b68d3ee31b1aafb8890cd8bd29",
+    "tools/pyignite/pyignite/__init__.py": "cf852efdd93b1e73154a982f42ca282ddc680946e3ceb40e7d11401e7c926031",
+    "tests/pyignite/test_thermal.py": "685dcdbe3b0d9ee70c95c1067abd381824bccc6a2c063fc58cd903de6090ce61",
+    "docs/pyignite_thermal_checkpoint_zh.md": "dfe74787a12ec7896c4b73e61295462f0eb50b896b135ba57e7c65b7da06f4fa"
+  }
+}

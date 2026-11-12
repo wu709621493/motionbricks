@@ -1,0 +1,2 @@
+c++ -std=c++17 -O2 -fPIC -fno-fast-math -ffp-contract=off -Wall -Wextra -shared /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/kernels.cpp -o /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/pyignite/libpyignite.so
+c++ -std=c++17 -O2 -fPIC -fno-fast-math -ffp-contract=off -Wall -Wextra /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/kernels.cpp /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/smoke.cpp -o /workspace/scratch/652c85af696c/motionbricks/tools/pyignite/build/host/pyignite-smoke

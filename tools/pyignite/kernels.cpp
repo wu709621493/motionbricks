@@ -4,6 +4,7 @@
 #include <cmath>
 #include <cstddef>
 #include <limits>
+#include "kernels.h"
 
 // Private C ABI. Callers must supply valid, disjoint buffers of the stated sizes.
 // Python validates buffers; no exceptions or C++ objects cross this boundary.
@@ -43,10 +44,6 @@ extern "C" int ignite_linear(size_t rows, size_t in, size_t out,
 // Private fused ABI. Python owns immutable, already-validated weights and all
 // disjoint buffers for the duration of this call. Keep ignite_linear unchanged
 // as the independently checked scalar reference / legacy ABI.
-struct IgniteLayer {
-    size_t in, out;
-    const float *weight, *bias;
-};
 extern "C" int ignite_fc(const IgniteLayer* layers, size_t count, size_t rows,
                          const float* x, float* y, float* workspace, size_t width) {
     if (!layers || count < 2 || !x || !y || !workspace ||
@@ -74,3 +71,4 @@ extern "C" int ignite_fc(const IgniteLayer* layers, size_t count, size_t rows,
     }
     return 0;
 }
+

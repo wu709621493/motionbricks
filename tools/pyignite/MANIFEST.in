@@ -1,1 +1,2 @@
-include build.py kernels.cpp LICENSE
+include build.py kernels.cpp kernels.h smoke.cpp doctor.py LICENSE
+

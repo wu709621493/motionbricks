@@ -48,3 +48,69 @@ Weights have immutable byte ownership and are validated at construction. The
 original `scalar` path retains per-call native validation. `numpy` uses the
 installed NumPy matrix backend; its speed and rounding depend on that build.
 All paths reject non-finite inputs/results and preserve the original FP32 contract.
+
+## Legacy CPU compatibility experiments
+
+See the [Chinese compatibility and fault-handling report](../../docs/pyignite_legacy_cpu_zh.md)
+for Pentium, AMD K5/K6/Athlon, Cyrix and VIA candidate tiers, dependency boundaries,
+and the distinction between software errors and physical aging. No physical
+Pentium-era machine or complete legacy Python environment is certified here.
+
+```sh
+# Native smoke runs without Python/NumPy on the target; this wrapper is optional:
+python tools/pyignite/build.py --kind smoke
+python -S tools/pyignite/doctor.py --binary tools/pyignite/build/host/pyignite-smoke
+
+# Linux GCC 13+ with 32-bit development libraries; separate outputs:
+python tools/pyignite/build.py --profile p5-x87 --kind smoke
+python tools/pyignite/build.py --profile ia32-sse2 --kind smoke
+```
+
+`p5-x87` requests an i586/x87 baseline; `ia32-sse2` requires SSE2. These switches
+do not rebuild the loader, libc, Python, NumPy or BLAS. A successful build or a
+32-bit run on a modern host is not a Pentium compatibility result. The x87
+profile needs separate numerical qualification; full FP32 parity is unverified.
+The standalone executable covers only tiny known answers, nonfinite/overflow
+rejection, PE at the origin, and one division residual; it cannot diagnose cache
+wear or certify dynamic PE. `doctor.py` contains a timeout/crash within its probe
+child. It is an opt-in check, not a supervisor for ordinary in-process FC calls.
+Its event inputs are caller-supplied; it does not read MCE/EDAC or temperature.
+
+For small working sets on a functioning machine:
+
+```python
+model = FCBlock(layers, backend="scalar", max_batch_rows=8)
+y = model(x)
+```
+
+This bounds hidden activation rows; weights, a possible contiguous input copy,
+and the full output still consume memory. It neither bypasses cache nor repairs
+hardware. Choose the chunk size from measurements; NumPy/BLAS chunking can change
+rounding. A late chunk failure raises without returning a partial output.
+
+
+## Optional temperature valve and durable last result
+
+[风冷温度保护与检查点](../../docs/pyignite_thermal_checkpoint_zh.md) explains the
+opt-in `TemperatureGuard` integration. Defaults: sample every second; latch after
+one CPU sensor stays strictly above 100 C for at least 10 seconds and 3 samples;
+stop immediately for a hardware critical alarm. Missing/stale sensors also block
+protected inference. Linux coretemp and AMD Tdie/Tccd are supported automatically;
+Tctl-only, GPU and SSD readings are excluded. Other platforms need a verified reader.
+
+```python
+from pyignite import FCBlock, TemperatureGuard
+with TemperatureGuard("checkpoints/last_complete.json") as guard:
+    model = FCBlock(layers, max_batch_rows=8, temperature_guard=guard)
+    y = model(x)
+```
+
+The guard stages owned bytes in RAM and checkpoints temperatures and the last
+completed FC result through file fsync, atomic replacement and POSIX directory
+fsync. Write failures block success. Default raw-result limit: 1 MiB, checked
+before computation. This adds synchronous disk latency. Inspect/recover existing
+files before explicitly opting into `resume_after_inspection=True`; no automatic
+restart or silent checkpoint erasure occurs. A thermal trip rejects partial or
+post-trip output at the next chunk/call boundary; it cannot interrupt an active
+C/NumPy call, repair a CPU, guarantee RAM correctness, or write after sudden
+hardware failure. Readings and checksums do not certify physical durability.
