@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "execution": "LOCAL",
+  "host": {
+    "system": "Linux",
+    "machine": "x86_64"
+  },
+  "command": [
+    "/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/build/host/pyignite-smoke"
+  ],
+  "health": "UNKNOWN",
+  "events": [],
+  "event_source": "caller_supplied_not_auto_detected",
+  "coverage": "tiny native core smoke; no cache diagnosis, no full Python/NumPy validation",
+  "legacy_hardware_certification": "NOT_ASSESSED",
+  "probe": {
+    "returncode": 0,
+    "stderr": "",
+    "status": "PASS",
+    "payload": {
+      "schema_version": 1,
+      "status": "PASS",
+      "checks": 7,
+      "pointer_bits": 64,
+      "scope": "native_core_smoke_only"
+    }
+  },
+  "binary_sha256": "60f865af66857397b747598e3a92839bdff058521df5122fa8edf70920da058e",
+  "action": "SMOKE_PASS_HEALTH_UNKNOWN"
+}

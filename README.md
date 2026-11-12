@@ -521,6 +521,11 @@ The [integration review](docs/rust_integration_review_zh.md) bounds this to a co
 experiment alongside PyIgnite, with a [benchmark report](docs/rust_benchmark_20261110_zh.md)
 and separate [retro-compatibility audit](docs/rust_retro_review_zh.md).
 
+PyIgnite now has [Pentium-era CPU compatibility experiments](docs/pyignite_legacy_cpu_zh.md):
+explicit i586/x87 and IA-32/SSE2 build profiles, Python-independent native smoke,
+bounded subprocess checks, and optional small-batch inference. Legacy hardware
+and full Python/NumPy support remain separately unverified.
+
 
 ## Sports and public accountability (fork editorial)
 
@@ -544,4 +549,5 @@ argues for replacing broad identity labels with descriptions of conduct and evid
 It traces Ufimtsev's published research through translation and engineering to the
 F-117, and presents intelligence-sector talent diversion as an opportunity-cost
 hypothesis requiring data.
+
 

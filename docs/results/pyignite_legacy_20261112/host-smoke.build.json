@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "profile": "host",
+  "kind": "smoke",
+  "build_host": {
+    "system": "Linux",
+    "machine": "x86_64"
+  },
+  "command": [
+    "c++",
+    "-std=c++17",
+    "-O2",
+    "-fPIC",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/kernels.cpp",
+    "/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/smoke.cpp",
+    "-o",
+    "/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/build/host/pyignite-smoke"
+  ],
+  "compiler": "c++ (Debian 14.2.0-19) 14.2.0",
+  "sources_sha256": {
+    "kernels.cpp": "3f6b6401661ccc7efd2ef1790f48d8772f1572fd0e9d898da6f93d7d0a6d9325",
+    "smoke.cpp": "fa68e434fe88d2a6aa3d86ebaf3566e683c100daa0769553ade7b4f23fa6ab29",
+    "kernels.h": "f4a368dc89488ac21370bb81eb433b636a9c67b2491eb01bcae2aba2e1439f06",
+    "build.py": "fbeff79bc4da82258eedf33c3e9becb5483550069002edcf1e38f5351c51b529"
+  },
+  "binary_sha256": "60f865af66857397b747598e3a92839bdff058521df5122fa8edf70920da058e",
+  "validation": "BUILD_ONLY",
+  "note": "Compiler target does not certify the loader, libc, Python, NumPy, or physical hardware."
+}

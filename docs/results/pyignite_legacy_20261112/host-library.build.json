@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "profile": "host",
+  "kind": "library",
+  "build_host": {
+    "system": "Linux",
+    "machine": "x86_64"
+  },
+  "command": [
+    "c++",
+    "-std=c++17",
+    "-O2",
+    "-fPIC",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-shared",
+    "/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/kernels.cpp",
+    "-o",
+    "/workspace/scratch/652c85af696c/motionbricks/tools/pyignite/pyignite/libpyignite.so"
+  ],
+  "compiler": "c++ (Debian 14.2.0-19) 14.2.0",
+  "sources_sha256": {
+    "kernels.cpp": "3f6b6401661ccc7efd2ef1790f48d8772f1572fd0e9d898da6f93d7d0a6d9325",
+    "kernels.h": "f4a368dc89488ac21370bb81eb433b636a9c67b2491eb01bcae2aba2e1439f06",
+    "build.py": "fbeff79bc4da82258eedf33c3e9becb5483550069002edcf1e38f5351c51b529"
+  },
+  "binary_sha256": "493f5f7478f0b68577af97cc4613e563a6e3ab22f15f317c298313f8c5c32ef3",
+  "validation": "BUILD_ONLY",
+  "note": "Compiler target does not certify the loader, libc, Python, NumPy, or physical hardware."
+}

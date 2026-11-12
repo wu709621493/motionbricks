@@ -57,13 +57,15 @@ class FCBlock:
     backend='scalar' retains the original implementation. 'fused' performs one
     native call for the block; 'numpy' uses NumPy's matrix backend. Selection is
     explicit because the fastest choice depends on shape, BLAS and hardware.
+    max_batch_rows optionally bounds hidden activations per chunk, not total RAM.
     """
-    def __init__(self, layers, *, training=False, backend='scalar'):
+    def __init__(self, layers, *, training=False, backend='scalar', max_batch_rows=None):
         if training:
             raise ValueError('training is unsupported')
         if backend not in ('scalar', 'fused', 'numpy'):
             raise ValueError('backend must be scalar, fused or numpy')
         self.backend = backend
+        self.max_batch_rows = None if max_batch_rows is None else _positive(max_batch_rows)
         self._layers = []
         previous = None
         for weight, bias in layers:
@@ -93,6 +95,19 @@ class FCBlock:
         h = _array(x)
         if h.ndim < 1 or 0 in h.shape or h.shape[-1] != self._layers[0][0].shape[1]:
             raise ValueError('invalid input dimensions')
+        rows = h.size // h.shape[-1]
+        if self.max_batch_rows is not None and rows > self.max_batch_rows:
+            # Bound hidden activations/scratch only. Weights, the contiguous
+            # input and complete output still occupy memory. No cache bypass.
+            flat = h.reshape(rows, h.shape[-1])
+            y = np.empty((rows, self._layers[-1][0].shape[0]), np.float32)
+            for start in range(0, rows, self.max_batch_rows):
+                stop = min(rows, start + self.max_batch_rows)
+                y[start:stop] = self._evaluate(flat[start:stop])
+            return y.reshape((*h.shape[:-1], y.shape[-1]))
+        return self._evaluate(h)
+
+    def _evaluate(self, h):
         leading = h.shape[:-1]
         if self.backend == 'fused':
             rows = h.size // h.shape[-1]
@@ -123,3 +138,4 @@ class FCBlock:
                 raise ValueError('invalid dimensions or non-finite native result')
             h = y
         return h
+

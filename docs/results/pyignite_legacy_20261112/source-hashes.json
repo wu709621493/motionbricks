@@ -1,0 +1,20 @@
+{
+  "base_commit": "b6d27559016e41f2facceedd1a55c02a9939f2f7",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "files_sha256": {
+    ".github/workflows/pyignite.yml": "020b873cc32b9ae5cc5b4dda94b717e76418df1550dbe991b05b61ad2cdb8276",
+    "README.md": "98ccfe930f956df7d35e888c545c06869b1cae08fc1fae1671e239a69032926b",
+    "docs/pyignite_legacy_cpu_zh.md": "6c7e3833cc015e003b9324ec58954a47c829079b25c9e9543eed954b85b33adf",
+    "tests/pyignite/test_legacy.py": "2ccf815f27a9e1f814f61c781b8faaae52eb074ec557931fb36ec839149d97bb",
+    "tools/pyignite/.gitignore": "2f162c4c8a4c38fc805bee65ea648922d515c8a74c63515ee13f8c8ca0a30c8d",
+    "tools/pyignite/MANIFEST.in": "11e5ef15d594421dc1b74d496028743d1767f5db21a5ad088d9ed32dbcb864cb",
+    "tools/pyignite/README.md": "6d326c13cfb6bd13f8f0fc2708874116ecaed2bf3674d696f77f9be3fe5bd70c",
+    "tools/pyignite/build.py": "fbeff79bc4da82258eedf33c3e9becb5483550069002edcf1e38f5351c51b529",
+    "tools/pyignite/doctor.py": "de11d3f4a814b0fef116112814b691e39235951558b194504409eda64e773317",
+    "tools/pyignite/kernels.cpp": "3f6b6401661ccc7efd2ef1790f48d8772f1572fd0e9d898da6f93d7d0a6d9325",
+    "tools/pyignite/kernels.h": "f4a368dc89488ac21370bb81eb433b636a9c67b2491eb01bcae2aba2e1439f06",
+    "tools/pyignite/pyignite/__init__.py": "2b4b88e2b13819ef78ac7ff9ed7ada3967d4212fcbae5ac68d20be9ada9fb51d",
+    "tools/pyignite/smoke.cpp": "fa68e434fe88d2a6aa3d86ebaf3566e683c100daa0769553ade7b4f23fa6ab29"
+  }
+}

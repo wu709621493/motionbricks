@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "version": "0.2.0",
+  "numpy": "2.3.5",
+  "torch_imported": false,
+  "module": "/tmp/pyignite-legacy-wheel-venv/lib/python3.12/site-packages/pyignite/__init__.py",
+  "import_us": 59935.153,
+  "peak_rss_bytes": 29188096,
+  "note": "isolated process after wheel install; tiny smoke workload; import timer excludes interpreter startup"
+}
