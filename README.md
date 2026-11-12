@@ -607,3 +607,6 @@ relationships. Source notes distinguish verified summaries from interpretation.
 [OpenIRB 亲密关系与家庭研究扩展](.agents/skills/openirb/SKILL.md)用于审阅敏感调查的统计口径、
 同意与隐私保护；不为私人关系签发伦理许可。
 
+[婚外恋、婚外情、婚外性与婚外金钱交易](docs/extramarital_love_affairs_sex_money_ethics_zh.md)
+续接 PR #94，拆分情感、性、承诺与经济往来，加入中国大陆、法国及美国加州、纽约州、北卡州的法律例子，
+分别核对离婚、刑事责任、第三者民事诉因与财产处分；附定义表、研究编码及官方来源。
