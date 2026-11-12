@@ -25,6 +25,11 @@ class PlatformWheel(bdist_wheel):
 
     def get_tag(self):
         _, _, platform_tag = super().get_tag()
+        if platform.system() == 'Darwin':
+            # setup-python may itself be universal2, but build.py invokes one
+            # native compiler target. Never advertise a second Mach-O slice.
+            major, minor = map(int, platform.mac_ver()[0].split('.')[:2])
+            platform_tag = f'macosx_{major}_{0 if major >= 11 else minor}_{platform.machine()}'
         return 'py3', 'none', platform_tag
 
 

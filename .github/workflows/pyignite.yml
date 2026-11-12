@@ -93,6 +93,10 @@ jobs:
         if: matrix.os == 'ubuntu-24.04' && matrix.torch == '2.14.0'
         run: python tools/pyignite/review.py --g1-root "$RUNNER_TEMP/g1-root.safetensors" --output review-results/g1-subset.json
       - run: python -m build tools/pyignite --outdir wheelhouse
+      - name: Verify native macOS wheel tag
+        if: runner.os == 'macOS'
+        run: |
+          python -c "import pathlib,platform; p=next(pathlib.Path('wheelhouse').glob('*.whl')); assert p.name.endswith('_'+platform.machine()+'.whl'), p"
       - name: Install wheel in a clean venv and run outside the checkout
         shell: bash
         run: |
