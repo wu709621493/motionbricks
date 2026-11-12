@@ -5,6 +5,7 @@ import platform
 import numpy as np
 from .position import PositionEmbedding
 from .thermal import TemperatureGuard, ThermalSafetyError
+from .supervisor import IsolatedTemperatureGuard, IsolatedIOError, run_supervised
 
 __version__ = '0.2.0'
 _lib = None

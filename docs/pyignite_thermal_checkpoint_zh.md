@@ -84,3 +84,13 @@ if record is not None:
 1. Intel, [Information about Temperature for Intel Processors](https://www.intel.com/content/www/us/en/support/articles/000005597/processors.html)：温度限值因型号而异，内部节流／关断与软件监测的关系。
 2. Linux, [coretemp](https://docs.kernel.org/hwmon/coretemp.html)：CPU 温度单位、传感器标签及 critical alarm。
 3. Linux, [k10temp](https://docs.kernel.org/hwmon/k10temp.html)：Tctl 与 Tdie 区别及 CCD 温度来源。
+
+# 后续：进程隔离入口
+
+2026-11-13 新增可选的 [`IsolatedTemperatureGuard` 与外层监督说明](pyignite_isolated_guard_zh.md)。本文原合作式入口的边界继续成立；隔离路径、本次故障注入、历史证据和严格 PE 数值诊断分别验收。
+
+
+## 后续：进程隔离入口
+
+2026-11-13 新增可选的 [`IsolatedTemperatureGuard` 与外层监督说明](pyignite_isolated_guard_zh.md)。本文原合作式入口的边界继续成立；隔离路径、本次故障注入、历史证据和严格 PE 数值诊断分别验收。
+

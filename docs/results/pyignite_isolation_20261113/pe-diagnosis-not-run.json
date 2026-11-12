@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "case": "PE-4096-64",
+  "base_commit": "6f7c2dc67c3d640ebbb32b9f97ef4dbb0fa4e0b0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "atol": 2e-05,
+  "rtol": 2e-05,
+  "oracle_changed": false,
+  "sources": {
+    "tools/onnx/models/layers.py": "426925febc7fb57b769108b410f4b0732f8e27498ab687dbc477a6df189f9d26",
+    "tools/pyignite/kernels.cpp": "3f6b6401661ccc7efd2ef1790f48d8772f1572fd0e9d898da6f93d7d0a6d9325",
+    "tools/pyignite/diagnose_pe.py": "de69c8183d9a41ad3a69504409aa9ac487c86b504eef3ed9b4406d2cff88dc5e"
+  },
+  "strict": {
+    "status": "NOT_RUN"
+  },
+  "localization": {
+    "status": "NOT_RUN",
+    "error": "ModuleNotFoundError: No module named 'torch'"
+  },
+  "artifacts": [],
+  "cannot_claim": [
+    "No full G1, model output/token behavior, real sensor or hardware result.",
+    "Controlled exp replacement is not a corrected Torch oracle or a kernel fix."
+  ],
+  "checkout_commit": "unavailable; use base_commit and actual source hashes",
+  "unavailable": "ModuleNotFoundError: No module named 'torch'"
+}
