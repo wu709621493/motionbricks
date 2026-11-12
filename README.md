@@ -559,4 +559,8 @@ It traces Ufimtsev's published research through translation and engineering to t
 F-117, and presents intelligence-sector talent diversion as an opportunity-cost
 hypothesis requiring data.
 
+## GitHub 与“结合”的技能定位（fork extension）
 
+本仓库将 GitHub 与“结合”定义为技能，并明确两者不具有自主意识。
+详见 [技能定义及原文依据](docs/github_jiehe_skill_definition_zh.md)；
+“结合”的当前实现与使用范围见 [Git Gap](examples/git_gap/README.md)。
