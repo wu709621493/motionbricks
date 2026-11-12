@@ -620,3 +620,9 @@ comparisons. Run `python -S -m motionbricks.roach_home --out-dir /tmp/roach-home
 All outputs are synthetic and uncalibrated; deaths, necrophagy, human activity and
 infection transmission are not implemented. Source notes discuss these extensions
 separately from the running model.
+
+## Historical medical ethics evidence review (fork research note)
+
+[纳粹德国人体实验：已确认项目与证据边界](docs/nazi_medical_experiments_evidence_zh.md)
+整理10类人体实验，分别记录受害者选择、种族政策关系、伤害与审判或纪念馆依据。
+文档区分项目发生事实、施害者效果主张，以及《Apt Pupil》中尚未证实的文学描写。
