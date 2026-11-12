@@ -4,6 +4,8 @@
 提案：吴孟城（Windy Wu）  
 状态：`CONCEPT_ONLY`；硬件制备、频率采集、熵评估与身份认证均为 `NOT_RUN`。
 
+后续：[第一阶段物理预算与可运行CPU模型](rb14_phase1_physics_zh.md)提供假设参数扫描、几何一致性筛查、噪声／漂移门槛与多模态退化反例。仅数值计算已执行，实物验收仍为 `NOT_RUN`。下文“本次交付”保留为 PR #84 原始概念交付范围。
+
 ## 1. 目标与本次交付
 
 将两组各 7 个铷原子的空间分布，通过纳米机械谐振器转换为频率响应，用于两种独立实验：每轮生成一个原始随机样本，或将一次形成的结构稳定保存为器件指纹。用户将后者命名为“孤品芯片”。“孤品”是设计目标，不是绝对唯一、物理不可复制或密码学安全的认证结论。
@@ -142,3 +144,4 @@ $$
 7. Chen and Li, [CMOS-MEMS Physical Unclonable Functions Based on Unbalanced Bimodal Frequency Combs](https://doi.org/10.1109/MEMS61431.2025.10918008), IEEE MEMS (2025)；[作者机构摘要](https://scholars.lib.ntu.edu.tw/entities/publication/05a7547f-b158-4ebd-be1c-2ebb05bfc3e3)。谐振响应 PUF 先例，不证明本设计不可克隆。
 8. NIST, [SP 800-90B: Recommendation for the Entropy Sources Used for Random Bit Generation](https://csrc.nist.gov/pubs/sp/800/90/b/final)。熵源设计与健康检测参考，不是量子来源认证。
 9. SciPy, [Sobol documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.qmc.Sobol.html)。低差异采样及随机化的术语参考。
+

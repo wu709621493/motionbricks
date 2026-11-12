@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "device": {
+    "lx_m": 3e-7,
+    "ly_m": 3e-7,
+    "f11_hz": 1e8,
+    "effective_mass_kg": 1e-17,
+    "tension_ratio_y": 1.3,
+    "quality_factor": 10000,
+    "max_mass_ratio": 0.001
+  },
+  "scan": {
+    "frequencies_hz": [1e7, 1e8, 1e9],
+    "effective_masses_kg": [1e-18, 1e-17, 1e-16, 1e-15],
+    "captured_counts": [0, 1, 7, 14],
+    "families": ["flat", "string", "membrane"]
+  },
+  "geometry": {
+    "density_kg_m3": 2330.0,
+    "young_modulus_pa": 1.6e11,
+    "poisson_ratio": 0.22,
+    "lengths_m": [3e-7, 1e-6, 3e-6],
+    "thicknesses_m": [5e-9, 2e-8, 1e-7]
+  },
+  "noise_profiles": [
+    {"name": "quiet_assumption", "white_hz_sqrt_s": 0.05, "floor_hz": 0.01, "drift_hz_per_s": 0.001, "common_fractional_sigma": 1e-10},
+    {"name": "reference_assumption", "white_hz_sqrt_s": 1.0, "floor_hz": 0.05, "drift_hz_per_s": 0.01, "common_fractional_sigma": 5e-10},
+    {"name": "poor_assumption", "white_hz_sqrt_s": 10.0, "floor_hz": 1.0, "drift_hz_per_s": 0.1, "common_fractional_sigma": 1e-8}
+  ],
+  "readout": {
+    "z_margin": 5.0,
+    "dead_time_s": 0.0,
+    "tau_min_s": 0.01,
+    "tau_max_s": 1000.0,
+    "tau_points": 61,
+    "comparison_tau_s": 10.0,
+    "comparison_profile": "quiet_assumption",
+    "grid_side": 9
+  }
+}
