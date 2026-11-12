@@ -610,3 +610,13 @@ relationships. Source notes distinguish verified summaries from interpretation.
 [婚外恋、婚外情、婚外性与婚外金钱交易](docs/extramarital_love_affairs_sex_money_ethics_zh.md)
 续接 PR #94，拆分情感、性、承诺与经济往来，加入中国大陆、法国及美国加州、纽约州、北卡州的法律例子，
 分别核对离婚、刑事责任、第三者民事诉因与财产处分；附定义表、研究编码及官方来源。
+
+## Virtual cockroach home (fork behavior experiment)
+
+[虚拟民宅与蟑螂行为观察](docs/roach_home/README_zh.md) adds a standard-library
+2D apartment with 40 virtual agents, wall/doorway constraints, shelter and local
+resource proxies, an offline trajectory/heatmap replay, and paired-seed scenario
+comparisons. Run `python -S -m motionbricks.roach_home --out-dir /tmp/roach-home`.
+All outputs are synthetic and uncalibrated; deaths, necrophagy, human activity and
+infection transmission are not implemented. Source notes discuss these extensions
+separately from the running model.

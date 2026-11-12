@@ -1,0 +1,25 @@
+name: Virtual cockroach home
+on:
+  push:
+    paths: ['motionbricks/roach_home*.py', 'tests/roach_home/**', 'experiments/roach_home/**', '.github/workflows/roach-home.yml']
+  pull_request:
+    paths: ['motionbricks/roach_home*.py', 'tests/roach_home/**', 'experiments/roach_home/**', '.github/workflows/roach-home.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  stdlib-model:
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ['3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -S -m unittest discover -s tests/roach_home -v
+      - run: python -S -m motionbricks.roach_home --house experiments/roach_home/apartment.json --steps 20 --out-dir roach-home-ci
