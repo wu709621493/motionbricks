@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-12",
+  "status": "EXPLORATORY_ARCHIVAL_CODING",
+  "claims": [
+    {
+      "id": "CATH01",
+      "subject": "cather",
+      "assertion_type": "document_fact",
+      "statement": "1914年My Autobiography属于S. S. McClure，凯瑟代笔。",
+      "source_ids": [
+        "C09"
+      ],
+      "locator": "Collected Writings",
+      "does_not_establish": "不构成凯瑟本人自传。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH02",
+      "subject": "cather",
+      "assertion_type": "editorial_report",
+      "statement": "首页显示3118封已上线，介绍页称已知存世超过3200封。",
+      "source_ids": [
+        "C01",
+        "C10"
+      ],
+      "locator": "edition count; introduction",
+      "does_not_establish": "统计口径不同，不是全部写作数量。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH03",
+      "subject": "cather",
+      "assertion_type": "editorial_report",
+      "statement": "Datebook项目页使用3125封的数据范围。",
+      "source_ids": [
+        "C08"
+      ],
+      "locator": "Goals",
+      "does_not_establish": "不能与首页计数直接相减解释遗失或删改。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH04",
+      "subject": "cather",
+      "assertion_type": "editorial_report",
+      "statement": "信件出版政策在2011年改变，2013年选集、2018年数字版随后出现。",
+      "source_ids": [
+        "C10"
+      ],
+      "locator": "publication history",
+      "does_not_establish": "现在可读不等于作者在世时愿意公开。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH05",
+      "subject": "cather",
+      "assertion_type": "self_report",
+      "statement": "1908年给Jewett的信描述编辑事务耗竭并考虑经济与创作的权衡。",
+      "source_ids": [
+        "C03"
+      ],
+      "locator": "letter #0145, main text",
+      "does_not_establish": "一次自述不是终身性格、诊断或之后选择的唯一原因。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH06",
+      "subject": "cather",
+      "assertion_type": "document_fact",
+      "statement": "1919报道将1912年首部小说与Jewett指点连成的顺序，与1908年信中已发生的创作交流不相容。",
+      "source_ids": [
+        "C15",
+        "C03",
+        "C09"
+      ],
+      "locator": "Sell profile; letter #0145; novel bibliography",
+      "does_not_establish": "不能确定具体错误由记者、作者、排印或编辑哪一环节造成。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH07",
+      "subject": "cather",
+      "assertion_type": "editorial_report",
+      "statement": "1921年Omaha Bee报道的导言列出姓名与生平日期等错误。",
+      "source_ids": [
+        "C12"
+      ],
+      "locator": "Bohlke introduction",
+      "does_not_establish": "不是证明所有采访都错误。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH08",
+      "subject": "cather",
+      "assertion_type": "self_report",
+      "statement": "1938年给Knopf的信称写作愉快，并提出停留计划。",
+      "source_ids": [
+        "C04"
+      ],
+      "locator": "letter #2705",
+      "does_not_establish": "计划不是实际完成记录，愉快不是终身恒定情绪。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH09",
+      "subject": "cather",
+      "assertion_type": "document_fact",
+      "statement": "1945年给Meta的信表达饮食陪伴建议和共同回忆。",
+      "source_ids": [
+        "C05"
+      ],
+      "locator": "letter #2274",
+      "does_not_establish": "不能推出对所有人始终如此；丧偶背景在编者注中。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH10",
+      "subject": "cather",
+      "assertion_type": "editorial_report",
+      "statement": "1913年采访曾被后续报道用作生平信息来源。",
+      "source_ids": [
+        "C11"
+      ],
+      "locator": "Bohlke introduction",
+      "does_not_establish": "重复刊载不是独立观察。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH11",
+      "subject": "cather",
+      "assertion_type": "editorial_report",
+      "statement": "编辑版区分正文、修订及注释，并包含秘书代写等类型。",
+      "source_ids": [
+        "C02",
+        "C10"
+      ],
+      "locator": "transcription policy; definition of letter",
+      "does_not_establish": "不能把编者注或秘书措辞直接归为原作者手写。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "CATH12",
+      "subject": "cather",
+      "assertion_type": "research_inference",
+      "statement": "比较1908与1938年信支持收窄对工作体验的概括。",
+      "source_ids": [
+        "C03",
+        "C04"
+      ],
+      "locator": "cross-period comparison",
+      "does_not_establish": "没有测量人格变化或排除30年间其他变化。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "HEM01",
+      "subject": "hemingway",
+      "assertion_type": "editorial_report",
+      "statement": "当前书信项目页估计约7000封，规划17卷，第7卷标即将出版。",
+      "source_ids": [
+        "H03"
+      ],
+      "locator": "project description and volume list",
+      "does_not_establish": "不是本次读取7000封，也不是所有卷均已出版。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "HEM02",
+      "subject": "hemingway",
+      "assertion_type": "document_fact",
+      "statement": "访谈包含作者对反复重写结尾的自述。",
+      "source_ids": [
+        "H02"
+      ],
+      "locator": "rewriting Q&A",
+      "does_not_establish": "不等于精确改写次数独立获证。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "HEM03",
+      "subject": "hemingway",
+      "assertion_type": "editorial_report",
+      "statement": "摩根馆文章报告记者修订了著名问答的措辞。",
+      "source_ids": [
+        "H01"
+      ],
+      "locator": "revised typescript comparison",
+      "does_not_establish": "本次未检视原始打字稿；不能推断全部简练风格皆由记者创造。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "HEM04",
+      "subject": "hemingway",
+      "assertion_type": "editorial_report",
+      "statement": "图书馆版说明收录不同结尾及早期草稿。",
+      "source_ids": [
+        "H05",
+        "H08"
+      ],
+      "locator": "About the Book; manuscript discussion",
+      "does_not_establish": "本次未独立清点每个片段或修改动作。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "HEM05",
+      "subject": "hemingway",
+      "assertion_type": "document_fact",
+      "statement": "访谈导言提供工作环境与站立写作的记者观察。",
+      "source_ids": [
+        "H02"
+      ],
+      "locator": "introductory scene",
+      "does_not_establish": "一次观察不能代表所有时期；与回答同属访谈生产链。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "HEM06",
+      "subject": "hemingway",
+      "assertion_type": "document_fact",
+      "statement": "1954年宴会致辞由大使代读，作者本人录音在后来完成。",
+      "source_ids": [
+        "H07"
+      ],
+      "locator": "delivery note and recording footnote",
+      "does_not_establish": "不能把作者录音当当日现场情绪样本。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "HEM07",
+      "subject": "hemingway",
+      "assertion_type": "document_fact",
+      "statement": "A Moveable Feast身后出版且有后来的恢复版。",
+      "source_ids": [
+        "H06"
+      ],
+      "locator": "About the Book",
+      "does_not_establish": "未做版本校勘；恢复版不自动成为唯一无争议真相。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "HEM08",
+      "subject": "hemingway",
+      "assertion_type": "research_inference",
+      "statement": "访谈编辑史限制从成稿风格推断日常说话性格。",
+      "source_ids": [
+        "H01",
+        "H02"
+      ],
+      "locator": "interview production comparison",
+      "does_not_establish": "没有测量读者是否实际降低过度推断。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FITZ01",
+      "subject": "fitzgerald",
+      "assertion_type": "document_fact",
+      "statement": "三篇自传性文章原刊分别为1936年2、3、4月。",
+      "source_ids": [
+        "F03",
+        "F04",
+        "F05"
+      ],
+      "locator": "original issue dates",
+      "does_not_establish": "原刊、转载和结集不是独立证人。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FITZ02",
+      "subject": "fitzgerald",
+      "assertion_type": "self_report",
+      "statement": "崩溃系列公开组织作者的挫败和继续生活的自我解释。",
+      "source_ids": [
+        "F03",
+        "F09"
+      ],
+      "locator": "Parts I–III",
+      "does_not_establish": "不是临床诊断、全部感受或所有行为的因果说明。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FITZ03",
+      "subject": "fitzgerald",
+      "assertion_type": "document_fact",
+      "statement": "账簿第55页把不同收入来源、佣金、预付款与估计分类。",
+      "source_ids": [
+        "F11"
+      ],
+      "locator": "page 55, record for 1923",
+      "does_not_establish": "不能直接视作净资产、银行到账或家庭可支配收入。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FITZ04",
+      "subject": "fitzgerald",
+      "assertion_type": "self_report",
+      "statement": "账簿第180页混合年度自我评价与逐月事件。",
+      "source_ids": [
+        "F02"
+      ],
+      "locator": "page 180, Sept 1925–Sept 1926",
+      "does_not_establish": "记录密集不等于每条同期落笔或每天均有覆盖。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FITZ05",
+      "subject": "fitzgerald",
+      "assertion_type": "document_fact",
+      "statement": "账簿第187页含对具体患病时间的不确定表达。",
+      "source_ids": [
+        "F12"
+      ],
+      "locator": "page 187, June entry",
+      "does_not_establish": "不是逐日完整日记。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FITZ06",
+      "subject": "fitzgerald",
+      "assertion_type": "editorial_report",
+      "statement": "普林斯顿说明和展览记录Gatsby手稿、校样与编辑通信中的大量修订。",
+      "source_ids": [
+        "F06",
+        "F07"
+      ],
+      "locator": "draft and galley discussion",
+      "does_not_establish": "馆方观察不是本次逐页复算；创作修订不证明跨领域恒定自律。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FITZ07",
+      "subject": "fitzgerald",
+      "assertion_type": "editorial_report",
+      "statement": "馆藏指南列有合同和税务记录。",
+      "source_ids": [
+        "F01"
+      ],
+      "locator": "collection components",
+      "does_not_establish": "只确认馆藏存在，本次未读原件，不构成财务交叉验证。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FITZ08",
+      "subject": "fitzgerald",
+      "assertion_type": "research_inference",
+      "statement": "文章与账簿相符时，首先提供同一作者跨载体一致性。",
+      "source_ids": [
+        "F02",
+        "F03",
+        "F09"
+      ],
+      "locator": "provenance comparison",
+      "does_not_establish": "不是多个独立观察者确认心理真值。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FAUL01",
+      "subject": "faulkner",
+      "assertion_type": "self_report",
+      "statement": "1956年访谈区分作品问题和私人问题，对私人回答保留条件。",
+      "source_ids": [
+        "W01"
+      ],
+      "locator": "opening exchange",
+      "does_not_establish": "接受部分提问不等于同意全面公开私生活。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FAUL02",
+      "subject": "faulkner",
+      "assertion_type": "editorial_report",
+      "statement": "UVA介绍公开活动与录音范围，并记载缺带及编选差异。",
+      "source_ids": [
+        "W02"
+      ],
+      "locator": "Introduction and The Recordings",
+      "does_not_establish": "不是所有场次完整录音；本次未听完音频。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FAUL03",
+      "subject": "faulkner",
+      "assertion_type": "editorial_report",
+      "statement": "转录政策不保留所有停顿与犹疑音。",
+      "source_ids": [
+        "W02"
+      ],
+      "locator": "transcription conventions",
+      "does_not_establish": "文字流畅不证明现场没有停顿；停顿也不是特定情绪的唯一指标。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FAUL04",
+      "subject": "faulkner",
+      "assertion_type": "editorial_report",
+      "statement": "档案导言说明纸本编选曾替换部分种族用语。",
+      "source_ids": [
+        "W02"
+      ],
+      "locator": "editorial discussion of vocabulary",
+      "does_not_establish": "本次未逐段独立比较纸本和录音。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FAUL05",
+      "subject": "faulkner",
+      "assertion_type": "document_fact",
+      "statement": "诺奖官网注明演说文本纳入作者后来的修订。",
+      "source_ids": [
+        "W06"
+      ],
+      "locator": "editorial footnote",
+      "does_not_establish": "官网文本不一定等于当日逐字发言。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FAUL06",
+      "subject": "faulkner",
+      "assertion_type": "self_report",
+      "statement": "公开索引中的多个回答重复赚钱及重写Sanctuary的叙述。",
+      "source_ids": [
+        "W03",
+        "W04",
+        "W05"
+      ],
+      "locator": "indexed Sanctuary passages",
+      "does_not_establish": "只读片段；重复自述不是经济动机的独立验证。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "FAUL07",
+      "subject": "faulkner",
+      "assertion_type": "research_inference",
+      "statement": "录音和编辑说明可能改善对现场的理解，但不保证准确推断心理原因。",
+      "source_ids": [
+        "W02"
+      ],
+      "locator": "recording versus transcript comparison",
+      "does_not_establish": "读者效应尚未测试。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "METH01",
+      "subject": "methods",
+      "assertion_type": "research_report",
+      "statement": "数字足迹人格预测研究报告模型与朋友判断的不同自评相关。",
+      "source_ids": [
+        "P01"
+      ],
+      "locator": "abstract and self-other agreement",
+      "does_not_establish": "群体相关不是个体了解百分比，也不涵盖实时思想。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "METH02",
+      "subject": "methods",
+      "assertion_type": "research_report",
+      "statement": "观点获取实验摘要区分想象对方与直接交流。",
+      "source_ids": [
+        "P02"
+      ],
+      "locator": "abstract",
+      "does_not_establish": "不能直接外推任何名人采访的真实性。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "METH03",
+      "subject": "methods",
+      "assertion_type": "research_report",
+      "statement": "SOKA研究报告不同特征的自我与他人判断优势不同。",
+      "source_ids": [
+        "P03"
+      ],
+      "locator": "abstract",
+      "does_not_establish": "不提供四位作家谁最了解谁的排行榜。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "METH04",
+      "subject": "methods",
+      "assertion_type": "research_report",
+      "statement": "信息数量和质量研究支持在其学生互动任务中考虑两者。",
+      "source_ids": [
+        "P04"
+      ],
+      "locator": "abstract",
+      "does_not_establish": "未测量财富无限、长期粉丝或历史档案。",
+      "coding_status": "single_researcher_exploratory"
+    },
+    {
+      "id": "METH05",
+      "subject": "methods",
+      "assertion_type": "research_inference",
+      "statement": "本案例组只支持提出和具体化领域化理解的假设。",
+      "source_ids": [
+        "C03",
+        "H01",
+        "F12",
+        "W02"
+      ],
+      "locator": "cross-case synthesis",
+      "does_not_establish": "无随机分配、无稳定人格真值，不能估计预算的因果效应。",
+      "coding_status": "single_researcher_exploratory"
+    }
+  ]
+}

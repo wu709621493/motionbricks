@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-12",
+  "validation_status": "PASS",
+  "scope": "Offline reference integrity and collection retrieval metadata only; not historical truth or psychological validity.",
+  "sources": 47,
+  "source_access_statuses": {
+    "page_read": 15,
+    "selected_passages_read": 17,
+    "metadata_read": 5,
+    "indexed_text_read": 2,
+    "api_metadata_read": 1,
+    "indexed_excerpt_read": 4,
+    "abstract_read": 3
+  },
+  "claims": 40,
+  "tasks_not_run": 8,
+  "inventories": {
+    "cather_interviews": {
+      "items": 33,
+      "successful_fetches": 33,
+      "selected_passages_read": 5
+    },
+    "ledger_items": {
+      "items": 82,
+      "successful_fetches": 82,
+      "selected_passages_read": 3
+    }
+  },
+  "psychological_experiment_status": "NOT_RUN",
+  "errors": []
+}
