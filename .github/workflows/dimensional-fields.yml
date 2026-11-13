@@ -1,0 +1,24 @@
+name: Dimensional field limiting checks
+on:
+  pull_request:
+    paths: ['tools/research/check_dimensional_identities.py', 'tests/dimensional_fields/**', 'docs/dimensional_transition*', '.github/workflows/dimensional-fields.yml']
+  push:
+    paths: ['tools/research/check_dimensional_identities.py', 'tests/dimensional_fields/**', 'docs/dimensional_transition*', '.github/workflows/dimensional-fields.yml']
+permissions:
+  contents: read
+jobs:
+  limiting-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -S -m unittest discover -s tests/dimensional_fields -v
+      - run: python -S tools/research/check_dimensional_identities.py

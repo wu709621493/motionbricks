@@ -1,0 +1,83 @@
+{
+  "barrier_radius_over_R0": 0.6666666666666666,
+  "checks": {
+    "barrier_distinct_from_nucleation": true,
+    "gauss_force_slope": true,
+    "scalar_energy": true,
+    "scalar_position": true,
+    "wall_energy": true,
+    "wall_subluminal": true,
+    "wall_velocity_derivative": true
+  },
+  "dimension_change": "NOT_RUN",
+  "evidence_origin": "NUMERICAL_LIMITING_EXAMPLES",
+  "experimental_fit": "NOT_RUN",
+  "full_coupled_field_solver": "NOT_RUN",
+  "gauss": [
+    {
+      "inferred_d_F": 2.0,
+      "spatial_dimension": 2
+    },
+    {
+      "inferred_d_F": 3.0,
+      "spatial_dimension": 3
+    },
+    {
+      "inferred_d_F": 4.0,
+      "spatial_dimension": 4
+    }
+  ],
+  "scalar": {
+    "end_time_dimensionless": 8,
+    "max_energy_error": 2.6645352591003757e-15,
+    "max_position_error": 1.0574319198042303e-12,
+    "steps": 4000
+  },
+  "schema_version": 1,
+  "verdict": "PASS",
+  "wall": [
+    {
+      "beta": 0.0,
+      "gamma": 1.0,
+      "normalized_energy": 0.0,
+      "rho": 1.0,
+      "tau": 0
+    },
+    {
+      "beta": 0.24253562503633297,
+      "gamma": 1.0307764064044151,
+      "normalized_energy": -2.220446049250313e-16,
+      "rho": 1.0307764064044151,
+      "tau": 0.25
+    },
+    {
+      "beta": 0.7071067811865475,
+      "gamma": 1.4142135623730951,
+      "normalized_energy": 0.0,
+      "rho": 1.4142135623730951,
+      "tau": 1
+    },
+    {
+      "beta": 0.8944271909999159,
+      "gamma": 2.23606797749979,
+      "normalized_energy": 0.0,
+      "rho": 2.23606797749979,
+      "tau": 2
+    },
+    {
+      "beta": 0.9922778767136677,
+      "gamma": 8.06225774829855,
+      "normalized_energy": -1.1368683772161603e-13,
+      "rho": 8.06225774829855,
+      "tau": 8
+    },
+    {
+      "beta": 0.9999500037496876,
+      "gamma": 100.00499987500625,
+      "normalized_energy": 0.0,
+      "rho": 100.00499987500625,
+      "tau": 100
+    }
+  ],
+  "wall_max_derivative_error": 1.0741850742235215e-09
+}

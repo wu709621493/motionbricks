@@ -634,3 +634,6 @@ separately from the running model.
 物质和尺度场方程的候选框架。文档区分有效降维、拓扑变化与真实维数改变；
 未实施数值求解或实验验证，也不声称已建立二向箔式降维机制。
 
+
+Follow-up: [#99 limiting-case numerical checks](docs/dimensional_transition_checks_zh.md)
+adds CPU-only scalar integration and wall/force identities; it does not solve the full coupled system.
