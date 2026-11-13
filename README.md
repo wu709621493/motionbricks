@@ -626,3 +626,11 @@ separately from the running model.
 [纳粹德国人体实验：已确认项目与证据边界](docs/nazi_medical_experiments_evidence_zh.md)
 整理10类人体实验，分别记录受害者选择、种族政策关系、伤害与审判或纪念馆依据。
 文档区分项目发生事实、施害者效果主张，以及《Apt Pupil》中尚未证实的文学描写。
+
+## Geometry and dimensional transitions (fork research proposition)
+
+[维度变化的耦合场方程组](docs/dimensional_transition_coupled_fields_zh.md)
+归纳高斯定律、分子光谱、几何尺度动力学及虫洞类比，提出由同一作用量导出几何、
+物质和尺度场方程的候选框架。文档区分有效降维、拓扑变化与真实维数改变；
+未实施数值求解或实验验证，也不声称已建立二向箔式降维机制。
+
