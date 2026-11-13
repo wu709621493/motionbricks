@@ -1,6 +1,7 @@
 """Independent numerical identities, failure cases and CLI reproducibility."""
 import json
 import math
+from decimal import Decimal, localcontext
 from pathlib import Path
 import subprocess
 import sys
@@ -109,6 +110,49 @@ class PhysicsTests(unittest.TestCase):
 
 class NoiseTests(unittest.TestCase):
     setUp = PhysicsTests.setUp
+    def test_single_channel_strong_common_noise_has_nonzero_information(self):
+        mode = self.modes[0]
+        for white in (.01, .001, 1e-8):
+            noise = Noise("cancellation", white, 0, 0, .01)
+            expected = 1 / (2 * white ** 2 + 2 * (.01 * mode.frequency_hz) ** 2)
+            actual = covariance_inner([1], [1], [mode], noise, 1)
+            self.assertGreater(actual, 0)
+            self.assertAlmostEqual(actual / expected, 1, places=13)
+
+    def test_two_channel_inverse_against_high_precision_matrix(self):
+        modes = self.modes[:2]
+        noise = Noise("strong", .001, 0, 0, .01)
+        # Independent explicit 2x2 inverse, with 80 decimal digits to preserve
+        # the small positive determinant when common noise dominates.
+        with localcontext() as ctx:
+            ctx.prec = 80
+            var = Decimal.from_float(noise.difference_variance(1))
+            u, v = [Decimal.from_float(math.sqrt(2) * noise.common_fractional_sigma * m.frequency_hz)
+                    for m in modes]
+            c00, c01, c11 = var + u*u, u*v, var + v*v
+            determinant = c00*c11 - c01*c01
+            for a, b in (([1, 2], [1, 2]), ([1, -2], [-3, 4]), ([0, 1], [1, 0])):
+                expected = float((Decimal(a[0])*Decimal(b[0])*c11
+                                  - (Decimal(a[0])*Decimal(b[1])+Decimal(a[1])*Decimal(b[0]))*c01
+                                  + Decimal(a[1])*Decimal(b[1])*c00) / determinant)
+                actual = covariance_inner(a, b, modes, noise, 1)
+                self.assertAlmostEqual(actual / expected, 1, places=12)
+
+    def test_common_and_differential_eigenvectors(self):
+        modes = [self.modes[0]] * 2
+        noise = Noise("strong", .001, 0, 0, .01)
+        parallel = covariance_inner([1, 1], [1, 1], modes, noise, 1)
+        transverse = covariance_inner([1, -1], [1, -1], modes, noise, 1)
+        self.assertAlmostEqual(parallel / (2 / (2e-6 + 4e12)), 1, places=13)
+        self.assertAlmostEqual(transverse / 1e6, 1, places=13)
+
+    def test_nonfinite_vectors_and_underflow_are_refused(self):
+        for value in (float("nan"), float("inf"), True):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                covariance_inner([value], [1], self.modes[:1], self.noise, 1)
+        with self.assertRaises(ValueError):
+            covariance_inner([1], [1], self.modes[:1], Noise("underflow", 1e-300, 0, 0, 0), 1)
+
     def test_reference_difference_noise_and_drift(self):
         profile = Noise("white", 2, 0, 0, 0)
         result = noise_budget(5, self.modes[0], profile, 8, 0, 5)

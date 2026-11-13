@@ -1,0 +1,1 @@
+{"concept_status": "CONCEPT_ONLY", "evidence_origin": "SIMULATED", "calculation_status": "CPU_MODEL_RUN", "scan_rows": 144, "noise_scan_rows": 366}
