@@ -1,0 +1,11 @@
+test_cli_preserves_failure_exit_code (test_identities.IdentityTests.test_cli_preserves_failure_exit_code) ... ok
+test_coarse_run_is_a_failure_not_a_pass (test_identities.IdentityTests.test_coarse_run_is_a_failure_not_a_pass) ... ok
+test_default_accuracy_and_unperformed_work (test_identities.IdentityTests.test_default_accuracy_and_unperformed_work) ... ok
+test_rk4_converges_toward_analytic_solution (test_identities.IdentityTests.test_rk4_converges_toward_analytic_solution) ... ok
+test_validated_domain (test_identities.IdentityTests.test_validated_domain) ... ok
+test_wall_minkowski_hyperbola (test_identities.IdentityTests.test_wall_minkowski_hyperbola) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.126s
+
+OK
