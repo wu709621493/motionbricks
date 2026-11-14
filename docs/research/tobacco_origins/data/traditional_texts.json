@@ -1,0 +1,146 @@
+[
+  {
+    "id": "TEX01",
+    "title": "中华本草（1999）",
+    "topic": "大学页面列明的直接参考书",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX02",
+    "title": "本草正",
+    "topic": "烟草传入与本草解释",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX03",
+    "title": "本草纲目拾遗",
+    "topic": "烟草名称、毒性与历史记载",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX04",
+    "title": "滇南本草",
+    "topic": "药性、传统用途；版本与后期增补问题待核",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX05",
+    "title": "本草汇言",
+    "topic": "药性和禁忌转引",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX06",
+    "title": "药性考",
+    "topic": "外用传统记载",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX07",
+    "title": "现代实用中药",
+    "topic": "传统用途与近现代整理",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX08",
+    "title": "浙江药用植物志",
+    "topic": "地方外用记录",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX09",
+    "title": "福建药物志",
+    "topic": "地方药用记录",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX10",
+    "title": "福建民间草药",
+    "topic": "地方名物线索",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX11",
+    "title": "湖南药物志",
+    "topic": "地方名物线索",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  },
+  {
+    "id": "TEX12",
+    "title": "贵州中草药名录",
+    "topic": "地方名物线索",
+    "source_ids": [
+      "T01"
+    ],
+    "verification": "institutional_secondary_index_only",
+    "original_edition": null,
+    "page": null,
+    "clinical_efficacy_established": false
+  }
+]

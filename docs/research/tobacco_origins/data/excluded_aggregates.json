@@ -1,0 +1,618 @@
+[
+  {
+    "id": "FAO-OWID_AFR",
+    "entity": "Africa",
+    "code": "OWID_AFR",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 706445.6,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Africa-FAO-",
+    "entity": "Africa (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 706445.6,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Americas-FAO-",
+    "entity": "Americas (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1020066.7,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_ASI",
+    "entity": "Asia",
+    "code": "OWID_ASI",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 4182868.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Asia-FAO-",
+    "entity": "Asia (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 4183824.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Australia-and-New-Zealand-FAO-",
+    "entity": "Australia and New Zealand (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2005,
+    "latest_observation_tonnes": 3605.0,
+    "latest_positive_year": 2005,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Caribbean-FAO-",
+    "entity": "Caribbean (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 29644.97,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Central-America-FAO-",
+    "entity": "Central America (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 67513.81,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Central-Asia-FAO-",
+    "entity": "Central Asia (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 6225.41,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-China-FAO-",
+    "entity": "China (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2257793.5,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Eastern-Africa-FAO-",
+    "entity": "Eastern Africa (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 641087.6,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Eastern-Asia-FAO-",
+    "entity": "Eastern Asia (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2382113.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Eastern-Europe-FAO-",
+    "entity": "Eastern Europe (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 30567.9,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_EUR",
+    "entity": "Europe",
+    "code": "OWID_EUR",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 137267.06,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Europe-FAO-",
+    "entity": "Europe (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 137267.06,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_EU27",
+    "entity": "European Union (27)",
+    "code": "OWID_EU27",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 100090.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_HIC",
+    "entity": "High-income countries",
+    "code": "OWID_HIC",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 324629.78,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Land-Locked-Developing-Countries-FAO-",
+    "entity": "Land Locked Developing Countries (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 486241.03,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Least-Developed-Countries-FAO-",
+    "entity": "Least Developed Countries (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 596644.75,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Low-Income-Food-Deficit-Countries-FAO-",
+    "entity": "Low Income Food Deficit Countries (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 780098.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_LIC",
+    "entity": "Low-income countries",
+    "code": "OWID_LIC",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 389512.3,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_LMC",
+    "entity": "Lower-middle-income countries",
+    "code": "OWID_LMC",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1515366.8,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Melanesia-FAO-",
+    "entity": "Melanesia (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 374.22,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Middle-Africa-FAO-",
+    "entity": "Middle Africa (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 13890.83,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Net-Food-Importing-Developing-Countries-FAO-",
+    "entity": "Net Food Importing Developing Countries (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 858098.44,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_NAM",
+    "entity": "North America",
+    "code": "OWID_NAM",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 264592.28,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Northern-Africa-FAO-",
+    "entity": "Northern Africa (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 15893.1,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Northern-America-FAO-",
+    "entity": "Northern America (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 175300.23,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Northern-Europe-FAO-",
+    "entity": "Northern Europe (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 1964,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_OCE",
+    "entity": "Oceania",
+    "code": "OWID_OCE",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 626.55,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Oceania-FAO-",
+    "entity": "Oceania (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 626.54,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Polynesia-FAO-",
+    "entity": "Polynesia (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 252.32,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Small-Island-Developing-States-FAO-",
+    "entity": "Small Island Developing States (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 30372.46,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_SAM",
+    "entity": "South America",
+    "code": "OWID_SAM",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 747607.7,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-South-America-FAO-",
+    "entity": "South America (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 747607.7,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-South-eastern-Asia-FAO-",
+    "entity": "South-eastern Asia (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 581764.1,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Southern-Africa-FAO-",
+    "entity": "Southern Africa (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 11392.92,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Southern-Asia-FAO-",
+    "entity": "Southern Asia (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1041059.4,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Southern-Europe-FAO-",
+    "entity": "Southern Europe (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 103293.12,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_UMC",
+    "entity": "Upper-middle-income countries",
+    "code": "OWID_UMC",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 3809898.2,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Western-Africa-FAO-",
+    "entity": "Western Africa (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 24181.15,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Western-Asia-FAO-",
+    "entity": "Western Asia (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 172661.94,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Western-Europe-FAO-",
+    "entity": "Western Europe (FAO)",
+    "code": "",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 3406.04,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_WRL",
+    "entity": "World",
+    "code": "OWID_WRL",
+    "entity_type": "aggregate",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 6048230.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  }
+]

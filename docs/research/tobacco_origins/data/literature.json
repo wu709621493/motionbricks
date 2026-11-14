@@ -1,0 +1,477 @@
+[
+  {
+    "id": "L01",
+    "title": "A metabolomics study delineating geographical location-associated primary metabolic changes in the leaves of growing tobacco plants by GC-MS and CE-MS",
+    "year": 2015,
+    "doi": "10.1038/srep16346",
+    "pmid": "",
+    "topic": "origin_metabolomics",
+    "material_or_route": "growing_leaf",
+    "places": [
+      "中国许昌",
+      "中国大理"
+    ],
+    "result_summary": "产区、品种、生长阶段相关代谢差异。",
+    "limitations": "观察性产区关联不能单独识别每种环境因素的因果效应。",
+    "access": "primary_full_text",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L02",
+    "title": "Untargeted Metabolomics of Nicotiana tabacum Grown in United States and India Characterizes the Association of Plant Metabolomes With Natural Climate and Geography",
+    "year": 2019,
+    "doi": "10.3389/fpls.2019.01370",
+    "pmid": "31737005",
+    "topic": "origin_metabolomics",
+    "material_or_route": "K326 field_leaf",
+    "places": [
+      "美国Oxford NC",
+      "印度Rajahmundry"
+    ],
+    "result_summary": "同一品种两地两年；该设计中年份和地点均影响代谢谱。",
+    "limitations": "两地两年不能推广为所有产地影响排序。",
+    "access": "primary_abstract",
+    "industry_relationship": "ITC_company_coauthors",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L03",
+    "title": "Identifying the Geographical Origin of Tobacco Leaf by Strontium and Lead Isotopic with Mineral Elemental Fingerprint",
+    "year": 2022,
+    "doi": "10.1155/2022/5949770",
+    "pmid": "",
+    "topic": "isotope_element_traceability",
+    "material_or_route": "tobacco_leaf",
+    "places": [
+      "阿根廷",
+      "巴西",
+      "津巴布韦",
+      "美国",
+      "赞比亚",
+      "中国"
+    ],
+    "result_summary": "81份烟叶、元素及Sr/Pb同位素用于分类。",
+    "limitations": "已核验出版页摘要；未独立核验训练划分与跨年外部验证；撤稿状态需出版平台持续复核。",
+    "access": "primary_abstract",
+    "industry_relationship": "China_Tobacco_Yunnan_affiliation",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L04",
+    "title": "Geographical origin classification of tobacco by stable isotope and multi-elemental analysis in combination with chemometric methods",
+    "year": 2023,
+    "doi": "10.1016/j.microc.2023.109163",
+    "pmid": "",
+    "topic": "isotope_element_traceability",
+    "material_or_route": "tobacco_leaf",
+    "places": [
+      "中国六省"
+    ],
+    "result_summary": "260样本、稳定同位素与33元素联合分类。",
+    "limitations": "摘要表现不代表未知产区、混配和未来年份性能。",
+    "access": "primary_abstract",
+    "industry_relationship": "tobacco_research_affiliations",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L05",
+    "title": "Optimization of geographical traceability models for tobacco: an investigation into the effects of region, harvest year, and variety on stable isotope and multi-elemental profiling",
+    "year": 2026,
+    "doi": "10.1186/s40538-026-01006-x",
+    "pmid": "",
+    "topic": "isotope_element_traceability",
+    "material_or_route": "flue_cured_leaf",
+    "places": [
+      "中国河南",
+      "中国贵州",
+      "中国云南"
+    ],
+    "result_summary": "2020–2022年样本；报告测试集准确率85.8%–93.6%。",
+    "limitations": "摘要总数523与方法分年173+249+104=526不一致；数据声明称无数据产生或分析，与研究描述不符；需作者澄清，未下载原始数据复现。",
+    "access": "primary_full_text",
+    "industry_relationship": "tobacco_industry_affiliations",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L06",
+    "title": "Rapid discrimination of geographical origin and analysis of chemical characterization of tobacco leaves from multiple countries",
+    "year": 2026,
+    "doi": "10.3389/fchem.2026.1721371",
+    "pmid": "",
+    "topic": "NIR_chemical_traceability",
+    "material_or_route": "leaf",
+    "places": [
+      "中国九烟区",
+      "美国",
+      "巴西",
+      "津巴布韦",
+      "赞比亚"
+    ],
+    "result_summary": "近红外结合70项化学特征进行产地分类。",
+    "limitations": "分类不能自动证明地理因果；未知类别、混配比例和跨实验室表现须另验。",
+    "access": "primary_full_text",
+    "industry_relationship": "CNTC_and_multiple_China_Tobacco_affiliations",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L07",
+    "title": "Chemometric approach for discriminating tobacco trademarks by near infrared spectroscopy",
+    "year": 2018,
+    "doi": "",
+    "pmid": "30445250",
+    "topic": "NIR_authentication",
+    "material_or_route": "manufactured_tobacco",
+    "places": [
+      "未逐项提取"
+    ],
+    "result_summary": "品牌与生产者识别方法线索。",
+    "limitations": "品牌分类与农业地理溯源不是同一任务。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L08",
+    "title": "Exploring Metabolic Characteristics in Different Geographical Locations and Yields of Nicotiana tabacum L. Using Gas Chromatography-Mass Spectrometry Pseudotargeted Metabolomics Combined with Chemometrics",
+    "year": 2024,
+    "doi": "",
+    "pmid": "38668304",
+    "topic": "origin_metabolomics",
+    "material_or_route": "leaf",
+    "places": [
+      "中国水城",
+      "中国播州"
+    ],
+    "result_summary": "比较地点及产量关联代谢差异。",
+    "limitations": "不能从可分类推断产地决定全部风味。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L09",
+    "title": "Metabolomic analysis of Yunnan cigar tobacco leaves: impact of geography and climate on flavor characteristics and machine learning-based origin traceability",
+    "year": 2026,
+    "doi": "10.3389/fpls.2025.1703429",
+    "pmid": "",
+    "topic": "cigar_origin_metabolomics",
+    "material_or_route": "cigar_leaf",
+    "places": [
+      "中国云南"
+    ],
+    "result_summary": "雪茄叶环境关联代谢谱及分类。",
+    "limitations": "DOI含2025不代替实际发表年；关联不是因果；不能将RDA轴解释率当成全球产地贡献比例。",
+    "access": "primary_full_text",
+    "industry_relationship": "not_fully_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L10",
+    "title": "Characterization of the key aroma compounds in cigar filler tobacco leaves from different production regions",
+    "year": 2024,
+    "doi": "10.3389/fpls.2024.1476807",
+    "pmid": "",
+    "topic": "cigar_aroma",
+    "material_or_route": "cigar_filler_leaf",
+    "places": [
+      "国内外五代表产区"
+    ],
+    "result_summary": "比较56种香气成分及气味活性。",
+    "limitations": "烟叶／提取物气味不等于燃烧烟气或临床结局；具体样品表待完整提取。",
+    "access": "primary_full_text",
+    "industry_relationship": "CNTC_and_China_Tobacco_Sichuan",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L11",
+    "title": "Decoding key aroma components of three cigar tobacco leaves based on molecular sensory science",
+    "year": 2025,
+    "doi": "",
+    "pmid": "",
+    "topic": "cigar_aroma",
+    "material_or_route": "cigar_leaf",
+    "places": [
+      "中国云南玉溪",
+      "中国云南德宏",
+      "中国云南普洱"
+    ],
+    "result_summary": "GC-O、气味活性、香气重组及缺失实验研究关键气味分子。",
+    "limitations": "不是产地随机化试验；不能把三种烟叶的结果推广至所有雪茄。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L12",
+    "title": "Formation and transfer patterns of key aroma compounds in cigar tobacco based on SBSE-GC-O-MS, pyrolysis-GC-O-MS and flue gas analysis correlation studies",
+    "year": 2026,
+    "doi": "",
+    "pmid": "41777747",
+    "topic": "leaf_to_smoke",
+    "material_or_route": "leaf_pyrolysate_smoke",
+    "places": [
+      "未逐项提取"
+    ],
+    "result_summary": "追踪烟叶、热解与烟气之间香气谱变化。",
+    "limitations": "相关网络与机器分析不足以单独证明人体感知或毒理结论。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L13",
+    "title": "Metabolome of flue-cured tobacco is significantly affected by the presence of leaf stem",
+    "year": 2023,
+    "doi": "",
+    "pmid": "",
+    "topic": "processing_metabolomics",
+    "material_or_route": "stem_cured_vs_conventional_leaf",
+    "places": [
+      "多地区及品种，待逐项提取"
+    ],
+    "result_summary": "比较带茎烘烤与常规处理代谢谱。",
+    "limitations": "加工是产地比较的混杂／交互因素；不证明某工艺更安全。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L14",
+    "title": "LC-MS/MS-based metabolic profiling: unraveling the impact of varying degrees of curing on metabolite transformations in tobacco",
+    "year": 2024,
+    "doi": "",
+    "pmid": "",
+    "topic": "processing_metabolomics",
+    "material_or_route": "curing_stages",
+    "places": [
+      "未逐项提取"
+    ],
+    "result_summary": "烘烤阶段伴随代谢物变化。",
+    "limitations": "叶片阶段变化不等同于人体暴露变化。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "L15",
+    "title": "Metabolomics reveals signature metabolites associated with high-oiliness flue-cured tobacco (Nicotiana tabacum L.) leaves",
+    "year": 2026,
+    "doi": "10.3389/fpls.2026.1890505",
+    "pmid": "",
+    "topic": "quality_metabolomics",
+    "material_or_route": "flue_cured_leaf",
+    "places": [
+      "单地区单年份"
+    ],
+    "result_summary": "提出油分外观相关代谢标志。",
+    "limitations": "作者指出单地单年、静态相关及缺少代谢流验证等限制。",
+    "access": "primary_full_text",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P01",
+    "title": "Preclinical assessment of stem of Nicotiana tabacum on excision wound model",
+    "year": 2021,
+    "doi": "",
+    "pmid": "33639361",
+    "topic": "extract_preclinical",
+    "material_or_route": "stem_ethanolic_extract_topical",
+    "places": [
+      "来源待提取"
+    ],
+    "result_summary": "细胞、鸡胚膜及大鼠创面模型研究。",
+    "limitations": "茎而非烟叶；外用而非口服；不能支持饮用烟草酒或临床疗效。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P02",
+    "title": "Extraction of Nicotine from Tobacco Leaves and Development of Fast Dissolving Nicotine Extract Film",
+    "year": 2021,
+    "doi": "10.3390/membranes11060403",
+    "pmid": "34071396",
+    "topic": "extract_formulation",
+    "material_or_route": "Burley_leaf_oral_film_in_vitro",
+    "places": [
+      "泰国Chiang Mai试验站"
+    ],
+    "result_summary": "比较提取及制剂表征；有植物凭证标本线索。",
+    "limitations": "不是药酒或临床疗效试验；提取物需定量与毒理评估；本档案不提供提取操作。",
+    "access": "primary_full_text",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P03",
+    "title": "Nicotinic acetylcholine receptor alpha7 subunit is an essential regulator of inflammation",
+    "year": 2003,
+    "doi": "10.1038/nature01339",
+    "pmid": "12508119",
+    "topic": "receptor_mechanism",
+    "material_or_route": "cells_and_animal_models",
+    "places": [
+      "not_origin_study"
+    ],
+    "result_summary": "α7受体参与炎症调控机制。",
+    "limitations": "受体机制不等于整烟、烟酒或传统用途有效。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P04",
+    "title": "Transdermal nicotine for active ulcerative colitis",
+    "year": 1994,
+    "doi": "10.1056/NEJM199403243301202",
+    "pmid": "8114833",
+    "topic": "human_RCT",
+    "material_or_route": "transdermal_nicotine_plus_existing_therapy",
+    "places": [
+      "英国"
+    ],
+    "result_summary": "72人随机双盲；短期改善信号，同时不良反应更多。",
+    "limitations": "特定疾病、经皮制剂与联合治疗；不能推到口服烟叶／烟草酒。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P05",
+    "title": "Transdermal nicotine as maintenance therapy for ulcerative colitis",
+    "year": 1995,
+    "doi": "10.1056/NEJM199504133321503",
+    "pmid": "7885427",
+    "topic": "human_RCT_negative",
+    "material_or_route": "transdermal_nicotine",
+    "places": [
+      "英国"
+    ],
+    "result_summary": "80人维持缓解研究，未优于安慰剂。",
+    "limitations": "与活动期短期研究的阶段、合并用药不同；保留阴性结果。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P06",
+    "title": "Transdermal nicotine for mildly to moderately active ulcerative colitis. A randomized, double-blind, placebo-controlled trial",
+    "year": 1997,
+    "doi": "",
+    "pmid": "9054280",
+    "topic": "human_RCT",
+    "material_or_route": "transdermal_nicotine",
+    "places": [
+      "美国"
+    ],
+    "result_summary": "活动期临床试验线索。",
+    "limitations": "仅适用于研究给药形式及人群；不是现行治疗推荐。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P07",
+    "title": "Transdermal Nicotine Treatment and Progression of Early Parkinson’s Disease",
+    "year": 2023,
+    "doi": "10.1056/EVIDoa2200311",
+    "pmid": "38320207",
+    "topic": "human_RCT_negative",
+    "material_or_route": "transdermal_nicotine",
+    "places": [
+      "多中心"
+    ],
+    "result_summary": "随机试验未显示减缓早期帕金森病进展的获益。",
+    "limitations": "流行病学关联、体外神经保护不能代替临床疗效；存在退出／缺失。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P08",
+    "title": "Tobacco cembranoids protect the function of acute hippocampal slices against NMDA by a mechanism mediated by alpha4beta2 nicotinic receptors",
+    "year": 2005,
+    "doi": "",
+    "pmid": "16247800",
+    "topic": "isolated_compound_preclinical",
+    "material_or_route": "hippocampal_slices",
+    "places": [
+      "not_origin_study"
+    ],
+    "result_summary": "西柏烷类二萜受体相关离体神经保护。",
+    "limitations": "离体单体，不是整株烟草及人体证据。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P09",
+    "title": "Determining the safety of the tobacco cembranoid 4R: A translational study in nonhuman primates",
+    "year": 2023,
+    "doi": "",
+    "pmid": "38036230",
+    "topic": "compound_preclinical_safety",
+    "material_or_route": "nonhuman_primate",
+    "places": [
+      "not_origin_study"
+    ],
+    "result_summary": "4R化合物非人灵长类安全性研究。",
+    "limitations": "实验条件下安全性不能外推烟草提取物或长期饮用。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P10",
+    "title": "Neuroprotective effects of chemical constituents from Nicotiana tabacum L. in Parkinson’s disease",
+    "year": 2025,
+    "doi": "",
+    "pmid": "",
+    "topic": "extract_preclinical",
+    "material_or_route": "low_nicotine_extract_biochemical_and_PC12",
+    "places": [
+      "原料来源需全文提取"
+    ],
+    "result_summary": "酶、氧化应激与PC12细胞模型研究。",
+    "limitations": "不是患者试验；低尼古丁不等于无毒。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P11",
+    "title": "Chinese herbal cigarettes are as carcinogenic and addictive as regular cigarettes",
+    "year": 2009,
+    "doi": "",
+    "pmid": "19959701",
+    "topic": "human_exposure_observational",
+    "material_or_route": "herbal_tobacco_cigarette_smokers",
+    "places": [
+      "中国单城市"
+    ],
+    "result_summary": "135与143名吸烟者比较；所测暴露指标未见显著差异。",
+    "limitations": "横断面研究，不能证明所有配方严格等效或推断全部疾病结局。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  },
+  {
+    "id": "P12",
+    "title": "Safety assessment of mainstream smoke of herbal cigarette",
+    "year": 2015,
+    "doi": "10.5487/TR.2015.31.1.041",
+    "pmid": "25874032",
+    "topic": "smoke_toxicology",
+    "material_or_route": "herbal_cigarette_machine_smoke",
+    "places": [
+      "韩国"
+    ],
+    "result_summary": "所测草本烟气存在有害成分与致突变性。",
+    "limitations": "特定样品及机器条件；不能代替人群长期研究。",
+    "access": "primary_abstract",
+    "industry_relationship": "not_extracted",
+    "independently_reproduced": false
+  }
+]

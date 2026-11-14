@@ -645,3 +645,8 @@ It uses one trusted writer; signatures, peer networking and distributed consensu
 are not implemented. Run `python -S tools/movable_type_ledger_demo.py --ipc --out-dir /tmp/movable-type-demo`.
 
 
+
+## Tobacco origin research archive
+
+- [全球烟草与雪茄产地、溯源及传统药用证据目录](docs/research/tobacco_origins/README_zh.md)：区分种植、制造与品牌来源，收录全球生产统计、重点产区、加工追溯规范及分级药理／毒理文献。
+

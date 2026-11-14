@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "status": "proposal_unfilled_not_certified",
+  "product_identity": {
+    "brand": null,
+    "variant": null,
+    "manufacturer": null,
+    "manufacturing_site": null
+  },
+  "botanical_identity": {
+    "accepted_species": null,
+    "cultivar": null,
+    "voucher_id": null,
+    "plant_part": null,
+    "leaf_position": null
+  },
+  "harvest": {
+    "year": null,
+    "growing_country_or_area": null,
+    "growing_subregion": null,
+    "farm_id": null,
+    "field_id": null,
+    "evidence_source_ids": []
+  },
+  "inputs": [],
+  "processing_events": [],
+  "blend": {
+    "dry_mass_basis_required": true,
+    "components": [],
+    "fractions_must_sum_to_one_when_complete": true
+  },
+  "testing": {
+    "methods": [],
+    "limits_of_detection": [],
+    "reports": [],
+    "unmeasured_analytes": []
+  },
+  "custody_events": [],
+  "retained_sample": null,
+  "recall_batch_id": null,
+  "unknown_fields_must_remain_null": true
+}

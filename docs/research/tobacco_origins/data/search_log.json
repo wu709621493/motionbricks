@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-14",
+  "method": "scoping_search_not_systematic_review",
+  "representative_actual_queries": [
+    "tobacco geographical origin authentication stable isotope multi element strontium isotope study",
+    "tobacco geographical origin traceability near infrared DNA barcoding study",
+    "site.habanos.com tobacco growing regions Vuelta Abajo Partido Remedios",
+    "site.intabaco.gob.do zonas tabacaleras valle cibao",
+    "site.gov.cn 名晾晒烟名录 2025 国家烟草",
+    "Nicotiana tabacum ethnopharmacology anti inflammatory wound healing extract study",
+    "烟草 本草纲目拾遗 烟草 本草正 版本 滇南本草 增补",
+    "nicotine ulcerative colitis randomized trial transdermal 1994 Pullan",
+    "Wang 2003 nicotinic acetylcholine receptor alpha7 essential regulator inflammation Nature",
+    "site.gov.cn 烟草 加工 标准 烟叶 追溯 GB YC",
+    "site.gob.mx tabaco San Andrés Tuxtla Nayarit producción",
+    "site.pertanian.go.id tembakau Deli Besuki Vorstenlanden cerutu",
+    "tobacco production ourworldindata FAOSTAT 2024",
+    "\"tobacco\" \"5949770\" \"retracted\""
+  ],
+  "successful_downloads": [
+    {
+      "url": "https://ourworldindata.org/grapher/tobacco-production.csv?useColumnShortNames=true",
+      "file": "global_production_fao_owid.csv"
+    },
+    {
+      "url": "https://ourworldindata.org/grapher/tobacco-production.metadata.json?useColumnShortNames=true",
+      "file": "global_production_fao_owid.metadata.json"
+    }
+  ],
+  "access_failures": [
+    {
+      "resource": "FAOSTAT direct API",
+      "outcome": "HTTP 403; no direct complete raw export"
+    },
+    {
+      "resource": "UNdata old download handler",
+      "outcome": "returned new-site HTML instead of CSV"
+    },
+    {
+      "resource": "OWID first plain CSV request",
+      "outcome": "HTTP 403; documented public API with query subsequently succeeded"
+    },
+    {
+      "resource": "some PubMed/PMC/publisher pages",
+      "outcome": "intermittent robot check or 403; abstracts/search excerpts separately labeled"
+    }
+  ],
+  "not_performed": [
+    "CNKI/Wanfang complete database export",
+    "all classical text original editions",
+    "full global county-level enumeration",
+    "complete correction/retraction audit",
+    "raw study-data reproduction",
+    "laboratory or clinical experiments"
+  ]
+}

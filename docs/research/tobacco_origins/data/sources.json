@@ -1,0 +1,596 @@
+[
+  {
+    "id": "D01",
+    "title": "FAO (2025), Unmanufactured tobacco production, processed by OWID",
+    "url": "https://ourworldindata.org/grapher/tobacco-production",
+    "kind": "statistics",
+    "access": "downloaded_csv_and_metadata",
+    "retrieved": "2026-11-14",
+    "note": "1961–2024；2026-02-25更新；不是2026年种植普查；原始FAO标记未由镜像CSV完整保留。"
+  },
+  {
+    "id": "D02",
+    "title": "UNdata / FAOSTAT Unmanufactured tobacco production",
+    "url": "https://data.un.org/Data.aspx?d=FAO&f=itemCode%3A826%3BelementCode%3A5510",
+    "kind": "statistics",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "存档页面覆盖至2021；187个筛选条目包括汇总和历史实体；不作为当前生产者数量。"
+  },
+  {
+    "id": "O01",
+    "title": "国家烟草专卖局：名晾晒烟名录（2025年版）",
+    "url": "https://poc.dknowc.cn/nmyc/nmycxyzcf/pc/content/content_2005561425978527744.html",
+    "kind": "official_origin_register",
+    "access": "official_full_page",
+    "retrieved": "2026-11-14",
+    "note": "2025-12-16发布；内蒙古自治区烟草专卖局转载；只覆盖列入名录的名晾晒烟，不是全部烤烟产区。"
+  },
+  {
+    "id": "O02",
+    "title": "农业部公告1236号：凉山清甜香烤烟地理标志",
+    "url": "https://jgs.moa.gov.cn/nybz/201904/t20190418_6185996.htm",
+    "kind": "official_origin_register",
+    "access": "official_full_page",
+    "retrieved": "2026-11-14",
+    "note": "2009登记边界和县名；当前有效状态、行政区划变化另核。"
+  },
+  {
+    "id": "O03",
+    "title": "甘肃省公司2026年烟叶收购物资采购公告",
+    "url": "https://www.gsei.com.cn/html/1336/2026-07-07/content-683802.html",
+    "kind": "procurement_primary",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "确认庆阳、陇南收购活动，不能单据此确认每块种植地。"
+  },
+  {
+    "id": "O04",
+    "title": "福建省政府：推进现代烟草农业建设六条措施",
+    "url": "https://zfgb.fj.gov.cn/536",
+    "kind": "official_region",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "2015文件，龙岩、三明、南平；不是最新产量统计。"
+  },
+  {
+    "id": "O05",
+    "title": "广东烟草种质资源研究，广东农业科学2021",
+    "url": "https://gdnykx.gdaas.cn/cn/article/pdf/preview/10.16768/j.issn.1004-874X.2021.01.001.pdf",
+    "kind": "regional_research",
+    "access": "publisher_search_excerpt",
+    "retrieved": "2026-11-14",
+    "note": "区域资源线索，不能把历史试种地当作现产区。"
+  },
+  {
+    "id": "O06",
+    "title": "南雄晒黄烟品鉴与开发利用研讨会，2026-09-30",
+    "url": "https://www.sg.gov.cn/xw/xwzx/xsqdt/content/post_2886172.html",
+    "kind": "official_region",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "O07",
+    "title": "阿里山印象具体品项的制造商与成分申报",
+    "url": "https://tobacco-information.hpa.gov.tw/tw/DataDetail.aspx?enc=18EFFF37A9F69338C7D8DA7822CF96606444D7AF48FF82550C15BAC007A54404",
+    "kind": "product_declaration",
+    "access": "official_full_page",
+    "retrieved": "2026-11-14",
+    "note": "申报制造商为台湾苗栗卷烟厂；没有提供阿里山种植来源证明；不能外推所有同名产品。"
+  },
+  {
+    "id": "O08",
+    "title": "Habanos：Tobacco paradise",
+    "url": "https://www.habanos.com/en/tobacco-paradise/",
+    "kind": "producer_origin_statement",
+    "access": "producer_full_page",
+    "retrieved": "2026-11-14",
+    "note": "有商业利益；仅用于其自述产地、叶用部位与加工城市，不采纳世界最好等评价。"
+  },
+  {
+    "id": "O09",
+    "title": "WIPO Lisbon AO-478 HABANOS",
+    "url": "https://lisbon-express.wipo.int/pdf/CRTINF_6809_Current%20information%20-%20AO-478.pdf",
+    "kind": "official_origin_register",
+    "access": "official_search_excerpt",
+    "retrieved": "2026-11-14",
+    "note": "注册与保护范围不等于所有田块都符合具体产品供应资格。"
+  },
+  {
+    "id": "O10",
+    "title": "多米尼加总统府／INTABACO：29烟区、15省",
+    "url": "https://www.presidencia.gob.do/noticias/intabaco-rd-cuenta-con-29-zonas-tabacaleras-en-15-provincias-y-exporta-mas-de-usd-1300",
+    "kind": "official_region",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "O11",
+    "title": "Zonificación de la hoja de tabaco producida en la región norte de Nicaragua, para indicación geográfica",
+    "url": "https://portal.amelica.org/ameli/journal/230/2301196013/html/",
+    "kind": "primary_regional_research",
+    "access": "publisher_search_excerpt",
+    "retrieved": "2026-11-14",
+    "note": "地域品质分区研究，不等于地理标志已获批准。"
+  },
+  {
+    "id": "O12",
+    "title": "印度Tobacco Board：FCV production regulation",
+    "url": "https://tobaccoboard.commerce.gov.in/propolicy.php",
+    "kind": "official_region",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "Andhra Pradesh、Karnataka及分土壤区政策。"
+  },
+  {
+    "id": "O13",
+    "title": "印度尼西亚农业研究机构烟草数据库",
+    "url": "https://seratmanis.id/sitembakau/",
+    "kind": "institutional_region",
+    "access": "institutional_full_page",
+    "retrieved": "2026-11-14",
+    "note": "分类包括地方烟、Virginia、Burley、雪茄；不能按旧名称推断当前种植面积。"
+  },
+  {
+    "id": "O14",
+    "title": "洪都拉斯政府出口商名录：Corojo Tabacos",
+    "url": "https://pgice.sde.gob.hn/bd-exportadores/corojo-tabacos-s-a/",
+    "kind": "official_business_register",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "Jamastrán种植、调制、发酵活动；企业地址不能证明所有原料地。"
+  },
+  {
+    "id": "O15",
+    "title": "墨西哥农业统计：Panorama Agroalimentario 2025",
+    "url": "https://nube.agricultura.gob.mx/panorama_dgsiap/2025.pdf",
+    "kind": "official_statistics",
+    "access": "official_search_excerpt",
+    "retrieved": "2026-11-14",
+    "note": "2024收获集中Nayarit、Veracruz、Chiapas、Guerrero。"
+  },
+  {
+    "id": "O16",
+    "title": "巴伊亚州农业部门：Recôncavo烟叶与雪茄产业",
+    "url": "https://www.ba.gov.br/seagri/noticias/2011/05/11/miss%C3%A3o-chinesa-avalia-qualidade-da-cultura-do-tabaco-no-rec%C3%B4ncavo",
+    "kind": "official_region",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "2011历史记录；不当作当前产量。"
+  },
+  {
+    "id": "O17",
+    "title": "USDA NASS Crop Production 2025 Summary",
+    "url": "https://www.nass.usda.gov/Publications/Todays_Reports/reports/cropan26.pdf",
+    "kind": "official_statistics",
+    "access": "official_search_excerpt",
+    "retrieved": "2026-11-14",
+    "note": "2026-01-12发布；州级表仍需逐格提取。"
+  },
+  {
+    "id": "O18",
+    "title": "WHO：African tobacco production analysis, 2026",
+    "url": "https://www.who.int/news/item/31-08-2026-africa-tobacco-growing-increases-despite-global-decline",
+    "kind": "official_statistics",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "O19",
+    "title": "Kew POWO：Nicotiana tabacum L.",
+    "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A817077-1/general-information",
+    "kind": "taxonomy",
+    "access": "institutional_page",
+    "retrieved": "2026-11-14",
+    "note": "接受名与原生分布；药用标签不等于疗效认定。"
+  },
+  {
+    "id": "O20",
+    "title": "四川人大：凉山、攀枝花烟草产业调研",
+    "url": "https://www.scspc.gov.cn/czjjwyh_gzdt_662/201809/160863.html",
+    "kind": "official_region",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "O21",
+    "title": "四川人大：德阳什邡雪茄种植与加工调研",
+    "url": "https://www.scspc.gov.cn/wfhdbd/202410/142186.html",
+    "kind": "official_region",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "O22",
+    "title": "印尼IPB大学：Besuki Na-Oogst生产研究",
+    "url": "https://repository.ipb.ac.id/handle/123456789/142014",
+    "kind": "primary_regional_research",
+    "access": "institutional_search_excerpt",
+    "retrieved": "2026-11-14",
+    "note": "Deli、Vorstenlanden、Besuki历史／研究区域。"
+  },
+  {
+    "id": "O23",
+    "title": "印度Tobacco Board：soil types",
+    "url": "https://tobaccoboard.commerce.gov.in/soiltypes.php",
+    "kind": "official_region",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "含历史行政名称；不强行映射当前县界。"
+  },
+  {
+    "id": "O24",
+    "title": "USDA RMA：2025年度保险作物州别报告，2026-11-09快照",
+    "url": "https://public-rma.fpac.usda.gov/apps/SummaryOfBusiness/PreparedReports/View?fileUrl=https%3A%2F%2Fpublic-rma.fpac.usda.gov%2FReportShare%2F%2FExtranet%2FSOB%2FWeeklyReports%2F20261109%2Fcropst2025.pdf",
+    "kind": "administrative_statistics",
+    "access": "official_search_excerpt",
+    "retrieved": "2026-11-14",
+    "note": "雪茄叶分类列项与保险数据，不等于州内所有产量；零业务行不能证明生产。"
+  },
+  {
+    "id": "S01",
+    "title": "YC/T 636-2025 打叶复烤生产过程质量追溯通用原则和基本要求",
+    "url": "https://std.samr.gov.cn/hb/search/stdHBDetailedCNF?id=4462333198D4C042E06397BE0A0A048C",
+    "kind": "standard_metadata",
+    "access": "official_metadata",
+    "retrieved": "2026-11-14",
+    "note": "推荐性行业标准；2025-06-30发布，2025-10-01实施；未逐条取得标准全文。"
+  },
+  {
+    "id": "S02",
+    "title": "YC/T 146-2025 烟叶 打叶复烤 工艺规范",
+    "url": "https://std.samr.gov.cn/hb/search/stdHBDetailedCNF?id=4462333198DBC042E06397BE0A0A048C",
+    "kind": "standard_metadata",
+    "access": "official_metadata",
+    "retrieved": "2026-11-14",
+    "note": "推荐性；代替146-2010；2025-10-01实施；未逐条取得全文。"
+  },
+  {
+    "id": "S03",
+    "title": "YC/T 237-2023 烟叶生产标准化工作规程",
+    "url": "https://std.samr.gov.cn/hb/search/stdHBDetailedCNF?id=058ED4F2ABA0D637E06397BE0A0ACB36",
+    "kind": "standard_metadata",
+    "access": "official_metadata",
+    "retrieved": "2026-11-14",
+    "note": "推荐性；2023-08-01实施；未逐条取得全文。"
+  },
+  {
+    "id": "S04",
+    "title": "欧盟烟草追踪与安全特征体系",
+    "url": "https://health.ec.europa.eu/tobacco/product-regulation/systems-tobacco-traceability-and-security-features_en",
+    "kind": "official_regulatory",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "成品流通追踪不等于烟叶田块地理来源认证。"
+  },
+  {
+    "id": "S05",
+    "title": "中华人民共和国非物质文化遗产法",
+    "url": "https://zwgk.mct.gov.cn/zfxxgkml/zcfg/fl/202012/t20201214_919523.html",
+    "kind": "law",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "S06",
+    "title": "WHO FCTC Articles 9/10 implementation guidelines",
+    "url": "https://fctc.who.int/resources/publications/m/item/regulation-of-the-contents-of-tobacco-products-and-regulation-of-tobacco-product-disclosures",
+    "kind": "official_guideline",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "国际指南，不能直接当作某辖区的具体处罚条文。"
+  },
+  {
+    "id": "T01",
+    "title": "南京中医药大学药用植物园：烟草；文献来源《中华本草》1999",
+    "url": "https://zwy.njucm.edu.cn/2019/0427/c4723a51962/pagem.htm",
+    "kind": "institutional_traditional_text_index",
+    "access": "institutional_full_page",
+    "retrieved": "2026-11-14",
+    "note": "是大学转引页面；未核验各古籍原版页码；不转录剂量、制法或治疗建议。"
+  },
+  {
+    "id": "T02",
+    "title": "云南中医药大学：解毒散瘀药",
+    "url": "https://mlzy.ynucm.edu.cn/article/92653563173936642",
+    "kind": "institutional_traditional_text_index",
+    "access": "institutional_search_excerpt",
+    "retrieved": "2026-11-14",
+    "note": "传统本草书目线索；未核验原版页码。"
+  },
+  {
+    "id": "T03",
+    "title": "2025年版中国药典颁布公告",
+    "url": "https://app.www.gov.cn/govdata/gov/202503/26/525844/article.html",
+    "kind": "official_pharmacopoeia_notice",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "仅核验版本生效时间；本目录不声称烟草已被药典收载，也不声称未收载。"
+  },
+  {
+    "id": "H01",
+    "title": "NIOSH：Nicotine systemic agent",
+    "url": "https://www.cdc.gov/niosh/ershdb/emergencyresponsecard_29750028.html",
+    "kind": "official_toxicology",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "H02",
+    "title": "NCI：Harms of cigarette smoking",
+    "url": "https://www.cancer.gov/about-cancer/causes-prevention/risk/tobacco/cessation-fact-sheet",
+    "kind": "official_health",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": "烟气超过7000种化学物，不等于烟叶有上万种已鉴定有机分子。"
+  },
+  {
+    "id": "H03",
+    "title": "UNESCO：Intangible heritage FAQ",
+    "url": "https://ich.unesco.org/en/faq-00021",
+    "kind": "official_heritage",
+    "access": "official_page",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L01",
+    "title": "A metabolomics study delineating geographical location-associated primary metabolic changes in the leaves of growing tobacco plants by GC-MS and CE-MS",
+    "url": "https://www.nature.com/articles/srep16346",
+    "kind": "primary_research",
+    "access": "primary_full_text",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L02",
+    "title": "Untargeted Metabolomics of Nicotiana tabacum Grown in United States and India Characterizes the Association of Plant Metabolomes With Natural Climate and Geography",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31737005/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L03",
+    "title": "Identifying the Geographical Origin of Tobacco Leaf by Strontium and Lead Isotopic with Mineral Elemental Fingerprint",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1155/2022/5949770",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L04",
+    "title": "Geographical origin classification of tobacco by stable isotope and multi-elemental analysis in combination with chemometric methods",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0026265X23007828",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L05",
+    "title": "Optimization of geographical traceability models for tobacco: an investigation into the effects of region, harvest year, and variety on stable isotope and multi-elemental profiling",
+    "url": "https://link.springer.com/article/10.1186/s40538-026-01006-x",
+    "kind": "primary_research",
+    "access": "primary_full_text",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L06",
+    "title": "Rapid discrimination of geographical origin and analysis of chemical characterization of tobacco leaves from multiple countries",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13046703/",
+    "kind": "primary_research",
+    "access": "primary_full_text",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L07",
+    "title": "Chemometric approach for discriminating tobacco trademarks by near infrared spectroscopy",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30445250/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L08",
+    "title": "Exploring Metabolic Characteristics in Different Geographical Locations and Yields of Nicotiana tabacum L. Using Gas Chromatography-Mass Spectrometry Pseudotargeted Metabolomics Combined with Chemometrics",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38668304/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L09",
+    "title": "Metabolomic analysis of Yunnan cigar tobacco leaves: impact of geography and climate on flavor characteristics and machine learning-based origin traceability",
+    "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2025.1703429/full",
+    "kind": "primary_research",
+    "access": "primary_full_text",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L10",
+    "title": "Characterization of the key aroma compounds in cigar filler tobacco leaves from different production regions",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11683104/",
+    "kind": "primary_research",
+    "access": "primary_full_text",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L11",
+    "title": "Decoding key aroma components of three cigar tobacco leaves based on molecular sensory science",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12287006/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L12",
+    "title": "Formation and transfer patterns of key aroma compounds in cigar tobacco based on SBSE-GC-O-MS, pyrolysis-GC-O-MS and flue gas analysis correlation studies",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41777747/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L13",
+    "title": "Metabolome of flue-cured tobacco is significantly affected by the presence of leaf stem",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9926566/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L14",
+    "title": "LC-MS/MS-based metabolic profiling: unraveling the impact of varying degrees of curing on metabolite transformations in tobacco",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11588487/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "L15",
+    "title": "Metabolomics reveals signature metabolites associated with high-oiliness flue-cured tobacco (Nicotiana tabacum L.) leaves",
+    "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.1890505/full",
+    "kind": "primary_research",
+    "access": "primary_full_text",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P01",
+    "title": "Preclinical assessment of stem of Nicotiana tabacum on excision wound model",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33639361/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P02",
+    "title": "Extraction of Nicotine from Tobacco Leaves and Development of Fast Dissolving Nicotine Extract Film",
+    "url": "https://www.mdpi.com/2077-0375/11/6/403",
+    "kind": "primary_research",
+    "access": "primary_full_text",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P03",
+    "title": "Nicotinic acetylcholine receptor alpha7 subunit is an essential regulator of inflammation",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12508119/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P04",
+    "title": "Transdermal nicotine for active ulcerative colitis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8114833/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P05",
+    "title": "Transdermal nicotine as maintenance therapy for ulcerative colitis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7885427/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P06",
+    "title": "Transdermal nicotine for mildly to moderately active ulcerative colitis. A randomized, double-blind, placebo-controlled trial",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9054280/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P07",
+    "title": "Transdermal Nicotine Treatment and Progression of Early Parkinson’s Disease",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38320207/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P08",
+    "title": "Tobacco cembranoids protect the function of acute hippocampal slices against NMDA by a mechanism mediated by alpha4beta2 nicotinic receptors",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16247800/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P09",
+    "title": "Determining the safety of the tobacco cembranoid 4R: A translational study in nonhuman primates",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38036230/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P10",
+    "title": "Neuroprotective effects of chemical constituents from Nicotiana tabacum L. in Parkinson’s disease",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12484522/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P11",
+    "title": "Chinese herbal cigarettes are as carcinogenic and addictive as regular cigarettes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19959701/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "P12",
+    "title": "Safety assessment of mainstream smoke of herbal cigarette",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25874032/",
+    "kind": "primary_research",
+    "access": "primary_abstract",
+    "retrieved": "2026-11-14",
+    "note": ""
+  },
+  {
+    "id": "V01",
+    "title": "Phytochemicals derived from Nicotiana tabacum L. plant contribute to pharmaceutical development",
+    "url": "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1372456/full",
+    "kind": "review_discovery_only",
+    "access": "publisher_full_text",
+    "retrieved": "2026-11-14",
+    "note": "2024；DOI 10.3389/fphar.2024.1372456；只作为追踪原始论文的入口，不把综述概括当临床证据。"
+  }
+]

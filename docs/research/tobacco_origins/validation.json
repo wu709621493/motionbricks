@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-14",
+  "status": "local_checks_passed",
+  "checks": [
+    "all JSON parsed",
+    "all CSV rows parsed and nonnegative",
+    "source IDs unique",
+    "origin/literature IDs unique",
+    "source foreign keys resolved",
+    "country/historical/aggregate partition reconciled",
+    "coverage recomputed",
+    "downloaded source bytes preserved",
+    "Markdown relative links checked after generation",
+    "manifest SHA-256 checked after generation"
+  ],
+  "paper_models_reproduced": false,
+  "lab_experiments_run": false,
+  "clinical_experiments_run": false,
+  "ci_status": "NOT_RUN",
+  "remote_verification": "performed separately before final delivery"
+}
