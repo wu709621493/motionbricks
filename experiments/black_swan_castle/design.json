@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "concept_id": "MB-DE-BLACK-SWAN-001",
+  "title_zh": "黑天鹅堡 · 冰蓝之夜",
+  "reference_name": "Neuschwanstein Castle / 新天鹅堡",
+  "interpretation": "以新天鹅堡为原型的黑天鹅主题数字场景",
+  "geometry_status": "stylized_not_surveyed",
+  "historical_lighting": false,
+  "units": "m",
+  "coordinates": "X length / Y depth / Z up; local artistic coordinates",
+  "lights": {"color_srgb": "#83ddff", "emissive_strength": 4.0},
+  "sources": [
+    {"id": "BSV-history", "url": "https://www.neuschwanstein.de/englisch/palace/history.htm", "supports": "宫殿、门楼、方塔、骑士楼、上下院落等构件名称与建筑群参考", "limitations": "模型位置、尺寸、细节与灯饰均为创作；未采用实测图纸"},
+    {"id": "BSV-interior", "url": "https://www.neuschwanstein.de/englisch/palace/interior.htm", "supports": "天鹅主题及浪漫主义创作背景", "limitations": "不证明本模型的黑色材质或冰蓝照明具有历史真实性"}
+  ]
+}
