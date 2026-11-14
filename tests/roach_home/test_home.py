@@ -125,6 +125,20 @@ class HomeTests(unittest.TestCase):
             self.assertEqual(json.loads(p.stderr)["status"], "REFUSED")
             self.assertFalse((Path(d) / "bad").exists())
 
+    def test_cli_rejects_non_object_config_as_structured_refusal(self):
+        with tempfile.TemporaryDirectory() as d:
+            config = Path(d) / "config.json"
+            out = Path(d) / "run"
+            for value in ([], None, 1, "config"):
+                with self.subTest(value=value):
+                    config.write_text(json.dumps(value), encoding="utf-8")
+                    p = subprocess.run([sys.executable, "-S", "-m", "motionbricks.roach_home",
+                        "--config", str(config), "--out-dir", str(out)],
+                        capture_output=True, text=True, timeout=10)
+                    self.assertEqual(p.returncode, 2, p.stderr)
+                    self.assertEqual(json.loads(p.stderr)["status"], "REFUSED")
+                    self.assertFalse(out.exists())
+
 
 if __name__ == "__main__":
     unittest.main()

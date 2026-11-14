@@ -3,6 +3,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import subprocess
 import sys
 import tempfile
 import time
@@ -143,6 +144,68 @@ class IsolatedValve(unittest.TestCase):
 
 
 class Supervisor(unittest.TestCase):
+    def test_non_object_worker_receipts_latch_failure(self):
+        for raw in (b'[]', b'null', b'1', b'"ok"'):
+            with self.subTest(raw=raw):
+                op = _Operations(1, .1)
+                fake = {'timed_out': False, 'exit_code': 0, 'cleanup': 'not_applicable',
+                        'stdout': raw, 'stderr': b''}
+                with patch('pyignite.supervisor.run_supervised', return_value=fake) as run:
+                    with self.assertRaises(IsolatedIOError):
+                        op.call('read', reader_spec='unused:unused', reader_kwargs={})
+                    self.assertTrue(op.failed)
+                    with self.assertRaises(IsolatedIOError):
+                        op.call('read', reader_spec='unused:unused', reader_kwargs={})
+                    self.assertEqual(run.call_count, 1)
+
+    def test_matching_receipt_with_unconfirmed_cleanup_is_refused(self):
+        op = _Operations(1, .1)
+        def unclean(command, **kwargs):
+            raw = kwargs['input_bytes']; request = json.loads(raw)
+            response = {'schema_version': 1, 'nonce': request['nonce'], 'action': 'read',
+                        'request_sha256': hashlib.sha256(raw).hexdigest(), 'ok': True, 'value': []}
+            return {'timed_out': False, 'exit_code': 0, 'cleanup': 'fail',
+                    'stdout': json.dumps(response).encode(), 'stderr': b''}
+        with patch('pyignite.supervisor.run_supervised', side_effect=unclean):
+            with self.assertRaises(IsolatedIOError):
+                op.call('read', reader_spec='unused:unused', reader_kwargs={})
+        self.assertTrue(op.failed)
+
+    def test_timeout_closes_all_parent_pipe_handles(self):
+        create = subprocess.Popen
+        processes = []
+        def capture(*args, **kwargs):
+            p = create(*args, **kwargs); processes.append(p); return p
+        with patch('pyignite.supervisor.subprocess.Popen', side_effect=capture):
+            r = run_supervised([sys.executable, '-c', 'import time;time.sleep(30)'],
+                               timeout_seconds=.2, cleanup_seconds=.1, input_bytes=b'x' * 1048576)
+        self.assertTrue(r['timed_out'])
+        for stream in (processes[0].stdin, processes[0].stdout, processes[0].stderr):
+            self.assertTrue(stream.closed)
+
+    def test_parent_exception_stops_child_and_closes_pipes(self):
+        create = subprocess.Popen
+        processes = []
+        def capture(*args, **kwargs):
+            p = create(*args, **kwargs); processes.append(p)
+            original = p.communicate
+            first = True
+            def interrupted(*args, **kwargs):
+                nonlocal first
+                if first:
+                    first = False
+                    raise RuntimeError('parent cancelled')
+                return original(*args, **kwargs)
+            p.communicate = interrupted
+            return p
+        with patch('pyignite.supervisor.subprocess.Popen', side_effect=capture):
+            with self.assertRaisesRegex(RuntimeError, 'parent cancelled'):
+                run_supervised([sys.executable, '-c', 'import time;time.sleep(30)'],
+                               timeout_seconds=5, cleanup_seconds=.1, input_bytes=b'input')
+        self.assertIsNotNone(processes[0].poll())
+        for stream in (processes[0].stdin, processes[0].stdout, processes[0].stderr):
+            self.assertTrue(stream.closed)
+
     def test_unknown_durability_is_not_accepted_even_with_matching_request_identity(self):
         op = _Operations(1, .1)
         def forged(command, **kwargs):

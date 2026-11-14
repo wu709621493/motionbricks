@@ -1,0 +1,57 @@
+{
+  "base_commit": "f43c457d27126fbb3d6f3d62e896ad3c0f1d7161",
+  "checks": [
+    {
+      "command": "python -S -W error::ResourceWarning -m unittest discover -s tests/movable_type_ledger -v",
+      "exit_code": 0,
+      "reported_seconds": 4.543,
+      "tests": 27
+    },
+    {
+      "command": "python -S -W error::ResourceWarning -m unittest discover -s tests/radix_portability -v",
+      "exit_code": 0,
+      "reported_seconds": 2.481,
+      "tests": 27
+    },
+    {
+      "command": "python -S -W error::ResourceWarning -m unittest discover -s tests/radix_ipc -v",
+      "exit_code": 0,
+      "reported_seconds": 16.472,
+      "tests": 30
+    },
+    {
+      "command": "python -S -W error::ResourceWarning tools/movable_type_ledger_demo.py --ipc --out-dir <empty-directory>",
+      "exit_code": 0,
+      "replica_tip_matches": true,
+      "restored_state_matches": true,
+      "result": -122,
+      "worker_processes_reaped": true
+    }
+  ],
+  "environment": {
+    "machine": "x86_64",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "evidence_file_sha256": {
+    "ledger.json": "84a4a8a6f570d0afe4f67ce3bcf0a41be43c68f446a354757e65ec10bbfca93f",
+    "radix-receipt.json": "5ea34150f90d8f99b6c407741ceb45e46b646c22126c3042bdbb2381a51a1a58",
+    "report.json": "69e9661854c8e9c86273be6e9812fe69b2c762ad67a7e124e5feb3ebafeb1a20"
+  },
+  "merkle_reference": "Independent iterative RFC 9162 section 2.1.2 reference, lengths 0..64; all 2080 nonempty leaf/index combinations verified.",
+  "recorded_at_utc": "2026-11-13T23:59:14.649509+00:00",
+  "remote_ci_at_capture": "NOT_RUN; local result does not certify remote platform matrix",
+  "setup_note": "Initial IPC regression attempt lacked tools/radix_ipc_benchmark.py in the local partial source checkout: 29 passed, 1 fixture/setup failure. Fetched the unchanged benchmark from the pinned base and reran the complete 30-test IPC suite successfully. No existing source was modified.",
+  "source_sha256": {
+    ".github/workflows/movable-type-ledger.yml": "b3e019c8ef16d4129f7c4e38be63c6556bccc3894735a398b1ad438e3754263f",
+    "README.md": "3f2b023a05853c6b272cfed5231465b4f309cd6ce6fe3626815c80a61aa08f9a",
+    "docs/movable_type_blockchain_zh.md": "b7630a81a949c83f9e14337c8a9968acfedad16104c45b22fbb9dfa9c32c8670",
+    "motionbricks/movable_type_ledger.py": "07aa20717b73cbeaa99016d9cf19814dc42044107bc27b93617c5b9173111593",
+    "tests/movable_type_ledger/test_ledger.py": "2831a17523be4423cd1c377107ccc4c2f5b02b574e1730bd1ecef8a6ad6d085e",
+    "tools/movable_type_ledger_demo.py": "8a8d7429ad6822c77c0f514e2bac8d0419b21e325b60dc0614e784f429918bec"
+  },
+  "status": "LOCAL_VALIDATION_PASSED",
+  "total_tests": 84,
+  "trust_limit": "Two Ledger objects in one process and local worker processes are not independent consensus nodes; no signatures, peer transport, distributed consensus, or physical power-loss tests.",
+  "user_facing_date": "2026-11-14 Asia/Shanghai"
+}

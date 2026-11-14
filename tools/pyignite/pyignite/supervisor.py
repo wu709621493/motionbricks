@@ -23,9 +23,22 @@ def _positive(value, name):
     return float(value)
 
 
+def _group_exists(pid):
+    """An extant (even zombie-only) owned group is not confirmed quiescent."""
+    try:
+        os.killpg(pid, 0)
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        pass  # Cannot confirm cleanup; do not report success.
+    return True
+
+
 def _stop(process, grace):
     """Bounded cleanup; report failure instead of waiting forever in unkillable I/O."""
+    signal_failed = False
     def send(sig):
+        nonlocal signal_failed
         try:
             if os.name == 'posix':
                 os.killpg(process.pid, sig)
@@ -33,6 +46,8 @@ def _stop(process, grace):
                 process.terminate() if sig == signal.SIGTERM else process.kill()
         except ProcessLookupError:
             pass
+        except OSError:
+            signal_failed = True
     send(signal.SIGTERM)
     try:
         out, err = process.communicate(timeout=grace)
@@ -49,14 +64,22 @@ def _stop(process, grace):
                 if stream is not None:
                     stream.close()
             return b'', b'', 'fail'
-    return out, err, 'pass' if process.poll() is not None else 'fail'
+    if os.name == 'posix':
+        deadline = time.monotonic() + grace
+        while _group_exists(process.pid):
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                return out, err, 'fail'
+            time.sleep(min(.01, remaining))
+    return out, err, 'pass' if process.poll() is not None and not signal_failed else 'fail'
 
 
 def run_supervised(command, *, timeout_seconds, cleanup_seconds=0.25,
                    input_bytes=None, env=None, cwd=None):
     """Run an explicitly supplied argv in a separate process with a wall deadline.
 
-    POSIX uses a new session and TERM/KILL for the owned process group.
+    POSIX uses a new session and TERM/KILL for the owned process group,
+    including descendants left behind after the direct child exits normally.
     Windows contains only the direct child; no Job Object/tree-cleanup claim.
     A timeout is failure even if a late process emits an apparent success.
     """
@@ -73,11 +96,23 @@ def run_supervised(command, *, timeout_seconds, cleanup_seconds=0.25,
                          start_new_session=os.name == 'posix', env=env, cwd=cwd)
     timed_out = False
     try:
-        out, err = p.communicate(input=input_bytes, timeout=max(.001, timeout-(time.monotonic()-started)))
-        cleanup = 'not_applicable'
-    except subprocess.TimeoutExpired:
-        timed_out = True
-        out, err, cleanup = _stop(p, grace)
+        try:
+            out, err = p.communicate(input=input_bytes, timeout=max(.001, timeout-(time.monotonic()-started)))
+            cleanup = 'not_applicable'
+            if os.name == 'posix' and _group_exists(p.pid):
+                out, err, cleanup = _stop(p, grace)
+        except subprocess.TimeoutExpired:
+            timed_out = True
+            out, err, cleanup = _stop(p, grace)
+    except BaseException:
+        _stop(p, grace)
+        raise
+    finally:
+        # communicate() can leave stdin open when it is interrupted while
+        # writing a large request. Each parent-owned pipe must close on all paths.
+        for stream in (p.stdin, p.stdout, p.stderr):
+            if stream is not None:
+                stream.close()
     return {'pid': p.pid, 'timed_out': timed_out, 'exit_code': p.returncode, 'cleanup': cleanup,
             'elapsed_seconds': time.monotonic()-started, 'stdout': out, 'stderr': err,
             'scope': 'POSIX owned process group' if os.name == 'posix' else 'direct child only'}
@@ -118,12 +153,13 @@ class _Operations:
         # Bound retained metadata; caller can drain/export receipts between polls.
         del self.receipts[:-128]
         try:
-            if result['timed_out'] or result['exit_code'] != 0:
-                raise ValueError('worker timeout or nonzero exit')
+            if result['timed_out'] or result['exit_code'] != 0 or result['cleanup'] == 'fail':
+                raise ValueError('worker timeout, nonzero exit or unconfirmed cleanup')
             if len(result['stdout']) > 8 * 1024 * 1024:
                 raise ValueError('worker response exceeds 8 MiB')
             response = json.loads(result['stdout'])
-            if (response.get('schema_version') != 1 or response.get('nonce') != nonce
+            if (not isinstance(response, dict) or type(response.get('schema_version')) is not int
+                    or response.get('schema_version') != 1 or response.get('nonce') != nonce
                     or response.get('action') != action or response.get('request_sha256') != receipt['request_sha256']
                     or response.get('ok') is not True):
                 raise ValueError('worker receipt identity/status mismatch')

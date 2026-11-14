@@ -1,0 +1,52 @@
+{
+  "source_commit": "711f0e171d4ec423bd89a883c2b15da8c2ef0fd6",
+  "note": "Added regression tests on unchanged #96/#97 implementation, merged with fixed main.",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/roach_home",
+        "-v"
+      ],
+      "exit_code": 1,
+      "log": "before-home.txt"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/pyignite",
+        "-p",
+        "test_roach_integration.py",
+        "-v"
+      ],
+      "exit_code": 1,
+      "log": "before-integration.txt"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/pyignite",
+        "-p",
+        "test_supervisor.py",
+        "-v"
+      ],
+      "exit_code": 1,
+      "log": "before-supervisor.txt"
+    }
+  ]
+}

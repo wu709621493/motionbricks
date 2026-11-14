@@ -1,0 +1,90 @@
+test_complete_fc_result_roundtrip_all_backends_and_resume (test_supervisor.IsolatedValve.test_complete_fc_result_roundtrip_all_backends_and_resume) ... ok
+test_constructor_filesystem_probe_is_also_isolated (test_supervisor.IsolatedValve.test_constructor_filesystem_probe_is_also_isolated) ... ok
+test_critical_alarm_during_compute_never_replaces_last_complete_result (test_supervisor.IsolatedValve.test_critical_alarm_during_compute_never_replaces_last_complete_result) ... ok
+test_failure_after_replace_is_ambiguous_not_a_durable_success (test_supervisor.IsolatedValve.test_failure_after_replace_is_ambiguous_not_a_durable_success) ... ok
+test_fsync_error_and_pre_replace_death_preserve_previous_complete_file (test_supervisor.IsolatedValve.test_fsync_error_and_pre_replace_death_preserve_previous_complete_file) ... ok
+test_fsync_hang_is_bounded_and_durability_is_not_confirmed (test_supervisor.IsolatedValve.test_fsync_hang_is_bounded_and_durability_is_not_confirmed) ... ok
+test_invalid_sensor_corrupt_checkpoint_and_parent_callbacks_are_refused (test_supervisor.IsolatedValve.test_invalid_sensor_corrupt_checkpoint_and_parent_callbacks_are_refused) ... ok
+test_sensor_hang_is_bounded_latched_and_does_not_trap_check_or_exit (test_supervisor.IsolatedValve.test_sensor_hang_is_bounded_latched_and_does_not_trap_check_or_exit) ... ok
+test_stale_observation_remains_failure (test_supervisor.IsolatedValve.test_stale_observation_remains_failure) ... ok
+test_blocked_stdin_is_included_in_the_deadline (test_supervisor.Supervisor.test_blocked_stdin_is_included_in_the_deadline) ... /workspace/scratch/c53c1ad1d875/motionbricks/tests/pyignite/test_supervisor.py:214: ResourceWarning: unclosed file <_io.BufferedWriter name=4>
+  r = run_supervised([sys.executable, '-c', 'import time;time.sleep(30)'],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_false_success_receipts_and_late_success_are_latched (test_supervisor.Supervisor.test_false_success_receipts_and_late_success_are_latched) ... ok
+test_matching_receipt_with_unconfirmed_cleanup_is_refused (test_supervisor.Supervisor.test_matching_receipt_with_unconfirmed_cleanup_is_refused) ... FAIL
+test_non_object_worker_receipts_latch_failure (test_supervisor.Supervisor.test_non_object_worker_receipts_latch_failure) ... 
+  test_non_object_worker_receipts_latch_failure (test_supervisor.Supervisor.test_non_object_worker_receipts_latch_failure) (raw=b'[]') ... ERROR
+  test_non_object_worker_receipts_latch_failure (test_supervisor.Supervisor.test_non_object_worker_receipts_latch_failure) (raw=b'null') ... ERROR
+  test_non_object_worker_receipts_latch_failure (test_supervisor.Supervisor.test_non_object_worker_receipts_latch_failure) (raw=b'1') ... ERROR
+  test_non_object_worker_receipts_latch_failure (test_supervisor.Supervisor.test_non_object_worker_receipts_latch_failure) (raw=b'"ok"') ... ERROR
+test_normal_nonzero_output_and_large_stdin_are_not_promoted (test_supervisor.Supervisor.test_normal_nonzero_output_and_large_stdin_are_not_promoted) ... ok
+test_timeout_closes_all_parent_pipe_handles (test_supervisor.Supervisor.test_timeout_closes_all_parent_pipe_handles) ... FAIL
+test_unknown_durability_is_not_accepted_even_with_matching_request_identity (test_supervisor.Supervisor.test_unknown_durability_is_not_accepted_even_with_matching_request_identity) ... ok
+test_wall_deadline_contains_a_gil_holding_native_child (test_supervisor.Supervisor.test_wall_deadline_contains_a_gil_holding_native_child) ... ok
+
+======================================================================
+ERROR: test_non_object_worker_receipts_latch_failure (test_supervisor.Supervisor.test_non_object_worker_receipts_latch_failure) (raw=b'[]')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tests/pyignite/test_supervisor.py", line 154, in test_non_object_worker_receipts_latch_failure
+    op.call('read', reader_spec='unused:unused', reader_kwargs={})
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tools/pyignite/pyignite/supervisor.py", line 126, in call
+    if (response.get('schema_version') != 1 or response.get('nonce') != nonce
+        ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+======================================================================
+ERROR: test_non_object_worker_receipts_latch_failure (test_supervisor.Supervisor.test_non_object_worker_receipts_latch_failure) (raw=b'null')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tests/pyignite/test_supervisor.py", line 154, in test_non_object_worker_receipts_latch_failure
+    op.call('read', reader_spec='unused:unused', reader_kwargs={})
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tools/pyignite/pyignite/supervisor.py", line 126, in call
+    if (response.get('schema_version') != 1 or response.get('nonce') != nonce
+        ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+
+======================================================================
+ERROR: test_non_object_worker_receipts_latch_failure (test_supervisor.Supervisor.test_non_object_worker_receipts_latch_failure) (raw=b'1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tests/pyignite/test_supervisor.py", line 154, in test_non_object_worker_receipts_latch_failure
+    op.call('read', reader_spec='unused:unused', reader_kwargs={})
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tools/pyignite/pyignite/supervisor.py", line 126, in call
+    if (response.get('schema_version') != 1 or response.get('nonce') != nonce
+        ^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'get'
+
+======================================================================
+ERROR: test_non_object_worker_receipts_latch_failure (test_supervisor.Supervisor.test_non_object_worker_receipts_latch_failure) (raw=b'"ok"')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tests/pyignite/test_supervisor.py", line 154, in test_non_object_worker_receipts_latch_failure
+    op.call('read', reader_spec='unused:unused', reader_kwargs={})
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tools/pyignite/pyignite/supervisor.py", line 126, in call
+    if (response.get('schema_version') != 1 or response.get('nonce') != nonce
+        ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+======================================================================
+FAIL: test_matching_receipt_with_unconfirmed_cleanup_is_refused (test_supervisor.Supervisor.test_matching_receipt_with_unconfirmed_cleanup_is_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tests/pyignite/test_supervisor.py", line 169, in test_matching_receipt_with_unconfirmed_cleanup_is_refused
+    with self.assertRaises(IsolatedIOError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: IsolatedIOError not raised
+
+======================================================================
+FAIL: test_timeout_closes_all_parent_pipe_handles (test_supervisor.Supervisor.test_timeout_closes_all_parent_pipe_handles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tests/pyignite/test_supervisor.py", line 183, in test_timeout_closes_all_parent_pipe_handles
+    self.assertTrue(stream.closed)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 17 tests in 9.097s
+
+FAILED (failures=2, errors=4)

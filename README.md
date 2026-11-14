@@ -620,3 +620,28 @@ comparisons. Run `python -S -m motionbricks.roach_home --out-dir /tmp/roach-home
 All outputs are synthetic and uncalibrated; deaths, necrophagy, human activity and
 infection transmission are not implemented. Source notes discuss these extensions
 separately from the running model.
+
+## Historical medical ethics evidence review (fork research note)
+
+[纳粹德国人体实验：已确认项目与证据边界](docs/nazi_medical_experiments_evidence_zh.md)
+整理10类人体实验，分别记录受害者选择、种族政策关系、伤害与审判或纪念馆依据。
+文档区分项目发生事实、施害者效果主张，以及《Apt Pupil》中尚未证实的文学描写。
+
+## Geometry and dimensional transitions (fork research proposition)
+
+[维度变化的耦合场方程组](docs/dimensional_transition_coupled_fields_zh.md)
+归纳高斯定律、分子光谱、几何尺度动力学及虫洞类比，提出由同一作用量导出几何、
+物质和尺度场方程的候选框架。文档区分有效降维、拓扑变化与真实维数改变；
+未实施数值求解或实验验证，也不声称已建立二向箔式降维机制。
+
+## Movable-type blockchain core (fork experiment)
+
+[用“活字印刷”重构区块链](docs/movable_type_blockchain_zh.md) separates reusable
+versioned rules from ordered evidence events. A standard-library prototype adds
+deterministic replay, RFC 9162-shaped Merkle inclusion proofs, revision guards,
+fork refusal, and atomic snapshots restored against an external trusted tip.
+The runnable demo records real binary/ternary/septenary integer-tool receipts.
+It uses one trusted writer; signatures, peer networking and distributed consensus
+are not implemented. Run `python -S tools/movable_type_ledger_demo.py --ipc --out-dir /tmp/movable-type-demo`.
+
+
