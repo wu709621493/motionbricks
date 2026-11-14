@@ -1,0 +1,46 @@
+{
+  "contracts.txt": {
+    "bytes": 7184,
+    "sha256": "65182f5e54b8f71560ec7ec8c4fb3c3e47597463cbfb6a21604e5fd3e9b53c55"
+  },
+  "README.md": {
+    "bytes": 1382,
+    "sha256": "e56ec44ddcf30cbb42f4c57551deb1342e688343afe2570d14f151c8dc2c3d81"
+  },
+  "harness-wrong-working-directory.txt": {
+    "bytes": 1323,
+    "sha256": "917392da6f02ec797f38e309c42e60130d15f480dd6ddf4cdf5405136d61861b"
+  },
+  "baseline-fault-results.json": {
+    "bytes": 5644,
+    "sha256": "98551cde30395aca9007c3648b61b6902bf627e40413a5e59b832ec4a28de77a"
+  },
+  "source-hashes.json": {
+    "bytes": 1914,
+    "sha256": "a46e7295624bc690a60c60402700e0c1e051e9794ed2fada2dda566c5ba76477"
+  },
+  "pe-diagnosis-not-run.json": {
+    "bytes": 1122,
+    "sha256": "8cac8aca5f923cbf039a1fb6dc19013e29f80dd33d9149e66b6f72f7387b3714"
+  },
+  "isolation-review.json": {
+    "bytes": 5210,
+    "sha256": "9e48c07b4de3ed16839b2b51b9bf37ba41c267748aef9c4ad04f974f5413d9a5"
+  },
+  "wheel-smoke.json": {
+    "bytes": 971,
+    "sha256": "da74b353db58cee841bc0cc76081059009b8f5c0d348f3d871f48011bbed908a"
+  },
+  "wheel-manifest.json": {
+    "bytes": 309,
+    "sha256": "b6c4efd62db39dec9bc2f869e61cb87aa5c20a582f38f80b689f6814e637282a"
+  },
+  "build.txt": {
+    "bytes": 223,
+    "sha256": "8e47d2bd21bd71dcfa84a985a9573329ced4c8dd8223bf98a3e9894be2e3cc16"
+  },
+  "numpy-supervision.json": {
+    "bytes": 567,
+    "sha256": "cf45c89109daa869100a1e13a307fff880f9064cfa3b5e2ea23a19372dc7d173"
+  }
+}

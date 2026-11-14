@@ -1,0 +1,19 @@
+test_cli_rejects_non_object_config_as_structured_refusal (test_home.HomeTests.test_cli_rejects_non_object_config_as_structured_refusal) ... ok
+test_cli_stdlib_only_and_invalid_input (test_home.HomeTests.test_cli_stdlib_only_and_invalid_input) ... ok
+test_comparison_uses_distinct_seeds_and_baseline_deltas (test_home.HomeTests.test_comparison_uses_distinct_seeds_and_baseline_deltas) ... ok
+test_house_round_trip_and_room_coverage (test_home.HomeTests.test_house_round_trip_and_room_coverage) ... ok
+test_html_escapes_user_text_and_is_offline (test_home.HomeTests.test_html_escapes_user_text_and_is_offline) ... ok
+test_invalid_config_refused (test_home.HomeTests.test_invalid_config_refused) ... ok
+test_light_schedule_and_final_sample (test_home.HomeTests.test_light_schedule_and_final_sample) ... ok
+test_open_boundary_and_disconnected_house_rejected (test_home.HomeTests.test_open_boundary_and_disconnected_house_rejected) ... ok
+test_output_hashes_and_no_overwrite (test_home.HomeTests.test_output_hashes_and_no_overwrite) ... ok
+test_paired_initial_states_unchanged_and_no_resource_contacts (test_home.HomeTests.test_paired_initial_states_unchanged_and_no_resource_contacts) ... ok
+test_population_wall_and_per_step_motion_invariants (test_home.HomeTests.test_population_wall_and_per_step_motion_invariants) ... ok
+test_resources_do_not_cross_walls_or_exceed_sensor_range (test_home.HomeTests.test_resources_do_not_cross_walls_or_exceed_sensor_range) ... ok
+test_seed_reproducibility_and_variation (test_home.HomeTests.test_seed_reproducibility_and_variation) ... ok
+test_unknown_scenario_rejected (test_home.HomeTests.test_unknown_scenario_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 5.028s
+
+OK

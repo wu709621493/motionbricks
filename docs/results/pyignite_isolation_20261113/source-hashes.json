@@ -1,0 +1,54 @@
+{
+  "tools/pyignite/pyignite/thermal.py": {
+    "bytes": 13122,
+    "sha256": "2c9b1d39d8b84443e22d5f6beca57d935b195eeed1ebbc20a3f4a3ba858efc4e"
+  },
+  "tools/pyignite/pyignite/__init__.py": {
+    "bytes": 7500,
+    "sha256": "118f5fa86949f588f918788f716302a13e131075862064c9d498ae6636959a6c"
+  },
+  "tools/pyignite/pyignite/supervisor.py": {
+    "bytes": 9483,
+    "sha256": "a28baa2b385470379f5a9eff5141f7e523eda92fed73fd37861af6f093e81920"
+  },
+  "tools/pyignite/pyignite/_io_worker.py": {
+    "bytes": 2081,
+    "sha256": "acca83a0f57e64566279143a1ab2035eb66cdb1e65e6852a4284ed6a8342823a"
+  },
+  "tools/pyignite/diagnose_pe.py": {
+    "bytes": 7131,
+    "sha256": "de69c8183d9a41ad3a69504409aa9ac487c86b504eef3ed9b4406d2cff88dc5e"
+  },
+  "tools/pyignite/review_isolation.py": {
+    "bytes": 4583,
+    "sha256": "1fa9d21ee99f290edb2ada965686ef7b91ab04b92b33e9df3ea2617ff21397dd"
+  },
+  "tools/pyignite/README.md": {
+    "bytes": 6782,
+    "sha256": "e9cdf52f877f0df78e9927a48cc98ca8496a4cdea2dc498eb9ab633c88ee3efa"
+  },
+  "tests/pyignite/test_supervisor.py": {
+    "bytes": 10493,
+    "sha256": "a2c522d6aeb92f50d2d74480094b1e904416121bcf08fa17838bc141df5b485a"
+  },
+  "tests/pyignite/thermal_fault_fixtures.py": {
+    "bytes": 1547,
+    "sha256": "83ccb844409307357d1f87b805dbe4fa652709d6c7b999341a9f55920684e146"
+  },
+  "tests/pyignite/test_pe_diagnosis.py": {
+    "bytes": 1067,
+    "sha256": "af917f6a9c098cde0be25c2c2f4d91f0a8beb57892b18fee9adf875ce923e3bb"
+  },
+  ".github/workflows/pyignite.yml": {
+    "bytes": 7104,
+    "sha256": "ef8dabb3fce930b9fe411884eaff381cc2ddc1d6ab2c8e390d86f3b2dae7dd3b"
+  },
+  "docs/pyignite_isolated_guard_zh.md": {
+    "bytes": 8384,
+    "sha256": "1fef9e45d2acffd167f58daf657e6a08cd02564afb900499b48204ab45b62c43"
+  },
+  "docs/pyignite_thermal_checkpoint_zh.md": {
+    "bytes": 7812,
+    "sha256": "f82d9adda27ca5b68cbdac090928e880edf599cfe33bad8d4bd7a1effba0381e"
+  }
+}
