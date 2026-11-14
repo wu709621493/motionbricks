@@ -136,13 +136,34 @@ class Noise:
 
 def covariance_inner(a: Sequence[float], b: Sequence[float], modes: Sequence[Mode],
                      noise: Noise, tau_s: float) -> float:
-    """a^T C^-1 b; diagonal + common fractional noise (Sherman-Morrison)."""
+    """a^T C^-1 b; diagonal + common fractional noise, without large subtraction.
+
+    A pairwise wedge identity replaces the cancelling Sherman-Morrison
+    numerator. Cost is O(n^2), for the phase-one one/three-mode budget.
+    """
     if not len(a) == len(b) == len(modes) or not modes:
         raise ValueError("vectors must match a nonempty list of modes")
+    for value in (*a, *b):
+        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+            raise ValueError("covariance vectors must contain finite signed numbers")
     var = noise.difference_variance(tau_s)
     u = [math.sqrt(2) * noise.common_fractional_sigma * m.frequency_hz for m in modes]
+    size = math.hypot(*u)
+    total = var + size * size
+    if not math.isfinite(total) or not math.isfinite(var) or var <= 0:
+        raise ValueError("noise covariance exceeds supported floating-point range")
     dot = lambda x, y: math.fsum(i * j for i, j in zip(x, y))
-    return (dot(a, b) - dot(a, u) * dot(b, u) / (var + dot(u, u))) / var
+    if size == 0:
+        result = dot(a, b) / var
+    else:
+        q = [value / size for value in u]
+        wedges = math.fsum((a[i] * q[j] - a[j] * q[i])
+                          * (b[i] * q[j] - b[j] * q[i])
+                          for i in range(len(modes)) for j in range(i + 1, len(modes)))
+        result = dot(a, b) / total + wedges * (size * size / total) / var
+    if not math.isfinite(result):
+        raise ValueError("covariance result exceeds supported floating-point range")
+    return result
 
 
 def norm(vector: Sequence[float], modes: Sequence[Mode], noise: Noise, tau_s: float) -> float:

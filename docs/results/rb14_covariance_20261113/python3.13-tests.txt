@@ -1,0 +1,24 @@
+test_repeatable_cli_and_status_boundaries (test_feasibility.CliTests.test_repeatable_cli_and_status_boundaries) ... ok
+test_common_and_differential_eigenvectors (test_feasibility.NoiseTests.test_common_and_differential_eigenvectors) ... ok
+test_common_noise_does_not_average_as_independent (test_feasibility.NoiseTests.test_common_noise_does_not_average_as_independent) ... ok
+test_longer_averaging_can_fail (test_feasibility.NoiseTests.test_longer_averaging_can_fail) ... ok
+test_nonfinite_vectors_and_underflow_are_refused (test_feasibility.NoiseTests.test_nonfinite_vectors_and_underflow_are_refused) ... ok
+test_reference_difference_noise_and_drift (test_feasibility.NoiseTests.test_reference_difference_noise_and_drift) ... ok
+test_single_channel_strong_common_noise_has_nonzero_information (test_feasibility.NoiseTests.test_single_channel_strong_common_noise_has_nonzero_information) ... ok
+test_threshold_inverse_is_consistent (test_feasibility.NoiseTests.test_threshold_inverse_is_consistent) ... ok
+test_two_channel_inverse_against_high_precision_matrix (test_feasibility.NoiseTests.test_two_channel_inverse_against_high_precision_matrix) ... ok
+test_zero_distance_never_passes (test_feasibility.NoiseTests.test_zero_distance_never_passes) ... ok
+test_fixed_mass_eigenvalue_identity (test_feasibility.PhysicsTests.test_fixed_mass_eigenvalue_identity) ... ok
+test_geometry_incompatibility_and_scaling (test_feasibility.PhysicsTests.test_geometry_incompatibility_and_scaling) ... ok
+test_gradient_against_central_difference (test_feasibility.PhysicsTests.test_gradient_against_central_difference) ... ok
+test_known_atomic_mass_and_reference_shift (test_feasibility.PhysicsTests.test_known_atomic_mass_and_reference_shift) ... ok
+test_multimode_breaks_swap_but_not_reflection (test_feasibility.PhysicsTests.test_multimode_breaks_swap_but_not_reflection) ... ok
+test_peak_normalized_modal_mass (test_feasibility.PhysicsTests.test_peak_normalized_modal_mass) ... ok
+test_rejects_invalid_physical_inputs (test_feasibility.PhysicsTests.test_rejects_invalid_physical_inputs) ... ok
+test_scaling_and_peak_node (test_feasibility.PhysicsTests.test_scaling_and_peak_node) ... ok
+test_single_mode_cannot_locate_two_coordinates (test_feasibility.PhysicsTests.test_single_mode_cannot_locate_two_coordinates) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.334s
+
+OK
