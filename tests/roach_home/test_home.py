@@ -88,9 +88,9 @@ class HomeTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             out = Path(d) / "run"
             export(simulate(Config(steps=10)), out)
-            for name, digest in json.loads((out / "sha256.json").read_text()).items():
+            for name, digest in json.loads((out / "sha256.json").read_text(encoding="utf-8")).items():
                 self.assertEqual(hashlib.sha256((out / name).read_bytes()).hexdigest(), digest)
-            self.assertEqual(json.loads((out / "run.json").read_text())["status"], "SYNTHETIC_UNCALIBRATED")
+            self.assertEqual(json.loads((out / "run.json").read_text(encoding="utf-8"))["status"], "SYNTHETIC_UNCALIBRATED")
             with self.assertRaises(FileExistsError):
                 export(simulate(Config(steps=1)), out)
 

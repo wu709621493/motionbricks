@@ -15,6 +15,7 @@
 | worker 返回 `[]`、`null`、数字或字符串 | 抛 AttributeError，transport 未锁定 | 要求对象和整数版本号；统一抛 IsolatedIOError，并禁止自动重试 |
 | 大 stdin 阻塞后超时 | 父端 stdin 仍开放，原测试出现 ResourceWarning | 正常、超时和异常路径关闭全部父端管道 |
 | 模型配置文件根节点不是对象 | `--config` 崩溃、退出 1、打印 traceback | 退出 2，返回结构化 `REFUSED`，不创建输出目录 |
+| Windows 默认 cp1252 解码中文结果 | 提交后 CI 中旧输出校验测试 UnicodeDecodeError，两个 Windows 版本均失败 | 读取导出结果时显式指定 UTF-8，与模型写入格式一致；修复后另跑新提交 CI |
 
 清理等待是有限的。POSIX 进程组在宽限期结束后仍存在时返回 `cleanup=fail`；即使只剩尚未被 OS 回收的僵尸，也不推定已经完成清理。Windows 仍只覆盖直接子进程。主动脱离 session 的后代不属于进程组监督范围；未新增安全沙箱或硬件 watchdog 的声明。
 
@@ -36,5 +37,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -W error::ResourceWarning -m uni
 ```
 
 Virtual cockroach home workflow 增加 Windows/macOS/Linux、Python 3.12/3.13 的联合测试，并在 supervisor 改动时触发。跨平台结果需以提交后的实际 run 为准，不能把本机通过当成跨平台通过。
+
+首轮提交 `eb2d583` 的 [run 43541280081](https://github.com/wu709621493/motionbricks/actions/runs/43541280081)暴露 Windows Python 3.12/3.13 的旧测试默认编码问题；macOS 与 Linux 的联合测试成功。该失败记录保留，显式 UTF-8 修复必须由后续提交的 run 验证。
 
 这些检查验证软件行为和合成数据的一致性；模型继续标为 SYNTHETIC_UNCALIBRATED / empirical_validation=NOT_RUN。本次未实现死亡、食尸、感染传播或模拟中的断点续算，也没有真实动物、真实过热、物理断电或浏览器交互验证。

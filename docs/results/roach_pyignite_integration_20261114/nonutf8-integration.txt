@@ -1,0 +1,8 @@
+test_all_scenarios_keep_seeded_results_and_output_hashes (test_roach_integration.RoachIntegration.test_all_scenarios_keep_seeded_results_and_output_hashes) ... ok
+test_deadline_during_real_simulation_publishes_no_complete_run (test_roach_integration.RoachIntegration.test_deadline_during_real_simulation_publishes_no_complete_run) ... ok
+test_exited_launcher_cannot_leave_a_late_result_writer (test_roach_integration.RoachIntegration.test_exited_launcher_cannot_leave_a_late_result_writer) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 3.295s
+
+OK

@@ -5,7 +5,11 @@
   "before-integration.txt": "a2e8f62fe059791f53d9fee7ffaf974cbe6e42ae66524e98b01f761e76559b2c",
   "before-supervisor.txt": "f3256794e0b423f49755c2c5b4395363e466fd3c4deaadff7e58ff294363b527",
   "before.json": "4a87c1f9fc8ae06b20a451c9822134f753d38312e8026b94c4c60c2970cf5c74",
+  "encoding-followup.json": "9f2cba5bec9e1d490ce5ccedb1aa76d19ecacd54fb384c384cfdd0065813ebc2",
+  "nonutf8-home.txt": "b0c2d240979bc6417936e099f03a14f28d2fd7db706016879d9cf79113a5830c",
+  "nonutf8-integration.txt": "e02b5077d4f1cc1e109d35a824f94afe6f0c8f44fc87b915dc759688abf55aac",
   "strict-pe/report.json": "83f7ae154b0df7ff4d95f82fbca9db359eb3a47efd69c0df4eebe6df8072e5c5",
   "strict-pe.txt": "d09c84ef6cea240c9b07dbb6497e85ce63cd2307446e965e934e790f8652d2f8",
-  "summary.json": "ef590f84b1ed7eddbcbd158c393eb06e1c95e7c8928d627b7b14e44b0bb2459d"
+  "summary.json": "ef590f84b1ed7eddbcbd158c393eb06e1c95e7c8928d627b7b14e44b0bb2459d",
+  "windows-encoding-ci-excerpt.txt": "9e35e9fa275d4a8004b676deda3d75f8be80142679c013762304c1c80358dea5"
 }

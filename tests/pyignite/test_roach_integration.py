@@ -40,7 +40,7 @@ class RoachIntegration(unittest.TestCase):
                     self.assertEqual(refused['exit_code'], 2)
                     self.assertFalse(refused['timed_out'])
                     self.assertEqual(json.loads(refused['stderr'])['status'], 'REFUSED')
-                    self.assertEqual(canonical(json.loads((out / 'sha256.json').read_text())), before)
+                    self.assertEqual(canonical(json.loads((out / 'sha256.json').read_text(encoding='utf-8'))), before)
                     for name, digest in manifest.items():
                         self.assertEqual(hashlib.sha256((out / name).read_bytes()).hexdigest(), digest)
 

@@ -1,0 +1,49 @@
+{
+  "base_commit": "eb2d5832deb22ec81356910aaecc95bfd09fd696",
+  "reason": "Windows CI used cp1252 to read UTF-8 run.json; explicit UTF-8 decoding added to export assertions.",
+  "local_non_utf8_environment": {
+    "encoding": "ANSI_X3.4-1968",
+    "utf8_mode": 0
+  },
+  "env": {
+    "LC_ALL": "C",
+    "PYTHONUTF8": "0",
+    "PYTHONCOERCECLOCALE": "0"
+  },
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/roach_home",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "nonutf8-home.txt"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/pyignite",
+        "-p",
+        "test_roach_integration.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "nonutf8-integration.txt"
+    }
+  ],
+  "source_sha256": {
+    "tests/roach_home/test_home.py": "76ee503faef498f88837a7a1d8e8618837c11f5c9a0bc599e35d57d3d6fcb8d7",
+    "tests/pyignite/test_roach_integration.py": "4017c5bb1b8415ca4b87d353679c51ce8a0cb0e851d7c03c174c9324bc94efca"
+  },
+  "windows_confirmation": "Requires next commit CI; this is Linux ASCII-locale verification, not Windows execution."
+}
