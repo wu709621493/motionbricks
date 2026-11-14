@@ -19,6 +19,12 @@ This repository provides pretrained MotionBricks models, based on the [SIGGRAPH 
 
 The demos show one way to drive the model. Your application decides where the targets come from. New to MotionBricks? The [guided tutorial](docs/guided_tutorial.md) walks through all four apps as it builds one interaction scene.
 
+## Fork research navigation
+
+See the [科研入口与复现边界](docs/research/README_zh.md) for the dimensional-field
+proposal (#99), Rb-14, PyIgnite, and other research modules. The index distinguishes
+model calculations, literature evidence, software checks, and unperformed experiments.
+
 ## News
 
 - MotionBricks has its own repository and a pretrained model for SOMA humans. The first release was a Unitree G1 preview in [GR00T Whole-Body Control](https://github.com/NVlabs/GR00T-WholeBodyControl/tree/main/motionbricks).
