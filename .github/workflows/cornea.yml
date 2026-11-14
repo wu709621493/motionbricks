@@ -1,0 +1,34 @@
+name: Cornea geometry
+on:
+  pull_request:
+    paths:
+      - 'motionbricks/cornea.py'
+      - 'docs/cornea/**'
+      - 'tests/cornea/**'
+      - '.github/workflows/cornea.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'motionbricks/cornea.py'
+      - 'docs/cornea/**'
+      - 'tests/cornea/**'
+      - '.github/workflows/cornea.yml'
+permissions:
+  contents: read
+jobs:
+  geometry:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -S -m unittest discover -s tests/cornea -v
+      - run: python -S -m motionbricks.cornea --out-dir /tmp/cornea --template docs/cornea/viewer.template.html
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node tests/cornea/check_viewer.cjs

@@ -1,0 +1,24 @@
+{
+  "version": "cornea-0.1",
+  "synthetic": true,
+  "files": {
+    "models.json": "65dc2436cabfe309775ee8183337b42b215f5de18f2d88dcdd7bfa93560c2b7c",
+    "healthy.obj": "b0c6e4f0d2cdc8c95e5b71dcabc4e8a00628925f34b3f18edb1377e9978373e9",
+    "keratoconus.obj": "75ba707fca13a953f26e4788e993d1448baad5a51430a7d91efe821c0dca1757",
+    "index.html": "3a488d7be1db4b1cef01be553b6e4926684cd1883660630ffd1be4f7cfe7b95f"
+  },
+  "validation": {
+    "healthy": {
+      "vertices": 3458,
+      "triangles": 6912,
+      "closed_oriented": true,
+      "signed_volume_mm3": 47.851226385427424
+    },
+    "keratoconus": {
+      "vertices": 3458,
+      "triangles": 6912,
+      "closed_oriented": true,
+      "signed_volume_mm3": 46.59184000245914
+    }
+  }
+}

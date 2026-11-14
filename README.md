@@ -650,3 +650,12 @@ are not implemented. Run `python -S tools/movable_type_ledger_demo.py --ipc --ou
 
 - [全球烟草与雪茄产地、溯源及传统药用证据目录](docs/research/tobacco_origins/README_zh.md)：区分种植、制造与品牌来源，收录全球生产统计、重点产区、加工追溯规范及分级药理／毒理文献。
 
+## Corneal geometry comparison (fork research model)
+
+[健康角膜与典型圆锥角膜](docs/cornea/README_zh.md) provides two closed synthetic
+shells, a self-contained offline 3D comparison, shared-scale axial thickness maps,
+cross-sections, and OBJ/JSON exports. Run `python -S -m motionbricks.cornea
+--out-dir /tmp/cornea --template docs/cornea/viewer.template.html`.
+Geometry is illustrative; tissue mechanics, optics, patient fitting and causal
+gene-to-shape prediction are not implemented.
+
