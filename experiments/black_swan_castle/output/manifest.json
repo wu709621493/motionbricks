@@ -1,0 +1,13 @@
+{
+  "concept_id": "MB-DE-BLACK-SWAN-001",
+  "algorithm": "sha256",
+  "files": {
+    "index.html": "cfd52ec7621f86a61d8c6bf865b44a13b5da11f794408eec1e33c1fd18c399ee",
+    "preview.svg": "e8f92cd13a0b6f959dfae545cb348da9d81055a03969227106a14ddb4b32a453",
+    "model.json": "857b0c87ccfa0d01ab5d3d37afb5a76c90af985399931101496b6293f516699f",
+    "castle.gltf": "ed676924ede41a74726ab38794465c55960685be9aaa1768b5605c7191d7c9dc",
+    "castle.obj": "a02108a6e0dd6f3dd9acd8e86ed2a8efb9a1b9e9c3d2692a265c91fbf1eee497",
+    "castle.mtl": "470420ff3be4ff6e838a2e46b26acb4788c29fa893b3a52cf416af07458938ac",
+    "castle.envelopes.scene.json": "9463c3e3395ec806b1983add857dbe4fd472b2fcf6e0b4b334268811c530e500"
+  }
+}

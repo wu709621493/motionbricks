@@ -1,0 +1,38 @@
+// SPDX-License-Identifier: Apache-2.0
+const {chromium}=require('playwright');
+const fs=require('node:fs');
+const path=require('node:path');
+const assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'../..');
+const output=path.resolve(process.argv[2]||path.join(__dirname,'review'));
+fs.mkdirSync(output,{recursive:true});
+(async()=>{
+ const browser=await chromium.launch({...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{}),headless:true,args:['--no-sandbox']});
+ const context=await browser.newContext({offline:true,acceptDownloads:true,viewport:{width:1440,height:1080}});
+ const page=await context.newPage(),errors=[],requests=[],checks=[];
+ page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});
+ const check=async(name,fn)=>{try{const detail=await fn();checks.push({name,status:'PASS',detail});}catch(e){checks.push({name,status:'FAIL',error:String(e)});}};
+ await page.goto('file://'+path.join(__dirname,'output/index.html'));
+ const frames=()=>page.locator('#scene').getAttribute('data-render-count');
+ const settled=async(before)=>page.waitForFunction(n=>Number(document.getElementById('scene').dataset.renderCount)>Number(n),before);
+ const pixels=()=>page.locator('#scene').evaluate(c=>c.toDataURL());
+ const slider=async(id,value)=>{const before=await frames();await page.locator('#'+id).evaluate((n,v)=>{n.value=String(v);n.dispatchEvent(new Event('input',{bubbles:true}));},value);await settled(before);};
+ await check('offline initial scene',async()=>{await page.waitForFunction(()=>document.getElementById('scene').dataset.renderedFaces>500);assert.ok(Number(await page.locator('#scene').getAttribute('data-lit-faces'))>100);assert.equal(await page.locator('h1').innerText(),'黑天鹅堡\n一座城堡，等一场蓝色的夜。');});
+ await page.screenshot({path:path.join(output,'night-desktop.png'),fullPage:true});
+ await check('lights off changes pixels and removes emission',async()=>{const before=await frames(),image=await pixels();await page.locator('#lights').click();await settled(before);assert.equal(await page.locator('#scene').getAttribute('data-lit-faces'),'0');assert.notEqual(await pixels(),image);assert.equal(await page.locator('#lights').getAttribute('aria-pressed'),'false');});
+ await page.screenshot({path:path.join(output,'lights-off-desktop.png'),fullPage:true});
+ await check('daylight independent of light switch',async()=>{const before=await frames(),image=await pixels();await page.locator('#day').click();await settled(before);assert.notEqual(await pixels(),image);assert.equal(await page.locator('#scene').getAttribute('data-lit-faces'),'0');assert.equal(await page.locator('#day').getAttribute('aria-pressed'),'true');});
+ await check('brightness zero and enabled light state',async()=>{let before=await frames();await page.locator('#lights').click();await settled(before);await slider('intensity',0);assert.equal(await page.locator('#scene').getAttribute('data-lit-faces'),'0');await slider('intensity',100);assert.ok(Number(await page.locator('#scene').getAttribute('data-lit-faces'))>100);});
+ await check('material selection changes facade pixels',async()=>{const before=await frames(),image=await pixels();await page.selectOption('#facade','limestone');await settled(before);assert.notEqual(await pixels(),image);});
+ await page.screenshot({path:path.join(output,'day-desktop.png'),fullPage:true});
+ await check('keyboard and slider rotate actual scene',async()=>{const before=await frames(),image=await pixels();await page.locator('#scene').focus();await page.keyboard.press('ArrowRight');await settled(before);assert.equal(await page.locator('#rotation').inputValue(),'24');assert.notEqual(await pixels(),image);await slider('elevation',50);assert.equal(await page.locator('#elevation-value').textContent(),'50°');});
+ await check('pointer drag rotates scene',async()=>{const bounds=await page.locator('#scene').boundingBox();const before=await frames();await page.mouse.move(bounds.x+100,bounds.y+180);await page.mouse.down();await page.mouse.move(bounds.x+200,bounds.y+180,{steps:5});await page.mouse.up();await settled(before);assert.notEqual(await page.locator('#rotation').inputValue(),'24');});
+ await check('reset restores all controls and scene',async()=>{const before=await frames();await page.locator('#reset').click();await settled(before);assert.equal(await page.locator('#rotation').inputValue(),'22');assert.equal(await page.locator('#elevation').inputValue(),'24');assert.equal(await page.locator('#intensity').inputValue(),'70');assert.equal(await page.locator('#facade').inputValue(),'obsidian');assert.equal(await page.locator('#night').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('#lights').getAttribute('aria-pressed'),'true');});
+ await check('all generated download links exist',async()=>{const names=await page.locator('.download a').evaluateAll(a=>a.map(n=>n.getAttribute('href')));for(const name of names)assert.ok(fs.existsSync(path.join(__dirname,'output',name)),name);const promise=page.waitForEvent('download');await page.locator('a[href="castle.gltf"]').click();const download=await promise;assert.equal(download.suggestedFilename(),'castle.gltf');const g=JSON.parse(fs.readFileSync(await download.path()));assert.equal(g.asset.version,'2.0');return names;});
+ for(const width of [320,390,768,1440])await check('responsive '+width+'px',async()=>{await page.setViewportSize({width,height:900});await page.waitForFunction(()=>document.getElementById('scene').width>0);const d=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));assert.ok(d.scroll<=d.client+1,JSON.stringify(d));return d;});
+ await page.setViewportSize({width:390,height:844});await page.screenshot({path:path.join(output,'night-mobile.png'),fullPage:true});
+ await check('no page errors or network requests',async()=>{assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);});
+ const report={browser:await browser.version(),platform:process.platform,mode:'Headless Chromium; file://; network offline; simulated desktop/mobile viewports',checks,errors,requests};
+ fs.writeFileSync(path.join(output,'browser-review.json'),JSON.stringify(report,null,2)+'\n');
+ console.log(JSON.stringify(report,null,2));await browser.close();if(checks.some(c=>c.status==='FAIL'))process.exitCode=1;
+})().catch(e=>{console.error(e);process.exit(1);});

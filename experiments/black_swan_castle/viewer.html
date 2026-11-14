@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黑天鹅堡 · 冰蓝之夜 | MotionBricks</title>
+<style>
+:root{color-scheme:dark;--bg:#08121b;--panel:#101e29;--line:#283d4b;--muted:#9cb2c0;--ice:#a8e5ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#e6f1f7;font:14px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}a{color:var(--ice);text-decoration:none}a:hover{text-decoration:underline}button,select{color:inherit;background:#142937;border:1px solid #375062;border-radius:7px;padding:9px 12px;cursor:pointer}button[aria-pressed=true]{background:#c2edff;color:#102a3a;border-color:#c2edff}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #c2edff;outline-offset:4px}header{max-width:1560px;margin:auto;padding:25px 38px 22px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);gap:15px}.brand{font-size:12px;letter-spacing:.24em;font-weight:650}.edition{color:var(--muted);font-size:11px;letter-spacing:.12em}.wrap{max-width:1560px;margin:auto;padding:28px 38px 32px}.intro{display:flex;align-items:end;justify-content:space-between;gap:24px;margin:0 0 23px}.eyebrow{font-size:11px;letter-spacing:.22em;color:var(--ice);margin:0 0 7px}h1{font:normal clamp(30px,3.5vw,48px)/1.2 Georgia,"Songti SC",serif;letter-spacing:.04em;margin:0}h1 small{font:12px/1.3 system-ui;display:block;letter-spacing:.24em;color:var(--muted);margin-top:12px}.subtitle{color:var(--muted);margin:0;max-width:380px;font-size:13px}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 270px;border:1px solid var(--line);border-radius:12px;overflow:hidden}.viewport{position:relative;min-width:0;background:#071320}.scene-top{position:absolute;top:22px;left:24px;z-index:1;pointer-events:none}.scene-top p{margin:0;font-size:11px;letter-spacing:.15em;color:#bdd7e7}.scene-top strong{font-size:12px;font-weight:400;color:#83ddff;display:block;margin-top:5px}canvas{display:block;width:100%;height:570px;touch-action:pan-y;cursor:grab}canvas:active{cursor:grabbing}.scene-bottom{position:absolute;left:24px;right:24px;bottom:19px;display:flex;justify-content:space-between;align-items:end;gap:15px;pointer-events:none;color:#b3ccdb;font-size:11px;letter-spacing:.05em}.compass{border:1px solid #6b8a9e;border-radius:50%;height:37px;width:37px;display:grid;place-items:center;color:#daf3ff;font:20px Georgia}.controls{background:var(--panel);padding:23px;display:flex;flex-direction:column;gap:20px}.controls h2{font-size:11px;letter-spacing:.15em;color:#b2cbd8;font-weight:500;margin:0 0 10px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:7px}.control label{display:flex;justify-content:space-between;font-size:12px;color:#d5e4ed;margin-bottom:7px}.control output{color:var(--ice);font-variant-numeric:tabular-nums}input[type=range]{width:100%;accent-color:#a8e5ff;margin:5px 0}select{width:100%;font-size:12px}.detail{padding-top:17px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.detail strong{font-size:23px;color:#deeff7;font-weight:400;display:block;letter-spacing:.03em}.control-last{margin-top:auto}.under{display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:24px;margin-top:26px}.under article{border-top:1px solid var(--line);padding:17px 0 0}.under h2{font-weight:500;font-size:14px;margin:0 0 8px}.under p{color:var(--muted);font-size:12px;margin:0}.download{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12px}footer{margin-top:26px;color:#819aaa;font-size:11px;display:flex;justify-content:space-between;gap:14px}.tag{font-size:10px;display:inline-block;border:1px solid #3f5969;color:#acd5ea;border-radius:20px;padding:3px 10px;margin-bottom:12px}.noscript{padding:20px;color:#c2edff}.status{min-height:20px;font-size:11px;color:var(--muted)}
+@media(max-width:950px){.wrap{padding:23px 20px}header{padding:20px}.workspace{grid-template-columns:minmax(0,1fr) 230px}.controls{padding:17px}canvas{height:510px}.subtitle{max-width:270px}.under{gap:18px}}
+@media(max-width:700px){header{padding:17px 16px}.edition{font-size:9px}.wrap{padding:22px 14px}.intro{display:block}.subtitle{margin-top:18px;max-width:none}.workspace{grid-template-columns:1fr}canvas{height:410px}.controls{display:grid;grid-template-columns:1fr 1fr;gap:17px;padding:18px}.controls .detail{display:none}.control-last{margin:0}.scene-top{left:18px;top:16px}.scene-bottom{left:18px;right:18px;bottom:15px;font-size:10px}.under{grid-template-columns:1fr;gap:17px}footer{flex-direction:column}button{padding:9px 5px;font-size:12px}.brand{font-size:10px;letter-spacing:.14em}h1{font-size:34px}}
+</style></head>
+<body>
+<header><a class="brand" href="../../../README.md">MOTIONBRICKS / ATELIER</a><span class="edition">ARCHITECTURE STUDY &nbsp; 001 / GERMANY</span></header>
+<main class="wrap"><div class="intro"><div><p class="eyebrow">BLACK SWAN · ICE BLUE</p><h1>黑天鹅堡<small>一座城堡，等一场蓝色的夜。</small></h1></div><p class="subtitle">以新天鹅堡为原型，沿山脊构筑宫殿与尖塔。待暮色落下，让冰蓝灯饰逐一勾亮屋脊与窗拱。</p></div>
+<div class="workspace"><div class="viewport"><div class="scene-top"><p id="scene-label">01 / 月夜 · 黑曜石</p><strong id="light-label">ICE BLUE / ON</strong></div><canvas id="scene" tabindex="0" role="img" aria-label="可旋转的黑天鹅堡三维概念模型，使用下方视角滑块或左右方向键调整"></canvas><noscript><p class="noscript">交互预览需要启用 JavaScript。可以下载 glTF 或 OBJ 在三维软件中打开。</p></noscript><div class="scene-bottom"><span>拖动旋转 · 方向键微调<br>山脊 / 双宫殿 / 高低院落</span><span class="compass" aria-hidden="true">✧</span></div></div>
+<aside class="controls" aria-label="场景设置"><section><h2>01 / 环境</h2><div class="pair"><button id="night" aria-pressed="true">月夜</button><button id="day" aria-pressed="false">白昼</button></div></section><section><h2>02 / 冰蓝灯饰</h2><button id="lights" aria-pressed="true" style="width:100%">灯饰已开启</button></section><section class="control"><label for="intensity">发光亮度 <output id="intensity-value">70%</output></label><input id="intensity" type="range" min="0" max="100" value="70"></section><section class="control"><label for="facade">墙面风格</label><select id="facade"><option value="obsidian">黑曜石 · 创作配色</option><option value="limestone">月白石墙 · 原型印象</option></select></section><section class="control"><label for="rotation">环绕视角 <output id="rotation-value">22°</output></label><input id="rotation" type="range" min="-180" max="180" value="22"></section><section class="control"><label for="elevation">俯仰角度 <output id="elevation-value">24°</output></label><input id="elevation" type="range" min="10" max="60" value="24"></section><div class="detail">原型 / NEUSCHWANSTEIN<strong>冰蓝之夜</strong>形制取意，灯饰原创。<br>尺寸为艺术设定。</div><div class="control-last"><button id="reset" style="width:100%">回到初始画面</button><div class="status" id="status" role="status" aria-live="polite"></div></div></aside></div>
+<div class="under"><article><span class="tag">建筑先行</span><h2>山巅上的非对称轮廓</h2><p>双宫殿、圆形尖塔与方塔构成主剪影，骑士楼和侧翼围出上下两级院落，红褐色门楼留下开放通道。</p></article><article><span class="tag">灯饰叠加</span><h2>冰蓝，沿着建筑生长</h2><p>屋檐、屋脊、尖塔轮廓、窗拱与入口路径各自成组。关灯可查看建筑本体，白昼和月夜可独立切换。</p></article><article><span class="tag">继续搭建</span><h2>把城堡带进下一幕</h2><div class="download"><a href="castle.gltf" download>glTF · 发光材质</a><a href="castle.obj" download>OBJ · 几何</a><a href="castle.mtl" download>MTL · 配套材质</a><a href="model.json" download>场景数据</a><a href="castle.envelopes.scene.json" download>编辑器 · 体量预览</a><a href="manifest.json" download>文件校验</a></div></article></div>
+<footer><span>概念 / Windy Wu · 吴孟城 &nbsp; 2026.11 &nbsp; 原创几何 CC BY 4.0</span><span>新天鹅堡原型的艺术演绎 · 非实测复原 &nbsp; <a href="../README.md">设计说明与来源 ↗</a></span></footer></main>
+<script id="model-data" type="application/json">__MODEL__</script>
+<script>
+'use strict';
+const model=JSON.parse(document.getElementById('model-data').textContent),$=id=>document.getElementById(id);
+const canvas=$('scene'),ctx=canvas.getContext('2d');
+const state={night:true,lights:true,intensity:70,facade:'obsidian',rotation:22,elevation:24};
+const rgb=hex=>[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16));
+const faces=[];
+for(const p of model.parts)for(const face of p.faces){
+ const v=face.map(i=>p.vertices[i]),a=v[0],b=v[1],c=v[2],u=b.map((n,i)=>n-a[i]),w=c.map((n,i)=>n-a[i]);
+ const normal=[u[1]*w[2]-u[2]*w[1],u[2]*w[0]-u[0]*w[2],u[0]*w[1]-u[1]*w[0]],length=Math.hypot(...normal);
+ if(length<1e-9)continue;
+ faces.push({vertices:v,normal:normal.map(n=>n/length),center:[0,1,2].map(i=>v.reduce((s,p)=>s+p[i],0)/v.length),material:p.material});
+}
+let width=0,height=0,scheduled=false;
+function render(){
+ scheduled=false;const r=canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);width=r.width;height=r.height;
+ canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+ const bg=ctx.createLinearGradient(0,0,0,height);bg.addColorStop(0,state.night?'#061021':'#91bacd');bg.addColorStop(1,state.night?'#1c3548':'#e1e9e7');ctx.fillStyle=bg;ctx.fillRect(0,0,width,height);
+ if(state.night){let seed=98765;for(let i=0;i<100;i++){seed=(seed*1664525+1013904223)>>>0;const x=seed/4294967296*width;seed=(seed*1664525+1013904223)>>>0;const y=seed/4294967296*height*.57;ctx.fillStyle=`rgba(194,226,247,${.15+(i%4)*.1})`;ctx.fillRect(x,y,i%7===0?1.6:1,1);}ctx.fillStyle='#bfdfed';ctx.shadowColor='#8acbea';ctx.shadowBlur=24;ctx.beginPath();ctx.arc(width*.82,height*.17,11,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;}
+ for(let layer=0;layer<3;layer++){
+  ctx.beginPath();ctx.moveTo(0,height);for(let i=0;i<=16;i++){const x=i*width/16,y=height*(.39+layer*.09)-Math.sin(i*1.8+layer*2)*height*.065-Math.cos(i*.7+layer)*height*.07;ctx.lineTo(x,y);}ctx.lineTo(width,height);ctx.closePath();ctx.fillStyle=state.night?['#122438','#162c3d','#1a3343'][layer]:['#759aa9','#648897','#517c83'][layer];ctx.fill();
+ }
+ const a=state.rotation*Math.PI/180,e=state.elevation*Math.PI/180,c=Math.cos(a),s=Math.sin(a),ce=Math.cos(e),se=Math.sin(e);
+ const camera=[-s*ce,-c*ce,se],scale=Math.min(width/175,height/112);
+ const project=p=>[width*.5+(c*p[0]-s*p[1])*scale,height*.68-((s*p[0]+c*p[1])*se+p[2]*ce)*scale];
+ const visible=faces.filter(f=>f.normal.reduce((sum,n,i)=>sum+n*camera[i],0)>.00001);
+ // Orthographic triangle rasterization with a depth buffer. This keeps thin
+ // emissive strips in front of their own walls and behind other buildings.
+ const rw=Math.round(width*dpr),rh=Math.round(height*dpr),depthBuffer=new Float32Array(rw*rh).fill(Infinity);
+ ctx.setTransform(1,0,0,1,0,0);
+ const frame=ctx.getImageData(0,0,rw,rh),lightPixels=new Uint8ClampedArray(rw*rh*4);
+ const depths=p=>(s*p[0]+c*p[1])*ce-p[2]*se;
+ let drawnLights=0;
+ for(const f of visible){
+  const ice=f.material==='ice',lit=ice&&state.lights&&state.intensity>0;
+  let color=rgb(model.materials[f.material]);
+  if(f.material==='stone'&&state.facade==='obsidian')color=[66,86,104];
+  if(f.material==='trim'&&state.facade==='obsidian')color=[96,119,133];
+  const diffuse=Math.max(0,f.normal[0]*-.35+f.normal[1]*-.45+f.normal[2]*.82);
+  let shade=state.night?.39+diffuse*.32:.62+diffuse*.36;
+  if(ice){if(lit){shade=.5+state.intensity/100*.6;drawnLights++;}else{color=[63,87,101];shade=state.night?.4:.6;}}
+  else if(state.night&&state.lights&&f.material==='stone'){color=color.map((n,i)=>n+[0,12,23][i]*state.intensity/100);}
+  const fill=color.map(n=>Math.min(255,Math.round(n*shade)));
+  const vertices=f.vertices.map(p=>[...project(p).map(n=>n*dpr),depths(p)]);
+  for(let k=1;k<vertices.length-1;k++){
+   const [p,q,r]=[vertices[0],vertices[k],vertices[k+1]],area=(q[1]-r[1])*(p[0]-r[0])+(r[0]-q[0])*(p[1]-r[1]);
+   if(Math.abs(area)<1e-8)continue;
+   const minX=Math.max(0,Math.floor(Math.min(p[0],q[0],r[0]))),maxX=Math.min(rw-1,Math.ceil(Math.max(p[0],q[0],r[0])));
+   const minY=Math.max(0,Math.floor(Math.min(p[1],q[1],r[1]))),maxY=Math.min(rh-1,Math.ceil(Math.max(p[1],q[1],r[1])));
+   for(let y=minY;y<=maxY;y++)for(let x=minX;x<=maxX;x++){
+    const a=((q[1]-r[1])*(x+.5-r[0])+(r[0]-q[0])*(y+.5-r[1]))/area;
+    const b=((r[1]-p[1])*(x+.5-r[0])+(p[0]-r[0])*(y+.5-r[1]))/area,t=1-a-b;
+    if(a<0||b<0||t<0)continue;
+    const z=a*p[2]+b*q[2]+t*r[2],index=y*rw+x;
+    if(z>=depthBuffer[index])continue;
+    depthBuffer[index]=z;const offset=index*4;
+    for(let i=0;i<3;i++){frame.data[offset+i]=fill[i];lightPixels[offset+i]=lit?fill[i]:0;}
+    frame.data[offset+3]=255;lightPixels[offset+3]=lit?Math.round(165*state.intensity/100):0;
+   }
+  }
+ }
+ ctx.putImageData(frame,0,0);
+ if(state.lights&&state.intensity>0){
+  const glow=document.createElement('canvas');glow.width=rw;glow.height=rh;
+  glow.getContext('2d').putImageData(new ImageData(lightPixels,rw,rh),0,0);
+  ctx.save();ctx.globalCompositeOperation='screen';ctx.filter=`blur(${(state.night?3:1.5)*dpr}px)`;ctx.drawImage(glow,0,0);ctx.restore();
+ }
+ ctx.setTransform(dpr,0,0,dpr,0,0);
+ const fog=ctx.createLinearGradient(0,height*.76,0,height);fog.addColorStop(0,'rgba(17,41,57,0)');fog.addColorStop(1,state.night?'rgba(14,33,48,.8)':'rgba(158,192,201,.6)');ctx.fillStyle=fog;ctx.fillRect(0,height*.76,width,height*.24);
+ canvas.dataset.renderedFaces=String(visible.length);canvas.dataset.litFaces=String(drawnLights);canvas.dataset.renderCount=String(Number(canvas.dataset.renderCount||0)+1);
+ $('rotation-value').value=state.rotation+'°';$('elevation-value').value=state.elevation+'°';$('intensity-value').value=state.intensity+'%';
+ $('scene-label').textContent='01 / '+(state.night?'月夜':'白昼')+' · '+(state.facade==='obsidian'?'黑曜石':'月白石墙');
+ $('light-label').textContent='ICE BLUE / '+(state.lights&&state.intensity>0?'ON':'OFF');
+ $('status').textContent=(state.lights&&state.intensity>0?'灯饰开启':'建筑本体')+' · '+(state.night?'月夜':'白昼');
+}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(render);}}
+function environment(night){state.night=night;$('night').setAttribute('aria-pressed',String(night));$('day').setAttribute('aria-pressed',String(!night));schedule();}
+$('night').addEventListener('click',()=>environment(true));$('day').addEventListener('click',()=>environment(false));
+$('lights').addEventListener('click',()=>{state.lights=!state.lights;$('lights').setAttribute('aria-pressed',String(state.lights));$('lights').textContent=state.lights?'灯饰已开启':'灯饰已关闭';schedule();});
+for(const id of ['rotation','elevation','intensity'])$(id).addEventListener('input',()=>{state[id]=Number($(id).value);schedule();});
+$('facade').addEventListener('change',()=>{state.facade=$('facade').value;schedule();});
+$('reset').addEventListener('click',()=>{Object.assign(state,{night:true,lights:true,intensity:70,facade:'obsidian',rotation:22,elevation:24});for(const id of ['rotation','elevation','intensity','facade'])$(id).value=String(state[id]);$('lights').setAttribute('aria-pressed','true');$('lights').textContent='灯饰已开启';environment(true);});
+let drag=null;
+canvas.addEventListener('pointerdown',event=>{if(event.pointerType==='touch')return;drag={x:event.clientX,rotation:state.rotation};canvas.setPointerCapture(event.pointerId);});
+canvas.addEventListener('pointermove',event=>{if(!drag)return;state.rotation=Math.round(((drag.rotation+(event.clientX-drag.x)*.35+540)%360)-180);$('rotation').value=state.rotation;schedule();});
+canvas.addEventListener('pointerup',()=>{drag=null;});canvas.addEventListener('pointercancel',()=>{drag=null;});
+canvas.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight'].includes(event.key))return;event.preventDefault();state.rotation=((state.rotation+(event.key==='ArrowRight'?2:-2)+540)%360)-180;$('rotation').value=state.rotation;schedule();});
+new ResizeObserver(schedule).observe(canvas);schedule();
+</script></body></html>

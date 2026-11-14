@@ -1,0 +1,5066 @@
+{
+  "format": "motionbricks.scene",
+  "schema_version": 1,
+  "name": "black_swan_castle_approximate_envelopes_NO_emissive_lights",
+  "rig": "unitree_g1",
+  "editor": {
+    "selected_item_id": 1,
+    "camera": {
+      "pos": [
+        110,
+        -150,
+        100
+      ],
+      "pivot": [
+        0,
+        0,
+        15
+      ],
+      "pitch": -34.6,
+      "yaw": 126.87,
+      "fov": 45,
+      "near": 0.01,
+      "far": 2000
+    }
+  },
+  "character_start": {
+    "id": 1,
+    "transform": {
+      "translation": [
+        73,
+        0,
+        0
+      ],
+      "rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "euler_degrees": [
+      0,
+      0,
+      0
+    ]
+  },
+  "smart_primitives": [],
+  "solid_cubes": [
+    {
+      "id": 2,
+      "name": "rock_lower",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          0.0,
+          0.0,
+          -13.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 158.0,
+        "depth": 158.0,
+        "height": 10
+      },
+      "color": [
+        0.20784313725490197,
+        0.2784313725490196,
+        0.33725490196078434
+      ]
+    },
+    {
+      "id": 3,
+      "name": "rock_upper",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -5.0,
+          0.0,
+          -4.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 134.0,
+        "depth": 134.0,
+        "height": 8
+      },
+      "color": [
+        0.20784313725490197,
+        0.2784313725490196,
+        0.33725490196078434
+      ]
+    },
+    {
+      "id": 4,
+      "name": "upper_court",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          11.0,
+          0.0,
+          0.4
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 30,
+        "depth": 34,
+        "height": 0.8
+      },
+      "color": [
+        0.44313725490196076,
+        0.5098039215686274,
+        0.5490196078431373
+      ]
+    },
+    {
+      "id": 5,
+      "name": "lower_court",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          40.0,
+          0.0,
+          -0.6
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 28,
+        "depth": 34,
+        "height": 0.8
+      },
+      "color": [
+        0.44313725490196076,
+        0.5098039215686274,
+        0.5490196078431373
+      ]
+    },
+    {
+      "id": 6,
+      "name": "court_step0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          24.17,
+          0.0,
+          -0.91
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.33999999999999986,
+        "depth": 18,
+        "height": 0.17999999999999994
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 7,
+      "name": "court_step1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          24.509999999999998,
+          0.0,
+          -0.7671428571428572
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.33999999999999986,
+        "depth": 18,
+        "height": 0.17999999999999994
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 8,
+      "name": "court_step2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          24.85,
+          0.0,
+          -0.6242857142857143
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.33999999999999986,
+        "depth": 18,
+        "height": 0.18000000000000005
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 9,
+      "name": "court_step3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          25.189999999999998,
+          0.0,
+          -0.48142857142857143
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.33999999999999986,
+        "depth": 18,
+        "height": 0.18
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 10,
+      "name": "court_step4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          25.53,
+          0.0,
+          -0.33857142857142863
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.33999999999999986,
+        "depth": 18,
+        "height": 0.18
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 11,
+      "name": "court_step5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          25.869999999999997,
+          0.0,
+          -0.1957142857142857
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.33999999999999986,
+        "depth": 18,
+        "height": 0.18
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 12,
+      "name": "court_step6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          26.21,
+          0.0,
+          -0.05285714285714291
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.33999999999999986,
+        "depth": 18,
+        "height": 0.18
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 13,
+      "name": "palas_west",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -34.5,
+          0.0,
+          15.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 27,
+        "depth": 26,
+        "height": 30
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 14,
+      "name": "palas_west_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -34.5,
+          0.0,
+          36.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 27,
+        "depth": 26,
+        "height": 13
+      },
+      "color": [
+        0.1411764705882353,
+        0.21176470588235294,
+        0.2627450980392157
+      ]
+    },
+    {
+      "id": 15,
+      "name": "palas_west_pane0_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -44.625,
+          -13.049999999999999,
+          6.65
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 16,
+      "name": "palas_west_pane0_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -41.25,
+          -13.049999999999999,
+          6.65
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 17,
+      "name": "palas_west_pane0_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -37.875,
+          -13.049999999999999,
+          6.65
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 18,
+      "name": "palas_west_pane0_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -34.5,
+          -13.049999999999999,
+          6.65
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 19,
+      "name": "palas_west_pane0_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -31.125,
+          -13.049999999999999,
+          6.65
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 20,
+      "name": "palas_west_pane0_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -27.75,
+          -13.049999999999999,
+          6.65
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 21,
+      "name": "palas_west_pane0_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -24.375,
+          -13.049999999999999,
+          6.65
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 22,
+      "name": "palas_west_pane1_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -44.625,
+          -13.049999999999999,
+          12.249999999999998
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 23,
+      "name": "palas_west_pane1_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -41.25,
+          -13.049999999999999,
+          12.249999999999998
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 24,
+      "name": "palas_west_pane1_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -37.875,
+          -13.049999999999999,
+          12.249999999999998
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 25,
+      "name": "palas_west_pane1_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -34.5,
+          -13.049999999999999,
+          12.249999999999998
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 26,
+      "name": "palas_west_pane1_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -31.125,
+          -13.049999999999999,
+          12.249999999999998
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 27,
+      "name": "palas_west_pane1_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -27.75,
+          -13.049999999999999,
+          12.249999999999998
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 28,
+      "name": "palas_west_pane1_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -24.375,
+          -13.049999999999999,
+          12.249999999999998
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 29,
+      "name": "palas_west_pane2_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -44.625,
+          -13.049999999999999,
+          17.85
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 30,
+      "name": "palas_west_pane2_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -41.25,
+          -13.049999999999999,
+          17.85
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 31,
+      "name": "palas_west_pane2_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -37.875,
+          -13.049999999999999,
+          17.85
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 32,
+      "name": "palas_west_pane2_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -34.5,
+          -13.049999999999999,
+          17.85
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 33,
+      "name": "palas_west_pane2_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -31.125,
+          -13.049999999999999,
+          17.85
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 34,
+      "name": "palas_west_pane2_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -27.75,
+          -13.049999999999999,
+          17.85
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 35,
+      "name": "palas_west_pane2_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -24.375,
+          -13.049999999999999,
+          17.85
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 36,
+      "name": "palas_west_pane3_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -44.625,
+          -13.049999999999999,
+          23.449999999999996
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 37,
+      "name": "palas_west_pane3_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -41.25,
+          -13.049999999999999,
+          23.449999999999996
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 38,
+      "name": "palas_west_pane3_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -37.875,
+          -13.049999999999999,
+          23.449999999999996
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 39,
+      "name": "palas_west_pane3_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -34.5,
+          -13.049999999999999,
+          23.449999999999996
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 40,
+      "name": "palas_west_pane3_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -31.125,
+          -13.049999999999999,
+          23.449999999999996
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 41,
+      "name": "palas_west_pane3_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -27.75,
+          -13.049999999999999,
+          23.449999999999996
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 42,
+      "name": "palas_west_pane3_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -24.375,
+          -13.049999999999999,
+          23.449999999999996
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 43,
+      "name": "palas_east",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -13.0,
+          1.0,
+          12.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 20,
+        "depth": 24,
+        "height": 25
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 44,
+      "name": "palas_east_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -13.0,
+          1.0,
+          30.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 20,
+        "depth": 24,
+        "height": 10
+      },
+      "color": [
+        0.1411764705882353,
+        0.21176470588235294,
+        0.2627450980392157
+      ]
+    },
+    {
+      "id": 45,
+      "name": "palas_east_pane0_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -19.666666666666664,
+          -11.049999999999999,
+          6.800000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 46,
+      "name": "palas_east_pane0_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -16.33333333333333,
+          -11.049999999999999,
+          6.800000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 47,
+      "name": "palas_east_pane0_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -13.0,
+          -11.049999999999999,
+          6.800000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999992,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 48,
+      "name": "palas_east_pane0_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -9.666666666666666,
+          -11.049999999999999,
+          6.800000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 49,
+      "name": "palas_east_pane0_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -6.333333333333332,
+          -11.049999999999999,
+          6.800000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 50,
+      "name": "palas_east_pane1_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -19.666666666666664,
+          -11.049999999999999,
+          12.549999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 51,
+      "name": "palas_east_pane1_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -16.33333333333333,
+          -11.049999999999999,
+          12.549999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 52,
+      "name": "palas_east_pane1_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -13.0,
+          -11.049999999999999,
+          12.549999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999992,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 53,
+      "name": "palas_east_pane1_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -9.666666666666666,
+          -11.049999999999999,
+          12.549999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 54,
+      "name": "palas_east_pane1_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -6.333333333333332,
+          -11.049999999999999,
+          12.549999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 55,
+      "name": "palas_east_pane2_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -19.666666666666664,
+          -11.049999999999999,
+          18.299999999999997
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 56,
+      "name": "palas_east_pane2_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -16.33333333333333,
+          -11.049999999999999,
+          18.299999999999997
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 57,
+      "name": "palas_east_pane2_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -13.0,
+          -11.049999999999999,
+          18.299999999999997
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999992,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 58,
+      "name": "palas_east_pane2_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -9.666666666666666,
+          -11.049999999999999,
+          18.299999999999997
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 59,
+      "name": "palas_east_pane2_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -6.333333333333332,
+          -11.049999999999999,
+          18.299999999999997
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 60,
+      "name": "bower",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          13.0,
+          -17.0,
+          7.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 30,
+        "depth": 6,
+        "height": 15
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 61,
+      "name": "bower_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          13.0,
+          -17.0,
+          18.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 30,
+        "depth": 6,
+        "height": 6
+      },
+      "color": [
+        0.1411764705882353,
+        0.21176470588235294,
+        0.2627450980392157
+      ]
+    },
+    {
+      "id": 62,
+      "name": "bower_pane0_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          1.3333333333333335,
+          -20.05,
+          5.050000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 63,
+      "name": "bower_pane0_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          4.666666666666668,
+          -20.05,
+          5.050000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 64,
+      "name": "bower_pane0_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          7.999999999999999,
+          -20.05,
+          5.050000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999992,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 65,
+      "name": "bower_pane0_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          11.333333333333334,
+          -20.05,
+          5.050000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 66,
+      "name": "bower_pane0_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          14.666666666666668,
+          -20.05,
+          5.050000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999992,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 67,
+      "name": "bower_pane0_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.0,
+          -20.05,
+          5.050000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 68,
+      "name": "bower_pane0_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          21.333333333333336,
+          -20.05,
+          5.050000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 69,
+      "name": "bower_pane0_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          24.66666666666667,
+          -20.05,
+          5.050000000000001
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 70,
+      "name": "bower_pane1_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          1.3333333333333335,
+          -20.05,
+          10.049999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 71,
+      "name": "bower_pane1_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          4.666666666666668,
+          -20.05,
+          10.049999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 72,
+      "name": "bower_pane1_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          7.999999999999999,
+          -20.05,
+          10.049999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999992,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 73,
+      "name": "bower_pane1_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          11.333333333333334,
+          -20.05,
+          10.049999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 74,
+      "name": "bower_pane1_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          14.666666666666668,
+          -20.05,
+          10.049999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999992,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 75,
+      "name": "bower_pane1_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.0,
+          -20.05,
+          10.049999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 76,
+      "name": "bower_pane1_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          21.333333333333336,
+          -20.05,
+          10.049999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 77,
+      "name": "bower_pane1_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          24.66666666666667,
+          -20.05,
+          10.049999999999999
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 78,
+      "name": "knights_house",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.0,
+          17.5,
+          8.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 40,
+        "depth": 7,
+        "height": 16
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 79,
+      "name": "knights_house_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          18.0,
+          17.5,
+          19.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 40,
+        "depth": 7,
+        "height": 6
+      },
+      "color": [
+        0.1411764705882353,
+        0.21176470588235294,
+        0.2627450980392157
+      ]
+    },
+    {
+      "id": 80,
+      "name": "knights_house_pane0_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          2.4444444444444446,
+          13.950000000000001,
+          5.383333333333333
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 81,
+      "name": "knights_house_pane0_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          6.888888888888889,
+          13.950000000000001,
+          5.383333333333333
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 82,
+      "name": "knights_house_pane0_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          11.333333333333334,
+          13.950000000000001,
+          5.383333333333333
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 83,
+      "name": "knights_house_pane0_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          15.777777777777779,
+          13.950000000000001,
+          5.383333333333333
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999992,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 84,
+      "name": "knights_house_pane0_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          20.22222222222222,
+          13.950000000000001,
+          5.383333333333333
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 85,
+      "name": "knights_house_pane0_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          24.66666666666667,
+          13.950000000000001,
+          5.383333333333333
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 86,
+      "name": "knights_house_pane0_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          29.111111111111114,
+          13.950000000000001,
+          5.383333333333333
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 87,
+      "name": "knights_house_pane0_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          33.55555555555556,
+          13.950000000000001,
+          5.383333333333333
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.7000000000000002
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 88,
+      "name": "knights_house_pane1_0",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          2.4444444444444446,
+          13.950000000000001,
+          10.716666666666665
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 89,
+      "name": "knights_house_pane1_1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          6.888888888888889,
+          13.950000000000001,
+          10.716666666666665
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.12,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 90,
+      "name": "knights_house_pane1_2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          11.333333333333334,
+          13.950000000000001,
+          10.716666666666665
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 91,
+      "name": "knights_house_pane1_3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          15.777777777777779,
+          13.950000000000001,
+          10.716666666666665
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999992,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 92,
+      "name": "knights_house_pane1_4",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          20.22222222222222,
+          13.950000000000001,
+          10.716666666666665
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 93,
+      "name": "knights_house_pane1_5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          24.66666666666667,
+          13.950000000000001,
+          10.716666666666665
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 94,
+      "name": "knights_house_pane1_6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          29.111111111111114,
+          13.950000000000001,
+          10.716666666666665
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.120000000000001,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 95,
+      "name": "knights_house_pane1_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          33.55555555555556,
+          13.950000000000001,
+          10.716666666666665
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1.1199999999999974,
+        "depth": 0.14000000000000057,
+        "height": 1.6999999999999993
+      },
+      "color": [
+        0.07058823529411765,
+        0.2,
+        0.24705882352941178
+      ]
+    },
+    {
+      "id": 96,
+      "name": "gate_left",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          52.5,
+          -11.0,
+          6.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 7,
+        "depth": 12,
+        "height": 15
+      },
+      "color": [
+        0.5254901960784314,
+        0.3607843137254902,
+        0.34901960784313724
+      ]
+    },
+    {
+      "id": 97,
+      "name": "gate_right",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          52.5,
+          11.0,
+          6.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 7,
+        "depth": 12,
+        "height": 15
+      },
+      "color": [
+        0.5254901960784314,
+        0.3607843137254902,
+        0.34901960784313724
+      ]
+    },
+    {
+      "id": 98,
+      "name": "gate_lintel",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          52.5,
+          0.0,
+          11.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 7,
+        "depth": 10,
+        "height": 6
+      },
+      "color": [
+        0.5254901960784314,
+        0.3607843137254902,
+        0.34901960784313724
+      ]
+    },
+    {
+      "id": 99,
+      "name": "gate_roof",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          52.5,
+          0.0,
+          16.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 7,
+        "depth": 34,
+        "height": 5
+      },
+      "color": [
+        0.1411764705882353,
+        0.21176470588235294,
+        0.2627450980392157
+      ]
+    },
+    {
+      "id": 100,
+      "name": "gate_tower_n17",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          52.5,
+          -17.0,
+          8.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 6.400000000000006,
+        "depth": 6.399999999999999,
+        "height": 19
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 101,
+      "name": "gate_tower_n17_collar",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          52.5,
+          -17.0,
+          17.75
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 7.168000000000006,
+        "depth": 7.167999999999999,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 102,
+      "name": "gate_tower_n17_spire",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          52.5,
+          -17.0,
+          22.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 7.872,
+        "depth": 7.872,
+        "height": 7.0
+      },
+      "color": [
+        0.1411764705882353,
+        0.21176470588235294,
+        0.2627450980392157
+      ]
+    },
+    {
+      "id": 103,
+      "name": "gate_tower_17",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          52.5,
+          17.0,
+          8.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 6.400000000000006,
+        "depth": 6.399999999999999,
+        "height": 19
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 104,
+      "name": "gate_tower_17_collar",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          52.5,
+          17.0,
+          17.75
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 7.168000000000006,
+        "depth": 7.167999999999999,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 105,
+      "name": "gate_tower_17_spire",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          52.5,
+          17.0,
+          22.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 7.872,
+        "depth": 7.872,
+        "height": 7.0
+      },
+      "color": [
+        0.1411764705882353,
+        0.21176470588235294,
+        0.2627450980392157
+      ]
+    },
+    {
+      "id": 106,
+      "name": "round_tower",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -45.0,
+          -13.0,
+          21.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 8.0,
+        "depth": 8.0,
+        "height": 43
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 107,
+      "name": "round_tower_collar",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -45.0,
+          -13.0,
+          42.75
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 8.960000000000008,
+        "depth": 8.96,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 108,
+      "name": "round_tower_spire",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -45.0,
+          -13.0,
+          50.0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 9.840000000000003,
+        "depth": 9.840000000000002,
+        "height": 13.0
+      },
+      "color": [
+        0.1411764705882353,
+        0.21176470588235294,
+        0.2627450980392157
+      ]
+    },
+    {
+      "id": 109,
+      "name": "stair_tower",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -4.0,
+          11.0,
+          15.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 6.199999999999999,
+        "depth": 6.199999999999999,
+        "height": 31
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 110,
+      "name": "stair_tower_collar",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -4.0,
+          11.0,
+          30.75
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 6.944000000000001,
+        "depth": 6.944000000000002,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 111,
+      "name": "stair_tower_spire",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -4.0,
+          11.0,
+          36.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 7.626000000000001,
+        "depth": 7.626000000000001,
+        "height": 10.0
+      },
+      "color": [
+        0.1411764705882353,
+        0.21176470588235294,
+        0.2627450980392157
+      ]
+    },
+    {
+      "id": 112,
+      "name": "square_tower",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          27.5,
+          17.0,
+          14.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 9,
+        "depth": 10,
+        "height": 29
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 113,
+      "name": "square_crown",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          27.5,
+          17.0,
+          28.6
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 10.0,
+        "depth": 11.0,
+        "height": 1.1999999999999993
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 114,
+      "name": "merlon_23_12",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          23.5,
+          12.5,
+          29.9
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 1,
+        "height": 1.8000000000000007
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 115,
+      "name": "merlon_23_21",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          23.5,
+          21.5,
+          29.9
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 1,
+        "height": 1.8000000000000007
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 116,
+      "name": "merlon_26_12",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          26.5,
+          12.5,
+          29.9
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 1,
+        "height": 1.8000000000000007
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 117,
+      "name": "merlon_26_21",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          26.5,
+          21.5,
+          29.9
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 1,
+        "height": 1.8000000000000007
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 118,
+      "name": "merlon_29_12",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          29.5,
+          12.5,
+          29.9
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 1,
+        "height": 1.8000000000000007
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 119,
+      "name": "merlon_29_21",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          29.5,
+          21.5,
+          29.9
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 1,
+        "height": 1.8000000000000007
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 120,
+      "name": "merlon_31_12",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          31.5,
+          12.5,
+          29.9
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 1,
+        "height": 1.8000000000000007
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 121,
+      "name": "merlon_31_21",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          31.5,
+          21.5,
+          29.9
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 1,
+        "depth": 1,
+        "height": 1.8000000000000007
+      },
+      "color": [
+        0.7725490196078432,
+        0.807843137254902,
+        0.8352941176470589
+      ]
+    },
+    {
+      "id": 122,
+      "name": "path_0_-7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          56.15,
+          -6.85,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 123,
+      "name": "path_0_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          56.15,
+          7.15,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 124,
+      "name": "path_1_-7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          57.949999999999996,
+          -6.85,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 125,
+      "name": "path_1_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          57.949999999999996,
+          7.15,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 126,
+      "name": "path_2_-7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          59.75,
+          -6.85,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 127,
+      "name": "path_2_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          59.75,
+          7.15,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 128,
+      "name": "path_3_-7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          61.55,
+          -6.85,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 129,
+      "name": "path_3_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          61.55,
+          7.15,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 130,
+      "name": "path_4_-7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          63.35,
+          -6.85,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 131,
+      "name": "path_4_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          63.35,
+          7.15,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 132,
+      "name": "path_5_-7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          65.15,
+          -6.85,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 133,
+      "name": "path_5_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          65.15,
+          7.15,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 134,
+      "name": "path_6_-7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          66.94999999999999,
+          -6.85,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 135,
+      "name": "path_6_7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          66.94999999999999,
+          7.15,
+          -0.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 0.29999999999999716,
+        "depth": 0.2999999999999998,
+        "height": 1.5
+      },
+      "color": [
+        0.5803921568627451,
+        0.6549019607843137,
+        0.7098039215686275
+      ]
+    },
+    {
+      "id": 136,
+      "name": "approach",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          62.5,
+          0.0,
+          -1.55
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 15,
+        "depth": 16,
+        "height": 0.5
+      },
+      "color": [
+        0.44313725490196076,
+        0.5098039215686274,
+        0.5490196078431373
+      ]
+    },
+    {
+      "id": 137,
+      "name": "pine1",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -39.689178954400184,
+          36.47647587931782,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 138,
+      "name": "pine2",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          5.374283987181403,
+          -59.770262449042946,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546289,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 139,
+      "name": "pine3",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          40.285705253694225,
+          52.37764961794136,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 140,
+      "name": "pine5",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          45.69152643091899,
+          -28.98331478000479,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.069625143345483,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 141,
+      "name": "pine6",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -15.447517916698292,
+          57.942904437187266,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.94251905654629,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 142,
+      "name": "pine7",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -30.291123048103074,
+          -58.5715963879671,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.069625143345476,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 143,
+      "name": "pine10",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          25.559500322062483,
+          -54.3440562843312,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546292,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 144,
+      "name": "pine11",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          19.881475337120186,
+          62.97483199927947,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546292,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 145,
+      "name": "pine12",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -41.40139751806022,
+          -24.067564034385462,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.069625143345483,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 146,
+      "name": "pine14",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -34.379025463119426,
+          49.083745682108066,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.069625143345476,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 147,
+      "name": "pine15",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -8.352964788600381,
+          -65.45273619854969,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.94251905654629,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 148,
+      "name": "pine16",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          36.83189211931775,
+          30.933455337772173,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.069625143345487,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 149,
+      "name": "pine18",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          42.65850553664686,
+          -42.322796263039024,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 150,
+      "name": "pine19",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -2.9198953002429606,
+          65.92955194698251,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.94251905654629,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 151,
+      "name": "pine20",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -30.625298286528007,
+          -36.853617190931985,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 152,
+      "name": "pine22",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          -49.12275995079311,
+          34.26791073483348,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.069625143345487,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    },
+    {
+      "id": 153,
+      "name": "pine23",
+      "parent_id": null,
+      "transform": {
+        "translation": [
+          14.614511243849211,
+          -64.39070154251719,
+          -0.5
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "euler_degrees": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": {
+        "width": 4.942519056546288,
+        "depth": 5.06962514334549,
+        "height": 9
+      },
+      "color": [
+        0.12549019607843137,
+        0.24313725490196078,
+        0.2549019607843137
+      ]
+    }
+  ]
+}
