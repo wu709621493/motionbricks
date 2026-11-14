@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>角膜形态实验室 · 健康与圆锥角膜</title>
+<style>
+:root{color-scheme:light;--ink:#15323a;--muted:#506b72;--line:#cfdddd;--teal:#087b80;--rust:#b44d30}*{box-sizing:border-box}body{margin:0;background:#f3f6f3;color:var(--ink);font:15px/1.65 system-ui,-apple-system,sans-serif}main{max-width:1160px;margin:auto;padding:30px 24px}header{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}h1{font-size:30px;letter-spacing:-1px;margin:4px 0 8px}h2{font-size:19px;margin:0}p{margin:8px 0}.eyebrow{font-size:12px;letter-spacing:2px;color:var(--teal)}.muted,small{color:var(--muted)}.badge{font-size:12px;background:#e3ece5;border-radius:20px;padding:6px 12px;white-space:nowrap}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--line);margin-bottom:20px}button,select{font:inherit;border:1px solid #b8cccc;background:#fff;color:var(--ink);border-radius:7px;padding:8px 12px;min-height:44px}button{cursor:pointer}button:hover{background:#e1eeee}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #efad53;outline-offset:3px}label{display:flex;align-items:center;gap:7px}input[type=range]{max-width:150px;accent-color:var(--teal)}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}.panel-head{padding:17px 20px 0;display:flex;justify-content:space-between;gap:12px}.panel-head span{font-size:12px;color:var(--muted)}.metrics{padding:0 20px 12px;font-variant-numeric:tabular-nums}.model{display:block;width:100%;height:300px;touch-action:none;cursor:grab}.model:active{cursor:grabbing}.map-wrap{display:flex;align-items:center;justify-content:center;padding:6px 12px 16px;gap:10px;border-top:1px solid #edf1f0}.map{width:175px;height:175px}.map-caption{max-width:240px;font-size:13px}.legend{height:9px;border-radius:4px;background:linear-gradient(90deg,#b34b36,#ebbc69,#a2d1c1,#247d9a);margin:8px 0 3px}.legend-text{display:flex;justify-content:space-between;font-size:12px}.section{margin-top:20px;padding:18px 20px;background:white;border:1px solid var(--line);border-radius:14px}.section-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}#section{width:100%;height:265px;display:block}.note{font-size:13px}.key{display:inline-block;width:18px;height:3px;margin:0 5px 3px 12px;background:var(--teal)}.key.kc{background:var(--rust)}details{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}summary{cursor:pointer}a{color:#087079}footer{font-size:12px;color:var(--muted);margin-top:18px}noscript{display:block;padding:20px;background:#ffe9dc}@media(max-width:700px){main{padding:20px 12px}header{display:block}.badge{display:inline-block;margin:10px 0}h1{font-size:25px}.pair{grid-template-columns:1fr}.model{height:260px}.map{width:150px;height:150px}.map-caption{max-width:175px}.section{padding:15px 10px}.controls{gap:10px}input[type=range]{max-width:110px}}
+</style></head><body><main>
+<header><div><div class="eyebrow">MOTIONBRICKS / CORNEA LAB</div><h1>同样的角膜，不同的结构</h1><p class="muted">平滑对称的健康薄壳，与偏下方局部突出、变薄的圆锥角膜示意。</p></div><span class="badge">合成几何 · 非患者扫描</span></header>
+<noscript>请启用 JavaScript 查看模型。模型数据和可导入的 OBJ 网格位于同目录。</noscript>
+<div class="controls" aria-label="模型显示控制">
+<button type="button" id="oblique">斜视</button><button type="button" id="front">正面</button><button type="button" id="side">侧面</button><button type="button" id="reset">重置</button>
+<label>显示 <select id="surface"><option value="shell">完整薄壳</option><option value="anterior">前表面</option><option value="posterior">后表面</option></select></label>
+<label for="exag">z 轴放大 <output id="exag-value">1.0×</output><input id="exag" type="range" min="1" max="3" step="0.5" value="1"></label>
+</div>
+<div class="pair">
+<article class="panel"><div class="panel-head"><h2>健康角膜</h2><span>HEALTHY</span></div><p class="metrics" id="healthy-stats"></p><canvas id="healthy" class="model" role="img" aria-label="可拖动旋转的健康角膜三维模型；也可使用上方视角按钮">健康角膜三维模型</canvas><div class="map-wrap"><canvas class="map" id="healthy-map" role="img" aria-label="健康角膜轴向厚度图，中央550微米">健康角膜厚度图</canvas><div class="map-caption"><strong>轴向厚度图 / µm</strong><p>中央较薄，向边缘平滑增厚。两图共用同一色标。</p><div class="legend"></div><div class="legend-text"><span>300</span><span>500</span><span>700</span></div></div></div></article>
+<article class="panel"><div class="panel-head"><h2>典型圆锥形态</h2><span>KERATOCONUS</span></div><p class="metrics" id="keratoconus-stats"></p><canvas id="keratoconus" class="model" role="img" aria-label="可拖动旋转的圆锥角膜三维模型；偏下方局部突出和变薄">圆锥角膜三维模型</canvas><div class="map-wrap"><canvas class="map" id="keratoconus-map" role="img" aria-label="圆锥角膜轴向厚度图，偏下方出现局部变薄">圆锥角膜厚度图</canvas><div class="map-caption"><strong>局部变薄 / 偏心突出</strong><p>十字标记为预设锥中心。虚线表示下方截面的取样线。</p><div class="legend"></div><div class="legend-text"><span>300</span><span>500</span><span>700</span></div></div></div></article>
+</div>
+<section class="section"><div class="section-head"><h2>穿过预设锥中心的截面</h2><span class="note"><span class="key"></span>健康<span class="key kc"></span>圆锥 · 实线前表面 / 虚线后表面</span></div><canvas id="section" role="img" aria-label="两模型在x等于0.5毫米处的y-z截面，显示圆锥模型局部变薄和向前突出">角膜截面对比</canvas><p class="note muted">x = +0.50 mm；y &lt; 0 为下方，z &gt; 0 为向前。厚度是同一 (x,y) 的 z 向间距，不是表面法向厚度。截面坐标轴独立缩放，所有读数均为模型值。</p></section>
+<details><summary>模型依据与范围</summary><p>中央 10 mm 圆形口径；健康参考半径 7.8 mm、中央轴向厚度 550 µm。圆锥预设位置为 (0.5, −0.9) mm，局部前移幅度 0.28 mm，局部轴向减薄幅度 0.20 mm。这些数值用于构造示意形态，不是患者均值、诊断阈值或严重程度分级。</p><p>两模型使用相同网格拓扑与显示比例。前后表面连接成封闭薄壳；后表面由前表面减去轴向厚度得到，并非独立拟合。拖动任一模型同步旋转；触屏可拖动，视角按钮也支持键盘。</p><p>未实现五层组织分层、胶原微纤维、应力应变、眼压加载、光线追迹、视力预测或基因到形态映射。形态本身不能判断胶原生成、组装或维护谁先异常。</p><p><a href="https://pubmed.ncbi.nlm.nih.gov/6624411/">参考角膜曲率研究</a> · <a href="https://www.aaojournal.org/article/S0161-6420(24)00010-1/fulltext">AAO 角膜扩张指南</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/17178118/">胶原组织与层板滑移研究</a></p></details>
+<footer>MotionBricks · cornea-0.1 · 2026-11-14 · 独立 CPU 几何示意，无 GPU 或外部网络依赖。</footer>
+</main><script id="cornea-data" type="application/json">__CORNEA_DATA__</script><script>
+'use strict';
+const DATA=JSON.parse(document.getElementById('cornea-data').textContent);
+const $=id=>document.getElementById(id);
+let yaw=0.35, tilt=0.85, exaggeration=1;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function sample(p,x,y){
+ const r2=x*x+y*y, sag=r=>r*r/(p.radius_mm+Math.sqrt(p.radius_mm**2-(1+p.q)*r*r));
+ const tc=(1-(p.cone_x_mm**2+p.cone_y_mm**2)/p.aperture_mm**2)**2;
+ const bump=Math.exp(-((x-p.cone_x_mm)**2+(y-p.cone_y_mm)**2)/(2*p.cone_width_mm**2))*Math.max(0,1-r2/p.aperture_mm**2)**2/tc;
+ const z=sag(p.aperture_mm)-sag(Math.sqrt(r2))+p.protrusion_mm*bump;
+ const t=p.central_thickness_mm+p.peripheral_increment_mm*r2/p.aperture_mm**2-p.thinning_mm*bump;
+ return [z,z-t,t];
+}
+function color(t,light=1){
+ const stops=[[179,75,54],[235,188,105],[162,209,193],[36,125,154]],v=clamp((t-300)/400,0,1)*3,i=Math.min(2,Math.floor(v)),f=v-i;
+ return 'rgb('+stops[i].map((a,j)=>Math.round((a+(stops[i+1][j]-a)*f)*light)).join(',')+')';
+}
+function setup(canvas){
+ const dpr=window.devicePixelRatio||1,w=canvas.clientWidth,h=canvas.clientHeight;
+ canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);
+ const ctx=canvas.getContext('2d');ctx.scale(dpr,dpr);ctx.clearRect(0,0,w,h);return [ctx,w,h];
+}
+function rotate(p){
+ const x=p[0]*Math.cos(yaw)-p[1]*Math.sin(yaw), y=p[0]*Math.sin(yaw)+p[1]*Math.cos(yaw), z=(p[2]-0.9)*exaggeration;
+ return [x,y*Math.cos(tilt)-z*Math.sin(tilt),y*Math.sin(tilt)+z*Math.cos(tilt)];
+}
+function drawModel(m){
+ const [ctx,w,h]=setup($(m.name)),scale=Math.min(w/12,h/12),n=m.surface_vertex_count;
+ const r=m.vertices_mm.map(rotate),p=r.map(v=>[w/2+v[0]*scale,h/2-v[1]*scale,v[2]]);
+ const surface=$('surface').value;
+ const faces=m.faces.filter(f=>surface==='shell'||(surface==='anterior'?f.every(i=>i<n):f.every(i=>i>=n))).map(f=>({f,depth:f.reduce((s,i)=>s+p[i][2],0)/3})).sort((a,b)=>a.depth-b.depth);
+ for(const {f} of faces){
+  const a=r[f[0]],b=r[f[1]],c=r[f[2]],u=b.map((v,i)=>v-a[i]),v=c.map((z,i)=>z-a[i]);
+  const nx=u[1]*v[2]-u[2]*v[1],ny=u[2]*v[0]-u[0]*v[2],nz=u[0]*v[1]-u[1]*v[0],len=Math.hypot(nx,ny,nz)||1;
+  const light=.65+.35*Math.abs((nx*.2+ny*.4+nz*.8)/len);
+  const t=f.reduce((s,i)=>s+m.axial_thickness_um[i%n],0)/3;
+  ctx.fillStyle=color(t,light);ctx.beginPath();f.forEach((idx,k)=>{const q=p[idx];k?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1])});ctx.closePath();ctx.fill();
+ }
+ // Sparse surface lattice reveals shape without suggesting individual collagen fibers.
+ ctx.strokeStyle='rgba(18,60,68,.23)';ctx.lineWidth=.6;
+ const offset=surface==='posterior'?n:0;
+ for(let ring=3;ring<=m.rings;ring+=3){ctx.beginPath();for(let j=0;j<=m.sectors;j++){const v=p[offset+1+(ring-1)*m.sectors+j%m.sectors];j?ctx.lineTo(v[0],v[1]):ctx.moveTo(v[0],v[1])}ctx.stroke()}
+ for(let j=0;j<m.sectors;j+=9){ctx.beginPath();const center=p[offset];ctx.moveTo(center[0],center[1]);for(let ring=1;ring<=m.rings;ring++){const v=p[offset+1+(ring-1)*m.sectors+j];ctx.lineTo(v[0],v[1])}ctx.stroke()}
+ ctx.fillStyle='#506b72';ctx.font='12px system-ui';ctx.fillText('拖动同步旋转 · 显示网格 ≠ 胶原纤维',15,h-14);
+ const origin=[-4.1,-3.5,-.5];for(const [label,delta] of [['x',[1,0,0]],['上方 y',[0,1,0]],['前方 z',[0,0,1]]]){
+  const a=rotate(origin),b=rotate(origin.map((v,i)=>v+delta[i]));ctx.strokeStyle='#15323a';ctx.beginPath();ctx.moveTo(w/2+a[0]*scale,h/2-a[1]*scale);ctx.lineTo(w/2+b[0]*scale,h/2-b[1]*scale);ctx.stroke();ctx.fillText(label,w/2+b[0]*scale+3,h/2-b[1]*scale-3);
+ }
+}
+function drawMap(m){
+ const [ctx,w,h]=setup($(m.name+'-map')),a=m.parameters.aperture_mm,R=Math.min(w,h)/2-20,N=100,step=2*R/N;
+ for(let ix=0;ix<N;ix++)for(let iy=0;iy<N;iy++){
+  const x=(ix+.5-N/2)*2*a/N,y=(N/2-iy-.5)*2*a/N;if(x*x+y*y>a*a)continue;
+  ctx.fillStyle=color(sample(m.parameters,x,y)[2]*1000);ctx.fillRect(w/2-R+ix*step,h/2-R+iy*step,step+.5,step+.5);
+ }
+ const x=w/2+m.parameters.cone_x_mm/a*R,y=h/2-m.parameters.cone_y_mm/a*R;
+ ctx.strokeStyle='#15323a';ctx.lineWidth=1;ctx.setLineDash([3,3]);ctx.beginPath();ctx.moveTo(x,h/2-R);ctx.lineTo(x,h/2+R);ctx.stroke();ctx.setLineDash([]);
+ if(m.name==='keratoconus'){ctx.beginPath();ctx.moveTo(x-5,y);ctx.lineTo(x+5,y);ctx.moveTo(x,y-5);ctx.lineTo(x,y+5);ctx.stroke()}
+ ctx.fillStyle='#506b72';ctx.font='12px system-ui';ctx.textAlign='center';ctx.fillText('上方 +y',w/2,12);ctx.fillText('下方 −y',w/2,h-3);ctx.textAlign='start';
+}
+function drawSection(){
+ const [ctx,w,h]=setup($('section')),left=48,right=w-18,top=24,bottom=h-43;
+ const x=v=>left+(v+5)/10*(right-left),z=v=>bottom-(v+.7)/3.4*(bottom-top);
+ ctx.font='12px system-ui';ctx.fillStyle='#506b72';ctx.strokeStyle='#dce6e4';
+ for(const v of [-4,-2,0,2,4]){ctx.beginPath();ctx.moveTo(x(v),top);ctx.lineTo(x(v),bottom);ctx.stroke();ctx.textAlign='center';ctx.fillText(v,x(v),bottom+18)}
+ for(const v of [0,1,2]){ctx.beginPath();ctx.moveTo(left,z(v));ctx.lineTo(right,z(v));ctx.stroke();ctx.textAlign='right';ctx.fillText(v,left-9,z(v)+4)}
+ ctx.textAlign='left';ctx.fillText('z / mm',left,13);ctx.textAlign='center';ctx.fillText('下方 ← y / mm → 上方',(left+right)/2,h-4);
+ for(let model=0;model<2;model++){
+  const p=DATA.models[model].parameters,extent=Math.sqrt(p.aperture_mm**2-.5**2),points=[];
+  for(let i=0;i<=240;i++){const y=-extent+2*extent*i/240;points.push([y,...sample(p,.5,y)])}
+  ctx.fillStyle=model?'rgba(180,77,48,.11)':'rgba(8,123,128,.11)';ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(x(p[0]),z(p[1])):ctx.moveTo(x(p[0]),z(p[1])));[...points].reverse().forEach(p=>ctx.lineTo(x(p[0]),z(p[2])));ctx.closePath();ctx.fill();
+  for(let side=1;side<=2;side++){ctx.strokeStyle=model?'#b44d30':'#087b80';ctx.lineWidth=2;ctx.setLineDash(side===2?[5,4]:[]);ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(x(p[0]),z(p[side])):ctx.moveTo(x(p[0]),z(p[side])));ctx.stroke()}ctx.setLineDash([]);
+ }
+}
+function draw(){DATA.models.forEach(drawModel);$('exag-value').value=exaggeration.toFixed(1)+'×'}
+function all(){draw();DATA.models.forEach(drawMap);drawSection()}
+DATA.models.forEach(m=>{$(m.name+'-stats').textContent='最薄网格点 '+m.minimum_sampled_axial_thickness_um.toFixed(0)+' µm · 口径 10 mm';let start=null;const c=$(m.name);
+ c.addEventListener('pointerdown',e=>{start=[e.clientX,e.clientY,yaw,tilt];c.setPointerCapture(e.pointerId)});
+ c.addEventListener('pointermove',e=>{if(!start)return;yaw=start[2]+(e.clientX-start[0])*.008;tilt=clamp(start[3]+(e.clientY-start[1])*.008,-1.55,1.55);draw()});
+ for(const event of ['pointerup','pointercancel','lostpointercapture'])c.addEventListener(event,()=>{start=null});
+});
+$('oblique').onclick=()=>{yaw=.35;tilt=.85;draw()};$('front').onclick=()=>{yaw=0;tilt=0;draw()};$('side').onclick=()=>{yaw=0;tilt=1.5;draw()};
+$('reset').onclick=()=>{yaw=.35;tilt=.85;exaggeration=1;$('exag').value='1';$('surface').value='shell';draw()};
+$('exag').oninput=e=>{exaggeration=Number(e.target.value);draw()};$('surface').onchange=draw;
+new ResizeObserver(all).observe(document.querySelector('.pair'));all();
+// Deliberately exposed deterministic evaluator for geometry parity checks.
+window.corneaLab={sample,data:DATA};
+</script></body></html>

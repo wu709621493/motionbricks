@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-14",
+  "python": "3.12.14",
+  "unit_tests_passed": 7,
+  "node_vm_check": "PASS",
+  "max_python_javascript_error_mm": 2.220446049250313e-16,
+  "canvas_commands_checked": 652238,
+  "static_geometry_visual_inspection": "PASS",
+  "real_browser": "BLOCKED: Chromium could not start; socket() Operation not permitted",
+  "browser_layout_touch_performance": "NOT_VERIFIED",
+  "ci_status_at_local_validation": "NOT_RUN",
+  "patient_fitting": false,
+  "biomechanical_simulation": false,
+  "clinical_validation": false
+}
