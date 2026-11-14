@@ -1,0 +1,2130 @@
+[
+  {
+    "id": "FAO-ALB",
+    "entity": "Albania",
+    "code": "ALB",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1860.9,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-DZA",
+    "entity": "Algeria",
+    "code": "DZA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 11181.93,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-AGO",
+    "entity": "Angola",
+    "code": "AGO",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2784.29,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ARG",
+    "entity": "Argentina",
+    "code": "ARG",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 80786.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ARM",
+    "entity": "Armenia",
+    "code": "ARM",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1019.5,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-AUS",
+    "entity": "Australia",
+    "code": "AUS",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2005,
+    "latest_observation_tonnes": 3605.0,
+    "latest_positive_year": 2005,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-AUT",
+    "entity": "Austria",
+    "code": "AUT",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2017,
+    "latest_observation_tonnes": 107.84,
+    "latest_positive_year": 2017,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-AZE",
+    "entity": "Azerbaijan",
+    "code": "AZE",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 7777.32,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-BGD",
+    "entity": "Bangladesh",
+    "code": "BGD",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 97814.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-BEL",
+    "entity": "Belgium",
+    "code": "BEL",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2017,
+    "latest_observation_tonnes": 129.29,
+    "latest_positive_year": 2017,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-Belgium-Luxembourg-FAO-",
+    "entity": "Belgium-Luxembourg (FAO)",
+    "code": "",
+    "entity_type": "historical_entity",
+    "latest_observation_year": 1999,
+    "latest_observation_tonnes": 1314.0,
+    "latest_positive_year": 1999,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-BEN",
+    "entity": "Benin",
+    "code": "BEN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 3.17,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-BTN",
+    "entity": "Bhutan",
+    "code": "BTN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 218.83,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-BOL",
+    "entity": "Bolivia",
+    "code": "BOL",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1206.62,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-BIH",
+    "entity": "Bosnia and Herzegovina",
+    "code": "BIH",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 377.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-BRA",
+    "entity": "Brazil",
+    "code": "BRA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 637749.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-BGR",
+    "entity": "Bulgaria",
+    "code": "BGR",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 3380.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-BFA",
+    "entity": "Burkina Faso",
+    "code": "BFA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 754.22,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-BDI",
+    "entity": "Burundi",
+    "code": "BDI",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1277.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-KHM",
+    "entity": "Cambodia",
+    "code": "KHM",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 12410.4,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CMR",
+    "entity": "Cameroon",
+    "code": "CMR",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 6437.37,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CAN",
+    "entity": "Canada",
+    "code": "CAN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 27780.24,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CAF",
+    "entity": "Central African Republic",
+    "code": "CAF",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 480.29,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-TCD",
+    "entity": "Chad",
+    "code": "TCD",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 178.02,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CHL",
+    "entity": "Chile",
+    "code": "CHL",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 3030.52,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CHN",
+    "entity": "China",
+    "code": "CHN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2256400.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-COL",
+    "entity": "Colombia",
+    "code": "COL",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 3305.14,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-COG",
+    "entity": "Congo",
+    "code": "COG",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 494.25,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CRI",
+    "entity": "Costa Rica",
+    "code": "CRI",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 17.27,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CIV",
+    "entity": "Cote d'Ivoire",
+    "code": "CIV",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 8086.72,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-HRV",
+    "entity": "Croatia",
+    "code": "HRV",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 6180.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CUB",
+    "entity": "Cuba",
+    "code": "CUB",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 12481.53,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CYP",
+    "entity": "Cyprus",
+    "code": "CYP",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 2017,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CZE",
+    "entity": "Czechia",
+    "code": "CZE",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_CZS",
+    "entity": "Czechoslovakia",
+    "code": "OWID_CZS",
+    "entity_type": "historical_entity",
+    "latest_observation_year": 1992,
+    "latest_observation_tonnes": 11557.0,
+    "latest_positive_year": 1992,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-COD",
+    "entity": "Democratic Republic of Congo",
+    "code": "COD",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 3516.61,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-DNK",
+    "entity": "Denmark",
+    "code": "DNK",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-DOM",
+    "entity": "Dominican Republic",
+    "code": "DOM",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 14651.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-TLS",
+    "entity": "East Timor",
+    "code": "TLS",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 1992,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 1974,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ECU",
+    "entity": "Ecuador",
+    "code": "ECU",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 9552.74,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SLV",
+    "entity": "El Salvador",
+    "code": "SLV",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1819.38,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-EST",
+    "entity": "Estonia",
+    "code": "EST",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SWZ",
+    "entity": "Eswatini",
+    "code": "SWZ",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 161.97,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ETH",
+    "entity": "Ethiopia",
+    "code": "ETH",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2176.37,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_ERE",
+    "entity": "Ethiopia (former)",
+    "code": "OWID_ERE",
+    "entity_type": "historical_entity",
+    "latest_observation_year": 1992,
+    "latest_observation_tonnes": 2001.0,
+    "latest_positive_year": 1992,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-FJI",
+    "entity": "Fiji",
+    "code": "FJI",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 259.71,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-FIN",
+    "entity": "Finland",
+    "code": "FIN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-FRA",
+    "entity": "France",
+    "code": "FRA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2650.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-GEO",
+    "entity": "Georgia",
+    "code": "GEO",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 272.34,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-DEU",
+    "entity": "Germany",
+    "code": "DEU",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2017,
+    "latest_observation_tonnes": 6217.59,
+    "latest_positive_year": 2017,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-GHA",
+    "entity": "Ghana",
+    "code": "GHA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2560.24,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-GRC",
+    "entity": "Greece",
+    "code": "GRC",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 10210.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-GLP",
+    "entity": "Guadeloupe",
+    "code": "GLP",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 1992,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 1979,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-GTM",
+    "entity": "Guatemala",
+    "code": "GTM",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 30621.4,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-GIN",
+    "entity": "Guinea",
+    "code": "GIN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2399.14,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-GUY",
+    "entity": "Guyana",
+    "code": "GUY",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 100.94,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-HTI",
+    "entity": "Haiti",
+    "code": "HTI",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 557.74,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-HND",
+    "entity": "Honduras",
+    "code": "HND",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 5856.16,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-HUN",
+    "entity": "Hungary",
+    "code": "HUN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 4730.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-IND",
+    "entity": "India",
+    "code": "IND",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 727202.9,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-IDN",
+    "entity": "Indonesia",
+    "code": "IDN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 353386.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-IRN",
+    "entity": "Iran",
+    "code": "IRN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 20947.72,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-IRQ",
+    "entity": "Iraq",
+    "code": "IRQ",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2340.25,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-IRL",
+    "entity": "Ireland",
+    "code": "IRL",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2021,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ISR",
+    "entity": "Israel",
+    "code": "ISR",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 4.47,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ITA",
+    "entity": "Italy",
+    "code": "ITA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 33900.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-JAM",
+    "entity": "Jamaica",
+    "code": "JAM",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1659.9,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-JPN",
+    "entity": "Japan",
+    "code": "JPN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 8336.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-JOR",
+    "entity": "Jordan",
+    "code": "JOR",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 314.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-KAZ",
+    "entity": "Kazakhstan",
+    "code": "KAZ",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 128.96,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-KEN",
+    "entity": "Kenya",
+    "code": "KEN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 12446.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-KGZ",
+    "entity": "Kyrgyzstan",
+    "code": "KGZ",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 972.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-LAO",
+    "entity": "Laos",
+    "code": "LAO",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 19300.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-LVA",
+    "entity": "Latvia",
+    "code": "LVA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-LBN",
+    "entity": "Lebanon",
+    "code": "LBN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 10522.13,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-LBY",
+    "entity": "Libya",
+    "code": "LBY",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1225.64,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-LTU",
+    "entity": "Lithuania",
+    "code": "LTU",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-LUX",
+    "entity": "Luxembourg",
+    "code": "LUX",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MDG",
+    "entity": "Madagascar",
+    "code": "MDG",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 919.05,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MWI",
+    "entity": "Malawi",
+    "code": "MWI",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 119957.29,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MYS",
+    "entity": "Malaysia",
+    "code": "MYS",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 80.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MLI",
+    "entity": "Mali",
+    "code": "MLI",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1709.99,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MLT",
+    "entity": "Malta",
+    "code": "MLT",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MUS",
+    "entity": "Mauritius",
+    "code": "MUS",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 2019,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MEX",
+    "entity": "Mexico",
+    "code": "MEX",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 18578.96,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MDA",
+    "entity": "Moldova",
+    "code": "MDA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 564.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MNE",
+    "entity": "Montenegro",
+    "code": "MNE",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 233.79,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MAR",
+    "entity": "Morocco",
+    "code": "MAR",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1269.84,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MOZ",
+    "entity": "Mozambique",
+    "code": "MOZ",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 92343.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MMR",
+    "entity": "Myanmar",
+    "code": "MMR",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 26643.57,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-NPL",
+    "entity": "Nepal",
+    "code": "NPL",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1379.97,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-NLD",
+    "entity": "Netherlands",
+    "code": "NLD",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-NZL",
+    "entity": "New Zealand",
+    "code": "NZL",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 1998,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 1995,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-NIC",
+    "entity": "Nicaragua",
+    "code": "NIC",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2023,
+    "latest_observation_tonnes": 7785.54,
+    "latest_positive_year": 2023,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-NER",
+    "entity": "Niger",
+    "code": "NER",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1082.96,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-NGA",
+    "entity": "Nigeria",
+    "code": "NGA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 5577.52,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-PRK",
+    "entity": "North Korea",
+    "code": "PRK",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 88035.75,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-MKD",
+    "entity": "North Macedonia",
+    "code": "MKD",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 24116.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OMN",
+    "entity": "Oman",
+    "code": "OMN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1114.57,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-PAK",
+    "entity": "Pakistan",
+    "code": "PAK",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 184982.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-PSE",
+    "entity": "Palestine",
+    "code": "PSE",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2022,
+    "latest_observation_tonnes": 1405.92,
+    "latest_positive_year": 2022,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-PAN",
+    "entity": "Panama",
+    "code": "PAN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2753.89,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-PRY",
+    "entity": "Paraguay",
+    "code": "PRY",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2296.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-PER",
+    "entity": "Peru",
+    "code": "PER",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 3278.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-PHL",
+    "entity": "Philippines",
+    "code": "PHL",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 55345.86,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-POL",
+    "entity": "Poland",
+    "code": "POL",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 19200.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-PRT",
+    "entity": "Portugal",
+    "code": "PRT",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2023,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 2018,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-PRI",
+    "entity": "Puerto Rico",
+    "code": "PRI",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.92,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-REU",
+    "entity": "Reunion",
+    "code": "REU",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2006,
+    "latest_observation_tonnes": 22.0,
+    "latest_positive_year": 2006,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ROU",
+    "entity": "Romania",
+    "code": "ROU",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 430.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-RUS",
+    "entity": "Russia",
+    "code": "RUS",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 13.9,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-RWA",
+    "entity": "Rwanda",
+    "code": "RWA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 4684.49,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-VCT",
+    "entity": "Saint Vincent and the Grenadines",
+    "code": "VCT",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 103.73,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-WSM",
+    "entity": "Samoa",
+    "code": "WSM",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 252.32,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SEN",
+    "entity": "Senegal",
+    "code": "SEN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 1992,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 1978,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SRB",
+    "entity": "Serbia",
+    "code": "SRB",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 7005.43,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_SRM",
+    "entity": "Serbia and Montenegro",
+    "code": "OWID_SRM",
+    "entity_type": "historical_entity",
+    "latest_observation_year": 2005,
+    "latest_observation_tonnes": 11752.0,
+    "latest_positive_year": 2005,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SLE",
+    "entity": "Sierra Leone",
+    "code": "SLE",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 47.85,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SGP",
+    "entity": "Singapore",
+    "code": "SGP",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 1998,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 1996,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SVK",
+    "entity": "Slovakia",
+    "code": "SVK",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2020,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 2017,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SVN",
+    "entity": "Slovenia",
+    "code": "SVN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": null,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SLB",
+    "entity": "Solomon Islands",
+    "code": "SLB",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 114.52,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SOM",
+    "entity": "Somalia",
+    "code": "SOM",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 145.64,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ZAF",
+    "entity": "South Africa",
+    "code": "ZAF",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 11230.96,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-KOR",
+    "entity": "South Korea",
+    "code": "KOR",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 27947.91,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ESP",
+    "entity": "Spain",
+    "code": "ESP",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 19410.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-LKA",
+    "entity": "Sri Lanka",
+    "code": "LKA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 8514.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SWE",
+    "entity": "Sweden",
+    "code": "SWE",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2019,
+    "latest_observation_tonnes": 0.0,
+    "latest_positive_year": 1964,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-CHE",
+    "entity": "Switzerland",
+    "code": "CHE",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 756.04,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-SYR",
+    "entity": "Syria",
+    "code": "SYR",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 8430.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-TWN",
+    "entity": "Taiwan",
+    "code": "TWN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1393.41,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-TJK",
+    "entity": "Tajikistan",
+    "code": "TJK",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 379.22,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-TZA",
+    "entity": "Tanzania",
+    "code": "TZA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 117464.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-THA",
+    "entity": "Thailand",
+    "code": "THA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 66285.29,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-TGO",
+    "entity": "Togo",
+    "code": "TGO",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1959.34,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-TTO",
+    "entity": "Trinidad and Tobago",
+    "code": "TTO",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 190.16,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-TUN",
+    "entity": "Tunisia",
+    "code": "TUN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2215.69,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-TUR",
+    "entity": "Turkey",
+    "code": "TUR",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 108000.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-TKM",
+    "entity": "Turkmenistan",
+    "code": "TKM",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 3333.51,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_USS",
+    "entity": "USSR",
+    "code": "OWID_USS",
+    "entity_type": "historical_entity",
+    "latest_observation_year": 1991,
+    "latest_observation_tonnes": 217496.0,
+    "latest_positive_year": 1991,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-UGA",
+    "entity": "Uganda",
+    "code": "UGA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 32091.75,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-UKR",
+    "entity": "Ukraine",
+    "code": "UKR",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2250.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ARE",
+    "entity": "United Arab Emirates",
+    "code": "ARE",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 229.29,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-USA",
+    "entity": "United States",
+    "code": "USA",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 147520.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-URY",
+    "entity": "Uruguay",
+    "code": "URY",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 3350.24,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-UZB",
+    "entity": "Uzbekistan",
+    "code": "UZB",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 1411.72,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-VEN",
+    "entity": "Venezuela",
+    "code": "VEN",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 2952.46,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-VNM",
+    "entity": "Vietnam",
+    "code": "VNM",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 48313.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-YEM",
+    "entity": "Yemen",
+    "code": "YEM",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 31682.04,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-OWID_YGS",
+    "entity": "Yugoslavia",
+    "code": "OWID_YGS",
+    "entity_type": "historical_entity",
+    "latest_observation_year": 1991,
+    "latest_observation_tonnes": 58061.0,
+    "latest_positive_year": 1991,
+    "positive_in_2024": false,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ZMB",
+    "entity": "Zambia",
+    "code": "ZMB",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 20768.03,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  },
+  {
+    "id": "FAO-ZWE",
+    "entity": "Zimbabwe",
+    "code": "ZWE",
+    "entity_type": "country_or_area",
+    "latest_observation_year": 2024,
+    "latest_observation_tonnes": 236815.0,
+    "latest_positive_year": 2024,
+    "positive_in_2024": true,
+    "source_ids": [
+      "D01"
+    ],
+    "status": "statistical_series_not_farm_certification"
+  }
+]

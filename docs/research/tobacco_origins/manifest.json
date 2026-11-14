@@ -1,0 +1,107 @@
+{
+  "version": "0.1.0",
+  "date": "2026-11-14",
+  "base_commit": "555f61781cb31e8248b1df5f700e57cef35165a7",
+  "files": [
+    {
+      "path": "DATA_DICTIONARY.md",
+      "bytes": 2936,
+      "sha256": "5aa06c6e762cea4aa6c926be757cc6eb2856dbdc84887c8e6edd90be47ce6ba1"
+    },
+    {
+      "path": "LITERATURE_zh.md",
+      "bytes": 14707,
+      "sha256": "d87d72382cbf20e59b897c81c09f08d3f1f9076c070dc51561b4e68715b9b6e2"
+    },
+    {
+      "path": "METHODS_zh.md",
+      "bytes": 3602,
+      "sha256": "d955c1c890f8199651cb5829e3ad5ef1b4fa67c417b965d19c144701282e186a"
+    },
+    {
+      "path": "ORIGINS_zh.md",
+      "bytes": 23410,
+      "sha256": "1d9a3973cd9f7ce4f9b73da4b42b6e32c2d465ce5bdee30c14c3c5b59b6dc3ac"
+    },
+    {
+      "path": "README_zh.md",
+      "bytes": 3386,
+      "sha256": "2c9f5f8fe6d5c46446801316d6725b755deff61a444394c8854eed7c03379184"
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 17639,
+      "sha256": "2df4c2e661d517511ce1f322db5e8f3b83681c38ce94464a45d55b51e0b0e46e"
+    },
+    {
+      "path": "TRACEABILITY_zh.md",
+      "bytes": 4731,
+      "sha256": "06e47dffa2eb101428f69b50af8fc500cb10aaa31729ffc9e6fbded002826d55"
+    },
+    {
+      "path": "TRADITIONAL_MEDICINE_zh.md",
+      "bytes": 3944,
+      "sha256": "a20185c9a47dc734af0abaceb050c901b37f1cc145ff3cff37cd05b97419ebd8"
+    },
+    {
+      "path": "data/batch_passport_template.json",
+      "bytes": 953,
+      "sha256": "7ea2b58a161db01cbb9367f64fc5e070aeb19c937ee6ef20f55696da5e08331a"
+    },
+    {
+      "path": "data/countries.json",
+      "bytes": 53721,
+      "sha256": "4a94be27b282e0ea888603760506632907445c74063edb5750c5fa617cb79e20"
+    },
+    {
+      "path": "data/coverage.json",
+      "bytes": 554,
+      "sha256": "c719d630ff5a0c3dc0d6e66bdd8e9f18a163d86bdcd40cda0c4cf50e2ba8078f"
+    },
+    {
+      "path": "data/excluded_aggregates.json",
+      "bytes": 16393,
+      "sha256": "6cad92c8b7ea89237f79b9dd22bfca06f135f37be1c7d9148a78f20800ade220"
+    },
+    {
+      "path": "data/global_production_fao_owid.csv",
+      "bytes": 290459,
+      "sha256": "8f8afbdcbd043df39d71366d01309fbc8425d052b6fcaf080cb261773610e096"
+    },
+    {
+      "path": "data/global_production_fao_owid.metadata.json",
+      "bytes": 1262,
+      "sha256": "cd049b83211cf7b36fe85257c7d2d888c670bd3e76d8957eda3f7972ffc7b130"
+    },
+    {
+      "path": "data/literature.json",
+      "bytes": 18099,
+      "sha256": "b671c8c1dfeeff723b6df59449733487d3b9a5e4e9730c02a389eac968cc54a4"
+    },
+    {
+      "path": "data/origins.json",
+      "bytes": 36419,
+      "sha256": "7cb6ebde27e3d4e4afa30a59c1c1e18867726dede87821dd0a25cbab4834e644"
+    },
+    {
+      "path": "data/search_log.json",
+      "bytes": 2348,
+      "sha256": "d6cc03eead1ab9aa2067c79073202da697cf1c1c2ea9b53720d556c1706c987b"
+    },
+    {
+      "path": "data/sources.json",
+      "bytes": 23168,
+      "sha256": "138368b34cb00b59bea2a31e72be3dece8ccfd880f9629db574969146302f547"
+    },
+    {
+      "path": "data/traditional_texts.json",
+      "bytes": 3508,
+      "sha256": "2af017be55b737fcf30ee3cdeec6b01a0dcc1cd3cb287eb88dbf558e8ac2f545"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 675,
+      "sha256": "42d0fb6fa09c7b8d8bdc323e5d7dee07c48295325b09f9e7c0ed3373427555b7"
+    }
+  ]
+}

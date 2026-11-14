@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "R001",
+    "country_or_area": "中国",
+    "region": "河北",
+    "places": [
+      "保定市清苑区",
+      "唐山市丰润区",
+      "唐山市丰南区",
+      "唐山市曹妃甸区",
+      "迁安市",
+      "滦州市",
+      "遵化市",
+      "三河市",
+      "易县",
+      "乐亭县",
+      "滦南县",
+      "玉田县",
+      "迁西县",
+      "滦平县",
+      "隆化县"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R002",
+    "country_or_area": "中国",
+    "region": "内蒙古",
+    "places": [
+      "呼和浩特市赛罕区",
+      "土默特左旗",
+      "土默特右旗"
+    ],
+    "tobacco_type": "晒黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R003",
+    "country_or_area": "中国",
+    "region": "内蒙古",
+    "places": [
+      "赤峰市松山区",
+      "宁城县",
+      "库伦旗"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R004",
+    "country_or_area": "中国",
+    "region": "吉林",
+    "places": [
+      "延边朝鲜族自治州",
+      "蛟河市",
+      "桦甸市",
+      "农安县"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R005",
+    "country_or_area": "中国",
+    "region": "黑龙江",
+    "places": [
+      "尚志市",
+      "穆棱市",
+      "林口县"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R006",
+    "country_or_area": "中国",
+    "region": "浙江",
+    "places": [
+      "桐乡市",
+      "松阳县"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R007",
+    "country_or_area": "中国",
+    "region": "浙江",
+    "places": [
+      "嵊州市",
+      "新昌县"
+    ],
+    "tobacco_type": "香料烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R008",
+    "country_or_area": "中国",
+    "region": "安徽",
+    "places": [
+      "宿松县",
+      "歙县"
+    ],
+    "tobacco_type": "晒黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R009",
+    "country_or_area": "中国",
+    "region": "安徽",
+    "places": [
+      "黄山市",
+      "宣城市"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R010",
+    "country_or_area": "中国",
+    "region": "福建",
+    "places": [
+      "三明市沙县区",
+      "龙岩市永定区",
+      "福鼎市",
+      "平和县",
+      "浦城县"
+    ],
+    "tobacco_type": "晒黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R011",
+    "country_or_area": "中国",
+    "region": "福建",
+    "places": [
+      "龙岩市",
+      "三明市",
+      "南平市"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R012",
+    "country_or_area": "中国",
+    "region": "江西",
+    "places": [
+      "上饶市广丰区",
+      "信丰县"
+    ],
+    "tobacco_type": "晒黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R013",
+    "country_or_area": "中国",
+    "region": "江西",
+    "places": [
+      "上饶市广丰区",
+      "广昌县",
+      "石城县"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R014",
+    "country_or_area": "中国",
+    "region": "江西",
+    "places": [
+      "黎川县",
+      "安远县"
+    ],
+    "tobacco_type": "晒红黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R015",
+    "country_or_area": "中国",
+    "region": "山东",
+    "places": [
+      "沂水县",
+      "蒙阴县"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R016",
+    "country_or_area": "中国",
+    "region": "山东",
+    "places": [
+      "临沂市",
+      "潍坊市"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R017",
+    "country_or_area": "中国",
+    "region": "河南",
+    "places": [
+      "邓州市"
+    ],
+    "tobacco_type": "晒黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R018",
+    "country_or_area": "中国",
+    "region": "河南",
+    "places": [
+      "西峡县"
+    ],
+    "tobacco_type": "白肋烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R019",
+    "country_or_area": "中国",
+    "region": "河南",
+    "places": [
+      "汝州市",
+      "汝阳县"
+    ],
+    "tobacco_type": "香料烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R020",
+    "country_or_area": "中国",
+    "region": "河南",
+    "places": [
+      "沁阳市"
+    ],
+    "tobacco_type": "晒青烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R021",
+    "country_or_area": "中国",
+    "region": "湖北",
+    "places": [
+      "武汉市新洲区",
+      "团风县"
+    ],
+    "tobacco_type": "黄冈名晒烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R022",
+    "country_or_area": "中国",
+    "region": "湖北",
+    "places": [
+      "丹江口市"
+    ],
+    "tobacco_type": "晒黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R023",
+    "country_or_area": "中国",
+    "region": "湖北",
+    "places": [
+      "宜昌市夷陵区",
+      "恩施市",
+      "利川市",
+      "建始县",
+      "巴东县",
+      "来凤县",
+      "鹤峰县",
+      "五峰土家族自治县",
+      "长阳土家族自治县"
+    ],
+    "tobacco_type": "白肋烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R024",
+    "country_or_area": "中国",
+    "region": "湖北",
+    "places": [
+      "十堰市郧阳区",
+      "丹江口市",
+      "郧西县",
+      "竹山县"
+    ],
+    "tobacco_type": "香料烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R025",
+    "country_or_area": "中国",
+    "region": "湖北",
+    "places": [
+      "五峰土家族自治县"
+    ],
+    "tobacco_type": "马里兰烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R026",
+    "country_or_area": "中国",
+    "region": "湖北",
+    "places": [
+      "恩施土家族苗族自治州",
+      "十堰市",
+      "宜昌市"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R027",
+    "country_or_area": "中国",
+    "region": "湖南",
+    "places": [
+      "宁乡市",
+      "湘乡市",
+      "汨罗市",
+      "华容县",
+      "岳阳县"
+    ],
+    "tobacco_type": "晒黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R028",
+    "country_or_area": "中国",
+    "region": "湖南",
+    "places": [
+      "吉首市",
+      "凤凰县",
+      "泸溪县",
+      "古丈县",
+      "麻阳苗族自治县",
+      "溆浦县",
+      "辰溪县",
+      "沅陵县"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R029",
+    "country_or_area": "中国",
+    "region": "湖南",
+    "places": [
+      "桑植县",
+      "石门县"
+    ],
+    "tobacco_type": "白肋烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R030",
+    "country_or_area": "中国",
+    "region": "湖南",
+    "places": [
+      "张家界市",
+      "郴州市",
+      "永州市"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R031",
+    "country_or_area": "中国",
+    "region": "广东",
+    "places": [
+      "南雄市",
+      "连州市",
+      "始兴县",
+      "封开县"
+    ],
+    "tobacco_type": "晒黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R032",
+    "country_or_area": "中国",
+    "region": "广东",
+    "places": [
+      "廉江市",
+      "高州市",
+      "化州市"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R033",
+    "country_or_area": "中国",
+    "region": "广西",
+    "places": [
+      "南宁市西乡塘区",
+      "南宁市兴宁区",
+      "南宁市邕宁区",
+      "南宁市良庆区",
+      "柳州市柳江区",
+      "贺州市八步区",
+      "贺州市平桂区",
+      "来宾市兴宾区",
+      "贵港市港南区",
+      "钦州市钦南区",
+      "钦州市钦北区",
+      "河池市宜州区",
+      "桂林市临桂区",
+      "玉林市玉州区",
+      "玉林市福绵区",
+      "北流市",
+      "荔浦市",
+      "桂平市",
+      "岑溪市",
+      "宾阳县",
+      "鹿寨县",
+      "柳城县",
+      "融安县",
+      "昭平县",
+      "忻城县",
+      "武宣县",
+      "象州县",
+      "金秀瑶族自治县",
+      "苍梧县",
+      "藤县",
+      "平南县",
+      "灵山县",
+      "浦北县",
+      "灌阳县",
+      "全州县",
+      "龙胜各族自治县",
+      "兴安县",
+      "平乐县",
+      "阳朔县",
+      "罗城仫佬族自治县",
+      "南丹县",
+      "大化瑶族自治县",
+      "东兰县",
+      "陆川县",
+      "容县",
+      "兴业县",
+      "合浦县"
+    ],
+    "tobacco_type": "晒黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R034",
+    "country_or_area": "中国",
+    "region": "广西",
+    "places": [
+      "三江侗族自治县",
+      "博白县"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R035",
+    "country_or_area": "中国",
+    "region": "广西",
+    "places": [
+      "南宁市武鸣区"
+    ],
+    "tobacco_type": "晾烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R036",
+    "country_or_area": "中国",
+    "region": "广西",
+    "places": [
+      "百色市"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R037",
+    "country_or_area": "中国",
+    "region": "海南",
+    "places": [
+      "临高县"
+    ],
+    "tobacco_type": "白肋烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R038",
+    "country_or_area": "中国",
+    "region": "海南",
+    "places": [
+      "东方市",
+      "昌江黎族自治县",
+      "乐东黎族自治县",
+      "白沙黎族自治县",
+      "陵水黎族自治县"
+    ],
+    "tobacco_type": "香料烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R039",
+    "country_or_area": "中国",
+    "region": "海南",
+    "places": [
+      "儋州市",
+      "五指山市",
+      "万宁市",
+      "东方市",
+      "屯昌县",
+      "澄迈县",
+      "白沙黎族自治县",
+      "昌江黎族自治县",
+      "乐东黎族自治县",
+      "琼中黎族苗族自治县"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R040",
+    "country_or_area": "中国",
+    "region": "重庆",
+    "places": [
+      "开州区",
+      "万州区",
+      "奉节县",
+      "巫溪县",
+      "云阳县",
+      "城口县",
+      "忠县"
+    ],
+    "tobacco_type": "白肋烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R041",
+    "country_or_area": "中国",
+    "region": "重庆",
+    "places": [
+      "垫江县",
+      "丰都县",
+      "忠县"
+    ],
+    "tobacco_type": "毛柳晒烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R042",
+    "country_or_area": "中国",
+    "region": "四川",
+    "places": [
+      "万源市",
+      "宣汉县",
+      "开江县",
+      "大竹县",
+      "南江县",
+      "通江县"
+    ],
+    "tobacco_type": "白肋烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R043",
+    "country_or_area": "中国",
+    "region": "四川",
+    "places": [
+      "眉山市东坡区",
+      "万源市",
+      "什邡市",
+      "绵竹市",
+      "犍为县",
+      "夹江县",
+      "宣汉县",
+      "开江县",
+      "剑阁县",
+      "苍溪县"
+    ],
+    "tobacco_type": "毛柳晒烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R044",
+    "country_or_area": "中国",
+    "region": "四川",
+    "places": [
+      "德阳市",
+      "达州市"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R045",
+    "country_or_area": "中国",
+    "region": "贵州",
+    "places": [
+      "兴仁市",
+      "罗甸县",
+      "惠水县",
+      "独山县",
+      "册亨县",
+      "天柱县"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R046",
+    "country_or_area": "中国",
+    "region": "贵州",
+    "places": [
+      "铜仁市万山区",
+      "威宁彝族回族苗族自治县"
+    ],
+    "tobacco_type": "晾晒烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R047",
+    "country_or_area": "中国",
+    "region": "云南",
+    "places": [
+      "腾冲市",
+      "蒙自市",
+      "施甸县",
+      "陇川县",
+      "盈江县"
+    ],
+    "tobacco_type": "晒黄烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R048",
+    "country_or_area": "中国",
+    "region": "云南",
+    "places": [
+      "施甸县",
+      "耿马傣族佤族自治县",
+      "宾川县",
+      "永平县",
+      "罗平县",
+      "师宗县"
+    ],
+    "tobacco_type": "白肋烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R049",
+    "country_or_area": "中国",
+    "region": "云南",
+    "places": [
+      "保山市隆阳区",
+      "腾冲市",
+      "芒市",
+      "瑞丽市",
+      "泸水市",
+      "施甸县",
+      "龙陵县",
+      "昌宁县",
+      "云县",
+      "镇康县",
+      "沧源佤族自治县",
+      "耿马傣族佤族自治县",
+      "双江拉祜族佤族布朗族傣族自治县",
+      "凤庆县",
+      "永德县",
+      "永胜县",
+      "巧家县",
+      "陇川县",
+      "盈江县"
+    ],
+    "tobacco_type": "香料烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R050",
+    "country_or_area": "中国",
+    "region": "云南",
+    "places": [
+      "昆明市",
+      "保山市",
+      "临沧市",
+      "德宏傣族景颇族自治州",
+      "普洱市",
+      "玉溪市",
+      "西双版纳傣族自治州",
+      "文山壮族苗族自治州",
+      "红河哈尼族彝族自治州",
+      "丽江市",
+      "大理白族自治州",
+      "楚雄彝族自治州",
+      "曲靖市",
+      "昭通市"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R051",
+    "country_or_area": "中国",
+    "region": "陕西",
+    "places": [
+      "城固县"
+    ],
+    "tobacco_type": "晒红烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R052",
+    "country_or_area": "中国",
+    "region": "陕西",
+    "places": [
+      "宁强县",
+      "山阳县"
+    ],
+    "tobacco_type": "白肋烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R053",
+    "country_or_area": "中国",
+    "region": "甘肃",
+    "places": [
+      "榆中县"
+    ],
+    "tobacco_type": "黄花烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R054",
+    "country_or_area": "中国",
+    "region": "新疆",
+    "places": [
+      "伊宁县",
+      "玛纳斯县"
+    ],
+    "tobacco_type": "莫合烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R055",
+    "country_or_area": "中国",
+    "region": "新疆",
+    "places": [
+      "伊宁县",
+      "察布查尔锡伯自治县",
+      "奇台县"
+    ],
+    "tobacco_type": "香料烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O01"
+    ],
+    "status": "documented",
+    "note": "名晾晒烟法定名录列项；不是当年实际种植或产量证明。"
+  },
+  {
+    "id": "R056",
+    "country_or_area": "中国",
+    "region": "四川",
+    "places": [
+      "凉山",
+      "攀枝花"
+    ],
+    "tobacco_type": "烤烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O20"
+    ],
+    "status": "documented",
+    "note": ""
+  },
+  {
+    "id": "R057",
+    "country_or_area": "中国",
+    "region": "四川",
+    "places": [
+      "会理县",
+      "会东县",
+      "德昌县",
+      "宁南县",
+      "冕宁县",
+      "普格县",
+      "越西县",
+      "盐源县",
+      "西昌市",
+      "金阳县",
+      "美姑县",
+      "布拖县",
+      "昭觉县",
+      "喜德县",
+      "甘洛县",
+      "雷波县"
+    ],
+    "tobacco_type": "凉山清甜香烤烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O02"
+    ],
+    "status": "documented",
+    "note": "2009登记县名；保留历史写法，现行政区划另建映射。"
+  },
+  {
+    "id": "R058",
+    "country_or_area": "中国",
+    "region": "四川",
+    "places": [
+      "什邡"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O21"
+    ],
+    "status": "documented",
+    "note": ""
+  },
+  {
+    "id": "R059",
+    "country_or_area": "中国",
+    "region": "福建",
+    "places": [
+      "龙岩",
+      "三明",
+      "南平"
+    ],
+    "tobacco_type": "烟叶（文件未逐项分型）",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O04"
+    ],
+    "status": "documented",
+    "note": "2015政策区域，当前基地须另核。"
+  },
+  {
+    "id": "R060",
+    "country_or_area": "中国",
+    "region": "广东",
+    "places": [
+      "南雄",
+      "乳源",
+      "乐昌",
+      "大埔",
+      "梅县",
+      "蕉岭",
+      "平远",
+      "五华",
+      "丰顺",
+      "兴宁"
+    ],
+    "tobacco_type": "春烤烟",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O05"
+    ],
+    "status": "documented",
+    "note": "2021区域文献；不是2026逐县种植核查。"
+  },
+  {
+    "id": "R061",
+    "country_or_area": "中国",
+    "region": "甘肃",
+    "places": [
+      "庆阳",
+      "陇南"
+    ],
+    "tobacco_type": "收购烟叶",
+    "role": "procurement_area",
+    "source_ids": [
+      "O03"
+    ],
+    "status": "documented",
+    "note": "只有收购节点证据，种植田块待核。"
+  },
+  {
+    "id": "R062",
+    "country_or_area": "中国",
+    "region": "河南／贵州／云南",
+    "places": [
+      "河南",
+      "贵州",
+      "云南"
+    ],
+    "tobacco_type": "烤烟研究样本",
+    "role": "research_sampling_area",
+    "source_ids": [
+      "L05"
+    ],
+    "status": "documented",
+    "note": "523/526样本数不一致需作者解释。"
+  },
+  {
+    "id": "R063",
+    "country_or_area": "中国",
+    "region": "云南",
+    "places": [
+      "玉溪",
+      "德宏",
+      "普洱"
+    ],
+    "tobacco_type": "雪茄研究样本",
+    "role": "research_sampling_area",
+    "source_ids": [
+      "L11"
+    ],
+    "status": "documented",
+    "note": ""
+  },
+  {
+    "id": "R064",
+    "country_or_area": "中国",
+    "region": "台湾",
+    "places": [
+      "阿里山"
+    ],
+    "tobacco_type": "地名品牌",
+    "role": "brand_name",
+    "source_ids": [
+      "O07"
+    ],
+    "status": "leaf_origin_unverified",
+    "note": "该具体阿里山印象品项申报制造商为台湾苗栗卷烟厂；无阿里山烟田证据。"
+  },
+  {
+    "id": "R065",
+    "country_or_area": "古巴",
+    "region": "Pinar del Río",
+    "places": [
+      "Vuelta Abajo",
+      "Semi Vuelta",
+      "San Luis",
+      "San Juan y Martínez"
+    ],
+    "tobacco_type": "雪茄茄衣／茄套／茄芯",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O08"
+    ],
+    "status": "documented",
+    "note": "各分区叶用角色不同，不可一概视为全部供应长芯Habanos。"
+  },
+  {
+    "id": "R066",
+    "country_or_area": "古巴",
+    "region": "Partido",
+    "places": [
+      "Partido"
+    ],
+    "tobacco_type": "雪茄茄衣",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O08"
+    ],
+    "status": "documented",
+    "note": ""
+  },
+  {
+    "id": "R067",
+    "country_or_area": "古巴",
+    "region": "Remedios",
+    "places": [
+      "Remedios"
+    ],
+    "tobacco_type": "雪茄叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O08"
+    ],
+    "status": "documented",
+    "note": ""
+  },
+  {
+    "id": "R068",
+    "country_or_area": "古巴",
+    "region": "Vuelta Arriba",
+    "places": [
+      "Vuelta Arriba"
+    ],
+    "tobacco_type": "烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O08"
+    ],
+    "status": "documented",
+    "note": "生产者页面称不用于Habanos。"
+  },
+  {
+    "id": "R069",
+    "country_or_area": "古巴",
+    "region": "La Habana",
+    "places": [
+      "La Habana"
+    ],
+    "tobacco_type": "雪茄制造与出口历史地",
+    "role": "manufacturing_export",
+    "source_ids": [
+      "O08",
+      "O09"
+    ],
+    "status": "documented",
+    "note": "生产者明确称哈瓦那市不种烟叶；不能把城市名当种植地。"
+  },
+  {
+    "id": "R070",
+    "country_or_area": "多米尼加共和国",
+    "region": "政府列明15省",
+    "places": [
+      "Santiago",
+      "Montecristi",
+      "Santiago Rodríguez",
+      "Dajabón",
+      "Valverde",
+      "Puerto Plata",
+      "Espaillat",
+      "La Vega",
+      "Monseñor Nouel",
+      "Sánchez Ramírez",
+      "Monte Plata",
+      "Hato Mayor",
+      "San Juan",
+      "Azua",
+      "Elías Piña"
+    ],
+    "tobacco_type": "烟叶／雪茄供应",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O10"
+    ],
+    "status": "documented",
+    "note": "省级覆盖；29烟区未全部逐项取得。"
+  },
+  {
+    "id": "R071",
+    "country_or_area": "尼加拉瓜",
+    "region": "北部及Ometepe研究区域",
+    "places": [
+      "Estelí",
+      "Condega",
+      "Jalapa",
+      "Ometepe"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O11"
+    ],
+    "status": "documented",
+    "note": "研究分区不等于获批GI。"
+  },
+  {
+    "id": "R072",
+    "country_or_area": "洪都拉斯",
+    "region": "El Paraíso",
+    "places": [
+      "Valle de Jamastrán"
+    ],
+    "tobacco_type": "烟叶种植、调制、发酵企业",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O14"
+    ],
+    "status": "business_activity_documented",
+    "note": "产区企业活动证据；不等于田块认证。"
+  },
+  {
+    "id": "R073",
+    "country_or_area": "墨西哥",
+    "region": "官方2024收获区域",
+    "places": [
+      "Nayarit",
+      "Veracruz",
+      "Chiapas",
+      "Guerrero"
+    ],
+    "tobacco_type": "烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O15"
+    ],
+    "status": "documented",
+    "note": ""
+  },
+  {
+    "id": "R074",
+    "country_or_area": "巴西",
+    "region": "Bahia Recôncavo",
+    "places": [
+      "Cruz das Almas"
+    ],
+    "tobacco_type": "烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O16"
+    ],
+    "status": "historical_documented",
+    "note": "2011记录。"
+  },
+  {
+    "id": "R075",
+    "country_or_area": "巴西",
+    "region": "Bahia",
+    "places": [
+      "Cruz das Almas",
+      "Muritiba",
+      "São Félix",
+      "Cachoeira",
+      "Paraguaçu",
+      "Conceição do Almeida",
+      "Simões Filho",
+      "Salvador"
+    ],
+    "tobacco_type": "雪茄制造",
+    "role": "manufacturing",
+    "source_ids": [
+      "O16"
+    ],
+    "status": "historical_documented",
+    "note": "2011原文列名；地点边界及当前企业待核。"
+  },
+  {
+    "id": "R076",
+    "country_or_area": "印度",
+    "region": "Andhra Pradesh",
+    "places": [
+      "Northern Light Soils",
+      "Southern Light Soils",
+      "Southern Black Soils",
+      "Northern Black Soils"
+    ],
+    "tobacco_type": "FCV烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O12",
+      "O23"
+    ],
+    "status": "documented",
+    "note": "政策土壤分区，非行政省份；历史边界待映射。"
+  },
+  {
+    "id": "R077",
+    "country_or_area": "印度",
+    "region": "Karnataka",
+    "places": [
+      "Karnataka Light Soils"
+    ],
+    "tobacco_type": "FCV烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O12",
+      "O23"
+    ],
+    "status": "documented",
+    "note": ""
+  },
+  {
+    "id": "R078",
+    "country_or_area": "印度尼西亚",
+    "region": "雪茄传统／研究区",
+    "places": [
+      "Deli（北苏门答腊）",
+      "Vorstenlanden（Surakarta–Yogyakarta）",
+      "Besuki（Jember–Bondowoso）"
+    ],
+    "tobacco_type": "雪茄烟叶",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O13",
+      "O22"
+    ],
+    "status": "documented",
+    "note": "历史名称；不能假定当前覆盖不变。"
+  },
+  {
+    "id": "R079",
+    "country_or_area": "印度尼西亚",
+    "region": "地方烟与Virginia数据库分类",
+    "places": [
+      "Madura",
+      "Kasturi",
+      "Paiton",
+      "Jombang",
+      "Bondowoso",
+      "Banyuwangi",
+      "Tulungagung",
+      "Magetan",
+      "Temanggung",
+      "Boyolali",
+      "Purwodadi",
+      "Garut",
+      "Sumedang",
+      "Majalengka",
+      "Sleman",
+      "Lombok"
+    ],
+    "tobacco_type": "地方烟／Virginia",
+    "role": "leaf_growing",
+    "source_ids": [
+      "O13"
+    ],
+    "status": "documented",
+    "note": "数据库分类线索，逐条地块仍需核。"
+  },
+  {
+    "id": "R080",
+    "country_or_area": "美国",
+    "region": "Connecticut",
+    "places": [
+      "Connecticut"
+    ],
+    "tobacco_type": "雪茄茄套保险统计",
+    "role": "administrative_crop_area",
+    "source_ids": [
+      "O24"
+    ],
+    "status": "documented",
+    "note": "保险业务有非零行；不等于全部种植面积。"
+  },
+  {
+    "id": "R081",
+    "country_or_area": "美国",
+    "region": "Pennsylvania",
+    "places": [
+      "Pennsylvania"
+    ],
+    "tobacco_type": "雪茄茄芯保险统计",
+    "role": "administrative_crop_area",
+    "source_ids": [
+      "O24"
+    ],
+    "status": "documented",
+    "note": ""
+  },
+  {
+    "id": "R082",
+    "country_or_area": "美国",
+    "region": "研究采样",
+    "places": [
+      "Oxford, North Carolina"
+    ],
+    "tobacco_type": "K326",
+    "role": "research_sampling_area",
+    "source_ids": [
+      "L02"
+    ],
+    "status": "documented",
+    "note": ""
+  },
+  {
+    "id": "R083",
+    "country_or_area": "印度",
+    "region": "研究采样",
+    "places": [
+      "Rajahmundry, Andhra Pradesh"
+    ],
+    "tobacco_type": "K326",
+    "role": "research_sampling_area",
+    "source_ids": [
+      "L02"
+    ],
+    "status": "documented",
+    "note": ""
+  },
+  {
+    "id": "R084",
+    "country_or_area": "Argentina",
+    "region": "国别研究样本",
+    "places": [],
+    "tobacco_type": "烟叶",
+    "role": "research_sampling_country",
+    "source_ids": [
+      "L03"
+    ],
+    "status": "documented",
+    "note": "国别不等于次国家产区；未取得完整田块凭证。"
+  },
+  {
+    "id": "R085",
+    "country_or_area": "Brazil",
+    "region": "国别研究样本",
+    "places": [],
+    "tobacco_type": "烟叶",
+    "role": "research_sampling_country",
+    "source_ids": [
+      "L03",
+      "L06"
+    ],
+    "status": "documented",
+    "note": "国别不等于次国家产区；未取得完整田块凭证。"
+  },
+  {
+    "id": "R086",
+    "country_or_area": "Zimbabwe",
+    "region": "国别研究样本",
+    "places": [],
+    "tobacco_type": "烟叶",
+    "role": "research_sampling_country",
+    "source_ids": [
+      "L03",
+      "L06"
+    ],
+    "status": "documented",
+    "note": "国别不等于次国家产区；未取得完整田块凭证。"
+  },
+  {
+    "id": "R087",
+    "country_or_area": "United States",
+    "region": "国别研究样本",
+    "places": [],
+    "tobacco_type": "烟叶",
+    "role": "research_sampling_country",
+    "source_ids": [
+      "L03",
+      "L06"
+    ],
+    "status": "documented",
+    "note": "国别不等于次国家产区；未取得完整田块凭证。"
+  },
+  {
+    "id": "R088",
+    "country_or_area": "Zambia",
+    "region": "国别研究样本",
+    "places": [],
+    "tobacco_type": "烟叶",
+    "role": "research_sampling_country",
+    "source_ids": [
+      "L03",
+      "L06"
+    ],
+    "status": "documented",
+    "note": "国别不等于次国家产区；未取得完整田块凭证。"
+  },
+  {
+    "id": "R089",
+    "country_or_area": "China",
+    "region": "国别研究样本",
+    "places": [],
+    "tobacco_type": "烟叶",
+    "role": "research_sampling_country",
+    "source_ids": [
+      "L03",
+      "L06"
+    ],
+    "status": "documented",
+    "note": "国别不等于次国家产区；未取得完整田块凭证。"
+  }
+]

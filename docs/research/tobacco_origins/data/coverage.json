@@ -1,0 +1,20 @@
+{
+  "version": "0.1.0",
+  "retrieval_date": "2026-11-14",
+  "counts": {
+    "raw_production_rows": 10723,
+    "raw_statistical_entities": 196,
+    "country_or_area_series": 146,
+    "historical_entity_series": 6,
+    "excluded_aggregates": 44,
+    "country_or_area_ever_positive": 135,
+    "country_or_area_positive_2024": 118,
+    "regional_records": 89,
+    "regional_place_mentions": 371,
+    "research_papers": 27,
+    "traditional_text_leads": 12,
+    "sources": 66
+  },
+  "global_farm_census_complete": false,
+  "all_literature_retrieved": false
+}
