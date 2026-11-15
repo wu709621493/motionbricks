@@ -1,0 +1,58 @@
+{
+  "version": "0.1",
+  "date": "2026-11-15",
+  "sources": [
+    {
+      "id": "C01",
+      "title": "Try Everything — Shakira / Zootopia",
+      "publisher": "Official YouTube music release, provided by Universal Music Group",
+      "url": "https://www.youtube.com/watch?v=230sI_WxO7Y",
+      "supports": "歌曲及Zootopia关联；未提取歌词或音频。",
+      "limits": "作品关联不能作为政治背书；本片配乐仅为提示。",
+      "accessed": "2026-11-15"
+    },
+    {
+      "id": "C02",
+      "title": "Remembering Apple's “1984” Super Bowl Ad",
+      "publisher": "Smithsonian National Museum of American History",
+      "url": "https://www.americanhistory.si.edu/explore/stories/remembering-apples-1984-super-bowl-ad",
+      "supports": "冷色空间、跑者与铁锤的广告意象。",
+      "limits": "本片提问字幕为新增创作，不是原广告对白。",
+      "accessed": "2026-11-15"
+    },
+    {
+      "id": "C03",
+      "title": "Weekly Update: October 26, 2023",
+      "publisher": "Los Angeles Department of Transportation",
+      "url": "https://ladot.lacity.gov/dotnews/weekly-update-october-26-2023",
+      "supports": "2023-10-29约六英里CA-110路段7—11时开放；首次自2003年以来回归。",
+      "limits": "当次活动时段不是全年或年度通行规定。",
+      "accessed": "2026-11-15"
+    },
+    {
+      "id": "C04",
+      "title": "One Year of ArroyoFest: A Celebration of Community and Collaboration",
+      "publisher": "ActiveSGV",
+      "published": "2024-10-29",
+      "url": "https://www.activesgv.org/post/one-year-of-arroyofest",
+      "supports": "主办方说明希望年年办，但活动组织规模大、资源要求高。",
+      "limits": "年度举办为愿望，本片列作倡议，不推定已成为制度。",
+      "accessed": "2026-11-15"
+    },
+    {
+      "id": "C05",
+      "title": "Snoop Dogg Headlining NFSU 2 Soundtrack",
+      "publisher": "Electronic Arts press release, reproduced by Nintendo World Report",
+      "url": "https://nintendoworldreport.com/pr/10054/snoop-dogg-headlining-nfsu-2-soundtrack",
+      "supports": "Snoop Dogg与The Doors的Riders on the Storm混音版和Need for Speed: Underground 2关联。",
+      "limits": "GTA雨夜混剪为本片创意，未声称该曲是GTA原生配乐；未测试特定GTA版本消星规则。",
+      "accessed": "2026-11-15"
+    }
+  ],
+  "author_specified_cues": [
+    "Kenny G《回家》",
+    "GTA式Pay ’n’ Spray"
+  ],
+  "production_status": "TEXT_STORYBOARD_ONLY"
+}
+

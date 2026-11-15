@@ -696,3 +696,11 @@ The [OpenIRB desk-review case](docs/research/early_maturity_crops/openirb/README
 adds an evidence ledger, conditional ethics/biosafety applicability, missing
 implementation documents and six review questions. It is a self-review of proposed
 research, not an ethics approval, completed field trial or finding of misconduct.
+
+## 利拉法：将军的回家之路（#110 创作续篇）
+
+[从 Try Everything 到五星雨夜](docs/firearms_governance/creative_sequel/README_zh.md)
+串联 MAGA、苹果《1984》、CA-110 ArroyoFest、Kenny G《回家》，
+以及 Pay ’n’ Spray 与《Riders on the Storm》的跨游戏彩蛋；
+保留“利拉法”、五星排场和财政审计笑点，附8条用户原话与出处边界。
+这是文字分镜，尚未制作视频或混音；年度开放道路日列为倡议。
