@@ -1,0 +1,107 @@
+{
+  "archive_version": "0.1",
+  "archived_on": "2026-11-15",
+  "repository": "wu709621493/motionbricks",
+  "base_branch": "main",
+  "base_commit": "676568f3d53fbd1e0c77155fc25047861ecfe42c",
+  "base_tree": "c0b9dafe8abfa545d9559041cf6538e84d4c3218",
+  "source_filename": "Crop_Root_Rhizosphere_Review_v01.zip",
+  "source_sha256": "9dd22c250f34757208422ccd77b76df2481197a513edbb76505ee8ff8e5d9e9c",
+  "source_version": "0.1",
+  "source_handling": "Original ZIP and its five extracted members preserved byte-for-byte; README is a Markdown conversion plus an archive navigation wrapper.",
+  "validation": {
+    "zip_crc": "passed",
+    "source_bytes_preserved": true,
+    "json_parse": "passed",
+    "unique_fields": 117,
+    "references": 14,
+    "field_reference_links": "passed",
+    "all_original_html_text_nodes_preserved_in_markdown": true,
+    "local_markdown_links": "passed",
+    "empty_observation_records": true,
+    "all_default_values_null": true,
+    "remote_url_availability": "not_retested_during_archiving",
+    "field_trials": "NOT_RUN",
+    "microbiome_reanalysis": "NOT_RUN",
+    "runtime_regression": "NOT_RUN_documentation_only",
+    "ci": "not_claimed",
+    "case_claims": 12,
+    "case_questions": 6,
+    "case_evidence_references": "passed",
+    "case_local_links": "passed",
+    "institutional_approval": "NOT_ISSUED_BY_THIS_REVIEW"
+  },
+  "archive_workflow": "py-repo-docs: preserve original, readable Markdown, checksums, isolated branch and open PR; no skill installation or change.",
+  "files": [
+    {
+      "path": "Crop_Root_Rhizosphere_Review_v01.zip",
+      "size_bytes": 24112,
+      "sha256": "9dd22c250f34757208422ccd77b76df2481197a513edbb76505ee8ff8e5d9e9c",
+      "git_blob_sha1": "a1b2911df4b63bfd4b7cc7fc87814e663e40fc0a"
+    },
+    {
+      "path": "README_zh.md",
+      "size_bytes": 29322,
+      "sha256": "8677de016bf6bd9b65c526358f0037a3061c3dccf4a29cc1f989645c19131921",
+      "git_blob_sha1": "b723553949dbfa53f7765aa7444131ccf4c7ebb4"
+    },
+    {
+      "path": "candidate_evidence.json",
+      "size_bytes": 1434,
+      "sha256": "2ad52a3f8952be145e25e90ce044d13baa752c8d0c3670ddb51daf08876ac292",
+      "git_blob_sha1": "ed651e4c195d477c4f7ec2bddb3ced1d059c9ba0"
+    },
+    {
+      "path": "field_dictionary.json",
+      "size_bytes": 45151,
+      "sha256": "ac7ecf6530a2f7f9b862d9488bdb2cd823ec3f342726d60f1ac7a029afd423bd",
+      "git_blob_sha1": "c2521274b7089e93312dfd1fd9dbd85856d8bfdb"
+    },
+    {
+      "path": "literature_review.json",
+      "size_bytes": 8193,
+      "sha256": "3f564e3f7e06c684932a262c16d04ed73e46f6b5a5a4119c8ba14657249aa487",
+      "git_blob_sha1": "f949913e0d58f848df3b851f173f48a27f5c5156"
+    },
+    {
+      "path": "observation_template.json",
+      "size_bytes": 600,
+      "sha256": "c82136cb948a7e2b84666e77488aef8e7c2e4da169f1d8082d655e98e1f1ed32",
+      "git_blob_sha1": "e0b546bfdfeb5318d8bd0f80b184486aaee95ed1"
+    },
+    {
+      "path": "openirb/README_zh.md",
+      "size_bytes": 17364,
+      "sha256": "661d6d720e4a10d5448f7ca4880759a3b200cabd45bf23b8009427f633c8d5ec",
+      "git_blob_sha1": "670c7148391384c6b9cb0e9908bb35acebb02b86"
+    },
+    {
+      "path": "openirb/case.json",
+      "size_bytes": 11685,
+      "sha256": "c134e94a53fbc05a21f6b3d2bde6b0369b16eac23ba43050ffc0ef9481b802f8",
+      "git_blob_sha1": "fa760a27a2d1664cfeb42b2120b3b6293b7bda2d"
+    },
+    {
+      "path": "openirb/evidence.json",
+      "size_bytes": 3777,
+      "sha256": "7edb75cb2fedced8f02998c6b3efaf964559f82445a533c821f8360aaf50bf41",
+      "git_blob_sha1": "8d90d13779feb2cc4a958adade81e4b422813c07"
+    },
+    {
+      "path": "openirb/timeline.json",
+      "size_bytes": 1133,
+      "sha256": "a433d6d408917d7ca9ab162f374498b50bdaad9212a247e895d1f4ee50dc931a",
+      "git_blob_sha1": "c29690b8886717d125609286c8d7e409ef8a76de"
+    },
+    {
+      "path": "review_zh.html",
+      "size_bytes": 35380,
+      "sha256": "bf0084e65bcf49133e45490ccdd1c4d20501c226d2454df3752b5024b3dbd995",
+      "git_blob_sha1": "e64525df3ef12393c8bf610b52df12c473b07840"
+    }
+  ],
+  "initial_preparation_base_commit": "7fc3ff6b8a4ddd20c0bd057f3bed3515cb36ff46",
+  "case_id": "OPENIRB-CROP-20261115-01",
+  "case_version": "0.1",
+  "case_preparation_base_commit": "33277b67ce0c5ed99c11f25410525b17d3fb2b0c"
+}

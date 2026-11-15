@@ -685,3 +685,14 @@ Run `python -S tools/validate_china_migration.py`.
 [极光行动、改革开放与手段正义：审判宣言](docs/operation_aurora/README_zh.md)
 保留吴孟城的两句原话，另附宣言扩写、公开归因与谷歌业务调整的事实说明，
 区分作者的政策伦理判断、企业归因和具体法律责任，附六项来源与校验清单。
+
+
+## Early-maturity crops and OpenIRB case (fork research archive)
+
+[早熟作物与地下生物学 v0.1](docs/research/early_maturity_crops/README_zh.md)
+preserves four crop candidates, 117 field definitions, 14 literature/method
+appraisals, an empty observation template, and the original ZIP/HTML with checksums.
+The [OpenIRB desk-review case](docs/research/early_maturity_crops/openirb/README_zh.md)
+adds an evidence ledger, conditional ethics/biosafety applicability, missing
+implementation documents and six review questions. It is a self-review of proposed
+research, not an ethics approval, completed field trial or finding of misconduct.

@@ -1,0 +1,46 @@
+[
+  {
+    "crop": "绿豆",
+    "comparison": "IPM 02-3 65–70天 vs Virat约55天",
+    "difference_days": [
+      10,
+      15
+    ],
+    "url": "https://www.icar-iipr.org.in/varieties/",
+    "evidence_status": "literature_reported",
+    "limitation": "品种资料比较，非同地随机对照；尚无这对材料的地下性状配套数据"
+  },
+  {
+    "crop": "水稻",
+    "comparison": "IR64 115–120天 vs IR50夏季105天",
+    "difference_days": [
+      10,
+      15
+    ],
+    "url": "https://agritech.tnau.ac.in/agriculture/agri_cereals_rice4.html",
+    "evidence_status": "literature_reported",
+    "limitation": "IR50冬季可达130天；不可忽略季节或育秧起点"
+  },
+  {
+    "crop": "大豆",
+    "comparison": "JS97-52约100天 vs JS20-34 86–88天",
+    "difference_days": [
+      12,
+      14
+    ],
+    "url": "https://icar-nsri.res.in/aicrps_var.html",
+    "evidence_status": "literature_reported",
+    "limitation": "相同区域品种资料，非本地同试验；光周期和菌株适配待测"
+  },
+  {
+    "crop": "籽粒玉米",
+    "comparison": "CO1 105–110天 vs COH(M)4代表值94天",
+    "difference_days": [
+      11,
+      16
+    ],
+    "url": "https://agritech.tnau.ac.in/agriculture/millets_maize_morphological_description.html",
+    "evidence_status": "literature_reported",
+    "limitation": "接近目标的候补；不能用鲜食、青贮收获时间替代籽粒成熟"
+  }
+]

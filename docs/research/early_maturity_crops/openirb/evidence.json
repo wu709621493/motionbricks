@@ -1,0 +1,80 @@
+[
+  {
+    "id": "A01",
+    "title": "早熟作物×地下生物学原始资料包 v0.1",
+    "url": "../Crop_Root_Rhizosphere_Review_v01.zip",
+    "locator": "五个原始成员；field_dictionary.fields、literature_review、observation_template.records",
+    "access": "本地完整字节及JSON检查",
+    "date": "2026-11-15",
+    "scope": "自审对象；没有田间数据"
+  },
+  {
+    "id": "A02",
+    "title": "经典研究及方法资料评议",
+    "url": "../literature_review.json",
+    "locator": "R01–R14，含verification字段",
+    "access": "沿用原资料逐项核验范围；本轮不将摘要核对升级为全文核对",
+    "date": "2026-11-15",
+    "scope": "原始实验、方法专著与背景综合分别标注；非14项独立田间试验"
+  },
+  {
+    "id": "A03",
+    "title": "候选作物生育期证据",
+    "url": "../candidate_evidence.json",
+    "locator": "四个候选及各自limitation和来源URL",
+    "access": "本地完整读取；本轮不重新验证全部外链",
+    "date": "2026-11-15",
+    "scope": "品种资料比较，不构成同品种加速干预的因果试验"
+  },
+  {
+    "id": "N01",
+    "title": "科技伦理审查办法（试行）",
+    "url": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2023/202310/t20231008_188309.html",
+    "locator": "第二、四、九、十九、二十、五十六条",
+    "access": "科技部官方全文已访问；页面标注有效",
+    "document_date": "2023-09-07",
+    "published_date": "2023-10-08",
+    "effective_date": "2023-12-01",
+    "date": "2026-11-15",
+    "scope": "中国科技伦理风险评估和相应审查；不因没有人体对象就自动排除生态伦理风险"
+  },
+  {
+    "id": "N02",
+    "title": "涉及人的生命科学和医学研究伦理审查办法",
+    "url": "https://www.nhc.gov.cn/qjjys/c100016/202302/6b6e447b3edc4338856c9a652a85f44b.shtml",
+    "locator": "第二、三条；国卫科教发〔2023〕4号",
+    "access": "官方搜索结果可核对范围条文；直接打开返回412，本轮没有取得完整正文",
+    "document_date": "2023-02-18",
+    "published_date": "2023-02-27",
+    "date": "2026-11-15",
+    "scope": "涉及人、人的样本或相关信息数据；仅用于本案范围判断，不签发豁免"
+  },
+  {
+    "id": "N03",
+    "title": "中华人民共和国生物安全法（2024年修正文本）",
+    "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_072313e1142c4ca193b8dc80d9c0e904.html",
+    "locator": "第三十四至三十八条；页首修正说明",
+    "access": "市场监管总局官方全文已访问，核对2024-04-26修正说明及相关条款",
+    "amended_date": "2024-04-26",
+    "date": "2026-11-15",
+    "scope": "生物技术活动安全责任与分类管理；尚无本项目材料足以判定具体风险类别"
+  },
+  {
+    "id": "D01",
+    "title": "Edwards et al. 2018 水稻菌群时间序列",
+    "url": "https://doi.org/10.1371/journal.pbio.2003862",
+    "locator": "Abstract、Results、Materials and methods、Data Availability；原评议R07",
+    "access": "前一轮出版社全文核对；本轮使用已记录结论",
+    "date": "2026-11-15",
+    "scope": "支持控制日龄与物候阶段；不证明菌群导致早熟"
+  },
+  {
+    "id": "M01",
+    "title": "Unkovich et al. 2008 ACIAR MN136",
+    "url": "https://www.aciar.gov.au/publication/books-and-manuals/measuring-plant-associated-nitrogen-fixation-agricultural-systems",
+    "locator": "原评议R10；同位素、参照和固氮方法口径",
+    "access": "前一轮官方书目及PDF针对性复核，未宣称穷尽精读",
+    "date": "2026-11-15",
+    "scope": "测定方法及假设；不能把结瘤或功能基因存在代为固定氮通量"
+  }
+]

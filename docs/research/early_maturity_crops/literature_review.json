@@ -1,0 +1,156 @@
+[
+  {
+    "id": "R01",
+    "citation": "Newman, 1966",
+    "title": "A method of estimating the total length of root in a sample",
+    "study_type": "方法原始论文",
+    "organism": "多种根样",
+    "url": "https://knowledgecenter.cimmyt.org/bib/19581",
+    "supports": "根长测定的线交法基础，适合低设备成本的定量参照。",
+    "limitations": "洗根损失、根重叠及取向影响估计；不代表根深或吸收功能。",
+    "verification": "书目及机构摘要核对"
+  },
+  {
+    "id": "R02",
+    "citation": "Tennant, 1975",
+    "title": "A Test of a Modified Line Intersect Method of Estimating Root Length",
+    "study_type": "方法原始论文",
+    "organism": "小麦根样",
+    "url": "https://www.jstor.org/stable/2258617",
+    "supports": "对改良线交法进行测试，为根长测定提供经典方法依据。",
+    "limitations": "不能将小麦方法的性能直接当作四种作物的本地验证。",
+    "verification": "书目及摘要核对；全文访问受限"
+  },
+  {
+    "id": "R03",
+    "citation": "Hardy et al., 1968",
+    "title": "The Acetylene-Ethylene Assay for N2 Fixation: Laboratory and Field Evaluation",
+    "study_type": "方法与实验",
+    "organism": "固氮微生物、豆科等",
+    "url": "https://doi.org/10.1104/pp.43.8.1185",
+    "supports": "乙炔还原法用于检测固氮酶活性。",
+    "limitations": "短时活性不能未经校准直接换算整个生长季固定氮；记录条件和归一化分母。",
+    "verification": "出版社/原论文索引摘要核对；全文访问受限"
+  },
+  {
+    "id": "R04",
+    "citation": "Kosslak et al., 1987",
+    "title": "Induction of Bradyrhizobium japonicum common nod genes by isoflavones isolated from Glycine max",
+    "study_type": "分子机制实验",
+    "organism": "大豆与根瘤菌",
+    "url": "https://doi.org/10.1073/pnas.84.21.7428",
+    "supports": "大豆异黄酮信号可诱导所研究菌株的nod基因表达。",
+    "limitations": "信号诱导不等于有效结瘤、净固氮或增产；不能直接外推绿豆。",
+    "verification": "原论文索引摘要核对"
+  },
+  {
+    "id": "R05",
+    "citation": "Lundberg et al., 2012",
+    "title": "Defining the core Arabidopsis thaliana root microbiome",
+    "study_type": "微生物组原始研究",
+    "organism": "拟南芥",
+    "url": "https://doi.org/10.1038/nature11237",
+    "supports": "分开根际与根内区室，考察土壤和宿主因素。",
+    "limitations": "拟南芥是方法学参照，不能提供四种作物的通用菌群名单。",
+    "verification": "原论文索引摘要核对；全文访问受限"
+  },
+  {
+    "id": "R06",
+    "citation": "Edwards et al., 2015",
+    "title": "Structure, variation, and assembly of the root-associated microbiomes of rice",
+    "study_type": "温室与多地点田间研究",
+    "organism": "水稻",
+    "url": "https://doi.org/10.1073/pnas.1414592112",
+    "supports": "区分根际、根表和根内；土壤、地点、宿主与栽培管理均影响菌群。",
+    "limitations": "共丰度网络和相对丰度不能单独证明互作因果或固氮通量。",
+    "verification": "出版社全文已访问，核对区室方法及结果"
+  },
+  {
+    "id": "R07",
+    "citation": "Edwards et al., 2018",
+    "title": "Compositional shifts in root-associated bacterial and archaeal microbiota track the plant life cycle in field-grown rice",
+    "study_type": "跨季节/地点时间序列",
+    "organism": "水稻",
+    "url": "https://doi.org/10.1371/journal.pbio.2003862",
+    "supports": "菌群变化同时关联日龄与发育转换；支持同日龄和同阶段两种比较。",
+    "limitations": "不能由相关性推导菌群造成早熟；研究材料的时间点不构成普遍阈值。",
+    "verification": "出版社全文已访问，核对摘要、方法与结果"
+  },
+  {
+    "id": "R08",
+    "citation": "Taramino et al., 2007",
+    "title": "The maize (Zea mays L.) RTCS gene encodes a LOB domain protein that is a key regulator of embryonic seminal and post-embryonic shoot-borne root initiation",
+    "study_type": "突变体与基因克隆",
+    "organism": "玉米",
+    "url": "https://doi.org/10.1111/j.1365-313X.2007.03075.x",
+    "supports": "RTCS参与种子根和茎生根发生；不同根类型需分别记录。",
+    "limitations": "证明根发生功能，不证明缩短生育期或在正常田间增产。",
+    "verification": "出版社全文已访问，核对突变体、基因及根表型"
+  },
+  {
+    "id": "R09",
+    "citation": "Uga et al., 2013",
+    "title": "Control of root system architecture by DEEPER ROOTING 1 increases rice yield under drought conditions",
+    "study_type": "遗传导入与干旱试验",
+    "organism": "水稻",
+    "url": "https://doi.org/10.1038/ng.2725",
+    "supports": "DRO1调节根构型，深根有助于研究条件下的干旱避让与产量保持。",
+    "limitations": "深根收益依赖土壤与水分；不构成早熟10–15天的证据。",
+    "verification": "出版社/原论文索引摘要核对；全文访问受限"
+  },
+  {
+    "id": "R10",
+    "citation": "Unkovich et al., 2008, ACIAR MN136",
+    "title": "Measuring plant-associated nitrogen fixation in agricultural systems",
+    "study_type": "官方方法学专著",
+    "organism": "农业固氮系统",
+    "url": "https://www.aciar.gov.au/publication/books-and-manuals/measuring-plant-associated-nitrogen-fixation-agricultural-systems",
+    "supports": "固氮方法选择、参照植物及同位素估计的经典手册。",
+    "limitations": "各方法假设不同，N差值、尿囊素、15N等估计不得混用；不能代替本地校准。",
+    "verification": "官方书目及全文PDF已访问；本次为针对性方法复核"
+  },
+  {
+    "id": "R11",
+    "citation": "Salvagiotti et al., 2008",
+    "title": "Nitrogen uptake, fixation and response to fertilizer N in soybeans: A review",
+    "study_type": "文献综合（背景）",
+    "organism": "大豆",
+    "url": "https://doi.org/10.1016/j.fcr.2008.03.001",
+    "supports": "汇总氮吸收、固氮和施氮响应；说明氮来源与产量关系需综合评价。",
+    "limitations": "综合均值不能填入本项目品种实测值；不是新的田间对照。",
+    "verification": "出版社摘要核对；作为背景综合，不充当原始试验"
+  },
+  {
+    "id": "R12",
+    "citation": "Ha et al., 2021",
+    "title": "A near-complete genome sequence of mungbean (Vigna radiata L.) provides key insights into the modern breeding program",
+    "study_type": "基因组与QTL研究",
+    "organism": "绿豆",
+    "url": "https://doi.org/10.1002/tpg2.20121",
+    "supports": "成熟同步性及相关候选基因，为地上物候与地下生理的联动分析提供背景。",
+    "limitations": "候选基因关联不等于根瘤因果，更没有证明本项目能减10–15天。",
+    "verification": "全文已在本次对话前一轮访问"
+  },
+  {
+    "id": "R13",
+    "citation": "GRDC GrowNotes, December 2014",
+    "title": "Mungbeans — Northern region",
+    "study_type": "官方栽培技术资料",
+    "organism": "绿豆",
+    "url": "https://grdc.com.au/__data/assets/pdf_file/0034/238975/grdc-grownotes-mungbeans-northern.pdf.pdf",
+    "supports": "资料记载固氮可在播种后约14–25天开始；短季作物依赖及时结瘤。",
+    "limitations": "澳大利亚资料；不是Virat或中国地块的通用固氮起始日。",
+    "verification": "官方PDF已访问；日期按文档封面而非搜索引擎抓取时间"
+  },
+  {
+    "id": "R14",
+    "citation": "Temporal biological nitrogen fixation pattern in soybean inoculated with Bradyrhizobium, 2020",
+    "title": "Temporal biological nitrogen fixation pattern in soybean inoculated with Bradyrhizobium",
+    "study_type": "时序固氮原始研究",
+    "organism": "大豆",
+    "url": "https://doi.org/10.1002/agg2.20079",
+    "supports": "所研究条件下R3和R5附近出现固氮速率峰值。",
+    "limitations": "峰值依材料和环境改变，不是大豆的固定日历；不外推绿豆。",
+    "verification": "出版社摘要核对"
+  }
+]

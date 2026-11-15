@@ -1,0 +1,1664 @@
+{
+  "version": "0.1",
+  "as_of": "2026-11-15",
+  "rules": {
+    "scope": "四种作物的早熟候选与地下生物学补充；非系统综述，非本地品种推荐，未开展新试验。",
+    "status_enum": [
+      "measured",
+      "literature_reported",
+      "derived",
+      "planned",
+      "not_measured",
+      "not_applicable",
+      "not_reported",
+      "below_detection"
+    ],
+    "missing_rule": "缺失值用null并附status；不得用0表示未测或不适用；检出限以下保留LOD。",
+    "observation_unit": "一条观测对应一个样本、时间、区室/土层和field_id；技术重复嵌套于生物重复。",
+    "comparison_rule": "同日龄与同发育阶段分别分析；环境×品种×季节的影响不能由品种标称成熟天数消除。",
+    "inference_rule": "文献品种间差值不是同一品种加速干预的因果证据；根瘤数、nifH和菌群相关性均非固氮通量替代。",
+    "noninferiority_rule": "成熟提前10–15天与产量/品质保持需分别检验；不劣界值、功效及独立小区数须在试验前确定。"
+  },
+  "fields": [
+    {
+      "field_id": "study_id",
+      "label_zh": "研究编号",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "跨表连接键",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "site_id",
+      "label_zh": "地点编号",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "记录经纬度、海拔和场地类型的外部表键",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "latitude_deg",
+      "label_zh": "纬度",
+      "domain": "身份与试验设计",
+      "data_type": "number",
+      "unit": "degree",
+      "applicability": "全部",
+      "definition_or_method": "北纬为正",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "longitude_deg",
+      "label_zh": "经度",
+      "domain": "身份与试验设计",
+      "data_type": "number",
+      "unit": "degree",
+      "applicability": "全部",
+      "definition_or_method": "东经为正",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "season_year",
+      "label_zh": "年份",
+      "domain": "身份与试验设计",
+      "data_type": "integer",
+      "unit": "year",
+      "applicability": "全部",
+      "definition_or_method": "试验年份",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "season_label",
+      "label_zh": "季别",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "春夏秋冬或当地农季",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "crop_species",
+      "label_zh": "作物学名",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "固定学名；不把不同用途材料混为同一终点",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "cultivar",
+      "label_zh": "品种",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "完整编号与种源",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "seed_lot",
+      "label_zh": "种子批次",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "种源和批次可追溯",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "genotype_markers",
+      "label_zh": "相关基因型",
+      "domain": "身份与试验设计",
+      "data_type": "object",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "注明基因组版本、位点及分型证据；未知为null",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "reference_assembly",
+      "label_zh": "参考基因组版本",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "组装编号/注释版本；不以物种名代替版本",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "treatment_id",
+      "label_zh": "处理编号",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "早熟材料或处理及对照定义",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "plot_id",
+      "label_zh": "小区编号",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "田间实验单位",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "block_id",
+      "label_zh": "区组编号",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "随机区组或其他设计",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "plant_id",
+      "label_zh": "植株编号",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "植株嵌套于小区；不作为独立田间重复",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "sample_id",
+      "label_zh": "样本编号",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "每次破坏性取样单独编号",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "previous_crop",
+      "label_zh": "前茬",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "作物及残体处置",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "cropping_history",
+      "label_zh": "种植历史",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "近年豆科、接种和病害记录",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "harvest_use",
+      "label_zh": "收获用途",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "干籽粒/鲜食/青贮分开",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "randomization",
+      "label_zh": "随机化方法",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "说明分配及空间阻断",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "biological_replicate_n",
+      "label_zh": "独立生物重复数",
+      "domain": "身份与试验设计",
+      "data_type": "integer",
+      "unit": "count",
+      "applicability": "全部",
+      "definition_or_method": "单位必须是独立小区或独立盆",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "technical_replicate_n",
+      "label_zh": "技术重复数",
+      "domain": "身份与试验设计",
+      "data_type": "integer",
+      "unit": "count",
+      "applicability": "全部",
+      "definition_or_method": "不能替代生物重复",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "destructive_sampling",
+      "label_zh": "破坏性取样",
+      "domain": "身份与试验设计",
+      "data_type": "boolean",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "标记重复取样是否来自不同植株",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "protocol_version",
+      "label_zh": "方法版本",
+      "domain": "身份与试验设计",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "方法文件与版本可追溯",
+      "source_ids": [],
+      "default_value": null
+    },
+    {
+      "field_id": "sowing_date",
+      "label_zh": "播种日",
+      "domain": "物候与时间",
+      "data_type": "string",
+      "unit": "ISO8601 date",
+      "applicability": "全部",
+      "definition_or_method": "稻作包含育秧起点",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "emergence_date",
+      "label_zh": "出苗日",
+      "domain": "物候与时间",
+      "data_type": "string",
+      "unit": "ISO8601 date",
+      "applicability": "全部",
+      "definition_or_method": "注明出苗比例阈值",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "transplant_date",
+      "label_zh": "移栽日",
+      "domain": "物候与时间",
+      "data_type": "string",
+      "unit": "ISO8601 date",
+      "applicability": "全部",
+      "definition_or_method": "直播为not_applicable",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "sample_datetime",
+      "label_zh": "采样时间",
+      "domain": "物候与时间",
+      "data_type": "string",
+      "unit": "ISO8601 datetime",
+      "applicability": "全部",
+      "definition_or_method": "含时区及日内采样时间",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "days_after_sowing",
+      "label_zh": "播种后天数",
+      "domain": "物候与时间",
+      "data_type": "number",
+      "unit": "d",
+      "applicability": "全部",
+      "definition_or_method": "采样日减播种日",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "days_after_transplant",
+      "label_zh": "移栽后天数",
+      "domain": "物候与时间",
+      "data_type": "number",
+      "unit": "d",
+      "applicability": "全部",
+      "definition_or_method": "直播为not_applicable；不得替代全生育期",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "growth_stage",
+      "label_zh": "发育阶段",
+      "domain": "物候与时间",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "注明BBCH或作物专用阶段体系",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "stage_definition",
+      "label_zh": "阶段定义",
+      "domain": "物候与时间",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "大豆R1/R5/R7/R8等；稻抽穗比例阈值",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "first_flower_date",
+      "label_zh": "初花日",
+      "domain": "物候与时间",
+      "data_type": "string",
+      "unit": "ISO8601 date",
+      "applicability": "全部",
+      "definition_or_method": "注明判定标准",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "heading_silking_date",
+      "label_zh": "抽穗或吐丝日",
+      "domain": "物候与时间",
+      "data_type": "string",
+      "unit": "ISO8601 date",
+      "applicability": "全部",
+      "definition_or_method": "作物特定终点；附比例阈值",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "physiological_maturity_date",
+      "label_zh": "生理成熟日",
+      "domain": "物候与时间",
+      "data_type": "string",
+      "unit": "ISO8601 date",
+      "applicability": "全部",
+      "definition_or_method": "与适宜收获日分开",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "final_harvest_date",
+      "label_zh": "末次收获日",
+      "domain": "物候与时间",
+      "data_type": "string",
+      "unit": "ISO8601 date",
+      "applicability": "全部",
+      "definition_or_method": "绿豆多次收获需记录末次清田",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "field_occupancy_days",
+      "label_zh": "田块占用天数",
+      "domain": "物候与时间",
+      "data_type": "number",
+      "unit": "d",
+      "applicability": "全部",
+      "definition_or_method": "大田播种/移栽至清田；说明育秧占地另计",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "turnaround_days",
+      "label_zh": "换茬间隔",
+      "domain": "物候与时间",
+      "data_type": "number",
+      "unit": "d",
+      "applicability": "全部",
+      "definition_or_method": "前茬清田至后茬播种或移栽",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "growing_degree_days",
+      "label_zh": "有效积温",
+      "domain": "物候与时间",
+      "data_type": "number",
+      "unit": "degree_C_d",
+      "applicability": "全部",
+      "definition_or_method": "必须连同基温、上限和计算法",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "gdd_model",
+      "label_zh": "积温算法",
+      "domain": "物候与时间",
+      "data_type": "object",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "基温、上限、逐日或逐小时算法",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "photoperiod_h",
+      "label_zh": "光周期",
+      "domain": "物候与时间",
+      "data_type": "number",
+      "unit": "h_d-1",
+      "applicability": "全部",
+      "definition_or_method": "测得或由纬度日期计算，注明方法",
+      "source_ids": [
+        "R07",
+        "R12"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "soil_depth_top_cm",
+      "label_zh": "土层上界",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "cm",
+      "applicability": "全部",
+      "definition_or_method": "地表为0",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "soil_depth_bottom_cm",
+      "label_zh": "土层下界",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "cm",
+      "applicability": "全部",
+      "definition_or_method": "须大于上界",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "soil_core_volume_cm3",
+      "label_zh": "取土体积",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "cm3",
+      "applicability": "全部",
+      "definition_or_method": "用于根长密度的分母",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "root_type",
+      "label_zh": "根类型",
+      "domain": "根系构型",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "主根/种子根/冠根/支撑根/侧根；按作物定义",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "total_root_length_cm",
+      "label_zh": "样本总根长",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "cm",
+      "applicability": "全部",
+      "definition_or_method": "注明洗根筛孔、扫描或线交法",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "root_length_density",
+      "label_zh": "根长密度",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "cm_cm-3",
+      "applicability": "全部",
+      "definition_or_method": "根长除以对应原位土体积",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "root_dry_mass_g",
+      "label_zh": "根干重",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "g",
+      "applicability": "全部",
+      "definition_or_method": "记录取样范围、烘干温度及恒重标准",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "shoot_dry_mass_g",
+      "label_zh": "地上部干重",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "g",
+      "applicability": "全部",
+      "definition_or_method": "与根样同单位和同采样时间",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "root_shoot_ratio",
+      "label_zh": "根冠比",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "g_g-1",
+      "applicability": "全部",
+      "definition_or_method": "根干重/地上部干重；不混用鲜重",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "root_angle_deg",
+      "label_zh": "根角度",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "degree",
+      "applicability": "全部",
+      "definition_or_method": "必须声明相对水平面还是垂直方向",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "root_diameter_mm",
+      "label_zh": "根直径",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "mm",
+      "applicability": "全部",
+      "definition_or_method": "按直径级统计；保留算法",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "specific_root_length",
+      "label_zh": "比根长",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "m_g-1",
+      "applicability": "全部",
+      "definition_or_method": "根长/根干重；同一子样",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "rooting_depth_cm",
+      "label_zh": "观测根深",
+      "domain": "根系构型",
+      "data_type": "number",
+      "unit": "cm",
+      "applicability": "全部",
+      "definition_or_method": "观测最大深度受采样深度限制",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "root_measurement_method",
+      "label_zh": "根测量方法",
+      "domain": "根系构型",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "设备、软件、分辨率、阈值、洗根流程",
+      "source_ids": [
+        "R01",
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "inoculation_status",
+      "label_zh": "接种状态",
+      "domain": "豆科结瘤",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "绿豆、大豆；水稻和玉米普通栽培条件下设not_applicable，不填0",
+      "definition_or_method": "接种/未接种/本底菌存在/未知",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R13",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "rhizobial_strain_id",
+      "label_zh": "根瘤菌株",
+      "domain": "豆科结瘤",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "绿豆、大豆；水稻和玉米普通栽培条件下设not_applicable，不填0",
+      "definition_or_method": "保藏编号与鉴定依据；不由宿主推断菌种",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R13",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "inoculation_method",
+      "label_zh": "接种方法",
+      "domain": "豆科结瘤",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "绿豆、大豆；水稻和玉米普通栽培条件下设not_applicable，不填0",
+      "definition_or_method": "载体、时点、剂量和活菌计数依据",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R13",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "nodule_number_per_plant",
+      "label_zh": "每株根瘤数",
+      "domain": "豆科结瘤",
+      "data_type": "number",
+      "unit": "count_plant-1",
+      "applicability": "绿豆、大豆；水稻和玉米普通栽培条件下设not_applicable，不填0",
+      "definition_or_method": "记录是否完整挖根",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R13",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "nodule_dry_mass_g",
+      "label_zh": "每株根瘤干重",
+      "domain": "豆科结瘤",
+      "data_type": "number",
+      "unit": "g_plant-1",
+      "applicability": "绿豆、大豆；水稻和玉米普通栽培条件下设not_applicable，不填0",
+      "definition_or_method": "与根干重分开，注明是否包含根瘤",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R13",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "nodule_location",
+      "label_zh": "结瘤位置",
+      "domain": "豆科结瘤",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "绿豆、大豆；水稻和玉米普通栽培条件下设not_applicable，不填0",
+      "definition_or_method": "主根/侧根/根颈附近及深度",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R13",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "nodule_internal_colour",
+      "label_zh": "根瘤内部颜色",
+      "domain": "豆科结瘤",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "绿豆、大豆；水稻和玉米普通栽培条件下设not_applicable，不填0",
+      "definition_or_method": "粉红等仅作辅助表型，不代替固氮测量",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R13",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "first_nodulation_das",
+      "label_zh": "首次观察结瘤日龄",
+      "domain": "豆科结瘤",
+      "data_type": "number",
+      "unit": "d",
+      "applicability": "绿豆、大豆；水稻和玉米普通栽培条件下设not_applicable，不填0",
+      "definition_or_method": "属于区间受限观测，注明巡查间隔",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R13",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "first_fixation_das",
+      "label_zh": "首次检出固氮日龄",
+      "domain": "豆科结瘤",
+      "data_type": "number",
+      "unit": "d",
+      "applicability": "绿豆、大豆；水稻和玉米普通栽培条件下设not_applicable，不填0",
+      "definition_or_method": "必须有方法和检出限",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R13",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "nodule_occupancy",
+      "label_zh": "接种菌占瘤比例",
+      "domain": "豆科结瘤",
+      "data_type": "number",
+      "unit": "fraction",
+      "applicability": "绿豆、大豆；水稻和玉米普通栽培条件下设not_applicable，不填0",
+      "definition_or_method": "菌株分型结果；不由接种与否推断",
+      "source_ids": [
+        "R04",
+        "R10",
+        "R13",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "fixation_method",
+      "label_zh": "固氮测定法",
+      "domain": "固氮与植株氮",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "ARA/15N自然丰度/同位素稀释/直接15N2/尿囊素等",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "ara_rate",
+      "label_zh": "乙炔还原速率",
+      "domain": "固氮与植株氮",
+      "data_type": "number",
+      "unit": "nmol_C2H4_plant-1_h-1",
+      "applicability": "全部",
+      "definition_or_method": "记录孵育时间、温度、气体比例与归一化分母",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "ara_conditions",
+      "label_zh": "ARA条件",
+      "domain": "固氮与植株氮",
+      "data_type": "object",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "密闭系统、空白、漏气、仪器校准；不固定通用转化系数",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "ndfa_fraction",
+      "label_zh": "氮来自空气比例",
+      "domain": "固氮与植株氮",
+      "data_type": "number",
+      "unit": "fraction",
+      "applicability": "全部",
+      "definition_or_method": "仅经相应方法估计；0到1",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "reference_plant_id",
+      "label_zh": "参照植物编号",
+      "domain": "固氮与植株氮",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "同位素方法非固氮参照及匹配依据",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "delta15n_sample_permil",
+      "label_zh": "样品δ15N",
+      "domain": "固氮与植株氮",
+      "data_type": "number",
+      "unit": "permil",
+      "applicability": "全部",
+      "definition_or_method": "注明标准",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "delta15n_reference_permil",
+      "label_zh": "参照δ15N",
+      "domain": "固氮与植株氮",
+      "data_type": "number",
+      "unit": "permil",
+      "applicability": "全部",
+      "definition_or_method": "同环境非固氮参照",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "b_value_permil",
+      "label_zh": "B值",
+      "domain": "固氮与植株氮",
+      "data_type": "number",
+      "unit": "permil",
+      "applicability": "全部",
+      "definition_or_method": "对应宿主/菌株/组织及来源，不擅用通用常数",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "plant_n_concentration",
+      "label_zh": "植株氮质量分数",
+      "domain": "固氮与植株氮",
+      "data_type": "number",
+      "unit": "fraction",
+      "applicability": "全部",
+      "definition_or_method": "干物质基础；注明组织",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "plant_n_kg_ha",
+      "label_zh": "植株氮积累",
+      "domain": "固氮与植株氮",
+      "data_type": "number",
+      "unit": "kg_N_ha-1",
+      "applicability": "全部",
+      "definition_or_method": "干物质量×氮质量分数；面积换算需依据",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "fixed_n_kg_ha",
+      "label_zh": "累计固定氮",
+      "domain": "固氮与植株氮",
+      "data_type": "number",
+      "unit": "kg_N_ha-1",
+      "applicability": "全部",
+      "definition_or_method": "适用时由Ndfa×对应氮积累估算；注明组织覆盖与采样时点",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "ureide_fraction",
+      "label_zh": "尿囊素相关指标",
+      "domain": "固氮与植株氮",
+      "data_type": "number",
+      "unit": "fraction",
+      "applicability": "全部",
+      "definition_or_method": "限定经验证宿主与组织；记录公式与校准",
+      "source_ids": [
+        "R03",
+        "R10",
+        "R14"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "soil_type",
+      "label_zh": "土壤类型",
+      "domain": "土壤与根际环境",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "分类体系和质地",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "soil_temperature_c",
+      "label_zh": "土温",
+      "domain": "土壤与根际环境",
+      "data_type": "number",
+      "unit": "degree_C",
+      "applicability": "全部",
+      "definition_or_method": "记录深度与传感器",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "soil_water_content",
+      "label_zh": "土壤含水率",
+      "domain": "土壤与根际环境",
+      "data_type": "number",
+      "unit": "fraction",
+      "applicability": "全部",
+      "definition_or_method": "标明体积或质量基础",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "soil_moisture_basis",
+      "label_zh": "含水率基础",
+      "domain": "土壤与根际环境",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "volumetric或gravimetric",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "soil_ph",
+      "label_zh": "土壤pH",
+      "domain": "土壤与根际环境",
+      "data_type": "number",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "记录水或盐浸提及土液比",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "nitrate_n_mg_kg",
+      "label_zh": "硝态氮",
+      "domain": "土壤与根际环境",
+      "data_type": "number",
+      "unit": "mg_N_kg-1_dry_soil",
+      "applicability": "全部",
+      "definition_or_method": "以N计；记录浸提法",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "ammonium_n_mg_kg",
+      "label_zh": "铵态氮",
+      "domain": "土壤与根际环境",
+      "data_type": "number",
+      "unit": "mg_N_kg-1_dry_soil",
+      "applicability": "全部",
+      "definition_or_method": "以N计；记录浸提法",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "available_p_mg_kg",
+      "label_zh": "有效磷",
+      "domain": "土壤与根际环境",
+      "data_type": "number",
+      "unit": "mg_P_kg-1_dry_soil",
+      "applicability": "全部",
+      "definition_or_method": "Olsen/Bray等方法不可直接混用",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "bulk_density_g_cm3",
+      "label_zh": "土壤容重",
+      "domain": "土壤与根际环境",
+      "data_type": "number",
+      "unit": "g_cm-3",
+      "applicability": "全部",
+      "definition_or_method": "土层氮储量换算需要",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "fertilizer_n_kg_ha",
+      "label_zh": "施氮量",
+      "domain": "土壤与根际环境",
+      "data_type": "number",
+      "unit": "kg_N_ha-1",
+      "applicability": "全部",
+      "definition_or_method": "分次施用时保留日期与形态",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "irrigation_log",
+      "label_zh": "灌溉记录",
+      "domain": "土壤与根际环境",
+      "data_type": "array",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "记录日期、水量及排水",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "water_regime",
+      "label_zh": "水分管理",
+      "domain": "土壤与根际环境",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "淹水/间歇灌溉/旱作；水稻尤需记录",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "postharvest_soil_n",
+      "label_zh": "收后土壤氮",
+      "domain": "土壤与根际环境",
+      "data_type": "number",
+      "unit": "mg_N_kg-1_dry_soil",
+      "applicability": "全部",
+      "definition_or_method": "标明总氮或矿质氮、土层、方法，不混为单一指标",
+      "source_ids": [
+        "R06",
+        "R10"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "compartment",
+      "label_zh": "样本区室",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "bulk_soil/rhizosphere/rhizoplane/endosphere；根瘤另列",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "compartment_protocol",
+      "label_zh": "区室分离方法",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "抖土、洗涤、超声及表面处理均需记录",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "storage_protocol",
+      "label_zh": "保存方法",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "采后延迟、温度、冻融次数",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "extraction_batch",
+      "label_zh": "提取批次",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "与处理组随机化",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "extraction_blank_id",
+      "label_zh": "提取空白",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "防止低生物量污染误判",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "pcr_negative_id",
+      "label_zh": "PCR阴性对照",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "样本或批次连接键",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "positive_control_id",
+      "label_zh": "阳性/模拟群落对照",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "采用时记录，不冒充必有",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "sequencing_assay",
+      "label_zh": "测序类型",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "16S/ITS/shotgun等；16S不涵盖全部真菌",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "primer_region",
+      "label_zh": "引物与区域",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "序列或明确文献链接",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "raw_data_accession",
+      "label_zh": "原始数据编号",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "SRA/ENA等；未知null",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "pipeline_version",
+      "label_zh": "分析流程版本",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "过滤、去污染、分类数据库及版本",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "microbial_feature_table",
+      "label_zh": "菌群特征表路径",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "ASV/OTU/基因；不得将相对丰度当绝对数量",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "absolute_load_method",
+      "label_zh": "绝对负荷方法",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "qPCR/spike-in等，仅在实际测定时填写",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "functional_evidence",
+      "label_zh": "功能证据",
+      "domain": "根际微生物",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "nifH存在/表达/酶活/直接同位素通量分级，不等价",
+      "source_ids": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "grain_yield_kg_ha",
+      "label_zh": "籽粒产量",
+      "domain": "收获与氮收支",
+      "data_type": "number",
+      "unit": "kg_ha-1",
+      "applicability": "全部",
+      "definition_or_method": "记录收获面积、损失及水分校正",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "grain_moisture_fraction",
+      "label_zh": "籽粒含水率",
+      "domain": "收获与氮收支",
+      "data_type": "number",
+      "unit": "fraction",
+      "applicability": "全部",
+      "definition_or_method": "声明湿基",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "standard_moisture_fraction",
+      "label_zh": "标准含水率",
+      "domain": "收获与氮收支",
+      "data_type": "number",
+      "unit": "fraction",
+      "applicability": "全部",
+      "definition_or_method": "不同作物标准另定，不跨口径比较",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "grain_protein_fraction",
+      "label_zh": "籽粒蛋白质量分数",
+      "domain": "收获与氮收支",
+      "data_type": "number",
+      "unit": "fraction",
+      "applicability": "全部",
+      "definition_or_method": "注明干湿基、总氮换算系数或直接测法",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "thousand_seed_mass_g",
+      "label_zh": "千粒重",
+      "domain": "收获与氮收支",
+      "data_type": "number",
+      "unit": "g",
+      "applicability": "全部",
+      "definition_or_method": "注明含水率",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "seed_germination_fraction",
+      "label_zh": "种子发芽率",
+      "domain": "收获与氮收支",
+      "data_type": "number",
+      "unit": "fraction",
+      "applicability": "全部",
+      "definition_or_method": "若作为种用材料，按规定方法测定",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "residue_management",
+      "label_zh": "残体去向",
+      "domain": "收获与氮收支",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "还田/移除/饲用及数量",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "residue_n_kg_ha",
+      "label_zh": "残体氮",
+      "domain": "收获与氮收支",
+      "data_type": "number",
+      "unit": "kg_N_ha-1",
+      "applicability": "全部",
+      "definition_or_method": "是否包括地下残体须说明",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "grain_n_export_kg_ha",
+      "label_zh": "籽粒带走氮",
+      "domain": "收获与氮收支",
+      "data_type": "number",
+      "unit": "kg_N_ha-1",
+      "applicability": "全部",
+      "definition_or_method": "对应产量和氮浓度的质量基础一致",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "n_budget_boundary",
+      "label_zh": "氮收支边界",
+      "domain": "收获与氮收支",
+      "data_type": "string",
+      "unit": null,
+      "applicability": "全部",
+      "definition_or_method": "土层、组织、季节、气体和淋失是否覆盖",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "n_budget_kg_ha",
+      "label_zh": "氮收支",
+      "domain": "收获与氮收支",
+      "data_type": "number",
+      "unit": "kg_N_ha-1",
+      "applicability": "全部",
+      "definition_or_method": "注明输入输出公式；未测项不默认为零",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "annual_system_yield",
+      "label_zh": "全年体系产量",
+      "domain": "收获与氮收支",
+      "data_type": "number",
+      "unit": "kg_ha-1_year-1",
+      "applicability": "全部",
+      "definition_or_method": "跨作物相加仅限明示物质量；营养/经济产出另定义",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    },
+    {
+      "field_id": "annual_harvest_count",
+      "label_zh": "年内收获季数",
+      "domain": "收获与氮收支",
+      "data_type": "integer",
+      "unit": "count",
+      "applicability": "全部",
+      "definition_or_method": "同地块、同一年；区分同种连作与轮作三熟",
+      "source_ids": [
+        "R10",
+        "R11"
+      ],
+      "default_value": null
+    }
+  ]
+}
