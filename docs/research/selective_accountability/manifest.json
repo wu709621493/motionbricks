@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "version": "0.1",
+  "date": "2026-11-16",
+  "repository": "wu709621493/motionbricks",
+  "base_commit": "6c47fa4648da77d05271f9c9f9d9ea7710dbb242",
+  "source_count": 26,
+  "claim_count": 15,
+  "files": [
+    {
+      "path": "README_zh.md",
+      "bytes": 12187,
+      "sha256": "b7d1f5bade91117ac80fe69bd85d9b379cce6387633c25d8638bc9b5e4dc11b8"
+    },
+    {
+      "path": "discussion_original_zh.md",
+      "bytes": 1104,
+      "sha256": "b277f5321997be24842ec706f6f271053f2896d28fe59a4c66d2e8d94bfee0d4"
+    },
+    {
+      "path": "evidence.csv",
+      "bytes": 1737,
+      "sha256": "fc9b2982b11f118fbac36a7c3fd41fde1bd20d6d78e62bdfb4ff7ef9524c5206"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 16581,
+      "sha256": "b95d4093fd5fc6dfc7b0334121a775acacd8cab1a06cce0af6b34df5a7afb1d1"
+    },
+    {
+      "path": "sources_zh.md",
+      "bytes": 13600,
+      "sha256": "24870950786b5d3b385426323d4fbc7ac9b4f7daa8a8c1f9008b2312b1fe95c9"
+    }
+  ],
+  "scope": "本次新增中文文献整理；无既有二进制原件。保留相关用户原话，不含完整聊天或敏感个人资料。未联系第三方，未实施访谈或调查。",
+  "verification_scope": "来源编号、表内来源引用、相对链接、UTF-8、文件字节数及SHA-256；网页仅核对已记录读取范围，不宣称全部原文可访问。"
+}
