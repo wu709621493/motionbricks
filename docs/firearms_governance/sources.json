@@ -1,0 +1,189 @@
+{
+  "version": "0.1",
+  "accessed_timezone": "Asia/Shanghai",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Republican presidential debate, Houston transcript",
+      "publisher": "CNN",
+      "published": "2016-02-25",
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://transcripts.cnn.com/show/se/date/2016-02-25/segment/01"
+      ],
+      "supports": "五人阵容与辩论背景",
+      "limits": "实录标为初稿；不用于证明任何人的后续枪支政策。"
+    },
+    {
+      "id": "S02",
+      "title": "Update on the FBI Investigation of the Attempted Assassination of Former President Donald Trump",
+      "publisher": "FBI",
+      "published": null,
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://www.fbi.gov/news/press-releases/update-on-the-fbi-investigation-of-the-attempted-assassination-of-former-president-donald-trump"
+      ],
+      "supports": "2024-07-13巴特勒事件的未遂刺杀调查定性",
+      "limits": "调查页面不提供本次讨论所需的个案医疗与安保总成本。"
+    },
+    {
+      "id": "S03",
+      "title": "Utah Valley Shooting Updates",
+      "publisher": "FBI",
+      "published": null,
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://www.fbi.gov/news/press-releases/utah-valley-shooting-updates"
+      ],
+      "supports": "Charlie Kirk于2025-09-10在犹他谷大学遇害",
+      "limits": "不据此推定党派政策共识或未经裁判的嫌疑人责任。"
+    },
+    {
+      "id": "S04",
+      "title": "American Eagle Rifle, 223 Rem, 55 Grain",
+      "publisher": "Federal Ammunition",
+      "published": null,
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://www.federalpremium.com/rifle/american-eagle/american-eagle-rifle/11-AE223.html"
+      ],
+      "supports": "标价14.99美元、20发包装；算术约每发0.75美元",
+      "limits": "单一商品检索时标价；未计税运费，不是市场均价或案涉弹药鉴定。"
+    },
+    {
+      "id": "S05",
+      "title": "Health Care Costs of Firearm Injury Hospital Visits in the US",
+      "publisher": "JAMA Health Forum",
+      "published": "2025-09-26",
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://jamanetwork.com/journals/jama-health-forum/fullarticle/2839237",
+        "https://doi.org/10.1001/jamahealthforum.2025.3299"
+      ],
+      "supports": "2016—2021年初次急诊/住院总医疗成本约77亿美元；初次住院均值38879美元，2024年美元口径",
+      "limits": "六州及全国辅助信息的模型估计；非全国逐账单普查，非终身成本、账单收费或单颗子弹损失。已核对2025-11-07更正。"
+    },
+    {
+      "id": "S06",
+      "title": "Errors in Text, Tables, and Figure",
+      "publisher": "JAMA Health Forum",
+      "published": "2025-11-07",
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://jamanetwork.com/journals/jama-health-forum/fullarticle/2840806"
+      ],
+      "supports": "S05的更正说明：移除相关社区暴力预防项目资料，修正Medicaid成本文字",
+      "limits": "本文使用当前正文的总体成本和均值，不使用已删除项目作为效果证据。"
+    },
+    {
+      "id": "S07",
+      "title": "Firearm Injuries: Health Care Service Needs and Costs, GAO-21-515",
+      "publisher": "U.S. Government Accountability Office",
+      "published": "2021-06-16",
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://www.gao.gov/products/gao-21-515"
+      ],
+      "supports": "2016/2017年初次医院成本每年略高于10亿美元；长期照护与数据局限",
+      "limits": "2021-07-14公开发布；数据年份早，不代表2026年支出；不能与S05重叠相加。"
+    },
+    {
+      "id": "S08",
+      "title": "27 CFR §478.97 — Loan or rental of firearms",
+      "publisher": "Code of Federal Regulations, reproduced by Cornell LII",
+      "published": null,
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://www.law.cornell.edu/cfr/text/27/478.97"
+      ],
+      "supports": "现场俱乐部临时供枪的有限规则",
+      "limits": "法规原文镜像；不能推广成所有保管、领还、商业经营豁免。ATF eRegulations直达页回读曾返回错误，最终以LII正文核对。"
+    },
+    {
+      "id": "S09",
+      "title": "10 U.S.C. §246 — Militia: composition and classes",
+      "publisher": "Office of the Law Revision Counsel, U.S. House",
+      "published": null,
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://uscode.house.gov/us/usc/t10/s246/"
+      ],
+      "supports": "有组织和未组织民兵的法定分类",
+      "limits": "本条分类本身不是私人武装组织公共执法权的授权。"
+    },
+    {
+      "id": "S10",
+      "title": "18 U.S.C. §1385 — Use of Army, Navy, Marine Corps, Air Force, and Space Force as posse comitatus",
+      "publisher": "Office of the Law Revision Counsel, U.S. House",
+      "published": null,
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://uscode.house.gov/us/usc/t18/s1385/"
+      ],
+      "supports": "联邦军种参与执行法律的限制及明确授权例外",
+      "limits": "任务授权、其他法律和服役身份仍需具体核对。"
+    },
+    {
+      "id": "S11",
+      "title": "Federal Emergency Management: An Introduction, R42845",
+      "publisher": "Congressional Research Service",
+      "published": null,
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://www.congress.gov/crs_external_products/R/PDF/R42845/R42845.4.pdf"
+      ],
+      "supports": "国民警卫队州与联邦身份、州身份下的相关执法限制区别",
+      "limits": "本次可读范围为检索返回的相关章节；不构成对具体派遣命令的全面法律审查。"
+    },
+    {
+      "id": "S12",
+      "title": "District of Columbia v. Heller, 554 U.S. 570",
+      "publisher": "Supreme Court of the United States",
+      "published": "2008-06-26",
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://tile.loc.gov/storage-services/service/ll/usrep/usrep554/usrep554570/usrep554570.pdf"
+      ],
+      "supports": "住宅内可即时自卫手枪的个人权利及案涉禁令无效",
+      "limits": "强制离家保管的障碍为本文据判决所作判断；未裁决本文具体未来方案，亦非50州法律普查。"
+    },
+    {
+      "id": "S13",
+      "title": "Privately Made Firearms; Firearms Questions and Answers",
+      "publisher": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+      "published": null,
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://www.atf.gov/firearms/privately-made-firearms",
+        "https://www.atf.gov/firearms/questions-and-answers"
+      ],
+      "supports": "并非所有PMF违法；个人自用制造与经营性制造许可的区别",
+      "limits": "PMF页标注2025-09-11更新；联邦限制、NFA、州地方法仍须适用；未声称个人制造不受约束。"
+    },
+    {
+      "id": "S14",
+      "title": "Bondi v. VanDerStok, No. 23-852",
+      "publisher": "Supreme Court of the United States",
+      "published": "2025-03-26",
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://www.supremecourt.gov/opinions/24pdf/23-852_o7jp.pdf"
+      ],
+      "supports": "ATF规则对某些套件和未完成枪架/机匣的法定覆盖",
+      "limits": "判决为对规则表面合法性的审查；未禁止全部自制、打印文件或所有套件。"
+    },
+    {
+      "id": "S15",
+      "title": "DOJ and ATF Announce Regulatory Reforms to Reduce Burdens on Law-Abiding Gun Owners and Businesses",
+      "publisher": "U.S. Department of Justice",
+      "published": "2026-04-29",
+      "accessed": "2026-11-15",
+      "urls": [
+        "https://www.justice.gov/opa/pr/doj-and-atf-announce-regulatory-reforms-reduce-burdens-law-abiding-gun-owners-and-businesses"
+      ],
+      "supports": "34项最终及拟议规则的公告方向",
+      "limits": "公告不等于所有规则均已生效，不用于代替逐条最新法规核对。"
+    }
+  ]
+}
+

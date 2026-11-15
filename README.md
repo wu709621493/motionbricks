@@ -671,3 +671,11 @@ provides sourced public aggregate observations, selected 2020 interprovincial
 corridors, historical evidence records, and a versioned metadata extension for
 regional ancestry research. It does not infer participant origins or modify All of Us.
 Run `python -S tools/validate_china_migration.py`.
+
+## Firearms custody and public costs (fork policy discussion)
+
+[枪支的公共成本、专业保管与制造责任](docs/firearms_governance/README_zh.md)
+整理吴孟城关于枪伤成本、企业与俱乐部保管、民兵及军队依法参与、
+防止无监管3D打印枪支制造的主张；附用户原话、15项来源与版本校验清单。
+区分现行法律、政策建议和未实施的试点评估，不宣称已有党派共识或政策效果。
+
