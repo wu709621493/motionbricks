@@ -1,0 +1,306 @@
+{
+  "case_id": "OPENIRB-CROP-20261115-01",
+  "version": "0.1",
+  "review_date": "2026-11-15",
+  "timezone": "Asia/Shanghai",
+  "case_type": "prospective_desk_self_review",
+  "title_zh": "早熟作物与根际/根瘤共生的证据及审批适用性审核",
+  "review_status": "DESK_REVIEW_ONLY_NOT_ETHICS_APPROVAL",
+  "independent_review": false,
+  "approval_id": null,
+  "institution": null,
+  "implementation_site": null,
+  "planned_trial_start": null,
+  "trial_status": "NOT_RUN",
+  "materials_status": "not_finalized",
+  "scope": "已有研究资料与拟议实验，不调查第三方违规，不构成正式豁免或批准",
+  "review_conflict": "本案针对本对话形成的资料做自审，未取得机构独立性背书。",
+  "evidence_status_enum": [
+    "已核实",
+    "来源报告",
+    "待核实",
+    "与现有证据不符",
+    "检索范围内未发现"
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "claim": "归档含117个唯一字段、14项文献/方法资料及空观测模板。",
+      "claim_kind": "文件事实",
+      "status": "已核实",
+      "source_ids": [
+        "A01",
+        "A02"
+      ],
+      "locator": "fields及文献ID计数；records=[]",
+      "limitations": "仅证明文档结构，不能证明实际执行。",
+      "responsible_role": "资料维护者",
+      "next_document": "后续带来源和样本编号的观测数据"
+    },
+    {
+      "id": "C02",
+      "claim": "已有品种资料存在约10–15天的成熟期差距；玉米候补约11–16天。",
+      "claim_kind": "待核主张",
+      "status": "来源报告",
+      "source_ids": [
+        "A03"
+      ],
+      "locator": "四种作物comparison及difference_days",
+      "limitations": "地区、季节及成熟标准不完全一致；不是同地随机比较。",
+      "responsible_role": "作物研究负责人",
+      "next_document": "本地同季同终点对照方案和原始物候记录"
+    },
+    {
+      "id": "C03",
+      "claim": "同一品种经干预后可稳定提前10–15天成熟。",
+      "claim_kind": "待核主张",
+      "status": "待核实",
+      "source_ids": [
+        "A01",
+        "A03"
+      ],
+      "locator": "原资料scope与候选limitation",
+      "limitations": "目前只有候选筛选，无对应干预试验。",
+      "responsible_role": "作物研究负责人",
+      "next_document": "预先定义干预、对照、主要终点及统计方案"
+    },
+    {
+      "id": "C04",
+      "claim": "提早成熟时产量、蛋白与种用质量仍保持。",
+      "claim_kind": "待核主张",
+      "status": "待核实",
+      "source_ids": [
+        "A01"
+      ],
+      "locator": "收获与氮收支字段",
+      "limitations": "无实测产量与不劣检验；提前成熟不推出品质保持。",
+      "responsible_role": "农艺及统计负责人",
+      "next_document": "不劣界值、功效依据、含水率校正和品质原始数据"
+    },
+    {
+      "id": "C05",
+      "claim": "根瘤更多或nifH更丰富即可证明累计固氮增加。",
+      "claim_kind": "被审阅的潜在宣传表述",
+      "status": "与现有证据不符",
+      "source_ids": [
+        "A02",
+        "M01"
+      ],
+      "locator": "原评议R03、R10；固氮方法字段",
+      "limitations": "这是需要防止的推论，不是对某研究者的指控；指标不可互换。",
+      "responsible_role": "微生物及固氮测量负责人",
+      "next_document": "固氮测法、参照、校准、检出限与累计氮估计"
+    },
+    {
+      "id": "C06",
+      "claim": "早熟材料的菌群差异证明菌群导致早熟。",
+      "claim_kind": "被审阅的潜在宣传表述",
+      "status": "与现有证据不符",
+      "source_ids": [
+        "A02",
+        "D01"
+      ],
+      "locator": "R07及日龄/阶段字段",
+      "limitations": "现有相关性不确立因果；日龄、发育、土壤和批次均可混杂。",
+      "responsible_role": "微生物组负责人",
+      "next_document": "同日龄和同阶段比较；如主张因果，需额外干预证据"
+    },
+    {
+      "id": "C07",
+      "claim": "当前归档未包含人体参与者、人体样本或个人研究数据，也未包含动物试验。",
+      "claim_kind": "范围事实",
+      "status": "已核实",
+      "source_ids": [
+        "A01"
+      ],
+      "locator": "当前交付资料与空模板的范围",
+      "limitations": "仅限当前文件；未来农户访谈、健康采样或动物试验须重新判断。",
+      "responsible_role": "项目负责人及机构伦理管理部门",
+      "next_document": "带实施地点、人员和活动清单的正式方案"
+    },
+    {
+      "id": "C08",
+      "claim": "已取得覆盖具体菌株、场地和方案版本的机构伦理或生物安全批准。",
+      "claim_kind": "待核主张",
+      "status": "检索范围内未发现",
+      "source_ids": [
+        "A01",
+        "N01",
+        "N03"
+      ],
+      "locator": "当前交付文件集合",
+      "limitations": "未取得批准文件不等于无批准或违法；实施机构尚未指定。",
+      "responsible_role": "拟实施机构",
+      "next_document": "适用性书面判断及必要批准/备案文件"
+    },
+    {
+      "id": "C09",
+      "claim": "没有人体或动物对象，因此任何后续植物/菌株试验均无需科技伦理评估。",
+      "claim_kind": "被审阅的潜在审批表述",
+      "status": "与现有证据不符",
+      "source_ids": [
+        "N01"
+      ],
+      "locator": "第二条第三项及第九条",
+      "limitations": "适用于所核中国规则范围；不是宣布所有普通栽培都需委员会批准。",
+      "responsible_role": "机构科技伦理管理部门",
+      "next_document": "按实际方案出具风险评估和适用程序判断"
+    },
+    {
+      "id": "C10",
+      "claim": "拟使用的品种、菌株、遗传改造状态、来源和田间释放边界已确定。",
+      "claim_kind": "待核主张",
+      "status": "待核实",
+      "source_ids": [
+        "A01",
+        "A03",
+        "N03"
+      ],
+      "locator": "目前仅候选品种及字段定义",
+      "limitations": "资料内的已知基因研究不等于本项目计划实施基因编辑。",
+      "responsible_role": "项目负责人和材料管理者",
+      "next_document": "材料清单、菌株身份证明、获取条件和场地方案"
+    },
+    {
+      "id": "C11",
+      "claim": "项目已经实现同一地块一年三季并增加土壤净氮。",
+      "claim_kind": "待核主张",
+      "status": "待核实",
+      "source_ids": [
+        "A01",
+        "A03",
+        "M01"
+      ],
+      "locator": "年收获次数及氮收支字段",
+      "limitations": "需要全年同地记录及明确边界的收支；南繁加代、轮作与连作不能混同。",
+      "responsible_role": "农艺及土壤负责人",
+      "next_document": "逐季农时、土层与残体去向、氮输入输出和缺测项"
+    },
+    {
+      "id": "C12",
+      "claim": "本案例构成正式伦理批准或机构独立结论。",
+      "claim_kind": "被审阅的潜在审批表述",
+      "status": "与现有证据不符",
+      "source_ids": [
+        "A01",
+        "N01"
+      ],
+      "locator": "案例性质和机构审查主体",
+      "limitations": "本案是原资料整理者辅助开展的桌面自审，无委员会授权。",
+      "responsible_role": "资料维护者",
+      "next_document": "如实施，应取得有权机构的正式决定"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "to": "项目负责人/拟实施机构",
+      "question": "哪份方案明确研究地点、法域、资助、实施时间、负责人以及温室或田间阶段？",
+      "required_documents": [
+        "protocol_with_version",
+        "institution_and_site_record"
+      ]
+    },
+    {
+      "id": "Q02",
+      "to": "机构伦理管理部门",
+      "question": "依据实际活动作出的伦理适用性评估是什么，哪些后续变更需要重新判断或报审？",
+      "required_documents": [
+        "ethics_scope_assessment",
+        "amendment_policy"
+      ]
+    },
+    {
+      "id": "Q03",
+      "to": "材料管理者/机构生物安全管理部门",
+      "question": "哪些品种与菌株会实际使用，如何证明身份、来源、改造状态，以及相应风险类别和许可要求？",
+      "required_documents": [
+        "material_passport",
+        "biosafety_classification",
+        "applicable_permits"
+      ]
+    },
+    {
+      "id": "Q04",
+      "to": "农艺/统计负责人",
+      "question": "如何分别检验成熟提前、产量品质保持及地下功能保持，独立小区、效应界值和测量终点如何预先确定？",
+      "required_documents": [
+        "analysis_plan",
+        "power_rationale",
+        "endpoint_definitions"
+      ]
+    },
+    {
+      "id": "Q05",
+      "to": "固氮/微生物组负责人",
+      "question": "固氮通量用什么方法，如何校准；菌群如何控制区室、日龄、阶段、土壤和批次？",
+      "required_documents": [
+        "fixation_SOP",
+        "microbiome_SOP",
+        "QC_plan"
+      ]
+    },
+    {
+      "id": "Q06",
+      "to": "场地负责人/项目数据负责人",
+      "question": "有哪些越界、病害、污染或损失的暂停条件，谁负责报告、处置和公布负结果？",
+      "required_documents": [
+        "monitoring_stop_plan",
+        "incident_reporting_route",
+        "data_and_results_plan"
+      ]
+    }
+  ],
+  "pre_implementation_gates": [
+    {
+      "id": "G01",
+      "condition": "实施机构、地点、时间与方案版本明确，并完成本地适用性判断",
+      "status": "待提供",
+      "owner": "项目负责人/机构管理部门"
+    },
+    {
+      "id": "G02",
+      "condition": "实际材料来源、菌株身份、改造状态和相应生物安全手续已核对",
+      "status": "待提供",
+      "owner": "材料及生物安全管理者"
+    },
+    {
+      "id": "G03",
+      "condition": "主要终点、对照、独立重复和产量品质容许差已预设",
+      "status": "待提供",
+      "owner": "农艺/统计负责人"
+    },
+    {
+      "id": "G04",
+      "condition": "根系、结瘤、固氮、菌群SOP及空白/参照/QC已确定",
+      "status": "待提供",
+      "owner": "实验测量负责人"
+    },
+    {
+      "id": "G05",
+      "condition": "田间边界、废弃物、监测与暂停处置方案明确",
+      "status": "待提供",
+      "owner": "场地负责人"
+    },
+    {
+      "id": "G06",
+      "condition": "数据、利益冲突、负结果和变更披露规则明确",
+      "status": "待提供",
+      "owner": "项目数据负责人"
+    },
+    {
+      "id": "G07",
+      "condition": "对外表述不把候选资料或桌面自审宣传成试验成功或伦理批准",
+      "status": "本案例文本已落实；后续传播仍须复核",
+      "owner": "资料维护者"
+    }
+  ],
+  "incident_status": "未收到本项目实验事件记录；因试验未执行，不记为“已证明无不良事件”。",
+  "unresolved": [
+    "拟实施法域和具体机构未定",
+    "实际菌株、材料来源及改造状态未知",
+    "机构适用性文件和必要许可未取得",
+    "田间因果、产量品质与固氮保持均未验证"
+  ],
+  "publication_statement": "本资料筛选了具有较短成熟期的候选品种，并建立地下生物学字段与核验设计；尚未证明任一品种经干预可稳定提前10–15天成熟并同时保持产量、品质和固氮。本OpenIRB案例是桌面自审，不是正式伦理批准。"
+}

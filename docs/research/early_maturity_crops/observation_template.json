@@ -1,0 +1,25 @@
+{
+  "version": "0.1",
+  "note": "空模板，不包含新试验数据；字段值按数据字典填写。",
+  "records": [],
+  "record_structure": {
+    "study_id": null,
+    "plot_id": null,
+    "sample_id": null,
+    "field_id": null,
+    "value": null,
+    "unit": null,
+    "status": "not_measured",
+    "sample_datetime": null,
+    "growth_stage": null,
+    "compartment": null,
+    "soil_depth_top_cm": null,
+    "soil_depth_bottom_cm": null,
+    "method_id": null,
+    "source_id": null,
+    "source_locator": null,
+    "detection_limit": null,
+    "uncertainty": null,
+    "notes": null
+  }
+}
