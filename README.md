@@ -453,6 +453,9 @@ unverified. Game analogy, sourced history and original interpretation are distin
 
 ## Original fiction (fork creative writing)
 
+[小破站入所记](docs/fiction/bilibili_shaojiaosuo_adoption_zh.md) is a Chinese platform-personification comedy and the inaugural “少教所收养” case. The approved dialogue is preserved in full with provenance; the institution and adoption are fictional.
+
+
 [扩编之前](docs/fiction/before_the_squad_zh.md) is a Chinese screenplay following a football
 coach and analyst through an open relationship, a move, concealed reunions and separation,
 with an alternate-universe Maverick cameo. The [development notes](docs/fiction/before_the_squad_development_zh.md)
