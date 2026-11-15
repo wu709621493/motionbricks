@@ -634,6 +634,11 @@ separately from the running model.
 物质和尺度场方程的候选框架。文档区分有效降维、拓扑变化与真实维数改变；
 未实施数值求解或实验验证，也不声称已建立二向箔式降维机制。
 
+[#99 延伸：抛物型桥口相切与能量分布](docs/research/parabolic_bridge/README_zh.md)
+区分点接触与有限面积喉部，在静态零红移的球对称特例中解析反演应力、
+非负能量密度范围和 NEC 方向边界，附曲率极限、解析采样及独立一致性检查。
+没有模拟桥的形成或证明物质可实现性。
+
 ## Movable-type blockchain core (fork experiment)
 
 [用“活字印刷”重构区块链](docs/movable_type_blockchain_zh.md) separates reusable
