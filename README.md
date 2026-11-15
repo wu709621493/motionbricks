@@ -659,3 +659,10 @@ cross-sections, and OBJ/JSON exports. Run `python -S -m motionbricks.cornea
 Geometry is illustrative; tissue mechanics, optics, patient fitting and causal
 gene-to-shape prediction are not implemented.
 
+## Chinese migration and ancestry context (fork research data)
+
+[中国内部迁徙、1979年后赴美迁移与遗传祖源参考](docs/research/china_migration/README_zh.md)
+provides sourced public aggregate observations, selected 2020 interprovincial
+corridors, historical evidence records, and a versioned metadata extension for
+regional ancestry research. It does not infer participant origins or modify All of Us.
+Run `python -S tools/validate_china_migration.py`.

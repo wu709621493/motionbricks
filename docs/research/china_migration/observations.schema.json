@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:motionbricks:china-migration:observations:0.1",
+  "title": "Project public aggregate migration observation (not official All of Us schema)",
+  "type": "object",
+  "required": [
+    "record_id",
+    "series_id",
+    "source_id",
+    "source_locator",
+    "origin",
+    "destination",
+    "geography_basis",
+    "sex",
+    "year",
+    "year_basis",
+    "count",
+    "unit",
+    "measure_type",
+    "data_origin",
+    "evidence_status",
+    "missing_reason"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "series_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "origin": {
+      "type": "string",
+      "minLength": 1
+    },
+    "destination": {
+      "type": "string",
+      "minLength": 1
+    },
+    "geography_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sex": {
+      "type": "string",
+      "minLength": 1
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1979,
+      "maximum": 2026
+    },
+    "year_basis": {
+      "enum": [
+        "calendar",
+        "US_fiscal",
+        "survey_end_year"
+      ]
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "unit": {
+      "enum": [
+        "persons",
+        "visas",
+        "respondents"
+      ]
+    },
+    "measure_type": {
+      "enum": [
+        "stock",
+        "visa_issuance",
+        "sample_composition"
+      ]
+    },
+    "data_origin": {
+      "const": "public_aggregate"
+    },
+    "evidence_status": {
+      "const": "extracted"
+    },
+    "missing_reason": {
+      "type": "null"
+    }
+  },
+  "additionalProperties": true,
+  "description": "JSON Schema documents field types. Standard-library validator additionally enforces cross-record accounting, provenance, privacy boundaries and units; it is not a general JSON Schema engine."
+}

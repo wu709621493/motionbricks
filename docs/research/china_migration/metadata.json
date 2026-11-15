@@ -1,0 +1,27 @@
+{
+  "name": "china-migration-ancestry-context",
+  "version": "0.1.0",
+  "created_on": "2026-11-15",
+  "base_repository": "wu709621493/motionbricks",
+  "base_commit": "f1c3c88d726f45396a6e0863704529677290b3c1",
+  "purpose": "Public historical-geographic context extension for ancestry research",
+  "official_all_of_us_product": false,
+  "official_omop_extension": false,
+  "contains_aou_participant_data": false,
+  "ancestry_recalibration_performed": false,
+  "observation_count": 177,
+  "historical_event_count": 17,
+  "source_count": 34,
+  "geography_count": 36,
+  "genetic_reference_record_count": 9,
+  "us_route_case_count": 1,
+  "selected_od_count": 56,
+  "policy_snapshot_source": "AOU_POLICY",
+  "policy_direct_suppression_interval_inclusive": [
+    1,
+    20
+  ],
+  "policy_zero_allowed": true,
+  "raw_source_retention": "Bibliographic locators and normalized facts; NBS source image acquired and SHA-256 registered, original not redistributed. Other sources read via web; not byte-archived.",
+  "rights": "Third-party rights retained; repository license does not override source licenses or controlled genomic access conditions."
+}

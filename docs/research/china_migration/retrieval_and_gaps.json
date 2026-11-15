@@ -1,0 +1,89 @@
+{
+  "searched_on": "2026-11-15",
+  "review_type": "scoping_evidence_synthesis_not_exhaustive_systematic_review",
+  "engines": [
+    "web search system1",
+    "web search system2"
+  ],
+  "queries": [
+    "All of Us Data and Statistics Dissemination Policy",
+    "中国人口普查2020 户口登记地在外省 表7-3",
+    "2010年第六次全国人口普查 261386075",
+    "China DHS lawful permanent residents historical table",
+    "Census China born 1980 1990 2000",
+    "Report of the Visa Office 2023 2024 Tables III IV XIII XVI",
+    "Migration within China and from China to USA Fujian ethnosurvey",
+    "西晋六郡流民入蜀 唐宋 北人迁蜀 晋民入黔",
+    "ChinaMAP WBBC regional genetic structure"
+  ],
+  "inclusion": [
+    "Public statistical table with units and geographic scope",
+    "Historical text with locatable passage",
+    "Primary population-genetic or migration research",
+    "Explicitly labelled reviews, heritage accounts and origin-claim critiques"
+  ],
+  "exclusion": [
+    "Unverified numerical snippets from blocked full DHS table",
+    "Individual participant, genealogy or restricted genomic records",
+    "Unresolved full-matrix OCR cells",
+    "Unsourced population counts or inferred provincial ancestry"
+  ],
+  "gaps": [
+    {
+      "id": "G01",
+      "item": "1979–2014 continuous annual visa/LPR route series",
+      "status": "not_assembled",
+      "source_hint": "DOS historical Visa Office reports and DHS yearbooks; 1980 stock is not annual flow"
+    },
+    {
+      "id": "G02",
+      "item": "DHS LPR counts, adjustments versus new arrivals",
+      "status": "retrieval_blocked_403",
+      "source_id": "DHS22_BLOCKED"
+    },
+    {
+      "id": "G03",
+      "item": "Complete 31x31 2020 OD matrix and Fujian reciprocal routes",
+      "status": "selected_56_cells_only",
+      "source_id": "NBS_OD20"
+    },
+    {
+      "id": "G04",
+      "item": "Chinese province/county of origin by US state and migration cohort",
+      "status": "no_representative_matrix_acquired",
+      "source_hint": "Need appropriately consented linked or survey data; issuing office cannot substitute for origin"
+    },
+    {
+      "id": "G05",
+      "item": "Actual third-country transit / return / repeated migration sequences",
+      "status": "not_available_in_aggregate_tables"
+    },
+    {
+      "id": "G06",
+      "item": "2025–2026 annual statistics",
+      "status": "not_extracted",
+      "source_hint": "This release ends FY2024 for DOS; not a claim that later data do not exist"
+    },
+    {
+      "id": "G07",
+      "item": "Ancient genomes directly linked to named migration cohorts",
+      "status": "not_acquired"
+    },
+    {
+      "id": "G08",
+      "item": "All of Us participant calibration and representativeness weights",
+      "status": "not_run_no_controlled_data_access"
+    },
+    {
+      "id": "G09",
+      "item": "UN China geographic scope harmonization to PRC mainland only",
+      "status": "unresolved_keep_separate",
+      "source_id": "CENSUS19_UN17"
+    },
+    {
+      "id": "G10",
+      "item": "Historical county-boundary GIS and verified family lineage continuity",
+      "status": "not_built"
+    }
+  ]
+}

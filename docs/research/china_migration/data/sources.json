@@ -1,0 +1,344 @@
+[
+  {
+    "source_id": "NBS20",
+    "title": "第七次全国人口普查公报（第七号）",
+    "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901087.html",
+    "source_type": "official_statistics",
+    "locator": "二、流动人口及注释5–7",
+    "limitations": "2020-11-01 stock; hukou/residence separation, not annual moves or ancestry.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "NBS10",
+    "title": "2010年第六次全国人口普查主要数据公报（第1号）",
+    "url": "https://www.stats.gov.cn/sj/tjgb/rkpcgb/qgrkpcgb/202302/t20230206_1901997.html",
+    "source_type": "official_statistics",
+    "locator": "九、人口的流动",
+    "limitations": "2010-11-01 stock; excludes within-city-district separation for floating population.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "NBS_OD20",
+    "title": "中国人口普查年鉴2020 表7-3",
+    "url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/html/A0703.jpg",
+    "source_type": "official_statistics",
+    "locator": "rows=current residence; columns=hukou registration; subtotal/male/female",
+    "limitations": "Selected verified corridors only; diagonal blank means outside scope, not an observed zero. Full matrix not transcribed.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained.",
+    "downloaded_sha256": "41858c6c37215b2a32dd5e9217ec96efddd4fc9d2b254abd6a2ce3780f76028c",
+    "extraction": "OCR assisted, selected cells visually checked; margins balanced. Unverified full OCR discarded."
+  },
+  {
+    "source_id": "CENSUS06",
+    "title": "Historical Census Statistics on the Foreign-Born Population of the United States: 1850 to 2000",
+    "url": "https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf",
+    "source_type": "official_statistics",
+    "locator": "Table 3: China, 1980/1990/2000",
+    "limitations": "Sample-based census estimates; separate Hong Kong/Macau/Taiwan rows. Includes arrivals before 1979; not a post-1979 cohort.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "CENSUS19_UN17",
+    "title": "The Chinese Diaspora: Historical Legacies and Contemporary Trends",
+    "url": "https://www.census.gov/content/dam/Census/library/working-papers/2019/demo/Chinese_Diaspora.pdf",
+    "source_type": "official_republication",
+    "locator": "Table 1: United States; UN DESA 2017 revision",
+    "limitations": "UN modeled migrant stocks reproduced by Census; not interchangeable with decennial census China row. No individual itinerary. Report pp5–6 explicitly notes inconsistent source geography, including contrasts with OECD China-only estimates; PRC-mainland-only scope is unresolved.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "DOS24_XIII",
+    "title": "Report of the Visa Office FY2024 Table XIII",
+    "url": "https://travel.state.gov/content/dam/visas/Statistics/AnnualReports/FY2024AnnualReport/Table%20XIII.pdf",
+    "source_type": "official_statistics",
+    "locator": "China - mainland born; FY2015–2024",
+    "limitations": "Visas issued by chargeability; excludes in-country status adjustment. Not admissions, unique migrants or current citizenship.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "DOS23_III",
+    "title": "Report of the Visa Office FY2023 Table III",
+    "url": "https://travel.state.gov/content/dam/visas/Statistics/AnnualReports/FY2023AnnualReport/FY2023_AR_TableIII.pdf",
+    "source_type": "official_statistics",
+    "locator": "China - mainland born row",
+    "limitations": "Immigrant visa issuance by category; not all green cards or all actual entries.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "DOS24_III",
+    "title": "Report of the Visa Office FY2024 Table III",
+    "url": "https://travel.state.gov/content/dam/visas/Statistics/AnnualReports/FY2024AnnualReport/Table%20III.pdf",
+    "source_type": "official_statistics",
+    "locator": "China - mainland born row",
+    "limitations": "Chargeability/place-of-birth categories; not PRC nationality or province of birth.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "DOS24_XVI",
+    "title": "Report of the Visa Office FY2024 Table XVI",
+    "url": "https://travel.state.gov/content/dam/visas/Statistics/AnnualReports/FY2024AnnualReport/Table%20XVI.pdf",
+    "source_type": "official_statistics",
+    "locator": "China - mainland; Part I and II",
+    "limitations": "Broad visa classes include dependents: F is not F-1 only, H is not H-1B only. Issuances, not unique people or permanent migration.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "DOS23_IV",
+    "title": "Report of the Visa Office FY2023 Table IV",
+    "url": "https://travel.state.gov/content/dam/visas/Statistics/AnnualReports/FY2023AnnualReport/FY2023_AR_TableIV.pdf",
+    "source_type": "official_statistics",
+    "locator": "China issuing offices and Hong Kong",
+    "limitations": "Issuing location is neither applicant birthplace nor departure airport; all nationalities served by office may be included. Dash not converted to zero.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "DOS24_METHOD",
+    "title": "Report of the Visa Office FY2024",
+    "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-statistics/annual-reports/report-of-the-visa-office-2024.html",
+    "source_type": "official_documentation",
+    "locator": "opening methodology note",
+    "limitations": "FY2019 reporting methodology change; FY2020–2021 service disruption also limits trend interpretation.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "NORMALIZATION79",
+    "title": "China: A Guide to Recognition and Diplomatic Relations",
+    "url": "https://history.state.gov/countries/china",
+    "source_type": "official_history",
+    "locator": "1979 establishment of diplomatic relations",
+    "limitations": "1979-01-01 is an analytical breakpoint, not the beginning of Chinese migration to the US.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "AOU_POLICY",
+    "title": "All of Us Data and Statistics Dissemination Policy",
+    "url": "https://support.researchallofus.org/hc/en-us/articles/22346276580372-Data-and-Statistics-Dissemination-Policy",
+    "source_type": "official_policy",
+    "locator": "Policy Statement; updated 2026-09-25",
+    "limitations": "Explicit policy bars counts 1–20 inclusive and derivable small cells; zero allowed. Participant-level export prohibited. Explanatory text elsewhere says <20; use explicit stricter policy statement.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "AOU_FAQ",
+    "title": "All of Us: What is genetic ancestry?",
+    "url": "https://www.researchallofus.org/faq/what-is-genetic-ancestry/",
+    "source_type": "official_documentation",
+    "locator": "genetic ancestry FAQ",
+    "limitations": "Public overview is coarser than full genetic diversity; labels are not ethnicity or individual genealogies.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "AOU25",
+    "title": "Genetic ancestry and population structure in the All of Us Research Program cohort",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12049439/",
+    "source_type": "primary_research",
+    "locator": "2025; Methods and Note on genetic ancestry inference; doi:10.1038/s41467-025-59351-8",
+    "limitations": "Researcher Workbench continental categories differ from study-specific subcontinental inference; estimates depend on reference panel.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "CHINAMAP",
+    "title": "The ChinaMAP analytics of deep whole genome sequences in 10,588 individuals",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7609296/",
+    "source_type": "primary_research",
+    "locator": "Fig 4d,e; discussion; doi:10.1038/s41422-020-0322-9",
+    "limitations": "Modern sampled regional structure; not timeless ethnic boundaries, migration counts or All of Us calibration.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "WBBC",
+    "title": "Genomic analyses of 10,376 individuals in the Westlake BioBank for Chinese pilot project",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9135724/",
+    "source_type": "primary_research",
+    "locator": "regional PCA; doi:10.1038/s41467-022-30526-x",
+    "limitations": "Four regional labels in this design; differing partitions do not establish discrete biological populations. Retrieved indexed excerpt; PMC full page challenged.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "HAN09",
+    "title": "Genetic Structure of the Han Chinese Population Revealed by Genome-wide SNP Variation",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2790583/",
+    "source_type": "primary_research",
+    "locator": "Guangdong dialect groups; doi:10.1016/j.ajhg.2009.10.016",
+    "limitations": "6000+ samples/10 provinces; sample-specific Hakka/Teochew affinity to central provinces; no identification of individual medieval migrants. Indexed abstract/excerpt retrieved; full PMC challenge.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "SHIJI",
+    "title": "史记·平准书",
+    "url": "https://www.shidianguji.com/book/NGJ89241200400027421859/chapter/1lw37d0aoujux",
+    "source_type": "historical_text",
+    "locator": "徙贫民于关以西及充朔方以南新秦中",
+    "limitations": "Ancient narrative magnitude, no modern enumeration; 山东 is historical east-of-passes usage, not modern Shandong province.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "JIN_SHU",
+    "title": "通鉴纪事本末·成李据蜀",
+    "url": "https://www.shidianguji.com/book/HY2087/chapter/1mbc9lo9mp53u",
+    "source_type": "historical_text",
+    "locator": "元康八年; 六郡流民经汉中入蜀",
+    "limitations": "数万家 and 十万余口 are textual reports in different units/stages, not independent samples; mixed group including Ba-Di.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "TANG_SHU",
+    "title": "眉山与三苏的产生（巴蜀史志2023年第3期）",
+    "url": "https://www.thepaper.cn/newsDetail_forward_26089657",
+    "source_type": "scholarly_local_history",
+    "locator": "four migration stages; citing 刘琳《唐宋之际北人迁蜀与四川文化的发展》",
+    "limitations": "Secondary synthesis; family-level evidence not proof of a present-day population ancestry proportion.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "TANG_YN",
+    "title": "新唐书·卷222中",
+    "url": "https://zh.wikisource.org/zh-hans/新唐書/卷222中",
+    "source_type": "historical_text",
+    "locator": "大和三年; 南诏掠成都人口和工技",
+    "limitations": "829 forced transfer; textual 数万, not voluntary refugee movement or modern exact count.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "SONG_SHU",
+    "title": "北宋至南宋前期巴蜀地区的人口迁徙流动",
+    "url": "https://dxsz.cbpt.cnki.net/portal/journal/portal/client/paper/51909dc4bb9d50a0555d429f0557e7f4",
+    "source_type": "primary_research",
+    "locator": "唐春生、吴家旭; 2022(3):65–73; abstract",
+    "limitations": "Full article not acquired; abstract supports routes and mechanisms but supplies no count.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "GUIZHOU_REVIEW",
+    "title": "贵州汉族移民史研究述评",
+    "url": "https://ims.sdu.edu.cn/__local/2/40/F2/4874CB944096CCC474FFF614B1A_2484CFAE_10E736.pdf",
+    "source_type": "scholarly_review",
+    "locator": "周永健; 2024(3):28–35; pp28–29",
+    "limitations": "晋民 is a cited research strand, not a newly verified lineage; periodization and numerical estimates differ.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "TUNBAO",
+    "title": "安顺屯堡——最后的城堡",
+    "url": "https://www.ihchina.cn/project_details/10658",
+    "source_type": "heritage_documentation",
+    "locator": "明初征战、支边、屯田及后续商屯民屯",
+    "limitations": "Community origin account; no original military-register count extracted.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "YN_MING",
+    "title": "明代云南汉族移民定居区的分布与拓展",
+    "url": "https://zgld.cbpt.cnki.net/portal/journal/portal/client/paper/cef94f733cba396ccf71286ba9496d52",
+    "source_type": "primary_research",
+    "locator": "中国历史地理论丛; abstract",
+    "limitations": "80余万 military migrants is a scholarly estimate; no denominator or uncertainty interval verified.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "LUODAI",
+    "title": "中国西部客家第一镇——洛带",
+    "url": "https://kejiatong.com/data/3/1/2017-05-02/840.html",
+    "source_type": "book_notice",
+    "locator": "肖平著、方全明摄; Qing migration from Guangdong/Jiangxi",
+    "limitations": "Bibliographic/community context; not full monograph, not a count series.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "GUANDONG_LANG",
+    "title": "广东人口语言",
+    "url": "https://www.gdhmo.gov.cn/gaikuang/content/post_70415.html",
+    "source_type": "official_documentation",
+    "locator": "粤、客、闽分布; 2024-01-22",
+    "limitations": "Language geography is not a genetic classifier; overlapping settlements.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "GUANDONG_MIG",
+    "title": "闯关东——从流民开始的东北移民潮",
+    "url": "https://www.ims.sdu.edu.cn/info/1014/8961.htm",
+    "source_type": "scholarly_history",
+    "locator": "刘平; Qing to 1949 migration",
+    "limitations": "Broad period; no de-duplicated total accepted into this release.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "WAR37",
+    "title": "抗战时期人口内迁背景的西南大后方现代化",
+    "url": "https://cqsk.cbpt.cnki.net/portal/journal/portal/client/paper/c4e75a69a215e42a52c758787d642bfa",
+    "source_type": "primary_research",
+    "locator": "abstract and references",
+    "limitations": "Different published totals use differing coverage and repeated displacement; no pooled count.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "THIRD_FRONT",
+    "title": "小三线建设中的人口迁移与城乡关系研究",
+    "url": "https://www.sh-popss.gov.cn/newweb/newsInfo.asp?idval=7455",
+    "source_type": "research_project_summary",
+    "locator": "复旦大学陈熙课题结项摘要; 2021-06-04",
+    "limitations": "Industrial worker/family relocation; distinguishes 1964 and 1969 peaks; no census-equivalent total.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "HONGDONG_CHECK",
+    "title": "高阳县明代移民辨误",
+    "url": "https://gaoyang.gov.cn/info_show.asp?infoid=10125",
+    "source_type": "local_history_critique",
+    "locator": "小兴州、洪洞祖地记忆四种解释",
+    "limitations": "Genealogy origin attribution can be mistaken or retrospectively attached; not a count source.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "DHS22_BLOCKED",
+    "title": "2022 Yearbook of Immigration Statistics",
+    "url": "https://ohss.dhs.gov/sites/default/files/2024-03/2023_0818_plcy_yearbook_immigration_statistics_fy2022.pdf",
+    "source_type": "official_statistics",
+    "locator": "Tables 2,3,10 sought",
+    "limitations": "HTTP403 on full retrieval; no numerical LPR values admitted. Do not substitute visa issuance for LPR.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  },
+  {
+    "source_id": "FUJIAN13",
+    "title": "Migration within China and from China to the USA: The effects of migration networks, selectivity, and the rural political economy in Fujian Province",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3686849/",
+    "source_type": "primary_research",
+    "locator": "2002–2003 ethnosurvey; Table 1 and Data and methods; doi:10.1080/00324728.2012.756116",
+    "limitations": "Purposively selected US-bound sending towns, not representative of all Fujian or China; Table 1 sample counts are not immigration volumes; domestic migration >3 months differs from NBS >=6 months. Recall and proxy-report bias.",
+    "accessed_on": "2026-11-15",
+    "redistribution": "Normalized facts and bibliographic metadata only; original rights retained."
+  }
+]
