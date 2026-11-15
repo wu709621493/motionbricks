@@ -707,3 +707,11 @@ research, not an ethics approval, completed field trial or finding of misconduct
 以及 Pay ’n’ Spray 与《Riders on the Storm》的跨游戏彩蛋；
 保留“利拉法”、五星排场和财政审计笑点，附8条用户原话与出处边界。
 这是文字分镜，尚未制作视频或混音；年度开放道路日列为倡议。
+
+
+## Selective accountability and institutional remedies (fork literature review)
+
+[从局部处置到责任链：四方向文献综述](docs/research/selective_accountability/README_zh.md)
+整理冠名与机构历史、个人与组织责任、COVID/HIV污名化及难民接纳实施；
+附26项注释来源、15条主张证据记录与原话。明确蓝图尚未取得、摘要及档案目录的读取范围，
+区分历史事实、机构自述、规范判断与后续调查建议。
