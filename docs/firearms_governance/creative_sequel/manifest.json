@@ -1,0 +1,46 @@
+{
+  "version": "0.1",
+  "date": "2026-11-15",
+  "timezone": "Asia/Shanghai",
+  "repository": "wu709621493/motionbricks",
+  "base_commit": "e6f75340ee587031803ef73e283fc70bdabcff5a",
+  "related_pr": 110,
+  "original_source": "Eight visible user messages transcribed verbatim; not a complete chat export.",
+  "artifact_type": "TEXT_STORYBOARD_ONLY",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 45260,
+      "sha256": "2c279c501e046216174c6b9d3c82be0a647e5ce692c4cfb98c530fb47f867452",
+      "git_blob_sha1": "47d13f2f6c946fd25bc78fcb57f5b9114344e313"
+    },
+    {
+      "path": "docs/firearms_governance/creative_sequel/README_zh.md",
+      "bytes": 8510,
+      "sha256": "51f56602dbddcd75a086379658d9e88714f249c8b3b0f8db94c5c717426811ce",
+      "git_blob_sha1": "150d59542256a0fb61bd0ff2b347db5c20efe563"
+    },
+    {
+      "path": "docs/firearms_governance/creative_sequel/discussion_original_zh.md",
+      "bytes": 1199,
+      "sha256": "09f8dd1797898e6385451a18fc21cb949b64be7a58edb2533892ea70e9c82241",
+      "git_blob_sha1": "c8bc2f01ca6693531482c2afc4750ce5ca66210f"
+    },
+    {
+      "path": "docs/firearms_governance/creative_sequel/sources.json",
+      "bytes": 2546,
+      "sha256": "6700a3be3b30ba6f913c68a030e25ef2fefa6772c5d731dccb087ba4de9252b9",
+      "git_blob_sha1": "b05a360cd871e972f4e291515104f389113b2699"
+    }
+  ],
+  "validation": {
+    "exact_user_quotes": 8,
+    "sources": 5,
+    "local_links": "PASS; parent policy link confirmed in remote base directory",
+    "root_readme_prefix_preserved": true,
+    "audio_video_production": "NOT_RUN",
+    "game_engine_tests": "NOT_RUN",
+    "ci": "NOT_CLAIMED"
+  },
+  "hash_scope": "Files in this version except manifest itself; immutable Git commit identifies manifest."
+}
