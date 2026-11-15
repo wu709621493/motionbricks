@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "version": "0.1",
+  "date": "2026-11-15",
+  "repository": "wu709621493/motionbricks",
+  "base_commit": "33277b67ce0c5ed99c11f25410525b17d3fb2b0c",
+  "base_tree": "af1cb0b6ba5aac999e9100dd99ef92b11811c9a3",
+  "author_original": "吴孟城（Windy Wu）",
+  "draft_expansion": "ChatGPT",
+  "files": [
+    {
+      "path": "README_zh.md",
+      "bytes": 7247,
+      "sha256": "5338eab863c398f1917ce195c68fd755ea827add0632ef2b62718b6a717c8e7d"
+    },
+    {
+      "path": "original_statement.txt",
+      "bytes": 208,
+      "sha256": "35fcf02ccf877da4f85fd8f35f311ef0c06f52931fffc95a703be27c94bbf1a7"
+    }
+  ],
+  "verification_scope": "原话逐字、正文与来源编号、相对入口、字节数及SHA-256；无技术取证或司法认定。"
+}

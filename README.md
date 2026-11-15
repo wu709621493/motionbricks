@@ -679,3 +679,9 @@ Run `python -S tools/validate_china_migration.py`.
 防止无监管3D打印枪支制造的主张；附用户原话、15项来源与版本校验清单。
 区分现行法律、政策建议和未实施的试点评估，不宣称已有党派共识或政策效果。
 
+
+## Operation Aurora and procedural justice (fork editorial)
+
+[极光行动、改革开放与手段正义：审判宣言](docs/operation_aurora/README_zh.md)
+保留吴孟城的两句原话，另附宣言扩写、公开归因与谷歌业务调整的事实说明，
+区分作者的政策伦理判断、企业归因和具体法律责任，附六项来源与校验清单。
