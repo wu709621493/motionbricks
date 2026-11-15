@@ -1,0 +1,92 @@
+{
+  "version": "0.1.0",
+  "base_commit": "f1c3c88d726f45396a6e0863704529677290b3c1",
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {
+      "path": ".github/workflows/china-migration.yml",
+      "sha256": "7d66807bc1f707444ec9070eaa2e5c62f3cf66a59414a97a14cf252f9a8f187f",
+      "bytes": 866
+    },
+    {
+      "path": "README.md",
+      "sha256": "c96cca789429ab12b83298e5fc42b6c7404eef6bb0c51e0185868baabcd6927c",
+      "bytes": 42933
+    },
+    {
+      "path": "docs/research/china_migration/README_zh.md",
+      "sha256": "a610d81190026dc9e1badd8d9211d00562d8b4ec6bd3717c379bf71b3cd16dd4",
+      "bytes": 4202
+    },
+    {
+      "path": "docs/research/china_migration/data/genetic_reference_catalog.json",
+      "sha256": "c64bb8f93a30d010d6a2c870d45906884f9251c08cfe39d54a3bc791c16aa46f",
+      "bytes": 2790
+    },
+    {
+      "path": "docs/research/china_migration/data/geographies.json",
+      "sha256": "5806bc360eeba1eac729795d9bf5674897e1de48056200cb9af4748de8c64133",
+      "bytes": 6948
+    },
+    {
+      "path": "docs/research/china_migration/data/historical_events.jsonl",
+      "sha256": "f8924f9e179ff418ae7399a3e3ca4d2ea22c8c7434b7aea84036a9c8bed37c6b",
+      "bytes": 11266
+    },
+    {
+      "path": "docs/research/china_migration/data/observations.jsonl",
+      "sha256": "bdbfd63454d2d3a44dd3e2c4636b4a5e8832c45f8ccfd5aa7c8312b3a74acbd1",
+      "bytes": 88037
+    },
+    {
+      "path": "docs/research/china_migration/data/sources.json",
+      "sha256": "ec9014a904be382a956c1dccc29b5339e32e9a91dc0856323ad42398632488cd",
+      "bytes": 19643
+    },
+    {
+      "path": "docs/research/china_migration/data/us_route_cases.json",
+      "sha256": "f49d18d8e848ea042da7a2be7d646f1449cb47becdf0d8d99926bb5f3be6e3d8",
+      "bytes": 726
+    },
+    {
+      "path": "docs/research/china_migration/data_dictionary_zh.md",
+      "sha256": "310d60333e65c45870808cd574bd687fa45fdd09a621de4adcd22d2f06b56d2d",
+      "bytes": 3622
+    },
+    {
+      "path": "docs/research/china_migration/meta_summary_zh.md",
+      "sha256": "5296c265f3dd7436a2e884b4285e4ed0c941f7e9cdd2822cb27f8920c55d34b3",
+      "bytes": 6974
+    },
+    {
+      "path": "docs/research/china_migration/metadata.json",
+      "sha256": "6c00e6051d17b88bac2a8834c375dd59a1b45c0de161f5fb46abde685998d7c7",
+      "bytes": 1140
+    },
+    {
+      "path": "docs/research/china_migration/observations.schema.json",
+      "sha256": "d6f284f874c09ebf5dfa402573f9a094e70f10b500dbfd0a15f96a2706171a6e",
+      "bytes": 2050
+    },
+    {
+      "path": "docs/research/china_migration/retrieval_and_gaps.json",
+      "sha256": "3fbaa06fd675c6b1ad704410e6dbb0437b686681d3d703243e619d8758491891",
+      "bytes": 3178
+    },
+    {
+      "path": "docs/research/china_migration/validation_summary.json",
+      "sha256": "2c9bcef912d356b495caefd63b936b18729f31492396e41cae6f45e39a269ba7",
+      "bytes": 1054
+    },
+    {
+      "path": "tests/test_china_migration.py",
+      "sha256": "087ec22c08013432b37658a6ac2be96d77889af8a357e699e28020fb1ad69e8c",
+      "bytes": 2508
+    },
+    {
+      "path": "tools/validate_china_migration.py",
+      "sha256": "ba7e9355f224d4e9e3579fce419cfdf8a6e945f0149eb1d479d84d56d23b7cec",
+      "bytes": 9049
+    }
+  ]
+}

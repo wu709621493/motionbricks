@@ -1,0 +1,29 @@
+name: China migration public data
+on:
+  pull_request:
+    paths:
+      - 'docs/research/china_migration/**'
+      - 'tools/validate_china_migration.py'
+      - 'tests/test_china_migration.py'
+      - '.github/workflows/china-migration.yml'
+  push:
+    paths:
+      - 'docs/research/china_migration/**'
+      - 'tools/validate_china_migration.py'
+      - 'tests/test_china_migration.py'
+      - '.github/workflows/china-migration.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -S tools/validate_china_migration.py --summary
+      - run: python -S -m unittest discover -s tests -p 'test_china_migration.py' -v

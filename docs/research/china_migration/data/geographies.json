@@ -1,0 +1,277 @@
+[
+  {
+    "geo_id": "CN-11",
+    "label_zh": "北京",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-12",
+    "label_zh": "天津",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-13",
+    "label_zh": "河北",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-14",
+    "label_zh": "山西",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-15",
+    "label_zh": "内蒙古",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-21",
+    "label_zh": "辽宁",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-22",
+    "label_zh": "吉林",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-23",
+    "label_zh": "黑龙江",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-31",
+    "label_zh": "上海",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-32",
+    "label_zh": "江苏",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-33",
+    "label_zh": "浙江",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-34",
+    "label_zh": "安徽",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-35",
+    "label_zh": "福建",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-36",
+    "label_zh": "江西",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-37",
+    "label_zh": "山东",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-41",
+    "label_zh": "河南",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-42",
+    "label_zh": "湖北",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-43",
+    "label_zh": "湖南",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-44",
+    "label_zh": "广东",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-45",
+    "label_zh": "广西",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-46",
+    "label_zh": "海南",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-50",
+    "label_zh": "重庆",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-51",
+    "label_zh": "四川",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-52",
+    "label_zh": "贵州",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-53",
+    "label_zh": "云南",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-54",
+    "label_zh": "西藏",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-61",
+    "label_zh": "陕西",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-62",
+    "label_zh": "甘肃",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-63",
+    "label_zh": "青海",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-64",
+    "label_zh": "宁夏",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "CN-65",
+    "label_zh": "新疆",
+    "geography_type": "modern_province_level",
+    "valid_on": "2020-11-01",
+    "historical_equivalence": false
+  },
+  {
+    "geo_id": "region:两广",
+    "label_zh": "两广",
+    "geography_type": "analyst_regional_group",
+    "members": [
+      "CN-44",
+      "CN-45"
+    ],
+    "historical_equivalence": false,
+    "notes": "Project query grouping; overlaps allowed; Chongqing separately retained; not an ancestry class."
+  },
+  {
+    "geo_id": "region:两湖",
+    "label_zh": "两湖",
+    "geography_type": "analyst_regional_group",
+    "members": [
+      "CN-42",
+      "CN-43"
+    ],
+    "historical_equivalence": false,
+    "notes": "Project query grouping; overlaps allowed; Chongqing separately retained; not an ancestry class."
+  },
+  {
+    "geo_id": "region:云贵川",
+    "label_zh": "云贵川",
+    "geography_type": "analyst_regional_group",
+    "members": [
+      "CN-53",
+      "CN-52",
+      "CN-51"
+    ],
+    "historical_equivalence": false,
+    "notes": "Project query grouping; overlaps allowed; Chongqing separately retained; not an ancestry class."
+  },
+  {
+    "geo_id": "region:陕甘宁",
+    "label_zh": "陕甘宁",
+    "geography_type": "analyst_regional_group",
+    "members": [
+      "CN-61",
+      "CN-62",
+      "CN-64"
+    ],
+    "historical_equivalence": false,
+    "notes": "Project query grouping; overlaps allowed; Chongqing separately retained; not an ancestry class."
+  },
+  {
+    "geo_id": "region:闽粤赣",
+    "label_zh": "闽粤赣",
+    "geography_type": "analyst_regional_group",
+    "members": [
+      "CN-35",
+      "CN-44",
+      "CN-36"
+    ],
+    "historical_equivalence": false,
+    "notes": "Project query grouping; overlaps allowed; Chongqing separately retained; not an ancestry class."
+  }
+]

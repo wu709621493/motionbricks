@@ -1,0 +1,20 @@
+[
+  {
+    "route_id": "FJ-US-CASE",
+    "source_id": "FUJIAN13",
+    "origin": "福建福州地区所选赴美侨乡",
+    "destination": "美国，研究背景中特别提及纽约及东海岸",
+    "observed_in": "2002–2003调查及回溯史",
+    "route_type": "documented_sending_destination_network",
+    "via": null,
+    "province_wide_count": null,
+    "representative_of": "所选赴美移民输出社区",
+    "not_representative_of": [
+      "福建全省",
+      "中国全国",
+      "All of Us参与者"
+    ],
+    "genetic_data_available": false,
+    "notes": "国内迁徙和赴美迁徙同时建模；94%国际迁徙者选择美国是该样本描述，不能外推全省；没有提取个人行程。"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "local_validation": "passed",
+  "summary": {
+    "series_record_counts": {
+      "census_china_birth_stock": 3,
+      "dos_immigrant_visas_total": 10,
+      "dos_issuing_post_selected": 8,
+      "dos_iv_category": 10,
+      "dos_niv_selected_classes": 8,
+      "fujian2002_2003_survey_sample": 5,
+      "nbs2020_province_margin": 62,
+      "nbs2020_selected_od": 56,
+      "nbs_floating": 2,
+      "nbs_interprovincial": 1,
+      "nbs_intraprovincial": 1,
+      "nbs_separated": 2,
+      "nbs_within_city_district": 2,
+      "un2017_china_birth_stock": 7
+    },
+    "floating_population_growth_2010_2020_pct": 69.72516885636695,
+    "census_china_birth_stock_ratio_2000_to_1980": 3.4560918495736055,
+    "incompatible_series_pooled": false,
+    "aou_participants_analyzed": false,
+    "interpretation": "Descriptive same-series calculations; stock changes are not gross flows or post-1979 cohort counts."
+  },
+  "remote_CI": "not_run_at_packaging",
+  "note": "Immutable packaging receipt; subsequent GitHub checks are authoritative for CI status."
+}
