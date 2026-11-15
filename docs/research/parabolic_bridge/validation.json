@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "date_local": "2026-11-15",
+  "timezone": "Asia/Shanghai",
+  "base_commit": "f1c3c88d726f45396a6e0863704529677290b3c1",
+  "status": "LOCAL_CONSISTENCY_CHECKED",
+  "python": "3.12.14",
+  "verification": {
+    "command": "python -S experiments/parabolic_bridge/verify.py",
+    "tests_run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "sample": {
+    "command": "python -S experiments/parabolic_bridge/model.py --output docs/research/parabolic_bridge/profiles.csv",
+    "rows": 324,
+    "a_m": 1.0,
+    "f_over_a": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "r_over_a": [
+      1.0,
+      5.0
+    ]
+  },
+  "plot": {
+    "command": "python experiments/parabolic_bridge/plot.py",
+    "matplotlib_version": "3.10.8",
+    "visual_review": "PASSED"
+  },
+  "checks": [
+    "rational Einstein tensor from embedding curvatures",
+    "flare-out",
+    "NEC angular boundary",
+    "stress conservation finite difference",
+    "proper volume energy quadrature",
+    "curvature point limit",
+    "length scaling",
+    "non-vacuum lapse distinction",
+    "invalid input refusal",
+    "local Markdown links and equation delimiters",
+    "CSV rows and NEC signs"
+  ],
+  "not_run": [
+    "CI",
+    "formation dynamics",
+    "matter action realization",
+    "perturbation stability",
+    "quantum state calculation",
+    "experiment"
+  ],
+  "sha256": {
+    "README.md": "b64acb2b49ef41db6da9b34c676d8f8682f1313c7498ba8862cdbe5425a033da",
+    "docs/dimensional_transition_coupled_fields_zh.md": "4ab22739dc51ad672ac4c2565aa491d698f24fdef6d9d0d3fa9154f2042a28b2",
+    "docs/research/parabolic_bridge/README_zh.md": "4118066947b57a91f7bdfc70e6f91635fd18f52161f98cf5ebf7cf20653d62fe",
+    "experiments/parabolic_bridge/model.py": "1d9e927c5512de7eabf83b9c62f46911212d75f12acaf1e566b698dfa3cd82f7",
+    "experiments/parabolic_bridge/verify.py": "3924e82541de9cba8eb53b4c8bcf0d0e9348a00cf40e11ae80d9f592e0ff2fbe",
+    "experiments/parabolic_bridge/plot.py": "71a6463e804a18ff050c2fd7454972a9923d9fbee88a6dbb7979c567c7025a67",
+    "docs/research/parabolic_bridge/profiles.csv": "19a0f46c5e18f2047ecb87b62b72ad7fcbb490293bd8663ebd6570d6702a1bfa",
+    "docs/research/parabolic_bridge/energy_profiles.svg": "7a0b755c2ce923435ae3f0febf4649c1862938abd8dc8a84c1f0954a3bdb3047"
+  }
+}
