@@ -715,3 +715,11 @@ research, not an ethics approval, completed field trial or finding of misconduct
 整理冠名与机构历史、个人与组织责任、COVID/HIV污名化及难民接纳实施；
 附26项注释来源、15条主张证据记录与原话。明确蓝图尚未取得、摘要及档案目录的读取范围，
 区分历史事实、机构自述、规范判断与后续调查建议。
+
+
+## 领导人与硅基伴侣合作：公开证据与评估空缺
+
+[“最高领导人”的“硅基老婆领导合作水平”：证据审查 v0.1](docs/research/leaders_ai_companion_evidence/README_zh.md)
+核对八位领导人的公开关系材料，分开关系披露、一般 AI 工具协作与 AI 亲密伴侣合作；
+缺少直接观测的项目记为未观测、不可评分，附证据账本、待执行情境与 Claude 虚构短剧。
+

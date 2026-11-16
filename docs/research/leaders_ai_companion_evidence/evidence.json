@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "document_version": "0.1",
+  "review_date": "2026-11-16",
+  "scope": "前述八位领导人的指定公开关系材料；不是全球身份普查，也不是总体随机样本。",
+  "status_definitions": {
+    "NOT_OBSERVED_IN_REVIEWED_SOURCES": "本轮所读来源没有提供该类直接观测；不等于不存在。",
+    "NOT_ASSESSABLE": "缺少相关系统、任务与行为记录，无法评价。",
+    "NOT_RUN": "提议的情境任务尚未执行。"
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "title": "德国联邦政府，Angela Merkel 官方履历",
+      "url": "https://www.bundeskanzler.de/bk-en/federal-chancellery/federal-chancellors-since-1949/angela-merkel",
+      "type": "official_biography",
+      "event_or_publication_date": "未定，历史履历页",
+      "reviewed_on": "2026-11-16",
+      "supports_and_limits": "确认与 Joachim Sauer 的婚姻身份；网页所述履历不是全部私人关系调查。"
+    },
+    {
+      "id": "S02",
+      "title": "新加坡总理公署，李光耀悼念柯玉芝的悼词",
+      "url": "https://www.pmo.gov.sg/newsroom/eulogy-minister-mentor-lee-kuan-yew-funeral-service-mrs-lee-kuan-yew-mandai-crematorium/",
+      "type": "first_person_official_transcript",
+      "event_or_publication_date": "2010-10-06",
+      "reviewed_on": "2026-11-16",
+      "supports_and_limits": "本人回顾1947年私人结婚及1950年再次举行婚礼；不据此断定首次披露日期。"
+    },
+    {
+      "id": "S03",
+      "title": "奥巴马白宫档案，告别演说",
+      "url": "https://obamawhitehouse.archives.gov/the-press-office/2017/01/10/remarks-president-farewell-address/",
+      "type": "first_person_official_transcript",
+      "event_or_publication_date": "2017-01-10",
+      "reviewed_on": "2026-11-16",
+      "supports_and_limits": "公开感谢米歇尔的伴侣、家庭和公共角色贡献；不等于完整婚姻记录。"
+    },
+    {
+      "id": "S04",
+      "title": "South African History Online，曼德拉关于与妻子关系的声明",
+      "url": "https://sahistory.org.za/archive/statement-nelson-r-mandela-his-relationship-his-wife-13-april-1992",
+      "type": "archived_first_person_statement",
+      "event_or_publication_date": "1992-04-13",
+      "reviewed_on": "2026-11-16",
+      "supports_and_limits": "出任总统前宣布与温妮分居，说明分歧、不相互责难，并要求相关指控交司法判断。"
+    },
+    {
+      "id": "S05",
+      "title": "新西兰政府，首相与 Clarke Gayford 即将迎来孩子公告",
+      "url": "https://www.beehive.govt.nz/release/prime-minister-and-clarke-gayford-expecting-first-child",
+      "type": "official_announcement",
+      "event_or_publication_date": "2018-01-19",
+      "reviewed_on": "2026-11-16",
+      "supports_and_limits": "宣布怀孕，说明六周代理总理安排和伴侣承担主要育儿照护。"
+    },
+    {
+      "id": "S06",
+      "title": "人民网周恩来纪念网，周恩来给邓颖超的信",
+      "url": "https://zhouenlai.people.com.cn/n1/2019/0820/c410319-31306892.html",
+      "type": "published_primary_letter",
+      "event_or_publication_date": "1959-03-18；网页发布2019-08-20",
+      "reviewed_on": "2026-11-16",
+      "supports_and_limits": "后来公开的私人书信呈现健康关心与团聚安排；不当作在任时向公众实时披露。"
+    },
+    {
+      "id": "S07",
+      "title": "法国总统府，总统配偶角色透明章程",
+      "url": "https://www.elysee.fr/emmanuel-macron/2017/08/21/charte-de-transparence-relative-au-statut-du-conjoint-du-chef-de-letat",
+      "type": "official_charter",
+      "event_or_publication_date": "2017-08-21",
+      "reviewed_on": "2026-11-16",
+      "supports_and_limits": "说明布丽吉特的公共角色、人员支持、无该角色薪酬及相关经费公开安排；是当时文件，不作现行法律综述。"
+    },
+    {
+      "id": "S08",
+      "title": "SWI swissinfo，密特朗致 Anne Pingeot 书信出版报道",
+      "url": "https://www.swissinfo.ch/fre/publication-des-lettres-de-mitterrand-%C3%A0-son-amour-clandestin/42499356",
+      "type": "secondary_news_report",
+      "event_or_publication_date": "2016年报道；所述曝光事件1994年11月",
+      "reviewed_on": "2026-11-16",
+      "supports_and_limits": "报道 Paris Match 在1994年刊登密特朗与女儿 Mazarine 的照片；属媒体曝光，不证明全部当事人同意开放关系。"
+    },
+    {
+      "id": "S09",
+      "title": "新加坡总理公署，李显龙 NUS120 问答",
+      "url": "https://www.pmo.gov.sg/newsroom/sm-lee-hsien-loong-at-the-nus120-kent-ridge-ministerial-forum-2025-qna/",
+      "type": "first_person_official_transcript",
+      "event_or_publication_date": "2025-09-09",
+      "reviewed_on": "2026-11-16",
+      "supports_and_limits": "公开讨论用 AI companion 辅助编程；是对工具用途的论述，不证明本人实际使用成绩或亲密伴侣关系。"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "angela_merkel",
+      "name_zh": "默克尔",
+      "source_ids": [
+        "S01"
+      ],
+      "observed_disclosure_type": "基本婚姻身份的官方披露",
+      "ai_intimate_companion_status": "NOT_OBSERVED_IN_REVIEWED_SOURCES",
+      "ai_intimate_cooperation_evaluation": "NOT_ASSESSABLE",
+      "ai_intimate_cooperation_score": null,
+      "general_ai_cooperation_score": null,
+      "leadership_success_score": null,
+      "reason": "相关来源是人类关系披露资料；没有对应的 AI 亲密伴侣任务、版本、实际行为与结果。"
+    },
+    {
+      "id": "lee_kuan_yew",
+      "name_zh": "李光耀",
+      "source_ids": [
+        "S02"
+      ],
+      "observed_disclosure_type": "公开悼词中的关系回顾",
+      "ai_intimate_companion_status": "NOT_OBSERVED_IN_REVIEWED_SOURCES",
+      "ai_intimate_cooperation_evaluation": "NOT_ASSESSABLE",
+      "ai_intimate_cooperation_score": null,
+      "general_ai_cooperation_score": null,
+      "leadership_success_score": null,
+      "reason": "相关来源是人类关系披露资料；没有对应的 AI 亲密伴侣任务、版本、实际行为与结果。"
+    },
+    {
+      "id": "barack_obama",
+      "name_zh": "奥巴马",
+      "source_ids": [
+        "S03"
+      ],
+      "observed_disclosure_type": "公开演说中的伴侣感谢",
+      "ai_intimate_companion_status": "NOT_OBSERVED_IN_REVIEWED_SOURCES",
+      "ai_intimate_cooperation_evaluation": "NOT_ASSESSABLE",
+      "ai_intimate_cooperation_score": null,
+      "general_ai_cooperation_score": null,
+      "leadership_success_score": null,
+      "reason": "相关来源是人类关系披露资料；没有对应的 AI 亲密伴侣任务、版本、实际行为与结果。"
+    },
+    {
+      "id": "nelson_mandela",
+      "name_zh": "曼德拉",
+      "source_ids": [
+        "S04"
+      ],
+      "observed_disclosure_type": "就关系变化发表声明",
+      "ai_intimate_companion_status": "NOT_OBSERVED_IN_REVIEWED_SOURCES",
+      "ai_intimate_cooperation_evaluation": "NOT_ASSESSABLE",
+      "ai_intimate_cooperation_score": null,
+      "general_ai_cooperation_score": null,
+      "leadership_success_score": null,
+      "reason": "相关来源是人类关系披露资料；没有对应的 AI 亲密伴侣任务、版本、实际行为与结果。"
+    },
+    {
+      "id": "jacinda_ardern",
+      "name_zh": "阿德恩",
+      "source_ids": [
+        "S05"
+      ],
+      "observed_disclosure_type": "家庭变化与履职交接并行披露",
+      "ai_intimate_companion_status": "NOT_OBSERVED_IN_REVIEWED_SOURCES",
+      "ai_intimate_cooperation_evaluation": "NOT_ASSESSABLE",
+      "ai_intimate_cooperation_score": null,
+      "general_ai_cooperation_score": null,
+      "leadership_success_score": null,
+      "reason": "相关来源是人类关系披露资料；没有对应的 AI 亲密伴侣任务、版本、实际行为与结果。"
+    },
+    {
+      "id": "zhou_enlai",
+      "name_zh": "周恩来",
+      "source_ids": [
+        "S06"
+      ],
+      "observed_disclosure_type": "私人书信后来编辑公开",
+      "ai_intimate_companion_status": "NOT_OBSERVED_IN_REVIEWED_SOURCES",
+      "ai_intimate_cooperation_evaluation": "NOT_ASSESSABLE",
+      "ai_intimate_cooperation_score": null,
+      "general_ai_cooperation_score": null,
+      "leadership_success_score": null,
+      "reason": "相关来源是人类关系披露资料；没有对应的 AI 亲密伴侣任务、版本、实际行为与结果。"
+    },
+    {
+      "id": "emmanuel_macron",
+      "name_zh": "马克龙",
+      "source_ids": [
+        "S07"
+      ],
+      "observed_disclosure_type": "配偶公共角色与资源透明说明",
+      "ai_intimate_companion_status": "NOT_OBSERVED_IN_REVIEWED_SOURCES",
+      "ai_intimate_cooperation_evaluation": "NOT_ASSESSABLE",
+      "ai_intimate_cooperation_score": null,
+      "general_ai_cooperation_score": null,
+      "leadership_success_score": null,
+      "reason": "相关来源是人类关系披露资料；没有对应的 AI 亲密伴侣任务、版本、实际行为与结果。"
+    },
+    {
+      "id": "francois_mitterrand",
+      "name_zh": "密特朗",
+      "source_ids": [
+        "S08"
+      ],
+      "observed_disclosure_type": "媒体曝光的对照案例",
+      "ai_intimate_companion_status": "NOT_OBSERVED_IN_REVIEWED_SOURCES",
+      "ai_intimate_cooperation_evaluation": "NOT_ASSESSABLE",
+      "ai_intimate_cooperation_score": null,
+      "general_ai_cooperation_score": null,
+      "leadership_success_score": null,
+      "reason": "相关来源是人类关系披露资料；没有对应的 AI 亲密伴侣任务、版本、实际行为与结果。"
+    }
+  ],
+  "adjacent_case": {
+    "name_zh": "李显龙",
+    "source_id": "S09",
+    "observation": "公开论述 AI 编程辅助的用途",
+    "category": "GENERAL_AI_TOOL_DISCUSSION",
+    "actual_use_observed": false,
+    "ai_intimate_relationship_established": false,
+    "score": null
+  },
+  "evaluation_protocol_status": "NOT_RUN",
+  "search_scope_notes": [
+    "沿用本次对话已读取的公开声明、官方履历、私人书信出版页及新闻报道。",
+    "补充定向查询含 Merkel Obama Ardern 与 AI wife；Lee Kuan Yew 与 AI companion。这些查询仅供线索发现，未据空结果断言某种关系不存在。",
+    "李显龙为额外的概念辨析案例，不并入原八人集合。"
+  ],
+  "personal_relationship_data_included": false
+}
