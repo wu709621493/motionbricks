@@ -1,0 +1,34 @@
+{
+  "version": "0.1",
+  "review_date": "2026-11-16",
+  "base_sha": "2cc1c44b6316f8e976412f57e5a3822e5fa7cf4e",
+  "subject_count": 8,
+  "intimate_cooperation_assessable_count": 0,
+  "protocol_status": "NOT_RUN",
+  "maintenance": "不定期",
+  "checks": [
+    "eight_subjects",
+    "null_scores_not_zero",
+    "source_ids_resolve",
+    "relative_links_resolve",
+    "specified_sketch_line_preserved"
+  ],
+  "files": {
+    "README_zh.md": {
+      "size_bytes": 10142,
+      "sha256": "ec9b93e07aae5392664a6af3c4597c16735b113759df7c186471a5c002515124"
+    },
+    "claude_sketch_zh.md": {
+      "size_bytes": 2216,
+      "sha256": "7f2b204190e6a620fe411c7c66730b48c18b15cf8f50547cd67e4b3882130998"
+    },
+    "evaluation_protocol_zh.md": {
+      "size_bytes": 2695,
+      "sha256": "5b31a0fd46a9bebb2f07872db674836332a7a8f05a8d05a44b1ea7a89247e89c"
+    },
+    "evidence.json": {
+      "size_bytes": 10500,
+      "sha256": "2711ad4bfde3620db4c29784356563a9b402d6f7d7a9278722c3132d0917713f"
+    }
+  }
+}
