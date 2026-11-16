@@ -715,3 +715,9 @@ research, not an ethics approval, completed field trial or finding of misconduct
 整理冠名与机构历史、个人与组织责任、COVID/HIV污名化及难民接纳实施；
 附26项注释来源、15条主张证据记录与原话。明确蓝图尚未取得、摘要及档案目录的读取范围，
 区分历史事实、机构自述、规范判断与后续调查建议。
+
+
+## 粤语文学小作文
+
+[谁是大客？落低一亿订单的，还是家里有十个一亿的？](docs/cantonese_big_customer_yue.md)
+以陈生、周生与一杯未饮完的普洱写生意场上的财富想象；人物与情节为虚构，保留对话确认的全文。
