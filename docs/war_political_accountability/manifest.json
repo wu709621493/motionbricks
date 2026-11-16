@@ -1,0 +1,24 @@
+{
+  "version": "1",
+  "date": "2026-11-16",
+  "source_version": 1,
+  "conversion": "Main document paragraphs preserved in order; header and automatic page numbers remain in original DOCX.",
+  "paragraphs": 100,
+  "files": {
+    "README.md": {
+      "bytes": 1058,
+      "sha256": "77fcca022eddff752347ba07b155724c7dea042345d6badabc6d2c5f51931a29",
+      "git_blob_sha1": "e7177a73f297d5ee336d0f31cbf8786388a37e73"
+    },
+    "moon_war_accountability_v1.docx": {
+      "bytes": 47821,
+      "sha256": "e9169e15385955477b6f969c3cfe1c0e6a62461c9b9543e30aed9cb8b5cb2fde",
+      "git_blob_sha1": "83d67398345be4f32b3815ced072b4589779db03"
+    },
+    "moon_war_accountability_v1.md": {
+      "bytes": 16960,
+      "sha256": "bc58d554001cf9b5d4ea8b8cfd865ecd046509c954421b6c9f695a650430261e",
+      "git_blob_sha1": "f4f109e053808bc7baa42f1c8d2ab6cd148fb957"
+    }
+  }
+}
