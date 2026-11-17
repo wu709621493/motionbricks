@@ -721,3 +721,9 @@ research, not an ethics approval, completed field trial or finding of misconduct
 
 [谁是大客？落低一亿订单的，还是家里有十个一亿的？](docs/cantonese_big_customer_yue.md)
 以陈生、周生与一杯未饮完的普洱写生意场上的财富想象；人物与情节为虚构，保留对话确认的全文。
+
+## 孟城招猫论：咸蛋黄奖励假说
+
+[咸蛋黄作为低成本行为奖励的研究假说 v0.1](docs/research/salted_egg_yolk_cat_training/README_zh.md)
+保留吴孟城的咸蛋黄与零乳糖牛奶构想、招猫原话及成本优先要求；附文献与检索记录，
+区分猫训练证据、普通蛋黄商业先例和盐腌风味化学。咸蛋黄的额外奖励价值尚未验证，动物实验未执行。
