@@ -1,0 +1,42 @@
+{
+  "version": "0.1",
+  "date": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "repository": "wu709621493/motionbricks",
+  "base_commit": "b03af2b97e0d3867b9465121f4fc6b56789ecc60",
+  "source": "Four fictional stories and Cantonese literary commentary from the current conversation; private prompts and real-name attribution excluded",
+  "scope": "Fictional adults; narrative body preserved; headings and chat citation format adapted",
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "01_caltech_zh.md",
+      "bytes": 9801,
+      "sha256": "91adbe432878cd362a1b8f3356b983b1f4723c7d5fff62fca5b759c56c58ac3e"
+    },
+    {
+      "path": "02_stanford_zh.md",
+      "bytes": 6188,
+      "sha256": "01bb5d6e8a12db96294666c0886b9081f4e34da995d4cd4fa882856d22259000"
+    },
+    {
+      "path": "03_harvard_zh.md",
+      "bytes": 6723,
+      "sha256": "2619610b6cec49f93cbfe97154b47d301ddf750d2ac9c94aab4efa5f45f34f79"
+    },
+    {
+      "path": "04_cold_spring_harbor_zh.md",
+      "bytes": 5165,
+      "sha256": "e79ec20f4346a29e98e5da2cca05af95c6af3d9adebc9e266f0ad3506074bf8c"
+    },
+    {
+      "path": "05_love_is_all_around_yue.md",
+      "bytes": 1516,
+      "sha256": "8790944e0004cfa5b0d55573ec1640ea7b464e22b2542021eed60874bdbba736"
+    },
+    {
+      "path": "README_zh.md",
+      "bytes": 2262,
+      "sha256": "694cb32ba60071455b2452ad8009317795efa7e80eb7ac8c88da6a77f4abe57d"
+    }
+  ]
+}

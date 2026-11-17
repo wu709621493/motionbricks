@@ -727,3 +727,10 @@ research, not an ethics approval, completed field trial or finding of misconduct
 [咸蛋黄作为低成本行为奖励的研究假说 v0.1](docs/research/salted_egg_yolk_cat_training/README_zh.md)
 保留吴孟城的咸蛋黄与零乳糖牛奶构想、招猫原话及成本优先要求；附文献与检索记录，
 区分猫训练证据、普通蛋黄商业先例和盐腌风味化学。咸蛋黄的额外奖励价值尚未验证，动物实验未执行。
+
+
+## Love Is All Around：学术情侣四幕（fork fiction）
+
+[加州理工、斯坦福、哈佛与冷泉港的爱情群像](docs/fiction/love_is_all_around/README_zh.md)
+收录四幕已确认中文小说、粤语“圣诞电影感”后记与版本校验清单。
+人物与情节为成人虚构；保留 Bi/Ch 课程与心理学研究的引用边界，以及章鱼的“慈母般的围笑”。
