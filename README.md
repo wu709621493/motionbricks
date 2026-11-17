@@ -743,3 +743,10 @@ research, not an ethics approval, completed field trial or finding of misconduct
 附正反方一辩、原始问题和文献来源。泳姿优效与温度中介效应尚未验证，
 男性妊娠研究方向的伦理正当性与具体人体试验的准入分别评议。
 
+## Stadtbus 12: independent city-bus concept (fork design study)
+
+[Stadtbus 12 国际概念发布包](docs/concepts/stadtbus_12/README.md) provides English and
+Chinese press releases, a bilingual stage script, engineering requirements and media Q&A.
+It preserves 吴孟城's physical left-hand-start requirement for both driving layouts and
+all proposed powertrain derivatives. This is an independent Porsche-inspired design study;
+vehicle targets are unvalidated and every planned engineering test is NOT RUN.
