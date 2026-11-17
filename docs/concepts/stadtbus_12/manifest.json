@@ -1,0 +1,17 @@
+{
+  "version": "0.1",
+  "date": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "base_commit": "017099453a0dd6aef0564453e4b6a369ef1c272b",
+  "scope": "documentation only; engineering tests NOT RUN",
+  "files": {
+    "docs/concepts/stadtbus_12/README.md": "044ea74c8c2db11ebe54c24af2546e5ec6d0c635fd7a2148d29d581d9b1b3b77",
+    "docs/concepts/stadtbus_12/press_release.en.md": "4c906f75e382409870dcd151a84a0d827b2d14d6041feb76cf626a5646a28493",
+    "docs/concepts/stadtbus_12/press_release.zh.md": "5a43ff6747e599f1d1a2be71d2e6df195bf9e371d210a3c461c441971a4ef0f5",
+    "docs/concepts/stadtbus_12/keynote.zh-en.md": "697b03344b04e2bc188f8b17b11ea739162b36cfe729e2d09b5dfe2f6bb9d931",
+    "docs/concepts/stadtbus_12/engineering.zh-en.md": "16a8ad9a26b79e2d487246432fda114a82e9115cdb3ef4ef8058c88d9cdb7ef0",
+    "docs/concepts/stadtbus_12/media_qa.zh-en.md": "ebb7909714c11daa83af0536f1d8bf63554b435e9cbe2f9d7c1b8006a3103d16",
+    "docs/concepts/stadtbus_12/sources.md": "c8c50351a9bb682a88847a1a4a39c8ed664a18306f225f2955d787869fd4d161",
+    "docs/concepts/stadtbus_12/origin.md": "32d87baa841b3835244edfb8741a5a352afdc4600e196661fdf77587f4ee774d"
+  }
+}
