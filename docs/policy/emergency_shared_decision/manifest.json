@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "date": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "base_commit": "001b769c3c19f71f1c3e4a56c97aafee3b33cd41",
+  "status": "proposal; no clinical evaluation performed",
+  "files": [
+    {
+      "path": "README_zh.md",
+      "sha256": "663425143e0780c594fd9b136c743fcf36c1a5ffcb2aff2629e97c3e094920b8",
+      "bytes": 1102
+    },
+    {
+      "path": "press_briefing_zh.md",
+      "sha256": "8decec0055ac209fd0895d74f37a7d1e9f24d4385af52c1813e27fb7652f5de3",
+      "bytes": 7321
+    },
+    {
+      "path": "provenance_zh.md",
+      "sha256": "7621e4db86dfeba09fb3a4833b4b07fe858386c186a002915236e7458e4bb4f6",
+      "bytes": 1722
+    },
+    {
+      "path": "sources_and_scope_zh.md",
+      "sha256": "3239ca8518ca7bd3140da2bee68205f7b45377f1bdb9e7ef23adb6defbed76a4",
+      "bytes": 4459
+    }
+  ]
+}

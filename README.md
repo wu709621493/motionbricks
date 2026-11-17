@@ -750,3 +750,12 @@ Chinese press releases, a bilingual stage script, engineering requirements and m
 It preserves 吴孟城's physical left-hand-start requirement for both driving layouts and
 all proposed powertrain derivatives. This is an independent Porsche-inspired design study;
 vehicle targets are unvalidated and every planned engineering test is NOT RUN.
+
+## Emergency communication and shared decisions (fork public initiative)
+
+[急救沟通与共同决策原则：发布资料包](docs/policy/emergency_shared_decision/README_zh.md)
+contains a Chinese press release, a proposed briefing statement, media Q&A, source notes,
+and the approved original wording. The initiative asks clinicians to explain recommendations,
+uncertainty and decision timing while supporting patient-centered surrogate decisions.
+It preserves professional duties and jurisdiction-specific emergency consent rules;
+clinical implementation and outcome evaluation have not been performed.
