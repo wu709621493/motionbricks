@@ -759,3 +759,9 @@ and the approved original wording. The initiative asks clinicians to explain rec
 uncertainty and decision timing while supporting patient-centered surrogate decisions.
 It preserves professional duties and jurisdiction-specific emergency consent rules;
 clinical implementation and outcome evaluation have not been performed.
+
+
+## 小破站入所记：提篮桥分校续篇（fork fiction）
+
+[哔哩哔哩携爷叔怒创上财提篮桥分校！](docs/fiction/bilibili_tilanqiao_campus_sequel_zh.md)
+接续《小破站入所记》，收录分校开办、经典课程“借一百你得赚两百八”及炒面档转型三段已确认二创；保留创作提议与反馈原话，人物、分校和经营情节均属架空喜剧。
