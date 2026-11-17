@@ -1,0 +1,29 @@
+{
+  "version": "0.1",
+  "date": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "type": "discussion_archive",
+  "experiments_performed": false,
+  "files": [
+    {
+      "path": "README_zh.md",
+      "bytes": 3634,
+      "sha256": "963792e89cd2a3b446c33d38a63da6a034cc322483deadac353d97fa0e5ed8a5"
+    },
+    {
+      "path": "male_pregnancy_ethics_zh.md",
+      "bytes": 9841,
+      "sha256": "7c285992180609d7e73f1ba2cb9345d37032f977dcfd288cdd60b615940bf187"
+    },
+    {
+      "path": "sources_zh.md",
+      "bytes": 8797,
+      "sha256": "c4f5bb12054b0626c0baaefc9749c202c49cb4954f644fdf4ea4d7fb8956c661"
+    },
+    {
+      "path": "swimming_metabolism_temperature_zh.md",
+      "bytes": 7513,
+      "sha256": "ef3c35057e9d6f087f85b398bac78831f3b00c4052aaef751c309e861d48f0c8"
+    }
+  ]
+}

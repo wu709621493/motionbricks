@@ -734,3 +734,12 @@ research, not an ethics approval, completed field trial or finding of misconduct
 [加州理工、斯坦福、哈佛与冷泉港的爱情群像](docs/fiction/love_is_all_around/README_zh.md)
 收录四幕已确认中文小说、粤语“圣诞电影感”后记与版本校验清单。
 人物与情节为成人虚构；保留 Bi/Ch 课程与心理学研究的引用边界，以及章鱼的“慈母般的围笑”。
+
+
+## 游泳、勃起功能与男性妊娠：两场科研伦理辩论
+
+[两题思想成果与证据目录](docs/research/swimming_and_male_pregnancy/README_zh.md)
+保留代谢率与睾丸温度的“究极取舍”，以及男性妊娠的自主、风险分配与生育分工论证；
+附正反方一辩、原始问题和文献来源。泳姿优效与温度中介效应尚未验证，
+男性妊娠研究方向的伦理正当性与具体人体试验的准入分别评议。
+
