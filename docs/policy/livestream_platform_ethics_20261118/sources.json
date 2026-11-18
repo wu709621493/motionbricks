@@ -1,0 +1,53 @@
+{
+  "checked_date": "2026-11-18",
+  "sources": [
+    {
+      "id": "S1",
+      "date": "2018-11-02",
+      "title": "苏宁旗下龙珠直播被责令停更 因主播传播色情信息",
+      "url": "https://finance.sina.com.cn/roll/2018-11-02/doc-ifxeuwwt0428377.shtml",
+      "type": "澎湃新闻报道，新浪财经转载",
+      "scope": "已读取正文；涉及2018-10-31约谈、全频道暂停更新15天，不证明停更导致后续经营衰落。"
+    },
+    {
+      "id": "S2",
+      "date": "2020-06-23",
+      "title": "国家网信办指导属地网信办依法约谈处置虎牙、斗鱼等10家网络直播平台",
+      "url": "https://www.cac.gov.cn/2020-06/23/c_1594459834502044.htm",
+      "type": "监管部门公告",
+      "scope": "已读取正文。虎牙与哔哩哔哩在列；公告汇总不同平台的处置，不能给每家分配未单独说明的措施。"
+    },
+    {
+      "id": "S3",
+      "date": "2026-11-17",
+      "title": "HUYA Inc. Reports Third Quarter 2026 Unaudited Financial Results",
+      "url": "https://en.prnasia.com/releases/global/huya-inc-reports-third-quarter-2026-unaudited-financial-results-556738.shtml",
+      "type": "公司发布的未经审计业绩新闻稿，PR Newswire",
+      "scope": "本会话搜索索引已返回业绩正文；再次直接打开未成功。收入1,752.8百万元、经营利润15.2百万元为公司披露，并非独立审计结论。"
+    },
+    {
+      "id": "S4",
+      "date": "2018-01-31",
+      "title": "网络直播用户达到4.22亿，内容监管力度持续提升",
+      "url": "https://www.cac.gov.cn/2018-01/31/c_1122340539.htm",
+      "type": "国家网信办网站刊载，CNNIC分析师署名",
+      "scope": "本会话检索正文记载2017年YY直播、龙珠直播等平台被查处；不能把另述12家关停一概套到YY和龙珠。"
+    },
+    {
+      "id": "S5",
+      "date": "2025-02-25",
+      "title": "JOYY Closes Sale of YY Live",
+      "url": "https://ir.joyy.com/news-releases/news-release-details/joyy-closes-sale-yy-live",
+      "type": "JOYY公司公告",
+      "scope": "已读取正文；出售YY Live给百度，总对价约21亿美元。出售不等于倒闭，亦不能从公告推断伦理失序是交易原因。"
+    },
+    {
+      "id": "S6",
+      "date": "2026-04-13",
+      "title": "关于加强网络直播打赏规范管理的通知",
+      "url": "https://www.cac.gov.cn/2026-04/13/c_1777815804150225.htm",
+      "type": "中央网信办官方通知，落款2026-04-04",
+      "scope": "本会话此前已读取全文；规则明示、限额提醒、排名和互动及投诉机制，为治理建议提供背景，不证明任何特定平台当前违规。"
+    }
+  ]
+}

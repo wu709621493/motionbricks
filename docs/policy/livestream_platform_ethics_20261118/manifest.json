@@ -1,0 +1,32 @@
+{
+  "version": "0.1",
+  "date": "2026-11-18",
+  "base_commit": "d985a4a9d2a5599b88255c5a2095c1a3fbbad725",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "eef5a4f572e938573c83c6179d10967f805113d06a01dcd186b4342b2ea850ac",
+      "bytes": 49543
+    },
+    {
+      "path": "docs/policy/livestream_platform_ethics_20261118/README_zh.md",
+      "sha256": "231bb400e39a678314e147594c61865fa3b2b8024d6a70f9cf1a622c5ed49802",
+      "bytes": 538
+    },
+    {
+      "path": "docs/policy/livestream_platform_ethics_20261118/discussion_zh.md",
+      "sha256": "8e1060198a0fbe28a0276d33ace6cb8dd6e7ef5a036006a733eb03b1f4bcb898",
+      "bytes": 7202
+    },
+    {
+      "path": "docs/policy/livestream_platform_ethics_20261118/provenance_zh.md",
+      "sha256": "9c8ed5cd421ae0cb7e3947ff02cf0d2dc641a641444ae690aff86ef8ff184680",
+      "bytes": 1332
+    },
+    {
+      "path": "docs/policy/livestream_platform_ethics_20261118/sources.json",
+      "sha256": "1a7475339ca3e37c8d7a7d2016dbe9d25d0da864bc55d5c4c523b94a62b12c5e",
+      "bytes": 2719
+    }
+  ]
+}
