@@ -773,3 +773,11 @@ clinical implementation and outcome evaluation have not been performed.
 核查龙珠、虎牙与YY的监管和经营记录，区分业务出售、监管处置与倒闭；
 讨论付费期待、互动边界及平台申诉责任，附六项来源、原话与校验清单。
 机制为待检验假设，治理方案尚未实施。
+
+## Isogravosphere: comfort in outer space (fork design essay)
+
+[Comfort in outer space is the ultimate design goal](docs/concepts/isogravosphere/README.md)
+connects Saturn, Mars and moon gravity, Lagrange points, an equal-field-strength
+surface and a fictional chicken chasing floating feed. Includes source quotations,
+primary references and reproducible calculation inputs; distinguishes field strength,
+free fall and support, with comfort as a design goal rather than a validated result.
