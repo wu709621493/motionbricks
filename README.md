@@ -773,3 +773,11 @@ clinical implementation and outcome evaluation have not been performed.
 核查龙珠、虎牙与YY的监管和经营记录，区分业务出售、监管处置与倒闭；
 讨论付费期待、互动边界及平台申诉责任，附六项来源、原话与校验清单。
 机制为待检验假设，治理方案尚未实施。
+
+
+## CPR替代递药与肠道供氧（fork research discussion）
+
+[透皮、经直肠／肛周与呼吸机雾化的研究议程](docs/research/cpr_alternative_delivery/README_zh.md)
+整理三条候选肾上腺素递送路径与独立的肠道供氧分支，比较低灌注下的吸收、
+有效暴露、器官获益与风险；附用户原话和九项来源。全部实验NOT_RUN，未提出临床操作方案。
+
