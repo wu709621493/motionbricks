@@ -765,3 +765,11 @@ clinical implementation and outcome evaluation have not been performed.
 
 [哔哩哔哩携爷叔怒创上财提篮桥分校！](docs/fiction/bilibili_tilanqiao_campus_sequel_zh.md)
 接续《小破站入所记》，收录分校开办、经典课程“借一百你得赚两百八”及炒面档转型三段已确认二创；保留创作提议与反馈原话，人物、分校和经营情节均属架空喜剧。
+
+
+## 直播平台互动伦理与责任治理（fork editorial）
+
+[收款流程十分精密，责任边界不能全靠弹幕](docs/policy/livestream_platform_ethics_20261118/README_zh.md)
+核查龙珠、虎牙与YY的监管和经营记录，区分业务出售、监管处置与倒闭；
+讨论付费期待、互动边界及平台申诉责任，附六项来源、原话与校验清单。
+机制为待检验假设，治理方案尚未实施。
