@@ -1,0 +1,79 @@
+{
+  "version": "0.1",
+  "date": "2026-11-18",
+  "g0_m_s2": 9.80665,
+  "saturn": {
+    "mu_km3_s2": 37931206.23,
+    "equatorial_1bar_radius_km": 60268,
+    "spherical_earth_g_radius_km": 62192.4963082689,
+    "height_above_equatorial_reference_km": 1924.4963082688992
+  },
+  "moons": [
+    {
+      "name": "Mimas",
+      "mu_km3_s2": 2.50349,
+      "mean_radius_km": 198.2,
+      "g_m_s2": 0.06372921378175528,
+      "earth_g_fraction": 0.006498571253359229
+    },
+    {
+      "name": "Enceladus",
+      "mu_km3_s2": 7.21037,
+      "mean_radius_km": 252.1,
+      "g_m_s2": 0.11345192253377855,
+      "earth_g_fraction": 0.011568876480120996
+    },
+    {
+      "name": "Tethys",
+      "mu_km3_s2": 41.21353,
+      "mean_radius_km": 531.1,
+      "g_m_s2": 0.14611244603724055,
+      "earth_g_fraction": 0.014899323014203684
+    },
+    {
+      "name": "Dione",
+      "mu_km3_s2": 73.11607,
+      "mean_radius_km": 561.4,
+      "g_m_s2": 0.2319893368010073,
+      "earth_g_fraction": 0.02365632879739843
+    },
+    {
+      "name": "Rhea",
+      "mu_km3_s2": 153.94175,
+      "mean_radius_km": 763.5,
+      "g_m_s2": 0.2640817179011798,
+      "earth_g_fraction": 0.026928840929489665
+    },
+    {
+      "name": "Titan",
+      "mu_km3_s2": 8978.1371,
+      "mean_radius_km": 2574.76,
+      "g_m_s2": 1.3542932873591678,
+      "earth_g_fraction": 0.13809948222473198
+    },
+    {
+      "name": "Iapetus",
+      "mu_km3_s2": 120.51511,
+      "mean_radius_km": 734.3,
+      "g_m_s2": 0.2235087064457708,
+      "earth_g_fraction": 0.022791545170447687
+    }
+  ],
+  "rotation": {
+    "rpm": 2,
+    "radius_for_1g_m": 223.56481175237965
+  },
+  "formulas": {
+    "surface_gravity": "g_m_s2 = mu_km3_s2 * 1000 / radius_km**2",
+    "isogravosphere": "r_km = sqrt(mu_km3_s2 * 1e9 / g0_m_s2) / 1000",
+    "rotation": "R_m = g0_m_s2 / (2*pi*rpm/60)**2"
+  },
+  "limits": [
+    "Spherical monopole gravity; no oblateness, higher gravity harmonics, tides, topography or rotation correction in moon values.",
+    "The radius is not an orbit or habitat feasibility result; the artificial-gravity radius is kinematic, not a comfort validation."
+  ],
+  "sources": [
+    "https://ssd.jpl.nasa.gov/sats/phys_par/",
+    "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"
+  ]
+}
