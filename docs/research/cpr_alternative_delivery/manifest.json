@@ -1,0 +1,29 @@
+{
+  "version": "0.1",
+  "date": "2026-11-18",
+  "status": "RESEARCH_DISCUSSION_ONLY",
+  "experiments": "NOT_RUN",
+  "base_commit": "2ad493149974459c54b5e0676ebb2f8b84e26c29",
+  "files": [
+    {
+      "path": "README_zh.md",
+      "bytes": 559,
+      "sha256": "a01e435097f0cb404a00d5c9f92f698e884c63ecf9682b37223d96cf5251aefd"
+    },
+    {
+      "path": "discussion_zh.md",
+      "bytes": 11246,
+      "sha256": "167896006a9b5da914eae7bdd9f03da007d5eacf2390ab3db31dbb0a9f7217f0"
+    },
+    {
+      "path": "provenance_zh.md",
+      "bytes": 1790,
+      "sha256": "bdcdf122a987b1a2f542b6ea2c385166f29b9a26652a138beb31e12535e94fb5"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 4651,
+      "sha256": "6716566b5045b1b8cd12cb28fcc6a1da500183cb582bb076858a44ac7e61ad65"
+    }
+  ]
+}
