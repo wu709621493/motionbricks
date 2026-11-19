@@ -375,6 +375,8 @@ inference are not implemented.
 
 ## Engineering humor (fork cultural note)
 
+[宇智波的传承](docs/fiction/uchiha_legacy_yue.md) is an unofficial Cantonese Naruto fan story about a counting problem on a school exam.
+
 [工程师两件套：修得了门轴，修不了常识](docs/fiction/duct_tape_wd40_tide_pods_zh.md)
 retells the duct tape / WD-40 meme and records the 2018 laundry-pod challenge,
 with a fictional workshop sketch and primary-source safety notes.
