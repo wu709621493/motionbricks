@@ -1,0 +1,16 @@
+{
+  "archive_version": "1.0",
+  "source_filename": "深圳APEC夜景与美食新闻稿.docx",
+  "files": [
+    {
+      "path": "press_release.docx",
+      "size_bytes": 39327,
+      "sha256": "d22b1cf34a9680d7bb392e4a763d1a22a36be5d409d277d874e586feab073d1a"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 2131,
+      "sha256": "b9e8dfadc60e20572cfcefc36b6dfa5951d62a4f19bb59e44125cd67850b6cae"
+    }
+  ]
+}
