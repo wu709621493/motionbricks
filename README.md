@@ -76,7 +76,7 @@ The `motionbricks` package is the library. The demos and editors in `app` are bu
 | [motionbricks](motionbricks) | The library: engines, motion players, recorder, blend spaces, pivots, and the ONNX models |
 | [app](app) | The demos, the two editors, and the character runtime they share |
 | [assets](assets) | Sample motion clips, Smart Primitives, and the gym scenes |
-| [docs](docs) | Guides and model cards, with runnable examples in [docs/examples](docs/examples) |
+| [docs · 中文导航](docs/README.md) | Guides, model cards, CPU test commands, and [runnable examples](docs/examples) |
 | [tools/onnx](tools/onnx) | The standalone ONNX exporter |
 
 ## Inbetweener
@@ -317,12 +317,12 @@ The [Oyasumi nonprofit research edition](docs/oyasumi_nonprofit_zh.md) describes
 its public-benefit purpose, free reproducibility, and proposed stewardship;
 the existing Apache-2.0/CC-BY-4.0 licensing remains applicable.
 
-### Zero-error handling (experimental CPU utility)
+## Zero-error handling (experimental CPU utility)
 
 See [zero-error guard and Perception Theory evidence protocol](docs/zero_guard.md)
 for explicit division/log/normalization policies and optical sampling integration.
 
-### Ding Rao narrative compensation (experimental CPU authoring tool)
+## Ding Rao narrative compensation (experimental CPU authoring tool)
 
 [丁饶算法 / Ding Rao](docs/ding_rao.md) preserves actions, body states, intention,
 relationships and source evidence from an annotated Liu Yong lyric and selected
@@ -335,7 +335,7 @@ sourced historical profiles and a separate evidence registry. No confirmed royal
 Huntington's disease case was established in this bounded review; retrospective
 hypotheses, other-disease findings and missing evidence remain explicitly distinct.
 
-### Crew-led countdown (CPU simulation)
+## Crew-led countdown (CPU simulation)
 
 [Zero-boundary countdown](docs/crew_countdown.md) preserves crew HOLD/ABORT,
 requires renewed consent after a pause, and separates reaching zero from a
@@ -349,11 +349,11 @@ independent acid-production assays. Includes an evidence map, validation gates,
 a data dictionary and blank CSV templates. This is an unvalidated study design,
 not a dental device, clinical protocol approval, or implemented robot capability.
 
-### Shallow root–soil seismic research
+## Shallow root–soil seismic research
 
 An isolated, standard-library [root–soil screening prototype](docs/root_soil_seismic.md) compares candidate shallow slip planes and synthetic sliding displacement. Inputs are uncalibrated; redwood/banyan measurements and physical validation are pending. This does not model tectonic faults or certify slope safety.
 
-### Rally surfaces and runoff research
+## Rally surfaces and runoff research
 
 The [rally surface study](docs/rally_surface_bayinbuluke_pikes_peak_zh.md) compares
 loose fabric, anchored mats, gravel, buried geotextile and asphalt on explicitly
@@ -363,7 +363,7 @@ screens traction, support, rainfall runoff and separate erosion proxies across
 not calibration. No surveyed route, race lap time or material performance claim
 is implied.
 
-### Integer representation portability lab
+## Integer representation portability lab
 
 The [integer portability lab](docs/radix_portability_zh.md) runs exact integer
 dot products through versioned, checked adapters, with independent result verification
@@ -499,7 +499,7 @@ shots at flags and Ishihara's urn. It pairs Northwest revolutionary war
 literature with Baiyangdian's attention to everyday lives, distinguishing
 verified episode summaries from original interpretation and literary imagery.
 
-### Beijing courtyard heritage archive (c. 1900)
+## Beijing courtyard heritage archive (c. 1900)
 
 The [北京四合院数字档案](docs/heritage/beijing_siheyuan_1900/README.md) provides a
 simple offline picture guide, source catalogue, SVG/OBJ exports and a MotionBricks
