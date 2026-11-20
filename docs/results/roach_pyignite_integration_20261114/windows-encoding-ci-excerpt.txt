@@ -1,0 +1,36 @@
+Source: https://github.com/wu709621493/motionbricks/actions/runs/43541280081/job/132282169792
+Head: eb2d5832deb22ec81356910aaecc95bfd09fd696
+Checkout merge view: 403e54e3171749558e9582034e2847f0445b19ae
+Decoded log excerpt; line endings normalized to LF.
+
+2026-11-14T01:33:50.1150583Z test_output_hashes_and_no_overwrite (test_home.HomeTests.test_output_hashes_and_no_overwrite) ... ERROR
+2026-11-14T01:33:50.2994128Z test_paired_initial_states_unchanged_and_no_resource_contacts (test_home.HomeTests.test_paired_initial_states_unchanged_and_no_resource_contacts) ... ok
+2026-11-14T01:33:50.3809923Z test_population_wall_and_per_step_motion_invariants (test_home.HomeTests.test_population_wall_and_per_step_motion_invariants) ... ok
+2026-11-14T01:33:50.3811347Z test_resources_do_not_cross_walls_or_exceed_sensor_range (test_home.HomeTests.test_resources_do_not_cross_walls_or_exceed_sensor_range) ... ok
+2026-11-14T01:33:50.4125683Z test_seed_reproducibility_and_variation (test_home.HomeTests.test_seed_reproducibility_and_variation) ... ok
+2026-11-14T01:33:50.4146903Z test_unknown_scenario_rejected (test_home.HomeTests.test_unknown_scenario_rejected) ... ok
+2026-11-14T01:33:50.4147443Z 
+2026-11-14T01:33:50.4147657Z ======================================================================
+2026-11-14T01:33:50.4148602Z ERROR: test_output_hashes_and_no_overwrite (test_home.HomeTests.test_output_hashes_and_no_overwrite)
+2026-11-14T01:33:50.4149249Z ----------------------------------------------------------------------
+2026-11-14T01:33:50.4149672Z Traceback (most recent call last):
+2026-11-14T01:33:50.4155158Z   File "D:\a\motionbricks\motionbricks\tests\roach_home\test_home.py", line 93, in test_output_hashes_and_no_overwrite
+2026-11-14T01:33:50.4156048Z     self.assertEqual(json.loads((out / "run.json").read_text())["status"], "SYNTHETIC_UNCALIBRATED")
+2026-11-14T01:33:50.4157959Z                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-11-14T01:33:50.4158563Z   File "C:\hostedtoolcache\windows\Python\3.13.17\x64\Lib\pathlib\_local.py", line 546, in read_text
+2026-11-14T01:33:50.4159172Z     return PathBase.read_text(self, encoding, errors, newline)
+2026-11-14T01:33:50.4159547Z            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-14T01:33:50.4162508Z   File "C:\hostedtoolcache\windows\Python\3.13.17\x64\Lib\pathlib\_abc.py", line 633, in read_text
+2026-11-14T01:33:50.4163050Z     return f.read()
+2026-11-14T01:33:50.4163256Z            ~~~~~~^^
+2026-11-14T01:33:50.4163709Z   File "C:\hostedtoolcache\windows\Python\3.13.17\x64\Lib\encodings\cp1252.py", line 23, in decode
+2026-11-14T01:33:50.4164333Z     return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+2026-11-14T01:33:50.4164761Z            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-14T01:33:50.4165345Z UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 7642: character maps to <undefined>
+2026-11-14T01:33:50.4165840Z 
+2026-11-14T01:33:50.4166002Z ----------------------------------------------------------------------
+2026-11-14T01:33:50.4166344Z Ran 14 tests in 1.079s
+2026-11-14T01:33:50.4166487Z 
+2026-11-14T01:33:50.4166585Z FAILED (errors=1)
+2026-11-14T01:33:50.5333299Z ##[error]Process completed with exit code 1.
+

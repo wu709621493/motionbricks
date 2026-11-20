@@ -114,3 +114,9 @@ restart or silent checkpoint erasure occurs. A thermal trip rejects partial or
 post-trip output at the next chunk/call boundary; it cannot interrupt an active
 C/NumPy call, repair a CPU, guarantee RAM correctness, or write after sudden
 hardware failure. Readings and checksums do not certify physical durability.
+
+## Opt-in process-isolated thermal I/O
+
+`IsolatedTemperatureGuard` runs trusted importable sensor and checkpoint operations in disposable children with bounded stdin/stdout deadlines, validated receipts and latched failure. `run_supervised` provides an outer process deadline for native/GIL-held work. The original cooperative `TemperatureGuard` and default inference remain unchanged. Software does not replace firmware or independent hardware overheat protection. See [Chinese implementation and evidence](../../docs/pyignite_isolated_guard_zh.md).
+
+`diagnose_pe.py --output-dir <new-directory>` preserves the unchanged Torch oracle/tolerance and reports strict PASS/FAIL separately from exp/frequency/phase localization. Missing prerequisites return NOT_RUN and exit 2. The dynamic PE kernel is not fixed by this change.

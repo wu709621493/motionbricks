@@ -1,0 +1,16 @@
+{
+  "pid": 4,
+  "timed_out": true,
+  "exit_code": -15,
+  "cleanup": "pass",
+  "elapsed_seconds": 1.006122968999989,
+  "stdout": "ENTER_NUMPY_SVD\n",
+  "stderr": "",
+  "scope": "independent parent supervising real NumPy/LAPACK SVD; not real overheating",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-c",
+    "import numpy as np; a=np.ones((2048,2048),np.float64); print('ENTER_NUMPY_SVD',flush=True); np.linalg.svd(a,full_matrices=False); print('RETURNED',flush=True)"
+  ],
+  "whole_child_peak_rss_kib": 86792
+}

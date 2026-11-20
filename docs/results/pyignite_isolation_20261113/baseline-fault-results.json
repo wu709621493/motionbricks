@@ -1,0 +1,193 @@
+{
+  "executed_at": "2026-11-12T16:23:10Z",
+  "commit": "942cf0e2691f9faa5678e0bccf8016dc4c63e5ab",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "numpy": "2.3.5",
+  "sensor": "simulated only",
+  "results": [
+    {
+      "case": "native_release",
+      "timeout": false,
+      "exit_code": 0,
+      "elapsed_s": 1.174876322000273,
+      "cleanup": "pass",
+      "observations": [
+        {
+          "mode": "native_release",
+          "native_elapsed_s": 0.9002549090000684,
+          "native_completed": true,
+          "state_at_native_return": "THERMAL_TRIP",
+          "eventual_state": "THERMAL_TRIP",
+          "result_rejected": true,
+          "reader_calls": 2
+        }
+      ],
+      "stderr": "",
+      "supervisor": "independent parent process; monotonic wall deadline; process-group SIGKILL"
+    },
+    {
+      "case": "native_hold",
+      "timeout": false,
+      "exit_code": 0,
+      "elapsed_s": 1.1658094930007792,
+      "cleanup": "pass",
+      "observations": [
+        {
+          "mode": "native_hold",
+          "native_elapsed_s": 0.9070878219990846,
+          "native_completed": true,
+          "state_at_native_return": "SENSOR_STALE",
+          "eventual_state": "SENSOR_STALE",
+          "result_rejected": true,
+          "reader_calls": 2
+        }
+      ],
+      "stderr": "",
+      "supervisor": "independent parent process; monotonic wall deadline; process-group SIGKILL"
+    },
+    {
+      "case": "sensor_hang",
+      "timeout": true,
+      "exit_code": -9,
+      "elapsed_s": 1.414003498000966,
+      "cleanup": "pass",
+      "observations": [
+        {
+          "mode": "sensor_hang",
+          "fault_entered": true,
+          "stage": "before_guard_check"
+        }
+      ],
+      "stderr": "",
+      "supervisor": "independent parent process; monotonic wall deadline; process-group SIGKILL"
+    },
+    {
+      "case": "fsync_hang",
+      "timeout": true,
+      "exit_code": -9,
+      "elapsed_s": 1.4123650310011726,
+      "cleanup": "pass",
+      "observations": [
+        {
+          "mode": "fsync_hang",
+          "fault_entered": true,
+          "stage": "before_guard_check"
+        }
+      ],
+      "stderr": "",
+      "supervisor": "independent parent process; monotonic wall deadline; process-group SIGKILL"
+    },
+    {
+      "case": "mid_compute_trip",
+      "timeout": false,
+      "exit_code": 0,
+      "elapsed_s": 0.5015756199991301,
+      "cleanup": "pass",
+      "observations": [
+        {
+          "mode": "mid_compute_trip",
+          "rejected": true,
+          "last_complete_preserved": true,
+          "result_sha256": "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "state": "THERMAL_TRIP"
+        }
+      ],
+      "stderr": "",
+      "supervisor": "independent parent process; monotonic wall deadline; process-group SIGKILL"
+    },
+    {
+      "case": "fsync_error",
+      "timeout": false,
+      "exit_code": 0,
+      "elapsed_s": 0.2943556210011593,
+      "cleanup": "pass",
+      "observations": [
+        {
+          "mode": "fsync_error",
+          "raised": true,
+          "state": "CHECKPOINT_FAILED",
+          "durability": "NOT_CONFIRMED",
+          "previous_envelope_preserved": true,
+          "complete_result_checksum_valid": true
+        }
+      ],
+      "stderr": "",
+      "supervisor": "independent parent process; monotonic wall deadline; process-group SIGKILL"
+    },
+    {
+      "case": "replace_error",
+      "timeout": false,
+      "exit_code": 0,
+      "elapsed_s": 0.21711782999955176,
+      "cleanup": "pass",
+      "observations": [
+        {
+          "mode": "replace_error",
+          "raised": true,
+          "state": "CHECKPOINT_FAILED",
+          "durability": "NOT_CONFIRMED",
+          "previous_envelope_preserved": true,
+          "complete_result_checksum_valid": true
+        }
+      ],
+      "stderr": "",
+      "supervisor": "independent parent process; monotonic wall deadline; process-group SIGKILL"
+    },
+    {
+      "case": "stale_observation",
+      "timeout": false,
+      "exit_code": 0,
+      "elapsed_s": 0.21491425699969113,
+      "cleanup": "pass",
+      "observations": [
+        {
+          "mode": "stale_observation",
+          "rejected": true,
+          "state": "SENSOR_STALE"
+        }
+      ],
+      "stderr": "",
+      "supervisor": "independent parent process; monotonic wall deadline; process-group SIGKILL"
+    },
+    {
+      "case": "corrupt_restore",
+      "timeout": false,
+      "exit_code": 0,
+      "elapsed_s": 0.22547211300116032,
+      "cleanup": "pass",
+      "observations": [
+        {
+          "mode": "corrupt_restore",
+          "checksum_rejected": true
+        }
+      ],
+      "stderr": "",
+      "supervisor": "independent parent process; monotonic wall deadline; process-group SIGKILL"
+    },
+    {
+      "case": "interrupted_replace",
+      "timeout": false,
+      "exit_code": 0,
+      "elapsed_s": 0.37335207000069204,
+      "cleanup": "pass",
+      "observations": [
+        {
+          "mode": "interrupted_replace",
+          "child_exit": 73,
+          "restored_last_complete": true,
+          "temporary_files_left": 1,
+          "real_power_loss_test": false
+        }
+      ],
+      "stderr": "",
+      "supervisor": "independent parent process; monotonic wall deadline; process-group SIGKILL"
+    }
+  ],
+  "cannot_claim": [
+    "No real overheat, power-cut, old CPU, hardware watchdog or Windows/macOS result",
+    "Native fixture is a sleeping C++ call, not actual NumPy workload",
+    "Killing a child is containment; not proof of hardware safety",
+    "No Torch parity reproduction: Torch unavailable"
+  ]
+}

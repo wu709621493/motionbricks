@@ -359,6 +359,8 @@ def main(argv=None) -> int:
     args = parser.parse_args(argv)
     try:
         values = json.loads(args.config.read_text(encoding="utf-8")) if args.config else {}
+        if not isinstance(values, dict):
+            raise ValueError("config must be a JSON object of Config fields")
         values.update({k: getattr(args, k) for k in ("agents", "steps", "seed", "sample_every")
                        if getattr(args, k) is not None})
         config = Config(**values)
