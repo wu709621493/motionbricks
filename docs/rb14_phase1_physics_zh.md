@@ -258,3 +258,7 @@ python -S -m unittest discover -s tests/rb14 -v
 7. Daniel A. Steck：[Rubidium87 D Line Data](https://steck.us/alkalidata/index.html)。原子结构与制备参考；当前程序不求解内部态／量子测量。
 
 其他列出的简化力学、扩散与噪声门槛由正文的明确假设直接推导。没有通过引用相近技术把假设参数转换成实测证据。
+
+## 后续数值稳定性修复
+
+[共模协方差抵消修复](rb14_covariance_stability_zh.md)记录极端噪声比下的算法问题与独立回归；本页及既有报告继续作为历史记录保留。
