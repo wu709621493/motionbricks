@@ -36,6 +36,6 @@
 | 主题 | 入口 |
 | --- | --- |
 | 工程实验 | [CPU 推理参考](cpu_reference.md) · [跨进程整数后端](radix_ipc.md) · [PyIgnite](pyignite.md) |
-| 研究与数据 | [研究专题](research/) · [行过油坊，条瘾会唔会静一阵？](research/peanut_oil_aroma_opioid_craving_zh.md) · [仓库数据集](../data/) |
+| 研究与数据 | [研究专题](research/) · [航天急救医学与工程博士项目倡议](research/space_emergency_medicine_phd_proposal_zh.md) · [行过油坊，条瘾会唔会静一阵？](research/peanut_oil_aroma_opioid_craving_zh.md) · [仓库数据集](../data/) |
 | 建筑与设计 | [历史建筑档案](heritage/) · [概念设计](concepts/) |
 | 公共议题与文学 | [公共政策](policy/) · [小说与剧本](fiction/) · [粤语创作](creative/) · [深圳 APEC 夜景与美食新闻稿](creative/shenzhen_apec_2026/README.md) |
