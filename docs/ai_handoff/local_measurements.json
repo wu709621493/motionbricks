@@ -1,0 +1,434 @@
+{
+  "measured_on": "2026-11-04",
+  "notes": "Ten alternating-order repetitions; host timings are descriptive, not pass/fail thresholds.",
+  "reports": [
+    {
+      "environment": {
+        "architecture": "x86_64",
+        "os": "Linux-6.18.57-x86_64-with-glibc2.39",
+        "python": "3.12.14"
+      },
+      "fixture_sha256": "c68c2ca5e531ebd7898244a5fc4a6aa2c7378aa2f95e7967e68feff72d230a73",
+      "groups": [
+        {
+          "topology": "broadcast",
+          "max_work_per_task": 100,
+          "timing": {
+            "median_cpu_ns": 23239182.5,
+            "median_elapsed_ns": 24188611.5,
+            "repetitions": 10,
+            "samples": [
+              {
+                "cpu_ns": 26292153,
+                "elapsed_ns": 26293270
+              },
+              {
+                "cpu_ns": 22637781,
+                "elapsed_ns": 22640253
+              },
+              {
+                "cpu_ns": 22779301,
+                "elapsed_ns": 22781606
+              },
+              {
+                "cpu_ns": 30496392,
+                "elapsed_ns": 30499031
+              },
+              {
+                "cpu_ns": 20812973,
+                "elapsed_ns": 20815312
+              },
+              {
+                "cpu_ns": 22262023,
+                "elapsed_ns": 22273761
+              },
+              {
+                "cpu_ns": 22868022,
+                "elapsed_ns": 22886914
+              },
+              {
+                "cpu_ns": 26715472,
+                "elapsed_ns": 26718331
+              },
+              {
+                "cpu_ns": 28344328,
+                "elapsed_ns": 28348087
+              },
+              {
+                "cpu_ns": 23610343,
+                "elapsed_ns": 25490309
+              }
+            ]
+          }
+        },
+        {
+          "topology": "directed",
+          "max_work_per_task": 100,
+          "timing": {
+            "median_cpu_ns": 21798345.5,
+            "median_elapsed_ns": 21804803.5,
+            "repetitions": 10,
+            "samples": [
+              {
+                "cpu_ns": 22129086,
+                "elapsed_ns": 22140189
+              },
+              {
+                "cpu_ns": 23095260,
+                "elapsed_ns": 23097623
+              },
+              {
+                "cpu_ns": 20977417,
+                "elapsed_ns": 20979369
+              },
+              {
+                "cpu_ns": 30183408,
+                "elapsed_ns": 30186690
+              },
+              {
+                "cpu_ns": 21467605,
+                "elapsed_ns": 21469418
+              },
+              {
+                "cpu_ns": 20838341,
+                "elapsed_ns": 20840680
+              },
+              {
+                "cpu_ns": 20838962,
+                "elapsed_ns": 20841141
+              },
+              {
+                "cpu_ns": 24347348,
+                "elapsed_ns": 24350181
+              },
+              {
+                "cpu_ns": 20254825,
+                "elapsed_ns": 20256980
+              },
+              {
+                "cpu_ns": 22393919,
+                "elapsed_ns": 22396185
+              }
+            ]
+          }
+        },
+        {
+          "topology": "broadcast",
+          "max_work_per_task": 6,
+          "timing": {
+            "median_cpu_ns": 18159931.0,
+            "median_elapsed_ns": 18161776.0,
+            "repetitions": 10,
+            "samples": [
+              {
+                "cpu_ns": 17684321,
+                "elapsed_ns": 17686324
+              },
+              {
+                "cpu_ns": 17341362,
+                "elapsed_ns": 17343618
+              },
+              {
+                "cpu_ns": 17613766,
+                "elapsed_ns": 17616218
+              },
+              {
+                "cpu_ns": 18847617,
+                "elapsed_ns": 18850309
+              },
+              {
+                "cpu_ns": 18965071,
+                "elapsed_ns": 18967565
+              },
+              {
+                "cpu_ns": 18222789,
+                "elapsed_ns": 18224546
+              },
+              {
+                "cpu_ns": 21649154,
+                "elapsed_ns": 21651813
+              },
+              {
+                "cpu_ns": 17796727,
+                "elapsed_ns": 17799585
+              },
+              {
+                "cpu_ns": 18097073,
+                "elapsed_ns": 18099006
+              },
+              {
+                "cpu_ns": 19417643,
+                "elapsed_ns": 19420208
+              }
+            ]
+          }
+        },
+        {
+          "topology": "directed",
+          "max_work_per_task": 6,
+          "timing": {
+            "median_cpu_ns": 22229758.5,
+            "median_elapsed_ns": 22235956.0,
+            "repetitions": 10,
+            "samples": [
+              {
+                "cpu_ns": 25869897,
+                "elapsed_ns": 25872646
+              },
+              {
+                "cpu_ns": 20171041,
+                "elapsed_ns": 20173243
+              },
+              {
+                "cpu_ns": 21924889,
+                "elapsed_ns": 21935446
+              },
+              {
+                "cpu_ns": 25981362,
+                "elapsed_ns": 25984154
+              },
+              {
+                "cpu_ns": 20202508,
+                "elapsed_ns": 20205482
+              },
+              {
+                "cpu_ns": 19908481,
+                "elapsed_ns": 19910968
+              },
+              {
+                "cpu_ns": 24403442,
+                "elapsed_ns": 24463632
+              },
+              {
+                "cpu_ns": 22534628,
+                "elapsed_ns": 22536466
+              },
+              {
+                "cpu_ns": 18865563,
+                "elapsed_ns": 18868767
+              },
+              {
+                "cpu_ns": 22560836,
+                "elapsed_ns": 22563517
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "environment": {
+        "architecture": "x86_64",
+        "os": "Linux-6.18.57-x86_64-with-glibc2.39",
+        "python": "3.13.17"
+      },
+      "fixture_sha256": "c68c2ca5e531ebd7898244a5fc4a6aa2c7378aa2f95e7967e68feff72d230a73",
+      "groups": [
+        {
+          "topology": "broadcast",
+          "max_work_per_task": 100,
+          "timing": {
+            "median_cpu_ns": 27960413.5,
+            "median_elapsed_ns": 27963241.5,
+            "repetitions": 10,
+            "samples": [
+              {
+                "cpu_ns": 27775484,
+                "elapsed_ns": 27776009
+              },
+              {
+                "cpu_ns": 33347152,
+                "elapsed_ns": 33350134
+              },
+              {
+                "cpu_ns": 39708121,
+                "elapsed_ns": 39720629
+              },
+              {
+                "cpu_ns": 29409874,
+                "elapsed_ns": 29412030
+              },
+              {
+                "cpu_ns": 30636315,
+                "elapsed_ns": 30638451
+              },
+              {
+                "cpu_ns": 26626770,
+                "elapsed_ns": 26628800
+              },
+              {
+                "cpu_ns": 23677053,
+                "elapsed_ns": 23678692
+              },
+              {
+                "cpu_ns": 28145343,
+                "elapsed_ns": 28150474
+              },
+              {
+                "cpu_ns": 26655293,
+                "elapsed_ns": 26657543
+              },
+              {
+                "cpu_ns": 24719340,
+                "elapsed_ns": 24721313
+              }
+            ]
+          }
+        },
+        {
+          "topology": "directed",
+          "max_work_per_task": 100,
+          "timing": {
+            "median_cpu_ns": 24734001.0,
+            "median_elapsed_ns": 24738499.5,
+            "repetitions": 10,
+            "samples": [
+              {
+                "cpu_ns": 23209539,
+                "elapsed_ns": 23212529
+              },
+              {
+                "cpu_ns": 34738387,
+                "elapsed_ns": 34740921
+              },
+              {
+                "cpu_ns": 35551433,
+                "elapsed_ns": 35553906
+              },
+              {
+                "cpu_ns": 21548114,
+                "elapsed_ns": 21550503
+              },
+              {
+                "cpu_ns": 26647921,
+                "elapsed_ns": 26649972
+              },
+              {
+                "cpu_ns": 25998357,
+                "elapsed_ns": 26005109
+              },
+              {
+                "cpu_ns": 23469645,
+                "elapsed_ns": 23471890
+              },
+              {
+                "cpu_ns": 27247080,
+                "elapsed_ns": 27249495
+              },
+              {
+                "cpu_ns": 21084906,
+                "elapsed_ns": 21088085
+              },
+              {
+                "cpu_ns": 21978343,
+                "elapsed_ns": 21980461
+              }
+            ]
+          }
+        },
+        {
+          "topology": "broadcast",
+          "max_work_per_task": 6,
+          "timing": {
+            "median_cpu_ns": 20405020.0,
+            "median_elapsed_ns": 20411062.5,
+            "repetitions": 10,
+            "samples": [
+              {
+                "cpu_ns": 19024559,
+                "elapsed_ns": 19026467
+              },
+              {
+                "cpu_ns": 30727846,
+                "elapsed_ns": 30729983
+              },
+              {
+                "cpu_ns": 26380164,
+                "elapsed_ns": 26389059
+              },
+              {
+                "cpu_ns": 19760682,
+                "elapsed_ns": 19762747
+              },
+              {
+                "cpu_ns": 20949176,
+                "elapsed_ns": 20951509
+              },
+              {
+                "cpu_ns": 22590811,
+                "elapsed_ns": 22592534
+              },
+              {
+                "cpu_ns": 20892466,
+                "elapsed_ns": 20893899
+              },
+              {
+                "cpu_ns": 19917574,
+                "elapsed_ns": 19928226
+              },
+              {
+                "cpu_ns": 17352929,
+                "elapsed_ns": 17354155
+              },
+              {
+                "cpu_ns": 17939469,
+                "elapsed_ns": 17941702
+              }
+            ]
+          }
+        },
+        {
+          "topology": "directed",
+          "max_work_per_task": 6,
+          "timing": {
+            "median_cpu_ns": 23724240.5,
+            "median_elapsed_ns": 23725825.0,
+            "repetitions": 10,
+            "samples": [
+              {
+                "cpu_ns": 21259125,
+                "elapsed_ns": 21271592
+              },
+              {
+                "cpu_ns": 38788566,
+                "elapsed_ns": 38791197
+              },
+              {
+                "cpu_ns": 20524335,
+                "elapsed_ns": 20526108
+              },
+              {
+                "cpu_ns": 24475703,
+                "elapsed_ns": 24477351
+              },
+              {
+                "cpu_ns": 26607882,
+                "elapsed_ns": 26610072
+              },
+              {
+                "cpu_ns": 22972778,
+                "elapsed_ns": 22974299
+              },
+              {
+                "cpu_ns": 26805766,
+                "elapsed_ns": 26807910
+              },
+              {
+                "cpu_ns": 25035980,
+                "elapsed_ns": 25037971
+              },
+              {
+                "cpu_ns": 20717291,
+                "elapsed_ns": 20719790
+              },
+              {
+                "cpu_ns": 21098487,
+                "elapsed_ns": 21100364
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
