@@ -1,0 +1,129 @@
+{
+  "base_commit": "6f7c2dc67c3d640ebbb32b9f97ef4dbb0fa4e0b0",
+  "executed_at": "2026-11-12T22:28:00Z",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "numpy": "2.3.5",
+  "sensor": "simulated only",
+  "native_computation_interruption": "outer process containment only",
+  "cases": [
+    {
+      "case": "sensor_hang",
+      "fault_elapsed_seconds": 1.0817370339991612,
+      "check_exit_elapsed_seconds": 9.486700037086848e-05,
+      "guard": {
+        "state": "SENSOR_UNAVAILABLE",
+        "reason": "isolated read failed; no success/durability is inferred",
+        "durability": "FILE_AND_DIRECTORY_FSYNC_COMPLETED",
+        "checkpoint": "/tmp/tmpal0gwqrj/last.json",
+        "last_temperature": {
+          "monotonic_seconds": 15363.374033766,
+          "utc": "2026-11-12T22:28:01.052516+00:00",
+          "sensors": [
+            {
+              "celsius": 70.0,
+              "critical_alarm": false,
+              "source": "simulated-cpu"
+            }
+          ]
+        },
+        "last_result_sequence": 2,
+        "io_isolation": "disposable subprocesses; cooperative parent guard",
+        "last_reader_receipt": {
+          "pid": 10,
+          "timed_out": true,
+          "exit_code": -15,
+          "cleanup": "pass",
+          "elapsed_seconds": 1.0048468040004082,
+          "scope": "POSIX owned process group",
+          "action": "read",
+          "request_sha256": "3fc0d390301d940bd0557d2b9ffffe37e5b3a87407ce319f018495542051504e",
+          "stderr": "",
+          "error": "worker timeout or nonzero exit"
+        },
+        "last_checkpoint_receipt": {
+          "pid": 11,
+          "timed_out": false,
+          "exit_code": 0,
+          "cleanup": "not_applicable",
+          "elapsed_seconds": 0.0750441009986389,
+          "scope": "POSIX owned process group",
+          "action": "commit",
+          "request_sha256": "04c0358ea4f962546d0ecd0aba9d9541db2f3a77260eca11a1c1527d7115d0b2",
+          "stderr": ""
+        }
+      },
+      "last_complete_result_preserved": true,
+      "checkpoint_bytes_unchanged": false,
+      "temporary_files_after_worker_death": 0,
+      "note": "process cleanup and temporary-file cleanup are distinct; directory removed by harness after observation",
+      "status": "PASS"
+    },
+    {
+      "case": "fsync_hang",
+      "fault_elapsed_seconds": 1.2974135959993873,
+      "check_exit_elapsed_seconds": 0.0001288069997826824,
+      "guard": {
+        "state": "CHECKPOINT_FAILED",
+        "reason": "isolated commit failed; no success/durability is inferred",
+        "durability": "NOT_CONFIRMED",
+        "checkpoint": "/tmp/tmp__7j78dx/last.json",
+        "last_temperature": {
+          "monotonic_seconds": 15365.503183224,
+          "utc": "2026-11-12T22:28:03.236436+00:00",
+          "sensors": [
+            {
+              "celsius": 70.0,
+              "critical_alarm": false,
+              "source": "simulated-cpu"
+            }
+          ]
+        },
+        "last_result_sequence": 2,
+        "io_isolation": "disposable subprocesses; cooperative parent guard",
+        "last_reader_receipt": {
+          "pid": 17,
+          "timed_out": false,
+          "exit_code": 0,
+          "cleanup": "not_applicable",
+          "elapsed_seconds": 0.28774115999840433,
+          "scope": "POSIX owned process group",
+          "action": "read",
+          "request_sha256": "968973297e10f3c6f5b262ae98fd292620c797627c1cf2b7395284d5d7767103",
+          "stderr": ""
+        },
+        "last_checkpoint_receipt": {
+          "pid": 18,
+          "timed_out": true,
+          "exit_code": -15,
+          "cleanup": "pass",
+          "elapsed_seconds": 1.0033184959993378,
+          "scope": "POSIX owned process group",
+          "action": "commit",
+          "request_sha256": "10787ab179f4bc0e71df87abe069496653ca4eafc8dd8d5f8e8e67f39a9dd5aa",
+          "stderr": "",
+          "error": "worker timeout or nonzero exit"
+        }
+      },
+      "last_complete_result_preserved": true,
+      "checkpoint_bytes_unchanged": true,
+      "temporary_files_after_worker_death": 1,
+      "note": "process cleanup and temporary-file cleanup are distinct; directory removed by harness after observation",
+      "status": "PASS"
+    }
+  ],
+  "sources": {
+    "tools/pyignite/pyignite/thermal.py": "2c9b1d39d8b84443e22d5f6beca57d935b195eeed1ebbc20a3f4a3ba858efc4e",
+    "tools/pyignite/pyignite/supervisor.py": "a28baa2b385470379f5a9eff5141f7e523eda92fed73fd37861af6f093e81920",
+    "tools/pyignite/pyignite/_io_worker.py": "acca83a0f57e64566279143a1ab2035eb66cdb1e65e6852a4284ed6a8342823a",
+    "tests/pyignite/thermal_fault_fixtures.py": "83ccb844409307357d1f87b805dbe4fa652709d6c7b999341a9f55920684e146",
+    "tools/pyignite/review_isolation.py": "1fa9d21ee99f290edb2ada965686ef7b91ab04b92b33e9df3ea2617ff21397dd"
+  },
+  "status": "PASS",
+  "cannot_claim": [
+    "Original cooperative TemperatureGuard still cannot contain blocked reader/fsync by itself.",
+    "No real overheating, power cut, independent hardware watchdog or old-CPU result.",
+    "No full model, PE parity or speed/power advantage claim.",
+    "OS-uninterruptible tasks can outlive kill deadlines; cleanup failure must remain failure."
+  ]
+}

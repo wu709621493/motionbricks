@@ -35,13 +35,18 @@ jobs:
       - name: Install numerical oracle (failure is not a passing parity test)
         run: python -m pip install -r tools/pyignite/requirements-validation.txt
       - run: python tools/pyignite/validate.py --output pyignite-parity.json
+      - name: Preserve strict PE status and collect exp/phase localization
+        if: always()
+        run: PYTHONPATH=tools/pyignite python tools/pyignite/diagnose_pe.py --output-dir pyignite-diagnosis
       - run: python tools/pyignite/memory.py native > pyignite-memory-native.json
       - run: python tools/pyignite/memory.py torch > pyignite-memory-torch.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: pyignite-${{ matrix.os }}
-          path: pyignite-*.json
+          path: |
+            pyignite-*.json
+            pyignite-diagnosis/
   verified-subsets-and-wheel:
     name: PyIgnite subsets / ${{ matrix.os }} / Torch ${{ matrix.torch }}
     strategy:
@@ -90,6 +95,9 @@ jobs:
         run: python tools/pyignite/review.py --output review-results/subsets.json
       - name: Preserve the existing dynamic PE audit and baseline regression
         run: python tools/rust_review/baseline_regression.py --output-dir review-results/legacy
+      - name: Strict PE diagnosis with the unchanged oracle and tolerance
+        if: always()
+        run: PYTHONPATH=tools/pyignite python tools/pyignite/diagnose_pe.py --output-dir review-results/pe-diagnosis
       - name: Download the released G1 root checkpoint for the explicit subset test
         if: matrix.os == 'ubuntu-24.04' && matrix.torch == '2.14.0'
         run: curl --fail --location --max-time 180 'https://huggingface.co/nvidia/MotionBricks/resolve/main/g1/out/motionbricks_root/version_1/checkpoints/model-step%3D2000000.safetensors' --output "$RUNNER_TEMP/g1-root.safetensors"
@@ -148,4 +156,5 @@ jobs:
           name: pyignite-legacy-${{ matrix.profile }}
           path: legacy-results/
           if-no-files-found: error
+
 

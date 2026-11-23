@@ -1,9 +1,9 @@
 name: Virtual cockroach home
 on:
   push:
-    paths: ['motionbricks/roach_home*.py', 'tests/roach_home/**', 'experiments/roach_home/**', '.github/workflows/roach-home.yml']
+    paths: ['motionbricks/roach_home*.py', 'tests/roach_home/**', 'experiments/roach_home/**', 'tools/pyignite/pyignite/**', 'tests/pyignite/test_roach_integration.py', '.github/workflows/roach-home.yml']
   pull_request:
-    paths: ['motionbricks/roach_home*.py', 'tests/roach_home/**', 'experiments/roach_home/**', '.github/workflows/roach-home.yml']
+    paths: ['motionbricks/roach_home*.py', 'tests/roach_home/**', 'experiments/roach_home/**', 'tools/pyignite/pyignite/**', 'tests/pyignite/test_roach_integration.py', '.github/workflows/roach-home.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -23,3 +23,7 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python -S -m unittest discover -s tests/roach_home -v
       - run: python -S -m motionbricks.roach_home --house experiments/roach_home/apartment.json --steps 20 --out-dir roach-home-ci
+      - name: Install the supervisor parent's NumPy dependency
+        run: python -m pip install numpy==2.3.5
+      - name: Supervise stdlib-only model children (PR 96 + PR 97)
+        run: python -m unittest discover -s tests/pyignite -p test_roach_integration.py -v

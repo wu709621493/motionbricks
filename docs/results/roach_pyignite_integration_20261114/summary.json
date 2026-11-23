@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "main_base": "d715dc1f08bd881796526beffad5a3931e26a0ed",
+  "pr97_original_head": "4dd205ead357ebe687d95746a267cf003a93c21a",
+  "merge_baseline": "711f0e171d4ec423bd89a883c2b15da8c2ef0fd6",
+  "execution_source": "uncommitted integration patch, identified by source_sha256 below",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "numpy": "2.3.5",
+  "env": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PYTHONPATH": "tools/pyignite"
+  },
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/roach_home",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "after-home.txt"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-W",
+        "error::ResourceWarning",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/pyignite",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "after-pyignite.txt"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tools/pyignite/diagnose_pe.py",
+        "--base-commit",
+        "d715dc1f08bd881796526beffad5a3931e26a0ed",
+        "--output-dir",
+        "docs/results/roach_pyignite_integration_20261114/strict-pe"
+      ],
+      "exit_code": 2,
+      "log": "strict-pe.txt"
+    }
+  ],
+  "source_sha256": {
+    "motionbricks/roach_home.py": "780895bcb88e88e401205f057db320629c6f06ee12705a7012eaacfc359ae9e6",
+    "tests/roach_home/test_home.py": "6809103031b629b5ba62d1ee3dd44ae85b019f92816309508bdff605e2f4145c",
+    "tests/pyignite/test_supervisor.py": "7c469ccb302cd47bbbe5267535a177cd4a8ebbfdc71b39beb5280d2a53a484f2",
+    "tests/pyignite/test_roach_integration.py": "1f6228843ae18972b79ef78795cbc5014f55ff0e33c3b7d06d52a976f546736d",
+    "tools/pyignite/pyignite/supervisor.py": "12b30f88dd92b289da5b3816ce8b59db2c44f5cf6bfd12b352826730ec8b1fa0",
+    ".github/workflows/roach-home.yml": "deb04f6f981e0f45d6482d3c3c632517ea8ec726f49cb98eb87d57ad3cc52254",
+    "tools/pyignite/kernels.cpp": "3f6b6401661ccc7efd2ef1790f48d8772f1572fd0e9d898da6f93d7d0a6d9325",
+    "tools/pyignite/validate.py": "56299473579373301a04f7a56f3c50e5fe453368271fade44dbafde7428cb405",
+    "tools/onnx/models/layers.py": "426925febc7fb57b769108b410f4b0732f8e27498ab687dbc477a6df189f9d26",
+    "tools/pyignite/pyignite/position.py": "5d9298ac76964008ffcfce9135add8787384e9a2799995d0d11813793b1ebe76"
+  },
+  "unchanged_from_fixed_main": {
+    "tools/pyignite/kernels.cpp": true,
+    "tools/pyignite/validate.py": true,
+    "tools/onnx/models/layers.py": true,
+    "tools/pyignite/pyignite/position.py": true
+  },
+  "result": "SOFTWARE_CONTRACTS_PASS_WITH_ONE_SKIP",
+  "strict_pe": "NOT_RUN_MISSING_TORCH",
+  "cross_platform": "NOT_RUN_LOCALLY",
+  "biology": "SYNTHETIC_UNCALIBRATED"
+}

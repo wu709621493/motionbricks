@@ -1,0 +1,16 @@
+test_all_scenarios_keep_seeded_results_and_output_hashes (test_roach_integration.RoachIntegration.test_all_scenarios_keep_seeded_results_and_output_hashes) ... ok
+test_deadline_during_real_simulation_publishes_no_complete_run (test_roach_integration.RoachIntegration.test_deadline_during_real_simulation_publishes_no_complete_run) ... ok
+test_exited_launcher_cannot_leave_a_late_result_writer (test_roach_integration.RoachIntegration.test_exited_launcher_cannot_leave_a_late_result_writer) ... FAIL
+
+======================================================================
+FAIL: test_exited_launcher_cannot_leave_a_late_result_writer (test_roach_integration.RoachIntegration.test_exited_launcher_cannot_leave_a_late_result_writer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/c53c1ad1d875/motionbricks/tests/pyignite/test_roach_integration.py", line 80, in test_exited_launcher_cannot_leave_a_late_result_writer
+    self.assertFalse(out.exists(), 'descendant wrote results after the receipt returned')
+AssertionError: True is not false : descendant wrote results after the receipt returned
+
+----------------------------------------------------------------------
+Ran 3 tests in 2.827s
+
+FAILED (failures=1)

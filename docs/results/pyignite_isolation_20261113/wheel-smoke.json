@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "installed_from": "/workspace/scratch/fc1de7ef0920/fix-wheel-venv/lib/python3.12/site-packages/pyignite/__init__.py",
+  "worker_packaged": true,
+  "result_sha256": "f6bb1294da2f78cd935b01c7656280df5eaa0439e9d97bc03775825a41a508e4",
+  "reader_receipt": {
+    "pid": 13,
+    "timed_out": false,
+    "exit_code": 0,
+    "cleanup": "not_applicable",
+    "elapsed_seconds": 0.06064694900123868,
+    "scope": "POSIX owned process group",
+    "action": "read",
+    "request_sha256": "7a7803448912deedc2ba758be87e5ae0e8b144ca4de68f7b34db6ecd4c647726",
+    "stderr": ""
+  },
+  "checkpoint_receipt": {
+    "pid": 17,
+    "timed_out": false,
+    "exit_code": 0,
+    "cleanup": "not_applicable",
+    "elapsed_seconds": 0.04749337300017942,
+    "scope": "POSIX owned process group",
+    "action": "load",
+    "request_sha256": "8e038ddbcc914211c6c91cd1cf2ce78344e4117aea0ae8cc722c4f69e0598453",
+    "stderr": ""
+  },
+  "sensor": "synthetic hwmon files only"
+}

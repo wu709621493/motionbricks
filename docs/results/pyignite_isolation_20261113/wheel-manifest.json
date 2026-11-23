@@ -1,0 +1,7 @@
+{
+  "file": "motionbricks_pyignite-0.2.0-py3-none-linux_x86_64.whl",
+  "bytes": 32346,
+  "sha256": "887b4db99c3af9e5b36c6d80e10af8b6ed21273bcb452afb807cb6f01af5b6c7",
+  "scope": "local wheel; not uploaded to PyPI or committed as binary; source modules verified against wheel",
+  "smoke": "wheel-smoke.json"
+}

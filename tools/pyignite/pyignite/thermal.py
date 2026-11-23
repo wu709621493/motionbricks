@@ -33,6 +33,9 @@ class CheckpointStore:
         self.path = Path(path)
         self.path.parent.mkdir(parents=True, exist_ok=True)
 
+    def exists(self):
+        return self.path.exists()
+
     def commit(self, payload):
         data = _encoded(payload)
         envelope = _encoded({'schema_version': 1, 'payload': payload,
@@ -115,7 +118,7 @@ class TemperatureGuard:
             raise ValueError('need >=3 samples and a positive integer result byte limit')
         if max_gap_seconds < interval_seconds:
             raise ValueError('max gap must cover the polling interval')
-        self.store, self.reader, self.clock = CheckpointStore(checkpoint), reader, clock
+        self.store, self.reader, self.clock = self._make_store(checkpoint), reader, clock
         self.threshold, self.hold, self.minimum = threshold_c, hold_seconds, min_samples
         self.interval, self.max_gap, self.max_result_bytes = interval_seconds, max_gap_seconds, max_result_bytes
         self._lock = threading.RLock()
@@ -127,7 +130,7 @@ class TemperatureGuard:
         self._last_result = None
         self._sequence = 0
         self._previous_temperature = None
-        if self.store.path.exists():
+        if self.store.exists():
             if not resume_after_inspection:
                 raise FileExistsError('checkpoint exists; recover it and inspect hardware before explicit resume')
             recovered = self.store.load()  # never overwrite a corrupt checkpoint
@@ -135,6 +138,9 @@ class TemperatureGuard:
             self._sequence = recovered['sequence']
             history = recovered['temperature_history']
             self._previous_temperature = history[-1] if history else recovered.get('previous_session_last_temperature')
+
+    def _make_store(self, checkpoint):
+        return CheckpointStore(checkpoint)
 
     def _report(self):
         return {'state': self._state, 'reason': self._reason, 'durability': self._durability,
