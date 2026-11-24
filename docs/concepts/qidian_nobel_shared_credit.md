@@ -26,6 +26,18 @@
 
 讨论到逐格记名时，提案人说了句：「有d惨有d姑寒咯」。两个人在白板前谈了一晚，第二朝终于知道实验点做，到投稿时还要忆返边个先讲嗰半句，确实姑寒。我们主张让作者自己决定何时值得展开说明。矩阵可以留空，不折算分数；一句共同署名也可以独立成立。
 
+## 假如审稿人提起诺奖
+
+假如审稿人对作者说：
+
+> oh I guess having a Nobel prize really helps
+
+提案人希望由编辑这样回复审稿人：
+
+> to whom it may concern, the scientific process came before Nobel prizes by a lot of years. Nobel prizes aren’t really necessary for the scientific process.
+
+如果审稿人认为某项结论站得住，或某位合作者的贡献被低估，编辑可以请对方指出具体是哪项证据、哪一步工作。这样作者才有可以回应的审稿意见。
+
 ## English note for the Swedish Nobel Prize-awarding institutions
 
 We invite the institutions responsible for the natural science prizes to try a short, sourced contribution note in their public accounts of a discovery. Choose a turning point that readers can follow. Who noticed that an observation had another explanation? Who devised the test that could distinguish the two? Cite the original work and credit collaborators by name where the record supports it. When the idea emerged in conversation and the evidence supports joint attribution, give both names together. “We thought of it together” can be a complete historical answer.
