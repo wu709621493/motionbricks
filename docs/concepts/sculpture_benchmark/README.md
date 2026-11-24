@@ -1,6 +1,6 @@
 # 基准考古学：菩萨的体重没变，视觉模型改口了吗？
 
-研究提案 · 2026-11-24 · 尚未采集样本、运行视觉模型或验证假设。配套方法见[返学（Anti-Scoop）](../../../skills/anti-scoop/SKILL.md)。
+研究提案 · 2026-11-24 · 尚未采集样本、运行视觉模型或验证假设。配套方法见[饭铲头（Anti-Scoop）](../../../skills/anti-scoop/SKILL.md)。
 
 ## 问题与范围
 
@@ -23,7 +23,7 @@
 
 交付顺序为候选与排除表、冻结的标注手册、带真值的合成样本与盲测清单、解盲后的校准报告、历史圆雕比较表。当前交付为研究设计。
 
-## 返学检索记录
+## 饭铲头检索记录
 
 2026-11-24 以中英文检索艺术史、考古、感知实验及视觉测量文献。代表词组为“佛教造像 人体比例 分期”“Khmer sculpture proportional analysis”“head-body ratio sculptural art”“synthetic body shape waist hip ratio”。记录以下近邻，供复查与扩充。
 
