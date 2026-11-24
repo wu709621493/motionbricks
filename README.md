@@ -279,6 +279,14 @@ This project is currently not accepting contributions.
 For questions or issues, please open an issue on this repository or reach out directly to the authors.
 
 
+## Fork 维护人吴孟城嘅 Disclaimer
+
+> 本人系摩羯座，摩羯英文系Capricorn，取自词根caprice，意大利鬼才帕格尼尼作左好多caprice，指法都好跳跃。本人噶思维就好似caprice一样跳跃。本人有资格用本人噶思维思考。
+
+由 Capricorn 嘅 *capri* 跳去 caprice，再由帕格尼尼嘅指法跳返自己嘅思路，读者一路读，已经跟住玩咗一次词根记忆法。末句暗扣笛卡尔嘅「我思故我在」。笛卡尔从「我思」讲到「我在」，呢度从「本人思考」讲到「点样谂，由本人话事」。
+
+「取自词根」系呢段自白嘅文字游戏。按词源，Capricorn 来自拉丁文 *Capricornus*（*caper*「山羊」加 *cornu*「角」），而 caprice 经法文来自意大利文 *capriccio*。[Capricorn 词源](https://www.etymonline.com/word/Capricorn) · [caprice 词源](https://www.etymonline.com/word/caprice)
+
 ## Experimental curve inference (fork extension)
 
 [Finger Tip Curve Prototype](tools/finger_tip_curve/README.md) fits synthetic 2-D
