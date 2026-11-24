@@ -38,4 +38,4 @@
 | 工程实验 | [CPU 推理参考](cpu_reference.md) · [跨进程整数后端](radix_ipc.md) · [PyIgnite](pyignite.md) |
 | 研究与数据 | [研究专题](research/) · [VR 局部镇痛与患者自选医护形象](research/vr_localized_analgesia_zh.md) · [航天急救医学与工程博士项目倡议](research/space_emergency_medicine_phd_proposal_zh.md) · [行过油坊，条瘾会唔会静一阵？](research/peanut_oil_aroma_opioid_craving_zh.md) · [仓库数据集](../data/) |
 | 建筑与设计 | [历史建筑档案](heritage/) · [概念设计](concepts/) · [往旅行者方向寄出的第二封信](concepts/voyager_second_letter/README.md) |
-| 公共议题与文学 | [公共政策](policy/) · [换了货币，还是一家人](policy/eu_family_status_zh.md) · [广西候鸟诱捕调查与复查建议](policy/guangxi_migratory_birds_zh.md) · [小说与剧本](fiction/) · [粤语创作](creative/) · [深圳 APEC 夜景与美食新闻稿](creative/shenzhen_apec_2026/README.md) · [从「奇葩」谈「蘭」怎样写成「兰」](lan_character_simplification_zh.md) |
+| 公共议题与文学 | [公共政策](policy/) · [重复错遣的财政责任](policy/ice_wrongful_removal_rework_zh.md) · [换了货币，还是一家人](policy/eu_family_status_zh.md) · [广西候鸟诱捕调查与复查建议](policy/guangxi_migratory_birds_zh.md) · [小说与剧本](fiction/) · [粤语创作](creative/) · [深圳 APEC 夜景与美食新闻稿](creative/shenzhen_apec_2026/README.md) · [从「奇葩」谈「蘭」怎样写成「兰」](lan_character_simplification_zh.md) |
