@@ -25,3 +25,7 @@
 > 如果Anthropic过边个Alpoge可以黎睇下我噶思路噶话，我认为大家友好交流系冇问题噶😏
 
 For Alpoge and other interested readers: I’d welcome a friendly discussion of these early experiments. How could a variance criterion detect a hypothetical zero off the critical line? — Mengcheng Wu (English rendering of the invitation and discussion question)
+
+吴孟城同日补记：
+
+> 我就要睇下以后统计学算唔算靓数学😏
