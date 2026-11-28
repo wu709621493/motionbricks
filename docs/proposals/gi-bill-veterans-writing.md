@@ -60,6 +60,12 @@
 
 下载原表后，安装 numpy、scipy、matplotlib、xlrd，运行 `python uk_coal_fit.py Coal_since_1853.xls` 可重算结果和图。[复算脚本](coal-data/uk_coal_fit.py)
 
+### 一条 S 线能回答哪条问题？
+
+累计煤耗的 R² 达到 0.9994。同一批观测从 1853 年开始看，平均年耗煤量更接近单峰；截取 1913 年以后的逐年记录，下降 S 型却在留出年份略胜。读图时先看纵轴、起点，以及模型预测未参与拟合的年份时错了多少。物理上的功率上限也只约束能量累积的速度：持续以恒定功率接收阳光，累计能量仍随时间线性增长。
+
+若有人画一条 PTSD 的 S 线，先请他给纵轴写全名字：截至当年累计确诊了多少人，还是当年每千人年有多少人新发病？前者可以在后者下降时继续上升。即使预测完全准确，「明年可能有多少人受伤」与「谁有权让他们承担这份风险」仍是两个独立问题。模型可以协助预留治疗人手；决定风险的人仍须说明哪些伤害可以避免，并听取承担后果者的意见。
+
 ## Invitation to participating universities
 
 We propose that Columbia University President Jennifer L. Mnookin, the University of Minnesota, the University of Connecticut, and the University of Wisconsin–Madison convene the first workshops. Other universities are welcome to adapt the format locally. Pay veterans to write the book, teach from it, and decide which pages readers get to see. A veteran who takes a manuscript home to family has finished the course just as surely as one who publishes it.
