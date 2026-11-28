@@ -43,6 +43,23 @@
 
 评估时应分别记录新近发病、首次确诊和接受治疗的人数。一个人今年第一次获得诊断，症状可能已持续多年。用新增诊断数考核预防工作，反而可能惩罚让老兵更容易求助的机构。
 
+### 英国国内耗煤量的曲线形状
+
+[英国能源安全与净零部原表](https://www.gov.uk/government/statistical-data-sets/historical-coal-data-coal-production-availability-and-consumption)的 Total Inland Consumption 列以百万吨计。1853–1912 只提供十年均值。为保持口径一致，长序列使用 1853–2022 年 17 个互不重叠的十年组；另用 1913–2025 逐年值复核。下图按各组末年标点。
+
+![英国国内耗煤量与自1853年起的累计耗煤量](coal-data/uk-coal-fit.svg)
+
+| 1853–2022 年序列 | 模型 | 全段 R² | 仅用截至 1992 年的数据拟合，后三组 RMSE |
+| --- | --- | ---: | ---: |
+| 十年平均年耗煤量 | 单调 logistic | 0.563 | 121.18 百万吨/年 |
+| 十年平均年耗煤量 | logistic 累计量的十年差分（单峰） | 0.920 | 30.36 百万吨/年 |
+| 累计煤耗 | 以 1852 年末为零的 logistic | 0.9994 | 0.794 十亿吨 |
+| 累计煤耗 | 直线基准 | — | 2.884 十亿吨 |
+
+从 1913 年才开始看，数据已略过早期扩张。逐年单调下降 logistic 的 R² 为 0.915，单峰模型为 0.906；用截至 2005 年的数据预测 2006–2025 年，RMSE 分别为 18.75 和 22.08 百万吨/年。故窗口选择足以改变模型排名。累计量共享过去各期的观测，高 R² 不能独自验证长期上限。三组留出点是一次历史回测。这些耗煤数据不能单独识别效率变化的因果效果。
+
+下载原表后，安装 numpy、scipy、matplotlib、xlrd，运行 `python uk_coal_fit.py Coal_since_1853.xls` 可重算结果和图。[复算脚本](coal-data/uk_coal_fit.py)
+
 ## Invitation to participating universities
 
 We propose that Columbia University President Jennifer L. Mnookin, the University of Minnesota, the University of Connecticut, and the University of Wisconsin–Madison convene the first workshops. Other universities are welcome to adapt the format locally. Pay veterans to write the book, teach from it, and decide which pages readers get to see. A veteran who takes a manuscript home to family has finished the course just as surely as one who publishes it.
