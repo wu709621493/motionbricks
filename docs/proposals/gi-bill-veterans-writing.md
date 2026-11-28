@@ -20,6 +20,18 @@
 
 临床书写暴露疗法（WET）由治疗师按程序引导。2023 年一项纳入 178 名 PTSD 退伍军人的随机试验中，WET 在减轻症状方面达到相对延长暴露疗法的非劣效标准。把结果推广到普通回忆录课堂，仍需单独验证。学员可以跳过任何创伤题材，也可自行选择联系专业服务。课程评价看学员能否按自己的意愿写完、修订和处置作品。[随机试验](https://pubmed.ncbi.nlm.nih.gov/37610727/)
 
+## 治疗进步与预防责任
+
+> 人体不是经济学的object，谢谢😏 ——吴孟城
+
+杰文斯在《煤炭问题》中讨论过英国工业的经验：蒸汽机做同样的功耗煤更少，用得起蒸汽动力的行业却更多，总耗煤量仍可上升。[《煤炭问题》第七章](https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/317/Jevons_0546_EBk_v6.0.pdf)
+
+这个类比提醒负责政策的人守住一条线：即使 PTSD 治疗更快、更有效，决定他人承担何种风险的人，仍有责任减少可预防的创伤暴露。任何机构都不应以改善了救治为由接受更高的 PTSD 新发率。临床团队可以为更多人获得照护而记功；决定风险的人仍须就哪些伤害原可避免作出交代。
+
+评估时应分别记录新近发病、首次确诊和接受治疗的人数。一个人今年第一次获得诊断，症状可能已持续多年。用新增诊断数考核预防工作，反而可能惩罚让老兵更容易求助的机构。
+
 ## Invitation to participating universities
 
 We propose that Columbia University President Jennifer L. Mnookin, the University of Minnesota, the University of Connecticut, and the University of Wisconsin–Madison convene the first workshops. Other universities are welcome to adapt the format locally. Pay veterans to write the book, teach from it, and decide which pages readers get to see. A veteran who takes a manuscript home to family has finished the course just as surely as one who publishes it.
+
+Better PTSD treatment creates no allowance for preventable trauma. Those who make decisions about exposure remain accountable for prevention. An increase in first diagnoses may include people who have lived with symptoms for years.
